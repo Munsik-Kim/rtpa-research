@@ -1,0 +1,110 @@
+{
+  "status": "COMPLETE",
+  "rows": [
+    {
+      "candidate": "DIAG8",
+      "baseline": "MATCHED_ENERGY8",
+      "paired_rounds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_ratios": [
+        0.9565445610887517,
+        0.9748359449426987,
+        1.0300805646883284,
+        1.0345800320735448,
+        1.0543881822624794
+      ],
+      "median_paired_ratio": 1.0300805646883284,
+      "p95_paired_ratio": 1.0504265522246925,
+      "additional_time_fraction": 0.030080564688328426,
+      "within_proposed_5pct_increase": true,
+      "absolute_difference_below_repeat_variation": true
+    },
+    {
+      "candidate": "DIAG8",
+      "baseline": "DAMP8",
+      "paired_rounds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_ratios": [
+        0.9520204478445814,
+        0.9761600636927875,
+        0.9648470572482978,
+        1.1042474910344584,
+        0.9792482121881815
+      ],
+      "median_paired_ratio": 0.9761600636927875,
+      "p95_paired_ratio": 1.079247635265203,
+      "additional_time_fraction": -0.023839936307212484,
+      "within_proposed_5pct_increase": true,
+      "absolute_difference_below_repeat_variation": true
+    },
+    {
+      "candidate": "MATCHED_ENERGY8",
+      "baseline": "DAMP8",
+      "paired_rounds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_ratios": [
+        0.995270358090771,
+        1.0013582990624814,
+        0.9366714510725982,
+        1.0673388783865116,
+        0.9287359519593018
+      ],
+      "median_paired_ratio": 0.995270358090771,
+      "p95_paired_ratio": 1.0541427625217057,
+      "additional_time_fraction": -0.0047296419092289765,
+      "within_proposed_5pct_increase": true,
+      "absolute_difference_below_repeat_variation": true
+    },
+    {
+      "candidate": "DAMP8_REPEAT",
+      "baseline": "DAMP8",
+      "paired_rounds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_ratios": [
+        1.0074734095689466,
+        0.9646225766582778,
+        0.9090645950970924,
+        1.1366683750529298,
+        0.9932667832170582
+      ],
+      "median_paired_ratio": 0.9932667832170582,
+      "p95_paired_ratio": 1.1108293819561332,
+      "additional_time_fraction": -0.006733216782941809,
+      "within_proposed_5pct_increase": true,
+      "absolute_difference_below_repeat_variation": true
+    }
+  ],
+  "repeat_median_absolute_fractional_variation": 0.035377423341722225,
+  "raw_source": {
+    "path": "artifacts/rtpa_v05_numerical_matched_energy/timing_samples.json",
+    "bytes": 8182,
+    "sha256": "d35c39155f907ff00b6a47d9cc2770c1ce9b0b776397d90d350b105128134786"
+  },
+  "all_final_block_logits_finite": true,
+  "cache_initialization_scope": "cache object construction outside timer; native first-token lazy allocation remains inside its unchanged token-step path",
+  "cache_object_initialization_excluded": true,
+  "native_lazy_cache_allocation_excluded": false,
+  "requested_all_initialization_exclusion_fully_met": false,
+  "cost_target_scope": "descriptive target on recorded path only; first-token lazy-allocation limitation retained, no serving or zero-overhead claim",
+  "scope": "requested paired comparisons only; no kernel or measurement change; small local repeated-block diagnostic, not serving latency"
+}

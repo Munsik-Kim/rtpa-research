@@ -1,0 +1,14 @@
+# Limitations and stopping boundary
+
+1. **Scope:** one fixed Qwen3.5-0.8B-Base revision, three GDN layers, r8/head, and limited local panels. Results do not establish full-layer, larger-model, GDN2, or broad-task performance.
+2. **Output preservation is not correctness:** Native||method KL, ground-truth probability, and strict exact match are different endpoints. Native can be wrong, and generation can depend on a tie in stored BF16 logits.
+3. **Small sample:** 28 task inputs, Native 27/28, and one discordance. A [0,0] bootstrap interval or upper bound of zero does not prove population equivalence or strict absence of benefit. The eight retrospective cases are not a new benchmark.
+4. **Frozen approximation:** K measures low-minus-high source-coefficient responses. Candidate-conditioned dynamics, baseline c, and temporal/cross-row interactions remain relevant. The matching M is unavailable, so energy-normalized anisotropy is unidentified.
+5. **Not pure causal isolation:** MATCHED aligns anchors/sampling but uses low-only error. DIAG also differs in readout, temporal accumulation, and low/high residual treatment. Own-path local SSE does not establish a layer's causal contribution.
+6. **Codec failure:** P_PRE does not fix the FP16 zero-point overflow reproduced on the same finite snapshot. Completing some panels does not demonstrate universal numerical safety. Failures and NOT_RUN entries are not replaced with zero or normal values.
+7. **Cost:** static masks suggest a small added operation count, not a measured overhead upper bound. v0.6 had large repeat variability, unverified physical resident-cache control, and unverified interference from other GPU processes. The 31.26-minute diagnostic stage is not inference latency.
+8. **Data:** software documentation/code and shared synthetic generator families have limited coverage. Some inputs remain LOCAL_ONLY because redistribution rights are unclear. Fresh means previously unused in this research, not absent from model pretraining.
+9. **Provenance:** AUTHOR_CODE_NOT_VERIFIED does not mean author code was never released. Local adaptations do not reproduce the paper's budget, model, chunk-prefill schedule, kernel, or benchmark.
+10. **Reproduction:** checks cover included scalars and selected tensor points, not independent GPU replication. Repository consolidation and the English/license release run no new model forward, calibration, or timing experiment.
+
+This is a preserved research snapshot. Product path remains **CONTINUES_STOPPED**. One narrowly scoped future question is the sensitivity of the focal final-logit boundary to projection precision; **it was not tested as part of repository preparation**. No automatic task/mask/model/budget expansion or repeated search for a DIAG win is authorized by this snapshot.

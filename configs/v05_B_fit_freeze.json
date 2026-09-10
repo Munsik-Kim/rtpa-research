@@ -1,0 +1,15 @@
+{
+  "utc": "2026-09-09T05:04:57.648159+00:00",
+  "files": [
+    {
+      "path": "experiments/rtpa_v05/fit.py",
+      "bytes": 7742,
+      "sha256": "6b1635490129bec2886980cea2f707f9cfe0f4bc1a6ae3224ec225dac0347153"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/protocol.json",
+      "bytes": 5525,
+      "sha256": "3692d1a47340ddd50a3e64a5dea926ff92a27f2e714c32d89c7c3c4a163fd38e"
+    }
+  ]
+}

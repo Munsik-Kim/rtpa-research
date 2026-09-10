@@ -1,0 +1,395 @@
+{
+  "bad_finite_encode_groups": [
+    {
+      "source": {
+        "path": "artifacts/rtpa_v05_numerical_matched_energy/diagnosis_snapshots/B_U8_P_STORE_observed_layer12_finite_encode_metadata_overflow.pt",
+        "bytes": 5996047,
+        "sha256": "6c90a3a621adf711b3f7c2e7044bded858c0fd45cc6e5acf32622fba39c5b151"
+      },
+      "token": 499,
+      "layer": 12,
+      "head": 5,
+      "row": 115,
+      "value_group": 1,
+      "group_width": 32,
+      "original_encode_input_all_finite": true,
+      "metadata": {
+        "group_min": {
+          "value": 0.0035790211986750364,
+          "classification": "FINITE"
+        },
+        "group_max": {
+          "value": 0.003591457149013877,
+          "classification": "FINITE"
+        },
+        "raw_scale": {
+          "value": 4.8768434623980284e-08,
+          "classification": "FINITE"
+        },
+        "cast_scale": {
+          "value": 5.960464477539063e-08,
+          "classification": "FINITE"
+        },
+        "stored_scale": {
+          "value": 5.960464477539063e-08,
+          "classification": "FINITE"
+        },
+        "raw_zero": {
+          "value": -73388.0,
+          "classification": "FINITE"
+        },
+        "stored_zero": {
+          "value": null,
+          "classification": "-Infinity"
+        }
+      },
+      "group_values": [
+        {
+          "value": 0.003580547170713544,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.0035885192919522524,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.00358971836976707,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.0035803893115371466,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.0035891628358513117,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.0035815744195133448,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.0035790211986750364,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.0035907772835344076,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.0035813653375953436,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.0035896950867027044,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.0035882967058569193,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.0035815269220620394,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.0035889993887394667,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.003581928787752986,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.0035817010793834925,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.003589050145819783,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.0035894017200917006,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.003580880118533969,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.003580578835681081,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.0035875088069587946,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.003580063348636031,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.003591457149013877,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.0035884857643395662,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.0035822505597025156,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.003587771439924836,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.0035823138896375895,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.0035810896661132574,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.003588744206354022,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.0035807800013571978,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.0035902459640055895,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.0035886371042579412,
+          "classification": "FINITE"
+        },
+        {
+          "value": 0.003581088734790683,
+          "classification": "FINITE"
+        }
+      ],
+      "original_row_absmax": 0.02028045430779457,
+      "original_state_absmax": 4.024718284606934,
+      "group_spread": 1.2435950338840485e-05,
+      "group_clamp_count": 32,
+      "codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "first_stored_zero_boundary": {
+    "token": 499,
+    "order": 83,
+    "layer": 12,
+    "boundary": "stored_zero",
+    "shape": [
+      16,
+      128,
+      4,
+      1
+    ],
+    "dtype": "torch.float16",
+    "nonfinite": 1,
+    "finite_absmax": 701.0,
+    "first_nonfinite_index": [
+      5,
+      115,
+      1,
+      0
+    ],
+    "per_head_nonfinite": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "per_head_absmax": [
+      164.0,
+      202.0,
+      209.0,
+      175.0,
+      296.0,
+      null,
+      195.0,
+      227.0,
+      190.0,
+      184.0,
+      157.0,
+      701.0,
+      167.0,
+      157.0,
+      182.0,
+      174.0
+    ],
+    "out_of_fp16_range": 1
+  },
+  "historical_NLL_comparison": [
+    {
+      "file": {
+        "path": "artifacts/rtpa_v05_numerical_matched_energy/diagnosis_runs/B_U8_P_PRE_original.jsonl.gz",
+        "bytes": 429559,
+        "sha256": "9704292fabd65c913b3e91b9b5fa22de3a185a1effff02959f8d1b45eaf666e9"
+      },
+      "finite_NLL_pairs": 1023,
+      "max_absolute_NLL_difference": 0.0
+    },
+    {
+      "file": {
+        "path": "artifacts/rtpa_v05_numerical_matched_energy/diagnosis_runs/B_U8_P_STORE_original.jsonl.gz",
+        "bytes": 210365,
+        "sha256": "1e9e2eb31f373c95da9f47ff002d14c21c015d778c7349e1426775dcf3624aed"
+      },
+      "finite_NLL_pairs": 500,
+      "max_absolute_NLL_difference": 0.0
+    },
+    {
+      "file": {
+        "path": "artifacts/rtpa_v05_numerical_matched_energy/diagnosis_runs/NATIVE_REFERENCE_original.jsonl.gz",
+        "bytes": 58908,
+        "sha256": "5b70191bc6120c18e29e7928f8cc1971f1c2ee5109e358fdfdaefc7870102ce2"
+      },
+      "finite_NLL_pairs": 1023,
+      "max_absolute_NLL_difference": 0.0
+    }
+  ],
+  "cross_profile_hash_divergence": {
+    "first_payload_difference": {
+      "token": 0,
+      "different_components": [
+        "0/low_codes",
+        "12/low_codes",
+        "22/low_codes"
+      ]
+    },
+    "first_final_logits_difference_token": 1,
+    "scope": "cross-profile own trajectories, not a proof that the first difference caused the later token499 failure; first-token encode shares the same zero-start recurrence input"
+  },
+  "observational_scope": "parent affine returns unchanged payload; diagnostic duplicate algebra and all-token output/payload hashes certify noninterference. Boundary order is logical codec dependency order, not wallclock instrumentation timing.",
+  "zero_point_is_offset_metadata_not_real_zero": "UINT8 affine FP16 offset; overflow can occur from small group spread relative to offset without large absolute state",
+  "no_new_growth_threshold_or_repairs": true,
+  "same_snapshot_results": {
+    "rows": [
+      {
+        "snapshot": {
+          "path": "artifacts/rtpa_v05_numerical_matched_energy/diagnosis_snapshots/B_U8_P_STORE_observed_layer12_finite_encode_metadata_overflow.pt",
+          "bytes": 5996047,
+          "sha256": "6c90a3a621adf711b3f7c2e7044bded858c0fd45cc6e5acf32622fba39c5b151"
+        },
+        "source_profile": "P_STORE",
+        "token": 499,
+        "layer": 12,
+        "probe_profile": "P_STORE",
+        "input_finite": true,
+        "metadata_nonfinite_groups": 1,
+        "first_bad_group": [
+          5,
+          115,
+          1,
+          0
+        ],
+        "decoded_finite": false,
+        "raw_sse": null,
+        "undefined_reason": "NONFINITE_DECODE",
+        "clipping_count": 672,
+        "codec_events": {
+          "groups": 8192,
+          "exact_zero": 0,
+          "constant_nonzero": 0,
+          "underflow_floor": 0,
+          "metadata_collapse": 0,
+          "metadata_overflow": 1,
+          "high_overflow": 0,
+          "input_nonfinite": 0,
+          "clipped_values": 672,
+          "values": 262144
+        }
+      },
+      {
+        "snapshot": {
+          "path": "artifacts/rtpa_v05_numerical_matched_energy/diagnosis_snapshots/B_U8_P_STORE_observed_layer12_finite_encode_metadata_overflow.pt",
+          "bytes": 5996047,
+          "sha256": "6c90a3a621adf711b3f7c2e7044bded858c0fd45cc6e5acf32622fba39c5b151"
+        },
+        "source_profile": "P_STORE",
+        "token": 499,
+        "layer": 12,
+        "probe_profile": "P_PRE",
+        "input_finite": true,
+        "metadata_nonfinite_groups": 1,
+        "first_bad_group": [
+          5,
+          115,
+          1,
+          0
+        ],
+        "decoded_finite": false,
+        "raw_sse": null,
+        "undefined_reason": "NONFINITE_DECODE",
+        "clipping_count": 0,
+        "codec_events": {
+          "groups": 8192,
+          "exact_zero": 0,
+          "constant_nonzero": 0,
+          "underflow_floor": 0,
+          "metadata_collapse": 0,
+          "metadata_overflow": 1,
+          "high_overflow": 0,
+          "input_nonfinite": 0,
+          "clipped_values": 0,
+          "values": 262144
+        }
+      }
+    ],
+    "status": "COMPLETE",
+    "same_input_not_own_trajectory": true,
+    "repair_or_precision_upgrade": false
+  }
+}

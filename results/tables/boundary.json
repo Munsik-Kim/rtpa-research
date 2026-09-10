@@ -1,0 +1,92 @@
+{
+  "focal": [
+    {
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "tensor_logit_checks": {
+        "KL_native_method": 0.0019267012378845658,
+        "NLL": 1.1429414593573046,
+        "probability": 0.3188796693727431,
+        "rank": 2,
+        "correct_minus_wrong_margin": -0.25
+      },
+      "local_metric_checks": 144,
+      "tied_max_token_ids": [
+        23
+      ],
+      "argmax": 23,
+      "stored_dtype": "torch.bfloat16"
+    },
+    {
+      "method": "DIAG8_FROZEN",
+      "tensor_logit_checks": {
+        "KL_native_method": 0.0019243919253169434,
+        "NLL": 1.1432351956676583,
+        "probability": 0.3187860165904995,
+        "rank": 2,
+        "correct_minus_wrong_margin": -0.25
+      },
+      "local_metric_checks": 144,
+      "tied_max_token_ids": [
+        23
+      ],
+      "argmax": 23,
+      "stored_dtype": "torch.bfloat16"
+    },
+    {
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "tensor_logit_checks": {
+        "KL_native_method": 0.013077431498053183,
+        "NLL": 0.9807373636752633,
+        "probability": 0.3750344600844065,
+        "rank": 1,
+        "correct_minus_wrong_margin": 0.0
+      },
+      "local_metric_checks": 144,
+      "tied_max_token_ids": [
+        22,
+        23
+      ],
+      "argmax": 22,
+      "stored_dtype": "torch.bfloat16"
+    },
+    {
+      "method": "NATIVE_REFERENCE",
+      "tensor_logit_checks": {
+        "KL_native_method": 0.0,
+        "NLL": 1.1975274810973726,
+        "probability": 0.3019398417065395,
+        "rank": 2,
+        "correct_minus_wrong_margin": -0.375
+      },
+      "local_metric_checks": 144,
+      "tied_max_token_ids": [
+        23
+      ],
+      "argmax": 23,
+      "stored_dtype": "torch.bfloat16"
+    }
+  ],
+  "overflow": [
+    {
+      "profile": "P_STORE",
+      "finite_encode_group": true,
+      "raw_zero": -73388.0,
+      "stored_zero_classification": "NEGATIVE_INFINITY",
+      "stored_scale": 5.960464477539063e-08,
+      "restored_all_finite": false,
+      "status": "EXPECTED_HISTORICAL_FAILURE_REPRODUCED"
+    },
+    {
+      "profile": "P_PRE",
+      "finite_encode_group": true,
+      "raw_zero": -73388.0,
+      "stored_zero_classification": "NEGATIVE_INFINITY",
+      "stored_scale": 5.960464477539063e-08,
+      "restored_all_finite": false,
+      "status": "EXPECTED_HISTORICAL_FAILURE_REPRODUCED"
+    }
+  ],
+  "reproduction_level": "CHECKED_AT_INCLUDED_TENSOR_POINTS",
+  "full_window_tensors": "NOT_STORED; scalar-only aggregation outside these points",
+  "first_nonfinite_logit_path": "historical trajectory receipts only; no new model forward"
+}

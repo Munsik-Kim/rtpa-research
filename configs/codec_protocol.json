@@ -1,0 +1,96 @@
+{
+  "start_utc": "2026-09-08T04:34:00+00:00",
+  "created_utc": "2026-09-08T04:44:40.351037+00:00",
+  "budget_seconds": 18000,
+  "no_new_stage_after_seconds": 16200,
+  "report_after_seconds": 16800,
+  "revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "layers": [
+    0,
+    12,
+    22
+  ],
+  "heads": 16,
+  "dk": 128,
+  "dv": 128,
+  "high8": 8,
+  "profiles": [
+    "P_STORE",
+    "P_PRE"
+  ],
+  "methods": [
+    "NATIVE_REFERENCE",
+    "B_U8_P_STORE",
+    "B_DAMP8_P_STORE",
+    "B_DIAG8_P_STORE",
+    "B_JOINT8_P_STORE",
+    "B_U8_P_PRE",
+    "B_DAMP8_P_PRE",
+    "B_DIAG8_P_PRE",
+    "B_JOINT8_P_PRE"
+  ],
+  "train_ids": [
+    "natural_language_s4",
+    "natural_language_s5",
+    "natural_language_s6",
+    "code_s4",
+    "code_s5",
+    "code_s6",
+    "associative_recall_s4",
+    "associative_recall_s5",
+    "associative_recall_s6"
+  ],
+  "eval_role": "DEVELOPMENT_MATCHED_CODEC_COMPARISON",
+  "evaluation_ids": [
+    "rtpa_v02_natural_language_confirm0",
+    "rtpa_v02_natural_language_confirm1",
+    "rtpa_v02_natural_language_confirm2",
+    "rtpa_v02_natural_language_confirm3",
+    "rtpa_v02_code_confirm0",
+    "rtpa_v02_code_confirm1",
+    "rtpa_v02_code_confirm2",
+    "rtpa_v02_code_confirm3",
+    "rtpa_v02_associative_recall_confirm0",
+    "rtpa_v02_associative_recall_confirm1",
+    "rtpa_v02_associative_recall_confirm2",
+    "rtpa_v02_associative_recall_confirm3"
+  ],
+  "warmup": 16,
+  "KL": [
+    16,
+    1024
+  ],
+  "NLL": [
+    16,
+    1023
+  ],
+  "bootstrap": {
+    "seed": 20260910,
+    "resamples": 2000,
+    "unit": "domain-stratified paired sequence",
+    "shared_draws": true
+  },
+  "gates": {
+    "gain_vs_damp_diag": 0.05,
+    "gain_vs_u8": 0.1,
+    "sequence_wins": 8,
+    "mean_delta_nll": 0.01,
+    "max_sequence_delta_nll": 0.05,
+    "extra_nll_vs_damp_diag": 0.005,
+    "material_kl_harm_count": 0,
+    "nonfinite": 0,
+    "late_sum_not_worse": true
+  },
+  "epsilonKL": 1e-08,
+  "tolerances": {
+    "transform_nL2": 0.0001,
+    "transparent_nL2": 1e-05,
+    "transparent_KL": 1e-06,
+    "response_nL2": 0.0001,
+    "quadratic_relative": 1e-10
+  },
+  "no_A_forward": true,
+  "profile_result_selection": false,
+  "product_path": "CONTINUES_STOPPED",
+  "TOKEN_SAFETY": "NOT_ESTABLISHED"
+}

@@ -1,0 +1,221 @@
+{
+  "status": "DAMP_PAPER_METHOD_REIMPLEMENTATION_WITH_DECLARED_CONVENTIONS",
+  "NUMERICAL_IDENTITY_TO_AUTHORS": "UNKNOWN",
+  "paper_version": "2608.27513v1",
+  "paper_files": [
+    {
+      "path": "artifacts/rtpa_v03_damp_comparison/sources/damp_2608.27513v1.html",
+      "bytes": 290134,
+      "sha256": "e55c235ee57d8bf7db1e535d26e136db96f880dc51dab53a6b5021e769691e1f"
+    },
+    {
+      "path": "artifacts/rtpa_v03_damp_comparison/sources/damp_2608.27513v1.pdf",
+      "bytes": 1021038,
+      "sha256": "8a00ba266e1dd91929302536836b997a2bb39e920c3e1ac17081093b93b3d855"
+    }
+  ],
+  "paper_urls": [
+    "https://arxiv.org/html/2608.27513v1",
+    "https://arxiv.org/pdf/2608.27513v1"
+  ],
+  "author_repository_links_in_paper": [],
+  "author_commit": null,
+  "code_existence": "UNKNOWN",
+  "network_requery": "NOT_NEEDED_LOCAL_PRIMARY_SOURCE_AVAILABLE; no claim of code absence",
+  "fields": {
+    "low_dtype": {
+      "status": "PAPER_CONFIRMED",
+      "evidence": {
+        "value": "UINT8",
+        "source": "Appendix A.1, Table 3"
+      },
+      "implementation": "codec.affine / codec.Codec / fit.fit_all"
+    },
+    "high_dtype": {
+      "status": "PAPER_CONFIRMED",
+      "evidence": {
+        "value": "FP16",
+        "source": "Appendix A.1/A.5"
+      },
+      "implementation": "codec.affine / codec.Codec / fit.fit_all"
+    },
+    "accumulator": {
+      "status": "PAPER_CONFIRMED",
+      "evidence": {
+        "value": "FP32 fused recurrence",
+        "source": "Appendix A.5"
+      },
+      "implementation": "codec.affine / codec.Codec / fit.fit_all"
+    },
+    "protection_unit": {
+      "status": "PAPER_CONFIRMED",
+      "evidence": {
+        "value": "key row; independent layer/head; common per-head count",
+        "source": "Algorithm 1; Appendix E"
+      },
+      "implementation": "codec.affine / codec.Codec / fit.fit_all"
+    },
+    "paper_high_count": {
+      "status": "PAPER_CONFIRMED",
+      "evidence": {
+        "value": 16,
+        "denominator": 128,
+        "source": "Appendix A.1"
+      },
+      "implementation": "codec.affine / codec.Codec / fit.fit_all"
+    },
+    "scale_group": {
+      "status": "PAPER_CONFIRMED",
+      "evidence": {
+        "axis": "value",
+        "contiguous_values": 32,
+        "scale_dtype": "FP16",
+        "zero_point_dtype": "FP16",
+        "metadata_bytes_per_group": 4,
+        "source": "Appendix A.1/Table 3"
+      },
+      "implementation": "codec.affine / codec.Codec / fit.fit_all"
+    },
+    "affine_formula": {
+      "status": "PAPER_CONFIRMED",
+      "evidence": {
+        "scale": "(max-min)/255",
+        "zero": "round(-min/scale)",
+        "code": "saturate_unsigned(round(x/scale)+zero)",
+        "decode": "scale*(code-zero)",
+        "source": "Eq3 + Appendix A.1"
+      },
+      "implementation": "codec.affine / codec.Codec / fit.fit_all"
+    },
+    "calibration": {
+      "status": "PAPER_CONFIRMED",
+      "evidence": {
+        "trajectory": "reference model",
+        "documents": 32,
+        "tokens_per_document": 256,
+        "domains": 4,
+        "documents_per_domain": 8,
+        "state_sample_stride": 8,
+        "samples_per_layer": 1024,
+        "aggregation": "equal domain weight",
+        "warmup_exclusion": "UNREPORTED",
+        "source": "Appendix A.2/Algorithm 1"
+      },
+      "implementation": "codec.affine / codec.Codec / fit.fit_all"
+    },
+    "risk": {
+      "status": "PAPER_CONFIRMED",
+      "evidence": {
+        "energy": "mean ||Qlow(S)[row]-S[row]||²",
+        "effective_decay": "exp(mean(log(a)))",
+        "persistence": "1/max(1-a_eff²,tau)",
+        "tau": 0.0001,
+        "score": "energy*persistence",
+        "source": "Eq14/15"
+      },
+      "implementation": "codec.affine / codec.Codec / fit.fit_all"
+    },
+    "selection": {
+      "status": "PAPER_CONFIRMED",
+      "evidence": {
+        "value": "per-head top K; stable selected/complement partition",
+        "tie_break": "UNREPORTED",
+        "source": "Algorithm 1"
+      },
+      "implementation": "codec.affine / codec.Codec / fit.fit_all"
+    },
+    "paper_scope": {
+      "status": "PAPER_CONFIRMED",
+      "evidence": {
+        "models": [
+          "Qwen3.6-35B-A3B",
+          "Kimi-Linear-48B-A3B-Instruct"
+        ],
+        "tasks": [
+          "AIME2026",
+          "HMMT Feb",
+          "IMO-Ans",
+          "GPQA-D",
+          "MMLU-Pro",
+          "LCB-v6"
+        ],
+        "source": "Table 1"
+      },
+      "implementation": "codec.affine / codec.Codec / fit.fit_all"
+    },
+    "transform": {
+      "status": "PAPER_CONFIRMED",
+      "value": "normalized value-axis contiguous block32",
+      "evidence": "A.1 Table3",
+      "implementation": "codec.Codec.transform"
+    },
+    "high_coordinates": {
+      "status": "PAPER_CONFIRMED",
+      "value": "untransformed S_hi FP16; Q_lo Hadamard UINT8",
+      "evidence": "A.5 Eq17 explicitly distinguishes S_hi from transformed Q_lo",
+      "implementation": "codec.Codec.encode"
+    },
+    "hadamard_order_and_signs": {
+      "status": "DECLARED_REIMPLEMENTATION_CHOICE",
+      "value": "Sylvester natural order; no random signs/seed",
+      "evidence": "A.1 only specifies normalized H32",
+      "implementation": "codec.hadamard"
+    },
+    "metadata_order": {
+      "status": "DECLARED_REIMPLEMENTATION_CHOICE",
+      "value": [
+        "P_STORE",
+        "P_PRE"
+      ],
+      "implementation": "codec.affine"
+    },
+    "rounding": {
+      "status": "DECLARED_REIMPLEMENTATION_CHOICE",
+      "value": "nearest ties even for FP16 and integer",
+      "implementation": "codec.affine"
+    },
+    "zero_constant": {
+      "status": "DECLARED_REIMPLEMENTATION_CHOICE",
+      "value": "s=1,z=FP16(-constant),q=0; exact zero => z=0; constant rounding retained",
+      "implementation": "codec.affine"
+    },
+    "underflow": {
+      "status": "DECLARED_REIMPLEMENTATION_CHOICE",
+      "value": "nonzero scale rounded to0 -> FP16 2^-24; both profiles code with floor",
+      "implementation": "codec.affine"
+    },
+    "overflow": {
+      "status": "DECLARED_REIMPLEMENTATION_CHOICE",
+      "value": "retain nonfinite metadata/high and fail profile; no finite clipping/fallback",
+      "implementation": "codec.Codec.assert_finite"
+    },
+    "DAMP_samples": {
+      "status": "DECLARED_REIMPLEMENTATION_CHOICE",
+      "value": "native reference FP32 pre-BF16 state writes at 0-based7,15,...255; no warmup exclusion;9TRAINdocs; equal3domains",
+      "evidence": "A.2 every8writes; phase origin/warmup unspecified",
+      "implementation": "bridge.NativeRecorder"
+    },
+    "RTPA_anchor": {
+      "status": "DECLARED_REIMPLEMENTATION_CHOICE",
+      "value": "native TRAIN reference operands with native BF16 q/k normalization; FP32 own low anchor and original-coordinate response; scored16:256",
+      "implementation": "fit.response"
+    },
+    "allocation": {
+      "status": "DECLARED_REIMPLEMENTATION_CHOICE",
+      "value": "8/head local adaptation; stable row-index ties; JOINT max32swaps inherited floor",
+      "implementation": "fit.fit_all"
+    },
+    "storage_bridge": {
+      "status": "DECLARED_REIMPLEMENTATION_CHOICE",
+      "value": "original-coordinate native compute; encode/decode at storage; no fused port; native BF16reference",
+      "implementation": "bridge.DLayer"
+    }
+  },
+  "source_sections": {
+    "S3.SS2": "3.2 Quantized State Storage We compute each recurrent update in the model’s default compute precision and quantize the resulting state before writing it to persistent GPU memory.\nFor integer storage, we use per-block asymmetric affine quantization.\nFor a block 𝒙 {\\bm{x}} with extrema x min x_{\\min} and x max x_{\\max} , define s = ( x max − x min ) / ( 2 b − 1 ) s=(x_{\\max}-x_{\\min})/(2^{b}-1) and z = round ( − x min / s ) z=\\operatorname{round}(-x_{\\min}/s) . The stored code and its reconstruction are: q i = round ⁡ ( x i / s ) + z , Q b ​ ( x i ) = s ⋅ ( q i − z ) . q_{i}=\\operatorname{round}(x_{i}/s)+z,\\qquad Q_{b}(x_{i})=s\\cdot(q_{i}-z). (3) We use b = 8 b=8 for INT8 and b = 4 b=4 for INT4.\nSpecifications for all evaluated formats are provided in Appendix A.1 .",
+    "A1.SS1": "A.1 Storage Quantizers All groupwise quantizers partition the value dimension of each key channel\ninto contiguous blocks. Quantization parameters are recomputed whenever the\nstate is written. Integer formats. INT8 and INT4 use the asymmetric affine mapping in\nEquation 3 with groups of 32 values. The scale and\nzero point are stored in FP16, and integer codes saturate to the available\nunsigned range. The Hadamard variants apply a normalized block- 32 32 transform\nbefore quantization and its inverse after reconstruction. Floating-point formats. FP8 uses E4M3 ( Micikevicius et al., 2022 ) in the natural domain, with one FP32\nscale for each group 𝒢 \\mathcal{G} of 32 values and no zero point: s 𝒢 \\displaystyle s_{\\mathcal{G}} = max ⁡ { max i ∈ 𝒢 ⁡ | x i | , 10 − 10 } 448 , \\displaystyle=\\frac{\\max\\!\\left\\{\\max_{i\\in\\mathcal{G}}|x_{i}|,10^{-10}\\right\\}}{448}, (11) q i \\displaystyle q_{i} = E4M3 [ clip ( x i / s 𝒢 , − 448,448 ) ] , x ^ i = s 𝒢 FP32 ( q i ) . \\displaystyle=\\operatorname{E4M3}\\!\\left[\\operatorname{clip}\\!\\left(x_{i}/s_{\\mathcal{G}},-448,448\\right)\\right],\\qquad\\widehat{x}_{i}=s_{\\mathcal{G}}\\operatorname{FP32}(q_{i}). NVFP4 uses blocks of 16 E2M1 values, an E4M3 block scale, and one FP32 global\nscale ( Chmiel et al., 2025 ; Nvidia, 2025 ) . The global scale contributes less\nthan 0.01 bit per value for the evaluated states and is omitted after rounding\nto one decimal place. Table 3: State-storage formats. Groups are contiguous along the value\ndimension; H 32 H_{32} denotes the normalized block- 32 32 Hadamard transform.\nEffective bits include scale and zero-point metadata. Format Code Transform Group size Metadata Bits/value INT8 UINT8 – 32 FP16 s , z s,z 9.0 INT8+Hadamard UINT8 H 32 H_{32} 32 FP16 s , z s,z 9.0 INT4 UINT4 – 32 FP16 s , z s,z 5.0 INT4+Hadamard UINT4 H 32 H_{32} 32 FP16 s , z s,z 5.0 FP8 E4M3 – 32 FP32 s s 9.0 NVFP4 E2M1 – 16 E4M3 s b s_{b} , FP32 s g s_{g} 4.5 DAMP storage. At the operating point in Table 1 , Damp retains 16 of 128 key\nchannels in FP16 and stores the remainder with the 9-bit INT8+Hadamard format.\nThe evaluated state dimensions require no group padding, and the fixed\npermutation is stored once with the checkpoint rather than with each request.\nIts effective storage cost is b DAMP = 16 128 ​ ( 16 ) + 112 128 ​ ( 9.0 ) = 9.875 ≈ 9.9 ​ bits/value . b_{\\mathrm{DAMP}}=\\frac{16}{128}\\,(16)+\\frac{112}{128}\\,(9.0)=9.875\\approx 9.9\\ \\text{bits/value}. (12)",
+    "A1.SS2": "A.2 Calibration Protocol Calibration uses 32 documents from the validation split of the\nPile ( Gao et al., 2020 ) . We sample eight documents from each of four domains:\nDM Mathematics, PubMed Abstracts, GitHub, and StackExchange. Each document is\ntruncated to 256 tokens and evaluated once with teacher forcing. Recurrent\nstates are sampled every eight tokens, giving 256 samples per domain and 1,024\nsamples per recurrent layer. Let 𝒟 \\mathcal{D} denote the four calibration domains and let Ω d \\Omega_{d} contain\nthe sampled state writes from domain d d . We use the domain-balanced empirical\nexpectation 𝔼 cal ​ [ f ] = 1 | 𝒟 | ​ ∑ d ∈ 𝒟 1 | Ω d | ​ ∑ ( x , t ) ∈ Ω d f ⁡ ( x , t ) . \\mathbb{E}_{\\mathrm{cal}}[f]=\\frac{1}{|\\mathcal{D}|}\\sum_{d\\in\\mathcal{D}}\\frac{1}{|\\Omega_{d}|}\\sum_{(x,t)\\in\\Omega_{d}}f(x,t). (13) For one recurrent layer and head, let a x , t , u = [ 𝚲 x , t ] u ​ u a_{x,t,u}=[{\\bm{\\Lambda}}_{x,t}]_{uu} . We estimate the two score components as ℰ u \\displaystyle\\mathcal{E}_{u} = 𝔼 cal [ ‖ [ Q lo ( 𝑺 x , t ) ] u : − 𝑺 x , t , u : ‖ 2 2 ] , \\displaystyle=\\mathbb{E}_{\\mathrm{cal}}\\!\\left[\\left\\|[Q_{\\mathrm{lo}}({\\bm{S}}_{x,t})]_{u:}-{\\bm{S}}_{x,t,u:}\\right\\|_{2}^{2}\\right], (14) a eff , u \\displaystyle a_{\\mathrm{eff},u} = exp ⁡ ( 𝔼 cal ​ [ log ⁡ a x , t , u ] ) , 𝒫 u = 1 max ⁡ { 1 − a eff , u 2 , τ } , \\displaystyle=\\exp\\!\\left(\\mathbb{E}_{\\mathrm{cal}}[\\log a_{x,t,u}]\\right),\\qquad\\mathcal{P}_{u}=\\frac{1}{\\max\\!\\left\\{1-a_{\\mathrm{eff},u}^{2},\\tau\\right\\}}, (15) with τ = 10 − 4 \\tau=10^{-4} . Here Q lo Q_{\\mathrm{lo}} is the deployed storage mapping\nspecified in Appendix A.1 . Algorithm 1 applies\nthese estimates independently to every layer and head. Calibration uses only\nstate and decay statistics from this corpus; no downstream evaluation data are\nused. The resulting key-channel indices are fixed after calibration. Calibration cost. Calibration is performed on a dual-socket Intel Xeon 6767P server using 64 CPU\nthreads. Excluding model-loading time, processing all 32 documents takes\napproximately 7 minutes for Qwen3.6-35B (GDN) and 9 minutes for\nKimi-Linear-48B (KDA). Calibration is run once per checkpoint, and the\nresulting layout is reused for all inference requests.",
+    "A1.SS4": "A.4 Offline Layout Construction Algorithm 1 Offline construction of the Damp layout Input: calibration prompts 𝒞 \\mathcal{C} ; low-precision mapping Q lo Q_{\\mathrm{lo}} ; high-precision key-channel count K hi K_{\\mathrm{hi}} ( 16 16 at the main operating point) Output: per-layer, per-head protected-key-channel sets and permutations Run the reference model on 𝒞 \\mathcal{C} and collect state writes and decay factors; Compute ℰ \\mathcal{E} and 𝒫 \\mathcal{P} using\nEquations 14 – 15 ; Compute C = ℰ ⊙ 𝒫 C=\\mathcal{E}\\odot\\mathcal{P} ; foreach recurrent layer ℓ \\ell and head h h do ℋ ℓ , h ← TopK ( C ℓ , h , : , K hi ) \\mathcal{H}_{\\ell,h}\\leftarrow\\operatorname{TopK}(C_{\\ell,h,:},K_{\\mathrm{hi}}) ; Construct π ℓ , h \\pi_{\\ell,h} by a stable partition that places ℋ ℓ , h \\mathcal{H}_{\\ell,h} before [ d k ] ∖ ℋ ℓ , h [d_{k}]\\setminus\\mathcal{H}_{\\ell,h} ; return { ℋ ℓ , h , π ℓ , h } ℓ , h \\{\\mathcal{H}_{\\ell,h},\\pi_{\\ell,h}\\}_{\\ell,h} ;",
+    "A1.SS5": "A.5 Packed Layout and Fused Update Persistent representation. Let π ℓ , h \\pi_{\\ell,h} be the key-channel permutation obtained during calibration. We\napply this permutation consistently to the state and all key-channel-indexed operands,\nplacing the K hi = 16 K_{\\mathrm{hi}}=16 protected key channels before the low-precision key channels. For one\nlayer, head, and request slot, the persistent cache is represented as ℬ ℓ , h \\displaystyle\\mathcal{B}_{\\ell,h} = ( 𝑺 hi , 𝑸 lo , 𝑴 lo ) , \\displaystyle=({\\bm{S}}^{\\mathrm{hi}},{\\bm{Q}}^{\\mathrm{lo}},{\\bm{M}}^{\\mathrm{lo}}), (17) 𝑺 hi \\displaystyle{\\bm{S}}^{\\mathrm{hi}} ∈ FP16 K hi × d v , 𝑸 lo ∈ UINT8 ( d k − K hi ) × d v , \\displaystyle\\in\\mathrm{FP16}^{K_{\\mathrm{hi}}\\times d_{v}},\\qquad{\\bm{Q}}^{\\mathrm{lo}}\\in\\mathrm{UINT8}^{(d_{k}-K_{\\mathrm{hi}})\\times d_{v}}, 𝑴 lo \\displaystyle{\\bm{M}}^{\\mathrm{lo}} ∈ FP16 ( d k − K hi ) × ( d v / G ) × 2 . \\displaystyle\\in\\mathrm{FP16}^{(d_{k}-K_{\\mathrm{hi}})\\times(d_{v}/G)\\times 2}. where G = 32 G=32 and the final metadata dimension stores the affine scale and zero\npoint. 𝑸 lo {\\bm{Q}}^{\\mathrm{lo}} contains the codes produced after the block-Hadamard\ntransform. A checkpoint stores one copy of π ℓ , h \\pi_{\\ell,h} as model\nmetadata. This produces dense, contiguous precision regions accessed with\nregular vector loads and stores. The KDA executor further uses a\nvalue-block-major organization that co-locates each 32-value code tile with its\nscale and zero point. Fused decode executor. The fused CUDA executor performs the complete state transition in one kernel.\nIt consumes recurrent inputs in the calibrated key-channel order, loads the\nFP16 and UINT8 state regions, reconstructs low-precision tiles, and evaluates\nthe recurrence in FP32. Before writeback, the kernel computes blockwise\nminima and maxima, derives new affine parameters, requantizes the low-precision\ntier, and writes both regions directly to ℬ ℓ , h \\mathcal{B}_{\\ell,h} . The layout maps the mixed-precision update to coalesced memory transactions.\nThe executor vectorizes over pairs of value lanes,\nuses instruction-level UINT8 unpacking and saturating packing, and retains\nrecently consumed state tiles in registers across recurrence phases. Shared\nmemory stages the compressed codes and their metadata. Prefill path. Prefill evaluates the recurrence in FP32 within each chunk, then writes the\nchunk-final state directly into the same packed cache defined in\nEquation 17 . Subsequent prefill chunks and decoding\nsteps read that compressed representation."
+  }
+}

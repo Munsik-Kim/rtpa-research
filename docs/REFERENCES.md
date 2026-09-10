@@ -1,0 +1,35 @@
+# References, DAMP provenance, and rights
+
+Repository consolidation used preserved source audits and local implementations. The links below identify original sources; they do not imply that the paper or author code was freshly reverified for the English publication release.
+
+- [DAMP: Decay-Aware Mixed-Precision Recurrent-State Quantization, v1](https://arxiv.org/html/2608.27513v1), arXiv:2608.27513. Preserved HTML SHA-256: `e55c235ee57d8bf7db1e535d26e136db96f880dc51dab53a6b5021e769691e1f`.
+- [Qwen/Qwen3.5-0.8B-Base](https://huggingface.co/Qwen/Qwen3.5-0.8B-Base/tree/dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68), fixed revision. The included tokenizer/configuration retains the original [Apache-2.0 license](../data/tokenizer/LICENSE) and Alibaba Cloud attribution.
+- [EleutherAI/pile_val_test](https://huggingface.co/datasets/EleutherAI/pile_val_test/tree/05b327037e6301f256d8df32193756edc4c8e3bd), revision `05b327037e6301f256d8df32193756edc4c8e3bd`, validation split. [Document receipts](../data/evidence/v06/paper_cal_document_receipts.json) retain domain, row ID, text/token hashes, and the source endpoint. Original documents are not included.
+- [NVIDIA/RULER](https://github.com/NVIDIA/RULER/tree/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a), task-structure reference. Original code was not copied and official RULER scores were not measured. These short-context generators/parsers are separate local tasks.
+- [Transformers](https://github.com/huggingface/transformers), [PyTorch](https://github.com/pytorch/pytorch), [NumPy](https://numpy.org/), and [tokenizers](https://github.com/huggingface/tokenizers). Actual installed versions are preserved in environment/source receipts; compatibility with later versions is not established.
+
+## DAMP: paper definitions versus the executed local paths
+
+The historical status **AUTHOR_CODE_NOT_VERIFIED** is preserved. The retained 2026-09-09 audit searched official arXiv external links, the Hugging Face paper API, and exact-title/ID web and GitHub searches. An error-reporting GitHub link was not accepted as author implementation provenance. An unverified repository, commit, or license does not establish that author code was never released. This publication pass did not repeat that research search.
+
+| Contract | Paper / retained audit | Executed local implementation | Match, difference, or unknown |
+|---|---|---|---|
+| Axes and protected units | Key-by-value state, protected key rows, consistent q/k/state permutation | Index gather/scatter, original-coordinate reconstruction | Semantic correspondence; author-code bit parity unverified |
+| Low/high codec | UINT8, value-axis H32, group32, FP16 metadata/high tier | Same broad format; high rows in original coordinates | Official fused-implementation identity unverified |
+| Code/cast/rounding | Equation 3 range-based scale and unsigned saturation | Separate P_STORE/P_PRE orders; ties-to-even | Intermediate casts and other author details UNKNOWN |
+| Zero, constant, underflow | Insufficient implementation detail verified | s=1, z=−constant, q=0; 2⁻²⁴ underflow floor | Local choices; overflow retained |
+| Reference/update | FP32 recurrent baseline | Native BF16 cache, FP32 target update | Different reference paths |
+| Prefill/write | FP32 within a prefill chunk, compress at its end; per-step decode writes | Per-token prompt writes too, after readout | Explicit adaptation |
+| Calibration | Four Pile domains, eight documents each, 256 tokens, stride 8, balanced energy × persistence | Independent paper-CAL sample of the same composition; legacy TRAIN9 | Exact paper document IDs UNKNOWN |
+| Budget | Default 16/128, 9.875 bits/value | r8, 9.4375 bits/value | Not the paper's budget; only local mixed methods are byte-matched |
+| Model/scope | Paper's large models, recurrent layers, tasks, and kernels | 0.8B, three target layers, eager Torch | Not a benchmark or author-kernel reproduction |
+
+Matching protected-row count and codec alone does not match calibration data, anchors, or scoring. DIAG versus paper-cal DAMP compares complete local procedures. Their ordering is not presented as a refutation of the published DAMP results.
+
+## License and source boundaries
+
+The repository owner has now authorized Apache-2.0 for original project contributions. This supersedes the initial snapshot's undecided project-license status, not third-party rights or historical source hashes. See [LICENSE](../LICENSE), [NOTICE](../NOTICE), and [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md).
+
+The included Qwen tokenizer/configuration retains its original license unchanged. Third-party installed library source trees, model weights, Pile documents, and external software-corpus texts are not bundled. Public availability of a dataset does not establish rights to redistribute every document. Existing private research originals and Drive materials have not been modified.
+
+No author affiliation, publication acceptance, DOI, or institutional endorsement has been inferred. Repository citation metadata identifies the verified GitHub account rather than inventing a paper citation.

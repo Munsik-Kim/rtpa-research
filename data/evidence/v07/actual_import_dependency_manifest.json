@@ -1,0 +1,141 @@
+{
+  "files": [
+    {
+      "path": "experiments/rtpa_v01/__init__.py",
+      "bytes": 60,
+      "sha256": "f2dba5ec9901c14bbe3fa60df75a4b0e3ad1bab4fa63f59a7ba3663fc00dfd8b"
+    },
+    {
+      "path": "experiments/rtpa_v01/core.py",
+      "bytes": 10299,
+      "sha256": "a0deb9ed500601577858aa036e5b952f33bf3efb71bc564abbdab7d29170a7b4"
+    },
+    {
+      "path": "experiments/rtpa_v01/run.py",
+      "bytes": 35768,
+      "sha256": "7acd2e88b4cded3b871c824e6a5aec0fe0b513a6fd516b18ce4eeeda0bf275f7"
+    },
+    {
+      "path": "experiments/rtpa_v03_damp/__init__.py",
+      "bytes": 61,
+      "sha256": "236b9dab44b5f5a99bfe25129ef06a8d450aaa94fd63a3e95e7993e158206868"
+    },
+    {
+      "path": "experiments/rtpa_v03_damp/common.py",
+      "bytes": 3140,
+      "sha256": "f6796a7780faaf531b66fd8b0e3ad0e28fee93723cedf0eda505590790b97860"
+    },
+    {
+      "path": "experiments/rtpa_v03_damp/native_bridge.py",
+      "bytes": 4717,
+      "sha256": "935f0be71936ea777c2452a7de8cc3ed53fb9295d4aad95abd8303c38552c522"
+    },
+    {
+      "path": "experiments/rtpa_v03d1/__init__.py",
+      "bytes": 88,
+      "sha256": "07a23d3dfd462f09771f30ac7794a2422a03ddf2e408f4fa1b27c056b812047e"
+    },
+    {
+      "path": "experiments/rtpa_v03d1/bridge.py",
+      "bytes": 4988,
+      "sha256": "59a04115b2dfb04612cfee82f51b65e12e55d46242cb5bad8026c83e353a0bf2"
+    },
+    {
+      "path": "experiments/rtpa_v03d1/codec.py",
+      "bytes": 4164,
+      "sha256": "4b768f79914f3dcec95c00c6cd64bb6b52ff136e456531b145ce19dcfdb5656a"
+    },
+    {
+      "path": "experiments/rtpa_v03d1/common.py",
+      "bytes": 2157,
+      "sha256": "4ac25ae76c808e1e8632b63151f008049a183d0367e1f91176a482fdcac6a63e"
+    },
+    {
+      "path": "experiments/rtpa_v06/__init__.py",
+      "bytes": 68,
+      "sha256": "0a0633ba15b1d03f481b04a7d8119fc3f34f5de0c197f16d72ebe7c135d40116"
+    },
+    {
+      "path": "experiments/rtpa_v06/common.py",
+      "bytes": 4494,
+      "sha256": "f6f51a6f8cf6e5d8913e2adc6b496bef63dbdfc4988b498adcd2b2900b57d792"
+    },
+    {
+      "path": "experiments/rtpa_v06/runtime.py",
+      "bytes": 13052,
+      "sha256": "2d9e05f773ac3006384398985a2c61fdae565b24d7f803ceb4db1fec99f427a5"
+    },
+    {
+      "path": "experiments/rtpa_v07/__init__.py",
+      "bytes": 73,
+      "sha256": "79d4665f59b5a57712d69c03cb4c0fc03b0b8c1630dcce760a4275f1eb9066c1"
+    },
+    {
+      "path": "experiments/rtpa_v07/common.py",
+      "bytes": 4136,
+      "sha256": "e000b27030ab8b1a8240681f2a02ad016644105b8f853f07b1b063d15aa6008e"
+    },
+    {
+      "path": "experiments/rtpa_v07/metrics.py",
+      "bytes": 1234,
+      "sha256": "61d0488b456e867e433e979594b5d0dea53af084fffca7b82c5ddb0824bf4ef0"
+    },
+    {
+      "path": "experiments/rtpa_v07/runtime.py",
+      "bytes": 11481,
+      "sha256": "84f2389e43bcf50e59eeb476ed34ccc085afcfc963a1ce13f91b9b659448dc51"
+    },
+    {
+      "path": "experiments/rtpa_v07/support_audit.py",
+      "bytes": 4561,
+      "sha256": "3d80e6cdc86f665822122374362d65e2dcbaf5a6272f870a241f7788c9c0114d"
+    },
+    {
+      "path": "src/rsq_gate/__init__.py",
+      "bytes": 75,
+      "sha256": "b581da31fae2c511464c04098999544413e8112fb28dc6d945c7daa26f5439a6"
+    },
+    {
+      "path": "src/rsq_gate/discovery.py",
+      "bytes": 4496,
+      "sha256": "a4e4c13a4ed65a352fd3000ac6cf8bef3cec08b3e8e28acaef778e659f6d2d53"
+    },
+    {
+      "path": "src/rsq_gate/error_feedback.py",
+      "bytes": 1308,
+      "sha256": "b04bb85da895fb9c313cab66c37b91f921f63fa6b1a6ba7e7691abad89981760"
+    },
+    {
+      "path": "src/rsq_gate/experiment_core.py",
+      "bytes": 17193,
+      "sha256": "df5fda6a5023f6b6e4ecb7455697f6a09e56354a58585b10ed71f2c8f2b513e3"
+    },
+    {
+      "path": "src/rsq_gate/gramian.py",
+      "bytes": 963,
+      "sha256": "2e283fc7f937bb0eccfe89b4d60bd8027251b883a6a156727edf5ddbdce23ee8"
+    },
+    {
+      "path": "src/rsq_gate/metrics.py",
+      "bytes": 2357,
+      "sha256": "8be6086641610e3ee5703830231a56507827d19003d305d518670d287c9b63ca"
+    },
+    {
+      "path": "src/rsq_gate/model_adapter.py",
+      "bytes": 5103,
+      "sha256": "ab737e27dc06bee73ef69c991264dfd22a73d39d09fa92ee9ebf0990b09bd180"
+    },
+    {
+      "path": "src/rsq_gate/quantizers.py",
+      "bytes": 2063,
+      "sha256": "2983d99d170903f8e46a0a7dc8f7648967a0de4482a1fbd4699a1c726f3fdf48"
+    },
+    {
+      "path": "src/rsq_gate/recurrence.py",
+      "bytes": 2892,
+      "sha256": "8167d2dfd2ac5a18d5baa1c788140be3081c4e985f3bec49a8070385b5e87986"
+    }
+  ],
+  "scope": "module-import dependency census using CPU; same runtime module, Engine not instantiated",
+  "GPU_started_here": false
+}

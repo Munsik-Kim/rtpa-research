@@ -1,0 +1,19 @@
+{
+  "status": "EXACT_COMPLETED_RUN_ACCOUNTING",
+  "counts": {
+    "A_diagnosis_model_forwards": 4074,
+    "B_fresh_model_forwards": 56320,
+    "CAL_smoke_model_forwards": 160,
+    "CAL_timing_model_forwards": 6144,
+    "new_TRAIN_model_forwards": 0
+  },
+  "total_completed_model_forwards": 66698,
+  "reused_parent_TRAIN_model_forwards_not_new": 2304,
+  "new_local_response_tokens_not_whole_model_forwards": 6912,
+  "A_logical_trajectories": 5,
+  "B_logical_trajectories": 55,
+  "timing_blocks_actually_executed": 24,
+  "interrupted_attempts": [],
+  "unvalidated_midsequence_cache_resume_used": false,
+  "resume_test_status": "NOT_EXERCISED_NO_INTERRUPTION"
+}

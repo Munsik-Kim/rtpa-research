@@ -1,0 +1,106 @@
+{
+  "utc": "2026-09-09T07:42:49.137035+00:00",
+  "files": [
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/pre_gpu_freeze.json",
+      "bytes": 5567,
+      "sha256": "48f99becc14ddf6c39baf137829aee2927bbb3f57f376528e7b4666b024627c7"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/protocol.json",
+      "bytes": 5251,
+      "sha256": "e9c034e50aa615a97c8b4a6c53b3273f4f06b67b9a97237e2f0d7a65c484d430"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sample_size_freeze.json",
+      "bytes": 897,
+      "sha256": "7c9b4e3ccce8226126c56777929b598958d0db93ae8f90f8236e124cadcaa161"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/cal_capability.json",
+      "bytes": 743,
+      "sha256": "a5251ccc69165ffa8c1b6b753e39974e2a25673ba263332341a0da067863d7f8"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/masks.pt",
+      "bytes": 49663,
+      "sha256": "0af4f4d842c18e6e59097d5381950bc8d17250e5d1f67463619dac2ac22e9353"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/paper_calibration_receipt.json",
+      "bytes": 10404,
+      "sha256": "e5eb85a3774457d3a03352998ef6ce23690de3d133041b9d6d684483098d412d"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/evaluation_masks.pt",
+      "bytes": 56899,
+      "sha256": "5cdafcd32abebf5e15ea5d6a48a8a26ed2d17599b1fbb45e8e9f26c3eb2be7b1"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "experiments/rtpa_v06/common.py",
+      "bytes": 4494,
+      "sha256": "f6f51a6f8cf6e5d8913e2adc6b496bef63dbdfc4988b498adcd2b2900b57d792"
+    },
+    {
+      "path": "experiments/rtpa_v06/cpu_contract_audit.py",
+      "bytes": 2751,
+      "sha256": "4d55d53d8c7118849131fba72f3b7259001641f25657a12f6df52ba590ee338d"
+    },
+    {
+      "path": "experiments/rtpa_v06/runtime.py",
+      "bytes": 13052,
+      "sha256": "2d9e05f773ac3006384398985a2c61fdae565b24d7f803ceb4db1fec99f427a5"
+    },
+    {
+      "path": "experiments/rtpa_v06/sources.py",
+      "bytes": 3043,
+      "sha256": "cd8a1d1e1bd8bdfedba7fe6c3138826730f026970b61d6b27f6e788497b7aa7e"
+    },
+    {
+      "path": "experiments/rtpa_v06/finalize.py",
+      "bytes": 25504,
+      "sha256": "e81cca5396161c05852affef7d0c8638d4a7207d131135b331f1a3c4b1eb6a90"
+    },
+    {
+      "path": "experiments/rtpa_v06/pile_data.py",
+      "bytes": 3189,
+      "sha256": "11d2a72cf7c185759c1fb9a52c29a41eb8b8f267b6c91ea7c407f332d626eb13"
+    },
+    {
+      "path": "experiments/rtpa_v06/cpu_reaggregate.py",
+      "bytes": 8300,
+      "sha256": "88a8485267fc49a9b5376202bcfde8cb37d03567ba55a29f3f710d3970792996"
+    },
+    {
+      "path": "experiments/rtpa_v06/run.py",
+      "bytes": 22367,
+      "sha256": "874bf19cb630f287eab64a4b2a4a1f48faf8bcc8a8fa049fe9096ca1b40505ca"
+    },
+    {
+      "path": "experiments/rtpa_v06/preflight.py",
+      "bytes": 8374,
+      "sha256": "4958620dd8dae21faf39697a5cd2fb9d77c2b35eb1254b8559c2223d773bf48d"
+    },
+    {
+      "path": "experiments/rtpa_v06/__init__.py",
+      "bytes": 68,
+      "sha256": "0a0633ba15b1d03f481b04a7d8119fc3f34f5de0c197f16d72ebe7c135d40116"
+    },
+    {
+      "path": "experiments/rtpa_v06/tasks.py",
+      "bytes": 6166,
+      "sha256": "6ec7504420fd44ade80e72cae7a1955abea145873ff62edaec45cd0d863dbd8f"
+    }
+  ],
+  "methods": [
+    "NATIVE_REFERENCE",
+    "DAMP8_LEGACY_PAPER_ADAPTED",
+    "MATCHED_ENERGY8_FROZEN",
+    "DIAG8_FROZEN",
+    "DAMP8_PAPER_CAL_ADAPTED"
+  ],
+  "optional_status": "COMPLETE",
+  "no_task_refitting": true
+}

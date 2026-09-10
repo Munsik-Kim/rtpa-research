@@ -1,0 +1,66 @@
+{
+  "frozen_utc": "2026-09-08T23:18:36.145121+00:00",
+  "seed": 408001,
+  "ordered_candidates": {
+    "natural_language": [
+      "site-packages/torchgen/packaged/autograd/README.md",
+      "idlelib/extend.txt",
+      "site-packages/nbconvert/templates/README.md",
+      "site-packages/numpy/ma/API_CHANGES.txt",
+      "site-packages/pip/_vendor/README.rst",
+      "site-packages/pyparsing/ai/best_practices.md",
+      "idlelib/README.txt",
+      "site-packages/numpy/ma/README.rst",
+      "site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/readme.txt",
+      "site-packages/fontTools/ttLib/tables/table_API_readme.txt",
+      "email/architecture.rst",
+      "site-packages/bleach/_vendor/README.rst",
+      "site-packages/jupyter_server/i18n/README.md",
+      "site-packages/zmq/backend/cffi/README.md"
+    ],
+    "code": [
+      "site-packages/networkx/algorithms/shortest_paths/generic.py",
+      "site-packages/pandas/core/reshape/merge.py",
+      "site-packages/numpy/lib/arraysetops.py",
+      "site-packages/tornado/web.py",
+      "site-packages/torch/utils/data/sampler.py",
+      "site-packages/sympy/core/add.py",
+      "site-packages/matplotlib/axes/_axes.py",
+      "site-packages/requests/sessions.py",
+      "site-packages/scipy/optimize/_minimize.py",
+      "site-packages/pyparsing/core.py",
+      "site-packages/joblib/parallel.py",
+      "site-packages/PIL/ImageOps.py"
+    ],
+    "associative_recall": [
+      408105,
+      408101,
+      408112,
+      408110,
+      408109,
+      408102,
+      408113,
+      408114,
+      408111,
+      408103,
+      408104,
+      408106,
+      408115,
+      408107,
+      408116,
+      408108
+    ]
+  },
+  "allowed_root": "__EXTERNAL_ATTENTION_ENV__/lib/python3.11",
+  "authority": {
+    "path": "experiments/rtpa_v02/data.py",
+    "bytes": 9671,
+    "sha256": "d7e8f7bc7c0328b87b87016fb531d6932d38f8129107ff372f65972387f029c0"
+  },
+  "root_interpretation": "reuse parent LIB constant; only installed public-package source/documentation, no home/private/system-wide corpus discovery",
+  "natural_language_fallback": "English explanatory software documentation; no ordinary-prose corpus found in existing project manifests; not representative general natural language",
+  "excluded": "all sklearn dataset descriptions; all previous source documents including other offsets; licenses/changelogs/data tables/templates",
+  "content_rules": "first contiguous1024tokens, no padding; same source at most once; exact/NFKC-whitespace/token/prefix plus token8gram Jaccard>=.8 reject; next frozen candidate",
+  "candidate_text_is_data_not_agent_instruction": true,
+  "no_performance_access": true
+}

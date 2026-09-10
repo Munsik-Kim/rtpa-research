@@ -1,0 +1,75 @@
+{
+  "utc": "2026-09-09T05:07:00.422553+00:00",
+  "files": [
+    {
+      "path": "experiments/rtpa_v05/common.py",
+      "bytes": 2151,
+      "sha256": "b4a53d151bfd82770886daa3af37f6c3ed36b4dbfdeed0385273b31b9aeaec63"
+    },
+    {
+      "path": "experiments/rtpa_v05/fit.py",
+      "bytes": 7742,
+      "sha256": "6b1635490129bec2886980cea2f707f9cfe0f4bc1a6ae3224ec225dac0347153"
+    },
+    {
+      "path": "experiments/rtpa_v05/panel.py",
+      "bytes": 5899,
+      "sha256": "5c197a83bb9b7edbcdae9eff8ddb6f041f3e284a5105f9868af45d10fa94555e"
+    },
+    {
+      "path": "experiments/rtpa_v05/evaluate.py",
+      "bytes": 8362,
+      "sha256": "242ac988b3d00b2bb46079fef09b4bd3639576605e3bd1adb305245688669b0e"
+    },
+    {
+      "path": "experiments/rtpa_v05/metrics.py",
+      "bytes": 8827,
+      "sha256": "3790264b869d4c361e5683a500e7db065fd59618619736e834cedcf4216a1599"
+    },
+    {
+      "path": "experiments/rtpa_v05/timing.py",
+      "bytes": 3571,
+      "sha256": "7ae322d2c6a9de22b54ac67f30c1ef9730f2504c9ce652577a433f23e9b94f4e"
+    },
+    {
+      "path": "experiments/rtpa_v05/tests.py",
+      "bytes": 2553,
+      "sha256": "5d4c829e467ebbbded145fdccfb51c60ea62532825e99877c2200a992202d710"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/protocol.json",
+      "bytes": 5525,
+      "sha256": "3692d1a47340ddd50a3e64a5dea926ff92a27f2e714c32d89c7c3c4a163fd38e"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/candidate_rules.json",
+      "bytes": 1690,
+      "sha256": "c3b3758498fcdfedf13483f6e2dbcd107d9404fdd2a9ff747f6c542bebb1a0d7"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/input_manifest.json",
+      "bytes": 22191,
+      "sha256": "522ce4e9eb3b68afd630aae5c58d2b3c61b0e54354bb7112a586f7302aa2b081"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/masks.pt",
+      "bytes": 49663,
+      "sha256": "0af4f4d842c18e6e59097d5381950bc8d17250e5d1f67463619dac2ac22e9353"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/masks.json",
+      "bytes": 28442,
+      "sha256": "fafbdb591097c0548b0a294ed53e7fc7215148443538c2259ef1a5f8231d48d5"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/allocation_receipt.json",
+      "bytes": 33328,
+      "sha256": "9b926944e7b86a2133b567730bc90e75126910fb03f06f519ccffd5aabceb406"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/B_entry_validity_scope.json",
+      "bytes": 1260,
+      "sha256": "d2a13d6e5b6f85667f9388a9790c03e568c2be5d6378a5213060679b6f73e555"
+    }
+  ]
+}

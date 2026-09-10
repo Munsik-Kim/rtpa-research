@@ -1,0 +1,32 @@
+{
+  "utc": "2026-09-09T07:06:45.854135+00:00",
+  "python": "3.11.15 | packaged by conda-forge | (main, Mar  5 2026, 16:45:40) [GCC 14.3.0]",
+  "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "torch": "2.11.0+cu128",
+  "transformers": "5.9.0",
+  "numpy": "1.26.4",
+  "CUDA": "12.8",
+  "model_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "tokenizer_path": "__HISTORICAL_PROJECT_ROOT__/models/Qwen3.5-0.8B-Base",
+  "model_dtype": "BF16",
+  "target_update_compute": "FP32",
+  "TF32": false,
+  "deterministic": true,
+  "seed": 603001,
+  "torch_threads": 1,
+  "attention_backend": "sdpa",
+  "native_source": {
+    "path": "__EXTERNAL_ATTENTION_ENV__/lib/python3.11/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py",
+    "bytes": 95653,
+    "sha256": "d67880b98f47d55a9d40679c901a740aa0618b97458824cab2abe9a1f7861be6"
+  },
+  "gpu": {
+    "temperature_C": 38.0,
+    "used_MiB": 3912.0,
+    "total_MiB": 16303.0,
+    "utilization_percent": 0.0
+  },
+  "EOS_ids": [
+    248044
+  ]
+}

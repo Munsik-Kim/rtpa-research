@@ -1,0 +1,68 @@
+{
+  "status": "NOT_IDENTIFIABLE_MISSING_MATCHED_INJECTION_METRIC",
+  "files": [
+    {
+      "layer": 0,
+      "file": {
+        "path": "artifacts/rtpa_v05_numerical_matched_energy/B_train_stats/P_PRE_layer0.pt",
+        "bytes": 2149945,
+        "sha256": "fc9dc97f019142e2dc6264d7d16d365180c3c59acb29f11b8494ca67d43d7762"
+      },
+      "keys": [
+        "K",
+        "c",
+        "J_H",
+        "J_L",
+        "E",
+        "MATCHED_ENERGY_score",
+        "DIAG_score"
+      ],
+      "matched_injection_B_present": false,
+      "matched_injection_M_present": false,
+      "low_only_energy_not_valid_M": true
+    },
+    {
+      "layer": 12,
+      "file": {
+        "path": "artifacts/rtpa_v05_numerical_matched_energy/B_train_stats/P_PRE_layer12.pt",
+        "bytes": 2149958,
+        "sha256": "3d3df1a22ce3946c23dc97ad3de39c7b9138931a21c76c72a11e60f04bd1fed2"
+      },
+      "keys": [
+        "K",
+        "c",
+        "J_H",
+        "J_L",
+        "E",
+        "MATCHED_ENERGY_score",
+        "DIAG_score"
+      ],
+      "matched_injection_B_present": false,
+      "matched_injection_M_present": false,
+      "low_only_energy_not_valid_M": true
+    },
+    {
+      "layer": 22,
+      "file": {
+        "path": "artifacts/rtpa_v05_numerical_matched_energy/B_train_stats/P_PRE_layer22.pt",
+        "bytes": 2149958,
+        "sha256": "47d63242abf280b25cc9beb839e7d955a1792da00647486d1b17331c296d9aa7"
+      },
+      "keys": [
+        "K",
+        "c",
+        "J_H",
+        "J_L",
+        "E",
+        "MATCHED_ENERGY_score",
+        "DIAG_score"
+      ],
+      "matched_injection_B_present": false,
+      "matched_injection_M_present": false,
+      "low_only_energy_not_valid_M": true
+    }
+  ],
+  "reason": "Stored K uses low-high source injections. Only low-only MATCHED row energy is stored. Native operands exist but exact own-low injection B/M would require new trajectory replay, excluded here.",
+  "new_TRAIN_replay": false,
+  "numerical_spectrum_rule": "No spectrum computed absent matched M. If ever present, relative support threshold64*dimension*eps64*max_eigen, negative beyond256*dimension*eps64*norm is unresolved; no tuning."
+}

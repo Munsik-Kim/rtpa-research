@@ -1,0 +1,8 @@
+{
+  "status": "PHYSICAL_RESIDENCY_UNVERIFIED",
+  "evidence": "runtime.cache() installs write-count closures referring to cache/layer. timing() deletes the active cache variable but does not force cyclic GC or count all surviving cache objects before each measured block.",
+  "active_caches_per_timed_block": 1,
+  "total_physically_resident_old_cache_objects": "NOT_MEASURED",
+  "consequence": "Measured block ratios remain raw observations of the frozen path. Do not claim controlled one-request resident peak or an established <=5% overhead upper bound. No extra timing blocks are added to improve a result.",
+  "model_or_codec_modified": false
+}

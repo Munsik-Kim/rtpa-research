@@ -1,0 +1,22 @@
+{
+  "utc": "2026-09-09T22:58:59.063955+00:00",
+  "selected_ids": [
+    "rtpa_v06_eval_key_value_retrieval_long_8",
+    "rtpa_v06_eval_key_value_retrieval_short_5",
+    "rtpa_v06_eval_key_value_retrieval_short_13",
+    "rtpa_v06_eval_key_value_retrieval_short_7",
+    "rtpa_v06_eval_key_value_retrieval_short_11",
+    "rtpa_v06_eval_key_value_retrieval_long_11",
+    "rtpa_v06_eval_key_value_retrieval_long_7",
+    "rtpa_v06_eval_key_value_retrieval_long_13"
+  ],
+  "N": 8,
+  "max_CAL_seconds_per_forward": 0.08370649918749962,
+  "estimated_remaining_forwards": 28588,
+  "elapsed_at_selection": 41.210038900375366,
+  "projected_end_seconds": 2434.211452216148,
+  "fits_80percent": true,
+  "selection_before_v07_diagnostic": true,
+  "panel_hash": "e8c00cc9701901271879406f35d55c79edf366a5e3863f5762ba9a6bbb78d007",
+  "source_freeze_hash": "f2b6521b2196f3546fff4f7e0e5d488b5301d16eaecdd0faba9c4fca79d7af39"
+}

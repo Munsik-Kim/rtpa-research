@@ -1,0 +1,471 @@
+{
+  "methods": {
+    "NATIVE_REFERENCE": {
+      "correct": 27,
+      "total": 28,
+      "numerical_failures": 0,
+      "format_failures": 0,
+      "NOT_RUN": 0,
+      "cells": {
+        "KEY_VALUE_RETRIEVAL/long": {
+          "correct": 13,
+          "n": 14
+        },
+        "KEY_VALUE_RETRIEVAL/short": {
+          "correct": 14,
+          "n": 14
+        }
+      }
+    },
+    "DAMP8_LEGACY_PAPER_ADAPTED": {
+      "correct": 27,
+      "total": 28,
+      "numerical_failures": 0,
+      "format_failures": 0,
+      "NOT_RUN": 0,
+      "cells": {
+        "KEY_VALUE_RETRIEVAL/long": {
+          "correct": 13,
+          "n": 14
+        },
+        "KEY_VALUE_RETRIEVAL/short": {
+          "correct": 14,
+          "n": 14
+        }
+      }
+    },
+    "MATCHED_ENERGY8_FROZEN": {
+      "correct": 28,
+      "total": 28,
+      "numerical_failures": 0,
+      "format_failures": 0,
+      "NOT_RUN": 0,
+      "cells": {
+        "KEY_VALUE_RETRIEVAL/long": {
+          "correct": 14,
+          "n": 14
+        },
+        "KEY_VALUE_RETRIEVAL/short": {
+          "correct": 14,
+          "n": 14
+        }
+      }
+    },
+    "DIAG8_FROZEN": {
+      "correct": 27,
+      "total": 28,
+      "numerical_failures": 0,
+      "format_failures": 0,
+      "NOT_RUN": 0,
+      "cells": {
+        "KEY_VALUE_RETRIEVAL/long": {
+          "correct": 13,
+          "n": 14
+        },
+        "KEY_VALUE_RETRIEVAL/short": {
+          "correct": 14,
+          "n": 14
+        }
+      }
+    },
+    "DAMP8_PAPER_CAL_ADAPTED": {
+      "correct": 27,
+      "total": 28,
+      "numerical_failures": 0,
+      "format_failures": 0,
+      "NOT_RUN": 0,
+      "cells": {
+        "KEY_VALUE_RETRIEVAL/long": {
+          "correct": 13,
+          "n": 14
+        },
+        "KEY_VALUE_RETRIEVAL/short": {
+          "correct": 14,
+          "n": 14
+        }
+      }
+    }
+  },
+  "pairs": [
+    {
+      "candidate": "DIAG8_FROZEN",
+      "baseline": "DAMP8_LEGACY_PAPER_ADAPTED",
+      "difference_pp": 0.0,
+      "CI95_pp": [
+        0.0,
+        0.0
+      ],
+      "paired_table": {
+        "both_correct": 27,
+        "DIAG_only_correct": 0,
+        "baseline_only_correct": 0,
+        "both_incorrect": 1
+      },
+      "per_item_difference": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bootstrap_degenerate": true,
+      "conservative_no_discordance_bound_pp": [
+        -23.163576165011655,
+        23.163576165011655
+      ]
+    },
+    {
+      "candidate": "DIAG8_FROZEN",
+      "baseline": "MATCHED_ENERGY8_FROZEN",
+      "difference_pp": -3.57142857142857,
+      "CI95_pp": [
+        -10.71428571428571,
+        0.0
+      ],
+      "paired_table": {
+        "both_correct": 27,
+        "DIAG_only_correct": 0,
+        "baseline_only_correct": 1,
+        "both_incorrect": 0
+      },
+      "per_item_difference": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bootstrap_degenerate": false,
+      "conservative_no_discordance_bound_pp": null
+    },
+    {
+      "candidate": "DIAG8_FROZEN",
+      "baseline": "DAMP8_PAPER_CAL_ADAPTED",
+      "difference_pp": 0.0,
+      "CI95_pp": [
+        0.0,
+        0.0
+      ],
+      "paired_table": {
+        "both_correct": 27,
+        "DIAG_only_correct": 0,
+        "baseline_only_correct": 0,
+        "both_incorrect": 1
+      },
+      "per_item_difference": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bootstrap_degenerate": true,
+      "conservative_no_discordance_bound_pp": [
+        -23.163576165011655,
+        23.163576165011655
+      ]
+    }
+  ],
+  "planned_items": 28,
+  "completed_trajectories": 140,
+  "raw_answers_reparsed": 172,
+  "common_history_KL_NLL": "NOT_COMPUTED",
+  "original_decision": {
+    "overall_recommendation": "NO_RESOLVED_TASK_ADVANTAGE_IN_SCREENING",
+    "completion": "COMPLETE",
+    "research_axes": {
+      "energy_vs_functional_theory": {
+        "status": "SUPPORTED_IN_SCOPE",
+        "scope": "anisotropic frozen linear map counterexample; not universal GDN task theorem"
+      },
+      "offline_DIAG_to_fixed_mask": {
+        "status": "OBSERVED",
+        "scope": "preserved fixed8 masks and parent full-response score construction; no new online predictor"
+      },
+      "matched_codec_actual_task": {
+        "status": "UNRESOLVED",
+        "scope": "fixed controlled task/model/r8 screening only",
+        "primary": {
+          "candidate": "DIAG8_FROZEN",
+          "baseline": "MATCHED_ENERGY8_FROZEN",
+          "macro_difference_pp": -3.57142857142857,
+          "bootstrap_CI95_pp": [
+            -10.71428571428572,
+            0.0
+          ],
+          "paired_table": {
+            "both_correct": 27,
+            "DIAG_only_correct": 0,
+            "baseline_only_correct": 1,
+            "both_incorrect": 0
+          },
+          "discordant_pairs": 1,
+          "bootstrap_degenerate": false,
+          "cell_exact_bounds": [
+            {
+              "cell": "KEY_VALUE_RETRIEVAL/long",
+              "n": 14,
+              "discordant": 1,
+              "no_discordance_upper": null,
+              "alpha": 0.025,
+              "assumption": "independent Bernoulli discordance in cell; Bonferroni simultaneous confidence"
+            },
+            {
+              "cell": "KEY_VALUE_RETRIEVAL/short",
+              "n": 14,
+              "discordant": 0,
+              "no_discordance_upper": 0.23163576165011657,
+              "alpha": 0.025,
+              "assumption": "independent Bernoulli discordance in cell; Bonferroni simultaneous confidence"
+            }
+          ],
+          "conservative_no_discordance_CI95_pp": null,
+          "exact_bound_explanation": "Bound |paired mean difference| by probability of discordance; no population equivalence claim",
+          "per_item_difference": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "cost": {
+        "status": "UNRESOLVED",
+        "comparisons": [
+          {
+            "candidate": "DIAG",
+            "baseline": "MATCHED",
+            "paired_ratios": [
+              1.0150420686838357,
+              1.0954519194082293,
+              0.9121244755748543,
+              0.9716837849646426,
+              0.8929671596170992,
+              0.9179338235065557,
+              1.0028106874236669,
+              0.7663433630580415
+            ],
+            "median_ratio": 0.9448088042355991,
+            "p95_ratio": 1.0673084716546914,
+            "median_ratio_bootstrap_CI95": [
+              0.8929671596170992,
+              1.0150420686838357
+            ],
+            "status": "WITHIN_PROPOSED_5_PERCENT_IN_THIS_MEASUREMENT",
+            "difference_smaller_than_repeat_variation": true
+          },
+          {
+            "candidate": "DIAG",
+            "baseline": "DAMP",
+            "paired_ratios": [
+              1.1224759522977783,
+              1.1522336496655934,
+              0.9262866090865912,
+              1.072442796415203,
+              0.9943301069511762,
+              0.9772474236817693,
+              1.2598906493514845,
+              1.073784023360239
+            ],
+            "median_ratio": 1.0731134098877209,
+            "p95_ratio": 1.2222106994614226,
+            "median_ratio_bootstrap_CI95": [
+              0.9772474236817693,
+              1.1522336496655934
+            ],
+            "status": "COST_UNRESOLVED",
+            "difference_smaller_than_repeat_variation": true
+          },
+          {
+            "candidate": "DAMP_REPEAT",
+            "baseline": "DAMP",
+            "paired_ratios": [
+              1.2360131205237908,
+              1.2368925494868295,
+              0.8336097275899893,
+              0.9385611336467015,
+              1.0959486925910773,
+              0.9741329658219651,
+              1.3348598543173178,
+              1.213269016074699
+            ],
+            "median_ratio": 1.154608854332888,
+            "p95_ratio": 1.3005712976266468,
+            "median_ratio_bootstrap_CI95": [
+              0.9385611336467015,
+              1.2368925494868295
+            ],
+            "status": "COST_UNRESOLVED",
+            "difference_smaller_than_repeat_variation": true
+          }
+        ],
+        "control_limitation": {
+          "status": "PHYSICAL_RESIDENCY_UNVERIFIED",
+          "evidence": "runtime.cache() installs write-count closures referring to cache/layer. timing() deletes the active cache variable but does not force cyclic GC or count all surviving cache objects before each measured block.",
+          "active_caches_per_timed_block": 1,
+          "total_physically_resident_old_cache_objects": "NOT_MEASURED",
+          "consequence": "Measured block ratios remain raw observations of the frozen path. Do not claim controlled one-request resident peak or an established <=5% overhead upper bound. No extra timing blocks are added to improve a result.",
+          "model_or_codec_modified": false,
+          "system_exclusivity_observation": {
+            "observed_utc": "2026-09-09T08:32:02Z",
+            "scope": "Read-only GPU process inventory during frozen task execution; no worker terminated or altered",
+            "own_main_worker_pid": 48844,
+            "gpu_compute_process_ids": [
+              48844,
+              50612
+            ],
+            "process_names_reported_by_nvidia_smi": "Not Found (WSL)",
+            "per_process_gpu_memory": null,
+            "per_process_gpu_memory_reason": "NVIDIA WSL query returned N/A",
+            "nearby_total_gpu_memory_MiB": 8693,
+            "nearby_gpu_total_MiB": 16303,
+            "nearby_temperature_C": 42,
+            "other_process_workload_and_ownership": "UNKNOWN; no command arguments or private process data inspected",
+            "consequence": "System load is not proven exclusive. Preserve timing raw samples and treat small overhead claims as unresolved; do not attribute all system VRAM to this model or alter frozen sample counts.",
+            "task_or_codec_changed": false
+          }
+        }
+      }
+    },
+    "product_path": "CONTINUES_STOPPED",
+    "author_code_status": "AUTHOR_CODE_NOT_VERIFIED",
+    "known_overflow_repaired": false,
+    "historical_v05_preserved": true,
+    "next_smallest_experiment": "고정 Native·MATCHED_ENERGY8·DIAG8과 현재의 긴 KEY_VALUE_RETRIEVAL template·codec·r8을 그대로 두고, 별도 사전등록한 독립 입력에서 이번 단 한 건의 차이가 재현되는지 확인하는 것이 가장 작은 후속이다. 현재 표본에서는 MATCHED가 한 건 더 맞혔으므로 DIAG를 단독 승자로 유지하지 않는다. 난이도·mask·보호량·JOINT를 동시에 바꾸거나 현재 panel을 재평가해 독립 확인이라고 하지 않는다. LATEST_WRITE의 Native capability와 비용의 독점 GPU/물리 cache 통제는 각각 별도의 미해결 항목이며 이번 단계에서 추가 탐색하지 않는다.",
+    "claims_excluded": [
+      "official DAMP kernel/benchmark reproduction",
+      "official RULER score",
+      "serving latency or HBM gain",
+      "whole GPU memory reduction",
+      "architecture-general theorem",
+      "pure full-transition causal attribution",
+      "product readiness"
+    ]
+  },
+  "integrated_historical_decision": "STOP_METHOD_ADVANTAGE_NOT_SUPPORTED",
+  "source_unit": "independent synthetic item within family/length",
+  "native_retention": {
+    "DAMP8_LEGACY_PAPER_ADAPTED": {
+      "native_correct_total": 27,
+      "retained": 27,
+      "lost": 0,
+      "recovered_native_wrong": 0,
+      "secondary_subset_only": true
+    },
+    "MATCHED_ENERGY8_FROZEN": {
+      "native_correct_total": 27,
+      "retained": 27,
+      "lost": 0,
+      "recovered_native_wrong": 1,
+      "secondary_subset_only": true
+    },
+    "DIAG8_FROZEN": {
+      "native_correct_total": 27,
+      "retained": 27,
+      "lost": 0,
+      "recovered_native_wrong": 0,
+      "secondary_subset_only": true
+    },
+    "DAMP8_PAPER_CAL_ADAPTED": {
+      "native_correct_total": 27,
+      "retained": 27,
+      "lost": 0,
+      "recovered_native_wrong": 0,
+      "secondary_subset_only": true
+    }
+  },
+  "reproduction_level": "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS"
+}

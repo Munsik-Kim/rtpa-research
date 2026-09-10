@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this research snapshot, please cite this repository and identify the commit used."
+title: "Recurrent-state precision allocation: from output preservation to task accuracy"
+type: software
+authors:
+  - name: "Munsik-Kim"
+    website: "https://github.com/Munsik-Kim"
+repository-code: "https://github.com/Munsik-Kim/rtpa-research"
+url: "https://github.com/Munsik-Kim/rtpa-research"
+license: Apache-2.0
+date-released: 2026-09-10
+abstract: "Evidence snapshot comparing fixed recurrent-state precision masks under matched codecs and payloads. Some output-distribution gains were observed, but additional task-accuracy benefit and a reliable cost bound were not established. Includes CPU reconstruction tools and selected historical numerical code."

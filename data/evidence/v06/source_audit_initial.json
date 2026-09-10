@@ -1,0 +1,106 @@
+{
+  "utc": "2026-09-09T07:01:52.999726+00:00",
+  "paper_version": "2608.27513v1",
+  "paper": {
+    "path": "artifacts/rtpa_v03_damp_comparison/sources/damp_2608.27513v1.html",
+    "bytes": 290134,
+    "sha256": "e55c235ee57d8bf7db1e535d26e136db96f880dc51dab53a6b5021e769691e1f"
+  },
+  "author_code_status": "AUTHOR_CODE_NOT_VERIFIED",
+  "paper_external_links": [
+    {
+      "text": "Learn more",
+      "url": "https://info.arxiv.org/about"
+    },
+    {
+      "text": "Why HTML?",
+      "url": "https://info.arxiv.org/about/accessible_HTML.html"
+    },
+    {
+      "text": "License: CC BY 4.0",
+      "url": "https://info.arxiv.org/help/license/index.html#licenses-available"
+    },
+    {
+      "text": "https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered",
+      "url": "https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered"
+    },
+    {
+      "text": "Link",
+      "url": "https://openreview.net/forum?id=KkN6enKAlU"
+    },
+    {
+      "text": "L A T E xml",
+      "url": "https://math.nist.gov/~BMiller/LaTeXML/"
+    },
+    {
+      "text": "the following issues",
+      "url": "https://github.com/arXiv/html_feedback/issues"
+    },
+    {
+      "text": "list of packages that need conversion",
+      "url": "https://github.com/brucemiller/LaTeXML/wiki/Porting-LaTeX-packages-for-LaTeXML"
+    },
+    {
+      "text": "developer contributions",
+      "url": "https://github.com/brucemiller/LaTeXML/issues"
+    },
+    {
+      "text": "member institutions",
+      "url": "https://info.arxiv.org/about/ourmembers.html"
+    },
+    {
+      "text": "About",
+      "url": "https://info.arxiv.org/about"
+    },
+    {
+      "text": "Help",
+      "url": "https://info.arxiv.org/help"
+    },
+    {
+      "text": "Contact",
+      "url": "https://info.arxiv.org/help/contact.html"
+    },
+    {
+      "text": "Subscribe",
+      "url": "https://info.arxiv.org/help/subscribe"
+    },
+    {
+      "text": "Copyright",
+      "url": "https://info.arxiv.org/help/license/index.html"
+    },
+    {
+      "text": "Privacy",
+      "url": "https://info.arxiv.org/help/policies/privacy_policy.html"
+    },
+    {
+      "text": "Accessibility",
+      "url": "https://info.arxiv.org/help/web_accessibility.html"
+    },
+    {
+      "text": "Operational Status (opens in new tab)",
+      "url": "https://status.arxiv.org"
+    },
+    {
+      "text": "",
+      "url": "https://www.simonsfoundation.org/"
+    },
+    {
+      "text": "",
+      "url": "https://www.sfi.org.bm/"
+    },
+    {
+      "text": "",
+      "url": "https://www.schmidtsciences.org/"
+    }
+  ],
+  "HF_paper_metadata_available": false,
+  "RULER_commit": "c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a",
+  "scope": "Paper-method adaptation, not author kernel / published benchmark reproduction",
+  "searches": [
+    "official arXiv abs and v1 HTML external links",
+    "HF paper API",
+    "web search exact arXiv id + github",
+    "web search full paper title + code"
+  ],
+  "excluded": "arXiv Report GitHub Issue link is not author implementation"
+}

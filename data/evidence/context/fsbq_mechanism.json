@@ -1,0 +1,285 @@
+{
+  "status": "COMPLETE",
+  "overall_causal_attribution": "MIXED_EVIDENCE",
+  "causes": [
+    {
+      "hypothesis": "NORMALIZED_OBJECTIVE_CONCENTRATION",
+      "status": "OBSERVED",
+      "evidence": {
+        "top10_objective_share": 0.7741021621746674,
+        "top10_absolute_SSE_share": 0.47943542731974437,
+        "intersection": 0
+      },
+      "limit": "concentration does not invalidate raw severe/adverse cases and does not isolate the penalty causally"
+    },
+    {
+      "hypothesis": "COMMON_STATE_QUANTIZATION_DISADVANTAGE",
+      "status": "NOT_SUPPORTED_BY_MEDIAN",
+      "evidence": {
+        "T0_common_nmse_ratio": 0.9717600988780741,
+        "learned_functional_common_nmse_ratio": 0.9728254305598044
+      },
+      "limit": "fixed common TRAIN snapshots only; not a proof for every state distribution"
+    },
+    {
+      "hypothesis": "FUNCTIONAL_ORIENTATION_DISADVANTAGE",
+      "status": "SUPPORTED_SIGNAL",
+      "evidence": {
+        "energy_ratio": 0.9728254305598044,
+        "isolated_functional_ratio": 1.210294368298236
+      },
+      "limit": "observed alignment gap is not a global-optimum or architecture-general statement"
+    },
+    {
+      "hypothesis": "RECURRENT_INTERACTION_DIFFERENCE",
+      "status": "MIXED_EVIDENCE",
+      "evidence": {
+        "isolated_functional_ratio": 1.210294368298236,
+        "own_replay_output_ratio": 1.2204603907740013
+      },
+      "limit": "difference indicates interaction relevance but identifies no unique cross-time causal term"
+    },
+    {
+      "hypothesis": "INITIALIZATION_SENSITIVITY",
+      "status": "OBSERVED",
+      "evidence": {
+        "R_FUNC18": 47.94030506619298,
+        "I_FUNC18": 8.94136358947663,
+        "R_FUNC180": 63.6559755132939,
+        "I_FUNC180": 8.979480619220556
+      },
+      "limit": "one fixed random seed and one block4 chart"
+    },
+    {
+      "hypothesis": "TRAINING_BUDGET_SENSITIVITY",
+      "status": "OBSERVED",
+      "evidence": {
+        "R_FUNC_18_to_180_relative_change": -0.3278174893839685,
+        "I_FUNC_18_to_180_relative_change": -0.004262999637861364
+      },
+      "limit": "180 is a fixed comparison budget, not a convergence or optimality certificate"
+    },
+    {
+      "hypothesis": "STE_DIRECTION_MISMATCH_SIGNAL",
+      "status": "SUPPORTED_SIGNAL",
+      "evidence": {
+        "negative_STE_useful_descent_fraction_by_delta": {
+          "0.001": {
+            "count": 27,
+            "useful_descent_count": 10,
+            "useful_descent_fraction": 0.37037037037037035,
+            "median_objective_delta": 0.0016181828021553102,
+            "median_raw_SSE_delta": 5.052665850657778e-05,
+            "median_changed_code_fraction": 1.9073486328125e-07
+          },
+          "0.01": {
+            "count": 27,
+            "useful_descent_count": 6,
+            "useful_descent_fraction": 0.2222222222222222,
+            "median_objective_delta": 0.06351580902857767,
+            "median_raw_SSE_delta": 0.0006621358901104379,
+            "median_changed_code_fraction": 9.088516235351562e-05
+          }
+        }
+      },
+      "limit": "finite hard-loss probe; not an exact derivative test or universal STE impossibility result"
+    },
+    {
+      "hypothesis": "NO_IDENTITY_IMPROVEMENT_IN_TESTED_PROTOCOL",
+      "status": "SUPPORTED",
+      "evidence": {
+        "cal_entry_gate": "FAIL",
+        "candidates": [
+          {
+            "candidate": "R_FUNC",
+            "train_identity_objective": {
+              "groups": 432,
+              "mean_term": 1.0,
+              "top10_term": 0.0,
+              "objective": 1.0,
+              "top_group_count": 44
+            },
+            "train_candidate_objective": {
+              "groups": 432,
+              "mean_term": 7.1457155579570975,
+              "top10_term": 56.51025995533681,
+              "objective": 63.6559755132939,
+              "top_group_count": 44
+            },
+            "train_objective_ratio_vs_identity": 63.6559755132939,
+            "cal_valid_pooled_G_vs_identity": -0.05888076337349424,
+            "cal_valid_sequence_rows": [
+              {
+                "sequence_id": "natural_language_s7",
+                "D_out": 0.16491107438924382,
+                "identity_D_out": 0.1387706411151313,
+                "relative_change_vs_identity": 0.18837149604594733,
+                "win": false,
+                "worsened_over_10pct": true
+              },
+              {
+                "sequence_id": "code_s7",
+                "D_out": 0.1752190811706872,
+                "identity_D_out": 0.1749139473453875,
+                "relative_change_vs_identity": 0.0017444796708931461,
+                "win": false,
+                "worsened_over_10pct": false
+              },
+              {
+                "sequence_id": "associative_recall_s7",
+                "D_out": 0.19313458940113692,
+                "identity_D_out": 0.1880327565763249,
+                "relative_change_vs_identity": 0.02713268112272303,
+                "win": false,
+                "worsened_over_10pct": false
+              }
+            ],
+            "cal_valid_wins": 0,
+            "cal_valid_material_severe": 43,
+            "cal_valid_nonfinite": 0,
+            "cal_valid_head_cases": 144,
+            "export_checks": [
+              {
+                "candidate": "R_FUNC",
+                "layer": 0,
+                "export_rebuild_exact": true,
+                "orthogonality_max": 4.443433567757893e-07,
+                "no_quant_max_head_relative_L2": 2.8934398033382506e-07,
+                "no_quant_pass": true,
+                "current_output_exact": true,
+                "stored_state_exact": true
+              },
+              {
+                "candidate": "R_FUNC",
+                "layer": 12,
+                "export_rebuild_exact": true,
+                "orthogonality_max": 4.802013222615642e-07,
+                "no_quant_max_head_relative_L2": 2.1903916935342924e-06,
+                "no_quant_pass": true,
+                "current_output_exact": true,
+                "stored_state_exact": true
+              },
+              {
+                "candidate": "R_FUNC",
+                "layer": 22,
+                "export_rebuild_exact": true,
+                "orthogonality_max": 4.897021312899597e-07,
+                "no_quant_max_head_relative_L2": 1.4245098671471404e-06,
+                "no_quant_pass": true,
+                "current_output_exact": true,
+                "stored_state_exact": true
+              }
+            ],
+            "conditions": {
+              "normal_identity_train_objective": true,
+              "train_out_improvement_at_least_1pct": false,
+              "cal_valid_pooled_G_at_least_0p02": false,
+              "cal_valid_sequence_wins_at_least_2": false,
+              "cal_valid_material_severe_zero": false,
+              "cal_valid_nonfinite_zero": true,
+              "no_cal_valid_sequence_worse_over_10pct": false,
+              "export_noquant_current_runtime": true
+            },
+            "pass": false
+          },
+          {
+            "candidate": "I_FUNC",
+            "train_identity_objective": {
+              "groups": 432,
+              "mean_term": 1.0,
+              "top10_term": 0.0,
+              "objective": 1.0,
+              "top_group_count": 44
+            },
+            "train_candidate_objective": {
+              "groups": 432,
+              "mean_term": 1.9157161597164856,
+              "top10_term": 7.06376445950407,
+              "objective": 8.979480619220556,
+              "top_group_count": 44
+            },
+            "train_objective_ratio_vs_identity": 8.979480619220556,
+            "cal_valid_pooled_G_vs_identity": -0.13576454367555235,
+            "cal_valid_sequence_rows": [
+              {
+                "sequence_id": "natural_language_s7",
+                "D_out": 0.14674454269085216,
+                "identity_D_out": 0.1387706411151313,
+                "relative_change_vs_identity": 0.057461012730389456,
+                "win": false,
+                "worsened_over_10pct": false
+              },
+              {
+                "sequence_id": "code_s7",
+                "D_out": 0.20337833114563345,
+                "identity_D_out": 0.1749139473453875,
+                "relative_change_vs_identity": 0.1627336426410855,
+                "win": false,
+                "worsened_over_10pct": true
+              },
+              {
+                "sequence_id": "associative_recall_s7",
+                "D_out": 0.21914775325273644,
+                "identity_D_out": 0.1880327565763249,
+                "relative_change_vs_identity": 0.16547646932879786,
+                "win": false,
+                "worsened_over_10pct": true
+              }
+            ],
+            "cal_valid_wins": 0,
+            "cal_valid_material_severe": 32,
+            "cal_valid_nonfinite": 0,
+            "cal_valid_head_cases": 144,
+            "export_checks": [
+              {
+                "candidate": "I_FUNC",
+                "layer": 0,
+                "export_rebuild_exact": true,
+                "orthogonality_max": 4.2433165958755126e-07,
+                "no_quant_max_head_relative_L2": 3.4762575440901283e-07,
+                "no_quant_pass": true,
+                "current_output_exact": true,
+                "stored_state_exact": true
+              },
+              {
+                "candidate": "I_FUNC",
+                "layer": 12,
+                "export_rebuild_exact": true,
+                "orthogonality_max": 3.847072491680592e-07,
+                "no_quant_max_head_relative_L2": 2.983426316011704e-06,
+                "no_quant_pass": true,
+                "current_output_exact": true,
+                "stored_state_exact": true
+              },
+              {
+                "candidate": "I_FUNC",
+                "layer": 22,
+                "export_rebuild_exact": true,
+                "orthogonality_max": 3.897515341577673e-07,
+                "no_quant_max_head_relative_L2": 1.0048048967795876e-06,
+                "no_quant_pass": true,
+                "current_output_exact": true,
+                "stored_state_exact": true
+              }
+            ],
+            "conditions": {
+              "normal_identity_train_objective": true,
+              "train_out_improvement_at_least_1pct": false,
+              "cal_valid_pooled_G_at_least_0p02": false,
+              "cal_valid_sequence_wins_at_least_2": false,
+              "cal_valid_material_severe_zero": false,
+              "cal_valid_nonfinite_zero": true,
+              "no_cal_valid_sequence_worse_over_10pct": false,
+              "export_noquant_current_runtime": true
+            },
+            "pass": false
+          }
+        ]
+      },
+      "limit": "only the fixed init/optimizer/block/objective/180-update protocol"
+    }
+  ],
+  "tail_penalty_causal_contribution": "NOT_ISOLATED; penalty-off ablation prohibited by protocol",
+  "literature_relation": "DIFFERENT_SETTING_NOT_A_REFUTATION; PRIOR_FAILURE_MODE_COMPATIBLE where noted; no contradiction claim",
+  "utc": "2026-09-07T07:15:41.448954+00:00"
+}

@@ -1,0 +1,61 @@
+{
+  "orders": [
+    [
+      "DIAG",
+      "DAMP",
+      "MATCHED",
+      "DAMP_REPEAT"
+    ],
+    [
+      "DAMP",
+      "MATCHED",
+      "DAMP_REPEAT",
+      "DIAG"
+    ],
+    [
+      "MATCHED",
+      "DAMP_REPEAT",
+      "DIAG",
+      "DAMP"
+    ],
+    [
+      "DAMP_REPEAT",
+      "DIAG",
+      "DAMP",
+      "MATCHED"
+    ],
+    [
+      "DIAG",
+      "DAMP",
+      "MATCHED",
+      "DAMP_REPEAT"
+    ],
+    [
+      "DAMP",
+      "MATCHED",
+      "DAMP_REPEAT",
+      "DIAG"
+    ],
+    [
+      "MATCHED",
+      "DAMP_REPEAT",
+      "DIAG",
+      "DAMP"
+    ],
+    [
+      "DAMP_REPEAT",
+      "DIAG",
+      "DAMP",
+      "MATCHED"
+    ],
+    [
+      "DIAG",
+      "DAMP",
+      "MATCHED",
+      "DAMP_REPEAT"
+    ]
+  ],
+  "seed": 603019,
+  "warmup_round": 0,
+  "measured_rounds": 8
+}

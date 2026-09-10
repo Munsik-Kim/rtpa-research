@@ -1,0 +1,128 @@
+{
+  "by_phase": {
+    "BOUNDARIES": {
+      "forwards": 162,
+      "seconds": 12.143881060997956,
+      "receipts": 1
+    },
+    "CAL1": {
+      "forwards": 10131,
+      "seconds": 453.7321042959993,
+      "receipts": 16
+    },
+    "CAL2": {
+      "forwards": 10142,
+      "seconds": 472.99850643699756,
+      "receipts": 16
+    },
+    "PAPER_CAL": {
+      "forwards": 8192,
+      "seconds": 401.11139697499675,
+      "receipts": 1
+    },
+    "LATENCY_CAL": {
+      "forwards": 1280,
+      "seconds": 76.68324536700311,
+      "receipts": 1
+    },
+    "EVAL": {
+      "forwards": 88725,
+      "seconds": 5175.742200484001,
+      "receipts": 140
+    },
+    "TIMING": {
+      "forwards": 10368,
+      "seconds": 457.0301192980114,
+      "receipts": 36
+    }
+  },
+  "receipt_model_forwards": 129000,
+  "process_attempted_forwards": 129000,
+  "counts_reconcile": true,
+  "new_DIAG_fitting_forwards": 0,
+  "new_MATCHED_fitting_forwards": 0,
+  "reused_parent_masks": true,
+  "generation_total_output_tokens": 1032,
+  "generation_total_forwards": 108998,
+  "generation_target_writes": 326994,
+  "generation_all_recurrent_writes": 1961964,
+  "gpu_budget": {
+    "first_gpu_work_utc": "2026-09-09T07:19:09.162825+00:00",
+    "first_gpu_epoch": 1788938349.1628351,
+    "budget_seconds": 10800,
+    "report_reserve_seconds": 1200,
+    "reset_on_resume": false
+  },
+  "GPU_stage_wall_seconds": 7055.1743223667145,
+  "CPU_initial_audit": {
+    "first_recorded_cpu_audit_utc": "2026-09-09T07:05:36.230611+00:00",
+    "earlier_readonly_inspection_start": "NOT_PRECISELY_RECORDED",
+    "GPU_work_started": false
+  },
+  "CPU_start_limitation": "read-only inspection before first CPU receipt was not precisely timed",
+  "midcache_resume": "NOT_USED",
+  "interruption_or_resume_test": "NOT_EXERCISED_NO_INTERRUPTION",
+  "whole_model_active_methods": [
+    "NATIVE_REFERENCE",
+    "DAMP8_LEGACY_PAPER_ADAPTED",
+    "MATCHED_ENERGY8_FROZEN",
+    "DIAG8_FROZEN",
+    "DAMP8_PAPER_CAL_ADAPTED"
+  ],
+  "alias_count": 0,
+  "additional_post_timing_finite_audit": {
+    "status": "PASS_REPEATED_PATH_FINITE",
+    "rows": [
+      {
+        "label": "DAMP",
+        "method": "DAMP8_LEGACY_PAPER_ADAPTED",
+        "status": "FINITE",
+        "forwards": 288,
+        "target_writes": 864,
+        "all_writes": 5184,
+        "failure": null
+      },
+      {
+        "label": "DIAG",
+        "method": "DIAG8_FROZEN",
+        "status": "FINITE",
+        "forwards": 288,
+        "target_writes": 864,
+        "all_writes": 5184,
+        "failure": null
+      },
+      {
+        "label": "MATCHED",
+        "method": "MATCHED_ENERGY8_FROZEN",
+        "status": "FINITE",
+        "forwards": 288,
+        "target_writes": 864,
+        "all_writes": 5184,
+        "failure": null
+      },
+      {
+        "label": "DAMP_REPEAT",
+        "method": "DAMP8_LEGACY_PAPER_ADAPTED",
+        "status": "FINITE",
+        "forwards": 288,
+        "target_writes": 864,
+        "all_writes": 5184,
+        "failure": null
+      }
+    ],
+    "forward_count": 1152,
+    "seconds": 73.61052152499906,
+    "same_original_stage_budget": {
+      "first_gpu_work_utc": "2026-09-09T07:19:09.162825+00:00",
+      "first_gpu_epoch": 1788938349.1628351,
+      "budget_seconds": 10800,
+      "report_reserve_seconds": 1200,
+      "reset_on_resume": false
+    },
+    "scope": "Same frozen timing input/methods rerun outside timing with finite monitoring. Original timed tensors were not saved, so not claiming byte-for-byte readback of timed states. No additional latency samples.",
+    "original_timing_samples_changed": false,
+    "gpu_elapsed_after_audit": 7194.147601604462
+  },
+  "total_stage_actual_forwards": 130152,
+  "same_stage_GPU_wall_after_additional_audit": 7194.147601604462
+}

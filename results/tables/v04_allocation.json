@@ -1,0 +1,6891 @@
+{
+  "comparisons": [
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_STORE",
+      "candidate": "B_JOINT8_P_STORE",
+      "baseline": "B_DAMP8_P_STORE",
+      "window": "prefix256",
+      "N": 12,
+      "n_KL": 2880,
+      "n_NLL": 2880,
+      "status": "DEFINED",
+      "gain": 0.08784048195966943,
+      "mean_KL_candidate": 0.0009126196541092636,
+      "mean_KL_baseline": 0.0010005044469304247,
+      "gain_CI95": [
+        0.04822727840705124,
+        0.12155076071587373
+      ],
+      "mean_KL_difference": -8.788479282116091e-05,
+      "mean_NLL_difference": 0.00022503573992192796,
+      "NLL_difference_CI95": [
+        -0.0016607960442426104,
+        0.0022008218790951694
+      ],
+      "PPL_ratio": 1.0002250610623635,
+      "wins": 7,
+      "ties": 0,
+      "losses": 5,
+      "harmful_KL_mass": 0.6928559716296003,
+      "beneficial_KL_mass": 0.9459641749545438,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.15197989539676782,
+          "delta_NLL": 0.00037704401054559217
+        },
+        "code": {
+          "N": 4,
+          "gain": 0.07530359008829968,
+          "delta_NLL": 0.00016513185985419376
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": -0.09318976679494173,
+          "delta_NLL": 0.0001329313493659975
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_STORE",
+      "candidate": "B_JOINT8_P_STORE",
+      "baseline": "B_DAMP8_P_STORE",
+      "window": "prefix512",
+      "N": 12,
+      "n_KL": 5952,
+      "n_NLL": 5952,
+      "status": "UNDEFINED_FULL_PANEL",
+      "gain": null,
+      "undefined_reason": "No successful-subset replacement for nonfinite/unexecuted rows"
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_STORE",
+      "candidate": "B_JOINT8_P_STORE",
+      "baseline": "B_DAMP8_P_STORE",
+      "window": "primary1024",
+      "N": 12,
+      "n_KL": 12096,
+      "n_NLL": 12084,
+      "status": "UNDEFINED_FULL_PANEL",
+      "gain": null,
+      "undefined_reason": "No successful-subset replacement for nonfinite/unexecuted rows"
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_STORE",
+      "candidate": "B_JOINT8_P_STORE",
+      "baseline": "B_DAMP8_P_STORE",
+      "window": "late512",
+      "N": 12,
+      "n_KL": 6144,
+      "n_NLL": 6132,
+      "status": "UNDEFINED_FULL_PANEL",
+      "gain": null,
+      "undefined_reason": "No successful-subset replacement for nonfinite/unexecuted rows"
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_STORE",
+      "candidate": "B_JOINT8_P_STORE",
+      "baseline": "B_DIAG8_P_STORE",
+      "window": "prefix256",
+      "N": 12,
+      "n_KL": 2880,
+      "n_NLL": 2880,
+      "status": "DEFINED",
+      "gain": 0.055847819936634235,
+      "mean_KL_candidate": 0.0009126196541092636,
+      "mean_KL_baseline": 0.0009666022844410677,
+      "gain_CI95": [
+        -0.014978153478921351,
+        0.1467524256269065
+      ],
+      "mean_KL_difference": -5.3982630331804065e-05,
+      "mean_NLL_difference": 0.00023459502905258883,
+      "NLL_difference_CI95": [
+        -0.0008832386431667072,
+        0.0014889484159547935
+      ],
+      "PPL_ratio": 1.0002346225486183,
+      "wins": 5,
+      "ties": 0,
+      "losses": 7,
+      "harmful_KL_mass": 0.7167774769717854,
+      "beneficial_KL_mass": 0.8722474523273811,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.12778268517971902,
+          "delta_NLL": -0.002254143776475817
+        },
+        "code": {
+          "N": 4,
+          "gain": -0.014757770941227433,
+          "delta_NLL": 0.0011665129165710163
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": -0.03798771303881843,
+          "delta_NLL": 0.001791415947062568
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_STORE",
+      "candidate": "B_JOINT8_P_STORE",
+      "baseline": "B_DIAG8_P_STORE",
+      "window": "prefix512",
+      "N": 12,
+      "n_KL": 5952,
+      "n_NLL": 5952,
+      "status": "UNDEFINED_FULL_PANEL",
+      "gain": null,
+      "undefined_reason": "No successful-subset replacement for nonfinite/unexecuted rows"
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_STORE",
+      "candidate": "B_JOINT8_P_STORE",
+      "baseline": "B_DIAG8_P_STORE",
+      "window": "primary1024",
+      "N": 12,
+      "n_KL": 12096,
+      "n_NLL": 12084,
+      "status": "UNDEFINED_FULL_PANEL",
+      "gain": null,
+      "undefined_reason": "No successful-subset replacement for nonfinite/unexecuted rows"
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_STORE",
+      "candidate": "B_JOINT8_P_STORE",
+      "baseline": "B_DIAG8_P_STORE",
+      "window": "late512",
+      "N": 12,
+      "n_KL": 6144,
+      "n_NLL": 6132,
+      "status": "UNDEFINED_FULL_PANEL",
+      "gain": null,
+      "undefined_reason": "No successful-subset replacement for nonfinite/unexecuted rows"
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_STORE",
+      "candidate": "B_JOINT8_P_STORE",
+      "baseline": "B_U8_P_STORE",
+      "window": "prefix256",
+      "N": 12,
+      "n_KL": 2880,
+      "n_NLL": 2880,
+      "status": "DEFINED",
+      "gain": 0.28736392940091304,
+      "mean_KL_candidate": 0.0009126196541092636,
+      "mean_KL_baseline": 0.0012806251209569813,
+      "gain_CI95": [
+        0.24759198622789214,
+        0.3287429772669057
+      ],
+      "mean_KL_difference": -0.0003680054668477175,
+      "mean_NLL_difference": 0.00027569267074868616,
+      "NLL_difference_CI95": [
+        -0.0019873024425925666,
+        0.0024839311601673447
+      ],
+      "PPL_ratio": 1.0002757306774657,
+      "wins": 12,
+      "ties": 0,
+      "losses": 0,
+      "harmful_KL_mass": 0.538928018911975,
+      "beneficial_KL_mass": 1.5987837634334015,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.35907773682855915,
+          "delta_NLL": -0.0005927898847656548
+        },
+        "code": {
+          "N": 4,
+          "gain": 0.2313566298038664,
+          "delta_NLL": 0.0013895801592060351
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": 0.1535577279333905,
+          "delta_NLL": 3.028773780567832e-05
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_STORE",
+      "candidate": "B_JOINT8_P_STORE",
+      "baseline": "B_U8_P_STORE",
+      "window": "prefix512",
+      "N": 12,
+      "n_KL": 5952,
+      "n_NLL": 5952,
+      "status": "UNDEFINED_FULL_PANEL",
+      "gain": null,
+      "undefined_reason": "No successful-subset replacement for nonfinite/unexecuted rows"
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_STORE",
+      "candidate": "B_JOINT8_P_STORE",
+      "baseline": "B_U8_P_STORE",
+      "window": "primary1024",
+      "N": 12,
+      "n_KL": 12096,
+      "n_NLL": 12084,
+      "status": "UNDEFINED_FULL_PANEL",
+      "gain": null,
+      "undefined_reason": "No successful-subset replacement for nonfinite/unexecuted rows"
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_STORE",
+      "candidate": "B_JOINT8_P_STORE",
+      "baseline": "B_U8_P_STORE",
+      "window": "late512",
+      "N": 12,
+      "n_KL": 6144,
+      "n_NLL": 6132,
+      "status": "UNDEFINED_FULL_PANEL",
+      "gain": null,
+      "undefined_reason": "No successful-subset replacement for nonfinite/unexecuted rows"
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_STORE",
+      "candidate": "B_DIAG8_P_STORE",
+      "baseline": "B_DAMP8_P_STORE",
+      "window": "prefix256",
+      "N": 12,
+      "n_KL": 2880,
+      "n_NLL": 2880,
+      "status": "DEFINED",
+      "gain": 0.03388506927017643,
+      "mean_KL_candidate": 0.0009666022844410677,
+      "mean_KL_baseline": 0.0010005044469304247,
+      "gain_CI95": [
+        -0.062392925415618736,
+        0.11353597748283628
+      ],
+      "mean_KL_difference": -3.390216248935685e-05,
+      "mean_NLL_difference": -9.559289130661422e-06,
+      "NLL_difference_CI95": [
+        -0.0013374080763978063,
+        0.0012747341420444743
+      ],
+      "PPL_ratio": 0.9999904407565593,
+      "wins": 7,
+      "ties": 0,
+      "losses": 5,
+      "harmful_KL_mass": 0.7926010484422389,
+      "beneficial_KL_mass": 0.8902392764115866,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.027742180539071848,
+          "delta_NLL": 0.0026311877870214095
+        },
+        "code": {
+          "N": 4,
+          "gain": 0.08875158546062845,
+          "delta_NLL": -0.0010013810567168226
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": -0.05318179884279495,
+          "delta_NLL": -0.0016584845976965708
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_STORE",
+      "candidate": "B_DIAG8_P_STORE",
+      "baseline": "B_DAMP8_P_STORE",
+      "window": "prefix512",
+      "N": 12,
+      "n_KL": 5952,
+      "n_NLL": 5952,
+      "status": "UNDEFINED_FULL_PANEL",
+      "gain": null,
+      "undefined_reason": "No successful-subset replacement for nonfinite/unexecuted rows"
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_STORE",
+      "candidate": "B_DIAG8_P_STORE",
+      "baseline": "B_DAMP8_P_STORE",
+      "window": "primary1024",
+      "N": 12,
+      "n_KL": 12096,
+      "n_NLL": 12084,
+      "status": "UNDEFINED_FULL_PANEL",
+      "gain": null,
+      "undefined_reason": "No successful-subset replacement for nonfinite/unexecuted rows"
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_STORE",
+      "candidate": "B_DIAG8_P_STORE",
+      "baseline": "B_DAMP8_P_STORE",
+      "window": "late512",
+      "N": 12,
+      "n_KL": 6144,
+      "n_NLL": 6132,
+      "status": "UNDEFINED_FULL_PANEL",
+      "gain": null,
+      "undefined_reason": "No successful-subset replacement for nonfinite/unexecuted rows"
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_STORE",
+      "candidate": "B_DIAG8_P_STORE",
+      "baseline": "B_U8_P_STORE",
+      "window": "prefix256",
+      "N": 12,
+      "n_KL": 2880,
+      "n_NLL": 2880,
+      "status": "DEFINED",
+      "gain": 0.24521058612472912,
+      "mean_KL_candidate": 0.0009666022844410677,
+      "mean_KL_baseline": 0.0012806251209569813,
+      "gain_CI95": [
+        0.17435946169751737,
+        0.3135544162016357
+      ],
+      "mean_KL_difference": -0.00031402283651591346,
+      "mean_NLL_difference": 4.1097641696097344e-05,
+      "NLL_difference_CI95": [
+        -0.001909098950073322,
+        0.0018865809802529419
+      ],
+      "PPL_ratio": 1.0000410984862158,
+      "wins": 12,
+      "ties": 0,
+      "losses": 0,
+      "harmful_KL_mass": 0.6707606197124042,
+      "beneficial_KL_mass": 1.575146388878235,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.26518053209766657,
+          "delta_NLL": 0.0016613538917101634
+        },
+        "code": {
+          "N": 4,
+          "gain": 0.24253512295531687,
+          "delta_NLL": 0.00022306724263501868
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": 0.1845353645000668,
+          "delta_NLL": -0.0017611282092568899
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_STORE",
+      "candidate": "B_DIAG8_P_STORE",
+      "baseline": "B_U8_P_STORE",
+      "window": "prefix512",
+      "N": 12,
+      "n_KL": 5952,
+      "n_NLL": 5952,
+      "status": "UNDEFINED_FULL_PANEL",
+      "gain": null,
+      "undefined_reason": "No successful-subset replacement for nonfinite/unexecuted rows"
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_STORE",
+      "candidate": "B_DIAG8_P_STORE",
+      "baseline": "B_U8_P_STORE",
+      "window": "primary1024",
+      "N": 12,
+      "n_KL": 12096,
+      "n_NLL": 12084,
+      "status": "UNDEFINED_FULL_PANEL",
+      "gain": null,
+      "undefined_reason": "No successful-subset replacement for nonfinite/unexecuted rows"
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_STORE",
+      "candidate": "B_DIAG8_P_STORE",
+      "baseline": "B_U8_P_STORE",
+      "window": "late512",
+      "N": 12,
+      "n_KL": 6144,
+      "n_NLL": 6132,
+      "status": "UNDEFINED_FULL_PANEL",
+      "gain": null,
+      "undefined_reason": "No successful-subset replacement for nonfinite/unexecuted rows"
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_PRE",
+      "candidate": "B_JOINT8_P_PRE",
+      "baseline": "B_DAMP8_P_PRE",
+      "window": "prefix256",
+      "N": 12,
+      "n_KL": 2880,
+      "n_NLL": 2880,
+      "status": "DEFINED",
+      "gain": 0.06341245954697883,
+      "mean_KL_candidate": 0.0009175609519084301,
+      "mean_KL_baseline": 0.0009796852000237073,
+      "gain_CI95": [
+        -0.011346583815373078,
+        0.11873162745518455
+      ],
+      "mean_KL_difference": -6.212424811527708e-05,
+      "mean_NLL_difference": -0.0004922314877559517,
+      "NLL_difference_CI95": [
+        -0.00224369981728606,
+        0.0010181855584783087
+      ],
+      "PPL_ratio": 0.9995078896382881,
+      "wins": 9,
+      "ties": 0,
+      "losses": 3,
+      "harmful_KL_mass": 0.7237273471175982,
+      "beneficial_KL_mass": 0.9026451816895963,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.116245588565138,
+          "delta_NLL": 0.0006047055037723944
+        },
+        "code": {
+          "N": 4,
+          "gain": -0.019375138012525994,
+          "delta_NLL": -0.0007879113037059015
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": 0.062055668559030996,
+          "delta_NLL": -0.0012934886633343484
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_PRE",
+      "candidate": "B_JOINT8_P_PRE",
+      "baseline": "B_DAMP8_P_PRE",
+      "window": "prefix512",
+      "N": 12,
+      "n_KL": 5952,
+      "n_NLL": 5952,
+      "status": "DEFINED",
+      "gain": 0.09572968873244259,
+      "mean_KL_candidate": 0.000996277393618618,
+      "mean_KL_baseline": 0.0011017473217959462,
+      "gain_CI95": [
+        0.06307653375340416,
+        0.12443327669692028
+      ],
+      "mean_KL_difference": -0.00010546992817732821,
+      "mean_NLL_difference": -0.0008800667609276407,
+      "NLL_difference_CI95": [
+        -0.0021631715638472573,
+        0.00023560206772288338
+      ],
+      "PPL_ratio": 0.9991203203842448,
+      "wins": 10,
+      "ties": 0,
+      "losses": 2,
+      "harmful_KL_mass": 1.5279530275727464,
+      "beneficial_KL_mass": 2.155710040084204,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.12399948122759685,
+          "delta_NLL": -0.0007282173034014052
+        },
+        "code": {
+          "N": 4,
+          "gain": 0.07911203067293471,
+          "delta_NLL": -0.0007465193199925949
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": 0.03384473228091289,
+          "delta_NLL": -0.0011654636593889215
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_PRE",
+      "candidate": "B_JOINT8_P_PRE",
+      "baseline": "B_DAMP8_P_PRE",
+      "window": "primary1024",
+      "N": 12,
+      "n_KL": 12096,
+      "n_NLL": 12084,
+      "status": "DEFINED",
+      "gain": 0.09948955121316216,
+      "mean_KL_candidate": 0.0011717296687019513,
+      "mean_KL_baseline": 0.001301183867750228,
+      "gain_CI95": [
+        0.07284019115524984,
+        0.12194500814091565
+      ],
+      "mean_KL_difference": -0.0001294541990482768,
+      "mean_NLL_difference": -0.0004554871142147941,
+      "NLL_difference_CI95": [
+        -0.0014712433401689528,
+        0.0004753180974293317
+      ],
+      "PPL_ratio": 0.9995446166042928,
+      "wins": 10,
+      "ties": 0,
+      "losses": 2,
+      "harmful_KL_mass": 3.7968342636659065,
+      "beneficial_KL_mass": 5.362712255353863,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.11326248962608032,
+          "delta_NLL": -0.0003320327402902531
+        },
+        "code": {
+          "N": 4,
+          "gain": 0.09350316429047323,
+          "delta_NLL": -0.0009327305374213007
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": 0.042435232969053494,
+          "delta_NLL": -0.00010169806493282813
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_PRE",
+      "candidate": "B_JOINT8_P_PRE",
+      "baseline": "B_DAMP8_P_PRE",
+      "window": "late512",
+      "N": 12,
+      "n_KL": 6144,
+      "n_NLL": 6132,
+      "status": "DEFINED",
+      "gain": 0.1021749098916025,
+      "mean_KL_candidate": 0.0013416990601889305,
+      "mean_KL_baseline": 0.001494388021643439,
+      "gain_CI95": [
+        0.06814891809905979,
+        0.1333268433226843
+      ],
+      "mean_KL_difference": -0.00015268896145450827,
+      "mean_NLL_difference": -4.3370666524829524e-05,
+      "NLL_difference_CI95": [
+        -0.0008859932674459987,
+        0.0008265755041234546
+      ],
+      "PPL_ratio": 0.999956630273969,
+      "wins": 9,
+      "ties": 0,
+      "losses": 3,
+      "harmful_KL_mass": 2.2688812360931605,
+      "beneficial_KL_mass": 3.207002215269659,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.10700007520758736,
+          "delta_NLL": 5.2522138972234514e-05
+        },
+        "code": {
+          "N": 4,
+          "gain": 0.1058654318325225,
+          "delta_NLL": -0.0011134756721466195
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": 0.052603208562143844,
+          "delta_NLL": 0.0009308415335998962
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_PRE",
+      "candidate": "B_JOINT8_P_PRE",
+      "baseline": "B_DIAG8_P_PRE",
+      "window": "prefix256",
+      "N": 12,
+      "n_KL": 2880,
+      "n_NLL": 2880,
+      "status": "DEFINED",
+      "gain": -0.016130162120262748,
+      "mean_KL_candidate": 0.0009175609519084301,
+      "mean_KL_baseline": 0.0009029954882884711,
+      "gain_CI95": [
+        -0.09643108296416814,
+        0.04663294940559507
+      ],
+      "mean_KL_difference": 1.4565463619958949e-05,
+      "mean_NLL_difference": -0.0005815266071547867,
+      "NLL_difference_CI95": [
+        -0.0018103387942289156,
+        0.0006998409833556435
+      ],
+      "PPL_ratio": 0.9994186424466713,
+      "wins": 4,
+      "ties": 0,
+      "losses": 8,
+      "harmful_KL_mass": 0.7945561466353532,
+      "beneficial_KL_mass": 0.7526076114098714,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.0788639038137281,
+          "delta_NLL": 0.0004855238777488063
+        },
+        "code": {
+          "N": 4,
+          "gain": -0.11905711337500957,
+          "delta_NLL": 4.0135858940019284e-05
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": -0.1184396267418153,
+          "delta_NLL": -0.002270239558153186
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_PRE",
+      "candidate": "B_JOINT8_P_PRE",
+      "baseline": "B_DIAG8_P_PRE",
+      "window": "prefix512",
+      "N": 12,
+      "n_KL": 5952,
+      "n_NLL": 5952,
+      "status": "DEFINED",
+      "gain": 0.005400405502348216,
+      "mean_KL_candidate": 0.000996277393618618,
+      "mean_KL_baseline": 0.0010016869091142287,
+      "gain_CI95": [
+        -0.03378588280116478,
+        0.04260818187995206
+      ],
+      "mean_KL_difference": -5.40951549561089e-06,
+      "mean_NLL_difference": -0.0008215240513900737,
+      "NLL_difference_CI95": [
+        -0.0013546925301943307,
+        -0.0002227315027381837
+      ],
+      "PPL_ratio": 0.9991788133071045,
+      "wins": 5,
+      "ties": 0,
+      "losses": 7,
+      "harmful_KL_mass": 1.632773210060623,
+      "beneficial_KL_mass": 1.6649706462904992,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.04936284167394267,
+          "delta_NLL": -0.001747171570039878
+        },
+        "code": {
+          "N": 4,
+          "gain": -0.019239241710015342,
+          "delta_NLL": 0.0008210516019095281
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": -0.10016616614127138,
+          "delta_NLL": -0.0015384521860398715
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_PRE",
+      "candidate": "B_JOINT8_P_PRE",
+      "baseline": "B_DIAG8_P_PRE",
+      "window": "primary1024",
+      "N": 12,
+      "n_KL": 12096,
+      "n_NLL": 12084,
+      "status": "DEFINED",
+      "gain": -0.013039503345958714,
+      "mean_KL_candidate": 0.0011717296687019513,
+      "mean_KL_baseline": 0.0011566475589864524,
+      "gain_CI95": [
+        -0.06295779352634456,
+        0.03345254894305227
+      ],
+      "mean_KL_difference": 1.5082109715498909e-05,
+      "mean_NLL_difference": 0.000303484024017527,
+      "NLL_difference_CI95": [
+        -0.00042308965006568095,
+        0.0010736785623454853
+      ],
+      "PPL_ratio": 1.000303530079953,
+      "wins": 3,
+      "ties": 0,
+      "losses": 9,
+      "harmful_KL_mass": 4.0760282655653155,
+      "beneficial_KL_mass": 3.8935950664466406,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": -0.0006659025655391115,
+          "delta_NLL": -0.0005363926121042321
+        },
+        "code": {
+          "N": 4,
+          "gain": -0.018562036387371972,
+          "delta_NLL": 0.0016126810905942174
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": -0.06295667500091229,
+          "delta_NLL": -0.00016583640643740407
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_PRE",
+      "candidate": "B_JOINT8_P_PRE",
+      "baseline": "B_DIAG8_P_PRE",
+      "window": "late512",
+      "N": 12,
+      "n_KL": 6144,
+      "n_NLL": 6132,
+      "status": "DEFINED",
+      "gain": -0.026732697334224786,
+      "mean_KL_candidate": 0.0013416990601889305,
+      "mean_KL_baseline": 0.001306765688550169,
+      "gain_CI95": [
+        -0.1065711228816079,
+        0.043283027701235766
+      ],
+      "mean_KL_difference": 3.493337163876152e-05,
+      "mean_NLL_difference": 0.0013954683790119884,
+      "NLL_difference_CI95": [
+        3.173571710775663e-05,
+        0.0029263188276380764
+      ],
+      "PPL_ratio": 1.0013964424980752,
+      "wins": 4,
+      "ties": 0,
+      "losses": 8,
+      "harmful_KL_mass": 2.443255055504692,
+      "beneficial_KL_mass": 2.228624420156142,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": -0.031731789674760424,
+          "delta_NLL": 0.0006388448891405439
+        },
+        "code": {
+          "N": 4,
+          "gain": -0.017963647468464572,
+          "delta_NLL": 0.002381072923055286
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": -0.021263562479528986,
+          "delta_NLL": 0.0011664873248401376
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_PRE",
+      "candidate": "B_JOINT8_P_PRE",
+      "baseline": "B_U8_P_PRE",
+      "window": "prefix256",
+      "N": 12,
+      "n_KL": 2880,
+      "n_NLL": 2880,
+      "status": "DEFINED",
+      "gain": 0.29906762499932926,
+      "mean_KL_candidate": 0.0009175609519084301,
+      "mean_KL_baseline": 0.0013090577417080387,
+      "gain_CI95": [
+        0.20733454273932464,
+        0.36926643266162373
+      ],
+      "mean_KL_difference": -0.00039149678979960866,
+      "mean_NLL_difference": 0.0006673111931945487,
+      "NLL_difference_CI95": [
+        -0.0020121239653318828,
+        0.0041242382284328
+      ],
+      "PPL_ratio": 1.0006675338948432,
+      "wins": 11,
+      "ties": 0,
+      "losses": 1,
+      "harmful_KL_mass": 0.6055484678944143,
+      "beneficial_KL_mass": 1.7330592225172874,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.37149127360615575,
+          "delta_NLL": 0.0018206122259859458
+        },
+        "code": {
+          "N": 4,
+          "gain": 0.24368430473188007,
+          "delta_NLL": 0.0011382490482106148
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": 0.16868302995313966,
+          "delta_NLL": -0.0009569276946129144
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_PRE",
+      "candidate": "B_JOINT8_P_PRE",
+      "baseline": "B_U8_P_PRE",
+      "window": "prefix512",
+      "N": 12,
+      "n_KL": 5952,
+      "n_NLL": 5952,
+      "status": "DEFINED",
+      "gain": 0.3477038546419492,
+      "mean_KL_candidate": 0.000996277393618618,
+      "mean_KL_baseline": 0.0015273390785894543,
+      "gain_CI95": [
+        0.2941909535714481,
+        0.4015924918997563
+      ],
+      "mean_KL_difference": -0.0005310616849708366,
+      "mean_NLL_difference": -0.0007083268871003784,
+      "NLL_difference_CI95": [
+        -0.001872207262811201,
+        0.0009941215467335223
+      ],
+      "PPL_ratio": 0.9992919239171686,
+      "wins": 12,
+      "ties": 0,
+      "losses": 0,
+      "harmful_KL_mass": 1.154443597991787,
+      "beneficial_KL_mass": 4.3153227469382065,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.4165854536159692,
+          "delta_NLL": -0.0020318254964435817
+        },
+        "code": {
+          "N": 4,
+          "gain": 0.30839631922271293,
+          "delta_NLL": 0.00011269130404072556
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": 0.12200883587546962,
+          "delta_NLL": -0.00020584646889827875
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_PRE",
+      "candidate": "B_JOINT8_P_PRE",
+      "baseline": "B_U8_P_PRE",
+      "window": "primary1024",
+      "N": 12,
+      "n_KL": 12096,
+      "n_NLL": 12084,
+      "status": "DEFINED",
+      "gain": 0.33257533679383744,
+      "mean_KL_candidate": 0.0011717296687019513,
+      "mean_KL_baseline": 0.0017555983967886615,
+      "gain_CI95": [
+        0.2719065129006278,
+        0.3989758661050287
+      ],
+      "mean_KL_difference": -0.00058386872808671,
+      "mean_NLL_difference": -0.0009429950355544241,
+      "NLL_difference_CI95": [
+        -0.002294881065338113,
+        0.0004829561001440338
+      ],
+      "PPL_ratio": 0.999057449444539,
+      "wins": 12,
+      "ties": 0,
+      "losses": 0,
+      "harmful_KL_mass": 3.1706526365301673,
+      "beneficial_KL_mass": 10.233128771467012,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.36036339364150494,
+          "delta_NLL": -0.002531396550643058
+        },
+        "code": {
+          "N": 4,
+          "gain": 0.3319876528356257,
+          "delta_NLL": -0.00019033813986749063
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": 0.14722087278956864,
+          "delta_NLL": -0.00010725041615272414
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_PRE",
+      "candidate": "B_JOINT8_P_PRE",
+      "baseline": "B_U8_P_PRE",
+      "window": "late512",
+      "N": 12,
+      "n_KL": 6144,
+      "n_NLL": 6132,
+      "status": "DEFINED",
+      "gain": 0.3212514011698713,
+      "mean_KL_candidate": 0.0013416990601889305,
+      "mean_KL_baseline": 0.001976724611294143,
+      "gain_CI95": [
+        0.24568262766245103,
+        0.3994643864663981
+      ],
+      "mean_KL_difference": -0.0006350255511052125,
+      "mean_NLL_difference": -0.0011707746865000344,
+      "NLL_difference_CI95": [
+        -0.003164856858989531,
+        0.0008663190707888093
+      ],
+      "PPL_ratio": 0.9988299104027956,
+      "wins": 12,
+      "ties": 0,
+      "losses": 0,
+      "harmful_KL_mass": 2.0162090385383804,
+      "beneficial_KL_mass": 5.917806024528804,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.3230378611178899,
+          "delta_NLL": -0.0030163030924883426
+        },
+        "code": {
+          "N": 4,
+          "gain": 0.3515568998951243,
+          "delta_NLL": -0.00048447239461988804
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": 0.17578934706797322,
+          "delta_NLL": -1.1548572391872707e-05
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_PRE",
+      "candidate": "B_DIAG8_P_PRE",
+      "baseline": "B_DAMP8_P_PRE",
+      "window": "prefix256",
+      "N": 12,
+      "n_KL": 2880,
+      "n_NLL": 2880,
+      "status": "DEFINED",
+      "gain": 0.07827995332927395,
+      "mean_KL_candidate": 0.0009029954882884711,
+      "mean_KL_baseline": 0.0009796852000237073,
+      "gain_CI95": [
+        0.05434522445726852,
+        0.10276517331751876
+      ],
+      "mean_KL_difference": -7.668971173523604e-05,
+      "mean_NLL_difference": 8.929511939883468e-05,
+      "NLL_difference_CI95": [
+        -0.0011558692715190032,
+        0.0011649878364186005
+      ],
+      "PPL_ratio": 1.0000892991063266,
+      "wins": 11,
+      "ties": 0,
+      "losses": 1,
+      "harmful_KL_mass": 0.704263708242373,
+      "beneficial_KL_mass": 0.9251300780398528,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.040582151656176846,
+          "delta_NLL": 0.00011918162602358797
+        },
+        "code": {
+          "N": 4,
+          "gain": 0.08907675414514704,
+          "delta_NLL": -0.0008280471626459209
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": 0.16138134860855802,
+          "delta_NLL": 0.0009767508948188375
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_PRE",
+      "candidate": "B_DIAG8_P_PRE",
+      "baseline": "B_DAMP8_P_PRE",
+      "window": "prefix512",
+      "N": 12,
+      "n_KL": 5952,
+      "n_NLL": 5952,
+      "status": "DEFINED",
+      "gain": 0.09081974668984005,
+      "mean_KL_candidate": 0.0010016869091142287,
+      "mean_KL_baseline": 0.0011017473217959462,
+      "gain_CI95": [
+        0.0454663831575271,
+        0.1343282941288061
+      ],
+      "mean_KL_difference": -0.00010006041268171732,
+      "mean_NLL_difference": -5.854270953756691e-05,
+      "NLL_difference_CI95": [
+        -0.0010778091062819159,
+        0.0008304528092479
+      ],
+      "PPL_ratio": 0.9999414590040535,
+      "wins": 10,
+      "ties": 0,
+      "losses": 2,
+      "harmful_KL_mass": 1.5587840107532478,
+      "beneficial_KL_mass": 2.1543435870348295,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.07851222614217934,
+          "delta_NLL": 0.0010189542666384725
+        },
+        "code": {
+          "N": 4,
+          "gain": 0.09649478587376847,
+          "delta_NLL": -0.0015675709219021231
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": 0.1218096888874658,
+          "delta_NLL": 0.0003729885266509501
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_PRE",
+      "candidate": "B_DIAG8_P_PRE",
+      "baseline": "B_DAMP8_P_PRE",
+      "window": "primary1024",
+      "N": 12,
+      "n_KL": 12096,
+      "n_NLL": 12084,
+      "status": "DEFINED",
+      "gain": 0.11108061846300143,
+      "mean_KL_candidate": 0.0011566475589864524,
+      "mean_KL_baseline": 0.001301183867750228,
+      "gain_CI95": [
+        0.06802094095720387,
+        0.15164708636269889
+      ],
+      "mean_KL_difference": -0.0001445363087637757,
+      "mean_NLL_difference": -0.0007589711382323211,
+      "NLL_difference_CI95": [
+        -0.0016356251087382176,
+        1.0120768551248395e-05
+      ],
+      "PPL_ratio": 0.9992413168075099,
+      "wins": 12,
+      "ties": 0,
+      "losses": 0,
+      "harmful_KL_mass": 3.7545357480268873,
+      "beneficial_KL_mass": 5.5028469388335175,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.11385257746819011,
+          "delta_NLL": 0.00020435987181397866
+        },
+        "code": {
+          "N": 4,
+          "gain": 0.1100229506641709,
+          "delta_NLL": -0.0025454116280155177
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": 0.09914976823479227,
+          "delta_NLL": 6.413834150457591e-05
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_PRE",
+      "candidate": "B_DIAG8_P_PRE",
+      "baseline": "B_DAMP8_P_PRE",
+      "window": "late512",
+      "N": 12,
+      "n_KL": 6144,
+      "n_NLL": 6132,
+      "status": "DEFINED",
+      "gain": 0.12555128278325867,
+      "mean_KL_candidate": 0.001306765688550169,
+      "mean_KL_baseline": 0.001494388021643439,
+      "gain_CI95": [
+        0.05452765968567634,
+        0.1984814210470628
+      ],
+      "mean_KL_difference": -0.0001876223330932698,
+      "mean_NLL_difference": -0.001438839045536818,
+      "NLL_difference_CI95": [
+        -0.003033511448426019,
+        -0.0001189672913905196
+      ],
+      "PPL_ratio": 0.99856219558708,
+      "wins": 11,
+      "ties": 0,
+      "losses": 1,
+      "harmful_KL_mass": 2.195751737273639,
+      "beneficial_KL_mass": 3.348503351798689,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.1344650482525901,
+          "delta_NLL": -0.0005863227501683091
+        },
+        "code": {
+          "N": 4,
+          "gain": 0.12164391096767846,
+          "delta_NLL": -0.003494548595201905
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": 0.0723288030195961,
+          "delta_NLL": -0.00023564579124024123
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_PRE",
+      "candidate": "B_DIAG8_P_PRE",
+      "baseline": "B_U8_P_PRE",
+      "window": "prefix256",
+      "N": 12,
+      "n_KL": 2880,
+      "n_NLL": 2880,
+      "status": "DEFINED",
+      "gain": 0.3101943027278107,
+      "mean_KL_candidate": 0.0009029954882884711,
+      "mean_KL_baseline": 0.0013090577417080387,
+      "gain_CI95": [
+        0.2545262227446622,
+        0.3683254265023913
+      ],
+      "mean_KL_difference": -0.00040606225341956767,
+      "mean_NLL_difference": 0.0012488378003493357,
+      "NLL_difference_CI95": [
+        -0.0010780328055569324,
+        0.0039008700666170975
+      ],
+      "PPL_ratio": 1.0012496179229902,
+      "wins": 12,
+      "ties": 0,
+      "losses": 0,
+      "harmful_KL_mass": 0.5880701260553338,
+      "beneficial_KL_mass": 1.7575294159036885,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.317680927936682,
+          "delta_NLL": 0.00133508834823714
+        },
+        "code": {
+          "N": 4,
+          "gain": 0.32414915536605926,
+          "delta_NLL": 0.0010981131892705957
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": 0.256717170806427,
+          "delta_NLL": 0.0013133118635402716
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_PRE",
+      "candidate": "B_DIAG8_P_PRE",
+      "baseline": "B_U8_P_PRE",
+      "window": "prefix512",
+      "N": 12,
+      "n_KL": 5952,
+      "n_NLL": 5952,
+      "status": "DEFINED",
+      "gain": 0.3441620638428776,
+      "mean_KL_candidate": 0.0010016869091142287,
+      "mean_KL_baseline": 0.0015273390785894543,
+      "gain_CI95": [
+        0.2854409711616766,
+        0.41023746950485535
+      ],
+      "mean_KL_difference": -0.0005256521694752257,
+      "mean_NLL_difference": 0.00011319716428969557,
+      "NLL_difference_CI95": [
+        -0.0008109130522804599,
+        0.0012254929426744796
+      ],
+      "PPL_ratio": 1.0001132035713305,
+      "wins": 12,
+      "ties": 0,
+      "losses": 0,
+      "harmful_KL_mass": 1.2007845688885905,
+      "beneficial_KL_mass": 4.329466281605134,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.3862910351502097,
+          "delta_NLL": -0.0002846539264037036
+        },
+        "code": {
+          "N": 4,
+          "gain": 0.32145108579516823,
+          "delta_NLL": -0.0007083602978688023
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": 0.2019467684558951,
+          "delta_NLL": 0.0013326057171415926
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_PRE",
+      "candidate": "B_DIAG8_P_PRE",
+      "baseline": "B_U8_P_PRE",
+      "window": "primary1024",
+      "N": 12,
+      "n_KL": 12096,
+      "n_NLL": 12084,
+      "status": "DEFINED",
+      "gain": 0.34116620230333383,
+      "mean_KL_candidate": 0.0011566475589864524,
+      "mean_KL_baseline": 0.0017555983967886615,
+      "gain_CI95": [
+        0.27187725474921,
+        0.42076673612689025
+      ],
+      "mean_KL_difference": -0.0005989508378022089,
+      "mean_NLL_difference": -0.0012464790595719513,
+      "NLL_difference_CI95": [
+        -0.0024544811711661725,
+        -0.0001952068081513239
+      ],
+      "PPL_ratio": 0.9987542974727738,
+      "wins": 12,
+      "ties": 0,
+      "losses": 0,
+      "harmful_KL_mass": 3.0745689912680794,
+      "beneficial_KL_mass": 10.319478325323598,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.3607890458557904,
+          "delta_NLL": -0.001995003938538826
+        },
+        "code": {
+          "N": 4,
+          "gain": 0.34416135365335687,
+          "delta_NLL": -0.0018030192304617078
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": 0.197729176299966,
+          "delta_NLL": 5.8585990284679836e-05
+        }
+      }
+    },
+    {
+      "experiment_id": "allocation-confirmation",
+      "profile": "P_PRE",
+      "candidate": "B_DIAG8_P_PRE",
+      "baseline": "B_U8_P_PRE",
+      "window": "late512",
+      "N": 12,
+      "n_KL": 6144,
+      "n_NLL": 6132,
+      "status": "DEFINED",
+      "gain": 0.33892375241149963,
+      "mean_KL_candidate": 0.001306765688550169,
+      "mean_KL_baseline": 0.001976724611294143,
+      "gain_CI95": [
+        0.2496802241992238,
+        0.4334363196503852
+      ],
+      "mean_KL_difference": -0.0006699589227439738,
+      "mean_NLL_difference": -0.002566243065512024,
+      "NLL_difference_CI95": [
+        -0.004681875004741232,
+        -0.0008333376446648216
+      ],
+      "PPL_ratio": 0.9974370469213201,
+      "wins": 12,
+      "ties": 0,
+      "losses": 0,
+      "harmful_KL_mass": 1.8737844223794888,
+      "beneficial_KL_mass": 5.9900120437184645,
+      "by_domain": {
+        "natural_language": {
+          "N": 4,
+          "gain": 0.34385840810864865,
+          "delta_NLL": -0.0036551479816288863
+        },
+        "code": {
+          "N": 4,
+          "gain": 0.36299974786185685,
+          "delta_NLL": -0.0028655453176751737
+        },
+        "associative_recall": {
+          "N": 4,
+          "gain": 0.19295010297741055,
+          "delta_NLL": -0.0011780358972320103
+        }
+      }
+    }
+  ],
+  "failures": [
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "method": "NATIVE_REFERENCE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "method": "B_U8_P_STORE",
+      "first_token": 500,
+      "reason": "OPERATIONAL_NONFINITE_LOGITS",
+      "after_failure_not_run": 523
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "method": "B_DAMP8_P_STORE",
+      "first_token": 477,
+      "reason": "OPERATIONAL_NONFINITE_LOGITS",
+      "after_failure_not_run": 546
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "method": "B_DIAG8_P_STORE",
+      "first_token": 497,
+      "reason": "OPERATIONAL_NONFINITE_LOGITS",
+      "after_failure_not_run": 526
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "method": "B_JOINT8_P_STORE",
+      "first_token": 472,
+      "reason": "OPERATIONAL_NONFINITE_LOGITS",
+      "after_failure_not_run": 551
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "method": "B_U8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "method": "B_DAMP8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "method": "B_DIAG8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "method": "B_JOINT8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "method": "NATIVE_REFERENCE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "method": "B_U8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "method": "B_DAMP8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "method": "B_DIAG8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "method": "B_JOINT8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "method": "B_U8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "method": "B_DAMP8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "method": "B_DIAG8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "method": "B_JOINT8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "method": "NATIVE_REFERENCE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "method": "B_U8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "method": "B_DAMP8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "method": "B_DIAG8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "method": "B_JOINT8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "method": "B_U8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "method": "B_DAMP8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "method": "B_DIAG8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "method": "B_JOINT8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "method": "NATIVE_REFERENCE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "method": "B_U8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "method": "B_DAMP8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "method": "B_DIAG8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "method": "B_JOINT8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "method": "B_U8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "method": "B_DAMP8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "method": "B_DIAG8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "method": "B_JOINT8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "method": "NATIVE_REFERENCE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "method": "B_U8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "method": "B_DAMP8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "method": "B_DIAG8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "method": "B_JOINT8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "method": "B_U8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "method": "B_DAMP8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "method": "B_DIAG8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "method": "B_JOINT8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "method": "NATIVE_REFERENCE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "method": "B_U8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "method": "B_DAMP8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "method": "B_DIAG8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "method": "B_JOINT8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "method": "B_U8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "method": "B_DAMP8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "method": "B_DIAG8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "method": "B_JOINT8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "method": "NATIVE_REFERENCE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "method": "B_U8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "method": "B_DAMP8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "method": "B_DIAG8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "method": "B_JOINT8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "method": "B_U8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "method": "B_DAMP8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "method": "B_DIAG8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "method": "B_JOINT8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "method": "NATIVE_REFERENCE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "method": "B_U8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "method": "B_DAMP8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "method": "B_DIAG8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "method": "B_JOINT8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "method": "B_U8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "method": "B_DAMP8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "method": "B_DIAG8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "method": "B_JOINT8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "method": "NATIVE_REFERENCE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "method": "B_U8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "method": "B_DAMP8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "method": "B_DIAG8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "method": "B_JOINT8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "method": "B_U8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "method": "B_DAMP8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "method": "B_DIAG8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "method": "B_JOINT8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "method": "NATIVE_REFERENCE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "method": "B_U8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "method": "B_DAMP8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "method": "B_DIAG8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "method": "B_JOINT8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "method": "B_U8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "method": "B_DAMP8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "method": "B_DIAG8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "method": "B_JOINT8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "method": "NATIVE_REFERENCE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "method": "B_U8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "method": "B_DAMP8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "method": "B_DIAG8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "method": "B_JOINT8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "method": "B_U8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "method": "B_DAMP8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "method": "B_DIAG8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "method": "B_JOINT8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "method": "NATIVE_REFERENCE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "method": "B_U8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "method": "B_DAMP8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "method": "B_DIAG8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "method": "B_JOINT8_P_STORE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "method": "B_U8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "method": "B_DAMP8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "method": "B_DIAG8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "method": "B_JOINT8_P_PRE",
+      "first_token": 1023,
+      "reason": "NO_NEXT_TOKEN",
+      "after_failure_not_run": 0
+    }
+  ],
+  "token_rows": 110592,
+  "physical_forwards": 108446,
+  "bootstrap_draws": 2000,
+  "sequence_metrics": [
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0,
+      "mean_NLL": 2.0853258208642984,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0,
+      "mean_NLL": 0.9529425495788301,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0,
+      "mean_NLL": 1.4683477579722508,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0,
+      "mean_NLL": 2.390729721634025,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0,
+      "mean_NLL": 1.2465566644038186,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0,
+      "mean_NLL": 1.4888919019807336,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0,
+      "mean_NLL": 2.988868668408351,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0,
+      "mean_NLL": 1.8973726210065573,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0,
+      "mean_NLL": 1.5317505473727235,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0,
+      "mean_NLL": 3.2471730698537633,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0,
+      "mean_NLL": 0.9429540468961232,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0,
+      "mean_NLL": 1.4705826919990768,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0,
+      "mean_NLL": 2.450974793853431,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0,
+      "mean_NLL": 1.1463905717656317,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0,
+      "mean_NLL": 1.065712577111196,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0,
+      "mean_NLL": 2.5835758817736076,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0,
+      "mean_NLL": 1.0212626405182024,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0,
+      "mean_NLL": 1.046460508348502,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0,
+      "mean_NLL": 2.6960988799680767,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0,
+      "mean_NLL": 1.4743052483255172,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0,
+      "mean_NLL": 1.0862645485834415,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0,
+      "mean_NLL": 2.798434055278852,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0,
+      "mean_NLL": 1.2898272041471495,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "NATIVE_REFERENCE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0,
+      "mean_NLL": 1.0849741681460505,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "NATIVE_REFERENCE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0,
+      "mean_NLL": 2.504639124080659,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "NATIVE_REFERENCE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0,
+      "mean_NLL": 0.9789578973120829,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "NATIVE_REFERENCE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0,
+      "mean_NLL": 0.8407568735766768,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "NATIVE_REFERENCE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0,
+      "mean_NLL": 2.643514206166282,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "NATIVE_REFERENCE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0,
+      "mean_NLL": 0.8229806715297818,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "NATIVE_REFERENCE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0,
+      "mean_NLL": 0.8488385914822885,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "NATIVE_REFERENCE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0,
+      "mean_NLL": 2.513310102540073,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "NATIVE_REFERENCE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0,
+      "mean_NLL": 1.256988037710883,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "NATIVE_REFERENCE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0,
+      "mean_NLL": 0.8435740389870068,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "NATIVE_REFERENCE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0,
+      "mean_NLL": 2.608500286576057,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "NATIVE_REFERENCE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0,
+      "mean_NLL": 1.4397041327725613,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "NATIVE_REFERENCE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0,
+      "mean_NLL": 0.8514884349758338,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "NATIVE_REFERENCE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0,
+      "mean_NLL": 2.5567281804264614,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "NATIVE_REFERENCE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0,
+      "mean_NLL": 0.8164400763160746,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "NATIVE_REFERENCE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0,
+      "mean_NLL": 0.622404566427711,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "NATIVE_REFERENCE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0,
+      "mean_NLL": 2.701693088551343,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "NATIVE_REFERENCE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0,
+      "mean_NLL": 0.6305191125899451,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "NATIVE_REFERENCE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0,
+      "mean_NLL": 0.6570177093577447,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "NATIVE_REFERENCE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0,
+      "mean_NLL": 2.3358869448017368,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "NATIVE_REFERENCE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0,
+      "mean_NLL": 1.0460500015761305,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "NATIVE_REFERENCE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0,
+      "mean_NLL": 0.6080075169521114,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "NATIVE_REFERENCE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0,
+      "mean_NLL": 2.424141873118941,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "NATIVE_REFERENCE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0,
+      "mean_NLL": 1.5851815429451726,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "NATIVE_REFERENCE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0,
+      "mean_NLL": 0.6248564904505353,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_U8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0018292701853660066,
+      "mean_NLL": 2.0865959877174127,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_U8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0011657085927647191,
+      "mean_NLL": 0.9527607636553678,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_U8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0006095220692095899,
+      "mean_NLL": 1.4674418309575066,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_U8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0018530161923073362,
+      "mean_NLL": 2.3908660738309733,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_U8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0014404915304554059,
+      "mean_NLL": 1.2456681787679955,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_U8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0006004271374176034,
+      "mean_NLL": 1.4887776815085907,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_U8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0023757920555153144,
+      "mean_NLL": 2.9841871028141522,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_U8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0011923827026579803,
+      "mean_NLL": 1.9012479448225614,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_U8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0006555144282885118,
+      "mean_NLL": 1.5305326838306332,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_U8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0022170158375608624,
+      "mean_NLL": 3.253974607656432,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_U8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0007717843462557026,
+      "mean_NLL": 0.9444198159249143,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_U8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0006565763736847415,
+      "mean_NLL": 1.4685592078229093,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_U8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": null,
+      "mean_NLL": null,
+      "status": "UNDEFINED_NONFINITE_RETAINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_U8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0015363732461171281,
+      "mean_NLL": 1.1474398653114053,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_U8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.00056201246839497,
+      "mean_NLL": 1.0653038362433083,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_U8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.002874286622746713,
+      "mean_NLL": 2.5840403162298218,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_U8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0016261908521811215,
+      "mean_NLL": 1.0191382720775397,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_U8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0004764697704527633,
+      "mean_NLL": 1.0466837929414965,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_U8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0023174211230176196,
+      "mean_NLL": 2.6954670575375492,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_U8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0014281889514120483,
+      "mean_NLL": 1.4750831878803923,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_U8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0005279643373397303,
+      "mean_NLL": 1.084811054332554,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_U8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0023428774765715276,
+      "mean_NLL": 2.8001913676695227,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_U8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0014417010850181634,
+      "mean_NLL": 1.2875155000207477,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_U8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0005382675552549636,
+      "mean_NLL": 1.0851813090405398,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_U8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": null,
+      "mean_NLL": null,
+      "status": "UNDEFINED_NONFINITE_RETAINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_U8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.001796812340142472,
+      "mean_NLL": 0.9809757619339494,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_U8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0004870472557684329,
+      "mean_NLL": 0.8406043221626951,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_U8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.004001772203451683,
+      "mean_NLL": 2.6518921650978133,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_U8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.001425770708721702,
+      "mean_NLL": 0.8228530640475453,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_U8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.00044701831781828805,
+      "mean_NLL": 0.8500841380744447,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_U8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0034191486267418987,
+      "mean_NLL": 2.514576838640175,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_U8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0016916674332148392,
+      "mean_NLL": 1.257989254942892,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_U8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.00046902090473189233,
+      "mean_NLL": 0.8424795431686691,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_U8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0031420949959566247,
+      "mean_NLL": 2.609987129523033,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_U8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.001785925199835433,
+      "mean_NLL": 1.4382303512977346,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_U8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.00046635957758980206,
+      "mean_NLL": 0.8518237930312743,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_U8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": null,
+      "mean_NLL": null,
+      "status": "UNDEFINED_NONFINITE_RETAINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_U8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0020491127124795234,
+      "mean_NLL": 0.8193980803777495,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_U8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.00041442470603647504,
+      "mean_NLL": 0.6225006842292622,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_U8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.005094023859759623,
+      "mean_NLL": 2.71775227671919,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_U8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0012316136947453896,
+      "mean_NLL": 0.6323296527307601,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_U8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.00041848722307864013,
+      "mean_NLL": 0.6592555102582847,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_U8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.004486447145974794,
+      "mean_NLL": 2.33899650875153,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_U8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0019469122124612932,
+      "mean_NLL": 1.047267942346023,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_U8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0004119194543930494,
+      "mean_NLL": 0.607261481451865,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_U8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0039163369678609375,
+      "mean_NLL": 2.4253661860383775,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_U8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0021193923110646626,
+      "mean_NLL": 1.5845210875665907,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_U8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0003966987242266768,
+      "mean_NLL": 0.625316301953788,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0012892956845818257,
+      "mean_NLL": 2.087734539683561,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0008227441458587723,
+      "mean_NLL": 0.9527026366713771,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0004540037081185329,
+      "mean_NLL": 1.4680912974869778,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0012688387410382158,
+      "mean_NLL": 2.3910375982126717,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.001213974748329738,
+      "mean_NLL": 1.2503098681797402,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0004465927344142251,
+      "mean_NLL": 1.4893408362545781,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0017646932683045007,
+      "mean_NLL": 2.98747479379355,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0011132640014731923,
+      "mean_NLL": 1.9022951658316245,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0005233074144646385,
+      "mean_NLL": 1.5307682621812675,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0019313779778233858,
+      "mean_NLL": 3.245497504747943,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0006490828177632689,
+      "mean_NLL": 0.9436868256855047,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0005288781209947985,
+      "mean_NLL": 1.466700433750575,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": null,
+      "mean_NLL": null,
+      "status": "UNDEFINED_NONFINITE_RETAINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0010918961215777914,
+      "mean_NLL": 1.1470005907888194,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.00040218115066063364,
+      "mean_NLL": 1.0650439846276447,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0017027360433715117,
+      "mean_NLL": 2.5836716627218936,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0013488472137633458,
+      "mean_NLL": 1.0222439795184575,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0003935914986672909,
+      "mean_NLL": 1.0479405248410503,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.001887873907139611,
+      "mean_NLL": 2.69512054822478,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0011251289941272477,
+      "mean_NLL": 1.4761446264717377,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0004218226128926967,
+      "mean_NLL": 1.084995140059397,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0017985864886274035,
+      "mean_NLL": 2.7970119496653676,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0011522691231026499,
+      "mean_NLL": 1.2884735156266398,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.00045525829834492634,
+      "mean_NLL": 1.0838599339843822,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": null,
+      "mean_NLL": null,
+      "status": "UNDEFINED_NONFINITE_RETAINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_DAMP8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0012946362164097925,
+      "mean_NLL": 0.9795139206344161,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.00037768611941745283,
+      "mean_NLL": 0.8404635550231353,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0021612644063452183,
+      "mean_NLL": 2.6476541841711385,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_DAMP8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0011923895937736167,
+      "mean_NLL": 0.8239770387587814,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.00039112815091245807,
+      "mean_NLL": 0.8508118573618069,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0023469549290655437,
+      "mean_NLL": 2.5142383016006926,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_DAMP8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0013398365831251615,
+      "mean_NLL": 1.2578336741460743,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0003915338144399392,
+      "mean_NLL": 0.8420063697614206,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0023687887385366226,
+      "mean_NLL": 2.6070781212598764,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_DAMP8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0012807749890577378,
+      "mean_NLL": 1.4371447676744675,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.00038442310357281444,
+      "mean_NLL": 0.8506038344424968,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": null,
+      "mean_NLL": null,
+      "status": "UNDEFINED_NONFINITE_RETAINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_DAMP8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0014910406832782937,
+      "mean_NLL": 0.8169436889385571,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.00035395655790062137,
+      "mean_NLL": 0.6224755059353922,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0026054637579759963,
+      "mean_NLL": 2.709758549413458,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_DAMP8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.001040821274408567,
+      "mean_NLL": 0.6315300669059453,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0003887417827749638,
+      "mean_NLL": 0.6594697456794102,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0027916896690562917,
+      "mean_NLL": 2.3386657099655714,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_DAMP8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0015478345599668905,
+      "mean_NLL": 1.045931066800616,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.00036219154093883045,
+      "mean_NLL": 0.6061503422314868,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0029211721681361782,
+      "mean_NLL": 2.422719649852589,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_DAMP8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0014052650467017294,
+      "mean_NLL": 1.5814518929498544,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.00031580150863733103,
+      "mean_NLL": 0.6241947828323694,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0011419370076482087,
+      "mean_NLL": 2.0870385891329204,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0007209567406958543,
+      "mean_NLL": 0.9545894133027777,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0004979483494047348,
+      "mean_NLL": 1.466145134296683,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0011597137873992427,
+      "mean_NLL": 2.3941130058997944,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.001267928773788835,
+      "mean_NLL": 1.244901829395895,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0005035300523227292,
+      "mean_NLL": 1.4862113592228272,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0021720514993902717,
+      "mean_NLL": 2.993903060017942,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0009230214241616296,
+      "mean_NLL": 1.900602351561425,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0005650845295790075,
+      "mean_NLL": 1.5296404862726838,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0016069980744360872,
+      "mean_NLL": 3.247214532535155,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0005499856694430725,
+      "mean_NLL": 0.9448953778812812,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0004900715050231396,
+      "mean_NLL": 1.466269911490418,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": null,
+      "mean_NLL": null,
+      "status": "UNDEFINED_NONFINITE_RETAINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.001019382935074419,
+      "mean_NLL": 1.1480460243848842,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.00044183583365257987,
+      "mean_NLL": 1.0652867102812067,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0014487186536619563,
+      "mean_NLL": 2.5838390457007336,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.001154855398472536,
+      "mean_NLL": 1.0211309085081863,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.00038467200470272683,
+      "mean_NLL": 1.045673779660924,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0018797116515545356,
+      "mean_NLL": 2.700526047088527,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.000929369947673403,
+      "mean_NLL": 1.4748528445662705,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.00044740982908887125,
+      "mean_NLL": 1.0838708467618345,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.001683020945252202,
+      "mean_NLL": 2.799740501941276,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0011483153300228743,
+      "mean_NLL": 1.2886434241932176,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.00043546230691170234,
+      "mean_NLL": 1.0848094430344657,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": null,
+      "mean_NLL": null,
+      "status": "UNDEFINED_NONFINITE_RETAINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_DIAG8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.001154707135839631,
+      "mean_NLL": 0.9787397914420807,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.00038299784641494247,
+      "mean_NLL": 0.8402151047957657,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.001971715988886284,
+      "mean_NLL": 2.646543690584401,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_DIAG8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0010203590305448693,
+      "mean_NLL": 0.822102830230351,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.00038080776073368784,
+      "mean_NLL": 0.8479612221240049,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0021568050069406606,
+      "mean_NLL": 2.5163080448102972,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_DIAG8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.001091248649222361,
+      "mean_NLL": 1.2561081729376395,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.00038851430143870344,
+      "mean_NLL": 0.8418452716078662,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0021501027577482787,
+      "mean_NLL": 2.609652356769119,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_DIAG8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0012472281248903983,
+      "mean_NLL": 1.441848505166471,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.00039354568647976374,
+      "mean_NLL": 0.851498857674847,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": null,
+      "mean_NLL": null,
+      "status": "UNDEFINED_NONFINITE_RETAINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_DIAG8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.00128580245533093,
+      "mean_NLL": 0.8144034087813554,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.00032599854627848125,
+      "mean_NLL": 0.6217502979057874,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.002478369657384851,
+      "mean_NLL": 2.707407690314928,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_DIAG8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0008900656741149421,
+      "mean_NLL": 0.6289170634479512,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0003770642743886813,
+      "mean_NLL": 0.6560523600138057,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0024252391949709695,
+      "mean_NLL": 2.337497615984462,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_DIAG8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0012480686413479142,
+      "mean_NLL": 1.0437845777756023,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.00033145925902760333,
+      "mean_NLL": 0.606924165391881,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.002602588263603853,
+      "mean_NLL": 2.425144098441547,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_DIAG8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0013430498949183127,
+      "mean_NLL": 1.5905563724125245,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.00035293896043632315,
+      "mean_NLL": 0.6250369196349822,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0011507285499824328,
+      "mean_NLL": 2.083153880765975,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0007236068939208282,
+      "mean_NLL": 0.9598954274896375,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0005032565798783095,
+      "mean_NLL": 1.4663284727986925,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0010787372395283082,
+      "mean_NLL": 2.3962403865065087,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0012816791358158308,
+      "mean_NLL": 1.2455200257628742,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0005299821017387007,
+      "mean_NLL": 1.4892629941564388,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0014816709708248765,
+      "mean_NLL": 2.9892393220487716,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0009109884626599361,
+      "mean_NLL": 1.8996954428785962,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0005578347899212846,
+      "mean_NLL": 1.531152731261168,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0015925553876301893,
+      "mean_NLL": 3.244619023158653,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0005967079338261086,
+      "mean_NLL": 0.9445441276765554,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0005436878035843581,
+      "mean_NLL": 1.4686883568545632,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": null,
+      "mean_NLL": null,
+      "status": "UNDEFINED_NONFINITE_RETAINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.00098041748707814,
+      "mean_NLL": 1.15095424040058,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0004002008726151047,
+      "mean_NLL": 1.0655631824571707,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.001333713191701809,
+      "mean_NLL": 2.586017927004068,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0012257159180808707,
+      "mean_NLL": 1.0216858944779657,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0004145994469788331,
+      "mean_NLL": 1.0469560827119215,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0016090178668414592,
+      "mean_NLL": 2.699491569404595,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0009753725833922938,
+      "mean_NLL": 1.475706407979473,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0004428521390633352,
+      "mean_NLL": 1.084348701722983,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.001543788506960797,
+      "mean_NLL": 2.7971740640377325,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0009904136408354996,
+      "mean_NLL": 1.290006240734425,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_STORE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.00045718854544627823,
+      "mean_NLL": 1.0858958805761771,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": null,
+      "mean_NLL": null,
+      "status": "UNDEFINED_NONFINITE_RETAINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_JOINT8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0011134997105657054,
+      "mean_NLL": 0.9815041583537731,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0003680353568871063,
+      "mean_NLL": 0.8398401099974804,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.001789860657570152,
+      "mean_NLL": 2.645739787023926,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_JOINT8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0009876227416717206,
+      "mean_NLL": 0.8224554802094993,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.00039410478144627633,
+      "mean_NLL": 0.8496091791528106,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0019525130451645046,
+      "mean_NLL": 2.516687512993491,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_JOINT8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0011447909954554266,
+      "mean_NLL": 1.2565899157518075,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0003820330738085328,
+      "mean_NLL": 0.8421479574739464,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0018639884708830574,
+      "mean_NLL": 2.60709011490025,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_JOINT8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0010753078002228415,
+      "mean_NLL": 1.4404074146524033,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_STORE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0003906451745486488,
+      "mean_NLL": 0.8517189208872074,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": null,
+      "mean_NLL": null,
+      "status": "UNDEFINED_NONFINITE_RETAINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_JOINT8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0012424231145692847,
+      "mean_NLL": 0.817028149165483,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.00033687501352560787,
+      "mean_NLL": 0.620742959429953,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0022317535151301095,
+      "mean_NLL": 2.703708559176272,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_JOINT8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0007569699770253565,
+      "mean_NLL": 0.6290733168491092,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.000374250574211612,
+      "mean_NLL": 0.6580552375377051,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.002285273999164955,
+      "mean_NLL": 2.339249524774494,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_JOINT8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0013089150821415862,
+      "mean_NLL": 1.043905414489729,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.000323114604342943,
+      "mean_NLL": 0.6070568241128466,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0021741821859327473,
+      "mean_NLL": 2.422585929436079,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_JOINT8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0011575490171293291,
+      "mean_NLL": 1.586393681312515,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_STORE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.00032618128399157026,
+      "mean_NLL": 0.624416040249773,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_U8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.001594704780431952,
+      "mean_NLL": 2.086653580581371,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_U8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0012227875154648448,
+      "mean_NLL": 0.9490678790207844,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_U8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0005795727342499221,
+      "mean_NLL": 1.4674174046435289,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_U8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0020920642604794924,
+      "mean_NLL": 2.394683850037283,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_U8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.001851375869764734,
+      "mean_NLL": 1.2471039598251374,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_U8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.000559106244949258,
+      "mean_NLL": 1.4870144307954125,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_U8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.002298856334513269,
+      "mean_NLL": 2.9810100055454547,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_U8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0012221987898465455,
+      "mean_NLL": 1.8995753143586858,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_U8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0006672308830618373,
+      "mean_NLL": 1.5301601672703768,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_U8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0022648074906204125,
+      "mean_NLL": 3.2519586689177493,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_U8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0007024297081616696,
+      "mean_NLL": 0.9413912312132351,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_U8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0006535582889525284,
+      "mean_NLL": 1.4671770565234739,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_U8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0024151612513324348,
+      "mean_NLL": 2.4539258036250553,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_U8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.001722804303325608,
+      "mean_NLL": 1.148514903428992,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_U8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0004910868726150237,
+      "mean_NLL": 1.0640740009432716,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_U8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.002911088418357571,
+      "mean_NLL": 2.5889981953079686,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_U8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.001701850743575784,
+      "mean_NLL": 1.0212595213764601,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_U8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.00046634273923353437,
+      "mean_NLL": 1.0450530757837544,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_U8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.002457452994286765,
+      "mean_NLL": 2.694537697086879,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_U8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0012997468519934966,
+      "mean_NLL": 1.474930804075012,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_U8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.000523182380206842,
+      "mean_NLL": 1.0851492333189225,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_U8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.002304026093230849,
+      "mean_NLL": 2.8012752936027963,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_U8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0015257219031856893,
+      "mean_NLL": 1.2882565217788973,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_U8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0005096043917298575,
+      "mean_NLL": 1.0835707326731103,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_U8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0026901495658012337,
+      "mean_NLL": 2.5056868921285824,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_U8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.002011951890654473,
+      "mean_NLL": 0.9843564831957302,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_U8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0004500065651503142,
+      "mean_NLL": 0.8390840183616972,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_U8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.003835761308114995,
+      "mean_NLL": 2.6534191897750485,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_U8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0014121554596736073,
+      "mean_NLL": 0.8230403517461592,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_U8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0004842934429312494,
+      "mean_NLL": 0.849746389019303,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_U8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.003071736876093866,
+      "mean_NLL": 2.513125440430032,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_U8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0015917341558781704,
+      "mean_NLL": 1.2564217524794628,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_U8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.00046092716210438463,
+      "mean_NLL": 0.8420495568732815,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_U8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.002842947000077367,
+      "mean_NLL": 2.610153037071405,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_U8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.001767175829912162,
+      "mean_NLL": 1.4396880448277465,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_U8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.00044834150507211347,
+      "mean_NLL": 0.8507885629291098,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_U8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0029565444954428827,
+      "mean_NLL": 2.5559285749030423,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_U8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.002292063615879311,
+      "mean_NLL": 0.8250168032824269,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_U8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.000410210017293877,
+      "mean_NLL": 0.6206984383999342,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_U8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0047315381700674996,
+      "mean_NLL": 2.7159491570072825,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_U8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0011315131533933737,
+      "mean_NLL": 0.6306397487390568,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_U8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0005016831871384108,
+      "mean_NLL": 0.6601727752518511,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_U8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0036668243865944955,
+      "mean_NLL": 2.3370383967865953,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_U8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0018745968565164481,
+      "mean_NLL": 1.0443268609111804,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_U8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.00040061741956762893,
+      "mean_NLL": 0.6060858787577474,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_U8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.003365026628584932,
+      "mean_NLL": 2.424641022903949,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_U8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0020010843214284322,
+      "mean_NLL": 1.58667441553661,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_U8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0003889930836224239,
+      "mean_NLL": 0.6248395292832697,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0012577514614548213,
+      "mean_NLL": 2.088476523897062,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0007168547998684113,
+      "mean_NLL": 0.9523720735041571,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.000489405889917647,
+      "mean_NLL": 1.4663564139895704,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.001222886421644765,
+      "mean_NLL": 2.392515167180295,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0013606937108485962,
+      "mean_NLL": 1.2497577625734346,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0005311075003416046,
+      "mean_NLL": 1.4910117553158324,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0016697273597777679,
+      "mean_NLL": 2.9933263738907225,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0009812309697390723,
+      "mean_NLL": 1.8993618065179458,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0005861215319253598,
+      "mean_NLL": 1.5282895876725058,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.001717180068061258,
+      "mean_NLL": 3.2448516670026324,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0006500266476223257,
+      "mean_NLL": 0.9433513832299714,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0005732360390828577,
+      "mean_NLL": 1.467457546129769,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0018103467872057307,
+      "mean_NLL": 2.4548760376717937,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.001150748719573464,
+      "mean_NLL": 1.1489084458405958,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.00045073293125879135,
+      "mean_NLL": 1.0639461393832184,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0015793029138649608,
+      "mean_NLL": 2.584060348388039,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0013756465948158538,
+      "mean_NLL": 1.0207505005047635,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0004216059841405241,
+      "mean_NLL": 1.0489215778823362,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0016531653700518254,
+      "mean_NLL": 2.6966852135171693,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.000963033356830994,
+      "mean_NLL": 1.4765295441713266,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.00046128590328774747,
+      "mean_NLL": 1.0848180247279848,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.001675591563132587,
+      "mean_NLL": 2.7979009572735283,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0012045284341063926,
+      "mean_NLL": 1.290210102638809,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.00047497930328248294,
+      "mean_NLL": 1.0839997694874826,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0020724833810978963,
+      "mean_NLL": 2.506657955846405,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_DAMP8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0013125500539842877,
+      "mean_NLL": 0.9824772901996623,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.00042632307171662666,
+      "mean_NLL": 0.8390969812019432,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0020618547004900866,
+      "mean_NLL": 2.6468264920128517,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_DAMP8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.001107177178080608,
+      "mean_NLL": 0.8229231320322816,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0003905536978621626,
+      "mean_NLL": 0.8500086808468766,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0023984196342457177,
+      "mean_NLL": 2.512636325162942,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_DAMP8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.001295167948250016,
+      "mean_NLL": 1.2610983117304657,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0004169903796632693,
+      "mean_NLL": 0.8423643795115142,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.00244110401205435,
+      "mean_NLL": 2.6074663311414583,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_DAMP8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0012836212546713406,
+      "mean_NLL": 1.4399774678769042,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.00040796110088637595,
+      "mean_NLL": 0.8501762762181779,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0023264282064309324,
+      "mean_NLL": 2.5569198568534635,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_DAMP8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0014692950966947733,
+      "mean_NLL": 0.8209315892252925,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.00040267602028515466,
+      "mean_NLL": 0.6208480918518208,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0025293267437831776,
+      "mean_NLL": 2.707750185237719,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_DAMP8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0008470974306183384,
+      "mean_NLL": 0.6309028291705382,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0003604717955299999,
+      "mean_NLL": 0.6569347142527714,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.003120384702683551,
+      "mean_NLL": 2.3339900460559035,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_DAMP8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0016169233336871935,
+      "mean_NLL": 1.0519908923749532,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.00037407909115205604,
+      "mean_NLL": 0.6070277688904391,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_DAMP8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0031826941969473077,
+      "mean_NLL": 2.4226217625279416,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_DAMP8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.001360242424593634,
+      "mean_NLL": 1.585348530808597,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_DAMP8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.00034303721731514724,
+      "mean_NLL": 0.6232164862738041,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0011823137969763445,
+      "mean_NLL": 2.08764319425553,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0006371224811629168,
+      "mean_NLL": 0.9530513994355179,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0004370397476586979,
+      "mean_NLL": 1.4677382723977863,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.001091816601284249,
+      "mean_NLL": 2.3942756243870695,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0012040925169882718,
+      "mean_NLL": 1.2456064235094526,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.00044761445746898846,
+      "mean_NLL": 1.4885136667059167,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0016872324711095352,
+      "mean_NLL": 2.9930396387474305,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0009063822709863954,
+      "mean_NLL": 1.8971379195636802,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.00047698416639324956,
+      "mean_NLL": 1.5299149808940553,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0016680648279104836,
+      "mean_NLL": 3.244688001084777,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0006308404472979672,
+      "mean_NLL": 0.9457350946662746,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0004664420742245553,
+      "mean_NLL": 1.4708553866891945,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0015493083638756953,
+      "mean_NLL": 2.4518620186835274,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0009381196193628962,
+      "mean_NLL": 1.1475151361290192,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.00039148187637010924,
+      "mean_NLL": 1.0655794030934476,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.001324531942824689,
+      "mean_NLL": 2.5875205652964692,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0011753748013558615,
+      "mean_NLL": 1.0190177991398106,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0003986998510627282,
+      "mean_NLL": 1.046720152448876,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0016633977852472037,
+      "mean_NLL": 2.699297858859006,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0009686830324753469,
+      "mean_NLL": 1.4751776608160578,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.00040408470398646225,
+      "mean_NLL": 1.0848787903831714,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0016536914813237611,
+      "mean_NLL": 2.7989179310780825,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0011588372663534454,
+      "mean_NLL": 1.2884177133829988,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0003940321851325477,
+      "mean_NLL": 1.0859991196621306,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.001916818587351547,
+      "mean_NLL": 2.5050658628596114,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_DIAG8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.001121446230646866,
+      "mean_NLL": 0.9804040255250847,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0003648444836082915,
+      "mean_NLL": 0.8396158377264029,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0017340209815509449,
+      "mean_NLL": 2.646148219062071,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_DIAG8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.000982783014765054,
+      "mean_NLL": 0.8219518599787409,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0003837755249002105,
+      "mean_NLL": 0.8484298556982921,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0023403186177405554,
+      "mean_NLL": 2.5148724556476827,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_DIAG8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.001105325384705034,
+      "mean_NLL": 1.2555173823774226,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.00037369675120542796,
+      "mean_NLL": 0.8419222502839747,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0019610062536818034,
+      "mean_NLL": 2.6083180060815474,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_DIAG8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0012390102777487591,
+      "mean_NLL": 1.4384212874460038,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0003567245999329355,
+      "mean_NLL": 0.8519349274358609,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0022728441163437784,
+      "mean_NLL": 2.556707950357337,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_DIAG8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0012990438853282122,
+      "mean_NLL": 0.818198329126745,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0003390395093702806,
+      "mean_NLL": 0.6202852537302108,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0021307134878170053,
+      "mean_NLL": 2.703054904517528,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_DIAG8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0007962097215052094,
+      "mean_NLL": 0.6306706352744541,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0003693175839302715,
+      "mean_NLL": 0.6559602134511497,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.00299608567421849,
+      "mean_NLL": 2.3358607139787666,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_DIAG8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.001237697663427543,
+      "mean_NLL": 1.042305057317612,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.000344258421948801,
+      "mean_NLL": 0.6060975068608796,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_DIAG8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0022587174394036566,
+      "mean_NLL": 2.423312990820722,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_DIAG8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0013166778825379694,
+      "mean_NLL": 1.584021625479762,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_DIAG8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0003205828767708112,
+      "mean_NLL": 0.6247415040616343,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0012586187865431377,
+      "mean_NLL": 2.084529605576789,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0007434913745167901,
+      "mean_NLL": 0.953092335642704,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0004666513849482745,
+      "mean_NLL": 1.4660769217744547,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0010218898423657303,
+      "mean_NLL": 2.393666085662852,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0011591193908903146,
+      "mean_NLL": 1.2434990080504922,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0005077579144497388,
+      "mean_NLL": 1.4859630306107863,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0013871847479789633,
+      "mean_NLL": 2.9982974638956086,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0009293360383588586,
+      "mean_NLL": 1.9003980279343535,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0005562789137331956,
+      "mean_NLL": 1.5295067419345183,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0015177756759481055,
+      "mean_NLL": 3.245095398850552,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0009487179549056634,
+      "mean_NLL": 0.9447020089831357,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix256",
+      "n_KL": 240,
+      "n_NLL": 240,
+      "mean_KL": 0.0005139093982623895,
+      "mean_NLL": 1.4663946541345811,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.001537984585134677,
+      "mean_NLL": 2.448960513455249,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0009904781675015208,
+      "mean_NLL": 1.147394571506104,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0004288614162157536,
+      "mean_NLL": 1.0642387586921225,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0013742607405220024,
+      "mean_NLL": 2.5841695027420277,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0011573596051320143,
+      "mean_NLL": 1.020898921244177,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0004263690175521615,
+      "mean_NLL": 1.044811069063048,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0014362718838676783,
+      "mean_NLL": 2.700140456659795,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0009133735772634743,
+      "mean_NLL": 1.4753531302121587,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0004508566946102726,
+      "mean_NLL": 1.0834987384153822,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.001536810487407068,
+      "mean_NLL": 2.797339214779853,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.0012613972769356496,
+      "mean_NLL": 1.2897658929130846,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_PRE",
+      "window": "prefix512",
+      "n_KL": 496,
+      "n_NLL": 496,
+      "mean_KL": 0.00044130527128114356,
+      "mean_NLL": 1.0844750906729128,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.00179690193626302,
+      "mean_NLL": 2.5024799403733513,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_JOINT8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0011134036050308982,
+      "mean_NLL": 0.9815456594288972,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.00037217071918120776,
+      "mean_NLL": 0.8396526969912929,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.001890090016420339,
+      "mean_NLL": 2.646400483462198,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_JOINT8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.00098905318352501,
+      "mean_NLL": 0.8219385663323268,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.00040653688165510356,
+      "mean_NLL": 0.8474722677953744,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0021414766073852218,
+      "mean_NLL": 2.5161950323627904,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_JOINT8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.001114839473634381,
+      "mean_NLL": 1.2600128037280638,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0004008113474775856,
+      "mean_NLL": 0.8421380789972651,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.002128991246958671,
+      "mean_NLL": 2.607183517004155,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_JOINT8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.001313843069366814,
+      "mean_NLL": 1.439248250200341,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_PRE",
+      "window": "primary1024",
+      "n_KL": 1008,
+      "n_NLL": 1007,
+      "mean_KL": 0.0003926379375251638,
+      "mean_NLL": 0.8519764817348482,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm0",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0020477281201686025,
+      "mean_NLL": 2.5544283469318225,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm0",
+      "domain": "code",
+      "method": "B_JOINT8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0012324876226374826,
+      "mean_NLL": 0.8205651107199058,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm0",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.00031725160642899144,
+      "mean_NLL": 0.6216591811329535,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm1",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0023897996274468525,
+      "mean_NLL": 2.7068047230653387,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm1",
+      "domain": "code",
+      "method": "B_JOINT8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.000826006337593225,
+      "mean_NLL": 0.6288185349501786,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm1",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0003873245000048288,
+      "mean_NLL": 0.6559261906353624,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm2",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.002824643683292842,
+      "mean_NLL": 2.3376491802075767,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm2",
+      "domain": "code",
+      "method": "B_JOINT8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0013100095607436971,
+      "mean_NLL": 1.0509936218570048,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm2",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.00035232991744279504,
+      "mean_NLL": 0.6078623704426935,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_natural_language_confirm3",
+      "domain": "natural_language",
+      "method": "B_JOINT8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.0027026663577742866,
+      "mean_NLL": 2.422609689026178,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_code_confirm3",
+      "domain": "code",
+      "method": "B_JOINT8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.001364649930784505,
+      "mean_NLL": 1.5843426713637052,
+      "status": "DEFINED"
+    },
+    {
+      "sequence_id": "rtpa_v04_associative_recall_confirm3",
+      "domain": "associative_recall",
+      "method": "B_JOINT8_P_PRE",
+      "window": "late512",
+      "n_KL": 512,
+      "n_NLL": 511,
+      "mean_KL": 0.00034549145794905836,
+      "mean_NLL": 0.6263026851922256,
+      "status": "DEFINED"
+    }
+  ],
+  "reproduction_level": "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS",
+  "tensor_to_metric": "NOT_VERIFIED_FULL_LOGITS_NOT_STORED"
+}

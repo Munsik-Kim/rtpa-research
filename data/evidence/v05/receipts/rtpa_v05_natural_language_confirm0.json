@@ -1,0 +1,194 @@
+{
+  "sequence_id": "rtpa_v05_natural_language_confirm0",
+  "complete": true,
+  "methods": [
+    "NATIVE_REFERENCE",
+    "B_U8_P_PRE",
+    "B_DAMP8_P_PRE",
+    "B_DIAG8_P_PRE",
+    "B_MATCHED_ENERGY8_P_PRE"
+  ],
+  "input_sha256": "41eb40e465b992c2015073be2694a4c720daafaf58a53afb8e2e52c459e3d6ab",
+  "freeze_sha256": "29e09646f618e1c6ff329a7bce95765d0c4c903fa847fe397439f16caf137145",
+  "metric_file": {
+    "path": "artifacts/rtpa_v05_numerical_matched_energy/token_metrics/rtpa_v05_natural_language_confirm0.jsonl.gz",
+    "bytes": 133863,
+    "sha256": "5a1172a3148fabc505a12edeb2ce67659b4ea2f672fb4a9745e5e33ee51d2c72"
+  },
+  "physical_forwards": 5120,
+  "logical_trajectories": 5,
+  "physical_methods": [
+    "NATIVE_REFERENCE",
+    "B_U8_P_PRE",
+    "B_DAMP8_P_PRE",
+    "B_DIAG8_P_PRE",
+    "B_MATCHED_ENERGY8_P_PRE"
+  ],
+  "alias_map": {
+    "NATIVE_REFERENCE": "NATIVE_REFERENCE",
+    "B_U8_P_PRE": "B_U8_P_PRE",
+    "B_DAMP8_P_PRE": "B_DAMP8_P_PRE",
+    "B_DIAG8_P_PRE": "B_DIAG8_P_PRE",
+    "B_MATCHED_ENERGY8_P_PRE": "B_MATCHED_ENERGY8_P_PRE"
+  },
+  "failed_methods": {},
+  "seconds": 261.00921823799945,
+  "codec_events": {
+    "NATIVE_REFERENCE": {},
+    "B_U8_P_PRE": {
+      "0": {
+        "groups": 8388608,
+        "exact_zero": 28672,
+        "constant_nonzero": 0,
+        "underflow_floor": 3230,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 7,
+        "values": 268435456
+      },
+      "12": {
+        "groups": 8388608,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 764,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 7,
+        "values": 268435456
+      },
+      "22": {
+        "groups": 8388608,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 385,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 6,
+        "values": 268435456
+      }
+    },
+    "B_DAMP8_P_PRE": {
+      "0": {
+        "groups": 7864320,
+        "exact_zero": 28672,
+        "constant_nonzero": 0,
+        "underflow_floor": 3199,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 8,
+        "values": 251658240
+      },
+      "12": {
+        "groups": 7864320,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 753,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 8,
+        "values": 251658240
+      },
+      "22": {
+        "groups": 7864320,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 312,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 13,
+        "values": 251658240
+      }
+    },
+    "B_DIAG8_P_PRE": {
+      "0": {
+        "groups": 7864320,
+        "exact_zero": 28672,
+        "constant_nonzero": 0,
+        "underflow_floor": 2605,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 3,
+        "values": 251658240
+      },
+      "12": {
+        "groups": 7864320,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 732,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 8,
+        "values": 251658240
+      },
+      "22": {
+        "groups": 7864320,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 313,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 9,
+        "values": 251658240
+      }
+    },
+    "B_MATCHED_ENERGY8_P_PRE": {
+      "0": {
+        "groups": 7864320,
+        "exact_zero": 28672,
+        "constant_nonzero": 0,
+        "underflow_floor": 3197,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 4,
+        "values": 251658240
+      },
+      "12": {
+        "groups": 7864320,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 755,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 6,
+        "values": 251658240
+      },
+      "22": {
+        "groups": 7864320,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 355,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 2,
+        "values": 251658240
+      }
+    }
+  },
+  "peak_allocated_bytes": 1900866048,
+  "peak_scope": "five logical methods, independent physical caches; not single-request peak",
+  "utc": "2026-09-09T05:11:21.801799+00:00"
+}

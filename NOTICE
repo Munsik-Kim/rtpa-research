@@ -1,0 +1,22 @@
+RTPA recurrent-state precision allocation research
+Copyright 2026 Munsik-Kim
+
+Source: https://github.com/Munsik-Kim/rtpa-research
+
+Original project code and accompanying research materials are licensed under
+the Apache License, Version 2.0. Applicable third-party notices and licenses
+remain in force; see THIRD_PARTY_NOTICES.md.
+
+This distribution includes Qwen3.5-0.8B-Base tokenizer and configuration files:
+Copyright 2026 Alibaba Cloud
+Licensed under the Apache License, Version 2.0.
+Their original license is preserved at data/tokenizer/LICENSE.
+
+The English documentation is a translation and editorial consolidation of
+the project's earlier Korean research snapshot. Historical numerical code,
+observations, masks, and scientific decisions are not reattributed to this
+documentation revision. The source mapping identifies earlier path-only
+changes in the archived numerical modules.
+
+No endorsement by the cited model, dataset, framework, or paper authors is
+implied. No verified DAMP author implementation is included.

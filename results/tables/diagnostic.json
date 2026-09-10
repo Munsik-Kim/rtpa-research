@@ -1,0 +1,4962 @@
+{
+  "items": [
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "NATIVE_REFERENCE",
+      "prompt_KL": 0.0,
+      "GT_KL": 0.0,
+      "GT_NLL": 1.6131995272143946,
+      "digit_NLL": 1.395899777680988,
+      "format_NLL": 0.21729974953340658
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "prompt_KL": 0.0008699943319666339,
+      "GT_KL": 0.004988166923291803,
+      "GT_NLL": 1.3523987059785831,
+      "digit_NLL": 1.111761368480117,
+      "format_NLL": 0.24063733749846605
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "DIAG8_FROZEN",
+      "prompt_KL": 0.0007118735520098968,
+      "GT_KL": 0.0007886839327102147,
+      "GT_NLL": 1.6036666571816873,
+      "digit_NLL": 1.3641340571713627,
+      "format_NLL": 0.23953260001032461
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "prompt_KL": 0.0008763434128451547,
+      "GT_KL": 0.0006838000988255197,
+      "GT_NLL": 1.53824613902432,
+      "digit_NLL": 1.3237019205110379,
+      "format_NLL": 0.2145442185132822
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "NATIVE_REFERENCE",
+      "prompt_KL": 0.0,
+      "GT_KL": 0.0,
+      "GT_NLL": 0.4769371262431079,
+      "digit_NLL": 0.38290760380586164,
+      "format_NLL": 0.09402952243724627
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "prompt_KL": 0.0007779553554137806,
+      "GT_KL": 0.00032510576850434817,
+      "GT_NLL": 0.46608236790990176,
+      "digit_NLL": 0.36174742237163215,
+      "format_NLL": 0.10433494553826961
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "DIAG8_FROZEN",
+      "prompt_KL": 0.0009303309439082182,
+      "GT_KL": 0.0007084876632810312,
+      "GT_NLL": 0.5289669107238524,
+      "digit_NLL": 0.425187901265744,
+      "format_NLL": 0.10377900945810836
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "prompt_KL": 0.000740273044513655,
+      "GT_KL": 0.0009204079810770175,
+      "GT_NLL": 0.5449049235625267,
+      "digit_NLL": 0.44203548634671463,
+      "format_NLL": 0.1028694372158121
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "NATIVE_REFERENCE",
+      "prompt_KL": 0.0,
+      "GT_KL": 0.0,
+      "GT_NLL": 0.2727367458819465,
+      "digit_NLL": 0.1789389296623014,
+      "format_NLL": 0.09379781621964511
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "prompt_KL": 0.0005906898539157761,
+      "GT_KL": 0.00026510924134562136,
+      "GT_NLL": 0.296230014939713,
+      "digit_NLL": 0.19341732132482647,
+      "format_NLL": 0.10281269361488654
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "DIAG8_FROZEN",
+      "prompt_KL": 0.0006588073739095448,
+      "GT_KL": 0.00027770745559811417,
+      "GT_NLL": 0.2951791094176812,
+      "digit_NLL": 0.1933715270724896,
+      "format_NLL": 0.1018075823451916
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "prompt_KL": 0.0006450280717520232,
+      "GT_KL": 0.00023083557071283263,
+      "GT_NLL": 0.2886801030789172,
+      "digit_NLL": 0.19739210082438063,
+      "format_NLL": 0.0912880022545366
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "NATIVE_REFERENCE",
+      "prompt_KL": 0.0,
+      "GT_KL": 0.0,
+      "GT_NLL": 0.2057545037559656,
+      "digit_NLL": 0.052102774891789494,
+      "format_NLL": 0.1536517288641761
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "prompt_KL": 0.0006579889625675663,
+      "GT_KL": 0.0006622577376782798,
+      "GT_NLL": 0.2420270526203332,
+      "digit_NLL": 0.05068190024075392,
+      "format_NLL": 0.19134515237957928
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "DIAG8_FROZEN",
+      "prompt_KL": 0.0007183784541566698,
+      "GT_KL": 0.00016858718254137404,
+      "GT_NLL": 0.22433872127311005,
+      "digit_NLL": 0.05254950194136043,
+      "format_NLL": 0.17178921933174962
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "prompt_KL": 0.0007562297007041683,
+      "GT_KL": 4.9117103325106715e-05,
+      "GT_NLL": 0.20224043467787567,
+      "digit_NLL": 0.0488192292602605,
+      "format_NLL": 0.15342120541761517
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "NATIVE_REFERENCE",
+      "prompt_KL": 0.0,
+      "GT_KL": 0.0,
+      "GT_NLL": 0.36443008616970474,
+      "digit_NLL": 0.25276088352383397,
+      "format_NLL": 0.11166920264587077
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "prompt_KL": 0.0007567580020697521,
+      "GT_KL": 5.688207076444572e-05,
+      "GT_NLL": 0.36707837814607913,
+      "digit_NLL": 0.25664518471695175,
+      "format_NLL": 0.11043319342912739
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "DIAG8_FROZEN",
+      "prompt_KL": 0.0007636165287600738,
+      "GT_KL": 0.00020541667932633728,
+      "GT_NLL": 0.380582501525776,
+      "digit_NLL": 0.25796436740497697,
+      "format_NLL": 0.12261813412079903
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "prompt_KL": 0.0008160837499529745,
+      "GT_KL": 0.00012819987559708264,
+      "GT_NLL": 0.3718987079746441,
+      "digit_NLL": 0.26144458378571045,
+      "format_NLL": 0.11045412418893363
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "NATIVE_REFERENCE",
+      "prompt_KL": 0.0,
+      "GT_KL": 0.0,
+      "GT_NLL": 0.4051943446833626,
+      "digit_NLL": 0.24759584210355712,
+      "format_NLL": 0.15759850257980546
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "prompt_KL": 0.0008401572508577058,
+      "GT_KL": 0.0017730861218102714,
+      "GT_NLL": 0.43935012923010675,
+      "digit_NLL": 0.22254446737649758,
+      "format_NLL": 0.21680566185360917
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "DIAG8_FROZEN",
+      "prompt_KL": 0.0008520615831778811,
+      "GT_KL": 0.0036276291329270624,
+      "GT_NLL": 0.5161515601512008,
+      "digit_NLL": 0.27669626751280063,
+      "format_NLL": 0.23945529263840015
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "prompt_KL": 0.0007470486255520889,
+      "GT_KL": 0.0013390010713335498,
+      "GT_NLL": 0.40738496435134053,
+      "digit_NLL": 0.21244176327493136,
+      "format_NLL": 0.19494320107640917
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "NATIVE_REFERENCE",
+      "prompt_KL": 0.0,
+      "GT_KL": 0.0,
+      "GT_NLL": 0.7363429061076658,
+      "digit_NLL": 0.45988355317334495,
+      "format_NLL": 0.2764593529343209
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "prompt_KL": 0.000993811672195942,
+      "GT_KL": 0.0006343427118655259,
+      "GT_NLL": 0.725601886227178,
+      "digit_NLL": 0.4218923502612384,
+      "format_NLL": 0.30370953596593964
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "DIAG8_FROZEN",
+      "prompt_KL": 0.0009108537941680629,
+      "GT_KL": 0.0010336281071132282,
+      "GT_NLL": 0.7202894010855196,
+      "digit_NLL": 0.4154285538917719,
+      "format_NLL": 0.30486084719374773
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "prompt_KL": 0.0011213737642005622,
+      "GT_KL": 0.0005121090942949183,
+      "GT_NLL": 0.7742276921937759,
+      "digit_NLL": 0.4713479283132216,
+      "format_NLL": 0.30287976388055426
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "NATIVE_REFERENCE",
+      "prompt_KL": 0.0,
+      "GT_KL": 0.0,
+      "GT_NLL": 0.41661015414360847,
+      "digit_NLL": 0.22171265940223606,
+      "format_NLL": 0.1948974947413724
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "prompt_KL": 0.0013102137035281632,
+      "GT_KL": 0.00028123044593995195,
+      "GT_NLL": 0.42932188594496523,
+      "digit_NLL": 0.23552400148992092,
+      "format_NLL": 0.1937978844550443
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "DIAG8_FROZEN",
+      "prompt_KL": 0.0010899627466452785,
+      "GT_KL": 0.0008999784015964919,
+      "GT_NLL": 0.4607981914339945,
+      "digit_NLL": 0.22104114013223963,
+      "format_NLL": 0.23975705130175484
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "prompt_KL": 0.0010522680536277406,
+      "GT_KL": 0.00042117967846713045,
+      "GT_NLL": 0.45052922814080887,
+      "digit_NLL": 0.234818095779751,
+      "format_NLL": 0.21571113236105788
+    }
+  ],
+  "layers": [
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.00276541847296544,
+        "reference_energy": 1522.2821930056186,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 6.203445423281985,
+        "reference_energy": 1500.6621879207391,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0005041732266251452,
+        "reference_energy": 0.5658479804339974,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.026646408976901518,
+        "reference_energy": 15440.72933752297,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 64.70238973200068,
+        "reference_energy": 15258.472427163008,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.003064392657386644,
+        "reference_energy": 5.988325136192652,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.008758413455642492,
+        "reference_energy": 1263.0455825288645,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 10.488759089925871,
+        "reference_energy": 1265.7641021551844,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.00047549308874911375,
+        "reference_energy": 0.10164950322787318,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.04708801123511848,
+        "reference_energy": 12747.596212496963,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 118.7275115021369,
+        "reference_energy": 12774.193639620296,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.005560649827834256,
+        "reference_energy": 1.8926760785205592,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0026411460922230717,
+        "reference_energy": 444.0255470499121,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 5.183199069687372,
+        "reference_energy": 443.463370148117,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.00010473697506911095,
+        "reference_energy": 0.056172463749353946,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.014028865620818091,
+        "reference_energy": 4756.246401506135,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 57.225893502552196,
+        "reference_energy": 4772.846221829259,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0017091245535835013,
+        "reference_energy": 1.3229444160915143,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "DIAG8_FROZEN",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.003191255686761145,
+        "reference_energy": 1521.1564543307134,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 6.4189999724021165,
+        "reference_energy": 1500.6621879207391,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0005075247324562492,
+        "reference_energy": 0.5658479804339974,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "DIAG8_FROZEN",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.030362453463280713,
+        "reference_energy": 15430.756242694966,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 67.4126688144923,
+        "reference_energy": 15258.472427163008,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0032091138914612173,
+        "reference_energy": 5.988325136192652,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "DIAG8_FROZEN",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.010092617264234672,
+        "reference_energy": 1263.6009308253776,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 11.722570781531536,
+        "reference_energy": 1265.7641021551844,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.00043806148796274243,
+        "reference_energy": 0.10164950322787318,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "DIAG8_FROZEN",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.054107411623839106,
+        "reference_energy": 12753.53163226466,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 133.86966744933005,
+        "reference_energy": 12774.193639620296,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.005562419343321788,
+        "reference_energy": 1.8926760785205592,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "DIAG8_FROZEN",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0049256578033522284,
+        "reference_energy": 443.9369072428742,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 7.091093951725644,
+        "reference_energy": 443.463370148117,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0001578916944478246,
+        "reference_energy": 0.056172463749353946,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "DIAG8_FROZEN",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.029165797015469442,
+        "reference_energy": 4779.056281826653,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 80.59257292430556,
+        "reference_energy": 4772.846221829259,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0022647464824617682,
+        "reference_energy": 1.3229444160915143,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0027401185879175395,
+        "reference_energy": 1522.6266992855676,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 6.22408256469532,
+        "reference_energy": 1500.6621879207391,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0005274379705254975,
+        "reference_energy": 0.5658479804339974,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.0253971754986709,
+        "reference_energy": 15441.47498308587,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 64.8648134432295,
+        "reference_energy": 15258.472427163008,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0034989216653415985,
+        "reference_energy": 5.988325136192652,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.008729379778973347,
+        "reference_energy": 1260.8990161245777,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 10.636221853418373,
+        "reference_energy": 1265.7641021551844,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.00047597052702396916,
+        "reference_energy": 0.10164950322787318,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.04719193388790791,
+        "reference_energy": 12731.313139891774,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 120.85446235497534,
+        "reference_energy": 12774.193639620296,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.00600727253768242,
+        "reference_energy": 1.8926760785205592,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.002633445489163833,
+        "reference_energy": 442.0776158958701,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 5.110398633529722,
+        "reference_energy": 443.463370148117,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.00012235886833663194,
+        "reference_energy": 0.056172463749353946,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.013858623369734225,
+        "reference_energy": 4738.572146251425,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 56.58986669363726,
+        "reference_energy": 4772.846221829259,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0018203315929396454,
+        "reference_energy": 1.3229444160915143,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "NATIVE_REFERENCE",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0030909423414101087,
+        "reference_energy": 1500.6621879207391,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 1500.6621879207391,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.5658479804339974,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "NATIVE_REFERENCE",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.03423106900494795,
+        "reference_energy": 15258.472427163008,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 15258.472427163008,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 5.988325136192652,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "NATIVE_REFERENCE",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.002965132098760184,
+        "reference_energy": 1265.7641021551844,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 1265.7641021551844,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.10164950322787318,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "NATIVE_REFERENCE",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.01569474037876683,
+        "reference_energy": 12774.193639620296,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 12774.193639620296,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 1.8926760785205592,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "NATIVE_REFERENCE",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.001155739172332786,
+        "reference_energy": 443.463370148117,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 443.463370148117,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.056172463749353946,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_11",
+      "method": "NATIVE_REFERENCE",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.00889696694133515,
+        "reference_energy": 4772.846221829259,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 4772.846221829259,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 1.3229444160915143,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.002659566675987881,
+        "reference_energy": 1557.6727295041605,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 4.930020822278803,
+        "reference_energy": 1548.7438408932685,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.00017908522471386825,
+        "reference_energy": 0.6007454205179524,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.025736378307166904,
+        "reference_energy": 15567.815624672132,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 51.22780882694598,
+        "reference_energy": 15430.534598123151,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0033524110001895728,
+        "reference_energy": 6.235027177888406,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.008339677660122663,
+        "reference_energy": 1217.7567291895677,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 10.575111878944766,
+        "reference_energy": 1210.9383631249902,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0005483590802165349,
+        "reference_energy": 0.1179668003395388,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.04360219451082667,
+        "reference_energy": 12367.235312196413,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 120.58977556751445,
+        "reference_energy": 12333.956481424533,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.00594511412930246,
+        "reference_energy": 1.83720133847952,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0024995486428664275,
+        "reference_energy": 449.84282733117215,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 5.228086318451485,
+        "reference_energy": 452.25439255038236,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0001010768161742953,
+        "reference_energy": 0.053989854585695385,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.014093105094000183,
+        "reference_energy": 4763.927470439679,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 58.4859834573226,
+        "reference_energy": 4810.6153806020275,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0016270644635827574,
+        "reference_energy": 1.3500060199365702,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "DIAG8_FROZEN",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0031786330387247024,
+        "reference_energy": 1554.7152309624732,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 4.894317103700843,
+        "reference_energy": 1548.7438408932685,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0001597335071959501,
+        "reference_energy": 0.6007454205179524,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "DIAG8_FROZEN",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.029232886709439604,
+        "reference_energy": 15543.55831938123,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 51.11085741278941,
+        "reference_energy": 15430.534598123151,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.002788078789480893,
+        "reference_energy": 6.235027177888406,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "DIAG8_FROZEN",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.009717049024163317,
+        "reference_energy": 1215.4920175759469,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 11.842002442464441,
+        "reference_energy": 1210.9383631249902,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0004989209337640094,
+        "reference_energy": 0.1179668003395388,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "DIAG8_FROZEN",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.05051343802961386,
+        "reference_energy": 12368.853541529197,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 135.707186092088,
+        "reference_energy": 12333.956481424533,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.006187383503803386,
+        "reference_energy": 1.83720133847952,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "DIAG8_FROZEN",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.004684626738725166,
+        "reference_energy": 452.0500477757935,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 6.97367509663089,
+        "reference_energy": 452.25439255038236,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.00017023329813659069,
+        "reference_energy": 0.053989854585695385,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "DIAG8_FROZEN",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.028840164274450412,
+        "reference_energy": 4800.668649081794,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 80.16860567543682,
+        "reference_energy": 4810.6153806020275,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0023492072382656835,
+        "reference_energy": 1.3500060199365702,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0026180333767256733,
+        "reference_energy": 1557.2339222741252,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 5.018930665255894,
+        "reference_energy": 1548.7438408932685,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.00021462050362231678,
+        "reference_energy": 0.6007454205179524,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.024433453923848363,
+        "reference_energy": 15566.75152285967,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 52.644574024430256,
+        "reference_energy": 15430.534598123151,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.003641854279885616,
+        "reference_energy": 6.235027177888406,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.008341065215005128,
+        "reference_energy": 1212.0872554364137,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 10.639792716060779,
+        "reference_energy": 1210.9383631249902,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0005669327203916703,
+        "reference_energy": 0.1179668003395388,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.04365819283203163,
+        "reference_energy": 12309.961301161053,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 121.11405874500875,
+        "reference_energy": 12333.956481424533,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.005671427965633323,
+        "reference_energy": 1.83720133847952,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.002543688567838091,
+        "reference_energy": 448.35994380751737,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 5.265117547933027,
+        "reference_energy": 452.25439255038236,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.00011554330688387796,
+        "reference_energy": 0.053989854585695385,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.013864854933257429,
+        "reference_energy": 4755.463525622215,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 59.010613756570216,
+        "reference_energy": 4810.6153806020275,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0017925147837632202,
+        "reference_energy": 1.3500060199365702,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "NATIVE_REFERENCE",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0034665497616654106,
+        "reference_energy": 1548.7438408932685,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 1548.7438408932685,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.6007454205179524,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "NATIVE_REFERENCE",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.03500996710744564,
+        "reference_energy": 15430.534598123151,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 15430.534598123151,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 6.235027177888406,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "NATIVE_REFERENCE",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0028853417691095656,
+        "reference_energy": 1210.9383631249902,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 1210.9383631249902,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.1179668003395388,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "NATIVE_REFERENCE",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.014850579376171413,
+        "reference_energy": 12333.956481424533,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 12333.956481424533,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 1.83720133847952,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "NATIVE_REFERENCE",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.001127333920799212,
+        "reference_energy": 452.25439255038236,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 452.25439255038236,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.053989854585695385,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_13",
+      "method": "NATIVE_REFERENCE",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.008759594161768991,
+        "reference_energy": 4810.6153806020275,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 4810.6153806020275,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 1.3500060199365702,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.002877146147645623,
+        "reference_energy": 1573.5826708133054,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 6.401726076626245,
+        "reference_energy": 1559.1670625373533,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0007822897609093155,
+        "reference_energy": 0.6126519483827645,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.026595294774892336,
+        "reference_energy": 15696.504221765237,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 67.82774706173973,
+        "reference_energy": 15562.995501004963,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.004733231829775797,
+        "reference_energy": 6.464964702046565,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.008805871735442663,
+        "reference_energy": 1243.3716108690783,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 10.029832092361296,
+        "reference_energy": 1237.7094093416729,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0005150307820404129,
+        "reference_energy": 0.14631720410275326,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.04721179689989833,
+        "reference_energy": 12744.881328372081,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 116.32652671163598,
+        "reference_energy": 12699.443129978528,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.005853613104110872,
+        "reference_energy": 1.9096835030463524,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.002680604925273568,
+        "reference_energy": 457.5133187671598,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 5.385778806389344,
+        "reference_energy": 459.6080764716119,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0001029135247723831,
+        "reference_energy": 0.05309284080949123,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.0146176311312315,
+        "reference_energy": 4831.916944185349,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 60.623744203981346,
+        "reference_energy": 4875.41460938019,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0017220266313243773,
+        "reference_energy": 1.327331619395536,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "DIAG8_FROZEN",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0033000083726569623,
+        "reference_energy": 1571.2541941684235,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 6.282862473844819,
+        "reference_energy": 1559.1670625373533,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0007394301022832243,
+        "reference_energy": 0.6126519483827645,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "DIAG8_FROZEN",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.0302084661132989,
+        "reference_energy": 15674.822397349177,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 66.92176224963258,
+        "reference_energy": 15562.995501004963,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.004362633434651788,
+        "reference_energy": 6.464964702046565,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "DIAG8_FROZEN",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.010268301137135614,
+        "reference_energy": 1240.9231469697684,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 11.575119245996351,
+        "reference_energy": 1237.7094093416729,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0005226762398492882,
+        "reference_energy": 0.14631720410275326,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "DIAG8_FROZEN",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.05398934784212163,
+        "reference_energy": 12751.218362545536,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 135.1874898177831,
+        "reference_energy": 12699.443129978528,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.006139223843840026,
+        "reference_energy": 1.9096835030463524,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "DIAG8_FROZEN",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.004938286200451232,
+        "reference_energy": 457.24824891520325,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 7.461657332613059,
+        "reference_energy": 459.6080764716119,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.00017631278871936345,
+        "reference_energy": 0.05309284080949123,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "DIAG8_FROZEN",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.030429640805007072,
+        "reference_energy": 4850.902289694562,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 87.26109048516592,
+        "reference_energy": 4875.41460938019,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.002384015960759827,
+        "reference_energy": 1.327331619395536,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.002829094781597615,
+        "reference_energy": 1574.4588897368646,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 6.459249938008014,
+        "reference_energy": 1559.1670625373533,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0007863491999941383,
+        "reference_energy": 0.6126519483827645,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.025472860491374424,
+        "reference_energy": 15704.99200737965,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 68.70099590709773,
+        "reference_energy": 15562.995501004963,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.00471318368228975,
+        "reference_energy": 6.464964702046565,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.008814901849335484,
+        "reference_energy": 1241.9155901693493,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 10.112510070817658,
+        "reference_energy": 1237.7094093416729,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0005184933335183565,
+        "reference_energy": 0.14631720410275326,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.046924272068883416,
+        "reference_energy": 12720.227702779483,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 117.51436660880825,
+        "reference_energy": 12699.443129978528,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.006463836309400915,
+        "reference_energy": 1.9096835030463524,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0026825136652160733,
+        "reference_energy": 455.5976741634479,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 5.26530851944258,
+        "reference_energy": 459.6080764716119,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.00013649293714889388,
+        "reference_energy": 0.05309284080949123,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.014429632263527708,
+        "reference_energy": 4822.863775779252,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 59.44121418021496,
+        "reference_energy": 4875.41460938019,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0017977915189666175,
+        "reference_energy": 1.327331619395536,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "NATIVE_REFERENCE",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.003738575062992085,
+        "reference_energy": 1559.1670625373533,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 1559.1670625373533,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.6126519483827645,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "NATIVE_REFERENCE",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.03550034547290816,
+        "reference_energy": 15562.995501004963,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 15562.995501004963,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 6.464964702046565,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "NATIVE_REFERENCE",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.00295589961631919,
+        "reference_energy": 1237.7094093416729,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 1237.7094093416729,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.14631720410275326,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "NATIVE_REFERENCE",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.015987811603971017,
+        "reference_energy": 12699.443129978528,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 12699.443129978528,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 1.9096835030463524,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "NATIVE_REFERENCE",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.001216067621238691,
+        "reference_energy": 459.6080764716119,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 459.6080764716119,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.05309284080949123,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_7",
+      "method": "NATIVE_REFERENCE",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.00889928069997875,
+        "reference_energy": 4875.41460938019,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 4875.41460938019,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 1.327331619395536,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0027978960480878343,
+        "reference_energy": 1554.8326897555003,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 4.729675329396605,
+        "reference_energy": 1549.3121457200066,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0002573545541073943,
+        "reference_energy": 0.6168370240052147,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.025719785789668756,
+        "reference_energy": 15362.403154552132,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 48.82349138509407,
+        "reference_energy": 15350.26067002678,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.002256171595184028,
+        "reference_energy": 6.376018686359187,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.008748034990874306,
+        "reference_energy": 1238.0677095500548,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 11.03103638042926,
+        "reference_energy": 1240.0834333754003,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0006470652816206241,
+        "reference_energy": 0.11639214728241563,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.04397858314162458,
+        "reference_energy": 12331.116839660828,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 124.42568248495841,
+        "reference_energy": 12362.214073836585,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.00740044548961763,
+        "reference_energy": 1.9365880503943629,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0026464737383675874,
+        "reference_energy": 459.2211302208872,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 5.287814798287992,
+        "reference_energy": 460.7552817641339,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.00013062579917342315,
+        "reference_energy": 0.06414090187877054,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.013612098597528108,
+        "reference_energy": 4754.505421188008,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 57.80657547814289,
+        "reference_energy": 4793.77189389735,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0019272192353200334,
+        "reference_energy": 1.3538534551737638,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "DIAG8_FROZEN",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0031926438045148013,
+        "reference_energy": 1553.4234681410187,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 4.765771873224839,
+        "reference_energy": 1549.3121457200066,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0003269948332720854,
+        "reference_energy": 0.6168370240052147,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "DIAG8_FROZEN",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.029167905732389292,
+        "reference_energy": 15348.281272310773,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 49.57109158911051,
+        "reference_energy": 15350.26067002678,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.002432052231832638,
+        "reference_energy": 6.376018686359187,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "DIAG8_FROZEN",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.01031500194264314,
+        "reference_energy": 1241.4179133349917,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 12.518929788106005,
+        "reference_energy": 1240.0834333754003,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0005563766623450485,
+        "reference_energy": 0.11639214728241563,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "DIAG8_FROZEN",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.05093784865271789,
+        "reference_energy": 12366.71710276577,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 142.7517862499924,
+        "reference_energy": 12362.214073836585,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0059741102428259975,
+        "reference_energy": 1.9365880503943629,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "DIAG8_FROZEN",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.00483555866179097,
+        "reference_energy": 461.3739605717402,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 7.552882250788717,
+        "reference_energy": 460.7552817641339,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.00022293888352100286,
+        "reference_energy": 0.06414090187877054,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "DIAG8_FROZEN",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.028574703949816847,
+        "reference_energy": 4800.153372179173,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 85.26125471296251,
+        "reference_energy": 4793.77189389735,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.002524805339736569,
+        "reference_energy": 1.3538534551737638,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.002764481008023021,
+        "reference_energy": 1555.4564699312057,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 4.696429666197858,
+        "reference_energy": 1549.3121457200066,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.000289561131358309,
+        "reference_energy": 0.6168370240052147,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.02452900033511105,
+        "reference_energy": 15368.017839118267,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 48.4518387800628,
+        "reference_energy": 15350.26067002678,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.002775583098464864,
+        "reference_energy": 6.376018686359187,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.008806884433438938,
+        "reference_energy": 1240.3722211313898,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 11.011234233306386,
+        "reference_energy": 1240.0834333754003,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.000618225714967226,
+        "reference_energy": 0.11639214728241563,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.044533654170788126,
+        "reference_energy": 12332.666105207829,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 124.02474558796912,
+        "reference_energy": 12362.214073836585,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.00839555532515122,
+        "reference_energy": 1.9365880503943629,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.002653769993558728,
+        "reference_energy": 458.9413989967922,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 5.3557197952977456,
+        "reference_energy": 460.7552817641339,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.00016657637512903535,
+        "reference_energy": 0.06414090187877054,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.013554995709367256,
+        "reference_energy": 4758.884737933257,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 58.60733180013017,
+        "reference_energy": 4793.77189389735,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0019700183159529028,
+        "reference_energy": 1.3538534551737638,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "NATIVE_REFERENCE",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0033477372158285668,
+        "reference_energy": 1549.3121457200066,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 1549.3121457200066,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.6168370240052147,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "NATIVE_REFERENCE",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.03293845831190363,
+        "reference_energy": 15350.26067002678,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 15350.26067002678,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 6.376018686359187,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "NATIVE_REFERENCE",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.002866190826277348,
+        "reference_energy": 1240.0834333754003,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 1240.0834333754003,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.11639214728241563,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "NATIVE_REFERENCE",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.01507566696638334,
+        "reference_energy": 12362.214073836585,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 12362.214073836585,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 1.9365880503943629,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "NATIVE_REFERENCE",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0012085729538725972,
+        "reference_energy": 460.7552817641339,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 460.7552817641339,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.06414090187877054,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_long_8",
+      "method": "NATIVE_REFERENCE",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.007955895359042354,
+        "reference_energy": 4793.77189389735,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 4793.77189389735,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 1.3538534551737638,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0030171209606403497,
+        "reference_energy": 1559.7013983095794,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.4415953384669744,
+        "reference_energy": 1556.6311761875813,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 8.726388259052129e-05,
+        "reference_energy": 0.5563964702332127,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.029067170415814334,
+        "reference_energy": 16697.593457379902,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 13.759793135996413,
+        "reference_energy": 16655.233233740786,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0008628941532547658,
+        "reference_energy": 5.861983902310572,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.00768041931969613,
+        "reference_energy": 1188.7740197217581,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.5387921266320554,
+        "reference_energy": 1194.2240379414384,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 6.977944576637266e-05,
+        "reference_energy": 0.08615688805570365,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.06596845651291935,
+        "reference_energy": 11429.89661000203,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 13.931983206553479,
+        "reference_energy": 11479.918658989947,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0007795669782449125,
+        "reference_energy": 1.5200969088674054,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0026331226545751917,
+        "reference_energy": 473.4289901479808,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.6921173823099345,
+        "reference_energy": 471.60365497336653,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 2.8688724225512494e-05,
+        "reference_energy": 0.06527442333900497,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.01782829621128407,
+        "reference_energy": 5194.668134039751,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 6.431424285867882,
+        "reference_energy": 5186.557480164103,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0004446561930112391,
+        "reference_energy": 1.3382955097562654,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "DIAG8_FROZEN",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0034630195329106834,
+        "reference_energy": 1558.9494017693758,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.5451083574763547,
+        "reference_energy": 1556.6311761875813,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.00010217005733443522,
+        "reference_energy": 0.5563964702332127,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "DIAG8_FROZEN",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.033013555619217996,
+        "reference_energy": 16687.22495030736,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 14.701532649170126,
+        "reference_energy": 16655.233233740786,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0008817197924061922,
+        "reference_energy": 5.861983902310572,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "DIAG8_FROZEN",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.008897740376160226,
+        "reference_energy": 1186.0141213706129,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.691455394938028,
+        "reference_energy": 1194.2240379414384,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 6.610169501503298e-05,
+        "reference_energy": 0.08615688805570365,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "DIAG8_FROZEN",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.07583893647991051,
+        "reference_energy": 11382.053486817957,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 15.177573941709374,
+        "reference_energy": 11479.918658989947,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0007251259334972965,
+        "reference_energy": 1.5200969088674054,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "DIAG8_FROZEN",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.004569961625306633,
+        "reference_energy": 472.40297837806645,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.9744371302601357,
+        "reference_energy": 471.60365497336653,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 3.2479373156352964e-05,
+        "reference_energy": 0.06527442333900497,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "DIAG8_FROZEN",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.03330185158649312,
+        "reference_energy": 5200.928248480529,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 9.053870018015147,
+        "reference_energy": 5186.557480164103,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0004577589668658586,
+        "reference_energy": 1.3382955097562654,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0029503972416663267,
+        "reference_energy": 1559.5924447903951,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.4765310671164547,
+        "reference_energy": 1556.6311761875813,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.00010122092105369582,
+        "reference_energy": 0.5563964702332127,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.027746693762010662,
+        "reference_energy": 16692.553064946052,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 13.99786771098043,
+        "reference_energy": 16655.233233740786,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0009710769212534619,
+        "reference_energy": 5.861983902310572,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.007661569191762258,
+        "reference_energy": 1183.7250540820103,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.6329418137965892,
+        "reference_energy": 1194.2240379414384,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 7.322912001147519e-05,
+        "reference_energy": 0.08615688805570365,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.0658027268484863,
+        "reference_energy": 11384.51961998694,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 14.58090822031047,
+        "reference_energy": 11479.918658989947,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0008246866276018691,
+        "reference_energy": 1.5200969088674054,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0026113663162975562,
+        "reference_energy": 471.04978330736856,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.6881412367972211,
+        "reference_energy": 471.60365497336653,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 2.3736711778506853e-05,
+        "reference_energy": 0.06527442333900497,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.017331157778016113,
+        "reference_energy": 5176.680585298207,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 6.462765869391664,
+        "reference_energy": 5186.557480164103,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.000437690522691906,
+        "reference_energy": 1.3382955097562654,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "NATIVE_REFERENCE",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.003881742380551203,
+        "reference_energy": 1556.6311761875813,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 1556.6311761875813,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.5563964702332127,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "NATIVE_REFERENCE",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.04138026544792898,
+        "reference_energy": 16655.233233740786,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 16655.233233740786,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 5.861983902310572,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "NATIVE_REFERENCE",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.002669791326353067,
+        "reference_energy": 1194.2240379414384,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 1194.2240379414384,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.08615688805570365,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "NATIVE_REFERENCE",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.022175781446034996,
+        "reference_energy": 11479.918658989947,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 11479.918658989947,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 1.5200969088674054,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "NATIVE_REFERENCE",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0012223607007465771,
+        "reference_energy": 471.60365497336653,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 471.60365497336653,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.06527442333900497,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_11",
+      "method": "NATIVE_REFERENCE",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.010237258337039533,
+        "reference_energy": 5186.557480164103,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 5186.557480164103,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 1.3382955097562654,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0030125430685625696,
+        "reference_energy": 1572.80087809954,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.476223858884184,
+        "reference_energy": 1564.1540238678617,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 5.126988245871691e-05,
+        "reference_energy": 0.566132867429715,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.030697896749649033,
+        "reference_energy": 16767.665566792715,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 13.099628687511048,
+        "reference_energy": 16720.64260567938,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0006125131380897327,
+        "reference_energy": 5.941207135400271,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.00783372661000391,
+        "reference_energy": 1198.4968729953926,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.60603179932209,
+        "reference_energy": 1199.7370478513274,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 8.670201038716061e-05,
+        "reference_energy": 0.07157298422303131,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.06526085314708811,
+        "reference_energy": 11522.465649175552,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 14.682290633770938,
+        "reference_energy": 11529.622187736157,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0008382070960694407,
+        "reference_energy": 1.6246490501646889,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.002566593313166713,
+        "reference_energy": 478.116818576664,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.7148799636245324,
+        "reference_energy": 476.6101162553282,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 2.4178393576581863e-05,
+        "reference_energy": 0.07106782928443339,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.01784541393590458,
+        "reference_energy": 5144.5542872068645,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 6.373298748690497,
+        "reference_energy": 5118.906286641584,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0003911730470458505,
+        "reference_energy": 1.2700387641843802,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "DIAG8_FROZEN",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.003478514365888185,
+        "reference_energy": 1572.6492804255902,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.5591837477051138,
+        "reference_energy": 1564.1540238678617,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 4.672258291927864e-05,
+        "reference_energy": 0.566132867429715,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "DIAG8_FROZEN",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.03498218396901685,
+        "reference_energy": 16765.137832911198,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 14.041213522838024,
+        "reference_energy": 16720.64260567938,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0005289643740838074,
+        "reference_energy": 5.941207135400271,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "DIAG8_FROZEN",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.00908732969158099,
+        "reference_energy": 1193.5515525469086,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.727645913447141,
+        "reference_energy": 1199.7370478513274,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 7.588243033507986e-05,
+        "reference_energy": 0.07157298422303131,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "DIAG8_FROZEN",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.07538779325188182,
+        "reference_energy": 11472.193546648215,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 15.886054578377577,
+        "reference_energy": 11529.622187736157,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0007820844156048997,
+        "reference_energy": 1.6246490501646889,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "DIAG8_FROZEN",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.004501000358777395,
+        "reference_energy": 479.39000734910263,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.9694995375711718,
+        "reference_energy": 476.6101162553282,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 3.596041883887768e-05,
+        "reference_energy": 0.07106782928443339,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "DIAG8_FROZEN",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.03348421255933916,
+        "reference_energy": 5157.269237522774,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 8.75893746833514,
+        "reference_energy": 5118.906286641584,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0004275843579231979,
+        "reference_energy": 1.2700387641843802,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0028558515823401717,
+        "reference_energy": 1572.593619475618,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.4984458293019776,
+        "reference_energy": 1564.1540238678617,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 5.3435575971949686e-05,
+        "reference_energy": 0.566132867429715,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.02946504794404579,
+        "reference_energy": 16765.683016478313,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 13.305697427455073,
+        "reference_energy": 16720.64260567938,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0006752929733171073,
+        "reference_energy": 5.941207135400271,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.00784417224768757,
+        "reference_energy": 1195.971635983407,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.6311539704472675,
+        "reference_energy": 1199.7370478513274,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 9.334655097569867e-05,
+        "reference_energy": 0.07157298422303131,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.06519043846681193,
+        "reference_energy": 11487.67109098331,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 15.142761175803438,
+        "reference_energy": 11529.622187736157,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0008539928844259768,
+        "reference_energy": 1.6246490501646889,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0025554651391935415,
+        "reference_energy": 476.1578809615069,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.7083566994391172,
+        "reference_energy": 476.6101162553282,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 3.316104962361126e-05,
+        "reference_energy": 0.07106782928443339,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.0173621055852056,
+        "reference_energy": 5125.333963364496,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 6.299966017138432,
+        "reference_energy": 5118.906286641584,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.00034715424746057543,
+        "reference_energy": 1.2700387641843802,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "NATIVE_REFERENCE",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.003919135102519904,
+        "reference_energy": 1564.1540238678617,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 1564.1540238678617,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.566132867429715,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "NATIVE_REFERENCE",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.03907797558011466,
+        "reference_energy": 16720.64260567938,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 16720.64260567938,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 5.941207135400271,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "NATIVE_REFERENCE",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.002913410887668234,
+        "reference_energy": 1199.7370478513274,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 1199.7370478513274,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.07157298422303131,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "NATIVE_REFERENCE",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.02208817341887827,
+        "reference_energy": 11529.622187736157,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 11529.622187736157,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 1.6246490501646889,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "NATIVE_REFERENCE",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0011934282710791167,
+        "reference_energy": 476.6101162553282,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 476.6101162553282,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.07106782928443339,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_13",
+      "method": "NATIVE_REFERENCE",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.009984432808539155,
+        "reference_energy": 5118.906286641584,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 5118.906286641584,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 1.2700387641843802,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0032663817982470865,
+        "reference_energy": 1520.4993215649893,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.4010460313018855,
+        "reference_energy": 1518.9856753472002,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.00014820035446033535,
+        "reference_energy": 0.5174126014589543,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.0310566882713518,
+        "reference_energy": 16371.251046004816,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 13.35665687508737,
+        "reference_energy": 16385.452842091636,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0009964583705349458,
+        "reference_energy": 5.520541725703123,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.008165874349176332,
+        "reference_energy": 1217.355126697185,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.6142415061589115,
+        "reference_energy": 1217.7541300265254,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 9.467266334827359e-05,
+        "reference_energy": 0.08449935967467015,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.06811129471295041,
+        "reference_energy": 11650.287031250366,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 14.729175148199543,
+        "reference_energy": 11631.10905235075,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0007630678116440589,
+        "reference_energy": 1.47782297977412,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.002499551383783907,
+        "reference_energy": 475.32953529575315,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.6504077417270306,
+        "reference_energy": 474.3432297168178,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 3.213968649248487e-05,
+        "reference_energy": 0.07807815248256073,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.016987928934738102,
+        "reference_energy": 5114.701469845951,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 6.20665791604184,
+        "reference_energy": 5105.332149863559,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.00046246513342630935,
+        "reference_energy": 1.274782981981589,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "DIAG8_FROZEN",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0037311964154134367,
+        "reference_energy": 1520.5474646769896,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.512989055357781,
+        "reference_energy": 1518.9856753472002,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.00015716936543947528,
+        "reference_energy": 0.5174126014589543,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "DIAG8_FROZEN",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.035789369577339844,
+        "reference_energy": 16365.880860527031,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 14.568595686198766,
+        "reference_energy": 16385.452842091636,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0009538450676672567,
+        "reference_energy": 5.520541725703123,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "DIAG8_FROZEN",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.009446615735637499,
+        "reference_energy": 1214.1486766981222,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.7482059075368581,
+        "reference_energy": 1217.7541300265254,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 8.547865656369214e-05,
+        "reference_energy": 0.08449935967467015,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "DIAG8_FROZEN",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.07829147379286239,
+        "reference_energy": 11603.818456127132,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 16.0393714091819,
+        "reference_energy": 11631.10905235075,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0007670492721580004,
+        "reference_energy": 1.47782297977412,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "DIAG8_FROZEN",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.004342951936347704,
+        "reference_energy": 476.3381444900336,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.9000095089203792,
+        "reference_energy": 474.3432297168178,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 3.175998713201261e-05,
+        "reference_energy": 0.07807815248256073,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "DIAG8_FROZEN",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.03168688765041054,
+        "reference_energy": 5119.325532612197,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 8.61444928582532,
+        "reference_energy": 5105.332149863559,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0004047297977876045,
+        "reference_energy": 1.274782981981589,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0031467041656893296,
+        "reference_energy": 1520.654060857761,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.4467169995306048,
+        "reference_energy": 1518.9856753472002,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.00014328452883188118,
+        "reference_energy": 0.5174126014589543,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.03019176430663502,
+        "reference_energy": 16366.830226977201,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 13.752673213153544,
+        "reference_energy": 16385.452842091636,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0009858778604367128,
+        "reference_energy": 5.520541725703123,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.008124313282610299,
+        "reference_energy": 1213.9515912063275,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.6206168520705244,
+        "reference_energy": 1217.7541300265254,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 7.857538583214957e-05,
+        "reference_energy": 0.08449935967467015,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.06820415073322121,
+        "reference_energy": 11631.827991339682,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 14.816250589641362,
+        "reference_energy": 11631.10905235075,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0008491323788933758,
+        "reference_energy": 1.47782297977412,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0025045850382412627,
+        "reference_energy": 473.79759637786975,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.6474357815435079,
+        "reference_energy": 474.3432297168178,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 3.009258366263244e-05,
+        "reference_energy": 0.07807815248256073,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.016624710781110573,
+        "reference_energy": 5101.949467491303,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 6.27555960729291,
+        "reference_energy": 5105.332149863559,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.000505069017535127,
+        "reference_energy": 1.274782981981589,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "NATIVE_REFERENCE",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0035262033392216784,
+        "reference_energy": 1518.9856753472002,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 1518.9856753472002,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.5174126014589543,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "NATIVE_REFERENCE",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.03973250860110513,
+        "reference_energy": 16385.452842091636,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 16385.452842091636,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 5.520541725703123,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "NATIVE_REFERENCE",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0028410595108585572,
+        "reference_energy": 1217.7541300265254,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 1217.7541300265254,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.08449935967467015,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "NATIVE_REFERENCE",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.022491360399359818,
+        "reference_energy": 11631.10905235075,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 11631.10905235075,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 1.47782297977412,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "NATIVE_REFERENCE",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0012037679427996763,
+        "reference_energy": 474.3432297168178,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 474.3432297168178,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.07807815248256073,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_5",
+      "method": "NATIVE_REFERENCE",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.010045641097153484,
+        "reference_energy": 5105.332149863559,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 5105.332149863559,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 1.274782981981589,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0031373738812356367,
+        "reference_energy": 1591.5906167190274,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.5662127251253133,
+        "reference_energy": 1591.0752536097782,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.00015453951580906924,
+        "reference_energy": 0.5660701854204202,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.030236558222686012,
+        "reference_energy": 16850.80630550729,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 14.604632569947656,
+        "reference_energy": 16827.190797838728,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0014025769214901472,
+        "reference_energy": 5.791335167129974,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.007230745497397573,
+        "reference_energy": 1144.132988343788,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.58796187949753,
+        "reference_energy": 1149.5587057498576,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 8.857970360035279e-05,
+        "reference_energy": 0.08433595668493216,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.06254713216766385,
+        "reference_energy": 10972.452223702057,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 14.39408649363724,
+        "reference_energy": 10994.850428026004,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0007449943319549394,
+        "reference_energy": 1.566422607580831,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0026591689689878404,
+        "reference_energy": 467.2940481637151,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.6786242416023068,
+        "reference_energy": 465.06009644739436,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 2.221542947609758e-05,
+        "reference_energy": 0.05866754607586907,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.01772089049539868,
+        "reference_energy": 5070.181280251073,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 6.317673488678647,
+        "reference_energy": 5058.3574918043305,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.00038162801371361684,
+        "reference_energy": 1.2983064466271717,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "DIAG8_FROZEN",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0036345885111029996,
+        "reference_energy": 1590.8493908549628,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.6812998172552032,
+        "reference_energy": 1591.0752536097782,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.00016618794130750876,
+        "reference_energy": 0.5660701854204202,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "DIAG8_FROZEN",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.034333581548979246,
+        "reference_energy": 16843.023454702216,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 15.876329335521573,
+        "reference_energy": 16827.190797838728,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0013626686102331104,
+        "reference_energy": 5.791335167129974,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "DIAG8_FROZEN",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.008378801198683668,
+        "reference_energy": 1141.4278366986332,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.6962881355248867,
+        "reference_energy": 1149.5587057498576,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 7.960550112533297e-05,
+        "reference_energy": 0.08433595668493216,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "DIAG8_FROZEN",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.07232939624156733,
+        "reference_energy": 10951.555111556147,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 15.161057299814328,
+        "reference_energy": 10994.850428026004,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0007172917565511183,
+        "reference_energy": 1.566422607580831,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "DIAG8_FROZEN",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.004533814645174553,
+        "reference_energy": 468.1079541059229,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.9419295817782958,
+        "reference_energy": 465.06009644739436,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 2.3409748867225307e-05,
+        "reference_energy": 0.05866754607586907,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "DIAG8_FROZEN",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.033037957034872695,
+        "reference_energy": 5085.255693504735,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 8.622907005951326,
+        "reference_energy": 5058.3574918043305,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.000386187558585505,
+        "reference_energy": 1.2983064466271717,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.003044050036946304,
+        "reference_energy": 1591.155620084925,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.6326415073830034,
+        "reference_energy": 1591.0752536097782,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.00016819579802209927,
+        "reference_energy": 0.5660701854204202,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.02891737497916138,
+        "reference_energy": 16847.515610788978,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 15.232289115222558,
+        "reference_energy": 16827.190797838728,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0014692193441693396,
+        "reference_energy": 5.791335167129974,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.00725114669414758,
+        "reference_energy": 1144.4058004355593,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 1.5314849141326967,
+        "reference_energy": 1149.5587057498576,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 8.300720990417012e-05,
+        "reference_energy": 0.08433595668493216,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.06255881700441804,
+        "reference_energy": 10977.173887421703,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 13.876357599166367,
+        "reference_energy": 10994.850428026004,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0007817795010574449,
+        "reference_energy": 1.566422607580831,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0026436697048709086,
+        "reference_energy": 465.5268172835242,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.6730320702942764,
+        "reference_energy": 465.06009644739436,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 2.6276921244124155e-05,
+        "reference_energy": 0.05866754607586907,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.017303390682579016,
+        "reference_energy": 5059.2634260776,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 6.242810774489866,
+        "reference_energy": 5058.3574918043305,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0003506796141019678,
+        "reference_energy": 1.2983064466271717,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "NATIVE_REFERENCE",
+      "layer": 0,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.003389163312144316,
+        "reference_energy": 1591.0752536097782,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 1591.0752536097782,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.5660701854204202,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "NATIVE_REFERENCE",
+      "layer": 0,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.039339720502228,
+        "reference_energy": 16827.190797838728,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 16827.190797838728,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 5.791335167129974,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "NATIVE_REFERENCE",
+      "layer": 12,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.0026420144415430446,
+        "reference_energy": 1149.5587057498576,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 1149.5587057498576,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.08433595668493216,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "NATIVE_REFERENCE",
+      "layer": 12,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.020449018546610454,
+        "reference_energy": 10994.850428026004,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 10994.850428026004,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 1.566422607580831,
+        "elements": 131072,
+        "records": 1024
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "NATIVE_REFERENCE",
+      "layer": 22,
+      "window": "GT_predictor",
+      "E_write": {
+        "SSE": 0.001271465768958015,
+        "reference_energy": 465.06009644739436,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 465.06009644739436,
+        "elements": 1572864,
+        "records": 96
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 0.05866754607586907,
+        "elements": 12288,
+        "records": 96
+      }
+    },
+    {
+      "item_id": "rtpa_v06_eval_key_value_retrieval_short_7",
+      "method": "NATIVE_REFERENCE",
+      "layer": 22,
+      "window": "last64_prompt",
+      "E_write": {
+        "SSE": 0.01010482403067901,
+        "reference_energy": 5058.3574918043305,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_state": {
+        "SSE": 0.0,
+        "reference_energy": 5058.3574918043305,
+        "elements": 16777216,
+        "records": 1024
+      },
+      "D_readout": {
+        "SSE": 0.0,
+        "reference_energy": 1.2983064466271717,
+        "elements": 131072,
+        "records": 1024
+      }
+    }
+  ],
+  "focal": [
+    {
+      "method": "NATIVE_REFERENCE",
+      "GT_NLL": 1.6131995272143946,
+      "FOIL_NLL": 1.1944351658858743,
+      "LLR": -0.41876436132852035,
+      "first_difference_feed_index": 1015,
+      "margin": -0.375,
+      "P_correct": 0.30193984170654,
+      "P_wrong": 0.4393198774141944
+    },
+    {
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "GT_NLL": 1.3523987059785831,
+      "FOIL_NLL": 1.4223861602381511,
+      "LLR": 0.06998745425956798,
+      "first_difference_feed_index": 1015,
+      "margin": 0.0,
+      "P_correct": 0.3750344600844064,
+      "P_wrong": 0.3750344600844064
+    },
+    {
+      "method": "DIAG8_FROZEN",
+      "GT_NLL": 1.6036666571816873,
+      "FOIL_NLL": 1.334281664007527,
+      "LLR": -0.2693849931741603,
+      "first_difference_feed_index": 1015,
+      "margin": -0.25,
+      "P_correct": 0.31878601659049993,
+      "P_wrong": 0.40932934778684193
+    },
+    {
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "GT_NLL": 1.53824613902432,
+      "FOIL_NLL": 1.3382061805486174,
+      "LLR": -0.20003995847570266,
+      "first_difference_feed_index": 1015,
+      "margin": -0.25,
+      "P_correct": 0.3188796693727437,
+      "P_wrong": 0.40944960033958644
+    }
+  ],
+  "DIAG_readout_wins_last64": {
+    "0": 8,
+    "12": 7,
+    "22": 1
+  },
+  "accounting": {
+    "physical_forwards": 29020,
+    "target_writes": 87060,
+    "trajectories": 48,
+    "failures": 0,
+    "stage_seconds": 1875.4497220516205
+  },
+  "token_records": 2232,
+  "local_records": 105984,
+  "M_K_status": "NOT_IDENTIFIABLE_MISSING_MATCHED_INJECTION_METRIC",
+  "retrospective": true,
+  "new_accuracy_benchmark": false,
+  "reproduction_level": "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS"
+}

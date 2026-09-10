@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "method": "NATIVE_REFERENCE",
+      "feed_index": 0,
+      "exact_match": true,
+      "status_a": "COMPLETE",
+      "status_b": "COMPLETE"
+    },
+    {
+      "method": "NATIVE_REFERENCE",
+      "feed_index": 31,
+      "exact_match": true,
+      "status_a": "COMPLETE",
+      "status_b": "COMPLETE"
+    },
+    {
+      "method": "NATIVE_REFERENCE",
+      "feed_index": 63,
+      "exact_match": true,
+      "status_a": "COMPLETE",
+      "status_b": "COMPLETE"
+    },
+    {
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "feed_index": 0,
+      "exact_match": true,
+      "status_a": "COMPLETE",
+      "status_b": "COMPLETE"
+    },
+    {
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "feed_index": 31,
+      "exact_match": true,
+      "status_a": "COMPLETE",
+      "status_b": "COMPLETE"
+    },
+    {
+      "method": "MATCHED_ENERGY8_FROZEN",
+      "feed_index": 63,
+      "exact_match": true,
+      "status_a": "COMPLETE",
+      "status_b": "COMPLETE"
+    },
+    {
+      "method": "DIAG8_FROZEN",
+      "feed_index": 0,
+      "exact_match": true,
+      "status_a": "COMPLETE",
+      "status_b": "COMPLETE"
+    },
+    {
+      "method": "DIAG8_FROZEN",
+      "feed_index": 31,
+      "exact_match": true,
+      "status_a": "COMPLETE",
+      "status_b": "COMPLETE"
+    },
+    {
+      "method": "DIAG8_FROZEN",
+      "feed_index": 63,
+      "exact_match": true,
+      "status_a": "COMPLETE",
+      "status_b": "COMPLETE"
+    },
+    {
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "feed_index": 0,
+      "exact_match": true,
+      "status_a": "COMPLETE",
+      "status_b": "COMPLETE"
+    },
+    {
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "feed_index": 31,
+      "exact_match": true,
+      "status_a": "COMPLETE",
+      "status_b": "COMPLETE"
+    },
+    {
+      "method": "DAMP8_PAPER_CAL_ADAPTED",
+      "feed_index": 63,
+      "exact_match": true,
+      "status_a": "COMPLETE",
+      "status_b": "COMPLETE"
+    }
+  ],
+  "requires_exact": true,
+  "tolerance_modified": false,
+  "comparison": "logits,payload/nativestate,dtypes/shapes,codec events,nexttoken,allwrites at0/31/63; off/on fresh cache",
+  "seconds_per_forward": [
+    0.05079813043749937,
+    0.04966668115624984,
+    0.06236050799999937,
+    0.06283991864062521,
+    0.07105244206250028,
+    0.08370649918749962,
+    0.06838130485937555,
+    0.06430575456250054
+  ]
+}

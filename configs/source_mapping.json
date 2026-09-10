@@ -1,0 +1,805 @@
+{
+  "files": [
+    {
+      "module": "experiments.fsbq_v01",
+      "original_path": "experiments/fsbq_v01/__init__.py",
+      "original_sha256": "526512735f4b25a559832d2b812cd95c5c8e24b00b6c298beaf5d5a920afca0e",
+      "export_path": "src/rtpa_research/frozen/experiments/fsbq_v01/__init__.py",
+      "export_sha256": "526512735f4b25a559832d2b812cd95c5c8e24b00b6c298beaf5d5a920afca0e",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.fsbq_v01.core",
+      "original_path": "experiments/fsbq_v01/core.py",
+      "original_sha256": "0a9223d8fe1415120eaedf09684ca78278ac49fcfed98cb2c3f295089c8420c9",
+      "export_path": "src/rtpa_research/frozen/experiments/fsbq_v01/core.py",
+      "export_sha256": "0a9223d8fe1415120eaedf09684ca78278ac49fcfed98cb2c3f295089c8420c9",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.fsbq_v01.data",
+      "original_path": "experiments/fsbq_v01/data.py",
+      "original_sha256": "905fdb81c711db8ced6a1bf847ee5d412a8b2f7b64188796777dfef291b4ba51",
+      "export_path": "src/rtpa_research/frozen/experiments/fsbq_v01/data.py",
+      "export_sha256": "905fdb81c711db8ced6a1bf847ee5d412a8b2f7b64188796777dfef291b4ba51",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.fsbq_v02",
+      "original_path": "experiments/fsbq_v02/__init__.py",
+      "original_sha256": "c3a817100d62114e15acf1f11e6b2ac153dcb8ae8a28a31fb97ae632284e262a",
+      "export_path": "src/rtpa_research/frozen/experiments/fsbq_v02/__init__.py",
+      "export_sha256": "c3a817100d62114e15acf1f11e6b2ac153dcb8ae8a28a31fb97ae632284e262a",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.fsbq_v02.core",
+      "original_path": "experiments/fsbq_v02/core.py",
+      "original_sha256": "a9f4ad3f301973b2b3f2b11fc4846d783a7b4957ea9970b89eb8ab5300af30db",
+      "export_path": "src/rtpa_research/frozen/experiments/fsbq_v02/core.py",
+      "export_sha256": "a9f4ad3f301973b2b3f2b11fc4846d783a7b4957ea9970b89eb8ab5300af30db",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.fsbq_v02.data",
+      "original_path": "experiments/fsbq_v02/data.py",
+      "original_sha256": "3a07f2bfdb3526f476d566d834e68d84c61ae88a088ff08272e191c768027c69",
+      "export_path": "src/rtpa_research/frozen/experiments/fsbq_v02/data.py",
+      "export_sha256": "3a07f2bfdb3526f476d566d834e68d84c61ae88a088ff08272e191c768027c69",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v01",
+      "original_path": "experiments/rtpa_v01/__init__.py",
+      "original_sha256": "f2dba5ec9901c14bbe3fa60df75a4b0e3ad1bab4fa63f59a7ba3663fc00dfd8b",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v01/__init__.py",
+      "export_sha256": "f2dba5ec9901c14bbe3fa60df75a4b0e3ad1bab4fa63f59a7ba3663fc00dfd8b",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v01.core",
+      "original_path": "experiments/rtpa_v01/core.py",
+      "original_sha256": "a0deb9ed500601577858aa036e5b952f33bf3efb71bc564abbdab7d29170a7b4",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v01/core.py",
+      "export_sha256": "a0deb9ed500601577858aa036e5b952f33bf3efb71bc564abbdab7d29170a7b4",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v01.fresh",
+      "original_path": "experiments/rtpa_v01/fresh.py",
+      "original_sha256": "fa17ba9bdc1600aeb6e35b30165f40e6f4346b3525c8bd8253e2cba5778599b0",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v01/fresh.py",
+      "export_sha256": "fa17ba9bdc1600aeb6e35b30165f40e6f4346b3525c8bd8253e2cba5778599b0",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v01.report",
+      "original_path": "experiments/rtpa_v01/report.py",
+      "original_sha256": "9bdde73dc6a12167e83a327eabb624c0795b24af9c062f91249de34c776b4cc6",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v01/report.py",
+      "export_sha256": "56b49ba1dcae52ad6deb197f8f8afd4743a2eba33b0bda216790980291eac80e",
+      "byte_identical": false,
+      "changes": [
+        "personal/external path redaction only; numerical statements unchanged"
+      ],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v01.run",
+      "original_path": "experiments/rtpa_v01/run.py",
+      "original_sha256": "7acd2e88b4cded3b871c824e6a5aec0fe0b513a6fd516b18ce4eeeda0bf275f7",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v01/run.py",
+      "export_sha256": "39ec7a8fe83cba7338bec29ddb9faa0a9ed68cd1d0b452a7fadd6f9e247d917e",
+      "byte_identical": false,
+      "changes": [
+        "personal/external path redaction only; numerical statements unchanged"
+      ],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v01.test_core",
+      "original_path": "experiments/rtpa_v01/test_core.py",
+      "original_sha256": "725af6f6f6d62ca7144b6ecaecf18ec39cbe07dc2cc0fbea259624d152edb259",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v01/test_core.py",
+      "export_sha256": "725af6f6f6d62ca7144b6ecaecf18ec39cbe07dc2cc0fbea259624d152edb259",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v03_damp",
+      "original_path": "experiments/rtpa_v03_damp/__init__.py",
+      "original_sha256": "236b9dab44b5f5a99bfe25129ef06a8d450aaa94fd63a3e95e7993e158206868",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v03_damp/__init__.py",
+      "export_sha256": "236b9dab44b5f5a99bfe25129ef06a8d450aaa94fd63a3e95e7993e158206868",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v03_damp.analysis",
+      "original_path": "experiments/rtpa_v03_damp/analysis.py",
+      "original_sha256": "a429a8430c9ab8005898934dfcda501e18878b38a2162beea83f6fa203cba094",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v03_damp/analysis.py",
+      "export_sha256": "cd2d9463a30bb22c056cf95958601eb7db2cbf9a1d61baf926448153aa4cf3e5",
+      "byte_identical": false,
+      "changes": [
+        "personal/external path redaction only; numerical statements unchanged"
+      ],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v03_damp.common",
+      "original_path": "experiments/rtpa_v03_damp/common.py",
+      "original_sha256": "f6796a7780faaf531b66fd8b0e3ad0e28fee93723cedf0eda505590790b97860",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v03_damp/common.py",
+      "export_sha256": "f6796a7780faaf531b66fd8b0e3ad0e28fee93723cedf0eda505590790b97860",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v03_damp.native_bridge",
+      "original_path": "experiments/rtpa_v03_damp/native_bridge.py",
+      "original_sha256": "935f0be71936ea777c2452a7de8cc3ed53fb9295d4aad95abd8303c38552c522",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v03_damp/native_bridge.py",
+      "export_sha256": "935f0be71936ea777c2452a7de8cc3ed53fb9295d4aad95abd8303c38552c522",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v03d1",
+      "original_path": "experiments/rtpa_v03d1/__init__.py",
+      "original_sha256": "07a23d3dfd462f09771f30ac7794a2422a03ddf2e408f4fa1b27c056b812047e",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v03d1/__init__.py",
+      "export_sha256": "07a23d3dfd462f09771f30ac7794a2422a03ddf2e408f4fa1b27c056b812047e",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v03d1.bridge",
+      "original_path": "experiments/rtpa_v03d1/bridge.py",
+      "original_sha256": "59a04115b2dfb04612cfee82f51b65e12e55d46242cb5bad8026c83e353a0bf2",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v03d1/bridge.py",
+      "export_sha256": "59a04115b2dfb04612cfee82f51b65e12e55d46242cb5bad8026c83e353a0bf2",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v03d1.codec",
+      "original_path": "experiments/rtpa_v03d1/codec.py",
+      "original_sha256": "4b768f79914f3dcec95c00c6cd64bb6b52ff136e456531b145ce19dcfdb5656a",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v03d1/codec.py",
+      "export_sha256": "4b768f79914f3dcec95c00c6cd64bb6b52ff136e456531b145ce19dcfdb5656a",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v03d1.common",
+      "original_path": "experiments/rtpa_v03d1/common.py",
+      "original_sha256": "4ac25ae76c808e1e8632b63151f008049a183d0367e1f91176a482fdcac6a63e",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v03d1/common.py",
+      "export_sha256": "4ac25ae76c808e1e8632b63151f008049a183d0367e1f91176a482fdcac6a63e",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v03d1.fit",
+      "original_path": "experiments/rtpa_v03d1/fit.py",
+      "original_sha256": "a8245bb41b24052d6ee1f34e79bb65267d3b7a7200d0dd016c70bb7da541beeb",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v03d1/fit.py",
+      "export_sha256": "a8245bb41b24052d6ee1f34e79bb65267d3b7a7200d0dd016c70bb7da541beeb",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v03d1.tail",
+      "original_path": "experiments/rtpa_v03d1/tail.py",
+      "original_sha256": "40d2bfc5fc231b7ae8faa09370216c60fffe63eea2d057070a54c92669533a7d",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v03d1/tail.py",
+      "export_sha256": "40d2bfc5fc231b7ae8faa09370216c60fffe63eea2d057070a54c92669533a7d",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v04",
+      "original_path": "experiments/rtpa_v04/__init__.py",
+      "original_sha256": "11a4e08eceee9023e3590a9db0299dd147337956fa2f8796cc7a5b82e608fe74",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v04/__init__.py",
+      "export_sha256": "11a4e08eceee9023e3590a9db0299dd147337956fa2f8796cc7a5b82e608fe74",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v04.analysis",
+      "original_path": "experiments/rtpa_v04/analysis.py",
+      "original_sha256": "b80e3eb8c1e2782c164184c69271368ab4a93e62d04c845b2c0ab4f6ea958964",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v04/analysis.py",
+      "export_sha256": "b80e3eb8c1e2782c164184c69271368ab4a93e62d04c845b2c0ab4f6ea958964",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v04.attribution",
+      "original_path": "experiments/rtpa_v04/attribution.py",
+      "original_sha256": "3e2b777a3ac7c0a8d29521b613502397aa8d8b68f3714168fde6f6607fcff586",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v04/attribution.py",
+      "export_sha256": "3e2b777a3ac7c0a8d29521b613502397aa8d8b68f3714168fde6f6607fcff586",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v04.common",
+      "original_path": "experiments/rtpa_v04/common.py",
+      "original_sha256": "9fa97e02bf446f5a5a20932ea68ca19f39750063a5e0a7b163ff6389784bc3e0",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v04/common.py",
+      "export_sha256": "c326c339115e4c5e76495110abe8ce59c606a9df35501a10b70b537af0081cea",
+      "byte_identical": false,
+      "changes": [
+        "personal/external path redaction only; numerical statements unchanged"
+      ],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v04.delivery_audit",
+      "original_path": "experiments/rtpa_v04/delivery_audit.py",
+      "original_sha256": "2104dbf0eddfdb2dc2de9bb3793a2c1455d3ef2cc0ba4accc11e96ed70371469",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v04/delivery_audit.py",
+      "export_sha256": "2104dbf0eddfdb2dc2de9bb3793a2c1455d3ef2cc0ba4accc11e96ed70371469",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v04.evaluate",
+      "original_path": "experiments/rtpa_v04/evaluate.py",
+      "original_sha256": "379fe17e0dc55ce118a9fa2f17bd6d2fd094c1592c9948ca00bb47d1756de05f",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v04/evaluate.py",
+      "export_sha256": "379fe17e0dc55ce118a9fa2f17bd6d2fd094c1592c9948ca00bb47d1756de05f",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v04.panel",
+      "original_path": "experiments/rtpa_v04/panel.py",
+      "original_sha256": "995a09cd4680e4b558bd51563bdfc33bdaaef38619893fcb5d68846429866da3",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v04/panel.py",
+      "export_sha256": "995a09cd4680e4b558bd51563bdfc33bdaaef38619893fcb5d68846429866da3",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v04.prepare",
+      "original_path": "experiments/rtpa_v04/prepare.py",
+      "original_sha256": "8f6ac1d8565fc05098c541a7e0f0f5bf0941f591cdb7235e0a2765de188dd71f",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v04/prepare.py",
+      "export_sha256": "3a768820bc1d6c349537209993067f6db99fcd5a664cfb4ad8912ee7a40db6fd",
+      "byte_identical": false,
+      "changes": [
+        "personal/external path redaction only; numerical statements unchanged"
+      ],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v04.report",
+      "original_path": "experiments/rtpa_v04/report.py",
+      "original_sha256": "fd3fdc48010676ffb296d230c9e3100c6843d0b92f1363005264944d340dda77",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v04/report.py",
+      "export_sha256": "0dd34a4d2a49437443d69eab5e0dc4421c78c52ceee1d13f20c841a17050d86a",
+      "byte_identical": false,
+      "changes": [
+        "personal/external path redaction only; numerical statements unchanged"
+      ],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v04.run",
+      "original_path": "experiments/rtpa_v04/run.py",
+      "original_sha256": "d0ccb7488c05f24f2b247c3ded55ff857a111b374b1b2e812785789ff5737445",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v04/run.py",
+      "export_sha256": "d0ccb7488c05f24f2b247c3ded55ff857a111b374b1b2e812785789ff5737445",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v04.smoke",
+      "original_path": "experiments/rtpa_v04/smoke.py",
+      "original_sha256": "ecc5280882888f6ff1df9ee35208405d4fdacc974da3107b2a14a88542393bc3",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v04/smoke.py",
+      "export_sha256": "ecc5280882888f6ff1df9ee35208405d4fdacc974da3107b2a14a88542393bc3",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v04.tests",
+      "original_path": "experiments/rtpa_v04/tests.py",
+      "original_sha256": "6be698aba8272ae4ae764f40978e2a3a639fd303e88dc519e64b18ebbef764e1",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v04/tests.py",
+      "export_sha256": "6be698aba8272ae4ae764f40978e2a3a639fd303e88dc519e64b18ebbef764e1",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v05",
+      "original_path": "experiments/rtpa_v05/__init__.py",
+      "original_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v05/__init__.py",
+      "export_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v05.accounting",
+      "original_path": "experiments/rtpa_v05/accounting.py",
+      "original_sha256": "10560cc83a918965b895ba98939f5853426b728df35c3b49f760391ab3cb9c4a",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v05/accounting.py",
+      "export_sha256": "10560cc83a918965b895ba98939f5853426b728df35c3b49f760391ab3cb9c4a",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v05.common",
+      "original_path": "experiments/rtpa_v05/common.py",
+      "original_sha256": "b4a53d151bfd82770886daa3af37f6c3ed36b4dbfdeed0385273b31b9aeaec63",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v05/common.py",
+      "export_sha256": "b4a53d151bfd82770886daa3af37f6c3ed36b4dbfdeed0385273b31b9aeaec63",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v05.cost_analysis",
+      "original_path": "experiments/rtpa_v05/cost_analysis.py",
+      "original_sha256": "37bf55ea0e87eb21102d411d9e1d87f2e50e08eb678514cf12b73fd9a59539a8",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v05/cost_analysis.py",
+      "export_sha256": "37bf55ea0e87eb21102d411d9e1d87f2e50e08eb678514cf12b73fd9a59539a8",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v05.diagnose",
+      "original_path": "experiments/rtpa_v05/diagnose.py",
+      "original_sha256": "d4c1bd90deeb54551c7775c57c999c477da3271abbd914204646ad761c559306",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v05/diagnose.py",
+      "export_sha256": "d4c1bd90deeb54551c7775c57c999c477da3271abbd914204646ad761c559306",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v05.diagnosis_analysis",
+      "original_path": "experiments/rtpa_v05/diagnosis_analysis.py",
+      "original_sha256": "609cf7feb02d772a03b3b15fc09c9383df7a343f8aa9b2d740bb9e2feee274da",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v05/diagnosis_analysis.py",
+      "export_sha256": "609cf7feb02d772a03b3b15fc09c9383df7a343f8aa9b2d740bb9e2feee274da",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v05.evaluate",
+      "original_path": "experiments/rtpa_v05/evaluate.py",
+      "original_sha256": "242ac988b3d00b2bb46079fef09b4bd3639576605e3bd1adb305245688669b0e",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v05/evaluate.py",
+      "export_sha256": "242ac988b3d00b2bb46079fef09b4bd3639576605e3bd1adb305245688669b0e",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v05.fit",
+      "original_path": "experiments/rtpa_v05/fit.py",
+      "original_sha256": "6b1635490129bec2886980cea2f707f9cfe0f4bc1a6ae3224ec225dac0347153",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v05/fit.py",
+      "export_sha256": "6b1635490129bec2886980cea2f707f9cfe0f4bc1a6ae3224ec225dac0347153",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v05.metrics",
+      "original_path": "experiments/rtpa_v05/metrics.py",
+      "original_sha256": "3790264b869d4c361e5683a500e7db065fd59618619736e834cedcf4216a1599",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v05/metrics.py",
+      "export_sha256": "3790264b869d4c361e5683a500e7db065fd59618619736e834cedcf4216a1599",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v05.panel",
+      "original_path": "experiments/rtpa_v05/panel.py",
+      "original_sha256": "5c197a83bb9b7edbcdae9eff8ddb6f041f3e284a5105f9868af45d10fa94555e",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v05/panel.py",
+      "export_sha256": "5c197a83bb9b7edbcdae9eff8ddb6f041f3e284a5105f9868af45d10fa94555e",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v05.prepare",
+      "original_path": "experiments/rtpa_v05/prepare.py",
+      "original_sha256": "b6752e5bfed69e511199867b5f3f8bf5ffabb5c90772f512a915639746228980",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v05/prepare.py",
+      "export_sha256": "b6752e5bfed69e511199867b5f3f8bf5ffabb5c90772f512a915639746228980",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v05.report",
+      "original_path": "experiments/rtpa_v05/report.py",
+      "original_sha256": "d5e51467a47f9e7456b47e877d622db739a43a1b157140d69715ad3839af606a",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v05/report.py",
+      "export_sha256": "24804d7f85bb5b20e6c04128e850ab8a45e0ddb574059420220baaa235501fc2",
+      "byte_identical": false,
+      "changes": [
+        "personal/external path redaction only; numerical statements unchanged"
+      ],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v05.report_io",
+      "original_path": "experiments/rtpa_v05/report_io.py",
+      "original_sha256": "b320cabd6c7a702244a040962a590f8af021610113ce88ed9dbc1cc4f75570fe",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v05/report_io.py",
+      "export_sha256": "b320cabd6c7a702244a040962a590f8af021610113ce88ed9dbc1cc4f75570fe",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v05.run",
+      "original_path": "experiments/rtpa_v05/run.py",
+      "original_sha256": "e0c45166196b7114d3beba1c6e1a3c25e2d6a41ab19bf1ffb2c10cd72289c778",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v05/run.py",
+      "export_sha256": "e0c45166196b7114d3beba1c6e1a3c25e2d6a41ab19bf1ffb2c10cd72289c778",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v05.standalone_cpu_reaggregate",
+      "original_path": "experiments/rtpa_v05/standalone_cpu_reaggregate.py",
+      "original_sha256": "797a82b68a9eb7dc13f3f6e8915a1cc00568f0dea37bd4a84a7f7930b5158bd8",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v05/standalone_cpu_reaggregate.py",
+      "export_sha256": "797a82b68a9eb7dc13f3f6e8915a1cc00568f0dea37bd4a84a7f7930b5158bd8",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v05.tests",
+      "original_path": "experiments/rtpa_v05/tests.py",
+      "original_sha256": "5d4c829e467ebbbded145fdccfb51c60ea62532825e99877c2200a992202d710",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v05/tests.py",
+      "export_sha256": "5d4c829e467ebbbded145fdccfb51c60ea62532825e99877c2200a992202d710",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v05.timing",
+      "original_path": "experiments/rtpa_v05/timing.py",
+      "original_sha256": "7ae322d2c6a9de22b54ac67f30c1ef9730f2504c9ce652577a433f23e9b94f4e",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v05/timing.py",
+      "export_sha256": "7ae322d2c6a9de22b54ac67f30c1ef9730f2504c9ce652577a433f23e9b94f4e",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v06",
+      "original_path": "experiments/rtpa_v06/__init__.py",
+      "original_sha256": "0a0633ba15b1d03f481b04a7d8119fc3f34f5de0c197f16d72ebe7c135d40116",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v06/__init__.py",
+      "export_sha256": "0a0633ba15b1d03f481b04a7d8119fc3f34f5de0c197f16d72ebe7c135d40116",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v06.common",
+      "original_path": "experiments/rtpa_v06/common.py",
+      "original_sha256": "f6f51a6f8cf6e5d8913e2adc6b496bef63dbdfc4988b498adcd2b2900b57d792",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v06/common.py",
+      "export_sha256": "f6f51a6f8cf6e5d8913e2adc6b496bef63dbdfc4988b498adcd2b2900b57d792",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v06.cpu_reaggregate",
+      "original_path": "experiments/rtpa_v06/cpu_reaggregate.py",
+      "original_sha256": "88a8485267fc49a9b5376202bcfde8cb37d03567ba55a29f3f710d3970792996",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v06/cpu_reaggregate.py",
+      "export_sha256": "88a8485267fc49a9b5376202bcfde8cb37d03567ba55a29f3f710d3970792996",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v06.preflight",
+      "original_path": "experiments/rtpa_v06/preflight.py",
+      "original_sha256": "4958620dd8dae21faf39697a5cd2fb9d77c2b35eb1254b8559c2223d773bf48d",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v06/preflight.py",
+      "export_sha256": "4958620dd8dae21faf39697a5cd2fb9d77c2b35eb1254b8559c2223d773bf48d",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v06.run",
+      "original_path": "experiments/rtpa_v06/run.py",
+      "original_sha256": "874bf19cb630f287eab64a4b2a4a1f48faf8bcc8a8fa049fe9096ca1b40505ca",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v06/run.py",
+      "export_sha256": "874bf19cb630f287eab64a4b2a4a1f48faf8bcc8a8fa049fe9096ca1b40505ca",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v06.runtime",
+      "original_path": "experiments/rtpa_v06/runtime.py",
+      "original_sha256": "2d9e05f773ac3006384398985a2c61fdae565b24d7f803ceb4db1fec99f427a5",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v06/runtime.py",
+      "export_sha256": "2d9e05f773ac3006384398985a2c61fdae565b24d7f803ceb4db1fec99f427a5",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v06.tasks",
+      "original_path": "experiments/rtpa_v06/tasks.py",
+      "original_sha256": "6ec7504420fd44ade80e72cae7a1955abea145873ff62edaec45cd0d863dbd8f",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v06/tasks.py",
+      "export_sha256": "6ec7504420fd44ade80e72cae7a1955abea145873ff62edaec45cd0d863dbd8f",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v07",
+      "original_path": "experiments/rtpa_v07/__init__.py",
+      "original_sha256": "79d4665f59b5a57712d69c03cb4c0fc03b0b8c1630dcce760a4275f1eb9066c1",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v07/__init__.py",
+      "export_sha256": "79d4665f59b5a57712d69c03cb4c0fc03b0b8c1630dcce760a4275f1eb9066c1",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v07.common",
+      "original_path": "experiments/rtpa_v07/common.py",
+      "original_sha256": "e000b27030ab8b1a8240681f2a02ad016644105b8f853f07b1b063d15aa6008e",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v07/common.py",
+      "export_sha256": "e000b27030ab8b1a8240681f2a02ad016644105b8f853f07b1b063d15aa6008e",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v07.metrics",
+      "original_path": "experiments/rtpa_v07/metrics.py",
+      "original_sha256": "61d0488b456e867e433e979594b5d0dea53af084fffca7b82c5ddb0824bf4ef0",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v07/metrics.py",
+      "export_sha256": "61d0488b456e867e433e979594b5d0dea53af084fffca7b82c5ddb0824bf4ef0",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v07.prepare",
+      "original_path": "experiments/rtpa_v07/prepare.py",
+      "original_sha256": "6d2e4ca825d2d4e90d406bd6a7b9e81f04a6c173106968e059ac7f17e636885e",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v07/prepare.py",
+      "export_sha256": "0136d83a2196773abbf94876634548eb5c3788176d8d0e732411da823d800608",
+      "byte_identical": false,
+      "changes": [
+        "personal/external path redaction only; numerical statements unchanged"
+      ],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v07.run",
+      "original_path": "experiments/rtpa_v07/run.py",
+      "original_sha256": "b20000212c4f877b7a68c7b97d15d3e4132c3ea4ffccff97082cdd9dd23c141d",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v07/run.py",
+      "export_sha256": "b20000212c4f877b7a68c7b97d15d3e4132c3ea4ffccff97082cdd9dd23c141d",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v07.runtime",
+      "original_path": "experiments/rtpa_v07/runtime.py",
+      "original_sha256": "84f2389e43bcf50e59eeb476ed34ccc085afcfc963a1ce13f91b9b659448dc51",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v07/runtime.py",
+      "export_sha256": "84f2389e43bcf50e59eeb476ed34ccc085afcfc963a1ce13f91b9b659448dc51",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "rsq_gate",
+      "original_path": "src/rsq_gate/__init__.py",
+      "original_sha256": "b581da31fae2c511464c04098999544413e8112fb28dc6d945c7daa26f5439a6",
+      "export_path": "src/rtpa_research/frozen/src/rsq_gate/__init__.py",
+      "export_sha256": "b581da31fae2c511464c04098999544413e8112fb28dc6d945c7daa26f5439a6",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "rsq_gate.discovery",
+      "original_path": "src/rsq_gate/discovery.py",
+      "original_sha256": "a4e4c13a4ed65a352fd3000ac6cf8bef3cec08b3e8e28acaef778e659f6d2d53",
+      "export_path": "src/rtpa_research/frozen/src/rsq_gate/discovery.py",
+      "export_sha256": "69c2f458eb6ee52e7fb5cca38d2c4a91b773fdc9e1bdc165aa31f2685dfadcc7",
+      "byte_identical": false,
+      "changes": [
+        "personal/external path redaction only; numerical statements unchanged"
+      ],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "rsq_gate.dynamic_correction",
+      "original_path": "src/rsq_gate/dynamic_correction.py",
+      "original_sha256": "a035551c1f51db32557b666fb05715a88e50763c72011e0e7791022c2708cb8f",
+      "export_path": "src/rtpa_research/frozen/src/rsq_gate/dynamic_correction.py",
+      "export_sha256": "a035551c1f51db32557b666fb05715a88e50763c72011e0e7791022c2708cb8f",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "rsq_gate.error_feedback",
+      "original_path": "src/rsq_gate/error_feedback.py",
+      "original_sha256": "b04bb85da895fb9c313cab66c37b91f921f63fa6b1a6ba7e7691abad89981760",
+      "export_path": "src/rtpa_research/frozen/src/rsq_gate/error_feedback.py",
+      "export_sha256": "b04bb85da895fb9c313cab66c37b91f921f63fa6b1a6ba7e7691abad89981760",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "rsq_gate.experiment_core",
+      "original_path": "src/rsq_gate/experiment_core.py",
+      "original_sha256": "df5fda6a5023f6b6e4ecb7455697f6a09e56354a58585b10ed71f2c8f2b513e3",
+      "export_path": "src/rtpa_research/frozen/src/rsq_gate/experiment_core.py",
+      "export_sha256": "df5fda6a5023f6b6e4ecb7455697f6a09e56354a58585b10ed71f2c8f2b513e3",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "rsq_gate.gramian",
+      "original_path": "src/rsq_gate/gramian.py",
+      "original_sha256": "2e283fc7f937bb0eccfe89b4d60bd8027251b883a6a156727edf5ddbdce23ee8",
+      "export_path": "src/rtpa_research/frozen/src/rsq_gate/gramian.py",
+      "export_sha256": "2e283fc7f937bb0eccfe89b4d60bd8027251b883a6a156727edf5ddbdce23ee8",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "rsq_gate.metrics",
+      "original_path": "src/rsq_gate/metrics.py",
+      "original_sha256": "8be6086641610e3ee5703830231a56507827d19003d305d518670d287c9b63ca",
+      "export_path": "src/rtpa_research/frozen/src/rsq_gate/metrics.py",
+      "export_sha256": "8be6086641610e3ee5703830231a56507827d19003d305d518670d287c9b63ca",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "rsq_gate.model_adapter",
+      "original_path": "src/rsq_gate/model_adapter.py",
+      "original_sha256": "ab737e27dc06bee73ef69c991264dfd22a73d39d09fa92ee9ebf0990b09bd180",
+      "export_path": "src/rtpa_research/frozen/src/rsq_gate/model_adapter.py",
+      "export_sha256": "ab737e27dc06bee73ef69c991264dfd22a73d39d09fa92ee9ebf0990b09bd180",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "rsq_gate.online_factorization",
+      "original_path": "src/rsq_gate/online_factorization.py",
+      "original_sha256": "b86a4bc76d54e03f74c3deeef6c257c0b8f8f2c5bcb46347823f091a8db11e42",
+      "export_path": "src/rtpa_research/frozen/src/rsq_gate/online_factorization.py",
+      "export_sha256": "b86a4bc76d54e03f74c3deeef6c257c0b8f8f2c5bcb46347823f091a8db11e42",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "rsq_gate.quantizers",
+      "original_path": "src/rsq_gate/quantizers.py",
+      "original_sha256": "2983d99d170903f8e46a0a7dc8f7648967a0de4482a1fbd4699a1c726f3fdf48",
+      "export_path": "src/rtpa_research/frozen/src/rsq_gate/quantizers.py",
+      "export_sha256": "2983d99d170903f8e46a0a7dc8f7648967a0de4482a1fbd4699a1c726f3fdf48",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "rsq_gate.recurrence",
+      "original_path": "src/rsq_gate/recurrence.py",
+      "original_sha256": "8167d2dfd2ac5a18d5baa1c788140be3081c4e985f3bec49a8070385b5e87986",
+      "export_path": "src/rtpa_research/frozen/src/rsq_gate/recurrence.py",
+      "export_sha256": "8167d2dfd2ac5a18d5baa1c788140be3081c4e985f3bec49a8070385b5e87986",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "rsq_gate.trace",
+      "original_path": "src/rsq_gate/trace.py",
+      "original_sha256": "eb95cf23cdeea30d45821f6dad218a558ce44121456ecb41556bf99baa43ed28",
+      "export_path": "src/rtpa_research/frozen/src/rsq_gate/trace.py",
+      "export_sha256": "eb95cf23cdeea30d45821f6dad218a558ce44121456ecb41556bf99baa43ed28",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "historical opt-in; original external artifacts required"
+    },
+    {
+      "module": "experiments.rtpa_v07.support_audit",
+      "original_path": "experiments/rtpa_v07/support_audit.py",
+      "original_sha256": "3d80e6cdc86f665822122374362d65e2dcbaf5a6272f870a241f7788c9c0114d",
+      "export_path": "src/rtpa_research/frozen/experiments/rtpa_v07/support_audit.py",
+      "export_sha256": "3d80e6cdc86f665822122374362d65e2dcbaf5a6272f870a241f7788c9c0114d",
+      "byte_identical": true,
+      "changes": [],
+      "execution_scope": "actual historical import census support dependency"
+    }
+  ],
+  "roots": [
+    "experiments.rtpa_v04.run",
+    "experiments.rtpa_v05.run",
+    "experiments.rtpa_v06.run",
+    "experiments.rtpa_v07.run",
+    "experiments.rtpa_v03d1.fit",
+    "experiments.rtpa_v05.fit",
+    "experiments.rtpa_v05.diagnose",
+    "experiments.rtpa_v06.tasks",
+    "experiments.rtpa_v06.preflight",
+    "experiments.rtpa_v07.prepare"
+  ],
+  "dynamic_import_policy": "AST imports plus actual v07 imported-module census; file-based external paths listed separately. No GPU execution parity claimed."
+}

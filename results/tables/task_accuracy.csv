@@ -1,0 +1,6 @@
+method,correct,total,numerical_failures,format_failures,NOT_RUN,cells
+NATIVE_REFERENCE,27,28,0,0,0,"{""KEY_VALUE_RETRIEVAL/long"": {""correct"": 13, ""n"": 14}, ""KEY_VALUE_RETRIEVAL/short"": {""correct"": 14, ""n"": 14}}"
+DAMP8_LEGACY_PAPER_ADAPTED,27,28,0,0,0,"{""KEY_VALUE_RETRIEVAL/long"": {""correct"": 13, ""n"": 14}, ""KEY_VALUE_RETRIEVAL/short"": {""correct"": 14, ""n"": 14}}"
+MATCHED_ENERGY8_FROZEN,28,28,0,0,0,"{""KEY_VALUE_RETRIEVAL/long"": {""correct"": 14, ""n"": 14}, ""KEY_VALUE_RETRIEVAL/short"": {""correct"": 14, ""n"": 14}}"
+DIAG8_FROZEN,27,28,0,0,0,"{""KEY_VALUE_RETRIEVAL/long"": {""correct"": 13, ""n"": 14}, ""KEY_VALUE_RETRIEVAL/short"": {""correct"": 14, ""n"": 14}}"
+DAMP8_PAPER_CAL_ADAPTED,27,28,0,0,0,"{""KEY_VALUE_RETRIEVAL/long"": {""correct"": 13, ""n"": 14}, ""KEY_VALUE_RETRIEVAL/short"": {""correct"": 14, ""n"": 14}}"

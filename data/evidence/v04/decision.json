@@ -1,0 +1,138 @@
+{
+  "recommendation": "QUALITY_SIGNAL_WITH_UNRESOLVED_RISK",
+  "execution_status": "COMPLETE",
+  "attribution_status": "COMPLETE_STORED_EVIDENCE_AUDIT",
+  "input_provenance_status": "NEW_WITHIN_ACCESSIBLE_MANIFESTS_TECHNICAL_CORPUS_LIMITED",
+  "sample_tier": "LOW_POWER_RESOURCE_TIER",
+  "selected_N": 12,
+  "per_profile": {
+    "P_STORE": {
+      "H_ALLOC": {
+        "working_pass": false,
+        "gain": null,
+        "gain_threshold": 0.05,
+        "wins": null,
+        "wins_threshold": 8,
+        "CI95": null,
+        "SUPPORT_POSITIVE": false
+      },
+      "H_CROSS": {
+        "working_pass": false,
+        "gain": null,
+        "gain_threshold": 0.05,
+        "wins": null,
+        "wins_threshold": 8,
+        "CI95": null,
+        "SUPPORT_POSITIVE": false
+      },
+      "H_DIAG": {
+        "working_pass": false,
+        "gain": null,
+        "gain_threshold": 0.05,
+        "wins": null,
+        "wins_threshold": 8,
+        "CI95": null,
+        "SUPPORT_POSITIVE": false
+      },
+      "H_LOW": {
+        "working_pass": false,
+        "gain": null,
+        "gain_threshold": 0.1,
+        "wins": null,
+        "wins_threshold": 8,
+        "CI95": null,
+        "SUPPORT_POSITIVE": false
+      },
+      "quality": {
+        "mean_deltaNLL": null,
+        "max_sequence_deltaNLL": null,
+        "mean_NLL_pass": false,
+        "max_NLL_pass": false,
+        "extra_NLL_DAMP": null,
+        "extra_NLL_DIAG": null,
+        "extra_NLL_pass": false,
+        "late_pass": false,
+        "material_DAMP": null,
+        "material_U8": null,
+        "material_pass": false,
+        "nonfinite_count": 2150,
+        "all_quality_pass": false
+      }
+    },
+    "P_PRE": {
+      "H_ALLOC": {
+        "working_pass": true,
+        "gain": 0.09948955121316216,
+        "gain_threshold": 0.05,
+        "wins": 10,
+        "wins_threshold": 8,
+        "CI95": [
+          0.07284019115524984,
+          0.12194500814091565
+        ],
+        "SUPPORT_POSITIVE": true
+      },
+      "H_CROSS": {
+        "working_pass": false,
+        "gain": -0.013039503345958714,
+        "gain_threshold": 0.05,
+        "wins": 3,
+        "wins_threshold": 8,
+        "CI95": [
+          -0.06295779352634456,
+          0.033452548943052274
+        ],
+        "SUPPORT_POSITIVE": false
+      },
+      "H_DIAG": {
+        "working_pass": true,
+        "gain": 0.11108061846300143,
+        "gain_threshold": 0.05,
+        "wins": 12,
+        "wins_threshold": 8,
+        "CI95": [
+          0.06802094095720387,
+          0.15164708636269889
+        ],
+        "SUPPORT_POSITIVE": true
+      },
+      "H_LOW": {
+        "working_pass": true,
+        "gain": 0.33257533679383744,
+        "gain_threshold": 0.1,
+        "wins": 12,
+        "wins_threshold": 8,
+        "CI95": [
+          0.2719065129006278,
+          0.3989758661050287
+        ],
+        "SUPPORT_POSITIVE": true
+      },
+      "quality": {
+        "mean_deltaNLL": 0.0002492817250599484,
+        "max_sequence_deltaNLL": 0.0030247660171805997,
+        "mean_NLL_pass": true,
+        "max_NLL_pass": true,
+        "extra_NLL_DAMP": -0.0004554871142148735,
+        "extra_NLL_DIAG": 0.0003034840240174382,
+        "extra_NLL_pass": true,
+        "late_pass": false,
+        "material_DAMP": 0,
+        "material_U8": 0,
+        "material_pass": true,
+        "nonfinite_count": 0,
+        "all_quality_pass": false
+      }
+    }
+  },
+  "token_risk_status": "NOT_ESTABLISHED",
+  "product_path": "CONTINUES_STOPPED",
+  "reason": null,
+  "parent_decision_unchanged": true,
+  "author_numerical_identity": "UNKNOWN",
+  "elapsed_seconds": 7479.713966846466,
+  "trajectories_with_operational_failure": 4,
+  "completed_status_coverage_is_not_finite_full_rollout": true,
+  "actual_fresh_forward_calls": 108446,
+  "per_profile_nonfinite_count_semantics": "nonfinite failure or downstream unexecuted status rows, not distinct failure events; see numerical_exception_summary.json"
+}

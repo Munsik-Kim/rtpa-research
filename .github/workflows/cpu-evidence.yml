@@ -1,0 +1,25 @@
+name: CPU evidence reconstruction
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CUDA_VISIBLE_DEVICES: ""
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+      PYTHONPATH: src
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install numpy==1.26.4 tokenizers==0.22.2
+      - run: python -m unittest discover -s tests -v
+      - run: python -m rtpa_research verify --out recomputed

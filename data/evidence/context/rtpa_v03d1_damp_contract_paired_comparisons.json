@@ -1,0 +1,599 @@
+{
+  "comparisons": [
+    {
+      "profile": "P_STORE",
+      "candidate": "B_JOINT8_P_STORE",
+      "baseline": "B_DAMP8_P_STORE",
+      "window": "primary",
+      "baseline_mean_KL": 0.0012096188223155592,
+      "candidate_mean_KL": 0.0010530240616507221,
+      "pooled_KL_reduction": 0.12945793978723774,
+      "ratio_status": "DEFINED",
+      "wins": 12,
+      "ties": 0,
+      "losses": 0,
+      "mean_extra_NLL": -0.0006961790534272261,
+      "mean_KL_difference": -0.00015659476066483727,
+      "material_sequence_regression": 0,
+      "by_domain": {
+        "natural_language": {
+          "wins": 4,
+          "baseline_KL": 0.0018487316188108495,
+          "candidate_KL": 0.001600839279202339
+        },
+        "code": {
+          "wins": 4,
+          "baseline_KL": 0.0013676493564888275,
+          "candidate_KL": 0.0011740883538237466
+        },
+        "associative_recall": {
+          "wins": 4,
+          "baseline_KL": 0.00041247549164700147,
+          "candidate_KL": 0.00038414455192608106
+        }
+      }
+    },
+    {
+      "profile": "P_STORE",
+      "candidate": "B_JOINT8_P_STORE",
+      "baseline": "B_DIAG8_P_STORE",
+      "window": "primary",
+      "baseline_mean_KL": 0.0010956881852887334,
+      "candidate_mean_KL": 0.0010530240616507221,
+      "pooled_KL_reduction": 0.038938198121364676,
+      "ratio_status": "DEFINED",
+      "wins": 8,
+      "ties": 0,
+      "losses": 4,
+      "mean_extra_NLL": -0.0007046772288459291,
+      "mean_KL_difference": -4.266412363801147e-05,
+      "material_sequence_regression": 0,
+      "by_domain": {
+        "natural_language": {
+          "wins": 3,
+          "baseline_KL": 0.0016741467769155643,
+          "candidate_KL": 0.001600839279202339
+        },
+        "code": {
+          "wins": 2,
+          "baseline_KL": 0.0012145479779358836,
+          "candidate_KL": 0.0011740883538237466
+        },
+        "associative_recall": {
+          "wins": 3,
+          "baseline_KL": 0.00039836980101475293,
+          "candidate_KL": 0.00038414455192608106
+        }
+      }
+    },
+    {
+      "profile": "P_STORE",
+      "candidate": "B_JOINT8_P_STORE",
+      "baseline": "B_U8_P_STORE",
+      "window": "primary",
+      "baseline_mean_KL": 0.0015735280452430932,
+      "candidate_mean_KL": 0.0010530240616507221,
+      "pooled_KL_reduction": 0.33078786562838713,
+      "ratio_status": "DEFINED",
+      "wins": 12,
+      "ties": 0,
+      "losses": 0,
+      "mean_extra_NLL": -0.0007152863137253052,
+      "mean_KL_difference": -0.0005205039835923705,
+      "material_sequence_regression": 0,
+      "by_domain": {
+        "natural_language": {
+          "wins": 4,
+          "baseline_KL": 0.00239064008158792,
+          "candidate_KL": 0.001600839279202339
+        },
+        "code": {
+          "wins": 4,
+          "baseline_KL": 0.0018425502849494248,
+          "candidate_KL": 0.0011740883538237466
+        },
+        "associative_recall": {
+          "wins": 4,
+          "baseline_KL": 0.00048739376919193327,
+          "candidate_KL": 0.00038414455192608106
+        }
+      }
+    },
+    {
+      "profile": "P_STORE",
+      "candidate": "B_JOINT8_P_STORE",
+      "baseline": "B_DAMP8_P_STORE",
+      "window": "early",
+      "baseline_mean_KL": 0.0011101582273190058,
+      "candidate_mean_KL": 0.000973536402486116,
+      "pooled_KL_reduction": 0.12306518248558751,
+      "ratio_status": "DEFINED",
+      "wins": 12,
+      "ties": 0,
+      "losses": 0,
+      "mean_extra_NLL": -0.0006074000829858206,
+      "mean_KL_difference": -0.00013662182483288964,
+      "material_sequence_regression": 0,
+      "by_domain": {
+        "natural_language": {
+          "wins": 4,
+          "baseline_KL": 0.0015065494054901673,
+          "candidate_KL": 0.001370049025385889
+        },
+        "code": {
+          "wins": 4,
+          "baseline_KL": 0.0013691605857785426,
+          "candidate_KL": 0.0011146734364571324
+        },
+        "associative_recall": {
+          "wins": 4,
+          "baseline_KL": 0.00045476469068830746,
+          "candidate_KL": 0.0004358867456153267
+        }
+      }
+    },
+    {
+      "profile": "P_STORE",
+      "candidate": "B_JOINT8_P_STORE",
+      "baseline": "B_DIAG8_P_STORE",
+      "window": "early",
+      "baseline_mean_KL": 0.000991641103675455,
+      "candidate_mean_KL": 0.000973536402486116,
+      "pooled_KL_reduction": 0.0182573121689239,
+      "ratio_status": "DEFINED",
+      "wins": 8,
+      "ties": 0,
+      "losses": 4,
+      "mean_extra_NLL": -0.0014459392594972458,
+      "mean_KL_difference": -1.810470118933897e-05,
+      "material_sequence_regression": 0,
+      "by_domain": {
+        "natural_language": {
+          "wins": 3,
+          "baseline_KL": 0.001347212974009119,
+          "candidate_KL": 0.001370049025385889
+        },
+        "code": {
+          "wins": 2,
+          "baseline_KL": 0.00117925260429752,
+          "candidate_KL": 0.0011146734364571324
+        },
+        "associative_recall": {
+          "wins": 3,
+          "baseline_KL": 0.0004484577327197263,
+          "candidate_KL": 0.0004358867456153267
+        }
+      }
+    },
+    {
+      "profile": "P_STORE",
+      "candidate": "B_JOINT8_P_STORE",
+      "baseline": "B_U8_P_STORE",
+      "window": "early",
+      "baseline_mean_KL": 0.0014544951954300349,
+      "candidate_mean_KL": 0.000973536402486116,
+      "pooled_KL_reduction": 0.3306705958569488,
+      "ratio_status": "DEFINED",
+      "wins": 12,
+      "ties": 0,
+      "losses": 0,
+      "mean_extra_NLL": -0.0008894893712617461,
+      "mean_KL_difference": -0.00048095879294391894,
+      "material_sequence_regression": 0,
+      "by_domain": {
+        "natural_language": {
+          "wins": 4,
+          "baseline_KL": 0.002084921311273426,
+          "candidate_KL": 0.001370049025385889
+        },
+        "code": {
+          "wins": 4,
+          "baseline_KL": 0.0017236494857335105,
+          "candidate_KL": 0.0011146734364571324
+        },
+        "associative_recall": {
+          "wins": 4,
+          "baseline_KL": 0.0005549147892831685,
+          "candidate_KL": 0.0004358867456153267
+        }
+      }
+    },
+    {
+      "profile": "P_STORE",
+      "candidate": "B_JOINT8_P_STORE",
+      "baseline": "B_DAMP8_P_STORE",
+      "window": "late",
+      "baseline_mean_KL": 0.001305971273718471,
+      "candidate_mean_KL": 0.0011300277314664341,
+      "pooled_KL_reduction": 0.13472236778307967,
+      "ratio_status": "DEFINED",
+      "wins": 11,
+      "ties": 0,
+      "losses": 1,
+      "mean_extra_NLL": -0.0007823519875543861,
+      "mean_KL_difference": -0.00017594354225203667,
+      "material_sequence_regression": 0,
+      "by_domain": {
+        "natural_language": {
+          "wins": 4,
+          "baseline_KL": 0.0021802206379652606,
+          "candidate_KL": 0.0018244173375870246
+        },
+        "code": {
+          "wins": 3,
+          "baseline_KL": 0.001366185353114416,
+          "candidate_KL": 0.0012316465550226538
+        },
+        "associative_recall": {
+          "wins": 4,
+          "baseline_KL": 0.0003715078300757363,
+          "candidate_KL": 0.0003340193017896243
+        }
+      }
+    },
+    {
+      "profile": "P_STORE",
+      "candidate": "B_JOINT8_P_STORE",
+      "baseline": "B_DIAG8_P_STORE",
+      "window": "late",
+      "baseline_mean_KL": 0.001196483795601597,
+      "candidate_mean_KL": 0.0011300277314664341,
+      "pooled_KL_reduction": 0.055542803320414724,
+      "ratio_status": "DEFINED",
+      "wins": 7,
+      "ties": 0,
+      "losses": 5,
+      "mean_extra_NLL": 1.4825642392847968e-05,
+      "mean_KL_difference": -6.645606413516294e-05,
+      "material_sequence_regression": 0,
+      "by_domain": {
+        "natural_language": {
+          "wins": 4,
+          "baseline_KL": 0.001990863898481183,
+          "candidate_KL": 0.0018244173375870246
+        },
+        "code": {
+          "wins": 1,
+          "baseline_KL": 0.0012487403711480484,
+          "candidate_KL": 0.0012316465550226538
+        },
+        "associative_recall": {
+          "wins": 2,
+          "baseline_KL": 0.0003498471171755602,
+          "candidate_KL": 0.0003340193017896243
+        }
+      }
+    },
+    {
+      "profile": "P_STORE",
+      "candidate": "B_JOINT8_P_STORE",
+      "baseline": "B_U8_P_STORE",
+      "window": "late",
+      "baseline_mean_KL": 0.0016888411184994923,
+      "candidate_mean_KL": 0.0011300277314664341,
+      "pooled_KL_reduction": 0.3308857067203307,
+      "ratio_status": "DEFINED",
+      "wins": 11,
+      "ties": 0,
+      "losses": 1,
+      "mean_extra_NLL": -0.0005461968488758481,
+      "mean_KL_difference": -0.0005588133870330579,
+      "material_sequence_regression": 0,
+      "by_domain": {
+        "natural_language": {
+          "wins": 3,
+          "baseline_KL": 0.0026868051403300857,
+          "candidate_KL": 0.0018244173375870246
+        },
+        "code": {
+          "wins": 4,
+          "baseline_KL": 0.0019577354341898416,
+          "candidate_KL": 0.0012316465550226538
+        },
+        "associative_recall": {
+          "wins": 4,
+          "baseline_KL": 0.0004219827809785491,
+          "candidate_KL": 0.0003340193017896243
+        }
+      }
+    },
+    {
+      "profile": "P_PRE",
+      "candidate": "B_JOINT8_P_PRE",
+      "baseline": "B_DAMP8_P_PRE",
+      "window": "primary",
+      "baseline_mean_KL": 0.001197936987892169,
+      "candidate_mean_KL": 0.0010326964923582456,
+      "pooled_KL_reduction": 0.13793755197814916,
+      "ratio_status": "DEFINED",
+      "wins": 11,
+      "ties": 0,
+      "losses": 1,
+      "mean_extra_NLL": 0.00012074703073840694,
+      "mean_KL_difference": -0.00016524049553392334,
+      "material_sequence_regression": 0,
+      "by_domain": {
+        "natural_language": {
+          "wins": 4,
+          "baseline_KL": 0.0018160146643352447,
+          "candidate_KL": 0.0015830917293407688
+        },
+        "code": {
+          "wins": 3,
+          "baseline_KL": 0.001373855891445343,
+          "candidate_KL": 0.0011366991465962856
+        },
+        "associative_recall": {
+          "wins": 4,
+          "baseline_KL": 0.00040394040789591885,
+          "candidate_KL": 0.0003782986011376824
+        }
+      }
+    },
+    {
+      "profile": "P_PRE",
+      "candidate": "B_JOINT8_P_PRE",
+      "baseline": "B_DIAG8_P_PRE",
+      "window": "primary",
+      "baseline_mean_KL": 0.001053574991872533,
+      "candidate_mean_KL": 0.0010326964923582456,
+      "pooled_KL_reduction": 0.01981681387214751,
+      "ratio_status": "DEFINED",
+      "wins": 8,
+      "ties": 0,
+      "losses": 4,
+      "mean_extra_NLL": -0.0006559257691772883,
+      "mean_KL_difference": -2.0878499514287517e-05,
+      "material_sequence_regression": 0,
+      "by_domain": {
+        "natural_language": {
+          "wins": 2,
+          "baseline_KL": 0.0015798039801039148,
+          "candidate_KL": 0.0015830917293407688
+        },
+        "code": {
+          "wins": 4,
+          "baseline_KL": 0.0012022129915957571,
+          "candidate_KL": 0.0011366991465962856
+        },
+        "associative_recall": {
+          "wins": 2,
+          "baseline_KL": 0.0003787080039179274,
+          "candidate_KL": 0.0003782986011376824
+        }
+      }
+    },
+    {
+      "profile": "P_PRE",
+      "candidate": "B_JOINT8_P_PRE",
+      "baseline": "B_U8_P_PRE",
+      "window": "primary",
+      "baseline_mean_KL": 0.001555523987409424,
+      "candidate_mean_KL": 0.0010326964923582456,
+      "pooled_KL_reduction": 0.3361102106319154,
+      "ratio_status": "DEFINED",
+      "wins": 12,
+      "ties": 0,
+      "losses": 0,
+      "mean_extra_NLL": -0.00019268096903461243,
+      "mean_KL_difference": -0.0005228274950511787,
+      "material_sequence_regression": 0,
+      "by_domain": {
+        "natural_language": {
+          "wins": 4,
+          "baseline_KL": 0.002380155076272594,
+          "candidate_KL": 0.0015830917293407688
+        },
+        "code": {
+          "wins": 4,
+          "baseline_KL": 0.0018174382601117384,
+          "candidate_KL": 0.0011366991465962856
+        },
+        "associative_recall": {
+          "wins": 4,
+          "baseline_KL": 0.000468978625843941,
+          "candidate_KL": 0.0003782986011376824
+        }
+      }
+    },
+    {
+      "profile": "P_PRE",
+      "candidate": "B_JOINT8_P_PRE",
+      "baseline": "B_DAMP8_P_PRE",
+      "window": "early",
+      "baseline_mean_KL": 0.001089861209628884,
+      "candidate_mean_KL": 0.0009450138247746324,
+      "pooled_KL_reduction": 0.13290443184373413,
+      "ratio_status": "DEFINED",
+      "wins": 11,
+      "ties": 0,
+      "losses": 1,
+      "mean_extra_NLL": 9.101813170327618e-05,
+      "mean_KL_difference": -0.00014484738485425155,
+      "material_sequence_regression": 0,
+      "by_domain": {
+        "natural_language": {
+          "wins": 4,
+          "baseline_KL": 0.0015613693456616264,
+          "candidate_KL": 0.0013341330290509278
+        },
+        "code": {
+          "wins": 4,
+          "baseline_KL": 0.0012615420076859912,
+          "candidate_KL": 0.0010645723903764748
+        },
+        "associative_recall": {
+          "wins": 3,
+          "baseline_KL": 0.0004466722755390338,
+          "candidate_KL": 0.0004363360548964943
+        }
+      }
+    },
+    {
+      "profile": "P_PRE",
+      "candidate": "B_JOINT8_P_PRE",
+      "baseline": "B_DIAG8_P_PRE",
+      "window": "early",
+      "baseline_mean_KL": 0.0009695647483691261,
+      "candidate_mean_KL": 0.0009450138247746324,
+      "pooled_KL_reduction": 0.02532159263812972,
+      "ratio_status": "DEFINED",
+      "wins": 6,
+      "ties": 0,
+      "losses": 6,
+      "mean_extra_NLL": -0.0004837376446361434,
+      "mean_KL_difference": -2.455092359449383e-05,
+      "material_sequence_regression": 0,
+      "by_domain": {
+        "natural_language": {
+          "wins": 1,
+          "baseline_KL": 0.001324171914937481,
+          "candidate_KL": 0.0013341330290509278
+        },
+        "code": {
+          "wins": 4,
+          "baseline_KL": 0.0011564666523371852,
+          "candidate_KL": 0.0010645723903764748
+        },
+        "associative_recall": {
+          "wins": 1,
+          "baseline_KL": 0.00042805567783271194,
+          "candidate_KL": 0.0004363360548964943
+        }
+      }
+    },
+    {
+      "profile": "P_PRE",
+      "candidate": "B_JOINT8_P_PRE",
+      "baseline": "B_U8_P_PRE",
+      "window": "early",
+      "baseline_mean_KL": 0.001406337627541135,
+      "candidate_mean_KL": 0.0009450138247746324,
+      "pooled_KL_reduction": 0.3280320413335518,
+      "ratio_status": "DEFINED",
+      "wins": 12,
+      "ties": 0,
+      "losses": 0,
+      "mean_extra_NLL": 9.824476906237593e-05,
+      "mean_KL_difference": -0.0004613238027665028,
+      "material_sequence_regression": 0,
+      "by_domain": {
+        "natural_language": {
+          "wins": 4,
+          "baseline_KL": 0.002059031038057856,
+          "candidate_KL": 0.0013341330290509278
+        },
+        "code": {
+          "wins": 4,
+          "baseline_KL": 0.00162160608060432,
+          "candidate_KL": 0.0010645723903764748
+        },
+        "associative_recall": {
+          "wins": 4,
+          "baseline_KL": 0.000538375763961229,
+          "candidate_KL": 0.0004363360548964943
+        }
+      }
+    },
+    {
+      "profile": "P_PRE",
+      "candidate": "B_JOINT8_P_PRE",
+      "baseline": "B_DAMP8_P_PRE",
+      "window": "late",
+      "baseline_mean_KL": 0.0013026353980847265,
+      "candidate_mean_KL": 0.0011176390765798713,
+      "pooled_KL_reduction": 0.1420169617506607,
+      "ratio_status": "DEFINED",
+      "wins": 10,
+      "ties": 0,
+      "losses": 2,
+      "mean_extra_NLL": 0.00014960326150427009,
+      "mean_KL_difference": -0.0001849963215048554,
+      "material_sequence_regression": 0,
+      "by_domain": {
+        "natural_language": {
+          "wins": 3,
+          "baseline_KL": 0.0020627023168003126,
+          "candidate_KL": 0.0018242704702465524
+        },
+        "code": {
+          "wins": 3,
+          "baseline_KL": 0.0014826599663372154,
+          "candidate_KL": 0.0012065719416842274
+        },
+        "associative_recall": {
+          "wins": 4,
+          "baseline_KL": 0.00036254391111665126,
+          "candidate_KL": 0.00032207481780883334
+        }
+      }
+    },
+    {
+      "profile": "P_PRE",
+      "candidate": "B_JOINT8_P_PRE",
+      "baseline": "B_DIAG8_P_PRE",
+      "window": "late",
+      "baseline_mean_KL": 0.0011349599152664588,
+      "candidate_mean_KL": 0.0011176390765798713,
+      "pooled_KL_reduction": 0.0152611898038012,
+      "ratio_status": "DEFINED",
+      "wins": 6,
+      "ties": 0,
+      "losses": 6,
+      "mean_extra_NLL": -0.0008230594477927159,
+      "mean_KL_difference": -1.732083868658771e-05,
+      "material_sequence_regression": 0,
+      "by_domain": {
+        "natural_language": {
+          "wins": 2,
+          "baseline_KL": 0.0018274475432338974,
+          "candidate_KL": 0.0018242704702465524
+        },
+        "code": {
+          "wins": 2,
+          "baseline_KL": 0.001246529757752499,
+          "candidate_KL": 0.0012065719416842274
+        },
+        "associative_recall": {
+          "wins": 2,
+          "baseline_KL": 0.00033090244481297996,
+          "candidate_KL": 0.00032207481780883334
+        }
+      }
+    },
+    {
+      "profile": "P_PRE",
+      "candidate": "B_JOINT8_P_PRE",
+      "baseline": "B_U8_P_PRE",
+      "window": "late",
+      "baseline_mean_KL": 0.0017000482735318291,
+      "candidate_mean_KL": 0.0011176390765798713,
+      "pooled_KL_reduction": 0.34258391718607495,
+      "ratio_status": "DEFINED",
+      "wins": 10,
+      "ties": 0,
+      "losses": 2,
+      "mean_extra_NLL": -0.0004750668126670872,
+      "mean_KL_difference": -0.0005824091969519585,
+      "material_sequence_regression": 0,
+      "by_domain": {
+        "natural_language": {
+          "wins": 3,
+          "baseline_KL": 0.002691243988293121,
+          "candidate_KL": 0.0018242704702465524
+        },
+        "code": {
+          "wins": 4,
+          "baseline_KL": 0.0020071506840095496,
+          "candidate_KL": 0.0012065719416842274
+        },
+        "associative_recall": {
+          "wins": 3,
+          "baseline_KL": 0.0004017501482928182,
+          "candidate_KL": 0.00032207481780883334
+        }
+      }
+    }
+  ],
+  "completed_sequences": 12
+}

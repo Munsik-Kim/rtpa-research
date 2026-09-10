@@ -1,0 +1,4 @@
+# Evidence and historical sources retain their exact recorded line endings.
+* -text
+*.csv whitespace=cr-at-eol
+src/rtpa_research/frozen/** whitespace=-blank-at-eof

@@ -1,0 +1,267 @@
+{
+  "parent_A_status": "THREE_LAYER_MODEL_OUTPUT_TRANSFER_WORKING_GATES_PASS",
+  "A_posthoc_tail_status": "COMPLETE_POSTHOC_DESCRIPTIVE",
+  "source_fidelity_status": "DAMP_PAPER_METHOD_REIMPLEMENTATION_WITH_DECLARED_CONVENTIONS",
+  "NUMERICAL_IDENTITY_TO_AUTHORS": "UNKNOWN",
+  "active_profiles_and_basis": {
+    "profiles": [
+      "P_STORE",
+      "P_PRE"
+    ],
+    "primary": "P_STORE",
+    "sensitivity": "P_PRE",
+    "selection_basis": "user-approved missing metadata-order conventions; no B result seen",
+    "frozen_before_new_B": true
+  },
+  "B_quality_by_profile": {
+    "P_STORE": {
+      "status": "WORKING_GATES_NOT_MET",
+      "gates": {
+        "gain_vs_DAMP8": {
+          "passed": true,
+          "value": 0.12945793978723774,
+          "threshold": 0.05
+        },
+        "wins_vs_DAMP8": {
+          "passed": true,
+          "value": 12,
+          "threshold": 8
+        },
+        "late_not_worse_DAMP8": {
+          "passed": true,
+          "value": -0.00017594354225203667,
+          "threshold": 0
+        },
+        "extra_NLL_DAMP8": {
+          "passed": true,
+          "value": -0.0006961790534272261,
+          "threshold": 0.005
+        },
+        "material_regression_DAMP8": {
+          "passed": true,
+          "value": 0,
+          "threshold": 0
+        },
+        "gain_vs_DIAG8": {
+          "passed": false,
+          "value": 0.038938198121364676,
+          "threshold": 0.05
+        },
+        "wins_vs_DIAG8": {
+          "passed": true,
+          "value": 8,
+          "threshold": 8
+        },
+        "late_not_worse_DIAG8": {
+          "passed": true,
+          "value": -6.645606413516294e-05,
+          "threshold": 0
+        },
+        "extra_NLL_DIAG8": {
+          "passed": true,
+          "value": -0.0007046772288459291,
+          "threshold": 0.005
+        },
+        "gain_vs_U8": {
+          "passed": true,
+          "value": 0.33078786562838713,
+          "threshold": 0.1
+        },
+        "wins_vs_U8": {
+          "passed": true,
+          "value": 12,
+          "threshold": 8
+        },
+        "late_not_worse_U8": {
+          "passed": true,
+          "value": -0.0005588133870330579,
+          "threshold": 0
+        },
+        "material_regression_U8": {
+          "passed": true,
+          "value": 0,
+          "threshold": 0
+        },
+        "mean_delta_NLL": {
+          "passed": true,
+          "value": 0.00037058380553600667,
+          "threshold": 0.01
+        },
+        "max_sequence_delta_NLL": {
+          "passed": true,
+          "value": 0.004888481335491912,
+          "threshold": 0.05
+        },
+        "operational_nonfinite": {
+          "passed": true,
+          "value": 0,
+          "threshold": 0
+        }
+      },
+      "method_means": {
+        "B_U8_P_STORE": {
+          "KL": 0.0015735280452430932,
+          "delta_NLL_native": 0.0010858701192613118
+        },
+        "B_DAMP8_P_STORE": {
+          "KL": 0.0012096188223155592,
+          "delta_NLL_native": 0.0010667628589632328
+        },
+        "B_DIAG8_P_STORE": {
+          "KL": 0.0010956881852887334,
+          "delta_NLL_native": 0.0010752610343819358
+        },
+        "B_JOINT8_P_STORE": {
+          "KL": 0.0010530240616507221,
+          "delta_NLL_native": 0.00037058380553600667
+        }
+      }
+    },
+    "P_PRE": {
+      "status": "WORKING_GATES_NOT_MET",
+      "gates": {
+        "gain_vs_DAMP8": {
+          "passed": true,
+          "value": 0.13793755197814916,
+          "threshold": 0.05
+        },
+        "wins_vs_DAMP8": {
+          "passed": true,
+          "value": 11,
+          "threshold": 8
+        },
+        "late_not_worse_DAMP8": {
+          "passed": true,
+          "value": -0.0001849963215048554,
+          "threshold": 0
+        },
+        "extra_NLL_DAMP8": {
+          "passed": true,
+          "value": 0.00012074703073840694,
+          "threshold": 0.005
+        },
+        "material_regression_DAMP8": {
+          "passed": true,
+          "value": 0,
+          "threshold": 0
+        },
+        "gain_vs_DIAG8": {
+          "passed": false,
+          "value": 0.01981681387214751,
+          "threshold": 0.05
+        },
+        "wins_vs_DIAG8": {
+          "passed": true,
+          "value": 8,
+          "threshold": 8
+        },
+        "late_not_worse_DIAG8": {
+          "passed": true,
+          "value": -1.732083868658771e-05,
+          "threshold": 0
+        },
+        "extra_NLL_DIAG8": {
+          "passed": true,
+          "value": -0.0006559257691772883,
+          "threshold": 0.005
+        },
+        "gain_vs_U8": {
+          "passed": true,
+          "value": 0.3361102106319154,
+          "threshold": 0.1
+        },
+        "wins_vs_U8": {
+          "passed": true,
+          "value": 12,
+          "threshold": 8
+        },
+        "late_not_worse_U8": {
+          "passed": true,
+          "value": -0.0005824091969519585,
+          "threshold": 0
+        },
+        "material_regression_U8": {
+          "passed": true,
+          "value": 0,
+          "threshold": 0
+        },
+        "mean_delta_NLL": {
+          "passed": true,
+          "value": 0.000314651724145687,
+          "threshold": 0.01
+        },
+        "max_sequence_delta_NLL": {
+          "passed": true,
+          "value": 0.003302994791424485,
+          "threshold": 0.05
+        },
+        "operational_nonfinite": {
+          "passed": true,
+          "value": 0,
+          "threshold": 0
+        }
+      },
+      "method_means": {
+        "B_U8_P_PRE": {
+          "KL": 0.001555523987409424,
+          "delta_NLL_native": 0.0005073326931802994
+        },
+        "B_DAMP8_P_PRE": {
+          "KL": 0.001197936987892169,
+          "delta_NLL_native": 0.00019390469340728003
+        },
+        "B_DIAG8_P_PRE": {
+          "KL": 0.001053574991872533,
+          "delta_NLL_native": 0.0009705774933229753
+        },
+        "B_JOINT8_P_PRE": {
+          "KL": 0.0010326964923582456,
+          "delta_NLL_native": 0.000314651724145687
+        }
+      }
+    }
+  },
+  "B_risk_by_profile": {
+    "P_STORE": {
+      "TOKEN_SAFETY": "NOT_ESTABLISHED",
+      "mean_delta_NLL_native": 0.00037058380553600667,
+      "max_sequence_delta_NLL_native": 0.004888481335491912,
+      "operational_nonfinite": 0
+    },
+    "P_PRE": {
+      "TOKEN_SAFETY": "NOT_ESTABLISHED",
+      "mean_delta_NLL_native": 0.000314651724145687,
+      "max_sequence_delta_NLL_native": 0.003302994791424485,
+      "operational_nonfinite": 0
+    }
+  },
+  "B_token_tail_by_profile": {
+    "P_STORE": {
+      "status": "COMPLETE",
+      "TOKEN_SAFETY": "NOT_ESTABLISHED"
+    },
+    "P_PRE": {
+      "status": "COMPLETE",
+      "TOKEN_SAFETY": "NOT_ESTABLISHED"
+    }
+  },
+  "numerical_convention_sensitivity": "ROBUST_WITHIN_TESTED_NUMERICAL_CONVENTIONS",
+  "measured_memory_and_timing_status": "MEASURED_LOCAL_EAGER_CAL_ONLY",
+  "completion_by_profile": {
+    "P_STORE": {
+      "completed_paired_sequences": 12,
+      "planned_sequences": 12,
+      "complete": true
+    },
+    "P_PRE": {
+      "completed_paired_sequences": 12,
+      "planned_sequences": 12,
+      "complete": true
+    }
+  },
+  "overall_recommendation": "GAIN_OVER_DAMP_ADAPTATION_CROSS_TERM_UNRESOLVED",
+  "product_path": "CONTINUES_STOPPED",
+  "TOKEN_SAFETY": "NOT_ESTABLISHED",
+  "error": null,
+  "parent_immutable": true
+}

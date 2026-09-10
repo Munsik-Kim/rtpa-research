@@ -1,0 +1,77 @@
+{
+  "rows": [
+    {
+      "snapshot": {
+        "path": "artifacts/rtpa_v05_numerical_matched_energy/diagnosis_snapshots/B_U8_P_STORE_observed_layer12_finite_encode_metadata_overflow.pt",
+        "bytes": 5996047,
+        "sha256": "6c90a3a621adf711b3f7c2e7044bded858c0fd45cc6e5acf32622fba39c5b151"
+      },
+      "source_profile": "P_STORE",
+      "token": 499,
+      "layer": 12,
+      "probe_profile": "P_STORE",
+      "input_finite": true,
+      "metadata_nonfinite_groups": 1,
+      "first_bad_group": [
+        5,
+        115,
+        1,
+        0
+      ],
+      "decoded_finite": false,
+      "raw_sse": null,
+      "undefined_reason": "NONFINITE_DECODE",
+      "clipping_count": 672,
+      "codec_events": {
+        "groups": 8192,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 0,
+        "metadata_collapse": 0,
+        "metadata_overflow": 1,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 672,
+        "values": 262144
+      }
+    },
+    {
+      "snapshot": {
+        "path": "artifacts/rtpa_v05_numerical_matched_energy/diagnosis_snapshots/B_U8_P_STORE_observed_layer12_finite_encode_metadata_overflow.pt",
+        "bytes": 5996047,
+        "sha256": "6c90a3a621adf711b3f7c2e7044bded858c0fd45cc6e5acf32622fba39c5b151"
+      },
+      "source_profile": "P_STORE",
+      "token": 499,
+      "layer": 12,
+      "probe_profile": "P_PRE",
+      "input_finite": true,
+      "metadata_nonfinite_groups": 1,
+      "first_bad_group": [
+        5,
+        115,
+        1,
+        0
+      ],
+      "decoded_finite": false,
+      "raw_sse": null,
+      "undefined_reason": "NONFINITE_DECODE",
+      "clipping_count": 0,
+      "codec_events": {
+        "groups": 8192,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 0,
+        "metadata_collapse": 0,
+        "metadata_overflow": 1,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 0,
+        "values": 262144
+      }
+    }
+  ],
+  "status": "COMPLETE",
+  "same_input_not_own_trajectory": true,
+  "repair_or_precision_upgrade": false
+}

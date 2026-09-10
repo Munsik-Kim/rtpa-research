@@ -1,0 +1,524 @@
+{
+  "documents": [
+    {
+      "domain": "DM Mathematics",
+      "source_domain_label": "DM Mathematics",
+      "row_idx": 209,
+      "text_sha256": "8862973ebeae1c75597da1b74e1f87826f77ee975a92986d7a79ae68fc3e3a76",
+      "token_sha256": "82be425fb448c1c348dcef7e89c53f8f73c50cd862b312c5dccd844dfb58667a",
+      "source_tokens": 4477,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=200&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_200.json",
+        "bytes": 1024107,
+        "sha256": "b29073e1102eac3174f9d92cafeba096de41064acd54f2841b8d3e0bff97d9dd"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "DM Mathematics",
+      "source_domain_label": "DM Mathematics",
+      "row_idx": 157829,
+      "text_sha256": "956d7d4d9b941fc41edb74649c399bdc08e76020121c8980d59228e01dca1bba",
+      "token_sha256": "da2646dfb3468317b74969f6590071f893fa7e00e2f80f7576b3eae2caac3cf5",
+      "source_tokens": 4492,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=157800&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_157800.json",
+        "bytes": 768472,
+        "sha256": "dfd09519c9e1e262e56d4a9a65743f4950b30cb9fa3a27b724511ed5a33cd284"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "DM Mathematics",
+      "source_domain_label": "DM Mathematics",
+      "row_idx": 37615,
+      "text_sha256": "37f452cf681299c95b482ee945aa3597e4c0b5c8f56459cccb119a35485a75ee",
+      "token_sha256": "172a17fe8b640aa332e322e171c4c249e3a735a52f2b7e301b2d99463a2e30d4",
+      "source_tokens": 5839,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=37600&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_37600.json",
+        "bytes": 1016989,
+        "sha256": "699ca982f54dccb4949962734d10f2e610f4af32c46ce7aa6344f7495fba7532"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "DM Mathematics",
+      "source_domain_label": "DM Mathematics",
+      "row_idx": 182165,
+      "text_sha256": "3a602e74969bb084f43b8bb3c4c064b60ba98715212cae4c76b92efd392ab1bf",
+      "token_sha256": "7a1b1af929ccd989a2ac375ba3e9662996149749568286ce9bcd1f8a15c642a3",
+      "source_tokens": 4750,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=182100&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_182100.json",
+        "bytes": 960999,
+        "sha256": "04ff3080f3f727e51e45d326db48f8a527d1e2e934673c95852cc82dea054fbc"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "DM Mathematics",
+      "source_domain_label": "DM Mathematics",
+      "row_idx": 182169,
+      "text_sha256": "717965fbcd5f3fce00d463bb5043b02145a6e55e540cf91291dda2689abb1ac0",
+      "token_sha256": "5d9f23901982cfcaa9224adee577988390cb749ae4bf9974a69ae4b16100f490",
+      "source_tokens": 3716,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=182100&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_182100.json",
+        "bytes": 960999,
+        "sha256": "04ff3080f3f727e51e45d326db48f8a527d1e2e934673c95852cc82dea054fbc"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "DM Mathematics",
+      "source_domain_label": "DM Mathematics",
+      "row_idx": 124777,
+      "text_sha256": "21048186ca4dbfed2c45e0f06a172c2af677daecd3ec6e2951cba4fc6ffd4c6f",
+      "token_sha256": "c64f3d2fcece03ed72affe1301e6e3495735f1ae26cd17a568549f71ad7b5e22",
+      "source_tokens": 5177,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=124700&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_124700.json",
+        "bytes": 839012,
+        "sha256": "0d181d18a6ffa4f2ae9b3ee6c3d57dc400cc0081a3dcd6e0e8ff4deab877c3b0"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "DM Mathematics",
+      "source_domain_label": "DM Mathematics",
+      "row_idx": 167360,
+      "text_sha256": "32f29690be366c929d57b498042612d75900ffe9e9e19417878588905633d962",
+      "token_sha256": "06cc42267445af139aeb02685fd4d15895939f648317580bbe6b515f2cc7676c",
+      "source_tokens": 4296,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=167300&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_167300.json",
+        "bytes": 577153,
+        "sha256": "1ab0e0bb623683bf3eb7a06a667bf665cebfa7304ed755d883700495aea263ee"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "DM Mathematics",
+      "source_domain_label": "DM Mathematics",
+      "row_idx": 167399,
+      "text_sha256": "0741f8ebe2f12b0831210dacab5df74b8dc07cc21183882eefe84827f62d7bbc",
+      "token_sha256": "7876c76192e9cbb9cf90011d8cfca6b0527d5551556c20d73fa0039724a49952",
+      "source_tokens": 4134,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=167300&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_167300.json",
+        "bytes": 577153,
+        "sha256": "1ab0e0bb623683bf3eb7a06a667bf665cebfa7304ed755d883700495aea263ee"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "PubMed Abstracts",
+      "source_domain_label": "PubMed Abstracts",
+      "row_idx": 223,
+      "text_sha256": "46f6807a45b35d1b71e4df38b43f7b41d8c397139e8286cea2520645ee7bfdd3",
+      "token_sha256": "1f445e4acafb1adc05f04f0bbb83232f44fe8eb7655d44351d8fc30891dfe30b",
+      "source_tokens": 380,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=200&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_200.json",
+        "bytes": 1024107,
+        "sha256": "b29073e1102eac3174f9d92cafeba096de41064acd54f2841b8d3e0bff97d9dd"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "PubMed Abstracts",
+      "source_domain_label": "PubMed Abstracts",
+      "row_idx": 248,
+      "text_sha256": "4d9d5cfd9bc1f48e6e92ff0b77ef97405e92ac39d6bfaa2a470665a3b23163f6",
+      "token_sha256": "3fdd1c4185fad2998c5b0c0d55c87ca22069497666dd54ae7a799e23094142c3",
+      "source_tokens": 446,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=200&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_200.json",
+        "bytes": 1024107,
+        "sha256": "b29073e1102eac3174f9d92cafeba096de41064acd54f2841b8d3e0bff97d9dd"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "PubMed Abstracts",
+      "source_domain_label": "PubMed Abstracts",
+      "row_idx": 280,
+      "text_sha256": "fd1243e53775a6d83388de668c20f0028cf9ef0657b6b9e0d9534ea312820d37",
+      "token_sha256": "3e0ee71341a3d08bbd4e909a457bd9bb5445de83c29d04a8c73a0fda3dc4b703",
+      "source_tokens": 371,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=200&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_200.json",
+        "bytes": 1024107,
+        "sha256": "b29073e1102eac3174f9d92cafeba096de41064acd54f2841b8d3e0bff97d9dd"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "PubMed Abstracts",
+      "source_domain_label": "PubMed Abstracts",
+      "row_idx": 288,
+      "text_sha256": "b25ab0990f17826a4580e5e5a5fcc1d97d53da37d2092b0c52a8d3376bf94c37",
+      "token_sha256": "30587318e694f6d7222ce41d9481a4b10edde29849cddc1f33502687b642e4c3",
+      "source_tokens": 283,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=200&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_200.json",
+        "bytes": 1024107,
+        "sha256": "b29073e1102eac3174f9d92cafeba096de41064acd54f2841b8d3e0bff97d9dd"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "PubMed Abstracts",
+      "source_domain_label": "PubMed Abstracts",
+      "row_idx": 295,
+      "text_sha256": "f9082c0fcb12b42257457d818cf276df29862518dcf488be8e83f37cf822a8d5",
+      "token_sha256": "302ef80ad3443a8e663e3f50e631bf1db54d87328098361a9f557d41768fbb23",
+      "source_tokens": 320,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=200&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_200.json",
+        "bytes": 1024107,
+        "sha256": "b29073e1102eac3174f9d92cafeba096de41064acd54f2841b8d3e0bff97d9dd"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "PubMed Abstracts",
+      "source_domain_label": "PubMed Abstracts",
+      "row_idx": 299,
+      "text_sha256": "558b0338f765a9a906aa1449081caf82c865b48161cec710f96873a5f44211bd",
+      "token_sha256": "e3d20bef8321f7e13a9e954c958b19278856e15b43c581eb534960eb123512dc",
+      "source_tokens": 615,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=200&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_200.json",
+        "bytes": 1024107,
+        "sha256": "b29073e1102eac3174f9d92cafeba096de41064acd54f2841b8d3e0bff97d9dd"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "PubMed Abstracts",
+      "source_domain_label": "PubMed Abstracts",
+      "row_idx": 157800,
+      "text_sha256": "05b630f38bdea82fbb0ca5b12439eaaaf130a5e5574197293e66f4e52f6c8683",
+      "token_sha256": "ca793423194ccb891734ebdc07d827ef5adde95aeeb3fcf714803b06cc4851ba",
+      "source_tokens": 363,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=157800&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_157800.json",
+        "bytes": 768472,
+        "sha256": "dfd09519c9e1e262e56d4a9a65743f4950b30cb9fa3a27b724511ed5a33cd284"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "PubMed Abstracts",
+      "source_domain_label": "PubMed Abstracts",
+      "row_idx": 157803,
+      "text_sha256": "743bb116eb4aceb8355d64e06806b77e7c91bcaff1b900150b89f343a5508f96",
+      "token_sha256": "214f33027085235dc0ffb85b0a03476f7aaec58fbf6c0129335905b235f69adf",
+      "source_tokens": 407,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=157800&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_157800.json",
+        "bytes": 768472,
+        "sha256": "dfd09519c9e1e262e56d4a9a65743f4950b30cb9fa3a27b724511ed5a33cd284"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "GitHub",
+      "source_domain_label": "Github",
+      "row_idx": 205,
+      "text_sha256": "49750ea2cbb9e4697b411331c4abeec106eabc59ca9158d1fae69c189d46103e",
+      "token_sha256": "9f9b6901e35c6bb04f4cc796d5c6e7ea0054065c5afd84a9a43866bc6e5934d9",
+      "source_tokens": 3841,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=200&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_200.json",
+        "bytes": 1024107,
+        "sha256": "b29073e1102eac3174f9d92cafeba096de41064acd54f2841b8d3e0bff97d9dd"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "GitHub",
+      "source_domain_label": "Github",
+      "row_idx": 237,
+      "text_sha256": "b9fa618151c678ac2d236f9aa35fa77685c1b7fd589798fab55cae8881faab38",
+      "token_sha256": "cd57431dcba0b3e2bfecaa9becbf45292d2d7b308e99ff192e7ccc394ccbf80b",
+      "source_tokens": 278,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=200&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_200.json",
+        "bytes": 1024107,
+        "sha256": "b29073e1102eac3174f9d92cafeba096de41064acd54f2841b8d3e0bff97d9dd"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "GitHub",
+      "source_domain_label": "Github",
+      "row_idx": 271,
+      "text_sha256": "e0d58429fccf6c5ddb516769b9a824a97504df4c117976d0d48172a501198ced",
+      "token_sha256": "562e3fa285161cf0c24224d3c66dd0d0b2c15103b166dc66e3ede14078cdc8d6",
+      "source_tokens": 879,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=200&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_200.json",
+        "bytes": 1024107,
+        "sha256": "b29073e1102eac3174f9d92cafeba096de41064acd54f2841b8d3e0bff97d9dd"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "GitHub",
+      "source_domain_label": "Github",
+      "row_idx": 293,
+      "text_sha256": "3a6bf625af809180e8e029365d7f963234c922b4b39f0e7c3d9f962bab9f0f13",
+      "token_sha256": "74d700522b59e900baf344f14f7c6ca0cd05b228cedf35625d1bcce0156dc252",
+      "source_tokens": 3364,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=200&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_200.json",
+        "bytes": 1024107,
+        "sha256": "b29073e1102eac3174f9d92cafeba096de41064acd54f2841b8d3e0bff97d9dd"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "GitHub",
+      "source_domain_label": "Github",
+      "row_idx": 157814,
+      "text_sha256": "1c06510f458aaf6b47d3c4db3d366791844b61c2f0dc6856ebb4a9cb0a14c390",
+      "token_sha256": "e8e6d8323dceb67f841b4d52d2e0780e80a7af2f4bd6145a167aefee829faaf4",
+      "source_tokens": 819,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=157800&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_157800.json",
+        "bytes": 768472,
+        "sha256": "dfd09519c9e1e262e56d4a9a65743f4950b30cb9fa3a27b724511ed5a33cd284"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "GitHub",
+      "source_domain_label": "Github",
+      "row_idx": 157846,
+      "text_sha256": "ee7dd1221793011af6a717a2fba0a9e725bc34f53206de10cad763233dad0ecb",
+      "token_sha256": "a0176ee183c90d2c42b77907cd14de3d1da1eaae0337b945c25d61941fd0fe18",
+      "source_tokens": 1296,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=157800&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_157800.json",
+        "bytes": 768472,
+        "sha256": "dfd09519c9e1e262e56d4a9a65743f4950b30cb9fa3a27b724511ed5a33cd284"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "GitHub",
+      "source_domain_label": "Github",
+      "row_idx": 157859,
+      "text_sha256": "fd19fca6835f5da5cdd1b422c83a89a1ece7e70f1ec367112fa79e1bc7ea7d84",
+      "token_sha256": "0e2d458676e985779f0a2e136b0c1475943d04ecab6a0a9adc929f56fdbc86fa",
+      "source_tokens": 859,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=157800&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_157800.json",
+        "bytes": 768472,
+        "sha256": "dfd09519c9e1e262e56d4a9a65743f4950b30cb9fa3a27b724511ed5a33cd284"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "GitHub",
+      "source_domain_label": "Github",
+      "row_idx": 157865,
+      "text_sha256": "b77fd9c8e847760dc16cbf988871bda937a94ba594053a1a953b86ec9a9bf122",
+      "token_sha256": "c9910c640c212a175fb54a582b08055daf12d8899ef72bd28db29bdd0f4cb009",
+      "source_tokens": 1639,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=157800&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_157800.json",
+        "bytes": 768472,
+        "sha256": "dfd09519c9e1e262e56d4a9a65743f4950b30cb9fa3a27b724511ed5a33cd284"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "StackExchange",
+      "source_domain_label": "StackExchange",
+      "row_idx": 200,
+      "text_sha256": "dc3399aa7a0192ed0c9bfeb284aa62aeddf2c3460c97f48c7620704cb77df36e",
+      "token_sha256": "50bcc7a36529fdbe792b6169e7a2b2123af44e0e0bac1e94bffe4d0df4349a5c",
+      "source_tokens": 1222,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=200&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_200.json",
+        "bytes": 1024107,
+        "sha256": "b29073e1102eac3174f9d92cafeba096de41064acd54f2841b8d3e0bff97d9dd"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "StackExchange",
+      "source_domain_label": "StackExchange",
+      "row_idx": 202,
+      "text_sha256": "c305d8b2c2f5f2006c28a1ed72efb20c49df44401dafb71bd6e3ac95a114f1ab",
+      "token_sha256": "ac40e134ff97f526601d9595423cdaf596f7f0e114f302b80fa81f1ce2f0fab6",
+      "source_tokens": 1550,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=200&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_200.json",
+        "bytes": 1024107,
+        "sha256": "b29073e1102eac3174f9d92cafeba096de41064acd54f2841b8d3e0bff97d9dd"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "StackExchange",
+      "source_domain_label": "StackExchange",
+      "row_idx": 206,
+      "text_sha256": "ce3650c572ffc46dd78742d983dd50c1805f96ead30539ace3e536677fc23b33",
+      "token_sha256": "54ba35f543fdbef0190fc3731660cf862ea0528cb04fc6360e9b0da7f47e8b4f",
+      "source_tokens": 411,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=200&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_200.json",
+        "bytes": 1024107,
+        "sha256": "b29073e1102eac3174f9d92cafeba096de41064acd54f2841b8d3e0bff97d9dd"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "StackExchange",
+      "source_domain_label": "StackExchange",
+      "row_idx": 244,
+      "text_sha256": "13a3c7efdcfd48ce80d0973cbc0ee6c2a06e8d74805bc447adcb060c7fa6bc45",
+      "token_sha256": "957e2334da1196f846883db3158b6d5f04b0f5f073d64e729527217da74815ce",
+      "source_tokens": 456,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=200&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_200.json",
+        "bytes": 1024107,
+        "sha256": "b29073e1102eac3174f9d92cafeba096de41064acd54f2841b8d3e0bff97d9dd"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "StackExchange",
+      "source_domain_label": "StackExchange",
+      "row_idx": 246,
+      "text_sha256": "7ad0465d3478ceb5d8e61e82cb4b344f1c7ec8de011b0aa24a14627f319a7020",
+      "token_sha256": "92d75175704e2350dd2ebdd96b797194c5183a1049ba49291581f2cb1a0e84f0",
+      "source_tokens": 936,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=200&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_200.json",
+        "bytes": 1024107,
+        "sha256": "b29073e1102eac3174f9d92cafeba096de41064acd54f2841b8d3e0bff97d9dd"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "StackExchange",
+      "source_domain_label": "StackExchange",
+      "row_idx": 267,
+      "text_sha256": "80ef120b44741e84b18a1cdc277add03941a679a3c563d3f1d1424e4f5ce55c9",
+      "token_sha256": "ab70503ab0bb7bf7af35b2df39f232f6e0a012655987e3bc09831b8f86a4cf1a",
+      "source_tokens": 266,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=200&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_200.json",
+        "bytes": 1024107,
+        "sha256": "b29073e1102eac3174f9d92cafeba096de41064acd54f2841b8d3e0bff97d9dd"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "StackExchange",
+      "source_domain_label": "StackExchange",
+      "row_idx": 270,
+      "text_sha256": "9915c79ba6cc8ac74809eef301acdb613fb63f572a8260e266852e0df751c3d4",
+      "token_sha256": "579394a6d770f970955140f3135c79331de4b1f41e3b3b3403bd5a0f72a6854e",
+      "source_tokens": 528,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=200&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_200.json",
+        "bytes": 1024107,
+        "sha256": "b29073e1102eac3174f9d92cafeba096de41064acd54f2841b8d3e0bff97d9dd"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    },
+    {
+      "domain": "StackExchange",
+      "source_domain_label": "StackExchange",
+      "row_idx": 296,
+      "text_sha256": "84ed7c2852781eeea52da72c7d348cb017103504651673be010e3a76928d76e2",
+      "token_sha256": "79aabce1f48906c5c297e87db7c1d92e328bb1e626a23315905257cded4b5cf8",
+      "source_tokens": 313,
+      "role": "PAPER_CAL_ONLY",
+      "source_url": "https://datasets-server.huggingface.co/rows?dataset=EleutherAI%2Fpile_val_test&config=default&split=validation&offset=200&length=100",
+      "source_file": {
+        "path": "artifacts/rtpa_v06_fixed_task_damp_audit/sources/pile_page_200.json",
+        "bytes": 1024107,
+        "sha256": "b29073e1102eac3174f9d92cafeba096de41064acd54f2841b8d3e0bff97d9dd"
+      },
+      "original_paper_document_identity": "UNKNOWN; same composition independent sample"
+    }
+  ],
+  "domain_counts": {
+    "DM Mathematics": 8,
+    "PubMed Abstracts": 8,
+    "GitHub": 8,
+    "StackExchange": 8
+  },
+  "source_text_and_tokens_in_package": false,
+  "reason": "Per-document redistribution rights unresolved; external verified acquisition required"
+}

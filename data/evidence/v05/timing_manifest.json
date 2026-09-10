@@ -1,0 +1,75 @@
+{
+  "seed": 509003,
+  "rounds": [
+    [
+      "MATCHED_ENERGY8",
+      "DIAG8",
+      "DAMP8_REPEAT",
+      "DAMP8"
+    ],
+    [
+      "DIAG8",
+      "DAMP8_REPEAT",
+      "DAMP8",
+      "MATCHED_ENERGY8"
+    ],
+    [
+      "DAMP8_REPEAT",
+      "DAMP8",
+      "MATCHED_ENERGY8",
+      "DIAG8"
+    ],
+    [
+      "DAMP8",
+      "MATCHED_ENERGY8",
+      "DIAG8",
+      "DAMP8_REPEAT"
+    ],
+    [
+      "MATCHED_ENERGY8",
+      "DIAG8",
+      "DAMP8_REPEAT",
+      "DAMP8"
+    ],
+    [
+      "DIAG8",
+      "DAMP8_REPEAT",
+      "DAMP8",
+      "MATCHED_ENERGY8"
+    ]
+  ],
+  "warmup_round": 0,
+  "measured_rounds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "CAL_input": {
+    "sequence_id": "natural_language_s7",
+    "domain": "natural_language",
+    "sequence_index": 7,
+    "seed": 20260908,
+    "provenance": "deterministic local authored panel",
+    "text": "A linguist follows how rare grammatical markers propagate through a chain of conversations. Common words explain most acoustic energy, yet a quiet suffix controls the interpretation of later references. The panel uses distinct stories, fixed analysis windows, and sequence-level uncertainty so repeated tokens are not mistaken for independent speakers.",
+    "text_sha256": "40027d9c57ac7ddddc50e5b30e7742857869433015164da9a188b9a47ad34668",
+    "base_token_count": 58,
+    "context_length": 256,
+    "token_sha256": "4d754ccac6d6a39ad493970d0b1b669bdfd6a32da5dd475bd9838b6cc007d90a",
+    "unique_token_count": 52,
+    "input_path": "artifacts/e12_functional_observability/panel_inputs/natural_language_s7.pt",
+    "input_sha256": "56ffbd305ecb3dcd73c19d7fbd53a8635c81935dc4e2fb2dd7d224f3cdf14ea7"
+  },
+  "CAL_receipt": {
+    "path": "artifacts/e12_functional_observability/panel_inputs/natural_language_s7.pt",
+    "bytes": 4093,
+    "sha256": "56ffbd305ecb3dcd73c19d7fbd53a8635c81935dc4e2fb2dd7d224f3cdf14ea7"
+  },
+  "balanced_order": "cyclic Latin order; each label once per round, each position count differs by at most1 across6rounds",
+  "source": {
+    "path": "experiments/rtpa_v05/timing.py",
+    "bytes": 3571,
+    "sha256": "7ae322d2c6a9de22b54ac67f30c1ef9730f2504c9ce652577a433f23e9b94f4e"
+  }
+}

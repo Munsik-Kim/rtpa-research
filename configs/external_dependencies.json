@@ -1,0 +1,20 @@
+{
+  "GPU_status": "NOT_RUN",
+  "model_weights": "not included; exact revision required, no auto-download",
+  "historical_layout_root": "src/rtpa_research/frozen",
+  "external_inputs": "v04/v05 software-corpus input manifests identify exact source hash/version; local-only reversible text/token inputs",
+  "missing_physical_injection_metric": "M=B^T B for same low-minus-high injection never stored",
+  "original_receipt_validation": "old receipt hashes are not changed; publication path-redacted files have distinct export hashes",
+  "full_original_runner": "requires historical artifacts/layout/receipts including parent experiments not replicated in this selected tree; no turnkey full-GPU replication claim",
+  "excluded": {
+    "category_policy": [
+      "model weights and environment/cache",
+      "large archive ZIP and tensor traces",
+      "authentication/Drive receipts/private URLs",
+      "external corpus text and token IDs without clear redistribution rights",
+      "duplicate reports/prompts/patch logs",
+      "unrelated E0-E13 experiments"
+    ],
+    "nothing_deleted_from_original": true
+  }
+}

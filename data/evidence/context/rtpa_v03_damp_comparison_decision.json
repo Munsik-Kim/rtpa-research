@@ -1,0 +1,93 @@
+{
+  "utc": "2026-09-08T03:59:32.310071+00:00",
+  "original_transfer_status": "THREE_LAYER_MODEL_OUTPUT_TRANSFER_WORKING_GATES_PASS",
+  "A_working_gates": {
+    "KL_GAIN_Q8_TARGET3": {
+      "pass": true,
+      "observed": 0.5169291165255164,
+      "threshold": 0.1
+    },
+    "WINS_Q8_TARGET3": {
+      "pass": true,
+      "observed": 12,
+      "threshold": 8
+    },
+    "KL_GAIN_DIAG_TARGET3": {
+      "pass": true,
+      "observed": 0.147602961157142,
+      "threshold": 0.05
+    },
+    "WINS_DIAG_TARGET3": {
+      "pass": true,
+      "observed": 12,
+      "threshold": 8
+    },
+    "KL_GAIN_ENERGY_TARGET3": {
+      "pass": true,
+      "observed": 0.3147135336320086,
+      "threshold": 0.05
+    },
+    "WINS_ENERGY_TARGET3": {
+      "pass": true,
+      "observed": 12,
+      "threshold": 8
+    },
+    "MEAN_DELTA_NLL_NATIVE": {
+      "pass": true,
+      "observed": 0.002400717394888859,
+      "threshold": 0.01
+    },
+    "MAX_SEQUENCE_DELTA_NLL_NATIVE": {
+      "pass": true,
+      "observed": 0.006727750389100784,
+      "threshold": 0.05
+    },
+    "EXTRA_NLL_DIAG_TARGET3": {
+      "pass": true,
+      "observed": -0.000976876734870837,
+      "threshold": 0.005
+    },
+    "EXTRA_NLL_ENERGY_TARGET3": {
+      "pass": true,
+      "observed": -0.002264226137180534,
+      "threshold": 0.005
+    },
+    "MATERIAL_KL_HARM_VS_Q8": {
+      "pass": true,
+      "observed": 0,
+      "threshold": 0
+    },
+    "NONFINITE": {
+      "pass": true,
+      "observed": 0,
+      "threshold": 0
+    },
+    "LATE_NOT_WORSE_Q8_TARGET3": {
+      "pass": true,
+      "observed_difference": -0.0037790981987049516,
+      "threshold": 0
+    },
+    "LATE_NOT_WORSE_DIAG_TARGET3": {
+      "pass": true,
+      "observed_difference": -0.000946338606961048,
+      "threshold": 0
+    },
+    "LATE_NOT_WORSE_ENERGY_TARGET3": {
+      "pass": true,
+      "observed_difference": -0.0016536362661533528,
+      "threshold": 0
+    }
+  },
+  "damp_source_fidelity_status": "PAPER_CORE_VERIFIED_NUMERICAL_CODEC_CONTRACT_INCOMPLETE",
+  "damp_matched_quality_status": "NOT_RUN_BLOCKED_DAMP_SPEC",
+  "damp_cross_term_status": "NOT_RUN_BLOCKED_DAMP_SPEC",
+  "damp_tail_status": "NOT_RUN_BLOCKED_DAMP_SPEC",
+  "comparison_cost_status": "A_BYTES_VERIFIED_B_NOT_EXECUTED",
+  "overall_recommendation": "DAMP_COMPARISON_NOT_RUN_SOURCE_UNVERIFIED",
+  "A_complete": true,
+  "B_complete": false,
+  "product_path": "CONTINUES_STOPPED",
+  "A_primary": "JOINT_TARGET3",
+  "B_primary": null,
+  "interpretation": "A status is independent of B source blockage; no DAMP performance failure claim"
+}

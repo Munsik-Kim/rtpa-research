@@ -1,0 +1,16 @@
+{
+  "cpu_python": "3.11.15 | packaged by conda-forge | (main, Mar  5 2026, 16:45:40) [GCC 14.3.0]",
+  "numpy": "1.26.4",
+  "torch_local_CPU_probe": "2.11.0+cu128",
+  "historical_model": "Qwen/Qwen3.5-0.8B-Base",
+  "revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "CPU_required": [
+    "numpy==1.26.4",
+    "tokenizers==0.22.2"
+  ],
+  "GPU_external": [
+    "torch==2.11.0+cu128",
+    "transformers==5.9.0"
+  ],
+  "GPU_status": "NOT_RUN_PUBLICATION_TASK"
+}

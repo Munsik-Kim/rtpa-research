@@ -1,0 +1,17 @@
+{
+  "python": "3.11.15",
+  "torch": "2.11.0+cu128",
+  "transformers": "5.9.0",
+  "numpy": "1.26.4",
+  "cuda": "12.8",
+  "git": "NO_GIT_SHA256_AUTHORITY",
+  "git_stderr": "fatal: not a git repository (or any of the parent directories): .git\n",
+  "model_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "model_path": "__HISTORICAL_PROJECT_ROOT__/models/Qwen3.5-0.8B-Base",
+  "start_utc": "2026-09-09T04:36:44+00:00",
+  "threads": 1,
+  "TF32": false,
+  "deterministic": true,
+  "backend_seed": 20260910,
+  "device": "RTX5080 research prototype"
+}

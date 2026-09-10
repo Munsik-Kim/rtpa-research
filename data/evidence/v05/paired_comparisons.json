@@ -1,0 +1,355 @@
+{
+  "pairs": [
+    {
+      "candidate": "B_DIAG8_P_PRE",
+      "baseline": "B_MATCHED_ENERGY8_P_PRE",
+      "window": "primary1024",
+      "status": "COMPLETE",
+      "same_payload": true,
+      "N": 11,
+      "mean_KL_candidate": 0.0009149072823701632,
+      "mean_KL_baseline": 0.0010473941117039498,
+      "mean_KL_difference": -0.00013248682933378656,
+      "gain": 0.12649185999169954,
+      "undefined_reason": null,
+      "gain_CI95": [
+        0.08989821065725369,
+        0.157401963320356
+      ],
+      "absolute_difference_CI95": [
+        -0.00017754219234649484,
+        -9.05573440275689e-05
+      ],
+      "wins": 10,
+      "ties": 0,
+      "losses": 1,
+      "mean_NLL_difference": -0.0007890822722427249,
+      "PPL_ratio": 0.9992112289713025,
+      "NLL_difference_CI95": [
+        -0.0012153239451096595,
+        -0.0003232474408572629
+      ],
+      "harmful_KL_mass": 2.5652310117409796,
+      "beneficial_KL_mass": 4.034244975394004,
+      "paired_tokens": 11088,
+      "practical_5pct_target_met": true,
+      "CI_support_positive": true
+    },
+    {
+      "candidate": "B_DIAG8_P_PRE",
+      "baseline": "B_MATCHED_ENERGY8_P_PRE",
+      "window": "late512",
+      "status": "COMPLETE",
+      "same_payload": true,
+      "N": 11,
+      "mean_KL_candidate": 0.0010157460777264129,
+      "mean_KL_baseline": 0.0011627605573114894,
+      "mean_KL_difference": -0.0001470144795850765,
+      "gain": 0.1264357297473182,
+      "undefined_reason": null,
+      "gain_CI95": [
+        0.07593639063699299,
+        0.17318710740808851
+      ],
+      "absolute_difference_CI95": [
+        -0.00021230158593810739,
+        -8.241766711532557e-05
+      ],
+      "wins": 9,
+      "ties": 0,
+      "losses": 2,
+      "mean_NLL_difference": -0.0014016740396274319,
+      "PPL_ratio": 0.9985993078466143,
+      "NLL_difference_CI95": [
+        -0.002147979353440447,
+        -0.0005646420628112229
+      ],
+      "harmful_KL_mass": 1.4586815022407484,
+      "beneficial_KL_mass": 2.2866670512639002,
+      "paired_tokens": 5632,
+      "practical_5pct_target_met": true,
+      "CI_support_positive": true
+    },
+    {
+      "candidate": "B_MATCHED_ENERGY8_P_PRE",
+      "baseline": "B_DAMP8_P_PRE",
+      "window": "primary1024",
+      "status": "COMPLETE",
+      "same_payload": true,
+      "N": 11,
+      "mean_KL_candidate": 0.0010473941117039498,
+      "mean_KL_baseline": 0.001036346110024094,
+      "mean_KL_difference": 1.1048001679855738e-05,
+      "gain": -0.010660532782430066,
+      "undefined_reason": null,
+      "gain_CI95": [
+        -0.04646312639003481,
+        0.023909904795430207
+      ],
+      "absolute_difference_CI95": [
+        -2.623225019234163e-05,
+        4.625071980512449e-05
+      ],
+      "wins": 4,
+      "ties": 0,
+      "losses": 7,
+      "mean_NLL_difference": 0.00047135881276494374,
+      "PPL_ratio": 1.0004714699197865,
+      "NLL_difference_CI95": [
+        1.749159899083486e-05,
+        0.0009196080957262055
+      ],
+      "harmful_KL_mass": 3.367024847464894,
+      "beneficial_KL_mass": 3.244524604838655,
+      "paired_tokens": 11088,
+      "practical_5pct_target_met": false,
+      "CI_support_positive": false
+    },
+    {
+      "candidate": "B_MATCHED_ENERGY8_P_PRE",
+      "baseline": "B_DAMP8_P_PRE",
+      "window": "late512",
+      "status": "COMPLETE",
+      "same_payload": true,
+      "N": 11,
+      "mean_KL_candidate": 0.0011627605573114894,
+      "mean_KL_baseline": 0.001154507841710461,
+      "mean_KL_difference": 8.252715601028346e-06,
+      "gain": -0.007148254262874021,
+      "undefined_reason": null,
+      "gain_CI95": [
+        -0.06350181285822432,
+        0.040837838498645314
+      ],
+      "absolute_difference_CI95": [
+        -4.938223343004941e-05,
+        6.714162278383915e-05
+      ],
+      "wins": 6,
+      "ties": 0,
+      "losses": 5,
+      "mean_NLL_difference": 0.00019750697933318406,
+      "PPL_ratio": 1.0001975264851208,
+      "NLL_difference_CI95": [
+        -0.0005960647572912219,
+        0.0010371651272333947
+      ],
+      "harmful_KL_mass": 1.9134463063993763,
+      "beneficial_KL_mass": 1.8669670121343842,
+      "paired_tokens": 5632,
+      "practical_5pct_target_met": false,
+      "CI_support_positive": false
+    },
+    {
+      "candidate": "B_DIAG8_P_PRE",
+      "baseline": "B_DAMP8_P_PRE",
+      "window": "primary1024",
+      "status": "COMPLETE",
+      "same_payload": true,
+      "N": 11,
+      "mean_KL_candidate": 0.0009149072823701632,
+      "mean_KL_baseline": 0.001036346110024094,
+      "mean_KL_difference": -0.00012143882765393082,
+      "gain": 0.11717979782942156,
+      "undefined_reason": null,
+      "gain_CI95": [
+        0.08653926519967604,
+        0.14681099707928646
+      ],
+      "absolute_difference_CI95": [
+        -0.0001657520869232637,
+        -8.10135969587337e-05
+      ],
+      "wins": 11,
+      "ties": 0,
+      "losses": 0,
+      "mean_NLL_difference": -0.00031772345947778113,
+      "PPL_ratio": 0.9996823270092755,
+      "NLL_difference_CI95": [
+        -0.0010838229196938427,
+        0.0004337819518277367
+      ],
+      "harmful_KL_mass": 2.5729975340981444,
+      "beneficial_KL_mass": 3.91951125512493,
+      "paired_tokens": 11088,
+      "practical_5pct_target_met": true,
+      "CI_support_positive": true
+    },
+    {
+      "candidate": "B_DIAG8_P_PRE",
+      "baseline": "B_DAMP8_P_PRE",
+      "window": "late512",
+      "status": "COMPLETE",
+      "same_payload": true,
+      "N": 11,
+      "mean_KL_candidate": 0.0010157460777264129,
+      "mean_KL_baseline": 0.001154507841710461,
+      "mean_KL_difference": -0.00013876176398404817,
+      "gain": 0.12019127022859,
+      "undefined_reason": null,
+      "gain_CI95": [
+        0.07572652831253046,
+        0.15598956077660062
+      ],
+      "absolute_difference_CI95": [
+        -0.00019615761267621358,
+        -7.779249218147468e-05
+      ],
+      "wins": 10,
+      "ties": 0,
+      "losses": 1,
+      "mean_NLL_difference": -0.0012041670602942478,
+      "PPL_ratio": 0.9987965576579373,
+      "NLL_difference_CI95": [
+        -0.002405999322456557,
+        0.00012957542180862242
+      ],
+      "harmful_KL_mass": 1.4482129803841626,
+      "beneficial_KL_mass": 2.229719235142322,
+      "paired_tokens": 5632,
+      "practical_5pct_target_met": true,
+      "CI_support_positive": true
+    },
+    {
+      "candidate": "B_MATCHED_ENERGY8_P_PRE",
+      "baseline": "B_U8_P_PRE",
+      "window": "primary1024",
+      "status": "COMPLETE",
+      "same_payload": false,
+      "N": 11,
+      "mean_KL_candidate": 0.0010473941117039498,
+      "mean_KL_baseline": 0.0013264292298149948,
+      "mean_KL_difference": -0.000279035118111045,
+      "gain": 0.21036562813830917,
+      "undefined_reason": null,
+      "gain_CI95": [
+        0.15854149455244482,
+        0.2587481527452743
+      ],
+      "absolute_difference_CI95": [
+        -0.0003626599504570549,
+        -0.0002076117268516145
+      ],
+      "wins": 11,
+      "ties": 0,
+      "losses": 0,
+      "mean_NLL_difference": 0.000537893404221057,
+      "PPL_ratio": 1.0005380380948197,
+      "NLL_difference_CI95": [
+        -0.00010147345849726371,
+        0.0011464946453487606
+      ],
+      "harmful_KL_mass": 2.7509679243720173,
+      "beneficial_KL_mass": 5.844909313987284,
+      "paired_tokens": 11088,
+      "practical_5pct_target_met": true,
+      "CI_support_positive": true
+    },
+    {
+      "candidate": "B_MATCHED_ENERGY8_P_PRE",
+      "baseline": "B_U8_P_PRE",
+      "window": "late512",
+      "status": "COMPLETE",
+      "same_payload": false,
+      "N": 11,
+      "mean_KL_candidate": 0.0011627605573114894,
+      "mean_KL_baseline": 0.0015186112291940652,
+      "mean_KL_difference": -0.00035585067188257584,
+      "gain": 0.23432637994612193,
+      "undefined_reason": null,
+      "gain_CI95": [
+        0.1663968949138165,
+        0.2963019762556425
+      ],
+      "absolute_difference_CI95": [
+        -0.0004828408469776289,
+        -0.00024381202223640845
+      ],
+      "wins": 10,
+      "ties": 0,
+      "losses": 1,
+      "mean_NLL_difference": 0.00023207339471520427,
+      "PPL_ratio": 1.0002321003258288,
+      "NLL_difference_CI95": [
+        -0.0007061608374183134,
+        0.001376122693699673
+      ],
+      "harmful_KL_mass": 1.5207168793357306,
+      "beneficial_KL_mass": 3.5248678633783985,
+      "paired_tokens": 5632,
+      "practical_5pct_target_met": true,
+      "CI_support_positive": true
+    },
+    {
+      "candidate": "B_DIAG8_P_PRE",
+      "baseline": "B_U8_P_PRE",
+      "window": "primary1024",
+      "status": "COMPLETE",
+      "same_payload": false,
+      "N": 11,
+      "mean_KL_candidate": 0.0009149072823701632,
+      "mean_KL_baseline": 0.0013264292298149948,
+      "mean_KL_difference": -0.00041152194744483155,
+      "gain": 0.3102479485484718,
+      "undefined_reason": null,
+      "gain_CI95": [
+        0.28899152929780286,
+        0.33041216940852064
+      ],
+      "absolute_difference_CI95": [
+        -0.0004701735700973385,
+        -0.000357052206446927
+      ],
+      "wins": 11,
+      "ties": 0,
+      "losses": 0,
+      "mean_NLL_difference": -0.00025118886802166784,
+      "PPL_ratio": 0.9997488426772607,
+      "NLL_difference_CI95": [
+        -0.000928943143757181,
+        0.0005848633654801818
+      ],
+      "harmful_KL_mass": 2.069014607757471,
+      "beneficial_KL_mass": 6.631969961025763,
+      "paired_tokens": 11088,
+      "practical_5pct_target_met": true,
+      "CI_support_positive": true
+    },
+    {
+      "candidate": "B_DIAG8_P_PRE",
+      "baseline": "B_U8_P_PRE",
+      "window": "late512",
+      "status": "COMPLETE",
+      "same_payload": false,
+      "N": 11,
+      "mean_KL_candidate": 0.0010157460777264129,
+      "mean_KL_baseline": 0.0015186112291940652,
+      "mean_KL_difference": -0.0005028651514676523,
+      "gain": 0.33113488284590487,
+      "undefined_reason": null,
+      "gain_CI95": [
+        0.2993251963614833,
+        0.36109683499023837
+      ],
+      "absolute_difference_CI95": [
+        -0.0005928524896898135,
+        -0.0004302810145790127
+      ],
+      "wins": 11,
+      "ties": 0,
+      "losses": 0,
+      "mean_NLL_difference": -0.0011696006449122276,
+      "PPL_ratio": 0.9988310830713378,
+      "NLL_difference_CI95": [
+        -0.0024438452564310474,
+        0.0004350421825619145
+      ],
+      "harmful_KL_mass": 1.089675662879717,
+      "beneficial_KL_mass": 3.921812195945536,
+      "paired_tokens": 5632,
+      "practical_5pct_target_met": true,
+      "CI_support_positive": true
+    }
+  ],
+  "CI_scope": "technical sensitivity of fixed local panel, not source-family or population safety"
+}

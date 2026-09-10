@@ -1,0 +1,11 @@
+{
+  "decision": "PROCEED_ORIGINAL_P_PRE_WITH_EXPLICIT_LATENT_METADATA_RANGE_RISK",
+  "basis": "Native and own-state U8 P_PRE completed 1024 tokens, both P_PRE/P_STORE observation runs match all original output and payload hashes. No parent codec arithmetic was changed.",
+  "same_snapshot_evidence": "The finite encode input reached by P_STORE at token499 makes stored FP16 zero-point nonfinite under both profiles. P_PRE also fails decode on this same input despite zero clipping in that probe.",
+  "not_claimed": "P_PRE universal safety, repair of the offset range boundary, or a complete causal explanation of the divergent own-state trajectories",
+  "scope_of_validity": "The observed original P_PRE trajectory and unchanged numerical contract, not every possible finite FP32 state",
+  "why_B_not_blocked": "The snapshot probe exposes a shared representability limitation but does not show incorrect metric computation, a changed codec, or nonfinite on the actual P_PRE diagnostic trajectory. The user explicitly permits B without a complete P_STORE cause; all fresh P_PRE failures remain terminal and invalidate full-panel point estimates.",
+  "no_repair_no_fallback": true,
+  "new_evaluation_results_seen": false,
+  "product_path": "CONTINUES_STOPPED"
+}

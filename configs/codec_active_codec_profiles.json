@@ -1,0 +1,10 @@
+{
+  "profiles": [
+    "P_STORE",
+    "P_PRE"
+  ],
+  "primary": "P_STORE",
+  "sensitivity": "P_PRE",
+  "selection_basis": "user-approved missing metadata-order conventions; no B result seen",
+  "frozen_before_new_B": true
+}

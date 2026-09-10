@@ -1,0 +1,175 @@
+{
+  "files": [
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/decision.json",
+      "bytes": 2577,
+      "sha256": "3b284be1b0b88bd76d0491fa20e11d88dc17798307d923a1b44f5709f4734b73"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/verification.json",
+      "bytes": 3717,
+      "sha256": "0b29a2ede122a9e6401aacb28381881e782aa35325c118378605ba33898bc5d2"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/delivery_verification.json",
+      "bytes": 4583,
+      "sha256": "2cd669a025d0907044b95c5b9cad62ea07ee29bc7ee254d958a8fab0273e840f"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/masks.json",
+      "bytes": 28442,
+      "sha256": "fafbdb591097c0548b0a294ed53e7fc7215148443538c2259ef1a5f8231d48d5"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/masks.pt",
+      "bytes": 49663,
+      "sha256": "0af4f4d842c18e6e59097d5381950bc8d17250e5d1f67463619dac2ac22e9353"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/allocation_receipt.json",
+      "bytes": 33328,
+      "sha256": "9b926944e7b86a2133b567730bc90e75126910fb03f06f519ccffd5aabceb406"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/paired_comparisons.json",
+      "bytes": 10581,
+      "sha256": "459a985f20576e858186a43a2d57f643268cd2285806980bd832147e6ab3d7ce"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/numerical_boundary_details.json",
+      "bytes": 10094,
+      "sha256": "f1dffacf1290d2bf59dce58ed9eeab0ea3521e8226e12d42fee2a6a96eb7cbea"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/same_snapshot_codec_probes.json",
+      "bytes": 2128,
+      "sha256": "87e052abbd659c6a3b90e0d07ac5827d9c124f4393f9c1fd03a3e46aee837eb4"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/timing_samples.json",
+      "bytes": 8182,
+      "sha256": "d35c39155f907ff00b6a47d9cc2770c1ce9b0b776397d90d350b105128134786"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/paired_latency_comparisons.json",
+      "bytes": 3308,
+      "sha256": "61559ebd3c485df7c41f9ca280066cd6e9d38988d129ecd2072c9228ca060cb4"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/execution_accounting.json",
+      "bytes": 659,
+      "sha256": "aaf4a9415c51665010ffea64f4da56f6fe6fc1dbb28273720ece8b601f6338b7"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/parent_receipts.json",
+      "bytes": 18784,
+      "sha256": "5530bd5cd83b474af2e695e1bd660651bdf4dafe62576fd8f24d0bb346fb3691"
+    },
+    {
+      "path": "reports/rtpa_v05_numerical_matched_energy/NEXT_STAGE_BRIEFING_KO.md",
+      "bytes": 3067,
+      "sha256": "2ad9a8d5df2c399aa6ced4edeed465ffb8ee8c4ecbd153fe7fa6c4688a2ec7fd"
+    },
+    {
+      "path": "reports/rtpa_v05_numerical_matched_energy/REPRODUCTION.md",
+      "bytes": 1578,
+      "sha256": "652705a9edceff07ac7546050c32e08e5cde8f33e087416a1ab86da1390333f8"
+    },
+    {
+      "path": "reports/rtpa_v05_numerical_matched_energy/PREREGISTRATION.md",
+      "bytes": 2304,
+      "sha256": "aada28bfd592658760191c4a35d0d432ba7ae12e48859748c34fb4e8544ddae5"
+    },
+    {
+      "path": "reports/rtpa_v05_numerical_matched_energy/MATCHED_ALLOCATION_REPORT_KO.md",
+      "bytes": 14149,
+      "sha256": "91aaa22bedccac2b0b1fbfafa368e774eaab96cf6bc62f7740d7cd336bd21b7b"
+    },
+    {
+      "path": "reports/rtpa_v05_numerical_matched_energy/NUMERICAL_DIAGNOSIS_KO.md",
+      "bytes": 4359,
+      "sha256": "3c94b7736268d0f088b0b409b71dc410955a3441329a3baf4602bd8bb76f4fbe"
+    },
+    {
+      "path": "models/Qwen3.5-0.8B-Base/config.json",
+      "bytes": 2907,
+      "sha256": "b90b86f35c8e6925ef74ee04d0e758f0a845c83a42089ad82bbaa948de9b4204"
+    },
+    {
+      "path": "models/Qwen3.5-0.8B-Base/tokenizer.json",
+      "bytes": 12807196,
+      "sha256": "fe000e3ed39ed12b8d2481d527d44f93c65d37e87645d2dcc80d1bf9d50d2927"
+    },
+    {
+      "path": "models/Qwen3.5-0.8B-Base/tokenizer_config.json",
+      "bytes": 16712,
+      "sha256": "e611fbccc7c29ef3b1cafb1cb7ea548d189968632901d678fd62be68c47885de"
+    },
+    {
+      "path": "__EXTERNAL_ATTENTION_ENV__/lib/python3.11/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py",
+      "bytes": 95653,
+      "sha256": "d67880b98f47d55a9d40679c901a740aa0618b97458824cab2abe9a1f7861be6"
+    },
+    {
+      "path": "__EXTERNAL_ATTENTION_ENV__/lib/python3.11/site-packages/transformers/cache_utils.py",
+      "bytes": 76771,
+      "sha256": "028a55fb163870d5f5d020473ee90fd3324e0a527ab33f1a626648f52690220a"
+    },
+    {
+      "path": "experiments/rtpa_v03d1/codec.py",
+      "bytes": 4164,
+      "sha256": "4b768f79914f3dcec95c00c6cd64bb6b52ff136e456531b145ce19dcfdb5656a"
+    },
+    {
+      "path": "experiments/rtpa_v03d1/bridge.py",
+      "bytes": 4988,
+      "sha256": "59a04115b2dfb04612cfee82f51b65e12e55d46242cb5bad8026c83e353a0bf2"
+    },
+    {
+      "path": "experiments/rtpa_v03d1/fit.py",
+      "bytes": 9393,
+      "sha256": "a8245bb41b24052d6ee1f34e79bb65267d3b7a7200d0dd016c70bb7da541beeb"
+    },
+    {
+      "path": "experiments/rtpa_v03_damp/native_bridge.py",
+      "bytes": 4717,
+      "sha256": "935f0be71936ea777c2452a7de8cc3ed53fb9295d4aad95abd8303c38552c522"
+    },
+    {
+      "path": "experiments/rtpa_v01/core.py",
+      "bytes": 10299,
+      "sha256": "a0deb9ed500601577858aa036e5b952f33bf3efb71bc564abbdab7d29170a7b4"
+    },
+    {
+      "path": "src/rsq_gate/model_adapter.py",
+      "bytes": 5103,
+      "sha256": "ab737e27dc06bee73ef69c991264dfd22a73d39d09fa92ee9ebf0990b09bd180"
+    },
+    {
+      "path": "artifacts/rtpa_v03d1_damp_contract/B_train_stats/P_PRE_layer0.pt",
+      "bytes": 2150333,
+      "sha256": "3963b2fa59eff687408ea141dfbe5c0399ceb791a14de4b02e8e42aebf948f40"
+    },
+    {
+      "path": "artifacts/rtpa_v03d1_damp_contract/B_train_stats/P_PRE_layer12.pt",
+      "bytes": 2150347,
+      "sha256": "a7f20f71c05068f5b958f50c2683af84b136ad4d817cc6cda92951886cfe65ac"
+    },
+    {
+      "path": "artifacts/rtpa_v03d1_damp_contract/B_train_stats/P_PRE_layer22.pt",
+      "bytes": 2150347,
+      "sha256": "38b00526e9b5b51d9c425ff7bd4397612090010e8ddec7b5916150e1729707c2"
+    },
+    {
+      "path": "models/Qwen3.5-0.8B-Base/model.safetensors-00001-of-00001.safetensors",
+      "bytes": 1746942600,
+      "sha256": "c2b1e5a17d9c1e27685d92ed9b382911ebb99955ecd89052d1721241adfbab6c"
+    }
+  ],
+  "parent_package": {
+    "path": "artifacts/rtpa_v05_numerical_matched_energy/compact.zip",
+    "bytes": 130613108,
+    "sha256": "dbe288d2cb71b7efeccda1c26169a4c2d6cce1789cfaa446a8355daaf13a9181"
+  },
+  "no_parent_recompute": true
+}

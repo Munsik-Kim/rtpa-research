@@ -1,0 +1,405 @@
+{
+  "files": [
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/B_train_stats/P_PRE_layer0.pt",
+      "bytes": 2149945,
+      "sha256": "fc9dc97f019142e2dc6264d7d16d365180c3c59acb29f11b8494ca67d43d7762"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/B_train_stats/P_PRE_layer12.pt",
+      "bytes": 2149958,
+      "sha256": "3d3df1a22ce3946c23dc97ad3de39c7b9138931a21c76c72a11e60f04bd1fed2"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/B_train_stats/P_PRE_layer22.pt",
+      "bytes": 2149958,
+      "sha256": "47d63242abf280b25cc9beb839e7d955a1792da00647486d1b17331c296d9aa7"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_long_11__DAMP8_PAPER_CAL_ADAPTED.json",
+      "bytes": 1186,
+      "sha256": "7d50968344b77182ef633cc05dd156c9c9c0351e3e83ba7bc0844633dea10009"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_long_11__DIAG8_FROZEN.json",
+      "bytes": 1174,
+      "sha256": "d106968e484ed519527c6880212a7f5457b9b386bebe407f1ad1e4587624b9eb"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_long_11__MATCHED_ENERGY8_FROZEN.json",
+      "bytes": 1185,
+      "sha256": "01cb03012eb81c0f54e3025c27ec175a72fe509ea11af0d8d2e2c7c1e89c86d5"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_long_11__NATIVE_REFERENCE.json",
+      "bytes": 1179,
+      "sha256": "becc57b8d50fa869320d0213d8153337d48fe462dd2a95abef6facdeb559cdf4"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_long_13__DAMP8_PAPER_CAL_ADAPTED.json",
+      "bytes": 1186,
+      "sha256": "7a084a8c1d399f82461627f501fe9cf95d21bc61232b255403418ebd96a56b13"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_long_13__DIAG8_FROZEN.json",
+      "bytes": 1176,
+      "sha256": "13ab66196a901d4741936f2fa645790cf59bc8569a440a4bd7b3041d4ff65ebc"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_long_13__MATCHED_ENERGY8_FROZEN.json",
+      "bytes": 1185,
+      "sha256": "c25849b6a7fb62e5b377c21071e098d936fb150bcdfefb76331ec015e10e41b4"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_long_13__NATIVE_REFERENCE.json",
+      "bytes": 1179,
+      "sha256": "84b7ca3bc68f65e7f786137546f698335742c239beabfcaa3e2ce826d7f32260"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_long_7__DAMP8_PAPER_CAL_ADAPTED.json",
+      "bytes": 1185,
+      "sha256": "83d501e3b82dd659900c3eda318e2c677dadc96423848aedbe9573703211f5c7"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_long_7__DIAG8_FROZEN.json",
+      "bytes": 1172,
+      "sha256": "b483b9569579d65fed41e95194c97638e1bd6c34985f21520ed3851a9a96c5aa"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_long_7__MATCHED_ENERGY8_FROZEN.json",
+      "bytes": 1184,
+      "sha256": "508bb6036396bd9ce69161190457904ea120772be6a8f91f41b9996eecd4e9be"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_long_7__NATIVE_REFERENCE.json",
+      "bytes": 1179,
+      "sha256": "fe11a8847c454c15bfc62f6a54a9504d023e3635b8fd8910519186cd6fd879e4"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_long_8__DAMP8_PAPER_CAL_ADAPTED.json",
+      "bytes": 1187,
+      "sha256": "28e1ed8b9dac18b48a026ce52ff6b865aae28de4b11c21dbab92c57d7fda6f03"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_long_8__DIAG8_FROZEN.json",
+      "bytes": 1175,
+      "sha256": "f610ba61416e1648c205f6cb40bf2db72bf7528fd3b15ac1a7f5f251c2576e68"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_long_8__MATCHED_ENERGY8_FROZEN.json",
+      "bytes": 1184,
+      "sha256": "36b097a89d6bf53849c56236e39840dd9e29791c24dcb62baf27c42a31f7dfbb"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_long_8__NATIVE_REFERENCE.json",
+      "bytes": 1180,
+      "sha256": "97be78550650bf27cb5625b910715ed94a1f52bf949e342e560ace77d0b4cd8d"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_short_11__DAMP8_PAPER_CAL_ADAPTED.json",
+      "bytes": 1184,
+      "sha256": "8896170b812edebe43cc373b7c2659b85eb0478cb7908caff9febff3dcfdddbf"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_short_11__DIAG8_FROZEN.json",
+      "bytes": 1174,
+      "sha256": "ab4b8a2b85c1dc0ded6a0831d80867e4f8559d81e0a83522c274054362fe06ca"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_short_11__MATCHED_ENERGY8_FROZEN.json",
+      "bytes": 1184,
+      "sha256": "6c520d0e1f6e753a15fbaa6422512c1f29fe9a99ba173e3a2bb9c1a97a464630"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_short_11__NATIVE_REFERENCE.json",
+      "bytes": 1177,
+      "sha256": "9dd6054e03809e499b8f9057b76663389ad1114d95331e29d6f07cac80d92400"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_short_13__DAMP8_PAPER_CAL_ADAPTED.json",
+      "bytes": 1185,
+      "sha256": "880dca609cf0303b43b209c137c9e7b7d54b6721f4df6d77556407a3c174d205"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_short_13__DIAG8_FROZEN.json",
+      "bytes": 1174,
+      "sha256": "720ee8fd4fe772f4ef6e05c84a09d18c937f54190262c48650020d83b5ad217b"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_short_13__MATCHED_ENERGY8_FROZEN.json",
+      "bytes": 1183,
+      "sha256": "ca320a1dc5abe8937e24b1996bbc870d25e70d99f94deae4eee8d5c75fed5b5c"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_short_13__NATIVE_REFERENCE.json",
+      "bytes": 1178,
+      "sha256": "b5e2f514adefe8bd7c2246dae21e5dbfe4c216a7cc7e426ed0a861c3fd94b9ad"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_short_5__DAMP8_PAPER_CAL_ADAPTED.json",
+      "bytes": 1184,
+      "sha256": "37ccc0ae0e330066102bb9d78b779df1a5fbcc4760e75a5b30d0306a3b5a9625"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_short_5__DIAG8_FROZEN.json",
+      "bytes": 1172,
+      "sha256": "67bfa11b348f3e50adda69dfc129d9944472f7c8f7b0d18fda8564950c3783a4"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_short_5__MATCHED_ENERGY8_FROZEN.json",
+      "bytes": 1183,
+      "sha256": "b72926036506fa2d29a02ab71a962909835c1f1f474152f6d71b80ff79b01c98"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_short_5__NATIVE_REFERENCE.json",
+      "bytes": 1176,
+      "sha256": "956af7bddd63cb12fa84865bdea0ebc81c4297738434f25885cbbe750a584d04"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_short_7__DAMP8_PAPER_CAL_ADAPTED.json",
+      "bytes": 1184,
+      "sha256": "e10eafc1c75f08f1436069b5e084f2896455fa08efbeb11a11f7207c3dd7c9f7"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_short_7__DIAG8_FROZEN.json",
+      "bytes": 1172,
+      "sha256": "bdd28cbcc8134d53d9c8e77e6c0acbb84fb6d9f8d8e62eba33205a1a4cb86576"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_short_7__MATCHED_ENERGY8_FROZEN.json",
+      "bytes": 1183,
+      "sha256": "2de536ebdd68f8c4b2b942f70b40fbfe434833ea3cd72a9e8a05c6efa7031c8c"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/answers/EVAL/rtpa_v06_eval_key_value_retrieval_short_7__NATIVE_REFERENCE.json",
+      "bytes": 1177,
+      "sha256": "25266d2e7cc9511537a662392ad980558f4a87fe431c0a5ff41f2e603e389e93"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/cal_panel_template1.json",
+      "bytes": 215039,
+      "sha256": "6e725b5cbe89d6e4695e4f4d8f12a1000bb312fb0b87e09d89b12223f0ec92ba"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/decision.json",
+      "bytes": 7428,
+      "sha256": "7bc33b1e93f3b5ef98414d5912ba4f162926d459dcd79fc4f2a264a747f2b813"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/environment.json",
+      "bytes": 1062,
+      "sha256": "23fd131df10faa8bae72d0c84bc2d4bb97fd7d50b77871278de339c659cb5617"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/eval_panel.json",
+      "bytes": 374444,
+      "sha256": "5de5526982d1da58187ba4fe1a1797cd83ca1ca4a887965c6ca98c506197f8f0"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/evaluation_freeze.json",
+      "bytes": 3518,
+      "sha256": "7710b8f6fedb62facf818a3b86fb0c2f73eaae33c5fe850f051f7cae12e5c83e"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/evaluation_masks.pt",
+      "bytes": 56899,
+      "sha256": "5cdafcd32abebf5e15ea5d6a48a8a26ed2d17599b1fbb45e8e9f26c3eb2be7b1"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/paper_cal_document_receipts.json",
+      "bytes": 26853,
+      "sha256": "d9f9214c1eaf7456ef69e186f4f76313ddd48bd88b2adbf9139d81bdffb7a8c8"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/paper_calibration_receipt.json",
+      "bytes": 10404,
+      "sha256": "e5eb85a3774457d3a03352998ef6ce23690de3d133041b9d6d684483098d412d"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/protocol.json",
+      "bytes": 5251,
+      "sha256": "e9c034e50aa615a97c8b4a6c53b3273f4f06b67b9a97237e2f0d7a65c484d430"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/runtime_dependency_manifest.json",
+      "bytes": 3970,
+      "sha256": "bfc9f47de3f1c9d423c98acd7b9d2d2112e45506cb885672875fd5583dfb3868"
+    },
+    {
+      "path": "artifacts/rtpa_v06_fixed_task_damp_audit/source_audit_initial.json",
+      "bytes": 3022,
+      "sha256": "e5903a26674495147db40d5806d7a1562fd96a35d24bc36e1e0d9a842adcf164"
+    },
+    {
+      "path": "artifacts/rtpa_v06_postrun_integrated_analysis/derived/integrated_decision.json",
+      "bytes": 1809,
+      "sha256": "f45077aa9dc49e9f08f41135f8fc8abb14f22883c5253e59c2339029478cefe5"
+    },
+    {
+      "path": "experiments/rtpa_v01/__init__.py",
+      "bytes": 60,
+      "sha256": "f2dba5ec9901c14bbe3fa60df75a4b0e3ad1bab4fa63f59a7ba3663fc00dfd8b"
+    },
+    {
+      "path": "experiments/rtpa_v01/core.py",
+      "bytes": 10299,
+      "sha256": "a0deb9ed500601577858aa036e5b952f33bf3efb71bc564abbdab7d29170a7b4"
+    },
+    {
+      "path": "experiments/rtpa_v01/run.py",
+      "bytes": 35768,
+      "sha256": "7acd2e88b4cded3b871c824e6a5aec0fe0b513a6fd516b18ce4eeeda0bf275f7"
+    },
+    {
+      "path": "experiments/rtpa_v03_damp/__init__.py",
+      "bytes": 61,
+      "sha256": "236b9dab44b5f5a99bfe25129ef06a8d450aaa94fd63a3e95e7993e158206868"
+    },
+    {
+      "path": "experiments/rtpa_v03_damp/common.py",
+      "bytes": 3140,
+      "sha256": "f6796a7780faaf531b66fd8b0e3ad0e28fee93723cedf0eda505590790b97860"
+    },
+    {
+      "path": "experiments/rtpa_v03_damp/native_bridge.py",
+      "bytes": 4717,
+      "sha256": "935f0be71936ea777c2452a7de8cc3ed53fb9295d4aad95abd8303c38552c522"
+    },
+    {
+      "path": "experiments/rtpa_v03d1/__init__.py",
+      "bytes": 88,
+      "sha256": "07a23d3dfd462f09771f30ac7794a2422a03ddf2e408f4fa1b27c056b812047e"
+    },
+    {
+      "path": "experiments/rtpa_v03d1/bridge.py",
+      "bytes": 4988,
+      "sha256": "59a04115b2dfb04612cfee82f51b65e12e55d46242cb5bad8026c83e353a0bf2"
+    },
+    {
+      "path": "experiments/rtpa_v03d1/codec.py",
+      "bytes": 4164,
+      "sha256": "4b768f79914f3dcec95c00c6cd64bb6b52ff136e456531b145ce19dcfdb5656a"
+    },
+    {
+      "path": "experiments/rtpa_v03d1/common.py",
+      "bytes": 2157,
+      "sha256": "4ac25ae76c808e1e8632b63151f008049a183d0367e1f91176a482fdcac6a63e"
+    },
+    {
+      "path": "experiments/rtpa_v06/__init__.py",
+      "bytes": 68,
+      "sha256": "0a0633ba15b1d03f481b04a7d8119fc3f34f5de0c197f16d72ebe7c135d40116"
+    },
+    {
+      "path": "experiments/rtpa_v06/common.py",
+      "bytes": 4494,
+      "sha256": "f6f51a6f8cf6e5d8913e2adc6b496bef63dbdfc4988b498adcd2b2900b57d792"
+    },
+    {
+      "path": "experiments/rtpa_v06/run.py",
+      "bytes": 22367,
+      "sha256": "874bf19cb630f287eab64a4b2a4a1f48faf8bcc8a8fa049fe9096ca1b40505ca"
+    },
+    {
+      "path": "experiments/rtpa_v06/runtime.py",
+      "bytes": 13052,
+      "sha256": "2d9e05f773ac3006384398985a2c61fdae565b24d7f803ceb4db1fec99f427a5"
+    },
+    {
+      "path": "experiments/rtpa_v06/tasks.py",
+      "bytes": 6166,
+      "sha256": "6ec7504420fd44ade80e72cae7a1955abea145873ff62edaec45cd0d863dbd8f"
+    },
+    {
+      "path": "models/Qwen3.5-0.8B-Base/config.json",
+      "bytes": 2907,
+      "sha256": "b90b86f35c8e6925ef74ee04d0e758f0a845c83a42089ad82bbaa948de9b4204"
+    },
+    {
+      "path": "models/Qwen3.5-0.8B-Base/model.safetensors.index.json",
+      "bytes": 50900,
+      "sha256": "ce9a885efdf27d3664fdef5d512ad365216f1074051ef840c7cd8e5431495d0a"
+    },
+    {
+      "path": "models/Qwen3.5-0.8B-Base/tokenizer.json",
+      "bytes": 12807196,
+      "sha256": "fe000e3ed39ed12b8d2481d527d44f93c65d37e87645d2dcc80d1bf9d50d2927"
+    },
+    {
+      "path": "models/Qwen3.5-0.8B-Base/tokenizer_config.json",
+      "bytes": 16712,
+      "sha256": "e611fbccc7c29ef3b1cafb1cb7ea548d189968632901d678fd62be68c47885de"
+    },
+    {
+      "path": "reports/rtpa_v06_fixed_task_damp_audit/DAMP_PROVENANCE_AND_CONTRACT_KO.md",
+      "bytes": 7051,
+      "sha256": "b51ffe55b36ac42d352e97dd7e900f2f81e6fcf60874bb85713827decb3d9c4e"
+    },
+    {
+      "path": "reports/rtpa_v06_postrun_integrated_analysis/RTPA_v06_FINAL_REPORT_KO.md",
+      "bytes": 38104,
+      "sha256": "83e4d1309ac8615ab777a5606492479aa7165282dea42532e48e487aae794058"
+    },
+    {
+      "path": "src/rsq_gate/__init__.py",
+      "bytes": 75,
+      "sha256": "b581da31fae2c511464c04098999544413e8112fb28dc6d945c7daa26f5439a6"
+    },
+    {
+      "path": "src/rsq_gate/discovery.py",
+      "bytes": 4496,
+      "sha256": "a4e4c13a4ed65a352fd3000ac6cf8bef3cec08b3e8e28acaef778e659f6d2d53"
+    },
+    {
+      "path": "src/rsq_gate/error_feedback.py",
+      "bytes": 1308,
+      "sha256": "b04bb85da895fb9c313cab66c37b91f921f63fa6b1a6ba7e7691abad89981760"
+    },
+    {
+      "path": "src/rsq_gate/experiment_core.py",
+      "bytes": 17193,
+      "sha256": "df5fda6a5023f6b6e4ecb7455697f6a09e56354a58585b10ed71f2c8f2b513e3"
+    },
+    {
+      "path": "src/rsq_gate/gramian.py",
+      "bytes": 963,
+      "sha256": "2e283fc7f937bb0eccfe89b4d60bd8027251b883a6a156727edf5ddbdce23ee8"
+    },
+    {
+      "path": "src/rsq_gate/metrics.py",
+      "bytes": 2357,
+      "sha256": "8be6086641610e3ee5703830231a56507827d19003d305d518670d287c9b63ca"
+    },
+    {
+      "path": "src/rsq_gate/model_adapter.py",
+      "bytes": 5103,
+      "sha256": "ab737e27dc06bee73ef69c991264dfd22a73d39d09fa92ee9ebf0990b09bd180"
+    },
+    {
+      "path": "src/rsq_gate/quantizers.py",
+      "bytes": 2063,
+      "sha256": "2983d99d170903f8e46a0a7dc8f7648967a0de4482a1fbd4699a1c726f3fdf48"
+    },
+    {
+      "path": "src/rsq_gate/recurrence.py",
+      "bytes": 2892,
+      "sha256": "8167d2dfd2ac5a18d5baa1c788140be3081c4e985f3bec49a8070385b5e87986"
+    },
+    {
+      "path": "__EXTERNAL_ATTENTION_ENV__/lib/python3.11/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py",
+      "bytes": 95653,
+      "sha256": "d67880b98f47d55a9d40679c901a740aa0618b97458824cab2abe9a1f7861be6"
+    }
+  ],
+  "weight_receipt": {
+    "path": "models/Qwen3.5-0.8B-Base/model.safetensors-00001-of-00001.safetensors",
+    "bytes": 1746942600,
+    "sha256": "c2b1e5a17d9c1e27685d92ed9b382911ebb99955ecd89052d1721241adfbab6c"
+  },
+  "v06_package": {
+    "path": "artifacts/rtpa_v06_postrun_integrated_analysis/RTPA_v06_postrun_integrated_reproduction.zip",
+    "bytes": 79613060,
+    "sha256": "25a5d0505335b110ae0ba8f09ea76521b0fdebc94f1dccda13ff00b9788b8a6b"
+  },
+  "expected_hashes_not_overwritten": true
+}

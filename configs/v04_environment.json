@@ -1,0 +1,14 @@
+{
+  "python": "3.11.15",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "git_status": "NO_GIT_SHA256_AUTHORITY",
+  "git_raw": "fatal: not a git repository (or any of the parent directories): .git\n",
+  "threads": 1,
+  "TF32": false,
+  "model_path": "__HISTORICAL_PROJECT_ROOT__/models/Qwen3.5-0.8B-Base",
+  "model_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "conda": "__USER_HOME__/miniforge3/bin/conda",
+  "environment": "attention",
+  "start_utc": "2026-09-08T23:12:39+00:00"
+}

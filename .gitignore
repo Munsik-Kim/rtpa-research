@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+.env.*
+recomputed*/
+build/
+dist/
+*.safetensors
+*.zip
+*.tar.gz
+.DS_Store

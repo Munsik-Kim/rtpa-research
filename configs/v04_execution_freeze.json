@@ -1,0 +1,53 @@
+{
+  "utc": "2026-09-08T23:29:35.455479+00:00",
+  "files": [
+    {
+      "path": "experiments/rtpa_v04/common.py",
+      "bytes": 3435,
+      "sha256": "9fa97e02bf446f5a5a20932ea68ca19f39750063a5e0a7b163ff6389784bc3e0"
+    },
+    {
+      "path": "experiments/rtpa_v04/panel.py",
+      "bytes": 11592,
+      "sha256": "995a09cd4680e4b558bd51563bdfc33bdaaef38619893fcb5d68846429866da3"
+    },
+    {
+      "path": "experiments/rtpa_v04/evaluate.py",
+      "bytes": 5315,
+      "sha256": "379fe17e0dc55ce118a9fa2f17bd6d2fd094c1592c9948ca00bb47d1756de05f"
+    },
+    {
+      "path": "experiments/rtpa_v04/analysis.py",
+      "bytes": 13509,
+      "sha256": "b80e3eb8c1e2782c164184c69271368ab4a93e62d04c845b2c0ab4f6ea958964"
+    },
+    {
+      "path": "experiments/rtpa_v04/tests.py",
+      "bytes": 3647,
+      "sha256": "6be698aba8272ae4ae764f40978e2a3a639fd303e88dc519e64b18ebbef764e1"
+    },
+    {
+      "path": "artifacts/rtpa_v04_frozen_external_confirmation/PRESPEC.json",
+      "bytes": 2948,
+      "sha256": "7e19e349f70ca26d37d26f50c2b363394b4c025846cdb3ffd64e2b5d0be43a35"
+    },
+    {
+      "path": "artifacts/rtpa_v04_frozen_external_confirmation/input_manifest.json",
+      "bytes": 55793,
+      "sha256": "7484e19af36a0326c3c84b533a61dafc6b361e31af4ee1f551c398c3c2f8a780"
+    },
+    {
+      "path": "artifacts/rtpa_v04_frozen_external_confirmation/source_and_mask_receipt.json",
+      "bytes": 8429,
+      "sha256": "d13e05ee0de53c600cd98e1baca49fa94b1a2910f688076ce793a35c27e80c01"
+    },
+    {
+      "path": "artifacts/rtpa_v04_frozen_external_confirmation/candidate_rules.json",
+      "bytes": 2670,
+      "sha256": "30d59e488bf43ac5e97974bf9b2ab871bd141b0579f1c07b6b85942caa5ff4f2"
+    }
+  ],
+  "before_fresh_forward": true,
+  "no_parent_source_or_mask_changes": true,
+  "reporting_and_entrypoint_wiring_not_scientific_freeze": true
+}

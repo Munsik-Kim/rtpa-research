@@ -1,0 +1,52 @@
+{
+  "utc": "2026-09-09T04:47:34.202352+00:00",
+  "seed": 509001,
+  "ordered_candidates": {
+    "natural_language": [
+      "idlelib/idle_test/README.txt",
+      "site-packages/bpy/5.0/scripts/addons_core/bl_pkg/readme.rst",
+      "site-packages/bpy/lib/materialx/libraries/README.md",
+      "email/architecture.rst",
+      "idlelib/extend.txt",
+      "site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/readme.txt",
+      "site-packages/jupyter_server/i18n/README.md",
+      "site-packages/playhouse/README.md"
+    ],
+    "code": [
+      "asyncio/base_events.py",
+      "json/decoder.py",
+      "site-packages/urllib3/connectionpool.py",
+      "site-packages/PIL/ImageFilter.py",
+      "site-packages/pandas/core/window/rolling.py",
+      "site-packages/scipy/interpolate/_interpolate.py",
+      "site-packages/sympy/integrals/integrals.py",
+      "site-packages/networkx/algorithms/flow/maxflow.py"
+    ],
+    "associative_recall": [
+      509106,
+      509113,
+      509115,
+      509105,
+      509103,
+      509116,
+      509102,
+      509112,
+      509109,
+      509111,
+      509114,
+      509110,
+      509108,
+      509107,
+      509104,
+      509101
+    ]
+  },
+  "quota_per_domain": 4,
+  "insufficiency_rule": "retain all eligible up to4/domain; freeze unequal composition before any new-panel model evaluation, do not fill with old input",
+  "root": "__EXTERNAL_ATTENTION_ENV__/lib/python3.11",
+  "corpus": "installed public-package technical documentation, Python code, synthetic registry recall",
+  "parent_near_duplicate_threshold": 0.8,
+  "same_document_offsets": "excluded",
+  "data_content_not_instructions": true,
+  "performance_access": false
+}

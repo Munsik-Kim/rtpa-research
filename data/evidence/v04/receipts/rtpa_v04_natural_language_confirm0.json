@@ -1,0 +1,340 @@
+{
+  "sequence_id": "rtpa_v04_natural_language_confirm0",
+  "complete": true,
+  "methods": [
+    "NATIVE_REFERENCE",
+    "B_U8_P_STORE",
+    "B_DAMP8_P_STORE",
+    "B_DIAG8_P_STORE",
+    "B_JOINT8_P_STORE",
+    "B_U8_P_PRE",
+    "B_DAMP8_P_PRE",
+    "B_DIAG8_P_PRE",
+    "B_JOINT8_P_PRE"
+  ],
+  "input_sha256": "19eba79d4facce233e121f440fb202aea4c08c1c7a991949b6e79f98cd19a6bf",
+  "source_sha256": "f75abb26d370eb9b058fbaaa774aef2c6d1d51c0bb9394f4f5f120b8284efb3d",
+  "metric_file": {
+    "path": "artifacts/rtpa_v04_frozen_external_confirmation/token_metrics/rtpa_v04_natural_language_confirm0.jsonl.gz",
+    "bytes": 193750,
+    "sha256": "beb7718254f54aa99808a0745218b08c0004485d3aacc5a53a2c8806f83de5c3"
+  },
+  "physical_forwards": 7070,
+  "seconds": 392.94456643600006,
+  "codec_events": {
+    "NATIVE_REFERENCE": {},
+    "B_U8_P_STORE": {
+      "0": {
+        "groups": 4104192,
+        "exact_zero": 14028,
+        "constant_nonzero": 0,
+        "underflow_floor": 1880,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 661325,
+        "values": 131334144
+      },
+      "12": {
+        "groups": 4104192,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 758,
+        "metadata_collapse": 0,
+        "metadata_overflow": 129,
+        "high_overflow": 0,
+        "input_nonfinite": 4096,
+        "clipped_values": 357577,
+        "values": 131334144
+      },
+      "22": {
+        "groups": 4104192,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 167,
+        "metadata_collapse": 0,
+        "metadata_overflow": 8192,
+        "high_overflow": 0,
+        "input_nonfinite": 262144,
+        "clipped_values": 582418,
+        "values": 131334144
+      }
+    },
+    "B_DAMP8_P_STORE": {
+      "0": {
+        "groups": 3671040,
+        "exact_zero": 13384,
+        "constant_nonzero": 0,
+        "underflow_floor": 1831,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 618105,
+        "values": 117473280
+      },
+      "12": {
+        "groups": 3671040,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 758,
+        "metadata_collapse": 0,
+        "metadata_overflow": 121,
+        "high_overflow": 256,
+        "input_nonfinite": 4096,
+        "clipped_values": 338441,
+        "values": 117473280
+      },
+      "22": {
+        "groups": 3671040,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 144,
+        "metadata_collapse": 0,
+        "metadata_overflow": 7680,
+        "high_overflow": 16384,
+        "input_nonfinite": 262144,
+        "clipped_values": 542948,
+        "values": 117473280
+      }
+    },
+    "B_DIAG8_P_STORE": {
+      "0": {
+        "groups": 3824640,
+        "exact_zero": 13944,
+        "constant_nonzero": 0,
+        "underflow_floor": 1711,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 627656,
+        "values": 122388480
+      },
+      "12": {
+        "groups": 3824640,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 744,
+        "metadata_collapse": 0,
+        "metadata_overflow": 121,
+        "high_overflow": 256,
+        "input_nonfinite": 4096,
+        "clipped_values": 341812,
+        "values": 122388480
+      },
+      "22": {
+        "groups": 3824640,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 147,
+        "metadata_collapse": 0,
+        "metadata_overflow": 7680,
+        "high_overflow": 16384,
+        "input_nonfinite": 262144,
+        "clipped_values": 554973,
+        "values": 122388480
+      }
+    },
+    "B_JOINT8_P_STORE": {
+      "0": {
+        "groups": 3632640,
+        "exact_zero": 13244,
+        "constant_nonzero": 0,
+        "underflow_floor": 1686,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 599512,
+        "values": 116244480
+      },
+      "12": {
+        "groups": 3632640,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 737,
+        "metadata_collapse": 0,
+        "metadata_overflow": 121,
+        "high_overflow": 256,
+        "input_nonfinite": 4096,
+        "clipped_values": 325895,
+        "values": 116244480
+      },
+      "22": {
+        "groups": 3632640,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 146,
+        "metadata_collapse": 0,
+        "metadata_overflow": 7680,
+        "high_overflow": 16384,
+        "input_nonfinite": 262144,
+        "clipped_values": 525503,
+        "values": 116244480
+      }
+    },
+    "B_U8_P_PRE": {
+      "0": {
+        "groups": 8388608,
+        "exact_zero": 28672,
+        "constant_nonzero": 0,
+        "underflow_floor": 3201,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 5,
+        "values": 268435456
+      },
+      "12": {
+        "groups": 8388608,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 723,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 7,
+        "values": 268435456
+      },
+      "22": {
+        "groups": 8388608,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 281,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 5,
+        "values": 268435456
+      }
+    },
+    "B_DAMP8_P_PRE": {
+      "0": {
+        "groups": 7864320,
+        "exact_zero": 28672,
+        "constant_nonzero": 0,
+        "underflow_floor": 3184,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 6,
+        "values": 251658240
+      },
+      "12": {
+        "groups": 7864320,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 720,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 7,
+        "values": 251658240
+      },
+      "22": {
+        "groups": 7864320,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 287,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 2,
+        "values": 251658240
+      }
+    },
+    "B_DIAG8_P_PRE": {
+      "0": {
+        "groups": 7864320,
+        "exact_zero": 28672,
+        "constant_nonzero": 0,
+        "underflow_floor": 2413,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 6,
+        "values": 251658240
+      },
+      "12": {
+        "groups": 7864320,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 700,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 4,
+        "values": 251658240
+      },
+      "22": {
+        "groups": 7864320,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 257,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 9,
+        "values": 251658240
+      }
+    },
+    "B_JOINT8_P_PRE": {
+      "0": {
+        "groups": 7864320,
+        "exact_zero": 28672,
+        "constant_nonzero": 0,
+        "underflow_floor": 2422,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 8,
+        "values": 251658240
+      },
+      "12": {
+        "groups": 7864320,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 697,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 8,
+        "values": 251658240
+      },
+      "22": {
+        "groups": 7864320,
+        "exact_zero": 0,
+        "constant_nonzero": 0,
+        "underflow_floor": 233,
+        "metadata_collapse": 0,
+        "metadata_overflow": 0,
+        "high_overflow": 0,
+        "input_nonfinite": 0,
+        "clipped_values": 5,
+        "values": 251658240
+      }
+    }
+  },
+  "failed_methods": {
+    "B_JOINT8_P_STORE": "OPERATIONAL_NONFINITE_LOGITS",
+    "B_DAMP8_P_STORE": "OPERATIONAL_NONFINITE_LOGITS",
+    "B_DIAG8_P_STORE": "OPERATIONAL_NONFINITE_LOGITS",
+    "B_U8_P_STORE": "OPERATIONAL_NONFINITE_LOGITS"
+  },
+  "peak_allocated_bytes": 1966337536,
+  "peak_scope": "nine independent method caches, NOT single-request",
+  "utc": "2026-09-08T23:36:09.862937+00:00"
+}

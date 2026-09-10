@@ -1,0 +1,78 @@
+{
+  "decision": "STOP_METHOD_ADVANTAGE_NOT_SUPPORTED",
+  "historical_v06_decision": "NO_RESOLVED_TASK_ADVANTAGE_IN_SCREENING",
+  "primary": {
+    "candidate": "DIAG8_FROZEN",
+    "baseline": "MATCHED_ENERGY8_FROZEN",
+    "difference_pp": -3.57142857142857,
+    "CI95_pp": [
+      -10.71428571428572,
+      0.0
+    ],
+    "paired_table": {
+      "both_correct": 27,
+      "rescue": 0,
+      "destruction": 1,
+      "both_wrong": 0
+    },
+    "discordant": 1,
+    "bootstrap_degenerate": false,
+    "no_discordance_bound_pp": null,
+    "cell_bounds": [
+      {
+        "cell": "KEY_VALUE_RETRIEVAL/long",
+        "n": 14,
+        "discordant": 1,
+        "alpha": 0.025,
+        "upper_discordance": null
+      },
+      {
+        "cell": "KEY_VALUE_RETRIEVAL/short",
+        "n": 14,
+        "discordant": 0,
+        "alpha": 0.025,
+        "upper_discordance": 0.23163576165011657
+      }
+    ],
+    "per_item_difference": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "cost_status": "COST_UNRESOLVED",
+  "research_axes": {
+    "error_energy_risk_theory": "SUPPORTED_IN_SCOPE",
+    "offline_DIAG_fixed_mask": "MIXED",
+    "matched_task_performance_and_cost": "UNRESOLVED"
+  },
+  "product_path": "CONTINUES_STOPPED",
+  "scope": "Stop the claim of demonstrated DIAG task superiority under this protocol; not a universal impossibility or proof of inferiority",
+  "reason": "Complete paired task screening: DIAG has no rescues and one destruction vs matched energy; no observed advantage over either DAMP; cost unresolved. Original known overflow not repaired.",
+  "postrun_GPU_forwards": 0
+}

@@ -1,0 +1,114 @@
+{
+  "experiment": "RTPA-v0.4-frozen-policy-confirmation",
+  "start_utc": "2026-09-08T23:12:39+00:00",
+  "frozen_definitions_utc": "2026-09-08T23:18:36.144617+00:00",
+  "budget_seconds": 18000,
+  "attribution_budget_seconds": 2400,
+  "new_stage_cutoff_seconds": 16200,
+  "report_priority_seconds": 16800,
+  "methods": [
+    "NATIVE_REFERENCE",
+    "B_U8_P_STORE",
+    "B_DAMP8_P_STORE",
+    "B_DIAG8_P_STORE",
+    "B_JOINT8_P_STORE",
+    "B_U8_P_PRE",
+    "B_DAMP8_P_PRE",
+    "B_DIAG8_P_PRE",
+    "B_JOINT8_P_PRE"
+  ],
+  "profiles_equal_confirmatory_weight": [
+    "P_STORE",
+    "P_PRE"
+  ],
+  "layers": [
+    0,
+    12,
+    22
+  ],
+  "heads": 16,
+  "dk": 128,
+  "dv": 128,
+  "high_rows": 8,
+  "model_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "parent_codec": {
+    "path": "experiments/rtpa_v03d1/codec.py",
+    "bytes": 4164,
+    "sha256": "4b768f79914f3dcec95c00c6cd64bb6b52ff136e456531b145ce19dcfdb5656a"
+  },
+  "parent_masks": {
+    "path": "artifacts/rtpa_v03d1_damp_contract/B_masks.pt",
+    "bytes": 42805,
+    "sha256": "3fe73b1bc50850bcab0a92d0e00eef9b81a6592bc574d17130b188e89ee5d249"
+  },
+  "source_rule_seed": 408001,
+  "bootstrap": {
+    "seed": 408002,
+    "draws": 2000,
+    "unit": "domain-stratified paired sequence",
+    "CI": "percentile95; individual descriptive intervals",
+    "share_all_profiles_windows_endpoints": true
+  },
+  "windows": {
+    "prefix256": [
+      16,
+      256,
+      256
+    ],
+    "prefix512": [
+      16,
+      512,
+      512
+    ],
+    "primary1024": [
+      16,
+      1024,
+      1023
+    ],
+    "late512": [
+      512,
+      1024,
+      1023
+    ]
+  },
+  "selected_N": 12,
+  "sample_tier": "LOW_POWER_RESOURCE_TIER",
+  "gates": {
+    "H_ALLOC": 0.05,
+    "H_CROSS": 0.05,
+    "H_DIAG": 0.05,
+    "H_LOW": 0.1,
+    "wins": "ceil(2*N/3)",
+    "mean_delta_NLL": 0.01,
+    "max_sequence_delta_NLL": 0.05,
+    "extra_NLL_DAMP_DIAG": 0.005,
+    "late_not_worse": [
+      "DAMP8",
+      "DIAG8"
+    ],
+    "nonfinite": 0
+  },
+  "epsilonKL": 1e-08,
+  "low_baseline_ratio": "null if baseline mean <= inherited epsilonKL",
+  "material_rule": "KL_J>2*KL_base AND KL_J-KL_base>epsilonKL; base=DAMP8,U8; sequence means",
+  "inherited_tolerances": {
+    "transform_nL2": 0.0001,
+    "transparent_nL2": 1e-05,
+    "transparent_KL": 1e-06,
+    "response_nL2": 0.0001,
+    "quadratic_relative": 1e-10
+  },
+  "tail_status": "NOT_ESTABLISHED",
+  "product_path": "CONTINUES_STOPPED",
+  "data_tier_rule": "N24 default, N12 only if 4..7 valid documents/domain or measured CAL projected cost*1.25 exceeds remaining minus25min; lock before fresh forward",
+  "attribution": "posthoc, no causal identification, no optimization, no B redesign",
+  "network_and_drive": "NOT_PERFORMED",
+  "wins_threshold": 8,
+  "final_frozen_utc": "2026-09-08T23:25:04.644163+00:00",
+  "expected_counts": {
+    "trajectories": 108,
+    "token_forwards": 110592,
+    "candidate_primary_KL": 96768,
+    "primary_NLL": 108756
+  }
+}

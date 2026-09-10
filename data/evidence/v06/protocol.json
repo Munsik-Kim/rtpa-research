@@ -1,0 +1,121 @@
+{
+  "experiment": "rtpa-v0.6-fixed-task-damp-audit-20260909-v1",
+  "frozen_utc": "2026-09-09T07:18:39.195531+00:00",
+  "parent_revision": "RTPA v0.5 unchanged P_PRE",
+  "model_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "methods": [
+    "NATIVE_REFERENCE",
+    "DAMP8_LEGACY_PAPER_ADAPTED",
+    "MATCHED_ENERGY8_FROZEN",
+    "DIAG8_FROZEN"
+  ],
+  "optional_candidate": "DAMP8_PAPER_CAL_ADAPTED only if verified Pile32 and numerical calibration complete before fresh EVAL",
+  "optional_data": {
+    "path": "artifacts/rtpa_v06_fixed_task_damp_audit/paper_cal_input_manifest.json",
+    "bytes": 289221,
+    "sha256": "51fb09eafdfe094d8a3cf5e31a741291e8f8af1fd2e849b0134d01935e0c6a0d"
+  },
+  "layers": [
+    0,
+    12,
+    22
+  ],
+  "state_shape": [
+    16,
+    128,
+    128
+  ],
+  "high_rows": 8,
+  "payload_bytes_per_head": 19328,
+  "bits_per_value": 9.4375,
+  "static_index_bytes_per_head": 1024,
+  "static_H32_bytes_per_layer": 4096,
+  "FP32_decode_scratch_bytes_per_layer": 1048576,
+  "codec": "unchanged parent P_PRE: FP32 code arithmetic, FP16 persistent scale/zero; UINT8 affine H32 value-axis group32, original-coordinate FP16 high rows",
+  "rounding_and_floor": "inherited exact parent source; known zero-point overflow not repaired",
+  "runtime": "native BF16 weights/reference; native q/k normalization; FP32 recurrent arithmetic; output-before-storage; every-token writes; own generated history",
+  "task_templates": {
+    "1": [
+      "Read the records below. Each record assigns a four-digit value to a key. If a key occurs again, the last record replaces its earlier value. Answer the question with only the four-digit value.\n\n",
+      "Records:\nKFOX = 1648\nKMUD = 5921\nKFOX = 3076\nQuestion: What is the final value of KFOX?\nAnswer: 3076\n\n",
+      "Records:\n",
+      "\nQuestion: What is the final value of {key}?\nAnswer:"
+    ],
+    "2": [
+      "Complete the lookup. For repeated keys, use the LAST assignment in the list, not the first or most frequent one. Write just the four digits after Value.\n\n",
+      "Assignments:\nKRED = 4281\nKRED = 5962\nKRED = 4281\nKBLUE = 7813\nKRED = 3057\nLookup key: KRED\nValue: 3057\n\n",
+      "Assignments:\n",
+      "\nLookup key: {key}\nValue:"
+    ]
+  },
+  "seeds": {
+    "CAL1": 603101,
+    "CAL2": 603201,
+    "EVAL": 603301,
+    "TIMING": 603401
+  },
+  "lengths": {
+    "short": [
+      240,
+      256
+    ],
+    "long": [
+      1008,
+      1024
+    ]
+  },
+  "cal_per_cell": 4,
+  "CAL_selection": "First template with each family accuracy>=0.50, else predefined template2 on separate CAL. Retain only capable families; no quantized accuracy selection. No EVAL filtering.",
+  "parser": "first LF-delimited answer field; only outer whitespace stripped; exact regex [1-9][0-9]{3}; extra text or multiple answers in field incorrect. Terminal EOS not part of answer text. No GT used by parser.",
+  "generation": {
+    "max_new_tokens": 16,
+    "do_sample": false,
+    "argmax": "full vocabulary",
+    "EOS": "model generation_config exact values saved at runtime",
+    "stop": "EOS, first LF in decoded generated text, or 16 tokens",
+    "forward_formula": "P+G-1 for G>=1, includes emitted EOS; last output token not fed",
+    "no_constrained_decoding": true
+  },
+  "N_selection": "largest of64,48,32 fitting actual CAL latencies, 20% margin and1200s report reserve inside10800s; if32 cannot fit choose largest balanced multiple of cell count below32 and preregister before EVAL. No result-based resizing.",
+  "primary": "DIAG8_FROZEN minus MATCHED_ENERGY8_FROZEN strict exact match, percentage points, equal family×length macro weights",
+  "secondary": [
+    "DIAG vs legacy DAMP",
+    "DIAG vs paper-cal DAMP if run",
+    "Native retention/loss",
+    "cell results"
+  ],
+  "statistics": {
+    "bootstrap": "10000 stratified paired item draws",
+    "seed": 603017,
+    "CI": "percentile95%",
+    "degenerate": "No [0,0] population equivalence; add no-discordance exact probability upper in each cell using Bonferroni alpha=.05/cellcount and macro bound",
+    "secondary_multiplicity": "exploratory no correction"
+  },
+  "failure": "Numerical failure incorrect among attempted items; NOT_RUN not scored. No full-panel primary if missing. First monitored boundary and tensor preserved. No clipping/NaN replacement.",
+  "cost": {
+    "labels": [
+      "DAMP",
+      "DIAG",
+      "MATCHED",
+      "DAMP_REPEAT"
+    ],
+    "warmup_blocks": 1,
+    "measured_blocks": 8,
+    "prefix": 256,
+    "continuation": 32,
+    "order_seed": 603019,
+    "bootstrap_seed": 603020,
+    "proposed_increase_target": 0.05,
+    "cache": "one resident fresh cache each block",
+    "includes": "native token forward, all codec counters, H32, decode/encode, state writes, first-token lazy allocations",
+    "excludes": "model load, cache object creation, disk IO, diagnostic hooks; actual allocation inside first forward remains included"
+  },
+  "budget": {
+    "GPU_seconds": 10800,
+    "starts": "first GPU experimental work once; no reset on resume",
+    "report_reserve_seconds": 1200,
+    "CPU_provenance_wall_separate": true
+  },
+  "KL_NLL": "NOT_COMPUTED to reserve budget for primary generation and fixed-work timing; no divergent-history KL",
+  "product_path": "CONTINUES_STOPPED"
+}

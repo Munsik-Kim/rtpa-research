@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "role": "Integrated interpretation; never overwrites historical frozen decisions",
+  "product_path": "CONTINUES_STOPPED",
+  "claims": [
+    {
+      "id": "C0", "hypothesis": "H2_output_transfer", "experiment_id": "original-allocation-transfer",
+      "status": "SUPPORTED_IN_SCOPE", "scope": "Historical A codec, no Hadamard, reused 12-sequence panel; not B/P_PRE",
+      "observed": "JOINT vs DIAG mean KL gain 0.147602961157142; 12/12 wins. Later panels are distinct evidence.",
+      "reproduction_level": "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS", "unit": "paired sequence mean KL, nat/token; gain is a fraction", "denominator": 12,
+      "evidence_paths": ["data/evidence/context/rtpa_v03_damp_comparison_sequence_metrics.csv", "data/evidence/context/rtpa_v03_damp_comparison_decision.json"],
+      "table_paths": ["results/tables/context.json"], "aggregation_code": "src/rtpa_research/reproduce.py",
+      "limitations": ["Sequence scalar aggregation, not tensor validation", "Original codec differs from B codec", "No new JOINT fitting"],
+      "mechanical_verification": "scalar reaggregation only, separate from scientific status"
+    },
+    {
+      "id": "C1", "hypothesis": "H1", "experiment_id": "precursor-energy-risk",
+      "status": "MIXED", "scope": "Historical FSBQ block4 fake-Q4, not the RTPA codec",
+      "observed": "Learned-functional common-state energy ratio 0.9728254305598044; isolated functional ratio 1.210294368298236.",
+      "reproduction_level": "REPORTED_ONLY", "unit": "separate energy and isolated-output ratios vs Identity", "denominator": "local TRAIN snapshots; original detailed records not selected",
+      "evidence_paths": ["data/evidence/context/fsbq_mechanism.json"], "table_paths": ["docs/RESULTS.md"], "aggregation_code": "src/rtpa_research/reproduce.py",
+      "limitations": ["No fresh FSBQ raw/tensor verification", "Different error directions are not a pure causal intervention", "General linear algebra is not a new GDN theorem"],
+      "mechanical_verification": "summary provenance only; explicitly not recomputed by the aggregator"
+    },
+    {
+      "id": "C2", "hypothesis": "H2_output_transfer", "experiment_id": "allocation-confirmation",
+      "status": "MIXED", "scope": "v0.4 fixed B codec, independent 12-document panel, P_PRE and P_STORE kept separate",
+      "observed": "P_PRE DIAG/legacy DAMP KL gain about 11.108%; JOINT/DIAG -1.304%. P_STORE has four failed trajectories and undefined full-panel primary contrasts.",
+      "reproduction_level": "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS", "unit": "nat/token, ratio of pooled means", "denominator": "12 sequences, primary KL 12096 tokens; planned 110592 status rows across 9 methods",
+      "evidence_paths": ["data/evidence/v04/tokens", "data/evidence/v04/bootstrap_draws.json", "configs/v04_protocol.json", "data/panels/v04_sources.json"],
+      "table_paths": ["results/tables/v04_allocation.json", "results/tables/numerical_failures.csv"], "aggregation_code": "src/rtpa_research/reproduce.py",
+      "limitations": ["No finite-subset replacement for failed full-window comparisons", "Software corpus/source-family dependence", "Positive prefix metrics do not certify full completion"],
+      "mechanical_verification": "all included token rows, draw indices, source expectations"
+    },
+    {
+      "id": "C3", "hypothesis": "H2_output_transfer", "experiment_id": "matched-allocation",
+      "status": "SUPPORTED_IN_SCOPE", "scope": "v0.5 P_PRE, 11-sequence panel, same high8 codec/payload; DIAG vs MATCHED primary",
+      "observed": "KL gain 0.12649185999169954, CI [0.08989821065725369,0.157401963320356], wins/ties/losses 10/0/1; NLL difference -0.0007890822722427249 nat/token.",
+      "reproduction_level": "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS", "unit": "gain fraction; KL/NLL nat/token", "denominator": "11 sequences, 11088 primary KL tokens and 11077 next-token NLLs per method",
+      "evidence_paths": ["data/evidence/v05/tokens", "data/evidence/v05/bootstrap_draws.json", "configs/v05_protocol.json", "data/masks/v05.json"],
+      "table_paths": ["results/tables/v05_allocation.json", "results/tables/allocation.csv"], "aggregation_code": "src/rtpa_research/reproduce.py",
+      "limitations": ["No accuracy claim from KL", "Recall delta NLL positive", "Anchor/sampling matched; low-only vs low-minus-high residual/readout/time still differ", "No per-case TRAIN-to-local-SSE-to-logit causal transfer rate"],
+      "mechanical_verification": "token scalar reaggregation, not full-logit recomputation"
+    },
+    {
+      "id": "C4", "hypothesis": "H3_task", "experiment_id": "task-evaluation",
+      "status": "NOT_SUPPORTED_IN_TESTED_SETTING", "scope": "One feasible family, 28 independent key/value contexts, short/long balanced, 5 fixed candidates",
+      "observed": "DIAG27/28, MATCHED28/28; paired difference -3.57142857142857pp, CI[-10.71428571428572,0]pp. Both DAMP variants and Native27/28.",
+      "reproduction_level": "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS", "unit": "strict exact-match percentage points", "denominator": "28 planned items, 140 complete EVAL trajectories; 0 numerical/format failures/NOT_RUN",
+      "evidence_paths": ["data/evidence/v06/answers.jsonl.gz", "data/panels/v06_eval_panel.json", "data/evidence/v06/bootstrap_draw_indices.npz", "data/evidence/v06/postrun_integrated_decision.json"],
+      "table_paths": ["results/tables/task.json", "results/tables/task_paired.csv"], "aggregation_code": "src/rtpa_research/reproduce.py",
+      "limitations": ["Small N, Native ceiling, one discordance", "Degenerate CI is not population equality", "Latest-write not evaluated after Native capability failure", "v0.6 common-history KL/NLL NOT_COMPUTED"],
+      "historical_decisions": ["NO_RESOLVED_TASK_ADVANTAGE_IN_SCREENING", "STOP_METHOD_ADVANTAGE_NOT_SUPPORTED"],
+      "mechanical_verification": "raw token decode, parser, independent GT, 10000 paired stratified draws"
+    },
+    {
+      "id": "C5", "hypothesis": "H2_output_to_answer", "experiment_id": "same-input-diagnostic",
+      "status": "MIXED", "scope": "v0.7 retrospective focal +7 seeded controls, 4 fixed candidates; not a new accuracy benchmark",
+      "observed": "Focal DIAG/MATCHED prompt64 KL gain 18.175%; digit NLL DIAG-MATCHED +0.25237268869124563 nat. DIAG GT NLL below Native but above MATCHED. Last64 readout wins L0/L12/L22 =8/8,7/8,1/8.",
+      "reproduction_level": "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS", "unit": "prompt KL nat/predictor, digits NLL nat/4 tokens, layer SSE", "denominator": "8 retrospective items; 2232 token rows,105984 local/head rows",
+      "evidence_paths": ["data/evidence/v07/token_metrics.jsonl.gz", "data/evidence/v07/local_metrics.jsonl.gz", "data/evidence/v07/candidate_panel.json"],
+      "table_paths": ["results/tables/diagnostic.json", "results/tables/readout_by_layer.csv", "results/tables/diagnostic_items.csv"], "aggregation_code": "src/rtpa_research/reproduce.py",
+      "limitations": ["Focal selected knowing discordance", "Own-path state and qkv differ; no layer causal attribution", "Controls include adverse directions", "M for same injection absent"],
+      "mechanical_verification": "scalar-level sums checked against historical summary; selected tensor checks separate"
+    },
+    {
+      "id": "C6", "hypothesis": "numerical_boundaries", "experiment_id": "numerical-failure / same-input-diagnostic",
+      "status": "SUPPORTED_IN_SCOPE", "scope": "Original finite overflow group and four focal first-digit logit/state points only",
+      "observed": "Token499/L12/H5/row115/group1 raw zero -73388 becomes FP16 -Inf in both profiles. Focal MATCHED stored BF16 logits tie at token22/23; greedy token22 retained as valid correct answer.",
+      "reproduction_level": "CHECKED_AT_INCLUDED_TENSOR_POINTS", "unit": "0-based token/layer/head/row/group index; raw logits and FP16 metadata", "denominator": "one preserved overflow group, four focal tensor points",
+      "evidence_paths": ["data/evidence/fixtures", "data/evidence/v05/numerical_boundary_details.json", "data/evidence/v07/trajectories.jsonl.gz"],
+      "table_paths": ["results/tables/boundary.json", "results/tables/focal.csv"], "aggregation_code": "src/rtpa_research/boundary.py",
+      "limitations": ["Whole-model token499-to500 propagation reported from historical receipts, not rerun", "No proof of pre-BF16 margin", "No guard or codec repair introduced"],
+      "mechanical_verification": "independent ndarray codec, stored BF16 bits, log_softmax/LLR and local tensor reductions"
+    },
+    {
+      "id": "C7", "hypothesis": "H3_cost", "experiment_id": "matched-allocation / task-evaluation",
+      "status": "UNRESOLVED", "scope": "Same-codec fixed-work CAL blocks; no new timing",
+      "observed": "v0.5 DIAG/MATCHED median ratio1.03008 and DAMP repeat variation.03538; v0.6 DIAG/MATCHED .944809, DIAG/DAMP1.073113; repeat variation.18983.",
+      "reproduction_level": "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS", "unit": "paired block latency ratios, not serving TPOT", "denominator": "v0.5 five measured blocks; v0.6 eight; warmups excluded",
+      "evidence_paths": ["data/evidence/v05/timing_samples.json", "data/evidence/v06/timing_blocks.json", "data/evidence/v06/cost_memory_scope_audit.json"],
+      "table_paths": ["results/tables/cost.json", "results/tables/cost.csv"], "aggregation_code": "src/rtpa_research/reproduce.py",
+      "limitations": ["Resident cache cycle/other-process influence unresolved", "No <=5% reliable upper bound or zero-overhead claim", "v0.7 31.26 minutes is diagnostic cost, not latency"],
+      "mechanical_verification": "raw-block ratios and uncertainty; experimental-control limits remain"
+    }
+  ]
+}

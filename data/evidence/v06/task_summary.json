@@ -1,0 +1,454 @@
+{
+  "status": "COMPLETE",
+  "methods": {
+    "NATIVE_REFERENCE": {
+      "correct": 27,
+      "attempted": 28,
+      "planned": 28,
+      "completed": 28,
+      "numerical_failures": 0,
+      "format_failures": 0,
+      "accuracy_planned": 0.9642857142857143,
+      "accuracy_reason": null,
+      "finite_valid_format_accuracy": 0.9642857142857143,
+      "macro_accuracy": 0.9642857142857143,
+      "accuracy_bootstrap_CI95": [
+        0.8928571428571428,
+        1.0
+      ]
+    },
+    "DAMP8_LEGACY_PAPER_ADAPTED": {
+      "correct": 27,
+      "attempted": 28,
+      "planned": 28,
+      "completed": 28,
+      "numerical_failures": 0,
+      "format_failures": 0,
+      "accuracy_planned": 0.9642857142857143,
+      "accuracy_reason": null,
+      "finite_valid_format_accuracy": 0.9642857142857143,
+      "macro_accuracy": 0.9642857142857143,
+      "accuracy_bootstrap_CI95": [
+        0.8928571428571428,
+        1.0
+      ]
+    },
+    "MATCHED_ENERGY8_FROZEN": {
+      "correct": 28,
+      "attempted": 28,
+      "planned": 28,
+      "completed": 28,
+      "numerical_failures": 0,
+      "format_failures": 0,
+      "accuracy_planned": 1.0,
+      "accuracy_reason": null,
+      "finite_valid_format_accuracy": 1.0,
+      "macro_accuracy": 1.0,
+      "accuracy_bootstrap_CI95": [
+        1.0,
+        1.0
+      ]
+    },
+    "DIAG8_FROZEN": {
+      "correct": 27,
+      "attempted": 28,
+      "planned": 28,
+      "completed": 28,
+      "numerical_failures": 0,
+      "format_failures": 0,
+      "accuracy_planned": 0.9642857142857143,
+      "accuracy_reason": null,
+      "finite_valid_format_accuracy": 0.9642857142857143,
+      "macro_accuracy": 0.9642857142857143,
+      "accuracy_bootstrap_CI95": [
+        0.8928571428571428,
+        1.0
+      ]
+    },
+    "DAMP8_PAPER_CAL_ADAPTED": {
+      "correct": 27,
+      "attempted": 28,
+      "planned": 28,
+      "completed": 28,
+      "numerical_failures": 0,
+      "format_failures": 0,
+      "accuracy_planned": 0.9642857142857143,
+      "accuracy_reason": null,
+      "finite_valid_format_accuracy": 0.9642857142857143,
+      "macro_accuracy": 0.9642857142857143,
+      "accuracy_bootstrap_CI95": [
+        0.8928571428571428,
+        1.0
+      ]
+    }
+  },
+  "missing": [],
+  "primary": {
+    "candidate": "DIAG8_FROZEN",
+    "baseline": "MATCHED_ENERGY8_FROZEN",
+    "macro_difference_pp": -3.57142857142857,
+    "bootstrap_CI95_pp": [
+      -10.71428571428572,
+      0.0
+    ],
+    "paired_table": {
+      "both_correct": 27,
+      "DIAG_only_correct": 0,
+      "baseline_only_correct": 1,
+      "both_incorrect": 0
+    },
+    "discordant_pairs": 1,
+    "bootstrap_degenerate": false,
+    "cell_exact_bounds": [
+      {
+        "cell": "KEY_VALUE_RETRIEVAL/long",
+        "n": 14,
+        "discordant": 1,
+        "no_discordance_upper": null,
+        "alpha": 0.025,
+        "assumption": "independent Bernoulli discordance in cell; Bonferroni simultaneous confidence"
+      },
+      {
+        "cell": "KEY_VALUE_RETRIEVAL/short",
+        "n": 14,
+        "discordant": 0,
+        "no_discordance_upper": 0.23163576165011657,
+        "alpha": 0.025,
+        "assumption": "independent Bernoulli discordance in cell; Bonferroni simultaneous confidence"
+      }
+    ],
+    "conservative_no_discordance_CI95_pp": null,
+    "exact_bound_explanation": "Bound |paired mean difference| by probability of discordance; no population equivalence claim",
+    "per_item_difference": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "comparisons": [
+    {
+      "candidate": "DIAG8_FROZEN",
+      "baseline": "DAMP8_LEGACY_PAPER_ADAPTED",
+      "macro_difference_pp": 0.0,
+      "bootstrap_CI95_pp": [
+        0.0,
+        0.0
+      ],
+      "paired_table": {
+        "both_correct": 27,
+        "DIAG_only_correct": 0,
+        "baseline_only_correct": 0,
+        "both_incorrect": 1
+      },
+      "discordant_pairs": 0,
+      "bootstrap_degenerate": true,
+      "cell_exact_bounds": [
+        {
+          "cell": "KEY_VALUE_RETRIEVAL/long",
+          "n": 14,
+          "discordant": 0,
+          "no_discordance_upper": 0.23163576165011657,
+          "alpha": 0.025,
+          "assumption": "independent Bernoulli discordance in cell; Bonferroni simultaneous confidence"
+        },
+        {
+          "cell": "KEY_VALUE_RETRIEVAL/short",
+          "n": 14,
+          "discordant": 0,
+          "no_discordance_upper": 0.23163576165011657,
+          "alpha": 0.025,
+          "assumption": "independent Bernoulli discordance in cell; Bonferroni simultaneous confidence"
+        }
+      ],
+      "conservative_no_discordance_CI95_pp": [
+        -23.163576165011655,
+        23.163576165011655
+      ],
+      "exact_bound_explanation": "Bound |paired mean difference| by probability of discordance; no population equivalence claim",
+      "per_item_difference": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "candidate": "DIAG8_FROZEN",
+      "baseline": "MATCHED_ENERGY8_FROZEN",
+      "macro_difference_pp": -3.57142857142857,
+      "bootstrap_CI95_pp": [
+        -10.71428571428572,
+        0.0
+      ],
+      "paired_table": {
+        "both_correct": 27,
+        "DIAG_only_correct": 0,
+        "baseline_only_correct": 1,
+        "both_incorrect": 0
+      },
+      "discordant_pairs": 1,
+      "bootstrap_degenerate": false,
+      "cell_exact_bounds": [
+        {
+          "cell": "KEY_VALUE_RETRIEVAL/long",
+          "n": 14,
+          "discordant": 1,
+          "no_discordance_upper": null,
+          "alpha": 0.025,
+          "assumption": "independent Bernoulli discordance in cell; Bonferroni simultaneous confidence"
+        },
+        {
+          "cell": "KEY_VALUE_RETRIEVAL/short",
+          "n": 14,
+          "discordant": 0,
+          "no_discordance_upper": 0.23163576165011657,
+          "alpha": 0.025,
+          "assumption": "independent Bernoulli discordance in cell; Bonferroni simultaneous confidence"
+        }
+      ],
+      "conservative_no_discordance_CI95_pp": null,
+      "exact_bound_explanation": "Bound |paired mean difference| by probability of discordance; no population equivalence claim",
+      "per_item_difference": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "candidate": "DIAG8_FROZEN",
+      "baseline": "DAMP8_PAPER_CAL_ADAPTED",
+      "macro_difference_pp": 0.0,
+      "bootstrap_CI95_pp": [
+        0.0,
+        0.0
+      ],
+      "paired_table": {
+        "both_correct": 27,
+        "DIAG_only_correct": 0,
+        "baseline_only_correct": 0,
+        "both_incorrect": 1
+      },
+      "discordant_pairs": 0,
+      "bootstrap_degenerate": true,
+      "cell_exact_bounds": [
+        {
+          "cell": "KEY_VALUE_RETRIEVAL/long",
+          "n": 14,
+          "discordant": 0,
+          "no_discordance_upper": 0.23163576165011657,
+          "alpha": 0.025,
+          "assumption": "independent Bernoulli discordance in cell; Bonferroni simultaneous confidence"
+        },
+        {
+          "cell": "KEY_VALUE_RETRIEVAL/short",
+          "n": 14,
+          "discordant": 0,
+          "no_discordance_upper": 0.23163576165011657,
+          "alpha": 0.025,
+          "assumption": "independent Bernoulli discordance in cell; Bonferroni simultaneous confidence"
+        }
+      ],
+      "conservative_no_discordance_CI95_pp": [
+        -23.163576165011655,
+        23.163576165011655
+      ],
+      "exact_bound_explanation": "Bound |paired mean difference| by probability of discordance; no population equivalence claim",
+      "per_item_difference": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "cells": {
+    "KEY_VALUE_RETRIEVAL/long": {
+      "NATIVE_REFERENCE": {
+        "correct": 13,
+        "n": 14,
+        "accuracy": 0.9285714285714286
+      },
+      "DAMP8_LEGACY_PAPER_ADAPTED": {
+        "correct": 13,
+        "n": 14,
+        "accuracy": 0.9285714285714286
+      },
+      "MATCHED_ENERGY8_FROZEN": {
+        "correct": 14,
+        "n": 14,
+        "accuracy": 1.0
+      },
+      "DIAG8_FROZEN": {
+        "correct": 13,
+        "n": 14,
+        "accuracy": 0.9285714285714286
+      },
+      "DAMP8_PAPER_CAL_ADAPTED": {
+        "correct": 13,
+        "n": 14,
+        "accuracy": 0.9285714285714286
+      }
+    },
+    "KEY_VALUE_RETRIEVAL/short": {
+      "NATIVE_REFERENCE": {
+        "correct": 14,
+        "n": 14,
+        "accuracy": 1.0
+      },
+      "DAMP8_LEGACY_PAPER_ADAPTED": {
+        "correct": 14,
+        "n": 14,
+        "accuracy": 1.0
+      },
+      "MATCHED_ENERGY8_FROZEN": {
+        "correct": 14,
+        "n": 14,
+        "accuracy": 1.0
+      },
+      "DIAG8_FROZEN": {
+        "correct": 14,
+        "n": 14,
+        "accuracy": 1.0
+      },
+      "DAMP8_PAPER_CAL_ADAPTED": {
+        "correct": 14,
+        "n": 14,
+        "accuracy": 1.0
+      }
+    }
+  },
+  "planned_N": 28,
+  "bootstrap_seed": 603017,
+  "bootstrap_resamples": 10000,
+  "unit": "independently generated context/item; family×length strata; equal cell weights",
+  "secondary_multiplicity": "not adjusted, descriptive exploratory",
+  "resampling_assumption": "within-cell independent generator draws; shared generator family limits generalization",
+  "native_retention": {
+    "DAMP8_LEGACY_PAPER_ADAPTED": {
+      "native_correct_total": 27,
+      "retained": 27,
+      "lost": 0,
+      "recovered_native_wrong": 0,
+      "secondary_subset_only": true
+    },
+    "MATCHED_ENERGY8_FROZEN": {
+      "native_correct_total": 27,
+      "retained": 27,
+      "lost": 0,
+      "recovered_native_wrong": 1,
+      "secondary_subset_only": true
+    },
+    "DIAG8_FROZEN": {
+      "native_correct_total": 27,
+      "retained": 27,
+      "lost": 0,
+      "recovered_native_wrong": 0,
+      "secondary_subset_only": true
+    },
+    "DAMP8_PAPER_CAL_ADAPTED": {
+      "native_correct_total": 27,
+      "retained": 27,
+      "lost": 0,
+      "recovered_native_wrong": 0,
+      "secondary_subset_only": true
+    }
+  }
+}

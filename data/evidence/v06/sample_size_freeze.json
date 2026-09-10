@@ -1,0 +1,32 @@
+{
+  "utc": "2026-09-09T07:42:48.713759+00:00",
+  "options": [
+    {
+      "N": 64,
+      "estimated_forwards": 209600,
+      "eval_seconds": 12556.881428846758,
+      "conservative_total_seconds": 18811.501851604175
+    },
+    {
+      "N": 48,
+      "estimated_forwards": 157200,
+      "eval_seconds": 9417.66107163507,
+      "conservative_total_seconds": 15044.437422950146
+    },
+    {
+      "N": 32,
+      "estimated_forwards": 104800,
+      "eval_seconds": 6278.440714423379,
+      "conservative_total_seconds": 11277.372994296118
+    }
+  ],
+  "selected_N": 28,
+  "cell_count": 2,
+  "elapsed_at_selection": 1419.5508921146393,
+  "timing_reserved_seconds": 699.8192220420806,
+  "margin": 0.2,
+  "report_reserve_seconds": 1200,
+  "reduced_below32": true,
+  "reason": "Actual CAL throughput cannot fit32 with margins; reduced balanced plan before fresh generation",
+  "results_accessed": false
+}
