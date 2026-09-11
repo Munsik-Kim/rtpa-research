@@ -1,0 +1,11 @@
+{
+  "structural_integrity": "PASS",
+  "quality_completion": "COMPLETE",
+  "timing_completion": "COMPLETE",
+  "input_errors": [],
+  "analysis_model_forwards": 0,
+  "no_successful_subset_substitution": true,
+  "reproduction_level": "RECOMPUTED_FROM_INCLUDED_SCALAR_OBSERVATIONS",
+  "tensor_to_metric": "NOT_VERIFIED_FROM_FULL_LOGITS",
+  "scientific_success": "SEPARATE_QUALITY_COST_STABILITY_AXES"
+}

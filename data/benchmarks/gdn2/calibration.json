@@ -1,0 +1,34 @@
+{
+  "seconds": 5.782036754000728,
+  "source_audits": [
+    {
+      "composition_relative_L2": 2.926024735466993e-07,
+      "direct_objective_normalized_max": 8.060130338643169e-10,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "composition_relative_L2": 2.9131533363600083e-07,
+      "direct_objective_normalized_max": 1.2160097349353231e-09,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "composition_relative_L2": 2.8850876833434043e-07,
+      "direct_objective_normalized_max": 1.3633801941136456e-09,
+      "tolerance": 0.0001,
+      "pass": true
+    }
+  ],
+  "metric": {
+    "degenerate_heads": 0,
+    "mean_gramian_trace": 0.14443445055958437,
+    "rank": 2,
+    "lambda": 1.0,
+    "horizon": 32,
+    "metric_source": "TRAIN_NATIVE_REFERENCE; distinct from historical nearest-conditioned TRAIN12 metric"
+  },
+  "full_K_constructed": true,
+  "policy_sha256": "90ad161d1235fe2e5b0ec121bb4a17419c51e14fcfb9f12e807db40ced641011",
+  "TEST_accessed": false
+}

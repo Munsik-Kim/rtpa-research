@@ -1,0 +1,448 @@
+{
+  "measurement_regime": "ISOLATED_OPERATOR_COST_FOLLOWUP",
+  "evaluation_level": "OPERATOR_TESTED_NOT_MODEL_LATENCY",
+  "quality_rerun": false,
+  "bootstrap_seed": 713003,
+  "bootstrap_draws": 2000,
+  "planned_blocks": 8,
+  "planned_labels": [
+    "NATIVE_FP32",
+    "MATCHED_ENERGY",
+    "RTPA_DIAG",
+    "STORED_NEAREST",
+    "FA_CODE_FACTORIZED",
+    "FA_CODE_REFERENCE",
+    "STORED_NEAREST_REPEAT"
+  ],
+  "planned_rows": 56,
+  "cost_threshold": 1.05,
+  "bootstrap_unit": "paired measured block; all labels resampled together",
+  "comparisons": [
+    {
+      "candidate": "RTPA_DIAG",
+      "baseline": "MATCHED_ENERGY",
+      "paired_block_median_ratio": 0.8976272954634011,
+      "CI95": [
+        0.7145910603940263,
+        1.180862324408052
+      ],
+      "p95_observed_block_ratio": 1.4668223933618783,
+      "raw_ratios": [
+        1.6208008920293233,
+        0.5859275957350023,
+        0.8670689669232691,
+        0.8470671338647703,
+        1.180862324408052,
+        0.9281856240035332,
+        0.9445060210336458,
+        0.6402451885654868
+      ],
+      "blocks": 8,
+      "computed_1_05_threshold_status": "COST_UNRESOLVED",
+      "cost_1_05_status": "COST_UNRESOLVED",
+      "scope": "fixed-work operator; not full-model decode or serving"
+    },
+    {
+      "candidate": "FA_CODE_FACTORIZED",
+      "baseline": "STORED_NEAREST",
+      "paired_block_median_ratio": 2.420348346795851,
+      "CI95": [
+        2.185618117086338,
+        2.8890278759643544
+      ],
+      "p95_observed_block_ratio": 3.18164984214724,
+      "raw_ratios": [
+        2.47710077985758,
+        2.185618117086338,
+        1.9938459769217132,
+        2.8890278759643544,
+        2.2007854520448578,
+        2.363595913734122,
+        2.757884458750869,
+        3.3392155162457176
+      ],
+      "blocks": 8,
+      "computed_1_05_threshold_status": "COST_TARGET_NOT_MET",
+      "cost_1_05_status": "COST_TARGET_NOT_MET",
+      "scope": "fixed-work operator; not full-model decode or serving"
+    },
+    {
+      "candidate": "FA_CODE_FACTORIZED",
+      "baseline": "FA_CODE_REFERENCE",
+      "paired_block_median_ratio": 0.817652737126193,
+      "CI95": [
+        0.7396320383830606,
+        0.9223923792901294
+      ],
+      "p95_observed_block_ratio": 0.966481335822263,
+      "raw_ratios": [
+        0.977770424580339,
+        0.7968192704126372,
+        0.7564821806426928,
+        0.9455158852715504,
+        0.7396320383830606,
+        0.8992688733087085,
+        0.7003220954995728,
+        0.8384862038397487
+      ],
+      "blocks": 8,
+      "computed_1_05_threshold_status": "COST_TARGET_MET",
+      "cost_1_05_status": "COST_TARGET_MET",
+      "scope": "fixed-work operator; not full-model decode or serving"
+    },
+    {
+      "candidate": "STORED_NEAREST_REPEAT",
+      "baseline": "STORED_NEAREST",
+      "paired_block_median_ratio": 1.0227607737386295,
+      "CI95": [
+        0.8177615583495929,
+        1.249087806217765
+      ],
+      "p95_observed_block_ratio": 1.3473606383228751,
+      "raw_ratios": [
+        0.6607412002547366,
+        0.8177615583495929,
+        0.8502144026845804,
+        1.0898934821455937,
+        1.0360922963746597,
+        1.4002767786871653,
+        1.249087806217765,
+        1.0094292511025993
+      ],
+      "blocks": 8,
+      "computed_1_05_threshold_status": "COST_UNRESOLVED",
+      "cost_1_05_status": "COST_UNRESOLVED",
+      "scope": "fixed-work operator; not full-model decode or serving"
+    },
+    {
+      "candidate": "MATCHED_ENERGY",
+      "baseline": "NATIVE_FP32",
+      "paired_block_median_ratio": 40.12929637804977,
+      "CI95": [
+        27.524596185243308,
+        52.83478532282113
+      ],
+      "p95_observed_block_ratio": 55.46515960924244,
+      "raw_ratios": [
+        26.152015681448685,
+        36.799958659222604,
+        31.059904949237698,
+        48.97794619185419,
+        56.671635975846044,
+        43.45863409687695,
+        11.660947017394003,
+        53.22456064269289
+      ],
+      "blocks": 8,
+      "computed_1_05_threshold_status": "COST_TARGET_NOT_MET",
+      "cost_1_05_status": "COST_TARGET_NOT_MET",
+      "scope": "fixed-work operator; not full-model decode or serving"
+    },
+    {
+      "candidate": "RTPA_DIAG",
+      "baseline": "NATIVE_FP32",
+      "paired_block_median_ratio": 37.20722413627353,
+      "CI95": [
+        22.545301766939538,
+        42.38721034485688
+      ],
+      "p95_observed_block_ratio": 58.334433481888844,
+      "raw_ratios": [
+        42.38721034485688,
+        21.56211130034578,
+        26.931079697070462,
+        41.48760850331687,
+        66.92139978644454,
+        40.33767940755096,
+        11.01383466888297,
+        34.076768864996104
+      ],
+      "blocks": 8,
+      "computed_1_05_threshold_status": "COST_TARGET_NOT_MET",
+      "cost_1_05_status": "COST_TARGET_NOT_MET",
+      "scope": "fixed-work operator; not full-model decode or serving"
+    },
+    {
+      "candidate": "STORED_NEAREST",
+      "baseline": "NATIVE_FP32",
+      "paired_block_median_ratio": 60.49784797450542,
+      "CI95": [
+        48.317566719910914,
+        79.92790351583106
+      ],
+      "p95_observed_block_ratio": 89.33999976864894,
+      "raw_ratios": [
+        61.92269566732465,
+        59.79833372802041,
+        48.317566719910914,
+        79.92790351583106,
+        94.40805159708934,
+        61.197362220990435,
+        15.885798972693708,
+        54.06016398255572
+      ],
+      "blocks": 8,
+      "computed_1_05_threshold_status": "COST_TARGET_NOT_MET",
+      "cost_1_05_status": "COST_TARGET_NOT_MET",
+      "scope": "fixed-work operator; not full-model decode or serving"
+    },
+    {
+      "candidate": "FA_CODE_FACTORIZED",
+      "baseline": "NATIVE_FP32",
+      "paired_block_median_ratio": 149.01729650262672,
+      "CI95": [
+        96.33778601914084,
+        207.77186651077452
+      ],
+      "p95_observed_block_ratio": 222.81421513977747,
+      "raw_ratios": [
+        153.38875772841348,
+        130.69632156753642,
+        96.33778601914084,
+        230.91394132462526,
+        207.77186651077452,
+        144.64583527683993,
+        43.8111981016325,
+        180.51853838133795
+      ],
+      "blocks": 8,
+      "computed_1_05_threshold_status": "COST_TARGET_NOT_MET",
+      "cost_1_05_status": "COST_TARGET_NOT_MET",
+      "scope": "fixed-work operator; not full-model decode or serving"
+    },
+    {
+      "candidate": "FA_CODE_REFERENCE",
+      "baseline": "NATIVE_FP32",
+      "paired_block_median_ratio": 162.43540153676798,
+      "CI95": [
+        127.34970959566306,
+        244.22005480987474
+      ],
+      "p95_observed_block_ratio": 268.070127950412,
+      "raw_ratios": [
+        156.87604561597192,
+        164.02254114644415,
+        127.34970959566306,
+        244.22005480987474,
+        280.91247502608593,
+        160.84826192709184,
+        62.558640350166165,
+        215.29100604717715
+      ],
+      "blocks": 8,
+      "computed_1_05_threshold_status": "COST_TARGET_NOT_MET",
+      "cost_1_05_status": "COST_TARGET_NOT_MET",
+      "scope": "fixed-work operator; not full-model decode or serving"
+    }
+  ],
+  "median_ms_per_token": {
+    "NATIVE_FP32": 0.1627114765483384,
+    "MATCHED_ENERGY": 6.185370589832928,
+    "RTPA_DIAG": 5.490898671894229,
+    "STORED_NEAREST": 10.016879253925026,
+    "FA_CODE_FACTORIZED": 23.342226226532148,
+    "FA_CODE_REFERENCE": 28.416709261733786,
+    "STORED_NEAREST_REPEAT": 9.66506930078026
+  },
+  "eligible_for_headline_cost": true,
+  "interference_free_status": "SINGLE_GPU_WORKER_AT_ALL_RECORDED_BLOCK_STARTS",
+  "observed_rows": 56,
+  "missing_block_labels": [],
+  "input_status": "COMPLETE",
+  "protocol_revision": "isolated-operator-cost-v2",
+  "policy_sha256": "90ad161d1235fe2e5b0ec121bb4a17419c51e14fcfb9f12e807db40ced641011",
+  "source_hashes": {
+    "protocol.json": "dca64d1c679bb3cc5f14d6909fc3e85c6c0dfce89dfc373e06891ebbab1e77eb",
+    "timing.json": "371a58e10e24fdc2eab51480ab2e508e7cfc438e50c981b8ea616a09a3bf8e75"
+  },
+  "cost_scope": "operator update/readout/storage checks; layout,initialzeroallocation,policyconstruction excluded equally",
+  "status": "COMPLETE_FIXED_TIMING_PLAN",
+  "memory": {
+    "NATIVE_FP32": {
+      "payload_bytes": {
+        "min": 262144,
+        "max": 262144
+      },
+      "policy_bytes": {
+        "min": 0,
+        "max": 0
+      },
+      "peak_allocated_bytes": {
+        "min": 11172352,
+        "max": 11172352
+      },
+      "peak_reserved_bytes": {
+        "min": 39845888,
+        "max": 39845888
+      }
+    },
+    "MATCHED_ENERGY": {
+      "payload_bytes": {
+        "min": 77312,
+        "max": 77312
+      },
+      "policy_bytes": {
+        "min": 0,
+        "max": 0
+      },
+      "peak_allocated_bytes": {
+        "min": 14201344,
+        "max": 14201344
+      },
+      "peak_reserved_bytes": {
+        "min": 39845888,
+        "max": 39845888
+      }
+    },
+    "RTPA_DIAG": {
+      "payload_bytes": {
+        "min": 77312,
+        "max": 77312
+      },
+      "policy_bytes": {
+        "min": 0,
+        "max": 0
+      },
+      "peak_allocated_bytes": {
+        "min": 14201344,
+        "max": 14201344
+      },
+      "peak_reserved_bytes": {
+        "min": 39845888,
+        "max": 39845888
+      }
+    },
+    "STORED_NEAREST": {
+      "payload_bytes": {
+        "min": 77312,
+        "max": 77312
+      },
+      "policy_bytes": {
+        "min": 0,
+        "max": 0
+      },
+      "peak_allocated_bytes": {
+        "min": 19096064,
+        "max": 19096064
+      },
+      "peak_reserved_bytes": {
+        "min": 39845888,
+        "max": 39845888
+      }
+    },
+    "FA_CODE_FACTORIZED": {
+      "payload_bytes": {
+        "min": 77312,
+        "max": 77312
+      },
+      "policy_bytes": {
+        "min": 8224,
+        "max": 8224
+      },
+      "peak_allocated_bytes": {
+        "min": 23382016,
+        "max": 23382016
+      },
+      "peak_reserved_bytes": {
+        "min": 39845888,
+        "max": 39845888
+      }
+    },
+    "FA_CODE_REFERENCE": {
+      "payload_bytes": {
+        "min": 77312,
+        "max": 77312
+      },
+      "policy_bytes": {
+        "min": 524288,
+        "max": 524288
+      },
+      "peak_allocated_bytes": {
+        "min": 24889344,
+        "max": 24889344
+      },
+      "peak_reserved_bytes": {
+        "min": 39845888,
+        "max": 39845888
+      }
+    },
+    "STORED_NEAREST_REPEAT": {
+      "payload_bytes": {
+        "min": 77312,
+        "max": 77312
+      },
+      "policy_bytes": {
+        "min": 0,
+        "max": 0
+      },
+      "peak_allocated_bytes": {
+        "min": 19096064,
+        "max": 19096064
+      },
+      "peak_reserved_bytes": {
+        "min": 39845888,
+        "max": 39845888
+      }
+    }
+  },
+  "memory_scope": "synthetic operator with four heads; not full-model peak",
+  "process_counts": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "interference_monitoring_limit": "Process count sampled before each measured block, not continuously throughout every token"
+}

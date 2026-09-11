@@ -1,0 +1,29 @@
+{
+  "revision": "isolated-operator-cost-v2",
+  "reason": "Initial cost overlapped anotherGPUworker; retained, not treated as isolated timing",
+  "policy_sha256": "90ad161d1235fe2e5b0ec121bb4a17419c51e14fcfb9f12e807db40ced641011",
+  "quality_rerun": false,
+  "labels": [
+    "NATIVE_FP32",
+    "MATCHED_ENERGY",
+    "RTPA_DIAG",
+    "STORED_NEAREST",
+    "FA_CODE_FACTORIZED",
+    "FA_CODE_REFERENCE",
+    "STORED_NEAREST_REPEAT"
+  ],
+  "seed": 713002,
+  "warmup": 1,
+  "measured_blocks": 8,
+  "tokens": 128,
+  "cost_scope": "operator update/readout/storage checks; layout,initialzeroallocation,policyconstruction excluded equally",
+  "source_sha256": "b3ffa8af3aa329e157fc10f854d5e4a652065c6c56aae1f4f2eb7cf86cb49690",
+  "threshold": 1.05,
+  "upstream_source_sha256": {
+    "operator_benchmark.py": "0b0e8612b5da8f7637be4e171a687aaebf1c9bae3b26b9d9751a84b3cd015299",
+    "operators.py": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78",
+    "calibration.py": "1aac2598d1af6920285e6ccfa11bb4a92d3f1d2453549cb89841768e45db0038",
+    "factorized.py": "d6947df1f614b9dcb7372878e7fbc9e05626ff40c7e86c2cb80e819ae560e08e",
+    "codec.py": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069"
+  }
+}

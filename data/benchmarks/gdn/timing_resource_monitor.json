@@ -1,0 +1,2258 @@
+{
+  "status": "COMPLETE",
+  "interval_seconds": 5,
+  "scope": "Read-only NVML process sampling, not continuous exclusivity proof",
+  "model_or_operator_forwards": 0,
+  "samples": [
+    {
+      "UTC": "2026-09-11T09:59:59Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 0,
+      "only_expected_timing_PID": false,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:00:04Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:00:09Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:00:14Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:00:19Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:00:23Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:00:28Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:00:33Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:00:38Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:00:44Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:00:49Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:00:52Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:00:57Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:01:03Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:01:08Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:01:13Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:01:18Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:01:23Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:01:27Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:01:32Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:01:37Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:01:42Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:01:47Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:01:52Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:01:55Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:02:01Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:02:06Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:02:11Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:02:16Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:02:21Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:02:26Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:02:30Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:02:35Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:02:40Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:02:45Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:02:50Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:02:55Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:02:58Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:03:03Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:03:09Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:03:14Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:03:19Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:03:24Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:03:27Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:03:32Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:03:37Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:03:43Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:03:48Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:03:53Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:03:58Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:04:01Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:04:07Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:04:12Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:04:17Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:04:22Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:04:27Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:04:31Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:04:36Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:04:41Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:04:46Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:04:51Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:04:56Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:05:01Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:05:05Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:05:10Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:05:15Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:05:20Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:05:25Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:05:30Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:05:34Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:05:39Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:05:44Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:05:49Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:05:54Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:05:59Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:06:03Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:06:08Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:06:13Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:06:18Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:06:23Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:06:28Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:06:33Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:06:37Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:06:42Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:06:47Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:06:52Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:06:57Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:07:02Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:07:06Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:07:11Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:07:16Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:07:21Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:07:26Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:07:31Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:07:36Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:07:40Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:07:45Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:07:50Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:07:55Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:08:00Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:08:05Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:08:09Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:08:14Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:08:19Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:08:24Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:08:29Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:08:34Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:08:38Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:08:43Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:08:48Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:08:53Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:08:58Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:09:03Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:09:08Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:09:12Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:09:17Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:09:22Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:09:27Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:09:32Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:09:37Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:09:41Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:09:46Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:09:51Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:09:56Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:10:01Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:10:06Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:10:11Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:10:15Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:10:20Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:10:25Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:10:30Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:10:35Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:10:40Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:10:44Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:10:49Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:10:54Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:10:59Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:11:04Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:11:09Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:11:14Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:11:18Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:11:23Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:11:28Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:11:33Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:11:38Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:11:43Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:11:47Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:11:52Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:11:57Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:12:02Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:12:07Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:12:12Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:12:16Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:12:21Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:12:26Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:12:31Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:12:36Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:12:41Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:12:46Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:12:50Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:12:55Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:13:00Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:13:05Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:13:10Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:13:15Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:13:19Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:13:24Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:13:29Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:13:34Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:13:39Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:13:44Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:13:49Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:13:53Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:13:58Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:14:03Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:14:08Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:14:13Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:14:18Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:14:22Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:14:27Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:14:32Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:14:37Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:14:42Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:14:47Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:14:51Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:14:56Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:15:01Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:15:06Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:15:11Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:15:16Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:15:21Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:15:25Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:15:30Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:15:35Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:15:40Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:15:45Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:15:50Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:15:54Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:15:59Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:16:04Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:16:09Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:16:14Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:16:20Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:16:25Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:16:28Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:16:33Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:16:38Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:16:43Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:16:49Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:16:54Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:16:57Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:17:02Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:17:07Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:17:12Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:17:18Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:17:23Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:17:26Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:17:31Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:17:36Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:17:41Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:17:47Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:17:52Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:17:57Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:18:00Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:18:05Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:18:10Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:18:15Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:18:20Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:18:26Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:18:29Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:18:34Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:18:39Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:18:44Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:18:50Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:18:55Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:19:00Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:19:03Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:19:08Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:19:13Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:19:18Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:19:23Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:19:29Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:19:32Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:19:37Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:19:42Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:19:47Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:19:53Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:19:58Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    },
+    {
+      "UTC": "2026-09-11T10:20:03Z",
+      "timing_pid": 156615,
+      "GPU_process_count": 1,
+      "only_expected_timing_PID": true,
+      "no_competing_GPU_worker": true,
+      "initialization_or_between_blocks_included": true,
+      "query_status": "OK"
+    }
+  ],
+  "all_samples_only_timing_worker": false,
+  "all_samples_no_competing_GPU_worker": true,
+  "timing_worker_observed": true,
+  "completion_marker": {
+    "pid": 156615,
+    "phase": "timing",
+    "status": "COMPLETE",
+    "elapsed_active_seconds": 9904.635014218016
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "first_gpu_start_utc": "2026-09-11T07:18:49Z",
+  "GPU_active_seconds": 10017.881173626018,
+  "physical_forwards": 88248,
+  "attempts": [
+    {
+      "phase": "pilot",
+      "status": "COMPLETE",
+      "seconds": 28.759918496001774,
+      "physical_forwards": 320
+    },
+    {
+      "phase": "capture",
+      "status": "COMPLETE",
+      "seconds": 104.56060246499692,
+      "physical_forwards": 1536
+    },
+    {
+      "phase": "fit",
+      "status": "COMPLETE",
+      "seconds": 207.13213441700282,
+      "physical_forwards": 0
+    },
+    {
+      "phase": "conformance",
+      "status": "FAILED",
+      "seconds": 22.345036285001697,
+      "physical_forwards": 191
+    },
+    {
+      "phase": "all_layer_failure",
+      "status": "COMPLETE",
+      "seconds": 52.68112802500036,
+      "physical_forwards": 371
+    },
+    {
+      "phase": "conformance",
+      "status": "COMPLETE",
+      "seconds": 63.15217471700089,
+      "physical_forwards": 582
+    },
+    {
+      "phase": "GDN2_OPERATOR",
+      "status": "COMPLETE",
+      "seconds": 227.16467391400147,
+      "physical_forwards": 0
+    },
+    {
+      "phase": "CUDA_ENCODER_PARITY",
+      "status": "COMPLETE",
+      "seconds": 5.586297931000445,
+      "physical_forwards": 0
+    },
+    {
+      "phase": "evaluate",
+      "status": "COMPLETE",
+      "seconds": 7924.462342141003,
+      "physical_forwards": 73728
+    },
+    {
+      "phase": "HISTORICAL_METRIC_BACKEND_PARITY",
+      "status": "COMPLETE",
+      "seconds": 4.612215828004992,
+      "physical_forwards": 0
+    },
+    {
+      "phase": "timing",
+      "status": "COMPLETE",
+      "seconds": 1264.1784899990016,
+      "physical_forwards": 11520
+    },
+    {
+      "phase": "GDN2_ISOLATED_OPERATOR_COST",
+      "status": "COMPLETE",
+      "seconds": 113.2461594080014,
+      "physical_forwards": 0
+    }
+  ],
+  "limit_seconds": 14400
+}

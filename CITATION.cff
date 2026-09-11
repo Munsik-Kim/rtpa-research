@@ -1,6 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this research snapshot, please cite this repository and identify the commit used."
-title: "Recurrent-state precision allocation: from output preservation to task accuracy"
+title: "RTPA — Output-Aware Recurrent-State Quantization"
+version: 1.1.0rc1
 type: software
 authors:
   - name: "Munsik-Kim"
@@ -8,5 +9,5 @@ authors:
 repository-code: "https://github.com/Munsik-Kim/rtpa-research"
 url: "https://github.com/Munsik-Kim/rtpa-research"
 license: Apache-2.0
-date-released: 2026-09-10
-abstract: "Evidence snapshot comparing fixed recurrent-state precision masks under matched codecs and payloads. Some output-distribution gains were observed, but additional task-accuracy benefit and a reliable cost bound were not established. Includes CPU reconstruction tools and selected historical numerical code."
+date-released: 2026-09-11
+abstract: "Output-aware recurrent-state quantization through fixed precision masks and bounded integer-code correction. Includes reproducible GDN model experiments, an independent GDN2 operator implementation, factorized FP64 metric execution, and CPU-recomputable observations. Quality, storage, numerical failures and runtime are reported separately; pretrained GDN2 language quality and production readiness are not claimed."

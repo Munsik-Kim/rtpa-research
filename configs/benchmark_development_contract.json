@@ -1,0 +1,14 @@
+{
+  "revision": "rtpa-gdn-upgrade-20260911-v1",
+  "historical_inputs_read_only": true,
+  "policy_parity": {"code_mismatch_allowed": 0, "accept_reject_mismatch_allowed": 0, "decoded_payload_mismatch_allowed": 0, "ME_relative_tolerance": 1e-12, "head_cases": 512, "source": "TRAIN snapshots and synthetic only"},
+  "adapter": {"transparent_logits_nL2_max": 1e-5, "transparent_mean_KL_max": 1e-6, "reference_factorized_logits_exact": true, "scope": "pilot prefix, not universal equality"},
+  "numerics": {"dtype": "FP64 metric; FP32 recurrence; BF16 model", "rank": 2, "lambda": 1.0, "eta": 0.05, "codec": "P_PRE", "high_rows": 8, "TF32": false, "threads": 2, "seed": 611110, "constant_and_overflow_contract": "unchanged"},
+  "budgets": {"GPU_active_wall_seconds_max": 14400, "heavy_CPU_seconds_max": 7200, "report_reserve_seconds": 1200, "worker_count": 1, "GPU_stop_temperature_C": 85, "raw_artifact_target_bytes": 2147483648},
+  "no_test_tuning": true,
+  "quality_threshold": "Report effect and CI independently; no success-conditioned retries",
+  "cost_ratio_target": 1.05,
+  "sampling_seeds": {"TRAIN": 611201, "CAL": 621202, "TEST": 631203, "bootstrap": 611204, "timing": 611205},
+  "pre_TEST_development_correction": "Initial CAL seed611202 collided with TRAIN item1. The 64-token adapter pilot input is preserved separately. Before TRAIN capture or TEST, CAL/TEST receive disjoint seed namespaces. No selection/effect threshold or observed quality was used for this correction.",
+  "test_plan": "Freeze after CAL throughput before TEST generation/execution"
+}

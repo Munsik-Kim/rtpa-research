@@ -20,6 +20,31 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m pip install numpy==1.26.4 tokenizers==0.22.2
+      - run: python -m pip install numpy==1.26.4 tokenizers==0.22.2 build
       - run: python -m unittest discover -s tests -v
       - run: python -m rtpa_research verify --out recomputed
+      - name: Run the model-free demonstration and historical FA_CODE reconstruction
+        run: |
+          python -m rtpa_research demo --out recomputed-upgrade-demo.json
+          python -m rtpa_research.fa_evidence --out recomputed-fa
+      - name: Reconstruct the published upgrade evidence without GPU execution
+        run: python scripts/reproduce_upgrade.py --root . --write-generated recomputed-upgrade --verify
+      - name: Independently audit token scalars and frozen numerical contracts
+        run: |
+          python scripts/audit_upgrade_scalars.py --root . --recomputed-dir recomputed-upgrade --out /tmp/rtpa-independent-scalars.json
+          python scripts/check_upgrade_contract.py --root . --out /tmp/rtpa-upgrade-contract.json
+      - name: Build and install the public wheel
+        run: |
+          python -m build --wheel
+          python -m venv /tmp/rtpa-wheel-test
+          /tmp/rtpa-wheel-test/bin/python -m pip install dist/*.whl
+      - name: Verify installed evidence without the source checkout on PYTHONPATH
+        working-directory: /tmp
+        env:
+          PYTHONPATH: ""
+        run: |
+          /tmp/rtpa-wheel-test/bin/python -m rtpa_research verify --out /tmp/rtpa-installed-recomputed
+          /tmp/rtpa-wheel-test/bin/python -m rtpa_research demo --out /tmp/rtpa-installed-demo.json
+          /tmp/rtpa-wheel-test/bin/python -m rtpa_research.fa_evidence --out /tmp/rtpa-installed-fa
+          upgrade_script="$(/tmp/rtpa-wheel-test/bin/python -c 'from rtpa_research.resources import evidence_root; print(evidence_root() / "scripts/reproduce_upgrade.py")')"
+          /tmp/rtpa-wheel-test/bin/python "$upgrade_script" --write-generated /tmp/rtpa-installed-upgrade --verify

@@ -1,14 +1,26 @@
 import argparse
+import sys
 from pathlib import Path
 from .io import save, read
+from .resources import evidence_root
 
 
-def main():
+def main(argv=None):
+    argv = list(sys.argv[1:] if argv is None else argv)
+    # GPU/operator entrypoints remain opt-in and lazily imported. In particular,
+    # the legacy verify path must never import Torch or initialize a GPU.
+    if argv and argv[0] in ('demo', 'operator-benchmark', 'benchmark', 'benchmark-reproduce'):
+        if argv[0] in ('demo', 'operator-benchmark'):
+            from .operators import main as delegated
+        else:
+            from .benchmark import main as delegated
+        return delegated(argv)
     p=argparse.ArgumentParser(description='RTPA CPU-only evidence reconstruction. Never starts model inference.')
     p.add_argument('command',choices=['reproduce','verify','gpu-requirements'])
-    p.add_argument('--root',type=Path,default=Path(__file__).resolve().parents[2])
+    p.add_argument('--root',type=Path,default=None,help='Public evidence root; defaults to checkout or installed package resources')
     p.add_argument('--out',type=Path,default=Path('recomputed'))
-    args=p.parse_args()
+    args=p.parse_args(argv)
+    args.root=evidence_root(args.root)
     if args.command=='gpu-requirements':
         import json
         print(json.dumps(read(args.root/'configs/external_dependencies.json'),ensure_ascii=False,indent=2));return

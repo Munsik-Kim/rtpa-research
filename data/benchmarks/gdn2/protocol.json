@@ -1,0 +1,53 @@
+{
+  "run_id": "RTPA_GDN2_OPERATOR_20260911_V1",
+  "evaluation_level": "OPERATOR_TESTED",
+  "checkpoint": null,
+  "language_KL": "NOT_RUN_OFFICIAL_CHECKPOINT_NOT_VERIFIED",
+  "heads": 4,
+  "key_dim": 128,
+  "value_dim": 128,
+  "TRAIN_seeds": [
+    711001,
+    711002,
+    711003
+  ],
+  "TEST_seeds": [
+    712001,
+    712002,
+    712003,
+    712004,
+    712005,
+    712006,
+    712007,
+    712008,
+    712009,
+    712010,
+    712011,
+    712012
+  ],
+  "tokens": 256,
+  "scored_window": [
+    16,
+    256
+  ],
+  "methods": [
+    "NATIVE_FP32",
+    "MATCHED_ENERGY",
+    "RTPA_DIAG",
+    "STORED_NEAREST",
+    "FA_CODE_FACTORIZED"
+  ],
+  "dtype": "FP32 recurrent; FP64 metric and aggregation",
+  "metric": "rank2 lambda1 eta.05; TRAINreferencefutureh32",
+  "codec": "P_PRE H32 group32 UINT8 FP16metadata original-coordinatehigh8",
+  "sampling": "unit weights; allTRAIN ownlow writes; response readouts16:256",
+  "bootstrap_seed": 713001,
+  "bootstrap_draws": 2000,
+  "timing_blocks": 8,
+  "timing_warmup": 1,
+  "timing_seed": 713002,
+  "timing_tokens": 128,
+  "timing_input": "fixed CAL synthetic seed711101",
+  "policy_parity": "exact code/decoded state across TRAIN sequential prefixes; no universal equality claim",
+  "distribution": "independent random operands; not pretrained activations or tasks"
+}

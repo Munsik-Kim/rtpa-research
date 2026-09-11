@@ -1,0 +1,78 @@
+{
+  "audit_id": "inherited-metric-backend-parity-512-v1",
+  "registered_UTC": "2026-09-11T09:59:02Z",
+  "purpose": "Supplement historical CPU-built M -> CUDA versus GPU-built M and FP64 factors",
+  "scope": "512 fixed head cases, not universal parity or a new quality panel",
+  "base_cases": 32,
+  "heads_per_case": 16,
+  "seed": 611110,
+  "fixture_definition": "Same 32-case sequence as upgrade_preflight: three first TRAIN snapshots, exact zero, then seeded CUDA normal matrices with fixed scales",
+  "parameter": {
+    "id": "m2_l1_e005",
+    "m": 2,
+    "lambda": 1.0,
+    "eta": 0.05
+  },
+  "layers_cycle": [
+    0,
+    12,
+    22
+  ],
+  "dtype": "FP64 metric; FP32 codec input and grid; original FP16 stored metadata",
+  "matrix_relative_Frobenius_tolerance": 1e-12,
+  "code_accept_protected_payload_decoded_mismatch_allowed": 0,
+  "new_TEST_inputs": 0,
+  "model_forwards": 0,
+  "policy_sha256": "355492d26bfe8be47660d28f6820f18ebce581c7d712c834028bbaafc5a04da9",
+  "original_inputs": [
+    {
+      "path": "experiments/fa_code_v01_20260911_0814/artifacts/fixed_metrics.pt",
+      "sha256": "2f4ce2e43f6a88543980df2de41c1187511a9dac49c22829e335a5d2f8688255"
+    },
+    {
+      "path": "artifacts/rtpa_v05_numerical_matched_energy/masks.pt",
+      "sha256": "0af4f4d842c18e6e59097d5381950bc8d17250e5d1f67463619dac2ac22e9353"
+    },
+    {
+      "path": "experiments/fa_code_v01_20260911_0814/artifacts/selected_trace/fa_associative_recall_train_0.pt",
+      "sha256": "35ff250d97952fa6c9de1484ce19cff8b68d4368c9eb00478336b55c0a4420b0"
+    },
+    {
+      "path": "experiments/fa_code_v01_20260911_0814/artifacts/fit_receipt.json",
+      "sha256": "e828ac5d52e1fe0e5e5b86a3cffaba44a8ee567c6cc67e5263fa572967af8b1e"
+    },
+    {
+      "path": "experiments/fa_code_v01_20260911_0814/artifacts/PREREGISTERED_PROTOCOL.yaml",
+      "sha256": "1505e94b888b1e05b986223f1a6519709dcdff865d533b38a689c6ca7311cb54"
+    },
+    {
+      "path": "experiments/fa_code_v01_20260911_0814/artifacts/selected_candidate.json",
+      "sha256": "91aa005c4c79aa7f9104c6f2ef316a696e39533b92e1b9852cd5d6f188673800"
+    }
+  ],
+  "source_sha256": {
+    "scripts/check_metric_backend_parity.py": "0bfc1d0846987356820c17f2153008efd9227e77a2ba39f0cdeacee2b3d06cd2",
+    "src/rtpa_research/codec.py": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069",
+    "src/rtpa_research/reference_encoder.py": "d7272e7c4d600da3cbfcb9196be140afdb08b0f33c6751d51c744b4429ac7b53",
+    "src/rtpa_research/factorized.py": "d6947df1f614b9dcb7372878e7fbc9e05626ff40c7e86c2cb80e819ae560e08e",
+    "src/rtpa_research/layout.py": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276"
+  },
+  "CPU_original_reconstruction": [
+    {
+      "layer": 0,
+      "degenerate_heads": 0,
+      "CPU_dense_exact": true
+    },
+    {
+      "layer": 12,
+      "degenerate_heads": 0,
+      "CPU_dense_exact": true
+    },
+    {
+      "layer": 22,
+      "degenerate_heads": 0,
+      "CPU_dense_exact": true
+    }
+  ],
+  "failure_handling": "Record every numerical mismatch; no fallback, no policy or tolerance adjustment"
+}

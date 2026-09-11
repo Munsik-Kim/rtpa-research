@@ -1,0 +1,565 @@
+{
+  "rows": [
+    {
+      "block": 0,
+      "order": 0,
+      "method": "MATCHED_ENERGY",
+      "seconds": 0.616307438001968,
+      "ms_per_token": 4.814901859390375,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 17351168,
+      "includes_model": false
+    },
+    {
+      "block": 0,
+      "order": 1,
+      "method": "NATIVE_FP32",
+      "seconds": 0.011573867999686627,
+      "ms_per_token": 0.09042084374755177,
+      "payload_bytes": 262144,
+      "peak_allocated_bytes": 14322176,
+      "includes_model": false
+    },
+    {
+      "block": 0,
+      "order": 2,
+      "method": "FA_CODE_FACTORIZED",
+      "seconds": 2.581657347000146,
+      "ms_per_token": 20.16919802343864,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 26531840,
+      "includes_model": false
+    },
+    {
+      "block": 0,
+      "order": 3,
+      "method": "STORED_NEAREST_REPEAT",
+      "seconds": 1.015189351997833,
+      "ms_per_token": 7.93116681248307,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 22245888,
+      "includes_model": false
+    },
+    {
+      "block": 0,
+      "order": 4,
+      "method": "FA_CODE_REFERENCE",
+      "seconds": 2.8893700350017752,
+      "ms_per_token": 22.57320339845137,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 28039168,
+      "includes_model": false
+    },
+    {
+      "block": 0,
+      "order": 5,
+      "method": "STORED_NEAREST",
+      "seconds": 1.236804520998703,
+      "ms_per_token": 9.662535320302368,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 22245888,
+      "includes_model": false
+    },
+    {
+      "block": 0,
+      "order": 6,
+      "method": "RTPA_DIAG",
+      "seconds": 0.9206249730013951,
+      "ms_per_token": 7.192382601573399,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 17351168,
+      "includes_model": false
+    },
+    {
+      "block": 1,
+      "order": 0,
+      "method": "STORED_NEAREST",
+      "seconds": 1.0677674750004371,
+      "ms_per_token": 8.341933398440915,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 22245888,
+      "includes_model": false
+    },
+    {
+      "block": 1,
+      "order": 1,
+      "method": "FA_CODE_REFERENCE",
+      "seconds": 3.197693886999332,
+      "ms_per_token": 24.98198349218228,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 28039168,
+      "includes_model": false
+    },
+    {
+      "block": 1,
+      "order": 2,
+      "method": "RTPA_DIAG",
+      "seconds": 0.5899429040000541,
+      "ms_per_token": 4.608928937500423,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 17351168,
+      "includes_model": false
+    },
+    {
+      "block": 1,
+      "order": 3,
+      "method": "STORED_NEAREST_REPEAT",
+      "seconds": 0.9934214009990683,
+      "ms_per_token": 7.761104695305221,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 22245888,
+      "includes_model": false
+    },
+    {
+      "block": 1,
+      "order": 4,
+      "method": "FA_CODE_FACTORIZED",
+      "seconds": 2.4885600589987007,
+      "ms_per_token": 19.44187546092735,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 26531840,
+      "includes_model": false
+    },
+    {
+      "block": 1,
+      "order": 5,
+      "method": "NATIVE_FP32",
+      "seconds": 0.05058066600031452,
+      "ms_per_token": 0.3951614531274572,
+      "payload_bytes": 262144,
+      "peak_allocated_bytes": 14322176,
+      "includes_model": false
+    },
+    {
+      "block": 1,
+      "order": 6,
+      "method": "MATCHED_ENERGY",
+      "seconds": 0.5702640399977099,
+      "ms_per_token": 4.455187812482109,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 17351168,
+      "includes_model": false
+    },
+    {
+      "block": 2,
+      "order": 0,
+      "method": "MATCHED_ENERGY",
+      "seconds": 0.6450455010017322,
+      "ms_per_token": 5.039417976576033,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 17351168,
+      "includes_model": false
+    },
+    {
+      "block": 2,
+      "order": 1,
+      "method": "NATIVE_FP32",
+      "seconds": 0.009835147000558209,
+      "ms_per_token": 0.076837085941861,
+      "payload_bytes": 262144,
+      "peak_allocated_bytes": 14322176,
+      "includes_model": false
+    },
+    {
+      "block": 2,
+      "order": 2,
+      "method": "STORED_NEAREST",
+      "seconds": 0.9846192359982524,
+      "ms_per_token": 7.692337781236347,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 22245888,
+      "includes_model": false
+    },
+    {
+      "block": 2,
+      "order": 3,
+      "method": "FA_CODE_REFERENCE",
+      "seconds": 3.449133261998213,
+      "ms_per_token": 26.94635360936104,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 28039168,
+      "includes_model": false
+    },
+    {
+      "block": 2,
+      "order": 4,
+      "method": "FA_CODE_FACTORIZED",
+      "seconds": 3.114154144001077,
+      "ms_per_token": 24.329329250008414,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 26531840,
+      "includes_model": false
+    },
+    {
+      "block": 2,
+      "order": 5,
+      "method": "RTPA_DIAG",
+      "seconds": 0.8654259700015245,
+      "ms_per_token": 6.7611403906369105,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 17351168,
+      "includes_model": false
+    },
+    {
+      "block": 2,
+      "order": 6,
+      "method": "STORED_NEAREST_REPEAT",
+      "seconds": 1.6415950150003482,
+      "ms_per_token": 12.82496105469022,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 22245888,
+      "includes_model": false
+    },
+    {
+      "block": 3,
+      "order": 0,
+      "method": "MATCHED_ENERGY",
+      "seconds": 0.6596303169972089,
+      "ms_per_token": 5.153361851540694,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 17351168,
+      "includes_model": false
+    },
+    {
+      "block": 3,
+      "order": 1,
+      "method": "RTPA_DIAG",
+      "seconds": 0.634899413002131,
+      "ms_per_token": 4.960151664079149,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 17351168,
+      "includes_model": false
+    },
+    {
+      "block": 3,
+      "order": 2,
+      "method": "FA_CODE_FACTORIZED",
+      "seconds": 3.349434220999683,
+      "ms_per_token": 26.167454851560024,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 26531840,
+      "includes_model": false
+    },
+    {
+      "block": 3,
+      "order": 3,
+      "method": "NATIVE_FP32",
+      "seconds": 0.06003681899892399,
+      "ms_per_token": 0.4690376484290937,
+      "payload_bytes": 262144,
+      "peak_allocated_bytes": 14322176,
+      "includes_model": false
+    },
+    {
+      "block": 3,
+      "order": 4,
+      "method": "STORED_NEAREST_REPEAT",
+      "seconds": 1.1896906110014243,
+      "ms_per_token": 9.294457898448627,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 22245888,
+      "includes_model": false
+    },
+    {
+      "block": 3,
+      "order": 5,
+      "method": "STORED_NEAREST",
+      "seconds": 1.127608489998238,
+      "ms_per_token": 8.809441328111234,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 22245888,
+      "includes_model": false
+    },
+    {
+      "block": 3,
+      "order": 6,
+      "method": "FA_CODE_REFERENCE",
+      "seconds": 4.432304793001094,
+      "ms_per_token": 34.62738119532105,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 28039168,
+      "includes_model": false
+    },
+    {
+      "block": 4,
+      "order": 0,
+      "method": "STORED_NEAREST",
+      "seconds": 0.9791698379995069,
+      "ms_per_token": 7.649764359371147,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 22245888,
+      "includes_model": false
+    },
+    {
+      "block": 4,
+      "order": 1,
+      "method": "FA_CODE_FACTORIZED",
+      "seconds": 2.5458288609988813,
+      "ms_per_token": 19.88928797655376,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 26531840,
+      "includes_model": false
+    },
+    {
+      "block": 4,
+      "order": 2,
+      "method": "FA_CODE_REFERENCE",
+      "seconds": 2.870943873000215,
+      "ms_per_token": 22.429249007814178,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 28039168,
+      "includes_model": false
+    },
+    {
+      "block": 4,
+      "order": 3,
+      "method": "RTPA_DIAG",
+      "seconds": 0.5406661279994296,
+      "ms_per_token": 4.223954124995544,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 17351168,
+      "includes_model": false
+    },
+    {
+      "block": 4,
+      "order": 4,
+      "method": "STORED_NEAREST_REPEAT",
+      "seconds": 0.8938270610015024,
+      "ms_per_token": 6.983023914074238,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 22245888,
+      "includes_model": false
+    },
+    {
+      "block": 4,
+      "order": 5,
+      "method": "MATCHED_ENERGY",
+      "seconds": 0.6737516190005408,
+      "ms_per_token": 5.263684523441725,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 17351168,
+      "includes_model": false
+    },
+    {
+      "block": 4,
+      "order": 6,
+      "method": "NATIVE_FP32",
+      "seconds": 0.010000394999224227,
+      "ms_per_token": 0.07812808593143927,
+      "payload_bytes": 262144,
+      "peak_allocated_bytes": 14322176,
+      "includes_model": false
+    },
+    {
+      "block": 5,
+      "order": 0,
+      "method": "FA_CODE_REFERENCE",
+      "seconds": 3.0970627360002254,
+      "ms_per_token": 24.19580262500176,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 28039168,
+      "includes_model": false
+    },
+    {
+      "block": 5,
+      "order": 1,
+      "method": "FA_CODE_FACTORIZED",
+      "seconds": 3.609567581999727,
+      "ms_per_token": 28.199746734372866,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 26531840,
+      "includes_model": false
+    },
+    {
+      "block": 5,
+      "order": 2,
+      "method": "STORED_NEAREST",
+      "seconds": 1.2616149200002837,
+      "ms_per_token": 9.856366562502217,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 22245888,
+      "includes_model": false
+    },
+    {
+      "block": 5,
+      "order": 3,
+      "method": "MATCHED_ENERGY",
+      "seconds": 0.732068358000106,
+      "ms_per_token": 5.719284046875828,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 17351168,
+      "includes_model": false
+    },
+    {
+      "block": 5,
+      "order": 4,
+      "method": "STORED_NEAREST_REPEAT",
+      "seconds": 1.0349177329990198,
+      "ms_per_token": 8.085294789054842,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 22245888,
+      "includes_model": false
+    },
+    {
+      "block": 5,
+      "order": 5,
+      "method": "RTPA_DIAG",
+      "seconds": 0.7120856940018712,
+      "ms_per_token": 5.5631694843896184,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 17351168,
+      "includes_model": false
+    },
+    {
+      "block": 5,
+      "order": 6,
+      "method": "NATIVE_FP32",
+      "seconds": 0.009485181999480119,
+      "ms_per_token": 0.07410298437093843,
+      "payload_bytes": 262144,
+      "peak_allocated_bytes": 14322176,
+      "includes_model": false
+    },
+    {
+      "block": 6,
+      "order": 0,
+      "method": "FA_CODE_REFERENCE",
+      "seconds": 3.144324406999658,
+      "ms_per_token": 24.56503442968483,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 28039168,
+      "includes_model": false
+    },
+    {
+      "block": 6,
+      "order": 1,
+      "method": "RTPA_DIAG",
+      "seconds": 0.8835878690006211,
+      "ms_per_token": 6.903030226567353,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 17351168,
+      "includes_model": false
+    },
+    {
+      "block": 6,
+      "order": 2,
+      "method": "STORED_NEAREST_REPEAT",
+      "seconds": 1.5857480599988776,
+      "ms_per_token": 12.388656718741231,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 22245888,
+      "includes_model": false
+    },
+    {
+      "block": 6,
+      "order": 3,
+      "method": "STORED_NEAREST",
+      "seconds": 1.0291327680024551,
+      "ms_per_token": 8.04009975001918,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 22245888,
+      "includes_model": false
+    },
+    {
+      "block": 6,
+      "order": 4,
+      "method": "NATIVE_FP32",
+      "seconds": 0.010858306002774043,
+      "ms_per_token": 0.08483051564667221,
+      "payload_bytes": 262144,
+      "peak_allocated_bytes": 14322176,
+      "includes_model": false
+    },
+    {
+      "block": 6,
+      "order": 5,
+      "method": "MATCHED_ENERGY",
+      "seconds": 0.709484925999277,
+      "ms_per_token": 5.542850984369352,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 17351168,
+      "includes_model": false
+    },
+    {
+      "block": 6,
+      "order": 6,
+      "method": "FA_CODE_FACTORIZED",
+      "seconds": 2.993345473998488,
+      "ms_per_token": 23.38551151561319,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 26531840,
+      "includes_model": false
+    },
+    {
+      "block": 7,
+      "order": 0,
+      "method": "FA_CODE_REFERENCE",
+      "seconds": 3.0289996129977226,
+      "ms_per_token": 23.664059476544708,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 28039168,
+      "includes_model": false
+    },
+    {
+      "block": 7,
+      "order": 1,
+      "method": "STORED_NEAREST",
+      "seconds": 0.9512124229986512,
+      "ms_per_token": 7.431347054676962,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 22245888,
+      "includes_model": false
+    },
+    {
+      "block": 7,
+      "order": 2,
+      "method": "MATCHED_ENERGY",
+      "seconds": 0.6349477680014388,
+      "ms_per_token": 4.960529437511241,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 17351168,
+      "includes_model": false
+    },
+    {
+      "block": 7,
+      "order": 3,
+      "method": "FA_CODE_FACTORIZED",
+      "seconds": 2.838921364000271,
+      "ms_per_token": 22.179073156252116,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 26531840,
+      "includes_model": false
+    },
+    {
+      "block": 7,
+      "order": 4,
+      "method": "RTPA_DIAG",
+      "seconds": 0.5238367179990746,
+      "ms_per_token": 4.09247435936777,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 17351168,
+      "includes_model": false
+    },
+    {
+      "block": 7,
+      "order": 5,
+      "method": "STORED_NEAREST_REPEAT",
+      "seconds": 1.0974976440011233,
+      "ms_per_token": 8.574200343758775,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 22245888,
+      "includes_model": false
+    },
+    {
+      "block": 7,
+      "order": 6,
+      "method": "NATIVE_FP32",
+      "seconds": 0.010568794001301285,
+      "ms_per_token": 0.08256870313516629,
+      "payload_bytes": 262144,
+      "peak_allocated_bytes": 14322176,
+      "includes_model": false
+    }
+  ],
+  "scope": "eager operator update/readout/codec; fixed128tokens; allTRAIN/metric tensors resident, not isolated model memory"
+}

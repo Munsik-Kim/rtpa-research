@@ -1,0 +1,240 @@
+{
+  "run_id": "RTPA_GDN_GDN2_20260911_V1",
+  "role": "CAL_APPLICABILITY_FAILURE_EVIDENCE",
+  "scope": "all18 GDN layers; actual first64 tokens of one CAL input; not fresh TEST quality",
+  "model": "Qwen/Qwen3.5-0.8B-Base",
+  "model_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "codec": "P_PRE UINT8/H32/group32/FP16scale+zero; original-coordinateFP16high8",
+  "original_failure_receipt_sha256": "4fff79206aadfac52b263f89cadea89cc5ba92bdc7c671ccf53aa0586de65008",
+  "original_policy_sha256": "bd865a1a138ed25a98e8db5b5dabb26ff259307be3ba2f071a04ceb71faace68",
+  "mask_source_key": "masks/MATCHED_ENERGY8/10",
+  "source_CAL_input_sha256": "bf5efbad57860c62ee05b1f157c58f66d63be904f8f0ba5de989db3cf5dd663d",
+  "source_CAL_hash_scope": "Parent256-token CAL input; failure probe uses its first64 tokens",
+  "coordinate_rule": "ascending unprotected key rows: physical_row=flatnonzero(~high_mask)[low_index]",
+  "array_policy": "Pickle-free NPZ; original nonfinite metadata retained. JSON nonfinite fields use null+reason.",
+  "at_probe_whole_source_identity": "UNKNOWN",
+  "source_identity_reason": "No separate immutable source manifest was captured at failure-probe start; the later TESTfreeze cannot establish retroactive identity.",
+  "later_TEST_freeze": {
+    "UTC": "2026-09-11T07:44:04Z",
+    "sha256": "cd0f3ab7fc16b799ed2a891178c9c86194111ccae17ddb24181660f8b5429d5c",
+    "authority": "LATER_TEST_FREEZE_NOT_PRE_PROBE_ATTESTATION"
+  },
+  "source_mapping": [
+    {
+      "path": "src/rtpa_research/benchmark.py",
+      "later_TEST_freeze_sha256": "1a3d9efec4b9b712ae4728a4777429e451afe1ca0ef5e059d94b38baf0b64071",
+      "current_at_curation_sha256": "1a3d9efec4b9b712ae4728a4777429e451afe1ca0ef5e059d94b38baf0b64071",
+      "at_probe_file_sha256": null,
+      "at_probe_file_sha256_reason": "NO_SEPARATE_PRE_PROBE_SOURCE_MANIFEST"
+    },
+    {
+      "path": "src/rtpa_research/calibration.py",
+      "later_TEST_freeze_sha256": "1aac2598d1af6920285e6ccfa11bb4a92d3f1d2453549cb89841768e45db0038",
+      "current_at_curation_sha256": "1aac2598d1af6920285e6ccfa11bb4a92d3f1d2453549cb89841768e45db0038",
+      "at_probe_file_sha256": null,
+      "at_probe_file_sha256_reason": "NO_SEPARATE_PRE_PROBE_SOURCE_MANIFEST"
+    },
+    {
+      "path": "src/rtpa_research/codec.py",
+      "later_TEST_freeze_sha256": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069",
+      "current_at_curation_sha256": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069",
+      "at_probe_file_sha256": null,
+      "at_probe_file_sha256_reason": "NO_SEPARATE_PRE_PROBE_SOURCE_MANIFEST"
+    },
+    {
+      "path": "src/rtpa_research/factorized.py",
+      "later_TEST_freeze_sha256": "d6947df1f614b9dcb7372878e7fbc9e05626ff40c7e86c2cb80e819ae560e08e",
+      "current_at_curation_sha256": "d6947df1f614b9dcb7372878e7fbc9e05626ff40c7e86c2cb80e819ae560e08e",
+      "at_probe_file_sha256": null,
+      "at_probe_file_sha256_reason": "NO_SEPARATE_PRE_PROBE_SOURCE_MANIFEST"
+    },
+    {
+      "path": "src/rtpa_research/layout.py",
+      "later_TEST_freeze_sha256": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276",
+      "current_at_curation_sha256": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276",
+      "at_probe_file_sha256": null,
+      "at_probe_file_sha256_reason": "NO_SEPARATE_PRE_PROBE_SOURCE_MANIFEST"
+    },
+    {
+      "path": "src/rtpa_research/operators.py",
+      "later_TEST_freeze_sha256": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78",
+      "current_at_curation_sha256": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78",
+      "at_probe_file_sha256": null,
+      "at_probe_file_sha256_reason": "NO_SEPARATE_PRE_PROBE_SOURCE_MANIFEST"
+    },
+    {
+      "path": "src/rtpa_research/reference_encoder.py",
+      "later_TEST_freeze_sha256": "d7272e7c4d600da3cbfcb9196be140afdb08b0f33c6751d51c744b4429ac7b53",
+      "current_at_curation_sha256": "d7272e7c4d600da3cbfcb9196be140afdb08b0f33c6751d51c744b4429ac7b53",
+      "at_probe_file_sha256": null,
+      "at_probe_file_sha256_reason": "NO_SEPARATE_PRE_PROBE_SOURCE_MANIFEST"
+    },
+    {
+      "path": "src/rtpa_research/runtime.py",
+      "later_TEST_freeze_sha256": "afbfcbad6f18879151a827a1473869ea60c5d80f1f32689ee408d7d08cb6f8d2",
+      "current_at_curation_sha256": "afbfcbad6f18879151a827a1473869ea60c5d80f1f32689ee408d7d08cb6f8d2",
+      "at_probe_file_sha256": null,
+      "at_probe_file_sha256_reason": "NO_SEPARATE_PRE_PROBE_SOURCE_MANIFEST"
+    }
+  ],
+  "current_probe_function": {
+    "path": "src/rtpa_research/benchmark.py",
+    "function": "all_layer_failure",
+    "sha256": "106df4a9b16b24b502537288808215bd58be8b68e7552ca2a9c47d8ffbbe390e",
+    "hash_scope": "UTF8 ast.get_source_segment at curation; not historical identity proof"
+  },
+  "CAL_completion_rows": [
+    {
+      "method": "NATIVE",
+      "scope": "all18 recurrent layers",
+      "planned_CAL_tokens": 64,
+      "completed_model_tokens": 64,
+      "failure": null
+    },
+    {
+      "method": "MATCHED_ENERGY",
+      "scope": "all18 recurrent layers",
+      "planned_CAL_tokens": 64,
+      "completed_model_tokens": 64,
+      "failure": null
+    },
+    {
+      "method": "RTPA_DIAG",
+      "scope": "all18 recurrent layers",
+      "planned_CAL_tokens": 64,
+      "completed_model_tokens": 64,
+      "failure": null
+    },
+    {
+      "method": "DAMP_PAPER_ADAPTED",
+      "scope": "all18 recurrent layers",
+      "planned_CAL_tokens": 64,
+      "completed_model_tokens": 64,
+      "failure": null
+    },
+    {
+      "method": "STORED_NEAREST",
+      "scope": "all18 recurrent layers",
+      "planned_CAL_tokens": 64,
+      "completed_model_tokens": 58,
+      "failure": {
+        "token": 58,
+        "reason": "NONFINITE_ENCODED_PAYLOAD",
+        "first_boundaries": [
+          {
+            "layer": 10,
+            "boundary": "post_readout_storage",
+            "write_index": 58,
+            "z_finite": true,
+            "z_absmax": 0.7159351706504822,
+            "nonfinite_payload_coordinates": {
+              "low_zeros": [
+                [
+                  12,
+                  13,
+                  0,
+                  0
+                ]
+              ]
+            }
+          }
+        ],
+        "snapshot_sha256": "a5ea50ae7406d7aec150a014d43bb00bc962efa49008f73b3e319886c85ffd0a"
+      }
+    },
+    {
+      "method": "FA_CODE_FACTORIZED",
+      "scope": "all18 recurrent layers",
+      "planned_CAL_tokens": 64,
+      "completed_model_tokens": 55,
+      "failure": {
+        "token": 55,
+        "reason": "NONFINITE_ENCODED_PAYLOAD",
+        "first_boundaries": [
+          {
+            "layer": 10,
+            "boundary": "post_readout_storage",
+            "write_index": 55,
+            "z_finite": true,
+            "z_absmax": 0.6887953281402588,
+            "nonfinite_payload_coordinates": {
+              "low_zeros": [
+                [
+                  12,
+                  112,
+                  0,
+                  0
+                ]
+              ]
+            }
+          }
+        ],
+        "snapshot_sha256": "166a3b0f80c40185e6c56894950f19775aa14d6f58aec77f1b63475422646b8e"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "method": "STORED_NEAREST",
+      "token_0_based": 58,
+      "layer": 10,
+      "head": 12,
+      "physical_key_row": 14,
+      "value_group": 0,
+      "gpu_payload_coordinate_head_lowindex_group_scalar": [
+        12,
+        13,
+        0,
+        0
+      ],
+      "boundary": "post_readout_storage",
+      "write_index": 58,
+      "planned_CAL_tokens": 64,
+      "completed_model_tokens": 58,
+      "attempted_model_forwards": 59,
+      "subsequent_NOT_RUN_tokens": 5,
+      "current_token_logits": null,
+      "current_token_logits_reason": "NOT_PRODUCED_STORAGE_EXCEPTION",
+      "source_snapshot_identifier": "all18_failures/STORED_NEAREST.pt",
+      "source_snapshot_sha256": "a5ea50ae7406d7aec150a014d43bb00bc962efa49008f73b3e319886c85ffd0a",
+      "source_snapshot_bytes": 1360806,
+      "source_finite_Z_full16head_absmax": 0.7159351706504822,
+      "fixture": "stored_nearest.npz",
+      "fixture_sha256": "0a8d654a9506896e7234b98ad4fd9afc7a8ae3bf1e32fca5e79bf92cdfddea57",
+      "fixture_bytes": 81526,
+      "extraction": "Exact original FP32 head12 and stored payload head12; MATCHED_ENERGY8 mask from original policy layer10; no tensor precision conversion."
+    },
+    {
+      "method": "FA_CODE_FACTORIZED",
+      "token_0_based": 55,
+      "layer": 10,
+      "head": 12,
+      "physical_key_row": 119,
+      "value_group": 0,
+      "gpu_payload_coordinate_head_lowindex_group_scalar": [
+        12,
+        112,
+        0,
+        0
+      ],
+      "boundary": "post_readout_storage",
+      "write_index": 55,
+      "planned_CAL_tokens": 64,
+      "completed_model_tokens": 55,
+      "attempted_model_forwards": 56,
+      "subsequent_NOT_RUN_tokens": 8,
+      "current_token_logits": null,
+      "current_token_logits_reason": "NOT_PRODUCED_STORAGE_EXCEPTION",
+      "source_snapshot_identifier": "all18_failures/FA_CODE_FACTORIZED.pt",
+      "source_snapshot_sha256": "166a3b0f80c40185e6c56894950f19775aa14d6f58aec77f1b63475422646b8e",
+      "source_snapshot_bytes": 1360850,
+      "source_finite_Z_full16head_absmax": 0.6887953281402588,
+      "fixture": "fa_code_factorized.npz",
+      "fixture_sha256": "37a3a2070a21bd40f0459e9252f931d52e1a62459264cf1ae9fb393a6c463645",
+      "fixture_bytes": 81558,
+      "extraction": "Exact original FP32 head12 and stored payload head12; MATCHED_ENERGY8 mask from original policy layer10; no tensor precision conversion."
+    }
+  ],
+  "interpretation": "Nearest/FA fail during base payload encode, before current-write nearest/correction selection. This does not identify why their earlier own trajectories differ.",
+  "allocation_completion_limit": "Native, MATCHED_ENERGY, RTPA_DIAG and DAMP_PAPER_ADAPTED completed64CALtokens; no TEST or full-length stability claim."
+}

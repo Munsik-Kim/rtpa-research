@@ -1,0 +1,33 @@
+{
+  "run_id": "RTPA_GDN_GDN2_20260911_V1",
+  "completion": "COMPLETED_REGISTERED_MEASUREMENTS",
+  "quality_GDN_DIAG": "QUALITY_SUPPORTED_IN_SCOPE",
+  "quality_GDN_FA_CODE": "QUALITY_SUPPORTED_IN_SCOPE_FOR_KL_NOT_NLL_OR_ACCURACY",
+  "quality_GDN2_operator": "ADVERSE_QUALITY_OBSERVATION",
+  "cost_GDN_DIAG_vs_energy": "COST_UNRESOLVED",
+  "cost_GDN_FA_CODE_vs_nearest": "COST_TARGET_NOT_MET",
+  "cost_GDN_factorized_vs_reference_speedup": "UNRESOLVED_INTERVAL_INCLUDES_ONE",
+  "cost_GDN2_operator_factorized_vs_reference_speedup": "SUPPORTED_IN_SCOPE",
+  "cost_GDN2_operator_FA_CODE_vs_nearest": "COST_TARGET_NOT_MET",
+  "storage": "STATE_STORAGE_VERIFIED",
+  "whole_model_VRAM_saving": "NOT_OBSERVED_IN_ALLOCATOR_PEAK",
+  "optimized_packed_or_fused_runtime": "NOT_VERIFIED",
+  "numerical_stability": "NUMERICAL_FAILURE_RETAINED",
+  "support": {
+    "GDN": "MODEL_EVALUATED_FIXED_QWEN_REVISION; allocation18layers, code_correction3layers",
+    "GDN2": "OPERATOR_TESTED; official trained checkpoint integration not verified"
+  },
+  "research_axes": {
+    "energy_vs_future_response": "MIXED; standard algebra and bounded diagnostic evidence, no new general theorem",
+    "offline_response_to_small_runtime_rule": "SUPPORTED_IN_SCOPE_FOR_GDN_KL; GDN2 operator transfer adverse",
+    "matched_quality_cost_task": "GDN_KL_SUPPORTED; NLL_UNRESOLVED; COST_MIXED_OR_NOT_MET; NEW_TASK_NOT_EVALUATED"
+  },
+  "recommendation": "RTPA_DIAG_AS_RESEARCH_STARTING_PATH_WITH_MATCHED_BASELINE; FA_CODE_EXPERIMENTAL",
+  "next_development": "A separate common-codec numerical revision for finite-input FP16 zero-point overflow, checked against the retained fixtures and applied to every comparator before any new quality benchmark.",
+  "next_success_criteria": "Independent encode/decode agreement on ordinary and narrow same-sign groups, finite reconstruction of retained failures without hidden FP32 persistent metadata, declared bytes and rounding changes, then separately frozen quality and cost checks.",
+  "historical_decisions_overwritten": false,
+  "production_readiness": "NOT_ESTABLISHED",
+  "no_new_experiment_automatically_started": true,
+  "source": "results/upgrade/reproduction_expected.json",
+  "source_sha256": "0adcfc48035f797852d41da9803981514d8137a13b75ab568891cf2d1de45938"
+}

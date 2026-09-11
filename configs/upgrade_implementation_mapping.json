@@ -1,0 +1,73 @@
+{
+  "revision": "RTPA_UPGRADE_IMPLEMENTATION_MAPPING_20260911",
+  "historical_source_mapping": "configs/source_mapping.json",
+  "historical_expectations_unchanged": true,
+  "original_to_current": [
+    {
+      "original_path": "experiments/rtpa_v03d1/codec.py",
+      "original_sha256": "4b768f79914f3dcec95c00c6cd64bb6b52ff136e456531b145ce19dcfdb5656a",
+      "exported_path": "src/rtpa_research/codec.py",
+      "exported_sha256": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069",
+      "original_imports": [
+        "from __future__ import annotations",
+        "import math",
+        "import torch",
+        "from experiments.rtpa_v01.core import Layout, tensor_bytes"
+      ],
+      "exported_imports": [
+        "from __future__ import annotations",
+        "import math",
+        "import torch",
+        "from .layout import Layout, tensor_bytes"
+      ],
+      "AST_excluding_imports_equal": true,
+      "normalized_AST_sha256": "85e321e9769dc2a54641fd8379086313a20a402b60e1212768fe57cfb6bd6c4f",
+      "normalization": "Python3.11 ast.dump(include_attributes=False,indent=2), only Import and ImportFrom nodes removed; docstrings, expressions, defaults, constants and class/function bodies retained",
+      "original_after_sha256": "4b768f79914f3dcec95c00c6cd64bb6b52ff136e456531b145ce19dcfdb5656a"
+    },
+    {
+      "original_path": "experiments/fa_code_v01_20260911_0814/code/encoder.py",
+      "original_sha256": "7bd56609b0114c79a7dd0dfaf104642cd028730ba833b1954002b7cba4b904c4",
+      "exported_path": "src/rtpa_research/reference_encoder.py",
+      "exported_sha256": "d7272e7c4d600da3cbfcb9196be140afdb08b0f33c6751d51c744b4429ac7b53",
+      "original_imports": [
+        "from __future__ import annotations",
+        "import math",
+        "from typing import Dict, Tuple",
+        "import torch",
+        "from experiments.rtpa_v03d1.codec import Codec as ParentCodec",
+        "from experiments.rtpa_v01.core import Layout, tensor_bytes"
+      ],
+      "exported_imports": [
+        "from __future__ import annotations",
+        "import math",
+        "from typing import Dict, Tuple",
+        "import torch",
+        "from .codec import Codec as ParentCodec",
+        "from .layout import Layout, tensor_bytes"
+      ],
+      "AST_excluding_imports_equal": true,
+      "normalized_AST_sha256": "a9b0a21b31db84fee2f96c23b71bfebcfafc066b68b2f6fbc405bce81f62379b",
+      "normalization": "Python3.11 ast.dump(include_attributes=False,indent=2), only Import and ImportFrom nodes removed; docstrings, expressions, defaults, constants and class/function bodies retained",
+      "original_after_sha256": "7bd56609b0114c79a7dd0dfaf104642cd028730ba833b1954002b7cba4b904c4"
+    }
+  ],
+  "new_modules": {
+    "src/rtpa_research/factorized.py": "FP64 low-rank execution and observation-only diagnostic removal; fixed decisions checked on TRAIN/synthetic CPU+CUDA and bounded CAL model prefixes.",
+    "src/rtpa_research/runtime.py": "Native Transformers5.9.0 storage adapter; actual per-token own-state model path with compressed persistent payload.",
+    "src/rtpa_research/operators.py": "Independent GDN/GDN2 equation implementation; no copied NVlabs source.",
+    "src/rtpa_research/calibration.py": "TRAIN-only source propagation and statistics; not imported by runtime decision policy.",
+    "src/rtpa_research/benchmark.py": "Frozen numerical run and budget/receipt machinery; use validated public wrapper for model invocation.",
+    "scripts/run_gdn_benchmark.py": "Post-freeze administrative entry validation only; exact fixed checkpoint content checked before unchanged runner. Does not change numerical source or expected results."
+  },
+  "parity_receipts": [
+    "data/benchmarks/gdn/encoder_parity_cpu.json",
+    "data/benchmarks/gdn/encoder_parity_cuda.json",
+    "data/benchmarks/gdn/metric_backend_parity.json",
+    "data/benchmarks/gdn/conformance.json",
+    "data/benchmarks/gdn2/parity.json"
+  ],
+  "scope_limit": "AST import-relocation checks and finite tensor-point policy parity are not proof of universal bitwise equality or an independent full-model replication.",
+  "external_implementation": "Transformers5.9.0 native Qwen3.5 source; SHA in environment receipt; weights and external library source are not bundled.",
+  "inherited_FA_policy": "v0.5 TRAIN9 MATCHED_ENERGY8 masks + FA_CODE TRAIN12 m2_l1_e005 metric; actual NPZ and hashes included."
+}

@@ -1,0 +1,48 @@
+{
+  "evaluation_level": "OPERATOR_TESTED",
+  "quality": {
+    "mean_output_SSE_per_token_all4heads": {
+      "NATIVE_FP32": 0.0,
+      "MATCHED_ENERGY": 0.0001232391526140871,
+      "RTPA_DIAG": 0.0001235815657261071,
+      "STORED_NEAREST": 0.00012310828222689358,
+      "FA_CODE_FACTORIZED": 0.00012356008108868732
+    },
+    "comparisons": [
+      {
+        "candidate": "RTPA_DIAG",
+        "baseline": "MATCHED_ENERGY",
+        "relative_output_SSE_reduction": -0.0027784442261806763,
+        "CI95": [
+          -0.005535633741537732,
+          -0.0002768866961608394
+        ],
+        "wins": 4,
+        "n": 12
+      },
+      {
+        "candidate": "FA_CODE_FACTORIZED",
+        "baseline": "STORED_NEAREST",
+        "relative_output_SSE_reduction": -0.0036699306790834996,
+        "CI95": [
+          -0.005905757211422025,
+          -0.0016199587411810169
+        ],
+        "wins": 2,
+        "n": 12
+      }
+    ],
+    "independent_unit": "synthetic operand sequence",
+    "failures": 0
+  },
+  "elapsed_seconds": 227.1642038229984,
+  "model_forwards": 0,
+  "operator_updates": 24224,
+  "shared_U_ridge_bytes": 8224,
+  "mixed_payload_bytes_per_head": 19328,
+  "native_FP32_state_bytes_per_head": 65536,
+  "language_KL": "NOT_RUN_OFFICIAL_CHECKPOINT_NOT_VERIFIED",
+  "language_NLL": "NOT_RUN_OFFICIAL_CHECKPOINT_NOT_VERIFIED",
+  "official_kernel": "NOT_RUN; independently written equation implementation",
+  "device": "cuda"
+}

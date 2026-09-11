@@ -1,5 +1,12 @@
 # Reproduction guide and verification levels
 
+For the newly executable model/operator paths and installed-wheel commands, see
+[Quickstart](QUICKSTART.md). [Benchmarks](BENCHMARKS.md) identifies new GPU
+measurements separately from the historical reconstruction described below.
+The CPU package now carries its curated evidence inside the wheel; neither the
+original research directory nor a particular user's absolute path is required.
+GPU imports remain opt-in. A successful CPU CI run is not GPU certification.
+
 ## Model-free CPU reconstruction
 
 Requirements: Python 3.11, NumPy 1.26.4, and tokenizers 0.22.2. From this repository's root, without the original project, CUDA, model cache, Torch, Transformers, or API credentials:
@@ -40,7 +47,7 @@ The tokenizer/configuration is not model weights; its original Apache-2.0 [LICEN
 
 The English publication changes reader-facing documentation and licensing, not archived numerical sources, raw observations, masks, frozen decisions, or computed tables. Korean strings in historical report templates and evidence remain unchanged for provenance.
 
-## Full GPU reproduction is separate, opt-in, and NOT_RUN here
+## Historical full GPU reproduction is separate and NOT_RUN by CPU verification
 
 ```bash
 PYTHONPATH=src python -m rtpa_research gpu-requirements

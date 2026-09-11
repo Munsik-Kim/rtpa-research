@@ -1,0 +1,43 @@
+{
+  "python": "3.11.15",
+  "torch": "2.11.0+cu128",
+  "transformers": "5.9.0",
+  "numpy": "1.26.4",
+  "CUDA": "12.8",
+  "GPU": "NVIDIA GeForce RTX 5080",
+  "model_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "layers": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    16,
+    17,
+    18,
+    20,
+    21,
+    22
+  ],
+  "head_shape": [
+    16,
+    128,
+    128
+  ],
+  "model_dtype": "torch.bfloat16",
+  "native_source_sha256": "d67880b98f47d55a9d40679c901a740aa0618b97458824cab2abe9a1f7861be6",
+  "native_source_version": "Transformers5.9.0",
+  "native_update_dtype": "FP32",
+  "native_cache_dtype": "BF16",
+  "attention_backend": "sdpa",
+  "TF32": false,
+  "threads": 2,
+  "model_weights_bytes": 1705971840
+}
