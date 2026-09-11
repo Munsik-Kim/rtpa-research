@@ -7,8 +7,8 @@
     },
     {
       "path": ".github/workflows/cpu-evidence.yml",
-      "bytes": 2375,
-      "sha256": "17f9b077c15f0914b8b09d5d4bc20b4ec80065bc9f095edc2ae9f8e3e6fb1ce7"
+      "bytes": 2704,
+      "sha256": "b5b1adca74150843db3cd8f1345fc5e56500120a9fa9777c387f7d127061b6e6"
     },
     {
       "path": ".gitignore",

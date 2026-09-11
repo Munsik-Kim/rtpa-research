@@ -37,7 +37,11 @@ jobs:
         run: |
           python -m build --wheel
           python -m venv /tmp/rtpa-wheel-test
-          /tmp/rtpa-wheel-test/bin/python -m pip install dist/*.whl
+          wheel_file="$(realpath dist/*.whl)"
+          cd /tmp
+          # Do not let source-tree egg-info masquerade as an installed package.
+          PYTHONPATH="" /tmp/rtpa-wheel-test/bin/python -m pip install "$wheel_file"
+          PYTHONPATH="" /tmp/rtpa-wheel-test/bin/python -c 'import pathlib, sys, rtpa_research; assert pathlib.Path(rtpa_research.__file__).is_relative_to(sys.prefix)'
       - name: Verify installed evidence without the source checkout on PYTHONPATH
         working-directory: /tmp
         env:
