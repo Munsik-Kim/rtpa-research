@@ -1,0 +1,282 @@
+{
+  "frozen_utc": "2026-09-11T07:44:04Z",
+  "files": [
+    {
+      "path": "src/rtpa_research/__init__.py",
+      "sha256": "586553eed9a87aed61252d3e7e1228e37489bdb2e0b21ae1ddc10d41ced4f5fa",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "src/rtpa_research/__main__.py",
+      "sha256": "ec94e097c0bcb4b072495d44169eb2d7c77a8ed13bd7790045033e7a10e1f011",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "src/rtpa_research/_build.py",
+      "sha256": "c6defb50fe8473bb837a8864db08ed3ee59b1971360f7cec9d1c6180d04e26e1",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "src/rtpa_research/benchmark.py",
+      "sha256": "1a3d9efec4b9b712ae4728a4777429e451afe1ca0ef5e059d94b38baf0b64071",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "src/rtpa_research/benchmark_analysis.py",
+      "sha256": "6952dcdba582c2b8c92876a5517187ea40896cf30149b511f74c3abaaf4f3e82",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "src/rtpa_research/benchmark_data.py",
+      "sha256": "e23ffe7c1ccbfe04940e8ac5380f96b8cf14ea1e01913993dc7cb18e7f01cce4",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "src/rtpa_research/boundary.py",
+      "sha256": "462f0cf9379db4edb032e9fcbc835c2aa2f8a641ad59eda527effd3286cd96b5",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "src/rtpa_research/calibration.py",
+      "sha256": "1aac2598d1af6920285e6ccfa11bb4a92d3f1d2453549cb89841768e45db0038",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "src/rtpa_research/codec.py",
+      "sha256": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "src/rtpa_research/fa_evidence.py",
+      "sha256": "4473caa25834b973587d69e9bd429437bda96248b4325ff97c4917668b0b5b2e",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "src/rtpa_research/factorized.py",
+      "sha256": "d6947df1f614b9dcb7372878e7fbc9e05626ff40c7e86c2cb80e819ae560e08e",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "src/rtpa_research/io.py",
+      "sha256": "9bfdd227e7db2626abf39418a0973e443a801a4657a7626385f536f6ede7300f",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "src/rtpa_research/layout.py",
+      "sha256": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "src/rtpa_research/operator_benchmark.py",
+      "sha256": "0b0e8612b5da8f7637be4e171a687aaebf1c9bae3b26b9d9751a84b3cd015299",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "src/rtpa_research/operator_reproduce.py",
+      "sha256": "29e38f6f170ba5ee18491eefd73d4439dbf75cb9aa5b391f33fefc844f4bc9af",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "src/rtpa_research/operators.py",
+      "sha256": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "src/rtpa_research/reference_encoder.py",
+      "sha256": "d7272e7c4d600da3cbfcb9196be140afdb08b0f33c6751d51c744b4429ac7b53",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "src/rtpa_research/reproduce.py",
+      "sha256": "fa0e168b755d2d107838a0d49a51eec4dcb01e8540166194f08ce6292e5598a0",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "src/rtpa_research/resources.py",
+      "sha256": "b96099e34810d68146be1e49862a38907458e9757dba0b6cf225c40cc94b457e",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "src/rtpa_research/runtime.py",
+      "sha256": "afbfcbad6f18879151a827a1473869ea60c5d80f1f32689ee408d7d08cb6f8d2",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "src/rtpa_research/tables.py",
+      "sha256": "0bcc2a815ce46ff12849c119737cb7416083189f4592b1aac542641383f541b2",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "src/rtpa_research/task_generator.py",
+      "sha256": "8bfd85e9132bbcf16e7bb47e6a9880c9f33b8b1407c0227550054c6fd6993e56",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "src/rtpa_research/verify.py",
+      "sha256": "37824a71d334df40d412fbab00b2da0d0fac795dc224785c7b2e2717ab8eeeec",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "configs/benchmark_development_contract.json",
+      "sha256": "8461774717508d0089bda752cd2cfefd8f0f654b7adb36dd9278d10568feeca5",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/protocol.json",
+      "sha256": "61f88f1b2cf63e5bd7abc5805d412d0186eb5576b1a8c15046712278cba771e7",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/test_panel.json",
+      "sha256": "7bfd31dbe94a1e482f72f999da48b385eb82e32293ebf7c0678fafe0ce2516fa",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/train_panel.json",
+      "sha256": "970d31bd52c0ba0b2e667df93b2e523466c2c6a14df6b69d4cad90040ba20b6d",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/cal_panel.json",
+      "sha256": "e592b296f6049b6a16f21a7fdee0fffeddd40f72c30227f0506dd6868b279f6c",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/policy.npz",
+      "sha256": "bd865a1a138ed25a98e8db5b5dabb26ff259307be3ba2f071a04ceb71faace68",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/eval_policy.npz",
+      "sha256": "355492d26bfe8be47660d28f6820f18ebce581c7d712c834028bbaafc5a04da9",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/calibration_cost.json",
+      "sha256": "74d83c8ed6a689e433e5cf39c52d6d7038f2bbe8ec33f966117471e8bc424a2d",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/capture/train_associative_recall_0.json",
+      "sha256": "299f7bedde937264a7a0552ed30cc491278a73af12141145135e1eefee677bda",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/capture/train_associative_recall_1.json",
+      "sha256": "0cc577c337f03aeb0c90858b922b424358849702b634c6cdab40ae250ace0292",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/capture/train_code_0.json",
+      "sha256": "f73942b58f155ad84e2a61b55e6f14cfd1e5e26623cfbf9a8619bd99165d5f16",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/capture/train_code_1.json",
+      "sha256": "cdbd23134c414a3889a286d681e01f3b9b6bca53dae14a11bfafba958491f4c3",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/capture/train_natural_language_0.json",
+      "sha256": "ced90800b676c2018e9e1ba2f8500dd8d6eead6b3f2ee75ca82374214b9fc87b",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/capture/train_natural_language_1.json",
+      "sha256": "ce981b007778a4d070a0ec00976a8e4296aecadc06a647092b8a856735ec0853",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/fit/layer0.json",
+      "sha256": "86392e953ec62d8de5ded31440c70705943e64facbcfaf70de93a6d46e7504eb",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/fit/layer1.json",
+      "sha256": "af17cdbb0719570397ebb3592342b1688ac6b88e4b951cd72f8f06dda3ac01b2",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/fit/layer10.json",
+      "sha256": "597458ea55268d62ade5896a7becb4c6af1422cd1b981833ffd86fd7b83a3a1b",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/fit/layer12.json",
+      "sha256": "2e6b60b8efe3ca748a00e551d2e695a7872e6f8f5740572bfd5c1da4faee4c13",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/fit/layer13.json",
+      "sha256": "99b5f9fd6d371e37d69f53181299dbfa0945b2d9598aa678185bf51857d9c912",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/fit/layer14.json",
+      "sha256": "51e5d6e5021350b3676d1873c17997c6b0ee946e351de8557a6dfa45b296f139",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/fit/layer16.json",
+      "sha256": "efb257d0da56d47d43de0f924dc4b892700c2ac913441bfcb51797eaf174505e",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/fit/layer17.json",
+      "sha256": "09c652ae6ad4d64e03e9d2586af550c44b3a2b2a0a0af67b186a53084bdb9f1b",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/fit/layer18.json",
+      "sha256": "7cae2954cd4a10a765feccf88985c261fe49817fcd95f2df6d9b28e1808ef5eb",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/fit/layer2.json",
+      "sha256": "83ed238dde2f4cab8a92e9aad987dcd2ed686a5b9767abfaaa8e74abe99ad68d",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/fit/layer20.json",
+      "sha256": "4b200f6884ef7f92ad0e824cdc1de4d3d1626035fc3c8f2c461b5ec980d4e21a",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/fit/layer21.json",
+      "sha256": "5456ab61b3241b6a58f8cb3e218ca042ee8f7a60d1332db4028f04125bbd200b",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/fit/layer22.json",
+      "sha256": "3a00f3ff0a2db125f0c24af8ff717e9005b96759a837d931e106e24bd9bf340a",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/fit/layer4.json",
+      "sha256": "716063ddccf7e2a373a7474cd3d555e78029319c03f6c3247d87db618a585ce0",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/fit/layer5.json",
+      "sha256": "e119e99c2a081d78de76d3f1e89cf7cb25870663a43d91139095936cb6d58a38",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/fit/layer6.json",
+      "sha256": "fe3048c21cd78e314ee2865f7fbefaeb02f234554d13e08089807be387581761",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/fit/layer8.json",
+      "sha256": "6fccc3dd642f91ee24952010c8ad7fa15f7250e22856466c0c003157eb190b76",
+      "availability": "INCLUDED"
+    },
+    {
+      "path": "data/benchmarks/gdn/fit/layer9.json",
+      "sha256": "b17eb8f7c1df4bdc468aef6030ba295ced2a675e842b5155e68bafd7607430c2",
+      "availability": "INCLUDED"
+    }
+  ],
+  "original_freeze_sha256": "cd0f3ab7fc16b799ed2a891178c9c86194111ccae17ddb24181660f8b5429d5c",
+  "derivation": "Replace local absolute paths with publication paths; hashes unchanged"
+}

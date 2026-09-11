@@ -1,0 +1,6 @@
+{
+  "mismatch_count": 0,
+  "tokens": 32,
+  "heads": 4,
+  "scope": "TRAIN own-state sequential writes; codes and decoded payload exact"
+}

@@ -1,6 +1,64 @@
-# Method: a shared storage codec with different allocation rules
+# Method: output-aware recurrent-state quantization
 
-## Numerical contract
+RTPA has two distinct mechanisms. **RTPA-DIAG** compresses offline output
+responses into a fixed precision mask. **FA_CODE** uses a fixed small metric
+to choose bounded integer-code changes at each recurrent write. They share a
+research motivation, not an additive or multiplicative performance claim.
+See [current benchmark scopes](BENCHMARKS.md) and [executable usage](QUICKSTART.md).
+
+## Fixed metric, bounded runtime code correction
+
+At a write boundary, `Z_own` is the candidate's own current FP32 state. A
+stored-nearest encoder first chooses the closest reconstructed value on the
+**stored FP16 metadata grid**, preserving the legacy code on a tie. FA_CODE
+considers a signed one-code change on at most one unprotected key row per
+transformed value column. It chooses a predicted grid-space quadratic decrease
+exceeding the frozen FP64 evaluation margin, subject to the unchanged grid-space
+energy cap (`eta=.05`), finite rules, code
+range and tie order. High rows, metadata, decoder and payload format do not change.
+
+For the diagonal-plus-rank-two metric `M = lambda I + U Uᵀ`, the new FP64 execution computes
+`M E = lambda E + U(UᵀE)` and `diag(M)=lambda+row_sum(U²)` without retaining dense M.
+The reference implementation remains available. Both actual decode/finite checks
+that could reject a payload are retained; only quadratic diagnostics that do not
+select or reject an action are removed from the hot path. This is a tested
+execution refactor, **not** a proof of bitwise policy identity for every input.
+Rank two describes U in the metric, not the rank of the recurrent state or of
+the complete code-change matrix.
+
+Here `M` means the **FA_CODE execution metric** (equivalently `M_FA`). It is
+not the physical-injection Gram matrix `M_injection = BᵀB` used below. Having
+stored U/ridge for FA_CODE does not recover the missing historical injection
+map B or its energy-normalized response spectrum.
+
+The grid-space residual used for scoring is distinguished from
+`E_phys = decode(payload) − Z_own`. FP32 inverse-H rounding is retained in the
+actual decoder. No future token, Native state/logit, answer, or FP32 shadow cache
+is an encoder argument. Metric and mask are immutable during TEST.
+
+For a single frozen write, `Phi = A_(t+h) … A_(t+1)` and
+`G_t = sum_h w_h Phiᵀ q qᵀ Phi` give `J_G(E)=tr(EᵀG_tE)`.
+Unless G is scalar-isotropic on the permitted error subspace, equal energy need
+not imply equal output risk. This standard linear-algebra fact motivates the
+method; it is not a new theorem about final language-model accuracy. Multiple
+writes, cross-time terms, own-trajectory changes and the nonlinear final model
+remain outside that single-write equivalence.
+
+## Current versus historical scope
+
+The current source independently supports the GDN2 channel-wise transition and
+its nonsymmetric adjoint. It does not reuse GDN's scalar-decay shortcut. GDN2
+experiments are synthetic operator measurements, not trained-model language
+evaluation. [Architecture provenance](ARCHITECTURES.md) explains the distinction.
+
+Historical results below used layers 0/12/22. The new study separately identifies
+all-18-layer allocation and three-layer FA_CODE experiments. Scope is part of each
+comparison, never inferred from the package name. Request cache payloads are
+independent. Caller-supplied immutable metrics can be reused; the measured model
+runner currently loads policy tensors per cache, so its static-byte ledger is
+**per request**, not a claim of global request sharing.
+
+## Historical shared numerical contract
 
 The model revision is `dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68`. Interventions are restricted to GDN layers 0/12/22, 16 state heads per layer, key-by-value state shape 128×128, and eight protected key rows per head. Native is the actual **BF16 weights/cache path with FP32 recurrent update**, not an all-FP32 oracle. The frozen bridge preserves q/k normalization, head mapping, output-before-storage, and per-token writes. Storage error introduced after the current readout propagates to later tokens.
 
@@ -19,7 +77,12 @@ P_PRE does not retain FP32 metadata between tokens. No new clipping, guard, or N
 
 Mixed payload per head is `120 × (128 + 4 × 4) + 8 × 128 × 2 = 19,328 bytes`, or 9.4375 bits/value. Uniform low tier uses 18,432 bytes, so mixed versus U8 includes about 4.86% more payload. The central same-budget comparisons are between mixed methods. Static indices (1,024 bytes/head), H32 (4,096 bytes/layer), and decoded output scratch (1,048,576 bytes/layer) are separate. Payload arithmetic is not a whole-model VRAM measurement.
 
-## Allocation rules
+## Historical allocation rules
+
+This table describes the earlier evidence. The new all-18-layer benchmark uses
+TRAIN6 synthetic inputs; its [frozen protocol](../data/benchmarks/gdn/protocol.json)
+defines that separate calibration. The new three-layer code-correction benchmark
+inherits the v0.5 TRAIN9 matched-energy mask and the FA_CODE TRAIN12 metric.
 
 | Method | Offline selection | Runtime |
 |---|---|---|
@@ -35,7 +98,7 @@ Ties are broken by ascending row index after descending score. Scalar persistenc
 
 ## Energy, physical injections, and Gramians
 
-For the same physical injection map B and frozen response L, `M = BᵀB` and `K = BᵀLᵀLB`. K is a Gramian in source-coefficient space, not `LᵀL` for arbitrary state errors.
+For the same physical injection map B and frozen response L, `M_injection = BᵀB` (historically denoted M) and `K = BᵀLᵀLB`. K is a Gramian in source-coefficient space, not `LᵀL` for arbitrary state errors. This M is distinct from the FA_CODE execution metric above.
 
 The stored objective is `J(m) = J_H + 2cᵀu + uᵀKu`, with `u = 1 − m`. High-tier residual and native arithmetic differences remain in baseline h and c. The homogeneous term `uᵀKu` is not the entire loss. DIAG uses `Kii + 2ci` for diagonal selection with binary u.
 

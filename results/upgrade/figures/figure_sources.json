@@ -1,0 +1,10 @@
+{
+  "gdn_summary": "summary.json",
+  "gdn2_summary": "operator_summary.json",
+  "run_id": "RTPA_GDN_GDN2_20260911_V1",
+  "gdn_summary_sha256": "d239493b8a2204d2842b12b58ca40c44296cf9ce2499dc93d8b4e4df1ca0339e",
+  "gdn2_summary_sha256": "e0d273c67aa6584eff62f5c4081ab1286467c354df65976ab5c7cc4af4da8200",
+  "plot_scope": "Data points and intervals only; no generated or estimated performance",
+  "initial_GDN2_timing": "Excluded from these figures because GPU interference was observed",
+  "matplotlib": "3.10.9"
+}

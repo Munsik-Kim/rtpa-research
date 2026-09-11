@@ -1,0 +1,960 @@
+{
+  "methods": {
+    "NATIVE": {
+      "quantized_layers": [],
+      "payload_scope": "all Native recurrent states",
+      "blocks": 8,
+      "values": {
+        "payload_bytes": [
+          9437184,
+          9437184,
+          9437184,
+          9437184,
+          9437184,
+          9437184,
+          9437184,
+          9437184
+        ],
+        "shared_policy_layout_H_bytes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cache_tensor_bytes": [
+          12288000,
+          12288000,
+          12288000,
+          12288000,
+          12288000,
+          12288000,
+          12288000,
+          12288000
+        ],
+        "peak_allocated_bytes": [
+          1765170688,
+          1765170688,
+          1765170688,
+          1765170688,
+          1765170688,
+          1765170688,
+          1765170688,
+          1765170688
+        ],
+        "peak_reserved_bytes": [
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104
+        ]
+      },
+      "payload_bytes": 9437184,
+      "peak_allocated_bytes": 1765170688,
+      "peak_reserved_bytes": 1891631104,
+      "global_GPU_used_MiB": [
+        {
+          "gpu_before": 4413.0,
+          "gpu_after": 4249.0
+        },
+        {
+          "gpu_before": 4279.0,
+          "gpu_after": 4296.0
+        },
+        {
+          "gpu_before": 10630.0,
+          "gpu_after": 10235.0
+        },
+        {
+          "gpu_before": 11154.0,
+          "gpu_after": 11270.0
+        },
+        {
+          "gpu_before": 11526.0,
+          "gpu_after": 11494.0
+        },
+        {
+          "gpu_before": 11149.0,
+          "gpu_after": 11181.0
+        },
+        {
+          "gpu_before": 11246.0,
+          "gpu_after": 10700.0
+        },
+        {
+          "gpu_before": 11245.0,
+          "gpu_after": 11249.0
+        }
+      ],
+      "global_GPU_is_not_per_process_memory": true,
+      "scratch_peak_separation": "NOT_IDENTIFIABLE_FROM_TOTAL_ALLOCATOR_PEAK"
+    },
+    "MATCHED_ENERGY": {
+      "quantized_layers": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        20,
+        21,
+        22
+      ],
+      "payload_scope": "compressed target layers only; other recurrent states remain native",
+      "blocks": 8,
+      "values": {
+        "payload_bytes": [
+          5566464,
+          5566464,
+          5566464,
+          5566464,
+          5566464,
+          5566464,
+          5566464,
+          5566464
+        ],
+        "shared_policy_layout_H_bytes": [
+          307200,
+          307200,
+          307200,
+          307200,
+          307200,
+          307200,
+          307200,
+          307200
+        ],
+        "cache_tensor_bytes": [
+          8417280,
+          8417280,
+          8417280,
+          8417280,
+          8417280,
+          8417280,
+          8417280,
+          8417280
+        ],
+        "peak_allocated_bytes": [
+          1768201728,
+          1768201728,
+          1768201728,
+          1768201728,
+          1768201728,
+          1768201728,
+          1768201728,
+          1768201728
+        ],
+        "peak_reserved_bytes": [
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104
+        ]
+      },
+      "payload_bytes": 5566464,
+      "peak_allocated_bytes": 1768201728,
+      "peak_reserved_bytes": 1891631104,
+      "global_GPU_used_MiB": [
+        {
+          "gpu_before": 4066.0,
+          "gpu_after": 4111.0
+        },
+        {
+          "gpu_before": 4296.0,
+          "gpu_after": 4386.0
+        },
+        {
+          "gpu_before": 6056.0,
+          "gpu_after": 6691.0
+        },
+        {
+          "gpu_before": 8487.0,
+          "gpu_after": 10666.0
+        },
+        {
+          "gpu_before": 11739.0,
+          "gpu_after": 12422.0
+        },
+        {
+          "gpu_before": 11107.0,
+          "gpu_after": 12025.0
+        },
+        {
+          "gpu_before": 11245.0,
+          "gpu_after": 11245.0
+        },
+        {
+          "gpu_before": 11711.0,
+          "gpu_after": 9961.0
+        }
+      ],
+      "global_GPU_is_not_per_process_memory": true,
+      "scratch_peak_separation": "NOT_IDENTIFIABLE_FROM_TOTAL_ALLOCATOR_PEAK"
+    },
+    "RTPA_DIAG": {
+      "quantized_layers": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        20,
+        21,
+        22
+      ],
+      "payload_scope": "compressed target layers only; other recurrent states remain native",
+      "blocks": 8,
+      "values": {
+        "payload_bytes": [
+          5566464,
+          5566464,
+          5566464,
+          5566464,
+          5566464,
+          5566464,
+          5566464,
+          5566464
+        ],
+        "shared_policy_layout_H_bytes": [
+          307200,
+          307200,
+          307200,
+          307200,
+          307200,
+          307200,
+          307200,
+          307200
+        ],
+        "cache_tensor_bytes": [
+          8417280,
+          8417280,
+          8417280,
+          8417280,
+          8417280,
+          8417280,
+          8417280,
+          8417280
+        ],
+        "peak_allocated_bytes": [
+          1768201728,
+          1768201728,
+          1768201728,
+          1768201728,
+          1768201728,
+          1768201728,
+          1768201728,
+          1768201728
+        ],
+        "peak_reserved_bytes": [
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104
+        ]
+      },
+      "payload_bytes": 5566464,
+      "peak_allocated_bytes": 1768201728,
+      "peak_reserved_bytes": 1891631104,
+      "global_GPU_used_MiB": [
+        {
+          "gpu_before": 3996.0,
+          "gpu_after": 4121.0
+        },
+        {
+          "gpu_before": 4154.0,
+          "gpu_after": 4671.0
+        },
+        {
+          "gpu_before": 9825.0,
+          "gpu_after": 10644.0
+        },
+        {
+          "gpu_before": 10756.0,
+          "gpu_after": 8887.0
+        },
+        {
+          "gpu_before": 11270.0,
+          "gpu_after": 11739.0
+        },
+        {
+          "gpu_before": 11078.0,
+          "gpu_after": 11072.0
+        },
+        {
+          "gpu_before": 11245.0,
+          "gpu_after": 11245.0
+        },
+        {
+          "gpu_before": 11294.0,
+          "gpu_after": 11679.0
+        }
+      ],
+      "global_GPU_is_not_per_process_memory": true,
+      "scratch_peak_separation": "NOT_IDENTIFIABLE_FROM_TOTAL_ALLOCATOR_PEAK"
+    },
+    "DAMP_PAPER_ADAPTED": {
+      "quantized_layers": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        20,
+        21,
+        22
+      ],
+      "payload_scope": "compressed target layers only; other recurrent states remain native",
+      "blocks": 8,
+      "values": {
+        "payload_bytes": [
+          5566464,
+          5566464,
+          5566464,
+          5566464,
+          5566464,
+          5566464,
+          5566464,
+          5566464
+        ],
+        "shared_policy_layout_H_bytes": [
+          307200,
+          307200,
+          307200,
+          307200,
+          307200,
+          307200,
+          307200,
+          307200
+        ],
+        "cache_tensor_bytes": [
+          8417280,
+          8417280,
+          8417280,
+          8417280,
+          8417280,
+          8417280,
+          8417280,
+          8417280
+        ],
+        "peak_allocated_bytes": [
+          1768201728,
+          1768201728,
+          1768201728,
+          1768201728,
+          1768201728,
+          1768201728,
+          1768201728,
+          1768201728
+        ],
+        "peak_reserved_bytes": [
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104
+        ]
+      },
+      "payload_bytes": 5566464,
+      "peak_allocated_bytes": 1768201728,
+      "peak_reserved_bytes": 1891631104,
+      "global_GPU_used_MiB": [
+        {
+          "gpu_before": 4121.0,
+          "gpu_after": 4296.0
+        },
+        {
+          "gpu_before": 5067.0,
+          "gpu_after": 4279.0
+        },
+        {
+          "gpu_before": 6771.0,
+          "gpu_after": 9825.0
+        },
+        {
+          "gpu_before": 11202.0,
+          "gpu_after": 11154.0
+        },
+        {
+          "gpu_before": 11814.0,
+          "gpu_after": 11526.0
+        },
+        {
+          "gpu_before": 11430.0,
+          "gpu_after": 11078.0
+        },
+        {
+          "gpu_before": 10764.0,
+          "gpu_after": 11294.0
+        },
+        {
+          "gpu_before": 11249.0,
+          "gpu_after": 10636.0
+        }
+      ],
+      "global_GPU_is_not_per_process_memory": true,
+      "scratch_peak_separation": "NOT_IDENTIFIABLE_FROM_TOTAL_ALLOCATOR_PEAK"
+    },
+    "STORED_NEAREST": {
+      "quantized_layers": [
+        0,
+        12,
+        22
+      ],
+      "payload_scope": "compressed target layers only; other recurrent states remain native",
+      "blocks": 8,
+      "values": {
+        "payload_bytes": [
+          927744,
+          927744,
+          927744,
+          927744,
+          927744,
+          927744,
+          927744,
+          927744
+        ],
+        "shared_policy_layout_H_bytes": [
+          61440,
+          61440,
+          61440,
+          61440,
+          61440,
+          61440,
+          61440,
+          61440
+        ],
+        "cache_tensor_bytes": [
+          11642880,
+          11642880,
+          11642880,
+          11642880,
+          11642880,
+          11642880,
+          11642880,
+          11642880
+        ],
+        "peak_allocated_bytes": [
+          1794122240,
+          1794122240,
+          1794122240,
+          1794122240,
+          1794122240,
+          1794122240,
+          1794122240,
+          1794122240
+        ],
+        "peak_reserved_bytes": [
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104
+        ]
+      },
+      "payload_bytes": 927744,
+      "peak_allocated_bytes": 1794122240,
+      "peak_reserved_bytes": 1891631104,
+      "global_GPU_used_MiB": [
+        {
+          "gpu_before": 4102.0,
+          "gpu_after": 3996.0
+        },
+        {
+          "gpu_before": 4164.0,
+          "gpu_after": 4155.0
+        },
+        {
+          "gpu_before": 10644.0,
+          "gpu_after": 9730.0
+        },
+        {
+          "gpu_before": 8887.0,
+          "gpu_after": 8599.0
+        },
+        {
+          "gpu_before": 12390.0,
+          "gpu_after": 11814.0
+        },
+        {
+          "gpu_before": 11993.0,
+          "gpu_after": 11149.0
+        },
+        {
+          "gpu_before": 11245.0,
+          "gpu_after": 11245.0
+        },
+        {
+          "gpu_before": 11245.0,
+          "gpu_after": 11245.0
+        }
+      ],
+      "global_GPU_is_not_per_process_memory": true,
+      "scratch_peak_separation": "NOT_IDENTIFIABLE_FROM_TOTAL_ALLOCATOR_PEAK"
+    },
+    "FA_CODE_REFERENCE": {
+      "quantized_layers": [
+        0,
+        12,
+        22
+      ],
+      "payload_scope": "compressed target layers only; other recurrent states remain native",
+      "blocks": 8,
+      "values": {
+        "payload_bytes": [
+          927744,
+          927744,
+          927744,
+          927744,
+          927744,
+          927744,
+          927744,
+          927744
+        ],
+        "shared_policy_layout_H_bytes": [
+          6352896,
+          6352896,
+          6352896,
+          6352896,
+          6352896,
+          6352896,
+          6352896,
+          6352896
+        ],
+        "cache_tensor_bytes": [
+          11642880,
+          11642880,
+          11642880,
+          11642880,
+          11642880,
+          11642880,
+          11642880,
+          11642880
+        ],
+        "peak_allocated_bytes": [
+          1820536832,
+          1820536832,
+          1820536832,
+          1820536832,
+          1820536832,
+          1820536832,
+          1820536832,
+          1820536832
+        ],
+        "peak_reserved_bytes": [
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104
+        ]
+      },
+      "payload_bytes": 927744,
+      "peak_allocated_bytes": 1820536832,
+      "peak_reserved_bytes": 1891631104,
+      "global_GPU_used_MiB": [
+        {
+          "gpu_before": 4108.0,
+          "gpu_after": 4066.0
+        },
+        {
+          "gpu_before": 4322.0,
+          "gpu_after": 4558.0
+        },
+        {
+          "gpu_before": 9698.0,
+          "gpu_after": 10581.0
+        },
+        {
+          "gpu_before": 10682.0,
+          "gpu_after": 11635.0
+        },
+        {
+          "gpu_before": 11494.0,
+          "gpu_after": 11398.0
+        },
+        {
+          "gpu_before": 11181.0,
+          "gpu_after": 11149.0
+        },
+        {
+          "gpu_before": 11245.0,
+          "gpu_after": 11245.0
+        },
+        {
+          "gpu_before": 11602.0,
+          "gpu_after": 11296.0
+        }
+      ],
+      "global_GPU_is_not_per_process_memory": true,
+      "scratch_peak_separation": "NOT_IDENTIFIABLE_FROM_TOTAL_ALLOCATOR_PEAK"
+    },
+    "FA_CODE_FACTORIZED": {
+      "quantized_layers": [
+        0,
+        12,
+        22
+      ],
+      "payload_scope": "compressed target layers only; other recurrent states remain native",
+      "blocks": 8,
+      "values": {
+        "payload_bytes": [
+          927744,
+          927744,
+          927744,
+          927744,
+          927744,
+          927744,
+          927744,
+          927744
+        ],
+        "shared_policy_layout_H_bytes": [
+          160128,
+          160128,
+          160128,
+          160128,
+          160128,
+          160128,
+          160128,
+          160128
+        ],
+        "cache_tensor_bytes": [
+          11642880,
+          11642880,
+          11642880,
+          11642880,
+          11642880,
+          11642880,
+          11642880,
+          11642880
+        ],
+        "peak_allocated_bytes": [
+          1810426880,
+          1810426880,
+          1810426880,
+          1810426880,
+          1810426880,
+          1810426880,
+          1810426880,
+          1810426880
+        ],
+        "peak_reserved_bytes": [
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104
+        ]
+      },
+      "payload_bytes": 927744,
+      "peak_allocated_bytes": 1810426880,
+      "peak_reserved_bytes": 1891631104,
+      "global_GPU_used_MiB": [
+        {
+          "gpu_before": 4265.0,
+          "gpu_after": 4254.0
+        },
+        {
+          "gpu_before": 4249.0,
+          "gpu_after": 4164.0
+        },
+        {
+          "gpu_before": 5035.0,
+          "gpu_after": 5897.0
+        },
+        {
+          "gpu_before": 11927.0,
+          "gpu_after": 11202.0
+        },
+        {
+          "gpu_before": 11494.0,
+          "gpu_after": 11494.0
+        },
+        {
+          "gpu_before": 11149.0,
+          "gpu_after": 11181.0
+        },
+        {
+          "gpu_before": 11294.0,
+          "gpu_after": 11245.0
+        },
+        {
+          "gpu_before": 11296.0,
+          "gpu_after": 11294.0
+        }
+      ],
+      "global_GPU_is_not_per_process_memory": true,
+      "scratch_peak_separation": "NOT_IDENTIFIABLE_FROM_TOTAL_ALLOCATOR_PEAK"
+    },
+    "STORED_NEAREST_REPEAT": {
+      "quantized_layers": [
+        0,
+        12,
+        22
+      ],
+      "payload_scope": "compressed target layers only; other recurrent states remain native",
+      "blocks": 8,
+      "values": {
+        "payload_bytes": [
+          927744,
+          927744,
+          927744,
+          927744,
+          927744,
+          927744,
+          927744,
+          927744
+        ],
+        "shared_policy_layout_H_bytes": [
+          61440,
+          61440,
+          61440,
+          61440,
+          61440,
+          61440,
+          61440,
+          61440
+        ],
+        "cache_tensor_bytes": [
+          11642880,
+          11642880,
+          11642880,
+          11642880,
+          11642880,
+          11642880,
+          11642880,
+          11642880
+        ],
+        "peak_allocated_bytes": [
+          1794122240,
+          1794122240,
+          1794122240,
+          1794122240,
+          1794122240,
+          1794122240,
+          1794122240,
+          1794122240
+        ],
+        "peak_reserved_bytes": [
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104,
+          1891631104
+        ]
+      },
+      "payload_bytes": 927744,
+      "peak_allocated_bytes": 1794122240,
+      "peak_reserved_bytes": 1891631104,
+      "global_GPU_used_MiB": [
+        {
+          "gpu_before": 4079.0,
+          "gpu_after": 4070.0
+        },
+        {
+          "gpu_before": 4558.0,
+          "gpu_after": 5035.0
+        },
+        {
+          "gpu_before": 5897.0,
+          "gpu_after": 6056.0
+        },
+        {
+          "gpu_before": 11699.0,
+          "gpu_after": 11912.0
+        },
+        {
+          "gpu_before": 11494.0,
+          "gpu_after": 11494.0
+        },
+        {
+          "gpu_before": 11181.0,
+          "gpu_after": 11149.0
+        },
+        {
+          "gpu_before": 11181.0,
+          "gpu_after": 11294.0
+        },
+        {
+          "gpu_before": 9961.0,
+          "gpu_after": 9481.0
+        }
+      ],
+      "global_GPU_is_not_per_process_memory": true,
+      "scratch_peak_separation": "NOT_IDENTIFIABLE_FROM_TOTAL_ALLOCATOR_PEAK"
+    }
+  },
+  "model_weights_bytes": 1705971840,
+  "method_quantized_layers": {
+    "NATIVE": [],
+    "MATCHED_ENERGY": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "RTPA_DIAG": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "DAMP_PAPER_ADAPTED": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "STORED_NEAREST": [
+      0,
+      12,
+      22
+    ],
+    "FA_CODE_FACTORIZED": [
+      0,
+      12,
+      22
+    ]
+  },
+  "native_model_recurrent_layers": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    16,
+    17,
+    18,
+    20,
+    21,
+    22
+  ],
+  "state_heads_by_quantized_method": {
+    "MATCHED_ENERGY": 288,
+    "RTPA_DIAG": 288,
+    "DAMP_PAPER_ADAPTED": 288,
+    "STORED_NEAREST": 48,
+    "FA_CODE_FACTORIZED": 48
+  },
+  "calculated_mixed_bytes_per_head": 19328,
+  "calculated_mixed_bits_per_value": 9.4375,
+  "calculated_mixed_target_state_bytes_by_method": {
+    "MATCHED_ENERGY": 5566464,
+    "RTPA_DIAG": 5566464,
+    "DAMP_PAPER_ADAPTED": 5566464,
+    "STORED_NEAREST": 927744,
+    "FA_CODE_FACTORIZED": 927744
+  },
+  "native_payload_comparison_rule": "Compare Native bytes for the same target layers; never divide all18 Native-state bytes by3-layer compressed payload.",
+  "arithmetic_is_separate_from_actual_payload_measurement": true,
+  "request_vs_shared": "shared_policy_layout_H bytes are resident metadata; inspect runner for sharing/requestreplication",
+  "whole_model_VRAM_is_not_compressed_state_payload": true,
+  "separate_encode_decode_scratch_peak": "NOT_IDENTIFIABLE_FROM_TOTAL_ALLOCATOR_PEAK"
+}

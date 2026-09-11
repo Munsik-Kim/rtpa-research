@@ -1,6 +1,7 @@
 {
   "schema_version": 1,
   "role": "Integrated interpretation; never overwrites historical frozen decisions",
+  "new_implementation_and_measurements": "results/upgrade/claims.json",
   "product_path": "CONTINUES_STOPPED",
   "claims": [
     {

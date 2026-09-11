@@ -1,5 +1,13 @@
 # References, DAMP provenance, and rights
 
+The current upgrade freshly checked primary GDN/GDN2/DAMP/Qronos sources.
+See [architecture contracts and exact source hashes](ARCHITECTURES.md).
+The historical publication provenance below is retained as historical, rather
+than silently relabeled as the new audit. No NVlabs noncommercial kernel source
+is vendored or re-licensed; the operator is an independently written equation
+implementation. Generic output-weighted rounding is prior art, not claimed here
+as a first invention.
+
 Repository consolidation used preserved source audits and local implementations. The links below identify original sources; they do not imply that the paper or author code was freshly reverified for the English publication release.
 
 - [DAMP: Decay-Aware Mixed-Precision Recurrent-State Quantization, v1](https://arxiv.org/html/2608.27513v1), arXiv:2608.27513. Preserved HTML SHA-256: `e55c235ee57d8bf7db1e535d26e136db96f880dc51dab53a6b5021e769691e1f`.
@@ -10,7 +18,7 @@ Repository consolidation used preserved source audits and local implementations.
 
 ## DAMP: paper definitions versus the executed local paths
 
-The historical status **AUTHOR_CODE_NOT_VERIFIED** is preserved. The retained 2026-09-09 audit searched official arXiv external links, the Hugging Face paper API, and exact-title/ID web and GitHub searches. An error-reporting GitHub link was not accepted as author implementation provenance. An unverified repository, commit, or license does not establish that author code was never released. This publication pass did not repeat that research search.
+The historical status **AUTHOR_CODE_NOT_VERIFIED** is preserved. The retained 2026-09-09 audit searched official arXiv external links, the Hugging Face paper API, and exact-title/ID web and GitHub searches. An error-reporting GitHub link was not accepted as author implementation provenance. An unverified repository, commit, or license does not establish that author code was never released. The original 2026-09-10 publication pass did not repeat that research search; the 2026-09-11 upgrade's separate source recheck is recorded in [Architectures](ARCHITECTURES.md).
 
 | Contract | Paper / retained audit | Executed local implementation | Match, difference, or unknown |
 |---|---|---|---|

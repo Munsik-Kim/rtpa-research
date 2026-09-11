@@ -1,0 +1,150 @@
+{
+  "evaluation_level": "OPERATOR_TESTED",
+  "quality": {
+    "mean_output_SSE_per_token_all4heads": {
+      "NATIVE_FP32": 0.0,
+      "MATCHED_ENERGY": 0.0001232391526140871,
+      "RTPA_DIAG": 0.0001235815657261071,
+      "STORED_NEAREST": 0.00012310828222689358,
+      "FA_CODE_FACTORIZED": 0.00012356008108868732
+    },
+    "comparisons": [
+      {
+        "candidate": "RTPA_DIAG",
+        "baseline": "MATCHED_ENERGY",
+        "relative_output_SSE_reduction": -0.0027784442261806763,
+        "CI95": [
+          -0.005535633741537732,
+          -0.0002768866961608394
+        ],
+        "wins": 4,
+        "n": 12
+      },
+      {
+        "candidate": "FA_CODE_FACTORIZED",
+        "baseline": "STORED_NEAREST",
+        "relative_output_SSE_reduction": -0.0036699306790834996,
+        "CI95": [
+          -0.005905757211422025,
+          -0.0016199587411810169
+        ],
+        "wins": 2,
+        "n": 12
+      }
+    ],
+    "independent_unit": "synthetic operand sequence",
+    "failures": 0
+  },
+  "cost": [
+    {
+      "candidate": "RTPA_DIAG",
+      "baseline": "MATCHED_ENERGY",
+      "paired_block_median_ratio": 1.003606082665672,
+      "CI95": [
+        0.8810524138410673,
+        1.3416510442403669
+      ],
+      "p95_block_ratio": 1.4405319633137834,
+      "raw_ratios": [
+        1.4937755351225461,
+        1.0345083375806463,
+        1.3416510442403669,
+        0.9625079330682393,
+        0.8024709889402071,
+        0.9727038277506977,
+        1.2453934349008586,
+        0.8250075744779807
+      ],
+      "confounded_computed_1_05_status": "COST_UNRESOLVED",
+      "cost_1_05_status": "NOT_INTERPRETABLE_CONFOUNDED",
+      "eligible_for_headline_cost": false
+    },
+    {
+      "candidate": "FA_CODE_FACTORIZED",
+      "baseline": "STORED_NEAREST",
+      "paired_block_median_ratio": 2.884839409177296,
+      "CI95": [
+        2.3306198374301315,
+        2.984529317910618
+      ],
+      "p95_block_ratio": 3.1004055414285614,
+      "raw_ratios": [
+        2.0873608587034367,
+        2.3306198374301315,
+        3.1628004310151465,
+        2.9703875509175326,
+        2.5999870116507444,
+        2.8610691937591506,
+        2.908609624595441,
+        2.984529317910618
+      ],
+      "confounded_computed_1_05_status": "COST_TARGET_NOT_MET",
+      "cost_1_05_status": "NOT_INTERPRETABLE_CONFOUNDED",
+      "eligible_for_headline_cost": false
+    },
+    {
+      "candidate": "FA_CODE_FACTORIZED",
+      "baseline": "FA_CODE_REFERENCE",
+      "paired_block_median_ratio": 0.8981910055505234,
+      "CI95": [
+        0.7782358621368627,
+        0.9519836653415684
+      ],
+      "p95_block_ratio": 1.0907568924439037,
+      "raw_ratios": [
+        0.8935018068734695,
+        0.7782358621368627,
+        0.9028802042275774,
+        0.7556867989513409,
+        0.8867567509560612,
+        1.1654809378067,
+        0.9519836653415684,
+        0.9372471861066578
+      ],
+      "confounded_computed_1_05_status": "COST_TARGET_MET",
+      "cost_1_05_status": "NOT_INTERPRETABLE_CONFOUNDED",
+      "eligible_for_headline_cost": false
+    },
+    {
+      "candidate": "STORED_NEAREST_REPEAT",
+      "baseline": "STORED_NEAREST",
+      "paired_block_median_ratio": 0.9927144311650093,
+      "CI95": [
+        0.8208163333507879,
+        1.5408585843368021
+      ],
+      "p95_block_ratio": 1.6230054746614055,
+      "raw_ratios": [
+        0.8208163333507879,
+        0.9303724118386932,
+        1.6672384156054227,
+        1.0550564504913256,
+        0.9128417015250756,
+        0.820311900717524,
+        1.5408585843368021,
+        1.1537881733517683
+      ],
+      "confounded_computed_1_05_status": "COST_UNRESOLVED",
+      "cost_1_05_status": "NOT_INTERPRETABLE_CONFOUNDED",
+      "eligible_for_headline_cost": false
+    }
+  ],
+  "median_ms_per_token": {
+    "FA_CODE_FACTORIZED": 22.782292335932652,
+    "FA_CODE_REFERENCE": 24.380418527343295,
+    "MATCHED_ENERGY": 5.0963899140583635,
+    "NATIVE_FP32": 0.08369960939091925,
+    "RTPA_DIAG": 5.261660574234384,
+    "STORED_NEAREST": 8.191016574230048,
+    "STORED_NEAREST_REPEAT": 8.329747566406809
+  },
+  "language_KL": null,
+  "language_KL_reason": "NOT_RUN_OFFICIAL_CHECKPOINT_NOT_VERIFIED",
+  "model_forwards": 0,
+  "raw_rows": 15360,
+  "timing_blocks": 8,
+  "reproduction": "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS; not new GPU execution",
+  "timing_measurement_regime": "CONFOUNDED_OTHER_GPU_WORKER",
+  "timing_eligible_for_headline_cost": false,
+  "timing_reason": "Original operator timing overlapped another GPU worker; retained without attribution to an isolated runtime"
+}

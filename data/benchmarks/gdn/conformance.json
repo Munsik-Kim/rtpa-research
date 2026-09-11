@@ -1,0 +1,465 @@
+{
+  "status": "PASS",
+  "layers": [
+    0,
+    12,
+    22
+  ],
+  "policy_sha256": "355492d26bfe8be47660d28f6820f18ebce581c7d712c834028bbaafc5a04da9",
+  "tokens": 64,
+  "physical_forwards": 582,
+  "seconds_per_token_observed_not_serving_timing": {
+    "NATIVE": 0.029435024687472833,
+    "TRANSPARENT": 0.04117858029690069,
+    "STORED_NEAREST": 0.06296676879685492,
+    "FA_CODE_REFERENCE": 0.14701064199999792,
+    "FA_CODE_FACTORIZED": 0.10048917464064289
+  },
+  "reference_factorized_logits_exact": true,
+  "reference_factorized_cache_exact": true,
+  "prefix_causality_repeat_exact": true,
+  "decode_scratch_poison_does_not_change_payload": true,
+  "no_FP32_master_field": true,
+  "write_counts": {
+    "NATIVE": 0,
+    "TRANSPARENT": 1152,
+    "STORED_NEAREST": 192,
+    "FA_CODE_REFERENCE": 192,
+    "FA_CODE_FACTORIZED": 192
+  },
+  "native_recurrence_reconstruction": [
+    {
+      "layer": 0,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0013798275031149387,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 1,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0025105990935117006,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 2,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.001231841859407723,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 4,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0025413078255951405,
+      "cast_readout_exact": false
+    },
+    {
+      "layer": 5,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0017726856749504805,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 6,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0016564681427553296,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 8,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0007729899953119457,
+      "cast_readout_exact": false
+    },
+    {
+      "layer": 9,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0019243898568674922,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 10,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0014624787727370858,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 12,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0017224748153239489,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 13,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0015276186168193817,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 14,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0016235363436862826,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 16,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0019270476186648011,
+      "cast_readout_exact": false
+    },
+    {
+      "layer": 17,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.001539745950140059,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 18,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0012561295880004764,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 20,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0014932542107999325,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 21,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0016546588158234954,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 22,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.002573146019130945,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 0,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0017512403428554535,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 1,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.002391343005001545,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 2,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0018050569342449307,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 4,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0009319224627688527,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 5,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.002097310032695532,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 6,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0012800667900592089,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 8,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0013677560491487384,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 9,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0012269493890926242,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 10,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0013553748140111566,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 12,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0010742561426013708,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 13,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0016406342620030046,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 14,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0019209077581763268,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 16,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0016401961911469698,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 17,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0017299710307270288,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 18,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0018346435390412807,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 20,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0016027522506192327,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 21,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0013251610798761249,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 22,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.001928536919876933,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 0,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0014209253713488579,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 1,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0018920160364359617,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 2,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0005811993032693863,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 4,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0006371884373947978,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 5,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0016199731035158038,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 6,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0017465839628130198,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 8,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0017016463680192828,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 9,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0013744552852585912,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 10,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0013156338827684522,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 12,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0008391636074520648,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 13,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0017738047754392028,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 14,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0015274862525984645,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 16,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0013852370902895927,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 17,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0014900327660143375,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 18,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0017489815363660455,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 20,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.001647592638619244,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 21,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.002024385379627347,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 22,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0014806576073169708,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 0,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0014236249262467027,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 1,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0012423245934769511,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 2,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0012231358559802175,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 4,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0019050264963880181,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 5,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.00201076059602201,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 6,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0013616712531074882,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 8,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0007567795692011714,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 9,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0018996883882209659,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 10,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0016178647056221962,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 12,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.001200454425998032,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 13,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0013359581353142858,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 14,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0013639747630804777,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 16,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0014490323374047875,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 17,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.001073516788892448,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 18,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0014300016919150949,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 20,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0011644870974123478,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 21,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0016613745829090476,
+      "cast_readout_exact": true
+    },
+    {
+      "layer": 22,
+      "state_nL2": 0.0,
+      "precast_readout_vs_native_nL2": 0.0014496695948764682,
+      "cast_readout_exact": true
+    }
+  ],
+  "functional_reference_scope": "FP32 pre-output-cast readout; not byte-identical native BF16 returned output"
+}

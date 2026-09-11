@@ -1,0 +1,602 @@
+{
+  "jobs": [
+    {
+      "layer": 0,
+      "sha256": "68873e5ee49e468a523a36925c5d01a97a0147500a3626b9941ad9ff26b95b11",
+      "seconds": 12.306273284000781,
+      "peak_allocated_bytes": 647705088,
+      "train_documents": 6,
+      "sampling": "all256 own-low writes; readouts16:256; DAMPnative stride8",
+      "unit_weight": 1,
+      "metric": {
+        "degenerate_heads": 0,
+        "mean_gramian_trace": 0.15541940030837414,
+        "rank": 2,
+        "lambda": 1.0,
+        "horizon": 32,
+        "metric_source": "TRAIN_NATIVE_REFERENCE; distinct from historical nearest-conditioned TRAIN12 metric"
+      },
+      "symmetry_error": 0.0,
+      "source_audits": [
+        {
+          "composition_relative_L2": 4.2547324415562613e-07,
+          "direct_objective_normalized_max": 7.28231040286913e-08,
+          "tolerance": 0.0001,
+          "pass": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_equal": true,
+      "evaluation_accessed": false
+    },
+    {
+      "layer": 1,
+      "sha256": "2232988187bb570d9722beb492a193f8a9f16d4f22d7c79e780cbecffd0c8566",
+      "seconds": 10.968407661999663,
+      "peak_allocated_bytes": 647745024,
+      "train_documents": 6,
+      "sampling": "all256 own-low writes; readouts16:256; DAMPnative stride8",
+      "unit_weight": 1,
+      "metric": {
+        "degenerate_heads": 0,
+        "mean_gramian_trace": 0.0780379590846522,
+        "rank": 2,
+        "lambda": 1.0,
+        "horizon": 32,
+        "metric_source": "TRAIN_NATIVE_REFERENCE; distinct from historical nearest-conditioned TRAIN12 metric"
+      },
+      "symmetry_error": 0.0,
+      "source_audits": [
+        {
+          "composition_relative_L2": 4.4966282652076697e-07,
+          "direct_objective_normalized_max": 1.9124206581048256e-08,
+          "tolerance": 0.0001,
+          "pass": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_equal": true,
+      "evaluation_accessed": false
+    },
+    {
+      "layer": 2,
+      "sha256": "9c30393d2ec543ee45a9469dbe6c78857219499961da1d3a3aa5d90901d6c82f",
+      "seconds": 13.581916052000452,
+      "peak_allocated_bytes": 647745024,
+      "train_documents": 6,
+      "sampling": "all256 own-low writes; readouts16:256; DAMPnative stride8",
+      "unit_weight": 1,
+      "metric": {
+        "degenerate_heads": 0,
+        "mean_gramian_trace": 0.09963780101497403,
+        "rank": 2,
+        "lambda": 1.0,
+        "horizon": 32,
+        "metric_source": "TRAIN_NATIVE_REFERENCE; distinct from historical nearest-conditioned TRAIN12 metric"
+      },
+      "symmetry_error": 0.0,
+      "source_audits": [
+        {
+          "composition_relative_L2": 4.467219040403868e-07,
+          "direct_objective_normalized_max": 5.000422375646937e-08,
+          "tolerance": 0.0001,
+          "pass": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_equal": true,
+      "evaluation_accessed": false
+    },
+    {
+      "layer": 4,
+      "sha256": "8f015360f97f23aa863557f60f64784a70dd91e9309e03f545e6d746d41cc420",
+      "seconds": 11.177412705997995,
+      "peak_allocated_bytes": 647745024,
+      "train_documents": 6,
+      "sampling": "all256 own-low writes; readouts16:256; DAMPnative stride8",
+      "unit_weight": 1,
+      "metric": {
+        "degenerate_heads": 0,
+        "mean_gramian_trace": 0.14058645699011732,
+        "rank": 2,
+        "lambda": 1.0,
+        "horizon": 32,
+        "metric_source": "TRAIN_NATIVE_REFERENCE; distinct from historical nearest-conditioned TRAIN12 metric"
+      },
+      "symmetry_error": 0.0,
+      "source_audits": [
+        {
+          "composition_relative_L2": 6.697045081427962e-07,
+          "direct_objective_normalized_max": 1.3493724904631783e-08,
+          "tolerance": 0.0001,
+          "pass": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_equal": true,
+      "evaluation_accessed": false
+    },
+    {
+      "layer": 5,
+      "sha256": "ccb559c313f4e1297397403e651ab457f2f115bd85fb0e03c43feed70068cf19",
+      "seconds": 11.955566232998535,
+      "peak_allocated_bytes": 647745024,
+      "train_documents": 6,
+      "sampling": "all256 own-low writes; readouts16:256; DAMPnative stride8",
+      "unit_weight": 1,
+      "metric": {
+        "degenerate_heads": 0,
+        "mean_gramian_trace": 0.14860086187156163,
+        "rank": 2,
+        "lambda": 1.0,
+        "horizon": 32,
+        "metric_source": "TRAIN_NATIVE_REFERENCE; distinct from historical nearest-conditioned TRAIN12 metric"
+      },
+      "symmetry_error": 0.0,
+      "source_audits": [
+        {
+          "composition_relative_L2": 4.887564326337935e-07,
+          "direct_objective_normalized_max": 6.541765948638377e-08,
+          "tolerance": 0.0001,
+          "pass": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_equal": true,
+      "evaluation_accessed": false
+    },
+    {
+      "layer": 6,
+      "sha256": "157755435bb7b5015bc49807fc2dc0c9a29402c435ce8feb7b13f46de4001850",
+      "seconds": 12.251789327998267,
+      "peak_allocated_bytes": 647745024,
+      "train_documents": 6,
+      "sampling": "all256 own-low writes; readouts16:256; DAMPnative stride8",
+      "unit_weight": 1,
+      "metric": {
+        "degenerate_heads": 0,
+        "mean_gramian_trace": 0.10257813536629048,
+        "rank": 2,
+        "lambda": 1.0,
+        "horizon": 32,
+        "metric_source": "TRAIN_NATIVE_REFERENCE; distinct from historical nearest-conditioned TRAIN12 metric"
+      },
+      "symmetry_error": 0.0,
+      "source_audits": [
+        {
+          "composition_relative_L2": 4.663638331183903e-07,
+          "direct_objective_normalized_max": 5.654890665704626e-08,
+          "tolerance": 0.0001,
+          "pass": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_equal": true,
+      "evaluation_accessed": false
+    },
+    {
+      "layer": 8,
+      "sha256": "2e3421fdb3ef11e4fcea9a2a61e7632dfb96b2b495c870b6d84c5beaf32e6419",
+      "seconds": 11.196353416002239,
+      "peak_allocated_bytes": 647745024,
+      "train_documents": 6,
+      "sampling": "all256 own-low writes; readouts16:256; DAMPnative stride8",
+      "unit_weight": 1,
+      "metric": {
+        "degenerate_heads": 0,
+        "mean_gramian_trace": 0.1266271302900296,
+        "rank": 2,
+        "lambda": 1.0,
+        "horizon": 32,
+        "metric_source": "TRAIN_NATIVE_REFERENCE; distinct from historical nearest-conditioned TRAIN12 metric"
+      },
+      "symmetry_error": 0.0,
+      "source_audits": [
+        {
+          "composition_relative_L2": 6.269961740601045e-07,
+          "direct_objective_normalized_max": 3.892485795103515e-08,
+          "tolerance": 0.0001,
+          "pass": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_equal": true,
+      "evaluation_accessed": false
+    },
+    {
+      "layer": 9,
+      "sha256": "c1eff582397d9497996fc55e02cd6348aa76e39a3aee71f9875e2c6bf7583af5",
+      "seconds": 10.37166975099899,
+      "peak_allocated_bytes": 647745024,
+      "train_documents": 6,
+      "sampling": "all256 own-low writes; readouts16:256; DAMPnative stride8",
+      "unit_weight": 1,
+      "metric": {
+        "degenerate_heads": 0,
+        "mean_gramian_trace": 0.1576522925709437,
+        "rank": 2,
+        "lambda": 1.0,
+        "horizon": 32,
+        "metric_source": "TRAIN_NATIVE_REFERENCE; distinct from historical nearest-conditioned TRAIN12 metric"
+      },
+      "symmetry_error": 0.0,
+      "source_audits": [
+        {
+          "composition_relative_L2": 4.805176710579794e-07,
+          "direct_objective_normalized_max": 1.1046398539932709e-07,
+          "tolerance": 0.0001,
+          "pass": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_equal": true,
+      "evaluation_accessed": false
+    },
+    {
+      "layer": 10,
+      "sha256": "cecbe8c1844868b2f93059b955ebc9db034a333259b6a804b3aa41377f4132e7",
+      "seconds": 11.827973002000363,
+      "peak_allocated_bytes": 647745024,
+      "train_documents": 6,
+      "sampling": "all256 own-low writes; readouts16:256; DAMPnative stride8",
+      "unit_weight": 1,
+      "metric": {
+        "degenerate_heads": 0,
+        "mean_gramian_trace": 0.1298082525179795,
+        "rank": 2,
+        "lambda": 1.0,
+        "horizon": 32,
+        "metric_source": "TRAIN_NATIVE_REFERENCE; distinct from historical nearest-conditioned TRAIN12 metric"
+      },
+      "symmetry_error": 0.0,
+      "source_audits": [
+        {
+          "composition_relative_L2": 3.4352050701608535e-07,
+          "direct_objective_normalized_max": 3.057338732281088e-08,
+          "tolerance": 0.0001,
+          "pass": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_equal": true,
+      "evaluation_accessed": false
+    },
+    {
+      "layer": 12,
+      "sha256": "a81e6ace0102430f7f74dcde2978df8973eba75ad4b8a0a35c9838527781b638",
+      "seconds": 11.49991436399796,
+      "peak_allocated_bytes": 647745024,
+      "train_documents": 6,
+      "sampling": "all256 own-low writes; readouts16:256; DAMPnative stride8",
+      "unit_weight": 1,
+      "metric": {
+        "degenerate_heads": 0,
+        "mean_gramian_trace": 0.1745653374489498,
+        "rank": 2,
+        "lambda": 1.0,
+        "horizon": 32,
+        "metric_source": "TRAIN_NATIVE_REFERENCE; distinct from historical nearest-conditioned TRAIN12 metric"
+      },
+      "symmetry_error": 0.0,
+      "source_audits": [
+        {
+          "composition_relative_L2": 5.913997784556503e-07,
+          "direct_objective_normalized_max": 6.571917720506788e-08,
+          "tolerance": 0.0001,
+          "pass": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_equal": true,
+      "evaluation_accessed": false
+    },
+    {
+      "layer": 13,
+      "sha256": "67a1991db7c9127034de1ce24a1220e4084c29e075bcea8cc14de29c5080ef36",
+      "seconds": 11.105834251000488,
+      "peak_allocated_bytes": 647745024,
+      "train_documents": 6,
+      "sampling": "all256 own-low writes; readouts16:256; DAMPnative stride8",
+      "unit_weight": 1,
+      "metric": {
+        "degenerate_heads": 0,
+        "mean_gramian_trace": 0.11070834680111141,
+        "rank": 2,
+        "lambda": 1.0,
+        "horizon": 32,
+        "metric_source": "TRAIN_NATIVE_REFERENCE; distinct from historical nearest-conditioned TRAIN12 metric"
+      },
+      "symmetry_error": 0.0,
+      "source_audits": [
+        {
+          "composition_relative_L2": 3.6795028741126726e-07,
+          "direct_objective_normalized_max": 2.8601078117213416e-08,
+          "tolerance": 0.0001,
+          "pass": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_equal": true,
+      "evaluation_accessed": false
+    },
+    {
+      "layer": 14,
+      "sha256": "3760ce1bdc36ecb09b4949c061cf51d403cd18401681db33b8402ff7d944df5c",
+      "seconds": 10.517350090001855,
+      "peak_allocated_bytes": 647745024,
+      "train_documents": 6,
+      "sampling": "all256 own-low writes; readouts16:256; DAMPnative stride8",
+      "unit_weight": 1,
+      "metric": {
+        "degenerate_heads": 0,
+        "mean_gramian_trace": 0.11393102282283808,
+        "rank": 2,
+        "lambda": 1.0,
+        "horizon": 32,
+        "metric_source": "TRAIN_NATIVE_REFERENCE; distinct from historical nearest-conditioned TRAIN12 metric"
+      },
+      "symmetry_error": 0.0,
+      "source_audits": [
+        {
+          "composition_relative_L2": 3.727643401127314e-07,
+          "direct_objective_normalized_max": 1.740110858354728e-08,
+          "tolerance": 0.0001,
+          "pass": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_equal": true,
+      "evaluation_accessed": false
+    },
+    {
+      "layer": 16,
+      "sha256": "98794b81ba8a88d51f92f925a0cdb3719b1a0ef6ecddea56b835abae0a987117",
+      "seconds": 10.65787561599791,
+      "peak_allocated_bytes": 647745024,
+      "train_documents": 6,
+      "sampling": "all256 own-low writes; readouts16:256; DAMPnative stride8",
+      "unit_weight": 1,
+      "metric": {
+        "degenerate_heads": 0,
+        "mean_gramian_trace": 0.12880115206646295,
+        "rank": 2,
+        "lambda": 1.0,
+        "horizon": 32,
+        "metric_source": "TRAIN_NATIVE_REFERENCE; distinct from historical nearest-conditioned TRAIN12 metric"
+      },
+      "symmetry_error": 0.0,
+      "source_audits": [
+        {
+          "composition_relative_L2": 4.6025330217534733e-07,
+          "direct_objective_normalized_max": 8.975613481123783e-08,
+          "tolerance": 0.0001,
+          "pass": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_equal": true,
+      "evaluation_accessed": false
+    },
+    {
+      "layer": 17,
+      "sha256": "cc8f0e283db75028e8813f159ce035407a1df3980838d1e9a0c7d1e32daee731",
+      "seconds": 12.615668895999988,
+      "peak_allocated_bytes": 647745024,
+      "train_documents": 6,
+      "sampling": "all256 own-low writes; readouts16:256; DAMPnative stride8",
+      "unit_weight": 1,
+      "metric": {
+        "degenerate_heads": 0,
+        "mean_gramian_trace": 0.12826527051432302,
+        "rank": 2,
+        "lambda": 1.0,
+        "horizon": 32,
+        "metric_source": "TRAIN_NATIVE_REFERENCE; distinct from historical nearest-conditioned TRAIN12 metric"
+      },
+      "symmetry_error": 0.0,
+      "source_audits": [
+        {
+          "composition_relative_L2": 4.2306457070596177e-07,
+          "direct_objective_normalized_max": 3.183020668355691e-08,
+          "tolerance": 0.0001,
+          "pass": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_equal": true,
+      "evaluation_accessed": false
+    },
+    {
+      "layer": 18,
+      "sha256": "e1c782d4f5b5ff7edcef9fad9b31116a8fadf90a001826cd68fdb117aa56838f",
+      "seconds": 11.593338365000818,
+      "peak_allocated_bytes": 647745024,
+      "train_documents": 6,
+      "sampling": "all256 own-low writes; readouts16:256; DAMPnative stride8",
+      "unit_weight": 1,
+      "metric": {
+        "degenerate_heads": 0,
+        "mean_gramian_trace": 0.13718568281378168,
+        "rank": 2,
+        "lambda": 1.0,
+        "horizon": 32,
+        "metric_source": "TRAIN_NATIVE_REFERENCE; distinct from historical nearest-conditioned TRAIN12 metric"
+      },
+      "symmetry_error": 0.0,
+      "source_audits": [
+        {
+          "composition_relative_L2": 4.917830767889125e-07,
+          "direct_objective_normalized_max": 5.044962862061135e-08,
+          "tolerance": 0.0001,
+          "pass": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_equal": true,
+      "evaluation_accessed": false
+    },
+    {
+      "layer": 20,
+      "sha256": "464fcb4b5b05045865fed82d50f0915e35a1e5472b7db1c256ab99f9e943a10a",
+      "seconds": 10.636055822000344,
+      "peak_allocated_bytes": 647745024,
+      "train_documents": 6,
+      "sampling": "all256 own-low writes; readouts16:256; DAMPnative stride8",
+      "unit_weight": 1,
+      "metric": {
+        "degenerate_heads": 0,
+        "mean_gramian_trace": 0.1351933255255945,
+        "rank": 2,
+        "lambda": 1.0,
+        "horizon": 32,
+        "metric_source": "TRAIN_NATIVE_REFERENCE; distinct from historical nearest-conditioned TRAIN12 metric"
+      },
+      "symmetry_error": 0.0,
+      "source_audits": [
+        {
+          "composition_relative_L2": 5.205422620160224e-07,
+          "direct_objective_normalized_max": 9.082795705779602e-09,
+          "tolerance": 0.0001,
+          "pass": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_equal": true,
+      "evaluation_accessed": false
+    },
+    {
+      "layer": 21,
+      "sha256": "20d4e58cc4c82872ea24148c1a49260419fd4bc9b77fe961f71940e24e065e41",
+      "seconds": 10.910413163997873,
+      "peak_allocated_bytes": 647745024,
+      "train_documents": 6,
+      "sampling": "all256 own-low writes; readouts16:256; DAMPnative stride8",
+      "unit_weight": 1,
+      "metric": {
+        "degenerate_heads": 0,
+        "mean_gramian_trace": 0.1185934691811282,
+        "rank": 2,
+        "lambda": 1.0,
+        "horizon": 32,
+        "metric_source": "TRAIN_NATIVE_REFERENCE; distinct from historical nearest-conditioned TRAIN12 metric"
+      },
+      "symmetry_error": 0.0,
+      "source_audits": [
+        {
+          "composition_relative_L2": 4.4083690089000573e-07,
+          "direct_objective_normalized_max": 2.1157864036582195e-08,
+          "tolerance": 0.0001,
+          "pass": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_equal": true,
+      "evaluation_accessed": false
+    },
+    {
+      "layer": 22,
+      "sha256": "23c5e35d49bb7f948e725ebe82b4dbfaef14c6e193bd8b883a86c9341abc3315",
+      "seconds": 10.737490822997643,
+      "peak_allocated_bytes": 647745024,
+      "train_documents": 6,
+      "sampling": "all256 own-low writes; readouts16:256; DAMPnative stride8",
+      "unit_weight": 1,
+      "metric": {
+        "degenerate_heads": 0,
+        "mean_gramian_trace": 0.12541441186507618,
+        "rank": 2,
+        "lambda": 1.0,
+        "horizon": 32,
+        "metric_source": "TRAIN_NATIVE_REFERENCE; distinct from historical nearest-conditioned TRAIN12 metric"
+      },
+      "symmetry_error": 0.0,
+      "source_audits": [
+        {
+          "composition_relative_L2": 4.698963270200052e-07,
+          "direct_objective_normalized_max": 1.0047542269515651e-08,
+          "tolerance": 0.0001,
+          "pass": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_equal": true,
+      "evaluation_accessed": false
+    }
+  ],
+  "total_fit_seconds": 205.91130282499216,
+  "full_K_constructed": true,
+  "policy_sha256": "bd865a1a138ed25a98e8db5b5dabb26ff259307be3ba2f071a04ceb71faace68",
+  "no_DEV_TEST_selection": true
+}

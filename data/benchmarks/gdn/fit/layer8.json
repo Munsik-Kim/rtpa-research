@@ -1,0 +1,33 @@
+{
+  "layer": 8,
+  "sha256": "2e3421fdb3ef11e4fcea9a2a61e7632dfb96b2b495c870b6d84c5beaf32e6419",
+  "seconds": 11.196353416002239,
+  "peak_allocated_bytes": 647745024,
+  "train_documents": 6,
+  "sampling": "all256 own-low writes; readouts16:256; DAMPnative stride8",
+  "unit_weight": 1,
+  "metric": {
+    "degenerate_heads": 0,
+    "mean_gramian_trace": 0.1266271302900296,
+    "rank": 2,
+    "lambda": 1.0,
+    "horizon": 32,
+    "metric_source": "TRAIN_NATIVE_REFERENCE; distinct from historical nearest-conditioned TRAIN12 metric"
+  },
+  "symmetry_error": 0.0,
+  "source_audits": [
+    {
+      "composition_relative_L2": 6.269961740601045e-07,
+      "direct_objective_normalized_max": 3.892485795103515e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "DAMP_energy_persistence_top8_equal": true,
+  "evaluation_accessed": false
+}

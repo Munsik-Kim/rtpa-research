@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "tokens": 64,
+  "layers": [
+    0,
+    12,
+    22
+  ],
+  "physical_forwards": 320,
+  "seconds_per_token_with_finite_checks_and_CPU_logits": {
+    "NATIVE": 0.042878402406245186,
+    "TRANSPARENT": 0.030585350765647945,
+    "STORED_NEAREST": 0.0628405550937714,
+    "FA_CODE_REFERENCE": 0.10952086162495789,
+    "FA_CODE_FACTORIZED": 0.1117420934843949
+  },
+  "transparent_nL2": 0.0,
+  "transparent_KL": 0.0,
+  "FA_reference_factorized_logits_exact": true,
+  "FA_reference_factorized_all_cache_tensors_exact": true,
+  "weakref_cache_reclaimed": true,
+  "not_serving_timing": true
+}

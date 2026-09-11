@@ -1,0 +1,11 @@
+{
+  "policy_sha256": "90ad161d1235fe2e5b0ec121bb4a17419c51e14fcfb9f12e807db40ced641011",
+  "protocol_sha256": "5bfeee5049ace88bd4da8b22948dd813eb1dff7dfcbc3719168485b88ffdae48",
+  "source_sha256": {
+    "operator_benchmark.py": "0b0e8612b5da8f7637be4e171a687aaebf1c9bae3b26b9d9751a84b3cd015299",
+    "operators.py": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78",
+    "calibration.py": "1aac2598d1af6920285e6ccfa11bb4a92d3f1d2453549cb89841768e45db0038",
+    "factorized.py": "d6947df1f614b9dcb7372878e7fbc9e05626ff40c7e86c2cb80e819ae560e08e",
+    "codec.py": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069"
+  }
+}

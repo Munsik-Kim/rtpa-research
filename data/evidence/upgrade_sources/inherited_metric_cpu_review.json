@@ -1,0 +1,22 @@
+{
+  "scope": "CPU reconstruction of historical FA_CODE factors and dense metric; not a GPU policy-parity test",
+  "status": "CPU_EXACT_GPU_BACKEND_SUPPLEMENT_PENDING",
+  "historical_input": {
+    "path": "experiments/fa_code_v01_20260911_0814/artifacts/fixed_metrics.pt",
+    "sha256": "2f4ce2e43f6a88543980df2de41c1187511a9dac49c22829e335a5d2f8688255",
+    "matches_original_fit_receipt": true
+  },
+  "historical_builder": "experiments/fa_code_v01_20260911_0814/code/continuation_gpu.py:load_runtime_inputs",
+  "historical_selected_candidate": {"id": "m2_l1_e005", "m": 2, "lambda": 1.0, "eta": 0.05},
+  "exported_policy": "data/policies/fa_code_v01.npz",
+  "layers": [
+    {"layer": 0, "degenerate_heads": 0, "U_exact": true, "ridge_exact": true, "CPU_dense_exact": true, "maximum_absolute_difference": 0.0},
+    {"layer": 12, "degenerate_heads": 0, "U_exact": true, "ridge_exact": true, "CPU_dense_exact": true, "maximum_absolute_difference": 0.0},
+    {"layer": 22, "degenerate_heads": 0, "U_exact": true, "ridge_exact": true, "CPU_dense_exact": true, "maximum_absolute_difference": 0.0}
+  ],
+  "dtype": "float64",
+  "mathematical_construction": "U = last-two eigenvectors multiplied by sqrt(last-two eigenvalues); M = I + U U^T; historical degenerate heads would use M=0 and exported U=ridge=0",
+  "backend_caveat": "The historical continuation builds dense M on CPU before CUDA transfer. The new CUDA reference rebuilds dense M from CUDA factors. Exact CPU/factor equality does not by itself establish CUDA policy parity. scripts/check_metric_backend_parity.py is the separately preregistered supplemental check.",
+  "CUDA_operations_in_this_review": 0,
+  "model_forwards": 0
+}

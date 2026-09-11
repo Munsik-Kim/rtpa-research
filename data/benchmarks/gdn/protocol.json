@@ -1,0 +1,146 @@
+{
+  "run_id": "RTPA_GDN_GDN2_20260911_V1",
+  "architecture": "GDN",
+  "scope": "A: all18 allocation; B/C: inherited3-layer integer-code correction; full model final logits",
+  "layers": [
+    0,
+    12,
+    22
+  ],
+  "methods": [
+    "NATIVE",
+    "MATCHED_ENERGY",
+    "RTPA_DIAG",
+    "DAMP_PAPER_ADAPTED",
+    "STORED_NEAREST",
+    "FA_CODE_FACTORIZED"
+  ],
+  "model_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "max_context": 1024,
+  "windows": [
+    512,
+    1024
+  ],
+  "warmup_tokens": 16,
+  "TEST_documents": 12,
+  "independent_unit": "document; prefixes share the same cluster",
+  "domains": [
+    "natural_language",
+    "code",
+    "associative_recall"
+  ],
+  "bootstrap_draws": 2000,
+  "bootstrap_seed": 611204,
+  "timing_seed": 611205,
+  "timing_warmup_blocks": 1,
+  "timing_measured_blocks": 8,
+  "timing_prefix": 128,
+  "timing_decode": 32,
+  "timing_labels": [
+    "NATIVE",
+    "MATCHED_ENERGY",
+    "RTPA_DIAG",
+    "DAMP_PAPER_ADAPTED",
+    "STORED_NEAREST",
+    "FA_CODE_REFERENCE",
+    "FA_CODE_FACTORIZED",
+    "STORED_NEAREST_REPEAT"
+  ],
+  "quality_primary": [
+    "RTPA_DIAG/MATCHED_ENERGY",
+    "FA_CODE_FACTORIZED/STORED_NEAREST"
+  ],
+  "cost_target": 1.05,
+  "policy_sha256": "355492d26bfe8be47660d28f6820f18ebce581c7d712c834028bbaafc5a04da9",
+  "budget_estimate_seconds_with20percent_margin": 8800.597846655175,
+  "remaining_seconds_less_reserve": 11888.618033749994,
+  "cost_estimation_is_not_measurement": true,
+  "material_failure_rule": "any failure => full-window contrast undefined; preserve remaining NOT_RUN rows",
+  "metric_fit": "B/C: inherited FA_CODE TRAIN12 m2_l1_e005. A: new TRAIN6 fixed masks. All18 new FAmetric remains unused after CAL failure.",
+  "DAMP": "paper-adapted sameTRAIN6, native stride8, localr8/per-tokenP_PRE; not officialkernel ororiginalcorpus",
+  "panel_family_limit": "synthetic technical narratives/programs/registries; not a real-world task benchmark",
+  "policy_file": "eval_policy.npz",
+  "scope_selection": "All18 nearest/FA failed pre-TEST CAL, while allocation paths passed64tokens. Retain all18 failure. A keeps all18 TRAINfit; B/C reuse pre-existing3-layer policy rather than selecting a new successful layer subset. TEST failures remain outcomes.",
+  "method_layers": {
+    "NATIVE": [],
+    "MATCHED_ENERGY": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "RTPA_DIAG": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "DAMP_PAPER_ADAPTED": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "STORED_NEAREST": [
+      0,
+      12,
+      22
+    ],
+    "FA_CODE_FACTORIZED": [
+      0,
+      12,
+      22
+    ]
+  },
+  "method_policy_files": {
+    "NATIVE": "eval_policy.npz",
+    "MATCHED_ENERGY": "policy.npz",
+    "RTPA_DIAG": "policy.npz",
+    "DAMP_PAPER_ADAPTED": "policy.npz",
+    "STORED_NEAREST": "eval_policy.npz",
+    "FA_CODE_FACTORIZED": "eval_policy.npz"
+  },
+  "allocation_policy_sha256": "bd865a1a138ed25a98e8db5b5dabb26ff259307be3ba2f071a04ceb71faace68"
+}

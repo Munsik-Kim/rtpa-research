@@ -1,0 +1,1178 @@
+[
+  {
+    "candidate": "RTPA_DIAG",
+    "baseline": "MATCHED_ENERGY",
+    "context": 512,
+    "primary": true,
+    "candidate_quantized_layers": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "baseline_quantized_layers": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "same_intervention_scope": true,
+    "comparison_scope": "SAME_LAYER_SCOPE_ALLOCATION_OR_ENCODER_CONTRAST",
+    "planned_documents": 12,
+    "unit": "nat/token; gain is1-candidate/baseline, not accuracy",
+    "status": "COMPUTED",
+    "reason": null,
+    "gain": 0.21663120002576974,
+    "gain_CI95": [
+      0.17535418644044556,
+      0.25270565610104756
+    ],
+    "candidate_mean_KL": 0.0007427325963368426,
+    "baseline_mean_KL": 0.0009481263440173716,
+    "mean_KL_difference": -0.00020539374768052904,
+    "delta_NLL": -0.0005135948434704966,
+    "delta_NLL_CI95": [
+      -0.001719699599168536,
+      0.00055721749188558
+    ],
+    "PPL_ratio": 0.9994865370237848,
+    "wins": 12,
+    "ties": 0,
+    "losses": 0,
+    "mean_KL_difference_CI95": [
+      -0.0002581453929382034,
+      -0.00015365870912583047
+    ],
+    "ratio_null_reason": null,
+    "invalid_ratio_bootstrap_draws": 0,
+    "PPL_ratio_reason": null,
+    "paired_KL_tokens": 5952,
+    "paired_NLL_tokens": 5940,
+    "harmful_KL_mass": 1.1200280905270037,
+    "beneficial_KL_mass": 2.342531676721512,
+    "candidate_late_KL": 0.0006501727273401845,
+    "baseline_late_KL": 0.0007497395205662284,
+    "point_five_percent_target": true,
+    "quality_status": "QUALITY_SUPPORTED_IN_SCOPE",
+    "CI_is_not_minimum_five_percent_guarantee": true,
+    "domain": {
+      "associative_recall": {
+        "documents": 4,
+        "candidate_KL": 0.0007595194599653623,
+        "baseline_KL": 0.0009960864228986618,
+        "gain": 0.23749642349795086,
+        "delta_NLL": 0.0005758934713208194
+      },
+      "code": {
+        "documents": 4,
+        "candidate_KL": 0.0006474028288255136,
+        "baseline_KL": 0.0008614244331887198,
+        "gain": 0.24845081717843331,
+        "delta_NLL": -0.0008184697099539041
+      },
+      "natural_language": {
+        "documents": 4,
+        "candidate_KL": 0.0008212755002196518,
+        "baseline_KL": 0.0009868681759647331,
+        "gain": 0.16779614519761243,
+        "delta_NLL": -0.001298208291778405
+      }
+    }
+  },
+  {
+    "candidate": "FA_CODE_FACTORIZED",
+    "baseline": "STORED_NEAREST",
+    "context": 512,
+    "primary": true,
+    "candidate_quantized_layers": [
+      0,
+      12,
+      22
+    ],
+    "baseline_quantized_layers": [
+      0,
+      12,
+      22
+    ],
+    "same_intervention_scope": true,
+    "comparison_scope": "SAME_LAYER_SCOPE_ALLOCATION_OR_ENCODER_CONTRAST",
+    "planned_documents": 12,
+    "unit": "nat/token; gain is1-candidate/baseline, not accuracy",
+    "status": "COMPUTED",
+    "reason": null,
+    "gain": 0.05288891585277189,
+    "gain_CI95": [
+      0.029515720972624667,
+      0.07467136804034116
+    ],
+    "candidate_mean_KL": 0.00046517847104943997,
+    "baseline_mean_KL": 0.0004911551335800101,
+    "mean_KL_difference": -2.5976662530570102e-05,
+    "delta_NLL": 0.0005127892368165883,
+    "delta_NLL_CI95": [
+      -0.0001567133178781418,
+      0.0011904021354121517
+    ],
+    "PPL_ratio": 1.0005129207356933,
+    "wins": 9,
+    "ties": 0,
+    "losses": 3,
+    "mean_KL_difference_CI95": [
+      -3.742561473524136e-05,
+      -1.4076625156349932e-05
+    ],
+    "ratio_null_reason": null,
+    "invalid_ratio_bootstrap_draws": 0,
+    "PPL_ratio_reason": null,
+    "paired_KL_tokens": 5952,
+    "paired_NLL_tokens": 5940,
+    "harmful_KL_mass": 0.7876854780718349,
+    "beneficial_KL_mass": 0.9422985734537883,
+    "candidate_late_KL": 0.00041030929664137415,
+    "baseline_late_KL": 0.0004110673912650258,
+    "point_five_percent_target": true,
+    "quality_status": "QUALITY_SUPPORTED_IN_SCOPE",
+    "CI_is_not_minimum_five_percent_guarantee": true,
+    "domain": {
+      "associative_recall": {
+        "documents": 4,
+        "candidate_KL": 0.00054174915555227,
+        "baseline_KL": 0.0005755583708201697,
+        "gain": 0.05874159248126587,
+        "delta_NLL": -0.00010312390931666543
+      },
+      "code": {
+        "documents": 4,
+        "candidate_KL": 0.0004459076475172261,
+        "baseline_KL": 0.00043201842601431876,
+        "gain": -0.03214960443017545,
+        "delta_NLL": 0.0007696604189453695
+      },
+      "natural_language": {
+        "documents": 4,
+        "candidate_KL": 0.00040787861007882397,
+        "baseline_KL": 0.0004658886039055419,
+        "gain": 0.12451473021752513,
+        "delta_NLL": 0.0008718312008210607
+      }
+    }
+  },
+  {
+    "candidate": "RTPA_DIAG",
+    "baseline": "DAMP_PAPER_ADAPTED",
+    "context": 512,
+    "primary": false,
+    "candidate_quantized_layers": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "baseline_quantized_layers": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "same_intervention_scope": true,
+    "comparison_scope": "SAME_LAYER_SCOPE_ALLOCATION_OR_ENCODER_CONTRAST",
+    "planned_documents": 12,
+    "unit": "nat/token; gain is1-candidate/baseline, not accuracy",
+    "status": "COMPUTED",
+    "reason": null,
+    "gain": 0.15035236596502388,
+    "gain_CI95": [
+      0.0810331922861584,
+      0.21478528398916216
+    ],
+    "candidate_mean_KL": 0.0007427325963368426,
+    "baseline_mean_KL": 0.0008741654382177302,
+    "mean_KL_difference": -0.0001314328418808876,
+    "delta_NLL": 0.00024750717579974764,
+    "delta_NLL_CI95": [
+      -0.0009388309741251509,
+      0.001511136680174311
+    ],
+    "PPL_ratio": 1.000247537808228,
+    "wins": 9,
+    "ties": 0,
+    "losses": 3,
+    "mean_KL_difference_CI95": [
+      -0.00019603492064584896,
+      -6.780489504195845e-05
+    ],
+    "ratio_null_reason": null,
+    "invalid_ratio_bootstrap_draws": 0,
+    "PPL_ratio_reason": null,
+    "paired_KL_tokens": 5952,
+    "paired_NLL_tokens": 5940,
+    "harmful_KL_mass": 1.258968348191764,
+    "beneficial_KL_mass": 2.041256623066807,
+    "candidate_late_KL": 0.0006501727273401845,
+    "baseline_late_KL": 0.0006913146685156932,
+    "point_five_percent_target": true,
+    "quality_status": "QUALITY_SUPPORTED_IN_SCOPE",
+    "CI_is_not_minimum_five_percent_guarantee": true,
+    "domain": {
+      "associative_recall": {
+        "documents": 4,
+        "candidate_KL": 0.0007595194599653623,
+        "baseline_KL": 0.0007861292869478992,
+        "gain": 0.03384917395184195,
+        "delta_NLL": 0.000463270523293243
+      },
+      "code": {
+        "documents": 4,
+        "candidate_KL": 0.0006474028288255136,
+        "baseline_KL": 0.0008568613837072835,
+        "gain": 0.24444858744308173,
+        "delta_NLL": -0.0001643332574919804
+      },
+      "natural_language": {
+        "documents": 4,
+        "candidate_KL": 0.0008212755002196518,
+        "baseline_KL": 0.0009795056439980082,
+        "gain": 0.1615408188282763,
+        "delta_NLL": 0.0004435842615979803
+      }
+    }
+  },
+  {
+    "candidate": "MATCHED_ENERGY",
+    "baseline": "DAMP_PAPER_ADAPTED",
+    "context": 512,
+    "primary": false,
+    "candidate_quantized_layers": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "baseline_quantized_layers": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "same_intervention_scope": true,
+    "comparison_scope": "SAME_LAYER_SCOPE_ALLOCATION_OR_ENCODER_CONTRAST",
+    "planned_documents": 12,
+    "unit": "nat/token; gain is1-candidate/baseline, not accuracy",
+    "status": "COMPUTED",
+    "reason": null,
+    "gain": -0.08460744678997467,
+    "gain_CI95": [
+      -0.19708500227791398,
+      0.02677899958498661
+    ],
+    "candidate_mean_KL": 0.0009481263440173716,
+    "baseline_mean_KL": 0.0008741654382177302,
+    "mean_KL_difference": 7.396090579964143e-05,
+    "delta_NLL": 0.0007611020192702442,
+    "delta_NLL_CI95": [
+      0.00013873717923981784,
+      0.0013594389441579393
+    ],
+    "PPL_ratio": 1.0007613917309075,
+    "wins": 5,
+    "ties": 0,
+    "losses": 7,
+    "mean_KL_difference_CI95": [
+      -2.427009764353385e-05,
+      0.00016550579913092542
+    ],
+    "ratio_null_reason": null,
+    "invalid_ratio_bootstrap_draws": 0,
+    "PPL_ratio_reason": null,
+    "paired_KL_tokens": 5952,
+    "paired_NLL_tokens": 5940,
+    "harmful_KL_mass": 1.9821056412604365,
+    "beneficial_KL_mass": 1.5418903299409716,
+    "candidate_late_KL": 0.0007497395205662284,
+    "baseline_late_KL": 0.0006913146685156932,
+    "point_five_percent_target": false,
+    "quality_status": "UNRESOLVED",
+    "CI_is_not_minimum_five_percent_guarantee": true,
+    "domain": {
+      "associative_recall": {
+        "documents": 4,
+        "candidate_KL": 0.0009960864228986618,
+        "baseline_KL": 0.0007861292869478992,
+        "gain": -0.2670771073367699,
+        "delta_NLL": -0.00011262294802757636
+      },
+      "code": {
+        "documents": 4,
+        "candidate_KL": 0.0008614244331887198,
+        "baseline_KL": 0.0008568613837072835,
+        "gain": -0.005325306482705239,
+        "delta_NLL": 0.0006541364524619237
+      },
+      "natural_language": {
+        "documents": 4,
+        "candidate_KL": 0.0009868681759647331,
+        "baseline_KL": 0.0009795056439980082,
+        "gain": -0.00751657942130235,
+        "delta_NLL": 0.0017417925533763853
+      }
+    }
+  },
+  {
+    "candidate": "FA_CODE_FACTORIZED",
+    "baseline": "DAMP_PAPER_ADAPTED",
+    "context": 512,
+    "primary": false,
+    "candidate_quantized_layers": [
+      0,
+      12,
+      22
+    ],
+    "baseline_quantized_layers": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "same_intervention_scope": false,
+    "comparison_scope": "SECONDARY_CROSS_LAYER_SCOPE_COMPLETE_METHOD_OBSERVATION_NOT_MATCHED_ALLOCATION_OR_ENCODER_EFFECT",
+    "planned_documents": 12,
+    "unit": "nat/token; gain is1-candidate/baseline, not accuracy",
+    "status": "COMPUTED",
+    "reason": null,
+    "gain": 0.4678599144827126,
+    "gain_CI95": [
+      0.43648387839335023,
+      0.49584437687005767
+    ],
+    "candidate_mean_KL": 0.00046517847104943997,
+    "baseline_mean_KL": 0.0008741654382177302,
+    "mean_KL_difference": -0.00040898696716829024,
+    "delta_NLL": 0.0013630072635041138,
+    "delta_NLL_CI95": [
+      0.0005305656634367303,
+      0.0021312146552027044
+    ],
+    "PPL_ratio": 1.0013639365800782,
+    "wins": 12,
+    "ties": 0,
+    "losses": 0,
+    "mean_KL_difference_CI95": [
+      -0.0004567945475383808,
+      -0.00036185972486455517
+    ],
+    "ratio_null_reason": null,
+    "invalid_ratio_bootstrap_draws": 0,
+    "PPL_ratio_reason": null,
+    "paired_KL_tokens": 5952,
+    "paired_NLL_tokens": 5940,
+    "harmful_KL_mass": 0.50762424748713,
+    "beneficial_KL_mass": 2.941914676072794,
+    "candidate_late_KL": 0.00041030929664137415,
+    "baseline_late_KL": 0.0006913146685156932,
+    "point_five_percent_target": true,
+    "quality_status": "QUALITY_SUPPORTED_IN_SCOPE",
+    "CI_is_not_minimum_five_percent_guarantee": true,
+    "domain": {
+      "associative_recall": {
+        "documents": 4,
+        "candidate_KL": 0.00054174915555227,
+        "baseline_KL": 0.0007861292869478992,
+        "gain": 0.3108650643769052,
+        "delta_NLL": 0.0002581974643208749
+      },
+      "code": {
+        "documents": 4,
+        "candidate_KL": 0.0004459076475172261,
+        "baseline_KL": 0.0008568613837072835,
+        "gain": 0.4796035204807938,
+        "delta_NLL": 0.0017763585305331875
+      },
+      "natural_language": {
+        "documents": 4,
+        "candidate_KL": 0.00040787861007882397,
+        "baseline_KL": 0.0009795056439980082,
+        "gain": 0.5835872793810535,
+        "delta_NLL": 0.0020544657956582794
+      }
+    }
+  },
+  {
+    "candidate": "FA_CODE_FACTORIZED",
+    "baseline": "MATCHED_ENERGY",
+    "context": 512,
+    "primary": false,
+    "candidate_quantized_layers": [
+      0,
+      12,
+      22
+    ],
+    "baseline_quantized_layers": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "same_intervention_scope": false,
+    "comparison_scope": "SECONDARY_CROSS_LAYER_SCOPE_COMPLETE_METHOD_OBSERVATION_NOT_MATCHED_ALLOCATION_OR_ENCODER_EFFECT",
+    "planned_documents": 12,
+    "unit": "nat/token; gain is1-candidate/baseline, not accuracy",
+    "status": "COMPUTED",
+    "reason": null,
+    "gain": 0.5093707985389372,
+    "gain_CI95": [
+      0.4629882859187252,
+      0.549559203119776
+    ],
+    "candidate_mean_KL": 0.00046517847104943997,
+    "baseline_mean_KL": 0.0009481263440173716,
+    "mean_KL_difference": -0.0004829478729679317,
+    "delta_NLL": 0.0006019052442338697,
+    "delta_NLL_CI95": [
+      -0.00016676598475243436,
+      0.0014060004389849386
+    ],
+    "PPL_ratio": 1.000602086425545,
+    "wins": 12,
+    "ties": 0,
+    "losses": 0,
+    "mean_KL_difference_CI95": [
+      -0.0005620014395631786,
+      -0.0004048744145111096
+    ],
+    "ratio_null_reason": null,
+    "invalid_ratio_bootstrap_draws": 0,
+    "PPL_ratio_reason": null,
+    "paired_KL_tokens": 5952,
+    "paired_NLL_tokens": 5940,
+    "harmful_KL_mass": 0.4851035451665852,
+    "beneficial_KL_mass": 3.359609285071714,
+    "candidate_late_KL": 0.00041030929664137415,
+    "baseline_late_KL": 0.0007497395205662284,
+    "point_five_percent_target": true,
+    "quality_status": "QUALITY_SUPPORTED_IN_SCOPE",
+    "CI_is_not_minimum_five_percent_guarantee": true,
+    "domain": {
+      "associative_recall": {
+        "documents": 4,
+        "candidate_KL": 0.00054174915555227,
+        "baseline_KL": 0.0009960864228986618,
+        "gain": 0.4561223372809836,
+        "delta_NLL": 0.00037082041234845123
+      },
+      "code": {
+        "documents": 4,
+        "candidate_KL": 0.0004459076475172261,
+        "baseline_KL": 0.0008614244331887198,
+        "gain": 0.4823601115345457,
+        "delta_NLL": 0.0011222220780712636
+      },
+      "natural_language": {
+        "documents": 4,
+        "candidate_KL": 0.00040787861007882397,
+        "baseline_KL": 0.0009868681759647331,
+        "gain": 0.5866939273017959,
+        "delta_NLL": 0.000312673242281894
+      }
+    }
+  },
+  {
+    "candidate": "RTPA_DIAG",
+    "baseline": "MATCHED_ENERGY",
+    "context": 1024,
+    "primary": true,
+    "candidate_quantized_layers": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "baseline_quantized_layers": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "same_intervention_scope": true,
+    "comparison_scope": "SAME_LAYER_SCOPE_ALLOCATION_OR_ENCODER_CONTRAST",
+    "planned_documents": 12,
+    "unit": "nat/token; gain is1-candidate/baseline, not accuracy",
+    "status": "COMPUTED",
+    "reason": null,
+    "gain": 0.18776735640992037,
+    "gain_CI95": [
+      0.15190120835154045,
+      0.21952740302771212
+    ],
+    "candidate_mean_KL": 0.0006905931216830736,
+    "baseline_mean_KL": 0.0008502405402356674,
+    "mean_KL_difference": -0.0001596474185525938,
+    "delta_NLL": -0.00022755967338764017,
+    "delta_NLL_CI95": [
+      -0.0008291671049847779,
+      0.000374773711857114
+    ],
+    "PPL_ratio": 0.999772466216351,
+    "wins": 12,
+    "ties": 0,
+    "losses": 0,
+    "mean_KL_difference_CI95": [
+      -0.0001963476678790621,
+      -0.00012108052024632356
+    ],
+    "ratio_null_reason": null,
+    "invalid_ratio_bootstrap_draws": 0,
+    "PPL_ratio_reason": null,
+    "paired_KL_tokens": 12096,
+    "paired_NLL_tokens": 12084,
+    "harmful_KL_mass": 2.2113087335904242,
+    "beneficial_KL_mass": 4.142403908402598,
+    "candidate_late_KL": 0.000640083005612235,
+    "baseline_late_KL": 0.0007554136678221416,
+    "point_five_percent_target": true,
+    "quality_status": "QUALITY_SUPPORTED_IN_SCOPE",
+    "CI_is_not_minimum_five_percent_guarantee": true,
+    "domain": {
+      "associative_recall": {
+        "documents": 4,
+        "candidate_KL": 0.000686480012653315,
+        "baseline_KL": 0.0008337769757269359,
+        "gain": 0.17666230582248776,
+        "delta_NLL": 0.00048717547550255493
+      },
+      "code": {
+        "documents": 4,
+        "candidate_KL": 0.0005912742761948353,
+        "baseline_KL": 0.0007288159847635157,
+        "gain": 0.1887193906885969,
+        "delta_NLL": -0.00031469419655413453
+      },
+      "natural_language": {
+        "documents": 4,
+        "candidate_KL": 0.0007940250762010706,
+        "baseline_KL": 0.0009881286602165507,
+        "gain": 0.1964355370210008,
+        "delta_NLL": -0.0008551602991113409
+      }
+    }
+  },
+  {
+    "candidate": "FA_CODE_FACTORIZED",
+    "baseline": "STORED_NEAREST",
+    "context": 1024,
+    "primary": true,
+    "candidate_quantized_layers": [
+      0,
+      12,
+      22
+    ],
+    "baseline_quantized_layers": [
+      0,
+      12,
+      22
+    ],
+    "same_intervention_scope": true,
+    "comparison_scope": "SAME_LAYER_SCOPE_ALLOCATION_OR_ENCODER_CONTRAST",
+    "planned_documents": 12,
+    "unit": "nat/token; gain is1-candidate/baseline, not accuracy",
+    "status": "COMPUTED",
+    "reason": null,
+    "gain": 0.03048204776261587,
+    "gain_CI95": [
+      0.011661394473501476,
+      0.05007683549945858
+    ],
+    "candidate_mean_KL": 0.0004358416046123774,
+    "baseline_mean_KL": 0.00044954464598264874,
+    "mean_KL_difference": -1.3703041370271359e-05,
+    "delta_NLL": 0.00022846666614319118,
+    "delta_NLL_CI95": [
+      -0.00013865526785903807,
+      0.0006647409357501089
+    ],
+    "PPL_ratio": 1.0002284927666396,
+    "wins": 8,
+    "ties": 0,
+    "losses": 4,
+    "mean_KL_difference_CI95": [
+      -2.2846979244962717e-05,
+      -5.172653001471425e-06
+    ],
+    "ratio_null_reason": null,
+    "invalid_ratio_bootstrap_draws": 0,
+    "PPL_ratio_reason": null,
+    "paired_KL_tokens": 12096,
+    "paired_NLL_tokens": 12084,
+    "harmful_KL_mass": 1.5377728967548354,
+    "beneficial_KL_mass": 1.703524885169638,
+    "candidate_late_KL": 0.000407421515251473,
+    "baseline_late_KL": 0.0004092344861227049,
+    "point_five_percent_target": false,
+    "quality_status": "QUALITY_SUPPORTED_IN_SCOPE",
+    "CI_is_not_minimum_five_percent_guarantee": true,
+    "domain": {
+      "associative_recall": {
+        "documents": 4,
+        "candidate_KL": 0.0005202957783044044,
+        "baseline_KL": 0.0005378978728614121,
+        "gain": 0.03272385976053649,
+        "delta_NLL": 0.00021272801675032048
+      },
+      "code": {
+        "documents": 4,
+        "candidate_KL": 0.00038929547493434533,
+        "baseline_KL": 0.00037931776525809767,
+        "gain": -0.02630435637376105,
+        "delta_NLL": 0.00010423377157970383
+      },
+      "natural_language": {
+        "documents": 4,
+        "candidate_KL": 0.00039793356059838233,
+        "baseline_KL": 0.00043141829982843637,
+        "gain": 0.07761548187309164,
+        "delta_NLL": 0.0003684382100995492
+      }
+    }
+  },
+  {
+    "candidate": "RTPA_DIAG",
+    "baseline": "DAMP_PAPER_ADAPTED",
+    "context": 1024,
+    "primary": false,
+    "candidate_quantized_layers": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "baseline_quantized_layers": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "same_intervention_scope": true,
+    "comparison_scope": "SAME_LAYER_SCOPE_ALLOCATION_OR_ENCODER_CONTRAST",
+    "planned_documents": 12,
+    "unit": "nat/token; gain is1-candidate/baseline, not accuracy",
+    "status": "COMPUTED",
+    "reason": null,
+    "gain": 0.12355571941181398,
+    "gain_CI95": [
+      0.0640201409032357,
+      0.18210918166699586
+    ],
+    "candidate_mean_KL": 0.0006905931216830736,
+    "baseline_mean_KL": 0.0007879486887855703,
+    "mean_KL_difference": -9.735556710249661e-05,
+    "delta_NLL": 6.394600599572195e-05,
+    "delta_NLL_CI95": [
+      -0.0002929100861401749,
+      0.0003603513999760237
+    ],
+    "PPL_ratio": 1.000063948050585,
+    "wins": 10,
+    "ties": 0,
+    "losses": 2,
+    "mean_KL_difference_CI95": [
+      -0.00015217790077825516,
+      -4.833332700405199e-05
+    ],
+    "ratio_null_reason": null,
+    "invalid_ratio_bootstrap_draws": 0,
+    "PPL_ratio_reason": null,
+    "paired_KL_tokens": 12096,
+    "paired_NLL_tokens": 12084,
+    "harmful_KL_mass": 2.414429612472913,
+    "beneficial_KL_mass": 3.5920425521447115,
+    "candidate_late_KL": 0.000640083005612235,
+    "baseline_late_KL": 0.0007044262127731652,
+    "point_five_percent_target": true,
+    "quality_status": "QUALITY_SUPPORTED_IN_SCOPE",
+    "CI_is_not_minimum_five_percent_guarantee": true,
+    "domain": {
+      "associative_recall": {
+        "documents": 4,
+        "candidate_KL": 0.000686480012653315,
+        "baseline_KL": 0.0007051951158296762,
+        "gain": 0.026538900732944737,
+        "delta_NLL": 0.0006609425422544706
+      },
+      "code": {
+        "documents": 4,
+        "candidate_KL": 0.0005912742761948353,
+        "baseline_KL": 0.0007202956097781285,
+        "gain": 0.17912275436891179,
+        "delta_NLL": -8.52372292409585e-05
+      },
+      "natural_language": {
+        "documents": 4,
+        "candidate_KL": 0.0007940250762010706,
+        "baseline_KL": 0.000938355340748906,
+        "gain": 0.15381194978082047,
+        "delta_NLL": -0.00038386729502634626
+      }
+    }
+  },
+  {
+    "candidate": "MATCHED_ENERGY",
+    "baseline": "DAMP_PAPER_ADAPTED",
+    "context": 1024,
+    "primary": false,
+    "candidate_quantized_layers": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "baseline_quantized_layers": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "same_intervention_scope": true,
+    "comparison_scope": "SAME_LAYER_SCOPE_ALLOCATION_OR_ENCODER_CONTRAST",
+    "planned_documents": 12,
+    "unit": "nat/token; gain is1-candidate/baseline, not accuracy",
+    "status": "COMPUTED",
+    "reason": null,
+    "gain": -0.07905572067910249,
+    "gain_CI95": [
+      -0.16814480359969827,
+      0.013730567086515724
+    ],
+    "candidate_mean_KL": 0.0008502405402356674,
+    "baseline_mean_KL": 0.0007879486887855703,
+    "mean_KL_difference": 6.229185145009719e-05,
+    "delta_NLL": 0.00029150567938336213,
+    "delta_NLL_CI95": [
+      -0.00026222038728867603,
+      0.0008081473200588268
+    ],
+    "PPL_ratio": 1.0002915481712926,
+    "wins": 3,
+    "ties": 0,
+    "losses": 9,
+    "mean_KL_difference_CI95": [
+      -1.1153993823517769e-05,
+      0.00012755995280218623
+    ],
+    "ratio_null_reason": null,
+    "invalid_ratio_bootstrap_draws": 0,
+    "PPL_ratio_reason": null,
+    "paired_KL_tokens": 12096,
+    "paired_NLL_tokens": 12084,
+    "harmful_KL_mass": 3.5319769600325888,
+    "beneficial_KL_mass": 2.778494724892213,
+    "candidate_late_KL": 0.0007554136678221416,
+    "baseline_late_KL": 0.0007044262127731652,
+    "point_five_percent_target": false,
+    "quality_status": "UNRESOLVED",
+    "CI_is_not_minimum_five_percent_guarantee": true,
+    "domain": {
+      "associative_recall": {
+        "documents": 4,
+        "candidate_KL": 0.0008337769757269359,
+        "baseline_KL": 0.0007051951158296762,
+        "gain": -0.18233515379070742,
+        "delta_NLL": 0.0001737670667519157
+      },
+      "code": {
+        "documents": 4,
+        "candidate_KL": 0.0007288159847635157,
+        "baseline_KL": 0.0007202956097781285,
+        "gain": -0.011828997525074048,
+        "delta_NLL": 0.00022945696731317604
+      },
+      "natural_language": {
+        "documents": 4,
+        "candidate_KL": 0.0009881286602165507,
+        "baseline_KL": 0.000938355340748906,
+        "gain": -0.05304314613685723,
+        "delta_NLL": 0.0004712930040849946
+      }
+    }
+  },
+  {
+    "candidate": "FA_CODE_FACTORIZED",
+    "baseline": "DAMP_PAPER_ADAPTED",
+    "context": 1024,
+    "primary": false,
+    "candidate_quantized_layers": [
+      0,
+      12,
+      22
+    ],
+    "baseline_quantized_layers": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "same_intervention_scope": false,
+    "comparison_scope": "SECONDARY_CROSS_LAYER_SCOPE_COMPLETE_METHOD_OBSERVATION_NOT_MATCHED_ALLOCATION_OR_ENCODER_EFFECT",
+    "planned_documents": 12,
+    "unit": "nat/token; gain is1-candidate/baseline, not accuracy",
+    "status": "COMPUTED",
+    "reason": null,
+    "gain": 0.44686549921909213,
+    "gain_CI95": [
+      0.41430596543328807,
+      0.4798708336111177
+    ],
+    "candidate_mean_KL": 0.0004358416046123774,
+    "baseline_mean_KL": 0.0007879486887855703,
+    "mean_KL_difference": -0.0003521070841731929,
+    "delta_NLL": 0.0006183589078685382,
+    "delta_NLL_CI95": [
+      2.3340582752975853e-05,
+      0.0011993468385608297
+    ],
+    "PPL_ratio": 1.0006185501311509,
+    "wins": 12,
+    "ties": 0,
+    "losses": 0,
+    "mean_KL_difference_CI95": [
+      -0.00040143519749936306,
+      -0.0003081505588427011
+    ],
+    "ratio_null_reason": null,
+    "invalid_ratio_bootstrap_draws": 0,
+    "PPL_ratio_reason": null,
+    "paired_KL_tokens": 12096,
+    "paired_NLL_tokens": 12084,
+    "harmful_KL_mass": 1.0095772860522607,
+    "beneficial_KL_mass": 5.268664576211202,
+    "candidate_late_KL": 0.000407421515251473,
+    "baseline_late_KL": 0.0007044262127731652,
+    "point_five_percent_target": true,
+    "quality_status": "QUALITY_SUPPORTED_IN_SCOPE",
+    "CI_is_not_minimum_five_percent_guarantee": true,
+    "domain": {
+      "associative_recall": {
+        "documents": 4,
+        "candidate_KL": 0.0005202957783044044,
+        "baseline_KL": 0.0007051951158296762,
+        "gain": 0.2621959984900548,
+        "delta_NLL": 8.161585510457505e-05
+      },
+      "code": {
+        "documents": 4,
+        "candidate_KL": 0.00038929547493434533,
+        "baseline_KL": 0.0007202956097781285,
+        "gain": 0.45953373913488194,
+        "delta_NLL": 0.0011146874097593422
+      },
+      "natural_language": {
+        "documents": 4,
+        "candidate_KL": 0.00039793356059838233,
+        "baseline_KL": 0.000938355340748906,
+        "gain": 0.5759244464034385,
+        "delta_NLL": 0.0006587734587416974
+      }
+    }
+  },
+  {
+    "candidate": "FA_CODE_FACTORIZED",
+    "baseline": "MATCHED_ENERGY",
+    "context": 1024,
+    "primary": false,
+    "candidate_quantized_layers": [
+      0,
+      12,
+      22
+    ],
+    "baseline_quantized_layers": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "same_intervention_scope": false,
+    "comparison_scope": "SECONDARY_CROSS_LAYER_SCOPE_COMPLETE_METHOD_OBSERVATION_NOT_MATCHED_ALLOCATION_OR_ENCODER_EFFECT",
+    "planned_documents": 12,
+    "unit": "nat/token; gain is1-candidate/baseline, not accuracy",
+    "status": "COMPUTED",
+    "reason": null,
+    "gain": 0.48739023371954016,
+    "gain_CI95": [
+      0.4532776991980823,
+      0.5160997397512082
+    ],
+    "candidate_mean_KL": 0.0004358416046123774,
+    "baseline_mean_KL": 0.0008502405402356674,
+    "mean_KL_difference": -0.00041439893562329006,
+    "delta_NLL": 0.0003268532284851761,
+    "delta_NLL_CI95": [
+      -0.00043452618949328724,
+      0.001017934762150826
+    ],
+    "PPL_ratio": 1.000326906650822,
+    "wins": 12,
+    "ties": 0,
+    "losses": 0,
+    "mean_KL_difference_CI95": [
+      -0.00046475904384745385,
+      -0.00036028106608220644
+    ],
+    "ratio_null_reason": null,
+    "invalid_ratio_bootstrap_draws": 0,
+    "PPL_ratio_reason": null,
+    "paired_KL_tokens": 12096,
+    "paired_NLL_tokens": 12084,
+    "harmful_KL_mass": 0.987328079600565,
+    "beneficial_KL_mass": 5.999897604899882,
+    "candidate_late_KL": 0.000407421515251473,
+    "baseline_late_KL": 0.0007554136678221416,
+    "point_five_percent_target": true,
+    "quality_status": "QUALITY_SUPPORTED_IN_SCOPE",
+    "CI_is_not_minimum_five_percent_guarantee": true,
+    "domain": {
+      "associative_recall": {
+        "documents": 4,
+        "candidate_KL": 0.0005202957783044044,
+        "baseline_KL": 0.0008337769757269359,
+        "gain": 0.3759772775558118,
+        "delta_NLL": -9.215121164734065e-05
+      },
+      "code": {
+        "documents": 4,
+        "candidate_KL": 0.00038929547493434533,
+        "baseline_KL": 0.0007288159847635157,
+        "gain": 0.46585217246481925,
+        "delta_NLL": 0.0008852304424461661
+      },
+      "natural_language": {
+        "documents": 4,
+        "candidate_KL": 0.00039793356059838233,
+        "baseline_KL": 0.0009881286602165507,
+        "gain": 0.5972856808837279,
+        "delta_NLL": 0.00018748045465670276
+      }
+    }
+  }
+]

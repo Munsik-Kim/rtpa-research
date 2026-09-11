@@ -1,0 +1,326 @@
+{
+  "audit_id": "RTPA_GDN_GDN2_SOURCE_REVIEW_20260911",
+  "checked_date": "2026-09-11",
+  "scope": "Bounded primary-source inspection, CPU equation tests, and a CPU installed-native recurrence probe. The source reviewer did not execute models, official GPU kernels, training, or model-weight downloads.",
+  "source_hash_kind": "SHA-256 of retrieved bytes. API response hashes describe the checked observation, not permanent endpoint expectations.",
+  "original_review_sha256": "afe7326b02d39525bd40fa0c2379447b9deae0e9f21f597a7ba239ca3c029d66",
+  "public_derivation": "Selected verified facts; local absolute paths removed. This file has its own evidence-manifest hash, distinct from the original review.",
+  "gdn": {
+    "paper": {
+      "url": "https://arxiv.org/html/2412.06464v1",
+      "bytes": 616080,
+      "sha256": "9d0cfb50d33f41e337a6e0c9a4f6f07afc63825cf4d44a3bc6abebccc7492dda"
+    },
+    "model": "Qwen/Qwen3.5-0.8B-Base",
+    "checkpoint_url": "https://huggingface.co/Qwen/Qwen3.5-0.8B-Base/tree/dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+    "revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+    "identity_basis": "Preserved model manifest and newly loaded pilot environment receipt; not inferred merely from a model name.",
+    "total_model_layers": 24,
+    "recurrent_layers": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "heads_per_recurrent_layer": 16,
+    "state_shape_per_layer": [
+      "batch",
+      16,
+      128,
+      128
+    ],
+    "model_dtype": "BF16",
+    "native_persistent_recurrent_dtype": "BF16",
+    "native_recurrent_update_dtype": "FP32",
+    "attention_backend": "sdpa",
+    "native_path": "transformers/models/qwen3_5/modeling_qwen3_5.py",
+    "native_source_sha256": "d67880b98f47d55a9d40679c901a740aa0618b97458824cab2abe9a1f7861be6",
+    "native_torch_paths": [
+      "torch_chunk_gated_delta_rule",
+      "torch_recurrent_gated_delta_rule"
+    ],
+    "interpretation": "Not an all-FP32 reference. New A uses all18-layer allocation; new B/C use inherited3-layer FA_CODE. Historical panels remain separate. Same bytes/head does not imply equal total target storage across A/B scopes.",
+    "registered_comparison_scopes": {
+      "run_id": "RTPA_GDN_GDN2_20260911_V1",
+      "A": {
+        "methods": ["MATCHED_ENERGY", "RTPA_DIAG", "DAMP_PAPER_ADAPTED"],
+        "layers": [0, 1, 2, 4, 5, 6, 8, 9, 10, 12, 13, 14, 16, 17, 18, 20, 21, 22],
+        "offline_source": "New synthetic TRAIN6 fixed masks",
+        "policy_sha256": "bd865a1a138ed25a98e8db5b5dabb26ff259307be3ba2f071a04ceb71faace68"
+      },
+      "B_C": {
+        "methods": ["STORED_NEAREST", "FA_CODE_FACTORIZED", "FA_CODE_REFERENCE"],
+        "layers": [0, 12, 22],
+        "offline_source": "Inherited v0.5 MATCHED mask from original TRAIN9; FA metric from historical TRAIN12 m2_l1_e005; reference used for conformance/timing",
+        "mask_equality_check": {
+          "source": "data/masks/v05.json:P_PRE/MATCHED_ENERGY8",
+          "source_sha256": "970933fca4940311f1f8d440a83d647d2bf0bd33022512b6567876f4e66db5f2",
+          "layers": [0, 12, 22],
+          "all48_head_masks_exact": true,
+          "high_rows_per_head": 8,
+          "execution": "CPU NumPy array equality; checked against eval_policy.npz at publication review"
+        },
+        "policy_sha256": "355492d26bfe8be47660d28f6820f18ebce581c7d712c834028bbaafc5a04da9"
+      },
+      "scope_selection": "Pre-TEST all18 CAL nearest/FA failures retained; B/C reuse the already existing3-layer policy, not a new successful layer subset. Allocation64-token CAL completion is not full TEST stability.",
+      "unused_metric": "New all18 TRAINnative Gramian FA metric not used for B/C TEST",
+      "failure_evidence": "data/evidence/upgrade_failures/manifest.json",
+      "failure_probe_whole_source_identity": "UNKNOWN; later TEST freeze cannot attest retroactive identity"
+    },
+    "model_evaluation_scope": "Main execution's benchmark results are authoritative; this source audit establishes architecture/native-source identity, not new quality or latency."
+  },
+  "gdn2": {
+    "paper": {
+      "url": "https://arxiv.org/html/2605.22791v1",
+      "bytes": 665047,
+      "sha256": "ea0691ea7f1b7c4eb6f53428bf0cded25e32f4a803544fce156a6bc8ff726e78"
+    },
+    "official_repo": "https://github.com/NVlabs/GatedDeltaNet-2",
+    "official_owner_evidence": "The paper abstract directly links this repository; its README identifies the same paper and authors.",
+    "commit": "a5552fe3c67e0ebc7ef1220df68ae8896ec62d56",
+    "commit_date": "2026-08-29T17:54:49Z",
+    "license": "NVIDIA Source Code License-NC",
+    "license_url": "https://github.com/NVlabs/GatedDeltaNet-2/blob/a5552fe3c67e0ebc7ef1220df68ae8896ec62d56/LICENSE",
+    "license_boundary": "Upstream states non-commercial research/evaluation restrictions. No upstream implementation was vendored or relabeled Apache-2.0; the local equation operator is independently authored.",
+    "files": [
+      {
+        "path": "README.md",
+        "bytes": 7537,
+        "sha256": "1d9c0ef49b8608bdefeafdbe8fd27ebd46fae49741ba748f124bc3f53781c938"
+      },
+      {
+        "path": "LICENSE",
+        "bytes": 4126,
+        "sha256": "eaff393a7abc4ea7cb05795423b531a212b6d2189bcbe30410587d52d70988bb"
+      },
+      {
+        "path": "lit_gpt/gdn2.py",
+        "bytes": 17622,
+        "sha256": "5d93765adcb4e9bf755e7d4160a01d4e2ee8438ec55759d17903223dd18b0324"
+      },
+      {
+        "path": "lit_gpt/gdn2_ops/fused_recurrent_gdn2.py",
+        "bytes": 18475,
+        "sha256": "aee06a5fe471a194680a5762cbb733118d0e52ad816732a4e1742cb7485a2db1"
+      },
+      {
+        "path": "lit_gpt/config.py",
+        "bytes": 6184,
+        "sha256": "16615cfe0862fc9b6fd9da61d0724769537a3d6696ad91d16b046b640a237bee"
+      },
+      {
+        "path": "lit_gpt/model.py",
+        "bytes": 16765,
+        "sha256": "26ca6db0b0fb3fa6e69c44dae5e59e86f1c4ef2fd81579de2d8e3113be0369d2"
+      }
+    ],
+    "file_url_rule": "https://raw.githubusercontent.com/NVlabs/GatedDeltaNet-2/{commit}/{path}",
+    "checkpoint_status": "OFFICIAL_TRAINED_CHECKPOINT_NOT_VERIFIED",
+    "support_level": "OPERATOR_TESTED",
+    "pretrained_model_KL_NLL": {
+      "status": "NOT_RUN",
+      "reason": "No author-linked trained checkpoint with a verified local cached-inference path was established in the bounded review."
+    },
+    "checkpoint_search": {
+      "official_readme_checkpoint_link": "NOT_FOUND_IN_CHECKED_README",
+      "releases_url": "https://api.github.com/repos/NVlabs/GatedDeltaNet-2/releases",
+      "releases_observed": [],
+      "tags_url": "https://api.github.com/repos/NVlabs/GatedDeltaNet-2/tags",
+      "tags_observed": [],
+      "hf_official_query": "https://huggingface.co/api/models?author=nvidia&search=gdn&limit=50",
+      "hf_official_query_observed": [],
+      "hf_paper_models_query": "https://huggingface.co/api/models?filter=arxiv:2605.22791",
+      "hf_paper_models_query_sha256": "40efcb6adb74368beb9e7bff910b416f7a63402d43865f7dfa199543452310fc",
+      "third_party_model": {
+        "id": "LLM-OS-Models/gdn2-1.3B-fineweb-edu-100b",
+        "url": "https://huggingface.co/LLM-OS-Models/gdn2-1.3B-fineweb-edu-100b/tree/86327354dd1e6874fe6407878087079326fee851",
+        "revision": "86327354dd1e6874fe6407878087079326fee851",
+        "model_card_url": "https://huggingface.co/LLM-OS-Models/gdn2-1.3B-fineweb-edu-100b/raw/86327354dd1e6874fe6407878087079326fee851/README.md",
+        "model_card_bytes": 4757,
+        "model_card_sha256": "a2e52ab37b6eb70b9d57f14b31509dd4fc8d7e4890e7edfc94662f3bee09d273",
+        "author_endorsement": "NOT_VERIFIED",
+        "trained_by_card_claim": "LLM-OS-Models",
+        "training_source_card_link": "https://github.com/gyunggyung/long-gdn",
+        "card_status": "In-progress pure-recurrent1.3B pretraining; TinyLlama v1.1 tokenizer,4096 context.",
+        "listing": "19 .pth checkpoints,5B increments through95B; no final100B checkpoint, tokenizer files, or standalone config in checked listing.",
+        "each_checkpoint_reported_bytes": 17401727659,
+        "latest_listed_filename": "checkpoint-95B-model-ckpt.pth",
+        "latest_listed_lfs_sha256": "4ac729c627febc431bf4b2011a9cb7ad9c30cc1d017ff74aeca15f76efb2df6d",
+        "file_listing_sha256": "dddb5f958c120b20cc78e7d3b2b625cc784cba47b620a39eecc913e8331b9a65",
+        "weight_verification": "REMOTE_LFS_METADATA_ONLY; no weight download or load.",
+        "rights_boundary": "Card header says Apache-2.0; this is not an override of upstream code license restrictions.",
+        "interpretation": "HF paper linking is not proof of author endorsement. Serialized checkpoint bytes are not measured VRAM requirements. No claim that the1.3B architecture cannot fit16GB."
+      },
+      "search_limit": "Checked official paper/repository/release/tag endpoints and paper-linked model cards/APIs. Not an exhaustive claim about every host or private checkpoint."
+    },
+    "equation_contract": {
+      "state": "S[key,value]; upstream also has a TRANSPOSE_STATE layout.",
+      "transition": "e=b*k; D=diag(alpha); A=(I-k e^T)D",
+      "update": "S_new=A S_old+k(w*v)^T; output=S_new^T q",
+      "adjoint": "A^T x=alpha*(x-(b*k)*(k^T x))",
+      "asymmetry": "A is generally nonsymmetric; decay follows the rank-one operation in the adjoint, unlike an incorrect scalar shortcut.",
+      "axes": "erase b:key; write w:value; decay alpha:key",
+      "kda_reduction": "b=beta*1_key and w=beta*1_value",
+      "gdn_reduction": "Additionally alpha=scalar_alpha*1_key",
+      "upstream_qk": "Normalize with sqrt(sum(square)+1e-6); query is subsequently scaled by key_dim^-0.5.",
+      "upstream_arithmetic": "Recurrent state tile/final state FP32; output cast to value dtype. Output precedes gated RMS norm/projection.",
+      "upstream_dispatch": "In the inspected layer: nontraining q_len<=64 uses recurrent path; otherwise configured chunk path.",
+      "model_port_caution": "The training-oriented top-level GPT Block call does not pass recurrent cache/use_cache. A verified cached-generation adapter cannot be inferred from standalone recurrent kernels.",
+      "local_storage_boundary": "Read updated state before per-token encode; this is a local storage intervention, not the official quantized/fused implementation."
+    }
+  },
+  "damp": {
+    "paper": {
+      "url": "https://arxiv.org/html/2608.27513v1",
+      "bytes": 290134,
+      "sha256": "e55c235ee57d8bf7db1e535d26e136db96f880dc51dab53a6b5021e769691e1f"
+    },
+    "author_code_status": "AUTHOR_CODE_NOT_VERIFIED",
+    "author_code_commit": null,
+    "checked_queries": [
+      "\"DAMP\" \"2608.27513\" github",
+      "\"Decay-Aware Mixed-Precision\" github",
+      "site:github.com/Meituan \"DAMP\" quantization",
+      "site:github.com \"2608.27513\""
+    ],
+    "observations": "Checked paper/abstract links did not establish an algorithm repository. arXiv feedback links were excluded. HF paper API404 and exact-title/ID repository searches did not verify author code.",
+    "not_claimed": "Absence of a verified link is not proof that author code is unpublished.",
+    "contract": {
+      "codec": "UINT8 affine; normalized value-axis H32; group32; FP16 scale/zero-point; original-coordinate FP16 high rows.",
+      "budget": "Paper default16/128 high rows=9.875bits/value; local8/128=9.4375bits/value, including scale/zero-point metadata but excluding indices/static/scratch.",
+      "calibration": "Pile validation;8 documents per each of4 domains;256 tokens/document;stride8;domain balanced.",
+      "risk": "E_i*P_i; E_i=E_cal||Q_low(S)_i-S_i||²; P_i=1/max(1-exp(E_cal log(a_i))²,1e-4)",
+      "gdn_identity": "Within a scalar-decay GDN head with fixed budget, persistence is a common positive multiplier and cannot change E top-k ranking. Not a general GDN2 result.",
+      "runtime": "Paper FP32 recurrent reference, fused SGLang decode and chunk-boundary prefill writes differ from local Native BF16 cache/eager per-token writes.",
+      "unresolved": "Exact metadata cast-before-code order, tie/floor/constant handling and overflow behavior are not completely specified by the checked paper.",
+      "current_comparison": "DAMP_PAPER_ADAPTED uses local synthetic TRAIN6/native stride8/r8/per-tokenP_PRE; neither original paper corpus/benchmark reproduction nor author-code verification."
+    }
+  },
+  "qronos": {
+    "paper": {
+      "url": "https://arxiv.org/html/2505.11695v3",
+      "bytes": 698808,
+      "sha256": "1854a56b0cef1899b2e65b29b200550d19f006310a075cd6997d493822e8cd49"
+    },
+    "author_linked_code": "https://github.com/i-colbert/brevitas/tree/qronos/src/brevitas_examples/llm",
+    "provenance": "Paper v3 Reproducibility section directly links this branch. Older v1 future-release wording is not the current evidence.",
+    "code_commit": "fa88103f1f2b7d04aac3eedc66a274dcfda1c1fa",
+    "implementation": {
+      "path": "src/brevitas/graph/qronos.py",
+      "bytes": 13160,
+      "sha256": "bcc76fc831d90f107aeb4f09d5b2bbda798c945d0a99f72d167a30777c7ed76b",
+      "license": "BSD-3-Clause per SPDX"
+    },
+    "license_sha256": "fa0df31957056ef8ff25f61ff557c282a286cd128647cde1c2175f2315312329",
+    "overlap": "Data-aware rounding, reconstruction objectives, fixed grids, error correction and error diffusion predate RTPA/FA_CODE.",
+    "distinction": "Inspected Qronos code performs offline sequential weight-column rounding using float/quantized activation covariances and least-squares updates. FA_CODE uses bounded runtime recurrent-write integer-code correction with a frozen state metric.",
+    "positioning": "Recurrent-state extension/implementation and empirical study; no first-ever, SOTA, priority, or Qronos-equivalence claim.",
+    "execution_status": "SOURCE_REVIEW_ONLY; no Qronos benchmark executed."
+  },
+  "independent_cpu_math_probe": {
+    "seed": 20260911,
+    "dtype": "numpy_float64",
+    "dimensions": [
+      16,
+      12
+    ],
+    "horizon": 8,
+    "relative_tolerance": 1e-12,
+    "forward_relative_error": 1.7307475514073422e-16,
+    "transpose_action_relative_error": 2.5863870956538427e-16,
+    "A_nonsymmetry_relative": 0.06540029172432714,
+    "tied_GDN_relative_error": 9.766525061800699e-18,
+    "direct_distortion": 41.945142279948314,
+    "gramian_distortion": 41.94514227994831,
+    "gramian_relative_error": 1.6939809883533806e-16,
+    "gramian_min_eigenvalue": -3.763854909422719e-17,
+    "status": "CPU_SYNTHETIC_EQUATIONS_CHECKED",
+    "limitation": "Not official Triton/kernel or full-model parity. Tiny negative PSD eigenvalue retained as floating-point roundoff."
+  },
+  "cpu_native_recurrence_probe": {
+    "status": "EXECUTED_CPU_SYNTHETIC_INSTALLED_NATIVE_FUNCTIONS",
+    "execution_date": "2026-09-11",
+    "seed": 611110,
+    "environment": {
+      "python": "3.11.15",
+      "torch": "2.11.0+cu128",
+      "transformers": "5.9.0",
+      "CPU_threads": 1,
+      "CUDA_VISIBLE_DEVICES": ""
+    },
+    "input_shapes": {
+      "q_k_v": [
+        1,
+        1,
+        16,
+        128
+      ],
+      "g_beta": [
+        1,
+        1,
+        16
+      ],
+      "nonzero_initial_state": [
+        1,
+        16,
+        128,
+        128
+      ]
+    },
+    "dtypes": "q/k/v,beta,incoming state BF16; log-decay FP32; native update FP32",
+    "operator_source": "src/rtpa_research/operators.py",
+    "operator_sha256_at_probe": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78",
+    "external_source": "transformers/models/qwen3_5/modeling_qwen3_5.py",
+    "external_source_sha256": "d67880b98f47d55a9d40679c901a740aa0618b97458824cab2abe9a1f7861be6",
+    "rows": [
+      {
+        "path": "recurrent_nonzero",
+        "state_relative_L2": 0,
+        "state_exact": true,
+        "readout_cast_BF16_exact": true,
+        "FP32_precast_readout_relative_difference_from_BF16": 0.0016704172594472766
+      },
+      {
+        "path": "chunk_zero",
+        "state_relative_L2": 0,
+        "state_exact": true,
+        "readout_cast_BF16_exact": true,
+        "FP32_precast_readout_relative_difference_from_BF16": 0.0016577255446463823
+      }
+    ],
+    "conclusion": "At these points the reconstructed FP32 update exactly matches installed native state; FP32 z*q readout matches returned native output only after BF16 cast. Captured FP32 pre-output-cast objectives must not be labeled actual BF16 returned readouts.",
+    "arithmetic_boundary": "Use l2norm(q).float() * (1 / sqrt(128)), preserving native reciprocal multiplication. An exploratory division variant changed a BF16 cast decision; it is not the registered capture arithmetic.",
+    "limitation": "Two synthetic CPU tensor points only; not full-model, CUDA backend, arbitrary-input equivalence, or a performance measurement.",
+    "reproduce_program": [
+      "import json, torch",
+      "from rtpa_research.operators import update",
+      "from transformers.models.qwen3_5.modeling_qwen3_5 import l2norm, torch_recurrent_gated_delta_rule, torch_chunk_gated_delta_rule",
+      "torch.set_num_threads(1); torch.manual_seed(611110)",
+      "q,k,v=[torch.randn(1,1,16,128,dtype=torch.bfloat16) for _ in range(3)]",
+      "g=-torch.rand(1,1,16); b=torch.rand(1,1,16,dtype=torch.bfloat16); s=torch.randn(1,16,128,128,dtype=torch.bfloat16)",
+      "rows=[]",
+      "for label,fn,state in [('recurrent_nonzero',torch_recurrent_gated_delta_rule,s),('chunk_zero',torch_chunk_gated_delta_rule,None)]:",
+      "    y,z=fn(q,k,v,g=g,beta=b,initial_state=state,output_final_state=True,use_qk_l2norm_in_kernel=True)",
+      "    qq=l2norm(q).float()[0,0]*(1/128**.5); kk=l2norm(k).float()[0,0]",
+      "    zi=torch.zeros(16,128,128) if state is None else state[0].float()",
+      "    pred=update(zi,kk,v[0,0].float(),g[0,0].exp()[:,None].expand(-1,128),b[0,0].float()[:,None].expand(-1,128),b[0,0].float()[:,None].expand(-1,128),'gdn')",
+      "    cap=(z[0]*qq[...,None]).sum(-2)",
+      "    rows.append(dict(path=label,state_relative_L2=float((pred-z[0]).norm()/z.norm()),state_exact=bool(torch.equal(pred,z[0])),readout_cast_BF16_exact=bool(torch.equal(cap.bfloat16(),y[0,0])),FP32_precast_readout_relative_difference_from_BF16=float((cap-y[0,0].float()).norm()/cap.norm())))",
+      "print(json.dumps(rows,indent=2))"
+    ]
+  }
+}

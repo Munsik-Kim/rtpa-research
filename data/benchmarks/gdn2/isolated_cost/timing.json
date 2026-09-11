@@ -1,0 +1,1519 @@
+{
+  "rows": [
+    {
+      "block": 0,
+      "order": 0,
+      "method": "MATCHED_ENERGY",
+      "seconds": 0.5479562020045705,
+      "ms_per_token": 4.280907828160707,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 14201344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 40.0,
+        "used_MiB": 7679.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 15.0
+      },
+      "gpu_after": {
+        "temperature_C": 40.0,
+        "used_MiB": 7679.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 19.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 0,
+      "order": 1,
+      "method": "NATIVE_FP32",
+      "seconds": 0.02095273300074041,
+      "ms_per_token": 0.16369322656828444,
+      "payload_bytes": 262144,
+      "peak_allocated_bytes": 11172352,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 40.0,
+        "used_MiB": 7679.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 19.0
+      },
+      "gpu_after": {
+        "temperature_C": 40.0,
+        "used_MiB": 7679.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 5.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 0,
+      "order": 2,
+      "method": "FA_CODE_FACTORIZED",
+      "seconds": 3.2139136859987048,
+      "ms_per_token": 25.10870067186488,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 23382016,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 8224,
+      "gpu_before": {
+        "temperature_C": 40.0,
+        "used_MiB": 7679.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 5.0
+      },
+      "gpu_after": {
+        "temperature_C": 45.0,
+        "used_MiB": 8615.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 46.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 0,
+      "order": 3,
+      "method": "STORED_NEAREST_REPEAT",
+      "seconds": 0.8572784779971698,
+      "ms_per_token": 6.697488109352889,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 19096064,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 45.0,
+        "used_MiB": 8681.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 37.0
+      },
+      "gpu_after": {
+        "temperature_C": 45.0,
+        "used_MiB": 8808.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 46.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 0,
+      "order": 4,
+      "method": "FA_CODE_REFERENCE",
+      "seconds": 3.2869818980034324,
+      "ms_per_token": 25.679546078151816,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 24889344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 524288,
+      "gpu_before": {
+        "temperature_C": 45.0,
+        "used_MiB": 8808.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 21.0
+      },
+      "gpu_after": {
+        "temperature_C": 48.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 33.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 0,
+      "order": 5,
+      "method": "STORED_NEAREST",
+      "seconds": 1.2974497090035584,
+      "ms_per_token": 10.1363258515903,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 19096064,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 48.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 22.0
+      },
+      "gpu_after": {
+        "temperature_C": 47.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 46.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 0,
+      "order": 6,
+      "method": "RTPA_DIAG",
+      "seconds": 0.888127901002008,
+      "ms_per_token": 6.9384992265781875,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 14201344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 47.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 40.0
+      },
+      "gpu_after": {
+        "temperature_C": 46.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 46.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 1,
+      "order": 0,
+      "method": "STORED_NEAREST",
+      "seconds": 1.5720456310009467,
+      "ms_per_token": 12.281606492194896,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 19096064,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 46.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 34.0
+      },
+      "gpu_after": {
+        "temperature_C": 49.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 42.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 1,
+      "order": 1,
+      "method": "FA_CODE_REFERENCE",
+      "seconds": 4.312008430999413,
+      "ms_per_token": 33.68756586718291,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 24889344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 524288,
+      "gpu_before": {
+        "temperature_C": 49.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 42.0
+      },
+      "gpu_after": {
+        "temperature_C": 47.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 45.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 1,
+      "order": 2,
+      "method": "RTPA_DIAG",
+      "seconds": 0.5668489529998624,
+      "ms_per_token": 4.428507445311425,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 14201344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 47.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 39.0
+      },
+      "gpu_after": {
+        "temperature_C": 46.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 47.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 1,
+      "order": 3,
+      "method": "STORED_NEAREST_REPEAT",
+      "seconds": 1.2855584850040032,
+      "ms_per_token": 10.043425664093775,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 19096064,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 46.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 37.0
+      },
+      "gpu_after": {
+        "temperature_C": 48.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 47.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 1,
+      "order": 4,
+      "method": "FA_CODE_FACTORIZED",
+      "seconds": 3.4358914120020927,
+      "ms_per_token": 26.84290165626635,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 23382016,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 8224,
+      "gpu_before": {
+        "temperature_C": 48.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 47.0
+      },
+      "gpu_after": {
+        "temperature_C": 49.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 40.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 1,
+      "order": 5,
+      "method": "NATIVE_FP32",
+      "seconds": 0.026289121000445448,
+      "ms_per_token": 0.20538375781598006,
+      "payload_bytes": 262144,
+      "peak_allocated_bytes": 11172352,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 49.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 42.0
+      },
+      "gpu_after": {
+        "temperature_C": 49.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 35.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 1,
+      "order": 6,
+      "method": "MATCHED_ENERGY",
+      "seconds": 0.9674385660036933,
+      "ms_per_token": 7.558113796903854,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 14201344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 49.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 35.0
+      },
+      "gpu_after": {
+        "temperature_C": 51.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 48.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 2,
+      "order": 0,
+      "method": "MATCHED_ENERGY",
+      "seconds": 0.8602266480011167,
+      "ms_per_token": 6.720520687508724,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 14201344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 51.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 48.0
+      },
+      "gpu_after": {
+        "temperature_C": 47.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 47.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 2,
+      "order": 1,
+      "method": "NATIVE_FP32",
+      "seconds": 0.027695726996171288,
+      "ms_per_token": 0.2163728671575882,
+      "payload_bytes": 262144,
+      "peak_allocated_bytes": 11172352,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 47.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 38.0
+      },
+      "gpu_after": {
+        "temperature_C": 47.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 38.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 2,
+      "order": 2,
+      "method": "STORED_NEAREST",
+      "seconds": 1.3381901369939442,
+      "ms_per_token": 10.454610445265189,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 19096064,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 47.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 35.0
+      },
+      "gpu_after": {
+        "temperature_C": 48.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 47.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 2,
+      "order": 3,
+      "method": "FA_CODE_REFERENCE",
+      "seconds": 3.527042790003179,
+      "ms_per_token": 27.555021796899837,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 24889344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 524288,
+      "gpu_before": {
+        "temperature_C": 48.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 29.0
+      },
+      "gpu_after": {
+        "temperature_C": 49.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 43.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 2,
+      "order": 4,
+      "method": "FA_CODE_FACTORIZED",
+      "seconds": 2.668145021001692,
+      "ms_per_token": 20.844882976575718,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 23382016,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 8224,
+      "gpu_before": {
+        "temperature_C": 49.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 36.0
+      },
+      "gpu_after": {
+        "temperature_C": 51.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 44.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 2,
+      "order": 5,
+      "method": "RTPA_DIAG",
+      "seconds": 0.7458758310021949,
+      "ms_per_token": 5.827154929704648,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 14201344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 51.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 32.0
+      },
+      "gpu_after": {
+        "temperature_C": 49.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 45.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 2,
+      "order": 6,
+      "method": "STORED_NEAREST_REPEAT",
+      "seconds": 1.137748528002703,
+      "ms_per_token": 8.888660375021118,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 19096064,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 49.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 31.0
+      },
+      "gpu_after": {
+        "temperature_C": 49.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 43.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 3,
+      "order": 0,
+      "method": "MATCHED_ENERGY",
+      "seconds": 0.7702955549975741,
+      "ms_per_token": 6.017934023418547,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 14201344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 49.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 43.0
+      },
+      "gpu_after": {
+        "temperature_C": 47.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 47.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 3,
+      "order": 1,
+      "method": "RTPA_DIAG",
+      "seconds": 0.6524920480005676,
+      "ms_per_token": 5.097594125004434,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 14201344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 47.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 46.0
+      },
+      "gpu_after": {
+        "temperature_C": 49.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 50.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 3,
+      "order": 2,
+      "method": "FA_CODE_FACTORIZED",
+      "seconds": 3.631674996999209,
+      "ms_per_token": 28.37246091405632,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 23382016,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 8224,
+      "gpu_before": {
+        "temperature_C": 49.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 31.0
+      },
+      "gpu_after": {
+        "temperature_C": 50.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 39.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 3,
+      "order": 3,
+      "method": "NATIVE_FP32",
+      "seconds": 0.01572739599941997,
+      "ms_per_token": 0.1228702812454685,
+      "payload_bytes": 262144,
+      "peak_allocated_bytes": 11172352,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 50.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 39.0
+      },
+      "gpu_after": {
+        "temperature_C": 50.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 34.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 3,
+      "order": 4,
+      "method": "STORED_NEAREST_REPEAT",
+      "seconds": 1.3700590919979732,
+      "ms_per_token": 10.703586656234165,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 19096064,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 50.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 35.0
+      },
+      "gpu_after": {
+        "temperature_C": 50.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 42.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 3,
+      "order": 5,
+      "method": "STORED_NEAREST",
+      "seconds": 1.2570577899969066,
+      "ms_per_token": 9.820763984350833,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 19096064,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 50.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 42.0
+      },
+      "gpu_after": {
+        "temperature_C": 49.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 47.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 3,
+      "order": 6,
+      "method": "FA_CODE_REFERENCE",
+      "seconds": 3.8409455129949492,
+      "ms_per_token": 30.00738682027304,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 24889344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 524288,
+      "gpu_before": {
+        "temperature_C": 49.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 36.0
+      },
+      "gpu_after": {
+        "temperature_C": 49.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 46.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 4,
+      "order": 0,
+      "method": "STORED_NEAREST",
+      "seconds": 1.3546245020042988,
+      "ms_per_token": 10.583003921908585,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 19096064,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 49.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 46.0
+      },
+      "gpu_after": {
+        "temperature_C": 50.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 48.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 4,
+      "order": 1,
+      "method": "FA_CODE_FACTORIZED",
+      "seconds": 2.981237896994571,
+      "ms_per_token": 23.290921070270088,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 23382016,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 8224,
+      "gpu_before": {
+        "temperature_C": 50.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 39.0
+      },
+      "gpu_after": {
+        "temperature_C": 49.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 51.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 4,
+      "order": 2,
+      "method": "FA_CODE_REFERENCE",
+      "seconds": 4.030704109994986,
+      "ms_per_token": 31.489875859335825,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 24889344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 524288,
+      "gpu_before": {
+        "temperature_C": 49.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 34.0
+      },
+      "gpu_after": {
+        "temperature_C": 48.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 43.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 4,
+      "order": 3,
+      "method": "RTPA_DIAG",
+      "seconds": 0.9602292000054149,
+      "ms_per_token": 7.501790625042304,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 14201344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 48.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 43.0
+      },
+      "gpu_after": {
+        "temperature_C": 51.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 45.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 4,
+      "order": 4,
+      "method": "STORED_NEAREST_REPEAT",
+      "seconds": 1.4035160110070137,
+      "ms_per_token": 10.964968835992295,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 19096064,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 51.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 40.0
+      },
+      "gpu_after": {
+        "temperature_C": 51.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 43.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 4,
+      "order": 5,
+      "method": "MATCHED_ENERGY",
+      "seconds": 0.8131593159996555,
+      "ms_per_token": 6.352807156247309,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 14201344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 51.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 40.0
+      },
+      "gpu_after": {
+        "temperature_C": 51.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 45.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 4,
+      "order": 6,
+      "method": "NATIVE_FP32",
+      "seconds": 0.01434861199959414,
+      "ms_per_token": 0.11209853124682922,
+      "payload_bytes": 262144,
+      "peak_allocated_bytes": 11172352,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 51.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 39.0
+      },
+      "gpu_after": {
+        "temperature_C": 51.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 39.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 5,
+      "order": 0,
+      "method": "FA_CODE_REFERENCE",
+      "seconds": 3.329785012996581,
+      "ms_per_token": 26.01394541403579,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 24889344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 524288,
+      "gpu_before": {
+        "temperature_C": 51.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 36.0
+      },
+      "gpu_after": {
+        "temperature_C": 47.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 52.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 5,
+      "order": 1,
+      "method": "FA_CODE_FACTORIZED",
+      "seconds": 2.9943720169976586,
+      "ms_per_token": 23.393531382794208,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 23382016,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 8224,
+      "gpu_before": {
+        "temperature_C": 47.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 33.0
+      },
+      "gpu_after": {
+        "temperature_C": 49.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 48.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 5,
+      "order": 2,
+      "method": "STORED_NEAREST",
+      "seconds": 1.2668713800012483,
+      "ms_per_token": 9.897432656259753,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 19096064,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 49.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 36.0
+      },
+      "gpu_after": {
+        "temperature_C": 53.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 45.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 5,
+      "order": 3,
+      "method": "MATCHED_ENERGY",
+      "seconds": 0.8996547849965282,
+      "ms_per_token": 7.028553007785376,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 14201344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 53.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 33.0
+      },
+      "gpu_after": {
+        "temperature_C": 51.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 50.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 5,
+      "order": 4,
+      "method": "STORED_NEAREST_REPEAT",
+      "seconds": 1.7739705749991117,
+      "ms_per_token": 13.85914511718056,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 19096064,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 51.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 40.0
+      },
+      "gpu_after": {
+        "temperature_C": 50.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 44.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 5,
+      "order": 5,
+      "method": "RTPA_DIAG",
+      "seconds": 0.835046637999767,
+      "ms_per_token": 6.5238018593731795,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 14201344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 50.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 37.0
+      },
+      "gpu_after": {
+        "temperature_C": 50.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 45.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 5,
+      "order": 6,
+      "method": "NATIVE_FP32",
+      "seconds": 0.02070140499563422,
+      "ms_per_token": 0.16172972652839235,
+      "payload_bytes": 262144,
+      "peak_allocated_bytes": 11172352,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 50.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 38.0
+      },
+      "gpu_after": {
+        "temperature_C": 50.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 35.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 6,
+      "order": 0,
+      "method": "FA_CODE_REFERENCE",
+      "seconds": 3.74763478100067,
+      "ms_per_token": 29.278396726567735,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 24889344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 524288,
+      "gpu_before": {
+        "temperature_C": 50.0,
+        "used_MiB": 8745.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 34.0
+      },
+      "gpu_after": {
+        "temperature_C": 47.0,
+        "used_MiB": 7840.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 29.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 6,
+      "order": 1,
+      "method": "RTPA_DIAG",
+      "seconds": 0.6597942290027277,
+      "ms_per_token": 5.15464241408381,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 14201344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 47.0,
+        "used_MiB": 7840.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 9.0
+      },
+      "gpu_after": {
+        "temperature_C": 45.0,
+        "used_MiB": 7904.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 23.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 6,
+      "order": 2,
+      "method": "STORED_NEAREST_REPEAT",
+      "seconds": 1.1886992559957434,
+      "ms_per_token": 9.286712937466746,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 19096064,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 45.0,
+        "used_MiB": 7904.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 11.0
+      },
+      "gpu_after": {
+        "temperature_C": 45.0,
+        "used_MiB": 7967.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 13.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 6,
+      "order": 3,
+      "method": "STORED_NEAREST",
+      "seconds": 0.9516538789976039,
+      "ms_per_token": 7.4347959296687804,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 19096064,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 45.0,
+        "used_MiB": 8775.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 12.0
+      },
+      "gpu_after": {
+        "temperature_C": 45.0,
+        "used_MiB": 7839.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 16.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 6,
+      "order": 4,
+      "method": "NATIVE_FP32",
+      "seconds": 0.059905950001848396,
+      "ms_per_token": 0.4680152343894406,
+      "payload_bytes": 262144,
+      "peak_allocated_bytes": 11172352,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 45.0,
+        "used_MiB": 7839.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 20.0
+      },
+      "gpu_after": {
+        "temperature_C": 45.0,
+        "used_MiB": 7839.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 5.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 6,
+      "order": 5,
+      "method": "MATCHED_ENERGY",
+      "seconds": 0.6985601089982083,
+      "ms_per_token": 5.457500851548502,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 14201344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 45.0,
+        "used_MiB": 7839.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 5.0
+      },
+      "gpu_after": {
+        "temperature_C": 44.0,
+        "used_MiB": 7839.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 19.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 6,
+      "order": 6,
+      "method": "FA_CODE_FACTORIZED",
+      "seconds": 2.624551442997472,
+      "ms_per_token": 20.50430814841775,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 23382016,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 8224,
+      "gpu_before": {
+        "temperature_C": 44.0,
+        "used_MiB": 7839.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 9.0
+      },
+      "gpu_after": {
+        "temperature_C": 44.0,
+        "used_MiB": 7839.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 17.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 7,
+      "order": 0,
+      "method": "FA_CODE_REFERENCE",
+      "seconds": 3.108290381002007,
+      "ms_per_token": 24.28351860157818,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 24889344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 524288,
+      "gpu_before": {
+        "temperature_C": 44.0,
+        "used_MiB": 7839.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 17.0
+      },
+      "gpu_after": {
+        "temperature_C": 44.0,
+        "used_MiB": 7312.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 24.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 7,
+      "order": 1,
+      "method": "STORED_NEAREST",
+      "seconds": 0.7805002669992973,
+      "ms_per_token": 6.09765833593201,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 19096064,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 44.0,
+        "used_MiB": 7312.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 20.0
+      },
+      "gpu_after": {
+        "temperature_C": 43.0,
+        "used_MiB": 7280.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 28.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 7,
+      "order": 2,
+      "method": "MATCHED_ENERGY",
+      "seconds": 0.7684361409992562,
+      "ms_per_token": 6.003407351556689,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 14201344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 43.0,
+        "used_MiB": 7280.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 15.0
+      },
+      "gpu_after": {
+        "temperature_C": 43.0,
+        "used_MiB": 7280.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 18.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 7,
+      "order": 3,
+      "method": "FA_CODE_FACTORIZED",
+      "seconds": 2.606258601997979,
+      "ms_per_token": 20.36139532810921,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 23382016,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 8224,
+      "gpu_before": {
+        "temperature_C": 43.0,
+        "used_MiB": 7280.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 10.0
+      },
+      "gpu_after": {
+        "temperature_C": 43.0,
+        "used_MiB": 7184.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 18.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 7,
+      "order": 4,
+      "method": "RTPA_DIAG",
+      "seconds": 0.4919875419946038,
+      "ms_per_token": 3.8436526718328423,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 14201344,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 43.0,
+        "used_MiB": 7184.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 18.0
+      },
+      "gpu_after": {
+        "temperature_C": 43.0,
+        "used_MiB": 7358.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 23.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 7,
+      "order": 5,
+      "method": "STORED_NEAREST_REPEAT",
+      "seconds": 0.7878598000024795,
+      "ms_per_token": 6.155154687519371,
+      "payload_bytes": 77312,
+      "peak_allocated_bytes": 19096064,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 43.0,
+        "used_MiB": 7358.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 12.0
+      },
+      "gpu_after": {
+        "temperature_C": 43.0,
+        "used_MiB": 7371.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 27.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    },
+    {
+      "block": 7,
+      "order": 6,
+      "method": "NATIVE_FP32",
+      "seconds": 0.014437623001867905,
+      "ms_per_token": 0.11279392970209301,
+      "payload_bytes": 262144,
+      "peak_allocated_bytes": 11172352,
+      "peak_reserved_bytes": 39845888,
+      "policy_bytes": 0,
+      "gpu_before": {
+        "temperature_C": 43.0,
+        "used_MiB": 7371.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 27.0
+      },
+      "gpu_after": {
+        "temperature_C": 43.0,
+        "used_MiB": 7371.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 5.0
+      },
+      "observed_gpu_process_count": 1,
+      "only_expected_PID_before": true,
+      "only_expected_PID_after": true,
+      "observed_gpu_process_count_after": 1
+    }
+  ],
+  "status": "COMPLETE",
+  "planned_rows": 56,
+  "operator_update_attempts": 8064
+}

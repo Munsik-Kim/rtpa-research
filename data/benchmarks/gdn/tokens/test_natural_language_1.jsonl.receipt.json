@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETE",
+  "sha256": "4576adf0c91ef1bdd2cc3c46daea40477f64e01b87bdcbf8ea719956260d1ba1",
+  "rows": 6144,
+  "physical_forwards": 6144,
+  "forward_count_definition": "attempted model calls including failures",
+  "seconds": 645.4732212989984,
+  "failures": {},
+  "policy_sha256": "355492d26bfe8be47660d28f6820f18ebce581c7d712c834028bbaafc5a04da9",
+  "successful_quantized_layer_writes": {
+    "NATIVE": 0,
+    "MATCHED_ENERGY": 18432,
+    "RTPA_DIAG": 18432,
+    "DAMP_PAPER_ADAPTED": 18432,
+    "STORED_NEAREST": 3072,
+    "FA_CODE_FACTORIZED": 3072
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "experiment_id": "FA_CODE_V01_20260911_0814",
+  "candidate_id": "m2_l1_e005",
+  "selection_split": "DEV",
+  "geometry_methods": [
+    "R0_STORED_NEAREST",
+    "A_FIXED_SMALL"
+  ],
+  "geometry_sequence_ids": [
+    "fa_natural_language_test_6",
+    "fa_code_test_6",
+    "fa_associative_recall_test_6",
+    "fa_natural_language_test_7",
+    "fa_code_test_7",
+    "fa_associative_recall_test_7",
+    "fa_natural_language_test_8",
+    "fa_code_test_8",
+    "fa_associative_recall_test_8",
+    "fa_natural_language_test_9",
+    "fa_code_test_9",
+    "fa_associative_recall_test_9"
+  ],
+  "domains": {
+    "fa_natural_language_test_6": "natural_language",
+    "fa_code_test_6": "code",
+    "fa_associative_recall_test_6": "associative_recall",
+    "fa_natural_language_test_7": "natural_language",
+    "fa_code_test_7": "code",
+    "fa_associative_recall_test_7": "associative_recall",
+    "fa_natural_language_test_8": "natural_language",
+    "fa_code_test_8": "code",
+    "fa_associative_recall_test_8": "associative_recall",
+    "fa_natural_language_test_9": "natural_language",
+    "fa_code_test_9": "code",
+    "fa_associative_recall_test_9": "associative_recall"
+  },
+  "layers": [
+    0,
+    12,
+    22
+  ],
+  "heads": 16,
+  "tokens": [
+    32,
+    96,
+    160,
+    224,
+    288,
+    352,
+    416
+  ],
+  "recurrence_sequence_ids": [
+    "fa_associative_recall_test_6",
+    "fa_associative_recall_test_7",
+    "fa_code_test_6",
+    "fa_code_test_7",
+    "fa_code_test_8",
+    "fa_natural_language_test_6",
+    "fa_natural_language_test_7",
+    "fa_natural_language_test_8"
+  ],
+  "recurrence_methods": [
+    "NATIVE_REFERENCE",
+    "R0_STORED_NEAREST",
+    "A_FIXED_SMALL",
+    "R0_LEGACY",
+    "DAMP_PAPER_ADAPTED"
+  ],
+  "sequence_length": 512,
+  "warmup": 16,
+  "late_start": 256,
+  "bootstrap_seed": 611002,
+  "bootstrap_draws": 5000,
+  "timing": {
+    "labels": [
+      "R0_STORED_NEAREST",
+      "SELECTED_CAUSAL",
+      "R0_STORED_NEAREST_REPEAT"
+    ],
+    "warmup_blocks": 1,
+    "measured_blocks": 8,
+    "tokens_per_block": 128,
+    "relative_cost_target": 1.05,
+    "same_workload": true
+  },
+  "cal_screen_gate": {
+    "native_min": 0.8,
+    "native_minus_baseline_min": 0.1,
+    "loss_cases_min": 1
+  },
+  "model_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "codec": "unchanged FP32 decode, value-axis normalized Sylvester H32, UINT8 affine group32, FP16 scales/zeros, original-coordinate FP16 protected rows",
+  "payload_bytes_per_head": 19328,
+  "data_scope": "Historical observations only. Geometry:12 sequences. Recurrence:8 sequences. Task:32 independent items. SCREEN:8 contexts repeated at3positions; not24independentcontexts.",
+  "exclusions": [
+    "other candidate hyperparameters",
+    "DEV candidate selection recomputation",
+    "oracle/full method/control raw rows",
+    "external corpus text/token identities",
+    "model weights",
+    "large tensor dumps",
+    "complete historical reproduction ZIP"
+  ],
+  "limits": [
+    "scalar-to-aggregate audit, not tensor-to-metric or GPU reproduction",
+    "original historical outcomes unchanged",
+    "CAL repetition is clustered by context",
+    "old cost not isolated post-ComfyUI measurement"
+  ]
+}

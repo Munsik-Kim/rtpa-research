@@ -1,0 +1,31 @@
+{
+  "layers": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    16,
+    17,
+    18,
+    20,
+    21,
+    22
+  ],
+  "tokens": 64,
+  "status": "PASS_ON_CAL_ONLY",
+  "seconds_per_token": {
+    "MATCHED_ENERGY": 0.15988722099996266,
+    "RTPA_DIAG": 0.13392235084376125,
+    "DAMP_PAPER_ADAPTED": 0.1101281985468745
+  },
+  "new_full_layer_policy_sha256": "bd865a1a138ed25a98e8db5b5dabb26ff259307be3ba2f071a04ceb71faace68",
+  "no_full_length_stability_claim": true
+}

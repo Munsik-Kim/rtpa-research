@@ -1,0 +1,8 @@
+{
+  "initial_timing_status": "CONFOUNDED_OTHER_GPU_WORKER",
+  "initial_timing_use": "Retained observations, not an isolated cost headline",
+  "controlled_followup": "isolated_cost/timing.json",
+  "followup_quality_rerun": false,
+  "followup_design": "Same frozen equations/policy and8measured blocks; layout and initial state allocation outside timed region for all methods",
+  "distinct_measurement_regimes": true
+}

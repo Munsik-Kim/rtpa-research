@@ -1,0 +1,122 @@
+{
+  "scope": "Receipt and source-loop accounting; operator calls are not model forwards or independent samples",
+  "GPU_active_seconds_from_ledger": 10017.881173626018,
+  "GPU_limit_seconds": 14400,
+  "first_GPU_start_UTC": "2026-09-11T07:18:49Z",
+  "physical_model_forward_attempts_all_phases": 88248,
+  "phase_attempts": [
+    {
+      "phase": "pilot",
+      "status": "COMPLETE",
+      "seconds": 28.759918496001774,
+      "physical_forwards": 320
+    },
+    {
+      "phase": "capture",
+      "status": "COMPLETE",
+      "seconds": 104.56060246499692,
+      "physical_forwards": 1536
+    },
+    {
+      "phase": "fit",
+      "status": "COMPLETE",
+      "seconds": 207.13213441700282,
+      "physical_forwards": 0
+    },
+    {
+      "phase": "conformance",
+      "status": "FAILED",
+      "seconds": 22.345036285001697,
+      "physical_forwards": 191
+    },
+    {
+      "phase": "all_layer_failure",
+      "status": "COMPLETE",
+      "seconds": 52.68112802500036,
+      "physical_forwards": 371
+    },
+    {
+      "phase": "conformance",
+      "status": "COMPLETE",
+      "seconds": 63.15217471700089,
+      "physical_forwards": 582
+    },
+    {
+      "phase": "GDN2_OPERATOR",
+      "status": "COMPLETE",
+      "seconds": 227.16467391400147,
+      "physical_forwards": 0
+    },
+    {
+      "phase": "CUDA_ENCODER_PARITY",
+      "status": "COMPLETE",
+      "seconds": 5.586297931000445,
+      "physical_forwards": 0
+    },
+    {
+      "phase": "evaluate",
+      "status": "COMPLETE",
+      "seconds": 7924.462342141003,
+      "physical_forwards": 73728
+    },
+    {
+      "phase": "HISTORICAL_METRIC_BACKEND_PARITY",
+      "status": "COMPLETE",
+      "seconds": 4.612215828004992,
+      "physical_forwards": 0
+    },
+    {
+      "phase": "timing",
+      "status": "COMPLETE",
+      "seconds": 1264.1784899990016,
+      "physical_forwards": 11520
+    },
+    {
+      "phase": "GDN2_ISOLATED_OPERATOR_COST",
+      "status": "COMPLETE",
+      "seconds": 113.2461594080014,
+      "physical_forwards": 0
+    }
+  ],
+  "planned_quality_model_forwards": 73728,
+  "completed_quality_receipts": 12,
+  "quality_model_forward_attempts_from_receipts": 73728,
+  "quality_model_forward_attempts_from_raw_status": 73728,
+  "evaluation_phase_ledger_attempts": 73728,
+  "evaluation_calls_outside_completed_receipts": 0,
+  "successful_quantized_layer_writes_from_receipts": {
+    "NATIVE": 0,
+    "MATCHED_ENERGY": 221184,
+    "RTPA_DIAG": 221184,
+    "DAMP_PAPER_ADAPTED": 221184,
+    "STORED_NEAREST": 36864,
+    "FA_CODE_FACTORIZED": 36864
+  },
+  "native_write_counter_scope": "Counter is for custom quantized PayloadLayer writes only; Native0 does not mean Native has no recurrent writes.",
+  "quality_call_definition": "Attempted call includes first failure; later NOT_RUN tokens are not executed",
+  "GDN2_operator_accounting": {
+    "historical_recorded_operator_updates": 24224,
+    "calibration_own_state_updates": 768,
+    "calibration_reference_state_updates_omitted_from_original_counter": 768,
+    "parity_own_state_updates": 32,
+    "TEST_state_updates": 15360,
+    "initial_timing_state_updates_including_warmup": 8064,
+    "corrected_initial_direct_update_calls": 24992,
+    "initial_counter_difference": 768,
+    "correction_basis": "Completed frozen response() executes one reference and one own-low loop per TRAIN trace; original counter counted only own-low. Original summary is not modified.",
+    "additional_source_transition_calls": 768,
+    "additional_direct_mask_transition_calls": 768,
+    "direct_mask_transition_batch": "three masks per call; four heads; not three independent model trajectories",
+    "metric_adjoint_calls": 9504,
+    "update_calls_batch": "four heads per update; each update internally applies a transition, not added again to counts",
+    "isolated_timing_updates": 8064,
+    "isolated_timing_reason": null,
+    "language_model_forwards": 0,
+    "counts_basis": "Derived from completed source loops, not an independent operator-event profiler"
+  },
+  "budget_resume_implementation": "Budget reads the existing ledger and adds a new phase; no actual interrupted-resume trial claimed.",
+  "interrupted_resume_trial": "NOT_PERFORMED",
+  "CPU_reaggregation_model_forwards": 0,
+  "heavy_CPU_wall": "Separate local stage receipts; not inferred from model-forward counts",
+  "GPU_active_wall_is_not_serving_latency": true
+}

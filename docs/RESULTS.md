@@ -1,5 +1,53 @@
 # Integrated results
 
+**New implementation and measurements:** [GDN/GDN2 benchmark](BENCHMARKS.md).
+That table separates all-layer allocation, limited-layer code correction and
+synthetic GDN2 operators. The independent historical panels below remain intact;
+their percentages are not combined with the new measurements.
+
+## Current benchmark: what changed
+
+**OBSERVED.** All 72 registered GDN quality trajectories completed: 12 synthetic
+documents × 6 methods × 1,024 tokens, with zero TEST numerical failures.
+All-18-layer DIAG reduced pooled Native-KL from .0008502405 to .0006905931
+nat/token versus matched energy: **18.777% [15.190,21.953]%**, 12/12 sequence
+wins. Against paper-adapted DAMP, the reduction was 12.356% [6.402,18.211]%,
+10/12 wins. DIAG–energy ΔNLL was −.00022756 nat/token; DIAG–DAMP was
++.00006395. Both NLL intervals contain zero. The separate three-layer FA_CODE
+comparison reduced KL by 3.048% [1.166,5.008]% against stored-nearest, while
+ΔNLL was +.00022847 with an interval containing zero.
+
+**INTERPRETATION.** Output-distribution preservation transfers to all 18 GDN
+layers for this static DIAG policy and fixed checkpoint. That does not establish
+task accuracy, NLL improvement, or an architecture-general result. The 512-token
+prefix has a larger gain but shares the same documents; it is not a second
+independent panel.
+
+**COST AND LIMITATION.** DIAG/energy paired decode ratio is 1.116
+[.945,1.286], so the +5% target is unresolved. Factorized FA_CODE/nearest is
+1.498 [1.360,1.660], which misses the target. Factorized/reference is .966
+[.780,1.020]: the metric representation is much smaller, but full-model speedup
+is unresolved. The four-head GDN2 operator shows a measurable timing reduction
+against its dense reference (.818 [.740,.922]), yet remains 2.420× slower than
+nearest and has worse output SSE. Its DIAG and FA_CODE SSE reductions are
+−.278% and −.367%, not pretrained-model language results.
+
+Persistent GDN target-state payload falls from 9,437,184 to 5,566,464 bytes for
+all 18 layers, but measured allocator peak did not fall (Native 1,683.40 MiB;
+DIAG 1,686.29 MiB). The pre-TEST all-layer code-correction metadata failures
+remain retained. [Authoritative generated tables](../results/upgrade/benchmark_tables.md)
+contain both lengths, tails, cost, memory and exact scope; [current claims](../results/upgrade/claims.json)
+link the underlying hashes. No new answer task was added.
+
+The later [FA_CODE historical reaggregation](../results/fa_code_historical/fa_code_historical.json)
+also preserves a different eight-sequence panel: Native-KL reduction 9.973%
+versus stored-nearest, alongside the initial 1.840 paired latency ratio. Its
+32-item task had the same 31 correct answers for every method, no Native-correct /
+nearest-wrong recovery opportunities, and an undefined recovery rate—not 0%.
+The follow-up CAL screen's 24 questions share eight contexts; independent
+confirmation and candidate task evaluation were NOT_RUN. This evidence is not a
+new optimized timing result or an independent task success.
+
 ## 1. Error energy and output risk
 
 **OBSERVED.** In the separate FSBQ fake-Q4 study, the learned-functional common-state error ratio was 0.972825 while its isolated functional ratio was 1.210294. Only the historical summary is included here, so this context is **REPORTED_ONLY**. In RTPA v0.7, a shared input history still produced different own-path states; energy, readout, and answer-probability directions did not always agree.
@@ -82,4 +130,10 @@ The numbers of items with smaller last-64-prompt readout SSE for DIAG than MATCH
 
 ## Integrated conclusion
 
-Some output-preservation effects were observed. **Additional DIAG task benefit over simple matched allocation was not established in the tested setting, and a cost advantage remains unconfirmed.** Known numerical failures and historical negative decisions are retained. This release does not reopen the product path or initiate repeated experiments until DIAG wins.
+Output-preservation effects are supported on the measured GDN panels, including
+the new all-18-layer experiment. **Additional DIAG task benefit over simple
+matched allocation remains unestablished, and a cost advantage is unconfirmed.**
+The GDN2 operator's adverse transfer and FA_CODE's baseline-relative cost failure
+remain separate. Known numerical failures and historical negative decisions
+are retained. This research release is not a production-readiness decision and
+does not initiate repeated experiments until DIAG wins.
