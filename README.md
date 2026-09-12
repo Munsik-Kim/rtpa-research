@@ -11,26 +11,35 @@ percentage gain.
 
 ## What you can use and verify
 
-- **18.78% lower Native-reference KL:** RTPA-DIAG versus matched-energy allocation
-  on Qwen3.5-0.8B-Base, all 18 GDN layers, 12 synthetic documents × 1,024 tokens,
-  at identical payload (95% paired CI 15.19–21.95%). Next-token NLL improvement
-  is unresolved. Decode-cost ratio is 1.116 [0.945–1.286], so the +5% target is
-  **not established** in this eager implementation.
-- **Output-aware allocation and encoding:** executable GDN storage adapter,
-  fixed masks, an encoder with an FP64 diagonal-plus-rank-two metric, and a small Python example.
-- **Measured storage:** 19,328 B per 128×128 head, including FP16 metadata and
-  eight high rows — 9.4375 bits/value, 41.02% below the same head's BF16 state.
-  This is target-state storage, not whole-model VRAM savings.
-- **Auditable quality and cost:** public token/sequence scalars, fixed-work
-  timing blocks, numerical-failure fixtures and model-free CPU reconstruction.
+- **Output-aware allocation under a fixed budget:** on the new 12-source-file
+  panel, R2-DIAG reduces Native-reference KL by **58.10% [54.40–61.15]%** against
+  R2 matched energy, at the same codec and payload. **It is nevertheless much
+  worse than legacy DIAG:** mean KL is **0.07019 versus 0.004296 nat/token**.
+  This new codec is an experimental numerical revision, not a recommended
+  quality replacement. [All five methods and paired intervals](results/diag_r2/benchmark_tables.md).
+- **A bounded repair of a known representation failure:** two new codec
+  candidates reconstruct the saved finite-input FP16 zero-point overflow
+  fixtures without nonfinite values. All 60 registered quality trajectories
+  completed. This does not establish universal stability or explain the
+  observed quality regression. [Numerical contract](docs/CODEC_R2_CONTRACT.md).
+- **Explicit storage:** 19,328 B per 128×128 head, including FP16 metadata and
+  eight high rows — **9.4375 bits/value**, 41.02% below the same head's BF16
+  state. All 18 GDN layers use 5,566,464 target-state bytes. Whole-model peak
+  allocated VRAM was **1,708.41 MiB for R2-DIAG versus 1,701.13 MiB for Native**:
+  this run did not reduce whole-model peak. [Memory and bounded scratch measurements](results/diag_r2/memory_tables.md).
+- **Runnable, auditable paths:** fixed-mask GDN adapters, independent CPU codec
+  checks, public token/sequence observations and model-free table reconstruction.
+  **The new latency target is unresolved:** timing was interrupted, and its
+  single fixed retry stopped when another GPU PID appeared. Partial blocks
+  are retained but do not supply a complete latency estimate.
+  [Current quickstart](docs/QUICKSTART_R2.md).
 
-See the [new benchmark tables](results/upgrade/benchmark_tables.md) for current
-GDN quality/cost results and GDN2 operator results, including adverse effects.
-On the separate three-layer code-correction path, factorized FA_CODE reduced KL
-by 3.05% versus stored-nearest but cost 1.498× [1.360–1.660]; it is not yet a
-low-overhead runtime. GDN2 operator SSE slightly worsened with both methods.
-Historical DIAG/FA_CODE panels and their task limitations remain in
-[full results and boundaries](docs/RESULTS.md). Gains are never added together.
+The new revision does not rerun FA_CODE or GDN2. Their
+[earlier benchmark](results/upgrade/benchmark_tables.md) remains separate:
+legacy-codec DIAG reduced KL by 18.78% on a synthetic panel, while its cost
+target remained unresolved. Three-layer FA_CODE reduced KL by 3.05% versus
+stored-nearest but cost 1.498× [1.360–1.660]. GDN2 operator SSE slightly worsened.
+These are different panels, policies and endpoints; gains are never added.
 
 ## Support and measurement scope
 
@@ -42,8 +51,9 @@ Historical DIAG/FA_CODE panels and their task limitations remain in
 The measured GPU is an RTX 5080 16 GB, with BF16 model/cache and FP32 recurrent
 updates. Attention KV, model weights and activations are not quantized here.
 Storage uses real UINT8/FP16 tensors and eager encode/decode, not a fused or
-optimized packed inference kernel. Known FP16 zero-point overflow is retained,
-and passing finite examples does not establish universal codec safety.
+optimized packed inference kernel. The legacy FP16 zero-point overflow remains
+reproducible. R2 uses a different decoder with a declared finite-input range;
+its successful fixtures and panel do not establish universal codec safety.
 [Architecture provenance](docs/ARCHITECTURES.md) · [Numerical limitations](docs/LIMITATIONS.md).
 
 ## Quickstart
@@ -59,12 +69,14 @@ python -m pip install .
 python -m rtpa_research demo --out demo.json
 python -m rtpa_research verify --out recomputed
 python scripts/reproduce_upgrade.py --root . --write-generated recomputed-upgrade --verify
+python scripts/reproduce_diag_r2.py --public --out recomputed-r2 --expected results/diag_r2/recomputed_expected.json
 ```
 
 The demo and evidence commands require no GPU, Torch, model weights, API key or
 private Drive access. They recompute included observations, not new inference.
 For an actual state encode/decode example, optional GPU dependencies and the
-phased model benchmark, use the [tested guide](docs/QUICKSTART.md).
+new-codec phased model benchmark, use the [R2 guide](docs/QUICKSTART_R2.md).
+The [earlier guide](docs/QUICKSTART.md) retains the original numerical paths.
 
 ## How it works
 
@@ -83,18 +95,19 @@ Neither encoder reads future TEST tokens or a Native shadow state. Offline
 response predictions are distinguished from the candidate's own nonlinear model
 trajectory and actual answers. [Method](docs/METHOD.md) · [Hypotheses](docs/HYPOTHESES.md).
 
-![Measured output preservation, with separate GDN model and GDN2 operator panels](results/upgrade/figures/quality.png)
+![New R2 allocation improves its matched baseline but regresses against legacy DIAG](results/diag_r2/figures/quality.png)
 
-Use the allocation path as the starting research example: its new full-GDN-layer
-KL signal is stronger and it uses a static runtime mask. Keep matched energy
-alongside it; neither task superiority nor a deployment-speed advantage has
-been established. FA_CODE remains an explicit, more expensive research option.
+Start with the CPU demo and the comparison tables. Use the R2 adapter to study
+the explicit numerical revision, not as a drop-in quality upgrade. Keep legacy
+DIAG and matched energy visible: representation stability, relative allocation
+quality, task accuracy and runtime cost are different requirements. FA_CODE
+remains an explicit, more expensive research option.
 
 ## Evidence, reuse and limits
 
 The repository preserves distinct panels and numerical profiles from the earlier
 RTPA study rather than relabeling them with the newest implementation. It also
-adds the FA_CODE evidence and new GDN/GDN2 measurements. Historical task panels
+adds FA_CODE/GDN2 evidence and a later stable-codec GDN revision. Historical task panels
 did not establish added accuracy over simple baselines; near-ceiling ties do not
 prove equivalence. Runtime targets and numerical stability remain separate from
 quality gains. This is an actively developed research implementation, not a
@@ -105,7 +118,7 @@ production-readiness certificate.
 - [Reproducibility and data availability](docs/REPRODUCIBILITY.md)
 - [References and baseline provenance](docs/REFERENCES.md)
 - [Historical experiment mapping](docs/EXPERIMENTS.md)
-- [Current machine-readable claims](results/upgrade/claims.json) · [historical claims](results/claims.json)
+- [Current machine-readable claims](results/diag_r2/claims.json) · [earlier upgrade claims](results/upgrade/claims.json) · [historical claims](results/claims.json)
 
 ## License and citation
 

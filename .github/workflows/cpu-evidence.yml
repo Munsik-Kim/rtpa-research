@@ -14,6 +14,9 @@ jobs:
       HF_HUB_OFFLINE: "1"
       TRANSFORMERS_OFFLINE: "1"
       PYTHONDONTWRITEBYTECODE: "1"
+      OMP_NUM_THREADS: "2"
+      MKL_NUM_THREADS: "2"
+      OPENBLAS_NUM_THREADS: "2"
       PYTHONPATH: src
     steps:
       - uses: actions/checkout@v4
@@ -33,6 +36,25 @@ jobs:
         run: |
           python scripts/audit_upgrade_scalars.py --root . --recomputed-dir recomputed-upgrade --out /tmp/rtpa-independent-scalars.json
           python scripts/check_upgrade_contract.py --root . --out /tmp/rtpa-upgrade-contract.json
+      - name: Reconstruct stable-codec DIAG and check independent observations
+        run: |
+          python -m rtpa_research.diag_r2_analysis --public --out recomputed-diag-r2 --expected results/diag_r2/recomputed_expected.json
+          python scripts/audit_diag_r2_observations.py --run data/benchmarks/diag_r2 --analysis recomputed-diag-r2 --out /tmp/rtpa-r2-observations.json
+          python scripts/audit_diag_r2_dependencies.py --run data/benchmarks/diag_r2 --out /tmp/rtpa-r2-dependencies.json
+          python scripts/audit_diag_r2_accounting.py --self-test
+          # One archived SIGTERM timing attempt has bounded, not exact, trailing calls.
+          # The only full retry was closed by the external-GPU concurrency guard.
+          # Accept narrowly validated bookkeeping, never full timing or generic failures.
+          python scripts/audit_diag_r2_accounting.py --root . --run data/benchmarks/diag_r2 --out /tmp/rtpa-r2-accounting.json --allow-bounded-interruption --allow-documented-timing-incomplete
+          python scripts/check_diag_r2_install.py --out /tmp/rtpa-r2-source-resolution.json
+          python scripts/init_diag_r2_replay.py --out /tmp/rtpa-r2-inputs-only
+          python scripts/summarize_diag_r2_memory.py --run data/benchmarks/diag_r2 --out /tmp/rtpa-r2-memory-tables
+          cmp results/diag_r2/memory_tables.md /tmp/rtpa-r2-memory-tables/memory_tables.md
+          cmp results/diag_r2/memory_display.json /tmp/rtpa-r2-memory-tables/memory_display.json
+          python scripts/render_diag_r2_assessment.py --run data/benchmarks/diag_r2 --analysis recomputed-diag-r2 --out /tmp/rtpa-r2-assessment
+          cmp results/diag_r2/assessment.json /tmp/rtpa-r2-assessment/assessment.json
+          cmp results/diag_r2/cal_fixed_mask.md /tmp/rtpa-r2-assessment/cal_fixed_mask.md
+          cmp results/diag_r2/quality_details.md /tmp/rtpa-r2-assessment/quality_details.md
       - name: Build and install the public wheel
         run: |
           python -m build --wheel
@@ -52,3 +74,43 @@ jobs:
           /tmp/rtpa-wheel-test/bin/python -m rtpa_research.fa_evidence --out /tmp/rtpa-installed-fa
           upgrade_script="$(/tmp/rtpa-wheel-test/bin/python -c 'from rtpa_research.resources import evidence_root; print(evidence_root() / "scripts/reproduce_upgrade.py")')"
           /tmp/rtpa-wheel-test/bin/python "$upgrade_script" --write-generated /tmp/rtpa-installed-upgrade --verify
+          evidence_root="$(/tmp/rtpa-wheel-test/bin/python -c 'from rtpa_research.resources import evidence_root; print(evidence_root())')"
+          /tmp/rtpa-wheel-test/bin/python -m rtpa_research.diag_r2_analysis --public --out /tmp/rtpa-installed-r2 --expected "$evidence_root/results/diag_r2/recomputed_expected.json"
+          /tmp/rtpa-wheel-test/bin/python "$evidence_root/scripts/audit_diag_r2_observations.py" --run "$evidence_root/data/benchmarks/diag_r2" --analysis /tmp/rtpa-installed-r2 --out /tmp/rtpa-installed-r2-observations.json
+          /tmp/rtpa-wheel-test/bin/python "$evidence_root/scripts/audit_diag_r2_accounting.py" --self-test
+          /tmp/rtpa-wheel-test/bin/python "$evidence_root/scripts/audit_diag_r2_accounting.py" --root "$evidence_root" --run "$evidence_root/data/benchmarks/diag_r2" --out /tmp/rtpa-installed-r2-accounting.json --allow-bounded-interruption --allow-documented-timing-incomplete
+          /tmp/rtpa-wheel-test/bin/python "$evidence_root/scripts/check_diag_r2_install.py" --require-installed --out /tmp/rtpa-installed-r2-resolution.json
+          /tmp/rtpa-wheel-test/bin/python "$evidence_root/scripts/init_diag_r2_replay.py" --out /tmp/rtpa-installed-r2-inputs-only
+          /tmp/rtpa-wheel-test/bin/python "$evidence_root/scripts/summarize_diag_r2_memory.py" --run "$evidence_root/data/benchmarks/diag_r2" --out /tmp/rtpa-installed-r2-memory-tables
+          cmp "$evidence_root/results/diag_r2/memory_tables.md" /tmp/rtpa-installed-r2-memory-tables/memory_tables.md
+          cmp "$evidence_root/results/diag_r2/memory_display.json" /tmp/rtpa-installed-r2-memory-tables/memory_display.json
+          /tmp/rtpa-wheel-test/bin/python "$evidence_root/scripts/render_diag_r2_assessment.py" --run "$evidence_root/data/benchmarks/diag_r2" --analysis /tmp/rtpa-installed-r2 --out /tmp/rtpa-installed-r2-assessment
+          cmp "$evidence_root/results/diag_r2/assessment.json" /tmp/rtpa-installed-r2-assessment/assessment.json
+          cmp "$evidence_root/results/diag_r2/cal_fixed_mask.md" /tmp/rtpa-installed-r2-assessment/cal_fixed_mask.md
+          cmp "$evidence_root/results/diag_r2/quality_details.md" /tmp/rtpa-installed-r2-assessment/quality_details.md
+  codec-cpu:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      CUDA_VISIBLE_DEVICES: ""
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+      OMP_NUM_THREADS: "2"
+      MKL_NUM_THREADS: "2"
+      OPENBLAS_NUM_THREADS: "2"
+      PYTHONPATH: src
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install CPU-only numerical dependencies, not model weights
+        run: |
+          python -m pip install numpy==1.26.4 tokenizers==0.22.2 transformers==5.9.0
+          python -m pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cpu
+      - name: Check stable codecs and reference-equivalent optimizations on CPU
+        run: |
+          python -m unittest discover -s tests -p 'test_codec_r2*.py' -v
+          python -m unittest discover -s tests -p 'test_diag_r2*.py' -v
+          python examples/diag_r2.py --profile R2_OFFSET --out /tmp/r2-offset-api.json
+          python examples/diag_r2.py --profile R2_ZERO_INCLUSIVE --out /tmp/r2-zero-api.json

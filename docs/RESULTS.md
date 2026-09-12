@@ -1,11 +1,82 @@
 # Integrated results
 
-**New implementation and measurements:** [GDN/GDN2 benchmark](BENCHMARKS.md).
-That table separates all-layer allocation, limited-layer code correction and
-synthetic GDN2 operators. The independent historical panels below remain intact;
-their percentages are not combined with the new measurements.
+**Benchmark map:** [measured implementations and scope](BENCHMARKS.md).
+The current revision evaluates GDN allocation and its codec; earlier all-layer
+allocation, limited-layer code correction and synthetic GDN2 operators remain
+separate. Their independent panels and percentages are not combined.
 
-## Current benchmark: what changed
+## Current revision: bounded codec repair, adverse overall quality
+
+**OBSERVED.** Run `RTPA_DIAG_STABLE_R2_20260912_V1` completed all 60 registered
+trajectories: twelve actual source-file prefixes × five methods × 1,024 tokens,
+all 18 GDN layers, **61,440 model forwards and zero numerical failures**.
+New R2-DIAG reduces pooled Native KL from **0.1675123 to 0.07019327 nat/token**
+against new R2 matched energy: **58.0967% [54.4040,61.1509]%**, twelve wins.
+The next-token NLL difference is **−0.09238957 nat/token**, with a negative
+interval. Against the new-codec local DAMP adaptation, the KL reduction is
+55.0497% [51.4854,58.4875]% and ΔNLL is −0.08169055.
+
+**ADVERSE COMPARISON.** Legacy DIAG is substantially better than every new-codec
+method on this panel. Its mean KL is **0.00429589**, versus **0.07019327** for
+R2-DIAG—about **16.34×** the distortion. R2-DIAG loses all twelve paired KL
+comparisons and has **+0.06648736 nat/token** higher NLL, with a wholly positive
+interval. Later-window KL also worsens: 0.1292864 versus 0.005497989. This is
+not a small tradeoff hidden behind a favorable relative-to-energy percentage.
+
+**INTERPRETATION.** Output-aware allocation helps within the new codec, but the
+complete new codec-plus-mask method is **not an overall quality improvement**
+over legacy DIAG. The saved legacy overflow fixtures are repaired within the
+new declared range; that representation property does not guarantee good
+closed-loop output preservation. Codec and fitted masks both change in the
+legacy contrast. Their individual contributions and the mechanism of the
+large regression are **NOT_IDENTIFIED** by this experiment.
+
+An already-recorded short-CAL control narrows this statement: with the **old
+mask held fixed**, the new codec gives higher mean KL than legacy on all three
+256-token CAL documents (0.001117 vs 0.000847; 0.001072 vs 0.000727;
+0.001213 vs 0.001059). Replacing that old mask with the new DIAG mask then
+worsens two CAL cases and improves one. Thus a numerical-path disadvantage is
+already visible without changing the mask, but these short CAL observations
+do not isolate the size or mechanism of the long-TEST regression. They are
+preserved in `conformance_trajectories.json`, not newly selected TEST controls.
+
+**LIMITATION.** CAL selected the physical-offset codec by its preregistered
+common-snapshot reconstruction score, even though the other candidate had
+better own-recurrence CAL KL. TEST did not trigger a switch, mask refit or panel
+replacement. Six CPython documentation and six NumPy source files are related
+software-project families, not broad independent natural-language coverage.
+The intervals resample documents within these two families; they do not remove
+shared-project dependence or establish a population bound.
+
+The [authoritative R2 tables](../results/diag_r2/benchmark_tables.md) include
+the separate runtime comparison and paired intervals; [quality details](../results/diag_r2/quality_details.md)
+preserve token tails, source-family values and paired harm/benefit. The
+[memory table](../results/diag_r2/memory_tables.md) separates persistent payload,
+shared structures, allocator peaks and the limited codec scratch probe.
+No new task-accuracy or pretrained GDN2 evaluation was run. Legacy source,
+mask, failure fixtures and the previous results below are unchanged.
+
+**STORAGE.** Fresh-process measurements verify 5,566,464 B of mixed target
+state versus 9,437,184 B of Native BF16 state, with another 299,008 B of
+indices/H32 structures. Steady allocated memory is slightly lower, but peak
+allocated is **1,708.4072 MiB for R2-DIAG versus 1,701.1309 MiB for Native**;
+reserved memory is 1,772 MiB for both. Reference and optimized R2 have the
+same measured batch-one peak and the same limited encode/decode scratch
+trace totals. Immutable engine sharing was implemented, but this experiment
+does not measure a multi-request memory reduction or a scratch improvement.
+
+**COST — INCOMPLETE, NOT A SPEEDUP CLAIM.** The first timing process exited
+with SIGTERM after 19 durable label rows. One fixed retry then completed only
+15/48 planned measured-label rows before the GPU-isolation guard detected
+another PID after a DAMP label and stopped. The responsible application is
+unknown. Both partial attempts remain evidence, including the contaminated
+row; they are not pooled or extrapolated into eight-block ratios or CIs.
+Consequently equivalent-path speedup and the same-codec +5% latency target
+remain unresolved. No further retry, kernel tuning or favorable block selection
+was performed. All quality and fresh-process memory measurements had already
+completed before this timing interruption.
+
+## Earlier GDN/GDN2 benchmark — v1.1.0rc1
 
 **OBSERVED.** All 72 registered GDN quality trajectories completed: 12 synthetic
 documents × 6 methods × 1,024 tokens, with zero TEST numerical failures.
@@ -130,9 +201,12 @@ The numbers of items with smaller last-64-prompt readout SSE for DIAG than MATCH
 
 ## Integrated conclusion
 
-Output-preservation effects are supported on the measured GDN panels, including
-the new all-18-layer experiment. **Additional DIAG task benefit over simple
-matched allocation remains unestablished, and a cost advantage is unconfirmed.**
+Output-preservation effects are supported in specific same-codec GDN allocation
+comparisons. **The newer bounded codec plus its DIAG mask substantially
+regresses against legacy DIAG, despite improving on its new matched baseline.**
+It should not replace legacy as a quality upgrade on this evidence. Additional
+DIAG task benefit over simple matched allocation remains unestablished; cost
+claims must use each implementation's separate measured interval.
 The GDN2 operator's adverse transfer and FA_CODE's baseline-relative cost failure
 remain separate. Known numerical failures and historical negative decisions
 are retained. This research release is not a production-readiness decision and

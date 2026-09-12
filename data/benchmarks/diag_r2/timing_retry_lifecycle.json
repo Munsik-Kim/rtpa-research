@@ -1,0 +1,20 @@
+{
+  "status": "FAILED_CHILD_EXIT",
+  "supervisor_pid": 67789,
+  "start_utc": "2026-09-12T08:41:09Z",
+  "registered_phase": "timing",
+  "attempt_number": 2,
+  "numerical_source_changed": false,
+  "source_freeze_sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640",
+  "wrapper_sha256": "a820b0f034a514d3b2d657f7e3d76c0d9927e5745f60c58cb2ccf20372828578",
+  "remaining_before_13200_boundary": 3434.5182777610025,
+  "supervisor_maximum_wall_seconds": 3700,
+  "timeout_scope": "Fallback protection for this one child only; original runner retains its 13200-second cumulative report-reserve guard",
+  "first_partial_timing": "interrupted_attempts/timing_01/timing.json",
+  "selection_rule": "Use the full fixed eight-block retry or mark cost incomplete; do not combine favorable partial blocks",
+  "checkpoint_or_policy_reselection": false,
+  "GPU_worker_pid": 67790,
+  "return_code": 1,
+  "end_utc": "2026-09-12T08:59:35Z",
+  "supervisor_wall_seconds": 1106.039023399353
+}

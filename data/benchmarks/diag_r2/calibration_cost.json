@@ -1,0 +1,504 @@
+{
+  "layers": [
+    {
+      "layer": 0,
+      "sha256": "e3857f4a1af64da69659076a562bd2a043e26168f62b8c71429be15d9b994c3b",
+      "seconds": 14.116832217000137,
+      "peak_allocated_bytes": 571007488,
+      "TRAIN_documents": 6,
+      "sources": "all0:256 unitweights",
+      "readouts": "16:256",
+      "DAMP_sampling": "Native7,15,...255",
+      "fullK_only_on_audit_cases": {
+        "Kdiag_normalized_max": 2.172040155055522e-16,
+        "c_normalized_max": 0.0,
+        "mask_exact": true,
+        "diag_path_seconds": 2.3381817090000823,
+        "fullK_audit_path_seconds": 1.5506988410002123,
+        "timing_not_isolated": true,
+        "Kdiag_bytes": 16384,
+        "fullK_bytes": 2097152
+      },
+      "source_audits": [
+        {
+          "composition_nL2": 5.727782265406428e-07,
+          "direct_mask_objective_normalized_max": 2.789211829391471e-07,
+          "tolerance": 0.0001,
+          "pass": true,
+          "mask_replays_are_frozen_source_audits_not_actual_candidate_model_runs": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_exact": true
+    },
+    {
+      "layer": 1,
+      "sha256": "b7d1b96a49d360e67d36fd9fef9d88a0c9bcefb9808b4758059c090d1dfc72b1",
+      "seconds": 10.075347157000124,
+      "peak_allocated_bytes": 571155968,
+      "TRAIN_documents": 6,
+      "sources": "all0:256 unitweights",
+      "readouts": "16:256",
+      "DAMP_sampling": "Native7,15,...255",
+      "fullK_only_on_audit_cases": null,
+      "source_audits": [
+        {
+          "composition_nL2": 3.8535396309353935e-07,
+          "direct_mask_objective_normalized_max": 1.186820638083999e-07,
+          "tolerance": 0.0001,
+          "pass": true,
+          "mask_replays_are_frozen_source_audits_not_actual_candidate_model_runs": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_exact": true
+    },
+    {
+      "layer": 2,
+      "sha256": "71791db039195b44779e55a8c5563f8c497c76cb1d636de94b16f7693b9a3e79",
+      "seconds": 10.565641185000004,
+      "peak_allocated_bytes": 571155968,
+      "TRAIN_documents": 6,
+      "sources": "all0:256 unitweights",
+      "readouts": "16:256",
+      "DAMP_sampling": "Native7,15,...255",
+      "fullK_only_on_audit_cases": null,
+      "source_audits": [
+        {
+          "composition_nL2": 2.513646097241297e-07,
+          "direct_mask_objective_normalized_max": 2.4502975848808134e-07,
+          "tolerance": 0.0001,
+          "pass": true,
+          "mask_replays_are_frozen_source_audits_not_actual_candidate_model_runs": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_exact": true
+    },
+    {
+      "layer": 4,
+      "sha256": "2c5f240f16e1e0fb9af540fae8fd946ce115966d39ca80d8baf033cf55905c0e",
+      "seconds": 10.893569184999933,
+      "peak_allocated_bytes": 571155968,
+      "TRAIN_documents": 6,
+      "sources": "all0:256 unitweights",
+      "readouts": "16:256",
+      "DAMP_sampling": "Native7,15,...255",
+      "fullK_only_on_audit_cases": null,
+      "source_audits": [
+        {
+          "composition_nL2": 6.505890180593421e-07,
+          "direct_mask_objective_normalized_max": 5.639608152258599e-08,
+          "tolerance": 0.0001,
+          "pass": true,
+          "mask_replays_are_frozen_source_audits_not_actual_candidate_model_runs": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_exact": true
+    },
+    {
+      "layer": 5,
+      "sha256": "f43cfd07a1e550ac31da4168ffbb36fccdb9567f405f9772427508ec924ae450",
+      "seconds": 9.672757687000058,
+      "peak_allocated_bytes": 571155968,
+      "TRAIN_documents": 6,
+      "sources": "all0:256 unitweights",
+      "readouts": "16:256",
+      "DAMP_sampling": "Native7,15,...255",
+      "fullK_only_on_audit_cases": null,
+      "source_audits": [
+        {
+          "composition_nL2": 4.045594862570575e-07,
+          "direct_mask_objective_normalized_max": 1.1268090115176918e-07,
+          "tolerance": 0.0001,
+          "pass": true,
+          "mask_replays_are_frozen_source_audits_not_actual_candidate_model_runs": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_exact": true
+    },
+    {
+      "layer": 6,
+      "sha256": "c7b575a6cd4da886e072fe222827bcb0d82c895e82dd7cb9339672fefee3d575",
+      "seconds": 11.191368534000048,
+      "peak_allocated_bytes": 571155968,
+      "TRAIN_documents": 6,
+      "sources": "all0:256 unitweights",
+      "readouts": "16:256",
+      "DAMP_sampling": "Native7,15,...255",
+      "fullK_only_on_audit_cases": null,
+      "source_audits": [
+        {
+          "composition_nL2": 4.029865786048847e-07,
+          "direct_mask_objective_normalized_max": 1.8992589734256355e-07,
+          "tolerance": 0.0001,
+          "pass": true,
+          "mask_replays_are_frozen_source_audits_not_actual_candidate_model_runs": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_exact": true
+    },
+    {
+      "layer": 8,
+      "sha256": "5f67e74011c5bdfe8d832a2fdbbed82d991944b207407935f182e0b55d70b53d",
+      "seconds": 9.596764343999894,
+      "peak_allocated_bytes": 571155968,
+      "TRAIN_documents": 6,
+      "sources": "all0:256 unitweights",
+      "readouts": "16:256",
+      "DAMP_sampling": "Native7,15,...255",
+      "fullK_only_on_audit_cases": null,
+      "source_audits": [
+        {
+          "composition_nL2": 8.025500348869762e-07,
+          "direct_mask_objective_normalized_max": 1.1106408664093848e-07,
+          "tolerance": 0.0001,
+          "pass": true,
+          "mask_replays_are_frozen_source_audits_not_actual_candidate_model_runs": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_exact": true
+    },
+    {
+      "layer": 9,
+      "sha256": "ab974b58ea5e24e0044372fd16214fb374e645b2c9098cdedf29ac846c6f6912",
+      "seconds": 11.554642013000148,
+      "peak_allocated_bytes": 571155968,
+      "TRAIN_documents": 6,
+      "sources": "all0:256 unitweights",
+      "readouts": "16:256",
+      "DAMP_sampling": "Native7,15,...255",
+      "fullK_only_on_audit_cases": null,
+      "source_audits": [
+        {
+          "composition_nL2": 4.827153042237827e-07,
+          "direct_mask_objective_normalized_max": 1.7792930307184228e-07,
+          "tolerance": 0.0001,
+          "pass": true,
+          "mask_replays_are_frozen_source_audits_not_actual_candidate_model_runs": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_exact": true
+    },
+    {
+      "layer": 10,
+      "sha256": "7b26eb4044227f045f450a9e1b0193e5c4f3f85aa2e65f8cf6d20da77b3d58b8",
+      "seconds": 10.011720980000064,
+      "peak_allocated_bytes": 571155968,
+      "TRAIN_documents": 6,
+      "sources": "all0:256 unitweights",
+      "readouts": "16:256",
+      "DAMP_sampling": "Native7,15,...255",
+      "fullK_only_on_audit_cases": null,
+      "source_audits": [
+        {
+          "composition_nL2": 3.206992128681459e-07,
+          "direct_mask_objective_normalized_max": 2.8256331737731754e-08,
+          "tolerance": 0.0001,
+          "pass": true,
+          "mask_replays_are_frozen_source_audits_not_actual_candidate_model_runs": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_exact": true
+    },
+    {
+      "layer": 12,
+      "sha256": "0aaf66dfee67d8537c2e9702c003b3a4cd6e675752a198c2a1d7af14afc42e47",
+      "seconds": 11.485944834000065,
+      "peak_allocated_bytes": 571155968,
+      "TRAIN_documents": 6,
+      "sources": "all0:256 unitweights",
+      "readouts": "16:256",
+      "DAMP_sampling": "Native7,15,...255",
+      "fullK_only_on_audit_cases": {
+        "Kdiag_normalized_max": 9.996413358719817e-17,
+        "c_normalized_max": 0.0,
+        "mask_exact": true,
+        "diag_path_seconds": 1.6261716819999492,
+        "fullK_audit_path_seconds": 1.5677120619998277,
+        "timing_not_isolated": true,
+        "Kdiag_bytes": 16384,
+        "fullK_bytes": 2097152
+      },
+      "source_audits": [
+        {
+          "composition_nL2": 4.782857105439965e-07,
+          "direct_mask_objective_normalized_max": 3.757339195238046e-08,
+          "tolerance": 0.0001,
+          "pass": true,
+          "mask_replays_are_frozen_source_audits_not_actual_candidate_model_runs": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_exact": true
+    },
+    {
+      "layer": 13,
+      "sha256": "be1e8849817799674a297d9030b82dad4ee82bdb5b4887c2acf9e4e57138049d",
+      "seconds": 10.869017860999975,
+      "peak_allocated_bytes": 571155968,
+      "TRAIN_documents": 6,
+      "sources": "all0:256 unitweights",
+      "readouts": "16:256",
+      "DAMP_sampling": "Native7,15,...255",
+      "fullK_only_on_audit_cases": null,
+      "source_audits": [
+        {
+          "composition_nL2": 3.512871687947181e-07,
+          "direct_mask_objective_normalized_max": 3.41708813959008e-08,
+          "tolerance": 0.0001,
+          "pass": true,
+          "mask_replays_are_frozen_source_audits_not_actual_candidate_model_runs": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_exact": true
+    },
+    {
+      "layer": 14,
+      "sha256": "927bc23afffebba9445e521e1f0125f478ebe332890337522d09470fea97a1e6",
+      "seconds": 10.769975864000116,
+      "peak_allocated_bytes": 571155968,
+      "TRAIN_documents": 6,
+      "sources": "all0:256 unitweights",
+      "readouts": "16:256",
+      "DAMP_sampling": "Native7,15,...255",
+      "fullK_only_on_audit_cases": null,
+      "source_audits": [
+        {
+          "composition_nL2": 2.7996992636104227e-07,
+          "direct_mask_objective_normalized_max": 5.561490411092096e-09,
+          "tolerance": 0.0001,
+          "pass": true,
+          "mask_replays_are_frozen_source_audits_not_actual_candidate_model_runs": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_exact": true
+    },
+    {
+      "layer": 16,
+      "sha256": "c98617f1bb1f5848dc69b592d45eca9eba551de099971cab77d048a3e112ecae",
+      "seconds": 9.656427049000058,
+      "peak_allocated_bytes": 571155968,
+      "TRAIN_documents": 6,
+      "sources": "all0:256 unitweights",
+      "readouts": "16:256",
+      "DAMP_sampling": "Native7,15,...255",
+      "fullK_only_on_audit_cases": null,
+      "source_audits": [
+        {
+          "composition_nL2": 4.4330525637908045e-07,
+          "direct_mask_objective_normalized_max": 1.5212630855580413e-08,
+          "tolerance": 0.0001,
+          "pass": true,
+          "mask_replays_are_frozen_source_audits_not_actual_candidate_model_runs": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_exact": true
+    },
+    {
+      "layer": 17,
+      "sha256": "029976c506f79722410cab5cce5db528d6f491fc81fea62595af909f67851fec",
+      "seconds": 10.83155177499998,
+      "peak_allocated_bytes": 571155968,
+      "TRAIN_documents": 6,
+      "sources": "all0:256 unitweights",
+      "readouts": "16:256",
+      "DAMP_sampling": "Native7,15,...255",
+      "fullK_only_on_audit_cases": null,
+      "source_audits": [
+        {
+          "composition_nL2": 4.2396162615366243e-07,
+          "direct_mask_objective_normalized_max": 1.5238069506472623e-07,
+          "tolerance": 0.0001,
+          "pass": true,
+          "mask_replays_are_frozen_source_audits_not_actual_candidate_model_runs": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_exact": true
+    },
+    {
+      "layer": 18,
+      "sha256": "91711032ad569ddcb72983052b8388cb53c9eb8790b860d51876f16426d42839",
+      "seconds": 10.021437953000031,
+      "peak_allocated_bytes": 571155968,
+      "TRAIN_documents": 6,
+      "sources": "all0:256 unitweights",
+      "readouts": "16:256",
+      "DAMP_sampling": "Native7,15,...255",
+      "fullK_only_on_audit_cases": null,
+      "source_audits": [
+        {
+          "composition_nL2": 4.272917294402875e-07,
+          "direct_mask_objective_normalized_max": 1.1380399240213059e-07,
+          "tolerance": 0.0001,
+          "pass": true,
+          "mask_replays_are_frozen_source_audits_not_actual_candidate_model_runs": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_exact": true
+    },
+    {
+      "layer": 20,
+      "sha256": "fe6b4bb9e64031eeb76c52bb24ac7576ee5953bed182d0f6be26561b67b08f6b",
+      "seconds": 10.37529385200014,
+      "peak_allocated_bytes": 571155968,
+      "TRAIN_documents": 6,
+      "sources": "all0:256 unitweights",
+      "readouts": "16:256",
+      "DAMP_sampling": "Native7,15,...255",
+      "fullK_only_on_audit_cases": null,
+      "source_audits": [
+        {
+          "composition_nL2": 3.9399417580131916e-07,
+          "direct_mask_objective_normalized_max": 6.69724220404215e-08,
+          "tolerance": 0.0001,
+          "pass": true,
+          "mask_replays_are_frozen_source_audits_not_actual_candidate_model_runs": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_exact": true
+    },
+    {
+      "layer": 21,
+      "sha256": "7bf62338e0d9b58184f54d39e3634e724c821167c074406570eb8f8888134d28",
+      "seconds": 10.804729115999862,
+      "peak_allocated_bytes": 571155968,
+      "TRAIN_documents": 6,
+      "sources": "all0:256 unitweights",
+      "readouts": "16:256",
+      "DAMP_sampling": "Native7,15,...255",
+      "fullK_only_on_audit_cases": null,
+      "source_audits": [
+        {
+          "composition_nL2": 3.7467443692978987e-07,
+          "direct_mask_objective_normalized_max": 4.384510186492577e-09,
+          "tolerance": 0.0001,
+          "pass": true,
+          "mask_replays_are_frozen_source_audits_not_actual_candidate_model_runs": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_exact": true
+    },
+    {
+      "layer": 22,
+      "sha256": "6b5d566bb3839f2fb579639415c9d0210433051e6c0b3d9b8d8da8343a533b34",
+      "seconds": 12.195377774999997,
+      "peak_allocated_bytes": 571155968,
+      "TRAIN_documents": 6,
+      "sources": "all0:256 unitweights",
+      "readouts": "16:256",
+      "DAMP_sampling": "Native7,15,...255",
+      "fullK_only_on_audit_cases": {
+        "Kdiag_normalized_max": 5.006374546389544e-16,
+        "c_normalized_max": 0.0,
+        "mask_exact": true,
+        "diag_path_seconds": 1.9587472719999823,
+        "fullK_audit_path_seconds": 1.8784982099996341,
+        "timing_not_isolated": true,
+        "Kdiag_bytes": 16384,
+        "fullK_bytes": 2097152
+      },
+      "source_audits": [
+        {
+          "composition_nL2": 3.855747215562731e-07,
+          "direct_mask_objective_normalized_max": 2.781311504831846e-08,
+          "tolerance": 0.0001,
+          "pass": true,
+          "mask_replays_are_frozen_source_audits_not_actual_candidate_model_runs": true
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "DAMP_energy_persistence_top8_exact": true
+    }
+  ],
+  "selected_profile": "R2_OFFSET",
+  "policy_sha256": "45a511cc987306a3e7c68a86d6b1fa61c80778e1fc8911d8f19042935cc8c0b1",
+  "main_path_fullK_constructed": false,
+  "large_source_history_tensor_still_required": true,
+  "TEST_accessed": false
+}

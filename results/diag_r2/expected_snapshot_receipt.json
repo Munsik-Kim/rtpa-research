@@ -1,0 +1,22 @@
+{
+  "status": "INITIAL_NEW_REVISION_EXPECTED_SNAPSHOT",
+  "created_utc": "2026-09-12T09:08:05Z",
+  "scope": "CPU scalar reconstruction, not independent full-logit/GPU replication",
+  "source_freeze_sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640",
+  "analysis_source_sha256": "0d037df87c23b90ff789ba60dc8f9748fcf7a417cb0e9158145214e19ba306d6",
+  "expected_sha256": "9a7f705c4fe0fb1d235b8a1dfd734075b58030cadc2f3d614d20d7e34c284401",
+  "observation_audit_sha256": "279a83d5025f243f35eeca25d9cbb400b84a4bfa7051f2db5f307a1045819b16",
+  "accounting_sha256": "eb1e9a93261fea4ed5541f1ac419f310ba07ef82eb139633714f8263819f700b",
+  "timing_completion": "INCOMPLETE_OR_INVALID",
+  "timing_incomplete_is_not_performance_success": true,
+  "public_copy_comparison": {
+    "status": "MATCHED_FROZEN_EXPECTED",
+    "expected_sha256": "9a7f705c4fe0fb1d235b8a1dfd734075b58030cadc2f3d614d20d7e34c284401",
+    "expectations_updated": false,
+    "relative_tolerance": 1e-10,
+    "absolute_tolerance": 1e-12
+  },
+  "original_expectations_modified": false,
+  "GPU_forwards": 0,
+  "CPU_wall_seconds_this_controller": 4.252674647999811
+}

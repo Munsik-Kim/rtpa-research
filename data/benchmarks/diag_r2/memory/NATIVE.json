@@ -1,0 +1,39 @@
+{
+  "method": "NATIVE",
+  "pid": 57183,
+  "fresh_process_for_method": true,
+  "profile": "native",
+  "prompt_tokens": 1024,
+  "decode_tokens": 32,
+  "physical_forwards": 1056,
+  "payload_bytes": 9437184,
+  "payload_bytes_per_head": 32768,
+  "cache_tensor_bytes": 23298048,
+  "static_policy_bytes_by_type": {},
+  "static_policy_bytes": 0,
+  "shared_policy_engine_level": false,
+  "model_parameter_bytes": 1705971840,
+  "allocated_after_model_load": 1736535040,
+  "steady_allocated_bytes": 1780542464,
+  "peak_allocated_bytes": 1783764992,
+  "peak_reserved_bytes": 1858076672,
+  "gpu": {
+    "temperature_C": 54.0,
+    "used_MiB": 4812.0,
+    "total_MiB": 16303.0,
+    "utilization_percent": 34.0
+  },
+  "sampled_isolation": {
+    "status_ok": true,
+    "processes": [
+      {
+        "pid": 57183,
+        "process": "[Not Found]"
+      }
+    ],
+    "no_competing_GPU_worker": true,
+    "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+  },
+  "scratch": "measured separately on actual nonzero CAL layer0 codec call; not derived from tensor shapes alone",
+  "source_freeze_sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640"
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "document": "r2_technical_prose_decimal",
+    "domain": "technical_prose",
+    "status": "STORED_COMPLETE",
+    "planned_rows": 5120,
+    "stored_rows": 5120,
+    "missing_rows": 0,
+    "physical_forwards_from_rows": 5120,
+    "first_failures": [],
+    "status_counts": {
+      "OK": 5120
+    },
+    "input_errors": []
+  },
+  {
+    "document": "r2_python_code__arraypad_impl",
+    "domain": "python_code",
+    "status": "STORED_COMPLETE",
+    "planned_rows": 5120,
+    "stored_rows": 5120,
+    "missing_rows": 0,
+    "physical_forwards_from_rows": 5120,
+    "first_failures": [],
+    "status_counts": {
+      "OK": 5120
+    },
+    "input_errors": []
+  },
+  {
+    "document": "r2_technical_prose_sqlite3",
+    "domain": "technical_prose",
+    "status": "STORED_COMPLETE",
+    "planned_rows": 5120,
+    "stored_rows": 5120,
+    "missing_rows": 0,
+    "physical_forwards_from_rows": 5120,
+    "first_failures": [],
+    "status_counts": {
+      "OK": 5120
+    },
+    "input_errors": []
+  },
+  {
+    "document": "r2_python_code__shape_base_impl",
+    "domain": "python_code",
+    "status": "STORED_COMPLETE",
+    "planned_rows": 5120,
+    "stored_rows": 5120,
+    "missing_rows": 0,
+    "physical_forwards_from_rows": 5120,
+    "first_failures": [],
+    "status_counts": {
+      "OK": 5120
+    },
+    "input_errors": []
+  },
+  {
+    "document": "r2_technical_prose_logging",
+    "domain": "technical_prose",
+    "status": "STORED_COMPLETE",
+    "planned_rows": 5120,
+    "stored_rows": 5120,
+    "missing_rows": 0,
+    "physical_forwards_from_rows": 5120,
+    "first_failures": [],
+    "status_counts": {
+      "OK": 5120
+    },
+    "input_errors": []
+  },
+  {
+    "document": "r2_python_code__type_check_impl",
+    "domain": "python_code",
+    "status": "STORED_COMPLETE",
+    "planned_rows": 5120,
+    "stored_rows": 5120,
+    "missing_rows": 0,
+    "physical_forwards_from_rows": 5120,
+    "first_failures": [],
+    "status_counts": {
+      "OK": 5120
+    },
+    "input_errors": []
+  },
+  {
+    "document": "r2_technical_prose_multiprocessing",
+    "domain": "technical_prose",
+    "status": "STORED_COMPLETE",
+    "planned_rows": 5120,
+    "stored_rows": 5120,
+    "missing_rows": 0,
+    "physical_forwards_from_rows": 5120,
+    "first_failures": [],
+    "status_counts": {
+      "OK": 5120
+    },
+    "input_errors": []
+  },
+  {
+    "document": "r2_python_code__arraysetops_impl",
+    "domain": "python_code",
+    "status": "STORED_COMPLETE",
+    "planned_rows": 5120,
+    "stored_rows": 5120,
+    "missing_rows": 0,
+    "physical_forwards_from_rows": 5120,
+    "first_failures": [],
+    "status_counts": {
+      "OK": 5120
+    },
+    "input_errors": []
+  },
+  {
+    "document": "r2_technical_prose_asyncio_task",
+    "domain": "technical_prose",
+    "status": "STORED_COMPLETE",
+    "planned_rows": 5120,
+    "stored_rows": 5120,
+    "missing_rows": 0,
+    "physical_forwards_from_rows": 5120,
+    "first_failures": [],
+    "status_counts": {
+      "OK": 5120
+    },
+    "input_errors": []
+  },
+  {
+    "document": "r2_python_code__nanfunctions_impl",
+    "domain": "python_code",
+    "status": "STORED_COMPLETE",
+    "planned_rows": 5120,
+    "stored_rows": 5120,
+    "missing_rows": 0,
+    "physical_forwards_from_rows": 5120,
+    "first_failures": [],
+    "status_counts": {
+      "OK": 5120
+    },
+    "input_errors": []
+  },
+  {
+    "document": "r2_python_code__function_base_impl",
+    "domain": "python_code",
+    "status": "STORED_COMPLETE",
+    "planned_rows": 5120,
+    "stored_rows": 5120,
+    "missing_rows": 0,
+    "physical_forwards_from_rows": 5120,
+    "first_failures": [],
+    "status_counts": {
+      "OK": 5120
+    },
+    "input_errors": []
+  },
+  {
+    "document": "r2_technical_prose_typing",
+    "domain": "technical_prose",
+    "status": "STORED_COMPLETE",
+    "planned_rows": 5120,
+    "stored_rows": 5120,
+    "missing_rows": 0,
+    "physical_forwards_from_rows": 5120,
+    "first_failures": [],
+    "status_counts": {
+      "OK": 5120
+    },
+    "input_errors": []
+  }
+]

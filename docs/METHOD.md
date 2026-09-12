@@ -4,7 +4,68 @@ RTPA has two distinct mechanisms. **RTPA-DIAG** compresses offline output
 responses into a fixed precision mask. **FA_CODE** uses a fixed small metric
 to choose bounded integer-code changes at each recurrent write. They share a
 research motivation, not an additive or multiplicative performance claim.
-See [current benchmark scopes](BENCHMARKS.md) and [executable usage](QUICKSTART.md).
+The current fixed-mask entrypoint is the [R2 state/model guide](QUICKSTART_R2.md).
+FA_CODE remains a separate, unchanged optional research path.
+
+## Fixed allocation with an explicit storage revision
+
+R2 keeps unsigned low codes, value-axis normalized H32, groups of 32, two FP16
+metadata values per group, and eight original-coordinate FP16 high rows. It
+changes the **decoder contract**, not the storage budget: 19,328 B/head.
+The selected `R2_OFFSET` stores a physical offset rather than a potentially
+unbounded dimensionless zero point. An offset rounded downward to FP16 is used
+to compute the required range; scale is rounded upward to FP16. Codes are
+rounded ties-to-even on that actual stored grid. See the
+[complete contract](CODEC_R2_CONTRACT.md), including exact-zero groups,
+subnormal scales and explicit out-of-range failures. This is not a silent fix
+to P_PRE, and old payloads must not be sent to the new decoder.
+
+Two representations were declared before CAL. Both passed the tested numerical
+boundaries. `R2_OFFSET` was selected by the lower document-averaged common-state
+physical reconstruction ratio; CAL whole-model KL was reporting-only and did
+not select the codec. That criterion does not guarantee the smallest KL.
+
+After codec selection, both masks were recalibrated from the same TRAIN6
+own-low anchor and all source writes, with unit weights and scored readouts
+16–255. Matched energy uses `sum ||Q_L(Z)-Z||²` in original coordinates, with
+FP64 subtraction/squaring/reduction. DIAG uses `Q_L-Q_H` source responses, the
+full transition and the high-residual baseline `h=y-sum(V)`.
+Here “own-low” means the low-tier state propagated under the captured Native
+TRAIN q/k/v/gates. It does not mean that every calibration response reruns the
+whole model to regenerate candidate-specific operands. That frozen-response
+approximation is distinct from the actual own-path whole-model TEST.
+
+The DIAG-only path accumulates `Kii=sum <V_i,V_i>` and `ci=sum <V_i,h>` and
+selects descending `Kii+2ci`, resolving ties by ascending row index. It does
+**not** erase within-source accumulation across time. Full K is constructed
+only for three fixed TRAIN audit cases. Reducing the stored statistics does
+not eliminate the large source-propagation tensor or prove a wall-time gain.
+
+The optional `DAMP_R2_PAPER_ADAPTED` mask uses the same TRAIN6 documents but
+Native-reference states sampled every eight writes and a scalar geometric-
+persistence factor. This new-codec/r8/all-18-layer local adaptation is not an
+official DAMP implementation, paper calibration or kernel reproduction.
+
+## Equivalent execution changes, not another allocation policy
+
+`CodecR2` is the readable reference. `CodecR2Optimized` combines the successful-
+path high/low input checks into one host decision and validates each decoded
+payload once. Mandatory dtype, shape, finite and bound checks remain; rejected
+encodes do not commit a new payload. FP32 arithmetic, H32, rounding and scatter
+expressions are unchanged. `R2Engine` separately reuses private immutable H32
+and row-layout tensors for the same complete mask/profile/device identity.
+Payloads, counters and decoded scratch remain request-local.
+
+CPU fixtures compare codes, metadata and decoded states exactly. GPU CAL checks
+every output logit and **final** cache tensor hashes, not every intermediate
+payload on every possible input. The no-observer timed path retains mandatory
+guard host synchronization. Engine-owned sharing reduces request duplication;
+cache initialization is outside the decode timing interval, so it must not be
+credited with an unmeasured per-token speedup.
+
+Future TEST tokens and Native evaluation logits are not encoder inputs.
+Calibration uses offline future responses, while each evaluated method follows
+its own recurrent storage state through the native model computation.
 
 ## Fixed metric, bounded runtime code correction
 
@@ -17,7 +78,7 @@ exceeding the frozen FP64 evaluation margin, subject to the unchanged grid-space
 energy cap (`eta=.05`), finite rules, code
 range and tie order. High rows, metadata, decoder and payload format do not change.
 
-For the diagonal-plus-rank-two metric `M = lambda I + U Uᵀ`, the new FP64 execution computes
+For the diagonal-plus-rank-two metric `M = lambda I + U Uᵀ`, the v1.1.0rc1 FP64 execution computes
 `M E = lambda E + U(UᵀE)` and `diag(M)=lambda+row_sum(U²)` without retaining dense M.
 The reference implementation remains available. Both actual decode/finite checks
 that could reject a payload are retained; only quadratic diagnostics that do not
@@ -46,17 +107,17 @@ remain outside that single-write equivalence.
 
 ## Current versus historical scope
 
-The current source independently supports the GDN2 channel-wise transition and
+The preserved source independently supports the GDN2 channel-wise transition and
 its nonsymmetric adjoint. It does not reuse GDN's scalar-decay shortcut. GDN2
 experiments are synthetic operator measurements, not trained-model language
 evaluation. [Architecture provenance](ARCHITECTURES.md) explains the distinction.
 
-Historical results below used layers 0/12/22. The new study separately identifies
+Historical results below used layers 0/12/22. The preceding v1.1.0rc1 study separately identifies
 all-18-layer allocation and three-layer FA_CODE experiments. Scope is part of each
 comparison, never inferred from the package name. Request cache payloads are
-independent. Caller-supplied immutable metrics can be reused; the measured model
-runner currently loads policy tensors per cache, so its static-byte ledger is
-**per request**, not a claim of global request sharing.
+independent. The v1.1.0rc1 runner loads policy tensors per cache, so its ledger is
+**per request**. The R2 fixed-mask engine now shares immutable policy tensors;
+that new implementation does not retroactively change the earlier byte ledger.
 
 ## Historical shared numerical contract
 
@@ -79,9 +140,9 @@ Mixed payload per head is `120 × (128 + 4 × 4) + 8 × 128 × 2 = 19,328 bytes`
 
 ## Historical allocation rules
 
-This table describes the earlier evidence. The new all-18-layer benchmark uses
+This table describes the earlier evidence. The v1.1.0rc1 all-18-layer benchmark uses
 TRAIN6 synthetic inputs; its [frozen protocol](../data/benchmarks/gdn/protocol.json)
-defines that separate calibration. The new three-layer code-correction benchmark
+defines that separate calibration. The v1.1.0rc1 three-layer code-correction benchmark
 inherits the v0.5 TRAIN9 matched-energy mask and the FA_CODE TRAIN12 metric.
 
 | Method | Offline selection | Runtime |

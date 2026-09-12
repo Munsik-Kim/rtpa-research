@@ -1,0 +1,526 @@
+{
+  "status": "INCOMPLETE_TIMING_WITH_RECONCILED_ACCOUNTING",
+  "scope": "Post-freeze independent CPU bookkeeping audit; no scientific performance or GPU replication claim",
+  "checks": 123416,
+  "errors": [],
+  "incomplete": [
+    "TIMING_PLANNED_BLOCKS_OR_FINAL_STATUS_INCOMPLETE"
+  ],
+  "bookkeeping_incomplete": [],
+  "bookkeeping_status": "RECONCILED_WITH_BOUNDED_UNKNOWN",
+  "execution_complete": false,
+  "ledger": {
+    "summed_physical_forwards": 102476,
+    "summed_active_seconds": 10890.013594309996,
+    "within_recorded_budget": true,
+    "errors": [],
+    "incomplete": []
+  },
+  "phase_reconciliation": [
+    {
+      "phase": "cuda_fixture",
+      "attempts": 1,
+      "ledger_forwards": 0,
+      "receipt_forwards": 0,
+      "uncovered_or_duplicated_forwards": 0,
+      "status": "RECONCILED",
+      "scope": "Direct phase receipt count; not quality or independent runtime replication"
+    },
+    {
+      "phase": "pilot",
+      "attempts": 1,
+      "ledger_forwards": 2304,
+      "receipt_forwards": 2304,
+      "uncovered_or_duplicated_forwards": 0,
+      "status": "RECONCILED",
+      "scope": "Direct phase receipt count; not quality or independent runtime replication"
+    },
+    {
+      "phase": "capture",
+      "attempts": 1,
+      "ledger_forwards": 1536,
+      "receipt_forwards": 1536,
+      "uncovered_or_duplicated_forwards": 0,
+      "status": "RECONCILED",
+      "scope": "Direct phase receipt count; not quality or independent runtime replication"
+    },
+    {
+      "phase": "fit",
+      "attempts": 1,
+      "ledger_forwards": 0,
+      "receipt_forwards": 0,
+      "uncovered_or_duplicated_forwards": 0,
+      "status": "RECONCILED",
+      "scope": "Offline source propagation consumes captured operands; no language-model forwards; GPU/time remains in ledger"
+    },
+    {
+      "phase": "profile",
+      "attempts": 1,
+      "ledger_forwards": 72,
+      "receipt_forwards": 72,
+      "uncovered_or_duplicated_forwards": 0,
+      "status": "RECONCILED",
+      "scope": "Diagnostic profile, not serving latency; large profiler trace is excluded and not required by this count audit"
+    },
+    {
+      "phase": "conformance",
+      "attempts": 1,
+      "ledger_forwards": 5572,
+      "receipt_forwards": 5572,
+      "uncovered_or_duplicated_forwards": 0,
+      "status": "RECONCILED",
+      "scope": {
+        "trajectory_receipt_forwards": 5376,
+        "additional_bounded_subchecks": 196,
+        "subcheck_scope": "Reconstructed from frozen source loop counts, not separate per-subcheck receipts"
+      }
+    },
+    {
+      "phase": "final_probe",
+      "attempts": 1,
+      "ledger_forwards": 128,
+      "receipt_forwards": 128,
+      "uncovered_or_duplicated_forwards": 0,
+      "status": "RECONCILED",
+      "scope": "Direct phase receipt count; not quality or independent runtime replication"
+    },
+    {
+      "phase": "evaluate",
+      "attempts": 1,
+      "ledger_forwards": 61440,
+      "receipt_forwards": 61440,
+      "uncovered_or_duplicated_forwards": 0,
+      "status": "RECONCILED",
+      "scope": {
+        "planned_documents": 12,
+        "completed_receipts": 12,
+        "planned_no_failure_calls": 61440,
+        "status_counts": {
+          "OK": 61440
+        },
+        "metric_values_analyzed": false
+      }
+    },
+    {
+      "phase": "timing",
+      "attempts": 2,
+      "ledger_forwards": 25024,
+      "receipt_forwards": 25024,
+      "uncovered_or_duplicated_forwards": 0,
+      "status": "RECONCILED_CLOSED_PARTIAL_TIMING_WITH_BOUNDED_INITIAL_UNKNOWN_CALLS",
+      "scope": {
+        "final_attempt_receipt_forwards": 11424,
+        "archived_confirmed_forwards": 13600,
+        "additional_unknown_forwards": [
+          0,
+          544
+        ],
+        "partial_samples_used_as_final_timing": false,
+        "physical_forward_count_exact": false,
+        "final_attempt_completion": "FAILED_CONCURRENCY_GUARD_WITH_CLOSED_COUNT"
+      }
+    },
+    {
+      "phase": "memory_NATIVE",
+      "attempts": 1,
+      "ledger_forwards": 1056,
+      "receipt_forwards": 1056,
+      "uncovered_or_duplicated_forwards": 0,
+      "status": "RECONCILED",
+      "scope": "Direct phase receipt count; not quality or independent runtime replication"
+    },
+    {
+      "phase": "memory_LEGACY_DIAG",
+      "attempts": 1,
+      "ledger_forwards": 1056,
+      "receipt_forwards": 1056,
+      "uncovered_or_duplicated_forwards": 0,
+      "status": "RECONCILED",
+      "scope": "Direct phase receipt count; not quality or independent runtime replication"
+    },
+    {
+      "phase": "memory_R2_MATCHED_ENERGY",
+      "attempts": 1,
+      "ledger_forwards": 1056,
+      "receipt_forwards": 1056,
+      "uncovered_or_duplicated_forwards": 0,
+      "status": "RECONCILED",
+      "scope": "Direct phase receipt count; not quality or independent runtime replication"
+    },
+    {
+      "phase": "memory_R2_DIAG_REFERENCE",
+      "attempts": 1,
+      "ledger_forwards": 1056,
+      "receipt_forwards": 1056,
+      "uncovered_or_duplicated_forwards": 0,
+      "status": "RECONCILED",
+      "scope": "Direct phase receipt count; not quality or independent runtime replication"
+    },
+    {
+      "phase": "memory_R2_DIAG",
+      "attempts": 1,
+      "ledger_forwards": 1056,
+      "receipt_forwards": 1056,
+      "uncovered_or_duplicated_forwards": 0,
+      "status": "RECONCILED",
+      "scope": "Direct phase receipt count; not quality or independent runtime replication"
+    },
+    {
+      "phase": "memory_DAMP_R2_PAPER_ADAPTED",
+      "attempts": 1,
+      "ledger_forwards": 1056,
+      "receipt_forwards": 1056,
+      "uncovered_or_duplicated_forwards": 0,
+      "status": "RECONCILED",
+      "scope": "Direct phase receipt count; not quality or independent runtime replication"
+    },
+    {
+      "phase": "installed_api_smoke",
+      "attempts": 1,
+      "ledger_forwards": 64,
+      "receipt_forwards": 64,
+      "uncovered_or_duplicated_forwards": 0,
+      "status": "RECONCILED",
+      "scope": "Direct phase receipt count; not quality or independent runtime replication"
+    }
+  ],
+  "timing": {
+    "status": "TERMINATED_PARTIAL_TIMING_NOT_COMPLETE",
+    "planned_warmup_forwards": 3264,
+    "planned_measured_forwards": 26112,
+    "planned_total_forwards": 29376,
+    "receipt_forwards": 11424,
+    "warmup_scope": "No individual warmup time samples; reconcile counts from complete total, not measured rows alone",
+    "observed_measured_rows": 15,
+    "observed_measured_forwards": 8160,
+    "inferred_unmeasured_warmup_forwards": 3264,
+    "warmup_count_verified_by_total_only": false,
+    "isolation_at_recorded_boundaries": false,
+    "isolation_limit": "Before/after process samples, not continuous or complete Windows visibility",
+    "metric_logging_in_timed_region": false,
+    "mandatory_guard_host_synchronization_retained": true,
+    "lazy_allocation_included": "UNREPORTED",
+    "timing_comparison_or_cost_target_evaluated": false,
+    "receipt_count_source": "Finally-closed FAILED budget + phase failure + supervisor lifecycle + durable rows",
+    "this_attempt_forward_count_exact": true,
+    "final_timing_complete": false,
+    "original_raw_status_unchanged": "RUNNING",
+    "unmeasured_warmup_reconciled_from_closed_total_only": true,
+    "latency_ratio_or_CI_from_partial_rows": "NOT_COMPUTED"
+  },
+  "memory": {
+    "measurements": [
+      {
+        "method": "NATIVE",
+        "status": "MEMORY_RECEIPT_CHECKED",
+        "pid": 57183,
+        "payload_bytes": 9437184,
+        "per_head_bytes": 32768,
+        "physical_forwards": 1056,
+        "scratch": [],
+        "process_memory_scope": "One recorded process/method and cache; not independently observed process launch",
+        "source": "memory/NATIVE.json"
+      },
+      {
+        "method": "LEGACY_DIAG",
+        "status": "MEMORY_RECEIPT_CHECKED",
+        "pid": 57887,
+        "payload_bytes": 5566464,
+        "per_head_bytes": 19328,
+        "physical_forwards": 1056,
+        "scratch": [],
+        "process_memory_scope": "One recorded process/method and cache; not independently observed process launch",
+        "source": "memory/LEGACY_DIAG.json"
+      },
+      {
+        "method": "R2_MATCHED_ENERGY",
+        "status": "MEMORY_RECEIPT_CHECKED",
+        "pid": 59842,
+        "payload_bytes": 5566464,
+        "per_head_bytes": 19328,
+        "physical_forwards": 1056,
+        "scratch": [
+          {
+            "operation": "encode",
+            "status": "RAW_LIFETIME_RECONSTRUCTION_CHECKED",
+            "max_new_allocated_from_trace": 5142016,
+            "max_transient_excluding_returned_storage_from_trace": 5111296,
+            "allocation_lifetimes": 62,
+            "retained_output_allocation_lifetimes": 4,
+            "address_reuse_corrected": true,
+            "observed_peak_increment_bytes": 5142016,
+            "allocator_alignment_and_preexisting_lifetimes_preclude_equating_every_size_measure": true
+          },
+          {
+            "operation": "decode",
+            "status": "RAW_LIFETIME_RECONSTRUCTION_CHECKED",
+            "max_new_allocated_from_trace": 13891199,
+            "max_transient_excluding_returned_storage_from_trace": 12842623,
+            "allocation_lifetimes": 108,
+            "retained_output_allocation_lifetimes": 1,
+            "address_reuse_corrected": true,
+            "observed_peak_increment_bytes": 14415872,
+            "allocator_alignment_and_preexisting_lifetimes_preclude_equating_every_size_measure": true
+          }
+        ],
+        "process_memory_scope": "One recorded process/method and cache; not independently observed process launch",
+        "source": "memory/R2_MATCHED_ENERGY.json"
+      },
+      {
+        "method": "R2_DIAG_REFERENCE",
+        "status": "MEMORY_RECEIPT_CHECKED",
+        "pid": 61769,
+        "payload_bytes": 5566464,
+        "per_head_bytes": 19328,
+        "physical_forwards": 1056,
+        "scratch": [
+          {
+            "operation": "encode",
+            "status": "RAW_LIFETIME_RECONSTRUCTION_CHECKED",
+            "max_new_allocated_from_trace": 5142016,
+            "max_transient_excluding_returned_storage_from_trace": 5111296,
+            "allocation_lifetimes": 60,
+            "retained_output_allocation_lifetimes": 4,
+            "address_reuse_corrected": true,
+            "observed_peak_increment_bytes": 5142016,
+            "allocator_alignment_and_preexisting_lifetimes_preclude_equating_every_size_measure": true
+          },
+          {
+            "operation": "decode",
+            "status": "RAW_LIFETIME_RECONSTRUCTION_CHECKED",
+            "max_new_allocated_from_trace": 13891199,
+            "max_transient_excluding_returned_storage_from_trace": 12842623,
+            "allocation_lifetimes": 130,
+            "retained_output_allocation_lifetimes": 1,
+            "address_reuse_corrected": true,
+            "observed_peak_increment_bytes": 14415872,
+            "allocator_alignment_and_preexisting_lifetimes_preclude_equating_every_size_measure": true
+          }
+        ],
+        "process_memory_scope": "One recorded process/method and cache; not independently observed process launch",
+        "source": "memory/R2_DIAG_REFERENCE.json"
+      },
+      {
+        "method": "R2_DIAG",
+        "status": "MEMORY_RECEIPT_CHECKED",
+        "pid": 63522,
+        "payload_bytes": 5566464,
+        "per_head_bytes": 19328,
+        "physical_forwards": 1056,
+        "scratch": [
+          {
+            "operation": "encode",
+            "status": "RAW_LIFETIME_RECONSTRUCTION_CHECKED",
+            "max_new_allocated_from_trace": 5142016,
+            "max_transient_excluding_returned_storage_from_trace": 5111296,
+            "allocation_lifetimes": 62,
+            "retained_output_allocation_lifetimes": 4,
+            "address_reuse_corrected": true,
+            "observed_peak_increment_bytes": 5142016,
+            "allocator_alignment_and_preexisting_lifetimes_preclude_equating_every_size_measure": true
+          },
+          {
+            "operation": "decode",
+            "status": "RAW_LIFETIME_RECONSTRUCTION_CHECKED",
+            "max_new_allocated_from_trace": 13891199,
+            "max_transient_excluding_returned_storage_from_trace": 12842623,
+            "allocation_lifetimes": 108,
+            "retained_output_allocation_lifetimes": 1,
+            "address_reuse_corrected": true,
+            "observed_peak_increment_bytes": 14415872,
+            "allocator_alignment_and_preexisting_lifetimes_preclude_equating_every_size_measure": true
+          }
+        ],
+        "process_memory_scope": "One recorded process/method and cache; not independently observed process launch",
+        "source": "memory/R2_DIAG.json"
+      },
+      {
+        "method": "DAMP_R2_PAPER_ADAPTED",
+        "status": "MEMORY_RECEIPT_CHECKED",
+        "pid": 65444,
+        "payload_bytes": 5566464,
+        "per_head_bytes": 19328,
+        "physical_forwards": 1056,
+        "scratch": [
+          {
+            "operation": "encode",
+            "status": "RAW_LIFETIME_RECONSTRUCTION_CHECKED",
+            "max_new_allocated_from_trace": 5142016,
+            "max_transient_excluding_returned_storage_from_trace": 5111296,
+            "allocation_lifetimes": 62,
+            "retained_output_allocation_lifetimes": 4,
+            "address_reuse_corrected": true,
+            "observed_peak_increment_bytes": 5142016,
+            "allocator_alignment_and_preexisting_lifetimes_preclude_equating_every_size_measure": true
+          },
+          {
+            "operation": "decode",
+            "status": "RAW_LIFETIME_RECONSTRUCTION_CHECKED",
+            "max_new_allocated_from_trace": 13891199,
+            "max_transient_excluding_returned_storage_from_trace": 12842623,
+            "allocation_lifetimes": 108,
+            "retained_output_allocation_lifetimes": 1,
+            "address_reuse_corrected": true,
+            "observed_peak_increment_bytes": 14415872,
+            "allocator_alignment_and_preexisting_lifetimes_preclude_equating_every_size_measure": true
+          }
+        ],
+        "process_memory_scope": "One recorded process/method and cache; not independently observed process launch",
+        "source": "memory/DAMP_R2_PAPER_ADAPTED.json"
+      }
+    ],
+    "distinct_recorded_method_PIDs": true,
+    "PID_limit": "Distinct recorded PIDs support process separation; an explicit fresh-process flag alone is not runtime proof",
+    "planned_heads": 288,
+    "mixed_bytes_per_head": 19328,
+    "mixed_bits_per_value": 9.4375
+  },
+  "historical_dependency_checks": [
+    {
+      "path": "data/benchmarks/gdn/policy.npz",
+      "existing_expected_sha256": "bd865a1a138ed25a98e8db5b5dabb26ff259307be3ba2f071a04ceb71faace68",
+      "actual_sha256": "bd865a1a138ed25a98e8db5b5dabb26ff259307be3ba2f071a04ceb71faace68",
+      "match": true,
+      "authority": "protocol.json"
+    },
+    {
+      "path": "data/tokenizer/tokenizer.json",
+      "existing_expected_sha256": "fe000e3ed39ed12b8d2481d527d44f93c65d37e87645d2dcc80d1bf9d50d2927",
+      "actual_sha256": "fe000e3ed39ed12b8d2481d527d44f93c65d37e87645d2dcc80d1bf9d50d2927",
+      "match": true,
+      "authority": "real_document_pool.json"
+    }
+  ],
+  "interrupted_attempts": [
+    {
+      "attempt_index": 8,
+      "phase": "timing",
+      "receipt": "interrupted_attempts/timing_01/receipt.json",
+      "confirmed_forwards": 13600,
+      "additional_unknown_forwards": [
+        0,
+        544
+      ],
+      "attempt_forwards_interval": [
+        13600,
+        14144
+      ],
+      "physical_forward_count_exact": false,
+      "charged_seconds_upper_bound": 1459,
+      "last_recorded_seconds": 1404.3123955029987,
+      "partial_measured_rows": 19,
+      "cause_status": "Recorded external termination; exact cause is UNKNOWN and not independently reproduced",
+      "partial_samples_used_as_final_timing": false
+    }
+  ],
+  "terminated_partial_timing": {
+    "attempt_index": 16,
+    "status": "VALIDATED_CLOSED_PARTIAL_TIMING_NOT_COMPLETE",
+    "failure_receipt": "phase_failures/timing_all_1789203574746710026.json",
+    "lifecycle_receipt": "timing_retry_lifecycle.json",
+    "physical_forwards": 11424,
+    "this_attempt_forward_count_exact": true,
+    "stored_timing_status": "RUNNING",
+    "planned_measured_rows": 48,
+    "completed_measured_rows": 15,
+    "warmup_forwards": 3264,
+    "extra_GPU_PIDs_at_failed_boundary": [
+      75907
+    ],
+    "final_timing_complete": false,
+    "latency_ratio_or_CI_from_partial_rows": "NOT_COMPUTED",
+    "runner_monotonic_seconds": 1124.5318720709984,
+    "supervisor_epoch_wall_seconds": 1106.039023399353,
+    "clock_difference_seconds": 18.492848671645334,
+    "clock_scope": "Different recorded clocks; discrepancy retained, cause UNKNOWN, no ledger adjustment",
+    "reported_external_process_state_independently_reproduced": false
+  },
+  "physical_forward_count_exact": false,
+  "confirmed_physical_forwards_lower_bound": 102476,
+  "physical_forwards_interval": [
+    102476,
+    103020
+  ],
+  "physical_forwards_interval_reason": "All attempts receipt-covered; archived trailing count bounded, never imputed",
+  "budget_charge_seconds": 10890.013594309996,
+  "GPU_wall_charge_exact": false,
+  "GPU_wall_charge_scope": "Includes conservative upper wall charge for external interruption; not exact GPU occupancy",
+  "runtime_guard_gaps": [
+    "Legacy policy and packaged tokenizer byte checks here are publication checks against independently existing authorities, not additional guards in the frozen GPU runner.",
+    "The frozen runner checks its evidence-root source files and selected native source; this audit does not prove every external library byte or imported-path identity.",
+    "Warmup completion is count-reconciled from final timing receipt; no independent per-warmup trace was stored.",
+    "Distinct memory PIDs and recorded flags are not independently observed OS process-lifecycle evidence."
+  ],
+  "large_capture_PT_read": false,
+  "profiler_trace_required": false,
+  "TEST_quality_values_analyzed": false,
+  "audit_model_forwards": 0,
+  "original_expected_hashes_changed": false,
+  "sources": {
+    "run:protocol.json": "3fe03f5bfde5d081474ccc551adac508147eeb0486cced46ed10430505040996",
+    "run:budget.json": "8e90ef31f3c78e1f27965d3f1ff8d0b96d8cada0449c567950b581b841b7707b",
+    "run:freeze.json": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640",
+    "run:interrupted_attempts/timing_01/receipt.json": "d364d045658fb9b85fd57d1c98247bf1a6acc0617ee92f190495753d5bcfa408",
+    "run:interrupted_attempts/timing_01/budget.json": "d538b03c8c809ac249f07c2b4d7ff5f58d25d92bc3861f36a26da7fda011e938",
+    "run:interrupted_attempts/timing_01/progress.json": "686e1d978b64d723b136f39a08c93fc5fc6ad9742484ef065b6869503c22c787",
+    "run:interrupted_attempts/timing_01/timing.json": "bbe559e399fffadc3142a79f61af47a1a8067acaa922cce8dcdb9eb627d38b8b",
+    "run:interrupted_attempts/timing_01/timing_execution.log": "7fc86cd5456fb4dcc598c8018b71b2805f885509112014ec50bc852271ed1e1a",
+    "run:timing_retry_lifecycle.json": "cc29b4c5c9b1935c472e2c3977ff561b6fe3da17427ba96c2980ff962eed4bec",
+    "run:timing.json": "93ee80d313dee7339e075785eb816ce7e44e66cd0baae63ad45c96329a0867a8",
+    "run:phase_failures/timing_all_1789203574746710026.json": "347a6e13b195cc40943df5b7f914fa9228542755c31f63d5c856681c23ab25b0",
+    "run:cuda_codec_fixture.json": "13f6ed0960f674079154f3c5a6b716cffac3a77f54057932a3a569aa78949f37",
+    "run:codec_cal_trajectories.json": "91022272305efd8a42174465b8a382e50f7a5c97d35ad95f7956c58cbed47e7f",
+    "run:train_panel.json": "98ae62685d22fa3861f533e9fdb54e003c0bab00220766f2655449e247fcb63e",
+    "run:capture/train_natural_language_0.json": "b01a6112311595677d93d07751793a282d44ac6380725599bde025babeb33377",
+    "run:capture/train_natural_language_1.json": "0e735f4d002d3595fe1489dc60a9b54e17f91432b9c111cf61c79f23e2e602bc",
+    "run:capture/train_code_0.json": "cbe33b6ef210124b469d94cf2ae8dc23cd899bfe46a7257dbe31f76136188ed5",
+    "run:capture/train_code_1.json": "b23508569857fa7df614ed2d69a62bd935360edfe58fc0488459109764aa15e5",
+    "run:capture/train_associative_recall_0.json": "bf09a8ac88d1c23139fffcf69f83897a1a1938a6cf2367cb8265a2c60f63d6c0",
+    "run:capture/train_associative_recall_1.json": "d4422b0c34a715a3aefecf500be05584e02c4e739d0f765ba789b27bf445e825",
+    "run:calibration_cost.json": "3bce8a3de1da4b05ff14a121b9b687f02277ca6bf299b500e6d814dcb1d1250c",
+    "run:reference_profile.json": "6f59e475b1c247b7c8d7df195f44fa48874f3d258df7a7d76c39e7627bd030c4",
+    "run:conformance.json": "fbb20479e8a7fa45c1dc1205c90dc0939d4460da97c719ff88cd79f3ef63fe80",
+    "run:final_probe.json": "54efc34fd65753710920bdaac6ac2ea18def47205158a8e7d15018381db76fe7",
+    "run:test_panel.json": "2568ba5c61f2af75b40101c2bcc92c70c0ae1142752c9945ade86fc54373706c",
+    "run:tokens/r2_technical_prose_decimal.jsonl.receipt.json": "55a3ced29b95aa71b73b0bfdba093917d3915a8d100eeb16aa27c2ef8846348e",
+    "run:tokens/r2_technical_prose_decimal.jsonl.gz": "31134ec9cf6595eec08ff6230c4fe0cfd55c3fb8c22b40035789649b3e9f5c7b",
+    "run:tokens/r2_python_code__arraypad_impl.jsonl.receipt.json": "2a300aed6293ac6b2c56537e44f824c8f3c702c7b240fc199e4947bf44715f80",
+    "run:tokens/r2_python_code__arraypad_impl.jsonl.gz": "dfc9807b83519603da6b2181c444d746a0e96350f5c7ad9648930d32fcd6e0f4",
+    "run:tokens/r2_technical_prose_sqlite3.jsonl.receipt.json": "354e749cf4deb6da9ae6cf46a7a7299d6d0e1bd223dda55c405b63c21f1b333a",
+    "run:tokens/r2_technical_prose_sqlite3.jsonl.gz": "13d2d114c559537db430327d74c7ec79a9c1858674ac4081274bf9de98c53367",
+    "run:tokens/r2_python_code__shape_base_impl.jsonl.receipt.json": "12b55fd6e01ca68770e34506d202f0ffbcc5d051c9e48cc8d98b604df9b32600",
+    "run:tokens/r2_python_code__shape_base_impl.jsonl.gz": "60181662aa4d0a97ce750f7ecef5dd9b066a431e5a02764d67b31ffac3cdcff6",
+    "run:tokens/r2_technical_prose_logging.jsonl.receipt.json": "3b0af2e9491f45f509b04d0f51349f7a96e06a248f25ed5a3e93395f66574431",
+    "run:tokens/r2_technical_prose_logging.jsonl.gz": "95f84994982cef2aceaa4cb451b22426dc067e519368e1f31bab6fbb46194fdc",
+    "run:tokens/r2_python_code__type_check_impl.jsonl.receipt.json": "ae7ab740276e8865cfabe64b3fda021636574b168e75d933c2ad2f1a125dad39",
+    "run:tokens/r2_python_code__type_check_impl.jsonl.gz": "69663c60b7f1464933d5791332fc69fb8202876267831356a18b2d9e1ff12510",
+    "run:tokens/r2_technical_prose_multiprocessing.jsonl.receipt.json": "5645528cb7c1a621ae664590308f8d4e0e03c9bdf9135c4912f1891ecd8de18f",
+    "run:tokens/r2_technical_prose_multiprocessing.jsonl.gz": "86edd0bc468cf9115e4f78c8a10e06fb76ddb769539bb5ef5a8ab4dfecdf4d3c",
+    "run:tokens/r2_python_code__arraysetops_impl.jsonl.receipt.json": "03b23cf4d6056ea1cc2af4fd2294cf5dcdce75f8fd54e15b681bde1fe74326e9",
+    "run:tokens/r2_python_code__arraysetops_impl.jsonl.gz": "e4737471047480124e263e086dc994b62bd257ceb07cc3d9b9ca693982a6f1d9",
+    "run:tokens/r2_technical_prose_asyncio_task.jsonl.receipt.json": "bbbc84c579783259273d080b3f6ace5e4872b08c099464a0a1ee020ff13644a9",
+    "run:tokens/r2_technical_prose_asyncio_task.jsonl.gz": "e98de7e58b44bbef97f3cd60e8d1db210c5208e2ee1a73f2f89340dc09cf9e46",
+    "run:tokens/r2_python_code__nanfunctions_impl.jsonl.receipt.json": "4bc3a75d7f8548ffa7e7a2a45b5435844aef012a20d82f0bb6329913cc6c8c6c",
+    "run:tokens/r2_python_code__nanfunctions_impl.jsonl.gz": "95125d2048be07a978198b3e16612a4bc7bab4bd3472d2728c3e52ea28489148",
+    "run:tokens/r2_python_code__function_base_impl.jsonl.receipt.json": "d8715f009d7de1d0911f4fa2a552dd463cdde4861785b9bc8b198c4e92d185d9",
+    "run:tokens/r2_python_code__function_base_impl.jsonl.gz": "8af01ca97055ff3954a1c26296c2d0e22e92cee0cf9161d98b6d6cf4779f01cd",
+    "run:tokens/r2_technical_prose_typing.jsonl.receipt.json": "1c38fc04f747c1f856ab2e032d6cc4b2ee376d1409f9bd8ee20c0878a1062130",
+    "run:tokens/r2_technical_prose_typing.jsonl.gz": "9d9ab23d7b6f235aaa81925a9e13161ffa104b76a64b12f8072cd0c3477cf8bd",
+    "run:memory/NATIVE.json": "c214032a07f05218376b8e3e5fd1a5a5b042e25a7dcfe2a916c52fb583a7cdf5",
+    "run:memory/LEGACY_DIAG.json": "bfef2ff5b78f9f1df5fdf43e1d63bf33e6c7c339897be86f0ab768e4274f69ef",
+    "run:memory/R2_MATCHED_ENERGY.json": "54c82cb7ee22dd2c81eec88bc55798d56d3c372979b26389d0d12b56794e2042",
+    "run:memory/R2_MATCHED_ENERGY_allocations.json": "97d29e7fed2562a87a02e357fc74f741fc040843417eb42df17bf9aef0459fca",
+    "run:memory/R2_DIAG_REFERENCE.json": "b23eed6aea40e738830dacd25d01449ee7d5cfea6edc9bf60152524c32b8ec4c",
+    "run:memory/R2_DIAG_REFERENCE_allocations.json": "f880e8172795ea233e2eec3ee616f36be5e67e628a4482d483219cc3975f7eb9",
+    "run:memory/R2_DIAG.json": "a521768bb7db5851adf44d28e8d055f787b4f1257b5b93c4361ea1e7d92cd846",
+    "run:memory/R2_DIAG_allocations.json": "97d29e7fed2562a87a02e357fc74f741fc040843417eb42df17bf9aef0459fca",
+    "run:memory/DAMP_R2_PAPER_ADAPTED.json": "dc2ca11ddc98a0d40bae34575ed291a666d175cf9194b928b4a850a32533e457",
+    "run:memory/DAMP_R2_PAPER_ADAPTED_allocations.json": "97d29e7fed2562a87a02e357fc74f741fc040843417eb42df17bf9aef0459fca",
+    "run:installed_model_example.json": "e0de423aeab807322d80d8cf48b46e839c9ed95bf8fc2458fc40da4cf643331f",
+    "run:cal_panel.json": "c68c8993a90341a60e1820e3f4871bfebc6faa8d4265328851340ded90c9a333",
+    "run:real_document_pool.json": "a75caea2a818a931e4dd002a03e9e207bb3cf44a86d9fe5d05d42a865c5c5548",
+    "package:data/benchmarks/gdn/policy.npz": "bd865a1a138ed25a98e8db5b5dabb26ff259307be3ba2f071a04ceb71faace68",
+    "package:data/tokenizer/tokenizer.json": "fe000e3ed39ed12b8d2481d527d44f93c65d37e87645d2dcc80d1bf9d50d2927"
+  },
+  "auditor_sha256": "2830e4bb6c51482f63b6b6b4b7a332d6485509b4aa02c6eb9a89b87eb6ec5fab"
+}

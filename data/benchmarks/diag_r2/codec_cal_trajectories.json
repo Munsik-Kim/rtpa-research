@@ -1,0 +1,85 @@
+{
+  "rows": [
+    {
+      "document": "cal_natural_language_0",
+      "method": "NATIVE",
+      "status": "COMPLETE",
+      "forwards": 256,
+      "seconds": 14.650159851999888
+    },
+    {
+      "document": "cal_natural_language_0",
+      "method": "R2_OFFSET",
+      "status": "COMPLETE",
+      "failure": null,
+      "forwards": 256,
+      "seconds": 34.28117400299993,
+      "mean_KL": 0.0011169689817678605,
+      "mask_scope": "same inherited all18 DIAG mask; codec selection only"
+    },
+    {
+      "document": "cal_natural_language_0",
+      "method": "R2_ZERO_INCLUSIVE",
+      "status": "COMPLETE",
+      "failure": null,
+      "forwards": 256,
+      "seconds": 41.00187755799993,
+      "mean_KL": 0.0009467806725382305,
+      "mask_scope": "same inherited all18 DIAG mask; codec selection only"
+    },
+    {
+      "document": "cal_code_0",
+      "method": "NATIVE",
+      "status": "COMPLETE",
+      "forwards": 256,
+      "seconds": 14.339757733999932
+    },
+    {
+      "document": "cal_code_0",
+      "method": "R2_OFFSET",
+      "status": "COMPLETE",
+      "failure": null,
+      "forwards": 256,
+      "seconds": 34.953091008,
+      "mean_KL": 0.0010720699370057526,
+      "mask_scope": "same inherited all18 DIAG mask; codec selection only"
+    },
+    {
+      "document": "cal_code_0",
+      "method": "R2_ZERO_INCLUSIVE",
+      "status": "COMPLETE",
+      "failure": null,
+      "forwards": 256,
+      "seconds": 37.89507317499988,
+      "mean_KL": 0.0007414549219038523,
+      "mask_scope": "same inherited all18 DIAG mask; codec selection only"
+    },
+    {
+      "document": "cal_associative_recall_0",
+      "method": "NATIVE",
+      "status": "COMPLETE",
+      "forwards": 256,
+      "seconds": 14.156383158000153
+    },
+    {
+      "document": "cal_associative_recall_0",
+      "method": "R2_OFFSET",
+      "status": "COMPLETE",
+      "failure": null,
+      "forwards": 256,
+      "seconds": 34.57330103000004,
+      "mean_KL": 0.0012128004882186788,
+      "mask_scope": "same inherited all18 DIAG mask; codec selection only"
+    },
+    {
+      "document": "cal_associative_recall_0",
+      "method": "R2_ZERO_INCLUSIVE",
+      "status": "COMPLETE",
+      "failure": null,
+      "forwards": 256,
+      "seconds": 36.06811128700019,
+      "mean_KL": 0.0009508495048234885,
+      "mask_scope": "same inherited all18 DIAG mask; codec selection only"
+    }
+  ]
+}

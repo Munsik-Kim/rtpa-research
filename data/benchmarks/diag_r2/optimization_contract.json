@@ -1,0 +1,82 @@
+{
+  "optimization_count": 2,
+  "before_TEST": true,
+  "changes": [
+    {
+      "id": 1,
+      "name": "consolidated mandatory guards",
+      "scope": "one successful encode host sync and one payload decode validation; same FP32 codec expressions"
+    },
+    {
+      "id": 2,
+      "name": "engine-owned immutable H32 and row layouts",
+      "scope": "keyed by complete mask,profile,device,dtype,layer scope; payload and scratch remain request-local"
+    }
+  ],
+  "removed_safety_rules": [],
+  "policy_tolerance": "exact code/metadata/high/decode/logits on tested same-backend CAL points; mismatch forbids equivalence claim",
+  "profile_scope": "8 observed CAL steps following64 prefix; profiler overhead is not latency",
+  "profile_sha256": "6f59e475b1c247b7c8d7df195f44fa48874f3d258df7a7d76c39e7627bd030c4",
+  "profile_observations": [
+    {
+      "name": "R2_STORAGE_DECODE",
+      "count": 144,
+      "self_cpu_us": 0,
+      "self_device_us": 532606.1120000007,
+      "cpu_total_us": 0,
+      "device_total_us": 532606.1120000007,
+      "self_device_memory_bytes": 0
+    },
+    {
+      "name": "R2_STORAGE_ENCODE",
+      "count": 144,
+      "self_cpu_us": 0,
+      "self_device_us": 247712.69700000048,
+      "cpu_total_us": 0,
+      "device_total_us": 247712.69700000048,
+      "self_device_memory_bytes": 0
+    },
+    {
+      "name": "aten::all",
+      "count": 1448,
+      "self_cpu_us": 11242.234000004391,
+      "self_device_us": 3112.219000000954,
+      "cpu_total_us": 22408.74600000341,
+      "device_total_us": 3112.219000000954,
+      "self_device_memory_bytes": 741376
+    },
+    {
+      "name": "aten::_local_scalar_dense",
+      "count": 584,
+      "self_cpu_us": 3515.7180000004537,
+      "self_device_us": 395.66099999927974,
+      "cpu_total_us": 194825.7539999992,
+      "device_total_us": 395.66099999927974,
+      "self_device_memory_bytes": 0
+    },
+    {
+      "name": "R2_STORAGE_DECODE",
+      "count": 144,
+      "self_cpu_us": 24199.328000000027,
+      "self_device_us": 0.0,
+      "cpu_total_us": 480016.4660000005,
+      "device_total_us": 47986.26099999918,
+      "self_device_memory_bytes": -598818816
+    },
+    {
+      "name": "R2_STORAGE_ENCODE",
+      "count": 144,
+      "self_cpu_us": 31763.89599999981,
+      "self_device_us": 0.0,
+      "cpu_total_us": 299937.57599999977,
+      "device_total_us": 13323.420999995447,
+      "self_device_memory_bytes": -1195057152
+    }
+  ],
+  "CPU_validation_sha256": "e7fcced434699cb43275b8620c489887dd0c0fccc7cfe26d1570a0a21fd2f10a",
+  "source_hashes": {
+    "codec_r2.py": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2",
+    "codec_r2_optimized.py": "519975711d79ee0672a20d3585c6cd6c07002e237629ed48cabb006dffe9ad9e",
+    "diag_r2_runtime.py": "14f543483a1c25bdfbf176cf1736c639a298c313ca9813448bfd428ff92ac40b"
+  }
+}

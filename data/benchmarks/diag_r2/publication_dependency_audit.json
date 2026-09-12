@@ -1,0 +1,355 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-09-12T06:23:16.658282+00:00",
+  "scope": "STATIC_LOCAL_IMPORT_CLOSURE_NOT_RUNTIME_COVERAGE",
+  "receipt_stage": "POST_FREEZE_PUBLICATION_AUDIT",
+  "historical_and_R2_expected_hashes_modified": false,
+  "authority_files": [
+    {
+      "name": "R2_PRETEST_FREEZE",
+      "sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640"
+    },
+    {
+      "name": "PRIOR_PUBLISHED_FREEZE",
+      "sha256": "969b05075b30f84ed65fb0911b924303d3f25c7f2981020e67459349723088ff"
+    }
+  ],
+  "local_modules": [
+    {
+      "path": "src/rtpa_research/__init__.py",
+      "sha256": "586553eed9a87aed61252d3e7e1228e37489bdb2e0b21ae1ddc10d41ced4f5fa",
+      "authorities": [
+        {
+          "authority": "PRIOR_PUBLISHED_FREEZE",
+          "expected_sha256": "586553eed9a87aed61252d3e7e1228e37489bdb2e0b21ae1ddc10d41ced4f5fa",
+          "match": true
+        }
+      ]
+    },
+    {
+      "path": "src/rtpa_research/allocation_trace.py",
+      "sha256": "6175db2b7e4bdc1017c8d9959c6008848537348741ab057005002ccc3dac7e57",
+      "authorities": [
+        {
+          "authority": "R2_PRETEST_FREEZE",
+          "expected_sha256": "6175db2b7e4bdc1017c8d9959c6008848537348741ab057005002ccc3dac7e57",
+          "match": true
+        }
+      ]
+    },
+    {
+      "path": "src/rtpa_research/benchmark.py",
+      "sha256": "1a3d9efec4b9b712ae4728a4777429e451afe1ca0ef5e059d94b38baf0b64071",
+      "authorities": [
+        {
+          "authority": "R2_PRETEST_FREEZE",
+          "expected_sha256": "1a3d9efec4b9b712ae4728a4777429e451afe1ca0ef5e059d94b38baf0b64071",
+          "match": true
+        },
+        {
+          "authority": "PRIOR_PUBLISHED_FREEZE",
+          "expected_sha256": "1a3d9efec4b9b712ae4728a4777429e451afe1ca0ef5e059d94b38baf0b64071",
+          "match": true
+        }
+      ]
+    },
+    {
+      "path": "src/rtpa_research/benchmark_analysis.py",
+      "sha256": "6952dcdba582c2b8c92876a5517187ea40896cf30149b511f74c3abaaf4f3e82",
+      "authorities": [
+        {
+          "authority": "PRIOR_PUBLISHED_FREEZE",
+          "expected_sha256": "6952dcdba582c2b8c92876a5517187ea40896cf30149b511f74c3abaaf4f3e82",
+          "match": true
+        }
+      ]
+    },
+    {
+      "path": "src/rtpa_research/benchmark_data.py",
+      "sha256": "e23ffe7c1ccbfe04940e8ac5380f96b8cf14ea1e01913993dc7cb18e7f01cce4",
+      "authorities": [
+        {
+          "authority": "PRIOR_PUBLISHED_FREEZE",
+          "expected_sha256": "e23ffe7c1ccbfe04940e8ac5380f96b8cf14ea1e01913993dc7cb18e7f01cce4",
+          "match": true
+        }
+      ]
+    },
+    {
+      "path": "src/rtpa_research/calibration.py",
+      "sha256": "1aac2598d1af6920285e6ccfa11bb4a92d3f1d2453549cb89841768e45db0038",
+      "authorities": [
+        {
+          "authority": "R2_PRETEST_FREEZE",
+          "expected_sha256": "1aac2598d1af6920285e6ccfa11bb4a92d3f1d2453549cb89841768e45db0038",
+          "match": true
+        },
+        {
+          "authority": "PRIOR_PUBLISHED_FREEZE",
+          "expected_sha256": "1aac2598d1af6920285e6ccfa11bb4a92d3f1d2453549cb89841768e45db0038",
+          "match": true
+        }
+      ]
+    },
+    {
+      "path": "src/rtpa_research/calibration_r2.py",
+      "sha256": "52911fe4e2241f24230cc2f22d4ce621ee7f6bbd4ddd6202897f31d84be15efc",
+      "authorities": [
+        {
+          "authority": "R2_PRETEST_FREEZE",
+          "expected_sha256": "52911fe4e2241f24230cc2f22d4ce621ee7f6bbd4ddd6202897f31d84be15efc",
+          "match": true
+        }
+      ]
+    },
+    {
+      "path": "src/rtpa_research/codec.py",
+      "sha256": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069",
+      "authorities": [
+        {
+          "authority": "R2_PRETEST_FREEZE",
+          "expected_sha256": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069",
+          "match": true
+        },
+        {
+          "authority": "PRIOR_PUBLISHED_FREEZE",
+          "expected_sha256": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069",
+          "match": true
+        }
+      ]
+    },
+    {
+      "path": "src/rtpa_research/codec_r2.py",
+      "sha256": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2",
+      "authorities": [
+        {
+          "authority": "R2_PRETEST_FREEZE",
+          "expected_sha256": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2",
+          "match": true
+        }
+      ]
+    },
+    {
+      "path": "src/rtpa_research/codec_r2_optimized.py",
+      "sha256": "519975711d79ee0672a20d3585c6cd6c07002e237629ed48cabb006dffe9ad9e",
+      "authorities": [
+        {
+          "authority": "R2_PRETEST_FREEZE",
+          "expected_sha256": "519975711d79ee0672a20d3585c6cd6c07002e237629ed48cabb006dffe9ad9e",
+          "match": true
+        }
+      ]
+    },
+    {
+      "path": "src/rtpa_research/diag_r2_analysis.py",
+      "sha256": "0d037df87c23b90ff789ba60dc8f9748fcf7a417cb0e9158145214e19ba306d6",
+      "authorities": [
+        {
+          "authority": "R2_PRETEST_FREEZE",
+          "expected_sha256": "0d037df87c23b90ff789ba60dc8f9748fcf7a417cb0e9158145214e19ba306d6",
+          "match": true
+        }
+      ]
+    },
+    {
+      "path": "src/rtpa_research/diag_r2_benchmark.py",
+      "sha256": "48d5198da63a8ee1d0041ff6eee9c918313aadc878ef7f02ec51bfb8e54f55de",
+      "authorities": [
+        {
+          "authority": "R2_PRETEST_FREEZE",
+          "expected_sha256": "48d5198da63a8ee1d0041ff6eee9c918313aadc878ef7f02ec51bfb8e54f55de",
+          "match": true
+        }
+      ]
+    },
+    {
+      "path": "src/rtpa_research/diag_r2_execution.py",
+      "sha256": "5a0ffda87a639751a5fc647468d446ae7c7e591bf6fe931fa5e1851661a9ce1e",
+      "authorities": [
+        {
+          "authority": "R2_PRETEST_FREEZE",
+          "expected_sha256": "5a0ffda87a639751a5fc647468d446ae7c7e591bf6fe931fa5e1851661a9ce1e",
+          "match": true
+        }
+      ]
+    },
+    {
+      "path": "src/rtpa_research/diag_r2_runtime.py",
+      "sha256": "36012aee79be9394c531e8db371d8f7b8d8ed3c8161f5e53b501360646b5404f",
+      "authorities": [
+        {
+          "authority": "R2_PRETEST_FREEZE",
+          "expected_sha256": "36012aee79be9394c531e8db371d8f7b8d8ed3c8161f5e53b501360646b5404f",
+          "match": true
+        }
+      ]
+    },
+    {
+      "path": "src/rtpa_research/factorized.py",
+      "sha256": "d6947df1f614b9dcb7372878e7fbc9e05626ff40c7e86c2cb80e819ae560e08e",
+      "authorities": [
+        {
+          "authority": "R2_PRETEST_FREEZE",
+          "expected_sha256": "d6947df1f614b9dcb7372878e7fbc9e05626ff40c7e86c2cb80e819ae560e08e",
+          "match": true
+        },
+        {
+          "authority": "PRIOR_PUBLISHED_FREEZE",
+          "expected_sha256": "d6947df1f614b9dcb7372878e7fbc9e05626ff40c7e86c2cb80e819ae560e08e",
+          "match": true
+        }
+      ]
+    },
+    {
+      "path": "src/rtpa_research/io.py",
+      "sha256": "9bfdd227e7db2626abf39418a0973e443a801a4657a7626385f536f6ede7300f",
+      "authorities": [
+        {
+          "authority": "R2_PRETEST_FREEZE",
+          "expected_sha256": "9bfdd227e7db2626abf39418a0973e443a801a4657a7626385f536f6ede7300f",
+          "match": true
+        },
+        {
+          "authority": "PRIOR_PUBLISHED_FREEZE",
+          "expected_sha256": "9bfdd227e7db2626abf39418a0973e443a801a4657a7626385f536f6ede7300f",
+          "match": true
+        }
+      ]
+    },
+    {
+      "path": "src/rtpa_research/layout.py",
+      "sha256": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276",
+      "authorities": [
+        {
+          "authority": "R2_PRETEST_FREEZE",
+          "expected_sha256": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276",
+          "match": true
+        },
+        {
+          "authority": "PRIOR_PUBLISHED_FREEZE",
+          "expected_sha256": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276",
+          "match": true
+        }
+      ]
+    },
+    {
+      "path": "src/rtpa_research/operator_benchmark.py",
+      "sha256": "0b0e8612b5da8f7637be4e171a687aaebf1c9bae3b26b9d9751a84b3cd015299",
+      "authorities": [
+        {
+          "authority": "PRIOR_PUBLISHED_FREEZE",
+          "expected_sha256": "0b0e8612b5da8f7637be4e171a687aaebf1c9bae3b26b9d9751a84b3cd015299",
+          "match": true
+        }
+      ]
+    },
+    {
+      "path": "src/rtpa_research/operators.py",
+      "sha256": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78",
+      "authorities": [
+        {
+          "authority": "R2_PRETEST_FREEZE",
+          "expected_sha256": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78",
+          "match": true
+        },
+        {
+          "authority": "PRIOR_PUBLISHED_FREEZE",
+          "expected_sha256": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78",
+          "match": true
+        }
+      ]
+    },
+    {
+      "path": "src/rtpa_research/reference_encoder.py",
+      "sha256": "d7272e7c4d600da3cbfcb9196be140afdb08b0f33c6751d51c744b4429ac7b53",
+      "authorities": [
+        {
+          "authority": "R2_PRETEST_FREEZE",
+          "expected_sha256": "d7272e7c4d600da3cbfcb9196be140afdb08b0f33c6751d51c744b4429ac7b53",
+          "match": true
+        },
+        {
+          "authority": "PRIOR_PUBLISHED_FREEZE",
+          "expected_sha256": "d7272e7c4d600da3cbfcb9196be140afdb08b0f33c6751d51c744b4429ac7b53",
+          "match": true
+        }
+      ]
+    },
+    {
+      "path": "src/rtpa_research/resources.py",
+      "sha256": "b96099e34810d68146be1e49862a38907458e9757dba0b6cf225c40cc94b457e",
+      "authorities": [
+        {
+          "authority": "R2_PRETEST_FREEZE",
+          "expected_sha256": "b96099e34810d68146be1e49862a38907458e9757dba0b6cf225c40cc94b457e",
+          "match": true
+        },
+        {
+          "authority": "PRIOR_PUBLISHED_FREEZE",
+          "expected_sha256": "b96099e34810d68146be1e49862a38907458e9757dba0b6cf225c40cc94b457e",
+          "match": true
+        }
+      ]
+    },
+    {
+      "path": "src/rtpa_research/runtime.py",
+      "sha256": "afbfcbad6f18879151a827a1473869ea60c5d80f1f32689ee408d7d08cb6f8d2",
+      "authorities": [
+        {
+          "authority": "R2_PRETEST_FREEZE",
+          "expected_sha256": "afbfcbad6f18879151a827a1473869ea60c5d80f1f32689ee408d7d08cb6f8d2",
+          "match": true
+        },
+        {
+          "authority": "PRIOR_PUBLISHED_FREEZE",
+          "expected_sha256": "afbfcbad6f18879151a827a1473869ea60c5d80f1f32689ee408d7d08cb6f8d2",
+          "match": true
+        }
+      ]
+    }
+  ],
+  "literal_dynamic_imports": [
+    {
+      "path": "src/rtpa_research/diag_r2_analysis.py",
+      "line": 548,
+      "call": "__import__",
+      "literal_target": "json"
+    },
+    {
+      "path": "src/rtpa_research/benchmark.py",
+      "line": 101,
+      "call": "__import__",
+      "literal_target": "transformers.models.qwen3_5.modeling_qwen3_5"
+    }
+  ],
+  "external_module_roots": [
+    "__future__",
+    "argparse",
+    "collections",
+    "contextlib",
+    "csv",
+    "dataclasses",
+    "gc",
+    "gzip",
+    "hashlib",
+    "inspect",
+    "json",
+    "math",
+    "numpy",
+    "os",
+    "pathlib",
+    "platform",
+    "random",
+    "shutil",
+    "subprocess",
+    "sys",
+    "time",
+    "tokenizers",
+    "torch",
+    "transformers",
+    "typing",
+    "weakref"
+  ],
+  "external_scope": "Versions and selected native source hashes in environment receipts; not every library file is byte-frozen.",
+  "errors": []
+}

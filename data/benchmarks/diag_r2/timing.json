@@ -1,0 +1,655 @@
+{
+  "rows": [
+    {
+      "block": 0,
+      "order": 0,
+      "method": "R2_DIAG",
+      "prompt_tokens": 512,
+      "decode_tokens": 32,
+      "prefill_seconds": 45.53856487300072,
+      "TTFT_seconds": 45.53856487300072,
+      "decode_seconds": 3.8161807369997405,
+      "decode_ms_per_token": 119.25564803124189,
+      "tokens_per_second": 8.385347080064719,
+      "isolated_before": true,
+      "isolated_after": true,
+      "isolation_before": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "isolation_after": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "diagnostic_observer": false,
+      "metric_scalar_logging_in_timed_region": false,
+      "mandatory_guard_host_sync": true,
+      "mandatory_codec_guards_retained": true,
+      "common_final_logit_finite_guard_inside_timing": true,
+      "TTFT_scope": "last prompt logits proxy; no argmax/token delivery; per-token prefill",
+      "source_freeze_sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640"
+    },
+    {
+      "block": 0,
+      "order": 1,
+      "method": "NATIVE",
+      "prompt_tokens": 512,
+      "decode_tokens": 32,
+      "prefill_seconds": 18.775111472999924,
+      "TTFT_seconds": 18.775111472999924,
+      "decode_seconds": 1.2299904999999853,
+      "decode_ms_per_token": 38.43720312499954,
+      "tokens_per_second": 26.016461102748664,
+      "isolated_before": true,
+      "isolated_after": true,
+      "isolation_before": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "isolation_after": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "diagnostic_observer": false,
+      "metric_scalar_logging_in_timed_region": false,
+      "mandatory_guard_host_sync": true,
+      "mandatory_codec_guards_retained": true,
+      "common_final_logit_finite_guard_inside_timing": true,
+      "TTFT_scope": "last prompt logits proxy; no argmax/token delivery; per-token prefill",
+      "source_freeze_sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640"
+    },
+    {
+      "block": 0,
+      "order": 2,
+      "method": "DAMP_R2_PAPER_ADAPTED",
+      "prompt_tokens": 512,
+      "decode_tokens": 32,
+      "prefill_seconds": 55.875744025999666,
+      "TTFT_seconds": 55.875744025999666,
+      "decode_seconds": 3.2155685199995787,
+      "decode_ms_per_token": 100.48651624998683,
+      "tokens_per_second": 9.951583927063757,
+      "isolated_before": true,
+      "isolated_after": true,
+      "isolation_before": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "isolation_after": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "diagnostic_observer": false,
+      "metric_scalar_logging_in_timed_region": false,
+      "mandatory_guard_host_sync": true,
+      "mandatory_codec_guards_retained": true,
+      "common_final_logit_finite_guard_inside_timing": true,
+      "TTFT_scope": "last prompt logits proxy; no argmax/token delivery; per-token prefill",
+      "source_freeze_sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640"
+    },
+    {
+      "block": 0,
+      "order": 3,
+      "method": "R2_MATCHED_ENERGY_REPEAT",
+      "prompt_tokens": 512,
+      "decode_tokens": 32,
+      "prefill_seconds": 59.39208486299867,
+      "TTFT_seconds": 59.39208486299867,
+      "decode_seconds": 3.7810196559985343,
+      "decode_ms_per_token": 118.1568642499542,
+      "tokens_per_second": 8.463325481324185,
+      "isolated_before": true,
+      "isolated_after": true,
+      "isolation_before": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "isolation_after": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "diagnostic_observer": false,
+      "metric_scalar_logging_in_timed_region": false,
+      "mandatory_guard_host_sync": true,
+      "mandatory_codec_guards_retained": true,
+      "common_final_logit_finite_guard_inside_timing": true,
+      "TTFT_scope": "last prompt logits proxy; no argmax/token delivery; per-token prefill",
+      "source_freeze_sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640"
+    },
+    {
+      "block": 0,
+      "order": 4,
+      "method": "R2_DIAG_REFERENCE",
+      "prompt_tokens": 512,
+      "decode_tokens": 32,
+      "prefill_seconds": 69.3014888380003,
+      "TTFT_seconds": 69.3014888380003,
+      "decode_seconds": 3.845090094000625,
+      "decode_ms_per_token": 120.15906543751953,
+      "tokens_per_second": 8.322301745264333,
+      "isolated_before": true,
+      "isolated_after": true,
+      "isolation_before": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "isolation_after": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "diagnostic_observer": false,
+      "metric_scalar_logging_in_timed_region": false,
+      "mandatory_guard_host_sync": true,
+      "mandatory_codec_guards_retained": true,
+      "common_final_logit_finite_guard_inside_timing": true,
+      "TTFT_scope": "last prompt logits proxy; no argmax/token delivery; per-token prefill",
+      "source_freeze_sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640"
+    },
+    {
+      "block": 0,
+      "order": 5,
+      "method": "R2_MATCHED_ENERGY",
+      "prompt_tokens": 512,
+      "decode_tokens": 32,
+      "prefill_seconds": 55.08917027899952,
+      "TTFT_seconds": 55.08917027899952,
+      "decode_seconds": 3.3245934739989025,
+      "decode_ms_per_token": 103.8935460624657,
+      "tokens_per_second": 9.625236965140768,
+      "isolated_before": true,
+      "isolated_after": true,
+      "isolation_before": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "isolation_after": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "diagnostic_observer": false,
+      "metric_scalar_logging_in_timed_region": false,
+      "mandatory_guard_host_sync": true,
+      "mandatory_codec_guards_retained": true,
+      "common_final_logit_finite_guard_inside_timing": true,
+      "TTFT_scope": "last prompt logits proxy; no argmax/token delivery; per-token prefill",
+      "source_freeze_sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640"
+    },
+    {
+      "block": 1,
+      "order": 0,
+      "method": "DAMP_R2_PAPER_ADAPTED",
+      "prompt_tokens": 512,
+      "decode_tokens": 32,
+      "prefill_seconds": 56.84925615300017,
+      "TTFT_seconds": 56.84925615300017,
+      "decode_seconds": 2.9966817009990336,
+      "decode_ms_per_token": 93.6463031562198,
+      "tokens_per_second": 10.678478127767738,
+      "isolated_before": true,
+      "isolated_after": true,
+      "isolation_before": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "isolation_after": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "diagnostic_observer": false,
+      "metric_scalar_logging_in_timed_region": false,
+      "mandatory_guard_host_sync": true,
+      "mandatory_codec_guards_retained": true,
+      "common_final_logit_finite_guard_inside_timing": true,
+      "TTFT_scope": "last prompt logits proxy; no argmax/token delivery; per-token prefill",
+      "source_freeze_sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640"
+    },
+    {
+      "block": 1,
+      "order": 1,
+      "method": "R2_MATCHED_ENERGY_REPEAT",
+      "prompt_tokens": 512,
+      "decode_tokens": 32,
+      "prefill_seconds": 55.04291216300044,
+      "TTFT_seconds": 55.04291216300044,
+      "decode_seconds": 3.52958799299995,
+      "decode_ms_per_token": 110.29962478124844,
+      "tokens_per_second": 9.066213978363466,
+      "isolated_before": true,
+      "isolated_after": true,
+      "isolation_before": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "isolation_after": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "diagnostic_observer": false,
+      "metric_scalar_logging_in_timed_region": false,
+      "mandatory_guard_host_sync": true,
+      "mandatory_codec_guards_retained": true,
+      "common_final_logit_finite_guard_inside_timing": true,
+      "TTFT_scope": "last prompt logits proxy; no argmax/token delivery; per-token prefill",
+      "source_freeze_sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640"
+    },
+    {
+      "block": 1,
+      "order": 2,
+      "method": "NATIVE",
+      "prompt_tokens": 512,
+      "decode_tokens": 32,
+      "prefill_seconds": 20.386391990999982,
+      "TTFT_seconds": 20.386391990999982,
+      "decode_seconds": 1.2983571419990767,
+      "decode_ms_per_token": 40.57366068747115,
+      "tokens_per_second": 24.646531347091212,
+      "isolated_before": true,
+      "isolated_after": true,
+      "isolation_before": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "isolation_after": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "diagnostic_observer": false,
+      "metric_scalar_logging_in_timed_region": false,
+      "mandatory_guard_host_sync": true,
+      "mandatory_codec_guards_retained": true,
+      "common_final_logit_finite_guard_inside_timing": true,
+      "TTFT_scope": "last prompt logits proxy; no argmax/token delivery; per-token prefill",
+      "source_freeze_sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640"
+    },
+    {
+      "block": 1,
+      "order": 3,
+      "method": "R2_DIAG_REFERENCE",
+      "prompt_tokens": 512,
+      "decode_tokens": 32,
+      "prefill_seconds": 61.17038781700103,
+      "TTFT_seconds": 61.17038781700103,
+      "decode_seconds": 4.0770317660008,
+      "decode_ms_per_token": 127.40724268752501,
+      "tokens_per_second": 7.848847356759525,
+      "isolated_before": true,
+      "isolated_after": true,
+      "isolation_before": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "isolation_after": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "diagnostic_observer": false,
+      "metric_scalar_logging_in_timed_region": false,
+      "mandatory_guard_host_sync": true,
+      "mandatory_codec_guards_retained": true,
+      "common_final_logit_finite_guard_inside_timing": true,
+      "TTFT_scope": "last prompt logits proxy; no argmax/token delivery; per-token prefill",
+      "source_freeze_sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640"
+    },
+    {
+      "block": 1,
+      "order": 4,
+      "method": "R2_DIAG",
+      "prompt_tokens": 512,
+      "decode_tokens": 32,
+      "prefill_seconds": 52.88092109099853,
+      "TTFT_seconds": 52.88092109099853,
+      "decode_seconds": 3.385348388001148,
+      "decode_ms_per_token": 105.79213712503588,
+      "tokens_per_second": 9.452498334711763,
+      "isolated_before": true,
+      "isolated_after": true,
+      "isolation_before": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "isolation_after": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "diagnostic_observer": false,
+      "metric_scalar_logging_in_timed_region": false,
+      "mandatory_guard_host_sync": true,
+      "mandatory_codec_guards_retained": true,
+      "common_final_logit_finite_guard_inside_timing": true,
+      "TTFT_scope": "last prompt logits proxy; no argmax/token delivery; per-token prefill",
+      "source_freeze_sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640"
+    },
+    {
+      "block": 1,
+      "order": 5,
+      "method": "R2_MATCHED_ENERGY",
+      "prompt_tokens": 512,
+      "decode_tokens": 32,
+      "prefill_seconds": 54.42762495600073,
+      "TTFT_seconds": 54.42762495600073,
+      "decode_seconds": 2.4810363659998984,
+      "decode_ms_per_token": 77.53238643749683,
+      "tokens_per_second": 12.89783593603372,
+      "isolated_before": true,
+      "isolated_after": true,
+      "isolation_before": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "isolation_after": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "diagnostic_observer": false,
+      "metric_scalar_logging_in_timed_region": false,
+      "mandatory_guard_host_sync": true,
+      "mandatory_codec_guards_retained": true,
+      "common_final_logit_finite_guard_inside_timing": true,
+      "TTFT_scope": "last prompt logits proxy; no argmax/token delivery; per-token prefill",
+      "source_freeze_sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640"
+    },
+    {
+      "block": 2,
+      "order": 0,
+      "method": "NATIVE",
+      "prompt_tokens": 512,
+      "decode_tokens": 32,
+      "prefill_seconds": 20.13098654299938,
+      "TTFT_seconds": 20.13098654299938,
+      "decode_seconds": 1.021876146998693,
+      "decode_ms_per_token": 31.933629593709156,
+      "tokens_per_second": 31.31494956016517,
+      "isolated_before": true,
+      "isolated_after": true,
+      "isolation_before": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "isolation_after": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "diagnostic_observer": false,
+      "metric_scalar_logging_in_timed_region": false,
+      "mandatory_guard_host_sync": true,
+      "mandatory_codec_guards_retained": true,
+      "common_final_logit_finite_guard_inside_timing": true,
+      "TTFT_scope": "last prompt logits proxy; no argmax/token delivery; per-token prefill",
+      "source_freeze_sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640"
+    },
+    {
+      "block": 2,
+      "order": 1,
+      "method": "R2_DIAG",
+      "prompt_tokens": 512,
+      "decode_tokens": 32,
+      "prefill_seconds": 56.61831007500041,
+      "TTFT_seconds": 56.61831007500041,
+      "decode_seconds": 3.8661060350004846,
+      "decode_ms_per_token": 120.81581359376514,
+      "tokens_per_second": 8.277062168057165,
+      "isolated_before": true,
+      "isolated_after": true,
+      "isolation_before": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "isolation_after": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "diagnostic_observer": false,
+      "metric_scalar_logging_in_timed_region": false,
+      "mandatory_guard_host_sync": true,
+      "mandatory_codec_guards_retained": true,
+      "common_final_logit_finite_guard_inside_timing": true,
+      "TTFT_scope": "last prompt logits proxy; no argmax/token delivery; per-token prefill",
+      "source_freeze_sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640"
+    },
+    {
+      "block": 2,
+      "order": 2,
+      "method": "DAMP_R2_PAPER_ADAPTED",
+      "prompt_tokens": 512,
+      "decode_tokens": 32,
+      "prefill_seconds": 59.83850196300045,
+      "TTFT_seconds": 59.83850196300045,
+      "decode_seconds": 2.7386467659998743,
+      "decode_ms_per_token": 85.58271143749607,
+      "tokens_per_second": 11.684602920419664,
+      "isolated_before": true,
+      "isolated_after": false,
+      "isolation_before": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": true,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "isolation_after": {
+        "status_ok": true,
+        "processes": [
+          {
+            "pid": 75907,
+            "process": "[Not Found]"
+          },
+          {
+            "pid": 67790,
+            "process": "[Not Found]"
+          }
+        ],
+        "no_competing_GPU_worker": false,
+        "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+      },
+      "diagnostic_observer": false,
+      "metric_scalar_logging_in_timed_region": false,
+      "mandatory_guard_host_sync": true,
+      "mandatory_codec_guards_retained": true,
+      "common_final_logit_finite_guard_inside_timing": true,
+      "TTFT_scope": "last prompt logits proxy; no argmax/token delivery; per-token prefill",
+      "source_freeze_sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640"
+    }
+  ],
+  "status": "RUNNING",
+  "full_calls_planned": 29376
+}

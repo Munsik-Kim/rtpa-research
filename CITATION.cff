@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this research snapshot, please cite this repository and identify the commit used."
 title: "RTPA — Output-Aware Recurrent-State Quantization"
-version: 1.1.0rc1
+version: 1.2.0rc1
 type: software
 authors:
   - name: "Munsik-Kim"
@@ -9,5 +9,5 @@ authors:
 repository-code: "https://github.com/Munsik-Kim/rtpa-research"
 url: "https://github.com/Munsik-Kim/rtpa-research"
 license: Apache-2.0
-date-released: 2026-09-11
-abstract: "Output-aware recurrent-state quantization through fixed precision masks and bounded integer-code correction. Includes reproducible GDN model experiments, an independent GDN2 operator implementation, factorized FP64 metric execution, and CPU-recomputable observations. Quality, storage, numerical failures and runtime are reported separately; pretrained GDN2 language quality and production readiness are not claimed."
+date-released: 2026-09-12
+abstract: "Output-aware recurrent-state quantization through fixed precision masks and bounded integer-code correction. Includes a separately identified same-byte codec revision, reference and optimized GDN storage paths, frozen all-layer allocation policies, and CPU-recomputable observations. Earlier GDN, FA_CODE and independent GDN2 operator evidence remains distinct. Quality, storage, numerical boundaries and runtime are reported separately; pretrained GDN2 language quality and production readiness are not claimed."

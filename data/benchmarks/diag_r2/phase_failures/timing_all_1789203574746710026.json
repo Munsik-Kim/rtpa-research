@@ -1,0 +1,8 @@
+{
+  "phase": "timing",
+  "method": null,
+  "reason": "TIMING_CONFOUNDED_OTHER_GPU_WORKER",
+  "exception": "RuntimeError",
+  "completed_observations_preserved": true,
+  "status": "FAILED_NOT_SILENTLY_RESUMED"
+}

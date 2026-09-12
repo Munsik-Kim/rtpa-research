@@ -1,7 +1,91 @@
-# GDN model transfer and GDN2 operator measurements
+# Benchmarks: stable DIAG and preserved earlier evidence
 
-This release measures output preservation, implementation cost and storage
-separately. The authoritative [benchmark tables](../results/upgrade/benchmark_tables.md)
+## Stable-codec GDN revision
+
+Run `RTPA_DIAG_STABLE_R2_20260912_V1` is a separate numerical revision:
+`R2_OFFSET` stores physical FP16 offsets instead of the legacy dimensionless
+zero points. The two metadata fields, eight protected rows and **19,328 B/head**
+budget are unchanged; the decoder and newly calibrated masks are not.
+
+The [stable-DIAG result tables](../results/diag_r2/benchmark_tables.md) are the
+authoritative measurements for this revision. Their matched allocation
+contrast is `R2_DIAG / R2_MATCHED_ENERGY`; `R2_DIAG / LEGACY_DIAG` changes both
+codec and calibrated mask. DAMP_R2 is a local paper-adapted selection rule using
+the same new codec, not an author-code or published-benchmark reproduction.
+The [tail/source-family table](../results/diag_r2/quality_details.md) and
+[same-mask CAL comparison](../results/diag_r2/cal_fixed_mask.md) preserve
+adverse observations alongside the primary mean-KL contrast.
+
+The fixed checkpoint, all 18 GDN layers and batch-one token-step adapter are
+shared across five methods. TEST comprises twelve distinct source-file
+prefixes: six CPython documentation files and six NumPy Python files, each
+1,024 tokens. Full text/source provenance and redistribution notices are
+included. These two related software projects are not broad language coverage.
+Read the [preregistration](PREREGISTRATION_R2.md) for the pre-TEST selection,
+sampling, scoring, failure and budget rules. The previous synthetic panel below
+is not pooled with these observations.
+
+Two codec candidates passed the bounded CPU/CUDA checks. Physical-offset R2
+was selected by lower document-mean common-snapshot normalized reconstruction
+error on CAL. The zero-inclusive candidate had lower own-recurrence CAL KL;
+that adverse comparison is retained and was not substituted as the selection
+criterion. Neither profile was selected using TEST.
+
+Reference/optimized conformance covers CPU/CUDA fixtures, every returned CAL
+logit and terminal-cache hashes. It does not establish equality of every
+intermediate payload on every possible input. The optimized path combines
+mandatory guard synchronization and shares immutable layout/H32 information
+within an engine. Payload, counters and decode scratch remain request-local.
+Policy/cache initialization is outside timing, so its sharing is not credited
+as an independently measured per-token speedup.
+
+The cost protocol specifies the frozen **512-token token-loop prefix plus 32
+fixed steps**, one warmup and eight measured blocks per label; the actual
+timing was **not completed**. This shorter timing context was
+chosen from the pre-TEST budget forecast, not from observed quality. Mandatory
+guards and ordinary lazy allocation inside model forwards remain measured;
+model loading, cache-object construction and metric computation do not. TTFT
+is time through the last prompt logits, not a serving-system measurement.
+
+The first timing process received SIGTERM, with no recorded numerical
+traceback; the external cause is unknown. Its nineteen measured rows, original
+ledger and log remain under `interrupted_attempts/timing_01`. They are not
+silently pooled into the final timing estimate. The interruption leaves
+**0–544 additional unrecorded forward attempts** beyond its 13,600 confirmed
+calls; total execution accounting is therefore a bounded interval, not an exact
+count. The sole frozen retry stopped after 15/48 planned measured-label rows
+because another GPU PID appeared after a DAMP label. The application is unknown.
+Its 11,424 forwards are recorded separately; the raw checkpoint retains its
+last `RUNNING` value, while lifecycle, failure receipt and ledger record that
+the process ended. The contaminated row is retained. There is no complete
+latency ratio, interval or optimization-speedup claim, and no additional retry.
+The partial attempt's wall time is conservatively charged to the first
+confirmed-dead observation, with the exact convention retained in its receipt.
+
+Memory uses a separate process per method and a 1,024+32 CAL workload. The
+allocator trace reports generation-aware newly allocated live bytes for one
+actual nonzero layer-0 codec probe: the completed CAL payload is decoded, then
+that stored-state reconstruction is passed through encode/decode again. It is
+not a capture of every runtime pre-encode update. Its transient measure excludes preexisting
+inputs/static tensors and final returned storage. It is neither whole-model
+scratch nor a worst-case bound. Process IDs, actual payload/static bytes,
+PyTorch allocated/reserved peaks and GPU-wide observations remain separate.
+
+New TRAIN fitting directly accumulates K's diagonal and c, while preserving
+the temporal source history. A small full-K reference audit checks the values
+and selected rows. It avoids materializing full K on the main fitting path,
+but still uses a 128 MiB source-history workspace; no isolated full-K-to-diagonal
+wall-time speedup is claimed. [Reproduction scope](REPRO_R2_SCOPE.md) explains
+the phase-specific executed sources and excluded large captures.
+
+No new FA_CODE, pretrained GDN2, task-accuracy, batch>1 or cache-count sweep is
+part of this revision. Those earlier observations follow under their original
+run identity. [Current API and replay commands](QUICKSTART_R2.md).
+
+## Earlier GDN/GDN2 run — v1.1.0rc1
+
+The earlier release measured output preservation, implementation cost and storage
+separately. Its authoritative [benchmark tables](../results/upgrade/benchmark_tables.md)
 are generated from the included observations, not copied from a paper or an
 earlier RTPA panel. They include adverse results and undefined comparisons.
 
@@ -204,5 +288,6 @@ revision** for the retained finite-input FP16 zero-point overflow. Success would
 require independent ordinary/edge-group agreement, finite reconstruction of
 the saved failures without a hidden FP32 persistent master, and explicit byte
 and rounding changes shared by every baseline. No codec repair was introduced
-in this release. [Decision](../results/upgrade/decision.json) ·
+in that earlier run. R2 above is the subsequent, separately validated revision.
+[Decision](../results/upgrade/decision.json) ·
 [local verification scope](../results/upgrade/verification.json).

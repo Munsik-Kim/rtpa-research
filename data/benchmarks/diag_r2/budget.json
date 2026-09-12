@@ -1,0 +1,128 @@
+{
+  "first_gpu_start_utc": "2026-09-12T05:26:06Z",
+  "GPU_active_seconds": 10890.013594309996,
+  "physical_forwards": 102476,
+  "attempts": [
+    {
+      "phase": "cuda_fixture",
+      "status": "COMPLETE",
+      "seconds": 1.8115428749999865,
+      "physical_forwards": 0
+    },
+    {
+      "phase": "pilot",
+      "status": "COMPLETE",
+      "seconds": 269.50212221900006,
+      "physical_forwards": 2304
+    },
+    {
+      "phase": "capture",
+      "status": "COMPLETE",
+      "seconds": 107.14142172300012,
+      "physical_forwards": 1536
+    },
+    {
+      "phase": "fit",
+      "status": "COMPLETE",
+      "seconds": 195.85255826300022,
+      "physical_forwards": 0
+    },
+    {
+      "phase": "profile",
+      "status": "COMPLETE",
+      "seconds": 31.331200998999975,
+      "physical_forwards": 72
+    },
+    {
+      "phase": "conformance",
+      "status": "COMPLETE",
+      "seconds": 575.8707186929996,
+      "physical_forwards": 5572
+    },
+    {
+      "phase": "final_probe",
+      "status": "COMPLETE",
+      "seconds": 18.82632959700004,
+      "physical_forwards": 128
+    },
+    {
+      "phase": "evaluate",
+      "status": "COMPLETE",
+      "seconds": 6392.842206085999,
+      "physical_forwards": 61440
+    },
+    {
+      "phase": "timing",
+      "status": "INTERRUPTED_EXTERNAL_PROCESS_TERMINATION",
+      "seconds": 1459,
+      "physical_forwards": 13600,
+      "block": 3,
+      "method": "R2_DIAG",
+      "gpu": {
+        "temperature_C": 41.0,
+        "used_MiB": 5054.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 24.0
+      },
+      "last_measured_seconds": 1404.3123955029987,
+      "seconds_are_conservative_upper_charge": true,
+      "physical_forward_count_exact": false,
+      "additional_unrecorded_calls_lower_bound": 0,
+      "additional_unrecorded_calls_upper_bound": 544,
+      "interruption_receipt": "interrupted_attempts/timing_01/receipt.json"
+    },
+    {
+      "phase": "memory_NATIVE",
+      "status": "COMPLETE",
+      "seconds": 48.95573514700118,
+      "physical_forwards": 1056
+    },
+    {
+      "phase": "memory_LEGACY_DIAG",
+      "status": "COMPLETE",
+      "seconds": 156.4554602499993,
+      "physical_forwards": 1056
+    },
+    {
+      "phase": "memory_R2_MATCHED_ENERGY",
+      "status": "COMPLETE",
+      "seconds": 116.02110325799913,
+      "physical_forwards": 1056
+    },
+    {
+      "phase": "memory_R2_DIAG_REFERENCE",
+      "status": "COMPLETE",
+      "seconds": 137.82285561800018,
+      "physical_forwards": 1056
+    },
+    {
+      "phase": "memory_R2_DIAG",
+      "status": "COMPLETE",
+      "seconds": 119.19234080599927,
+      "physical_forwards": 1056
+    },
+    {
+      "phase": "memory_DAMP_R2_PAPER_ADAPTED",
+      "status": "COMPLETE",
+      "seconds": 124.0184916319995,
+      "physical_forwards": 1056
+    },
+    {
+      "phase": "installed_api_smoke",
+      "status": "COMPLETE",
+      "seconds": 10.837635072999547,
+      "physical_forwards": 64,
+      "installed_import": true,
+      "child_returncode": 0
+    },
+    {
+      "phase": "timing",
+      "status": "FAILED",
+      "seconds": 1124.5318720709984,
+      "physical_forwards": 11424
+    }
+  ],
+  "limit_seconds": 14400,
+  "physical_forwards_are_confirmed_lower_bound": true,
+  "additional_unrecorded_physical_forwards_upper_bound": 544
+}

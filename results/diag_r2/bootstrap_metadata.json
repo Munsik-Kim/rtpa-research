@@ -1,0 +1,37 @@
+{
+  "seed": 612204,
+  "resamples": 2000,
+  "unit": "source-family-stratified paired document",
+  "document_ids": [
+    "r2_technical_prose_decimal",
+    "r2_python_code__arraypad_impl",
+    "r2_technical_prose_sqlite3",
+    "r2_python_code__shape_base_impl",
+    "r2_technical_prose_logging",
+    "r2_python_code__type_check_impl",
+    "r2_technical_prose_multiprocessing",
+    "r2_python_code__arraysetops_impl",
+    "r2_technical_prose_asyncio_task",
+    "r2_python_code__nanfunctions_impl",
+    "r2_python_code__function_base_impl",
+    "r2_technical_prose_typing"
+  ],
+  "domains": [
+    "technical_prose",
+    "python_code",
+    "technical_prose",
+    "python_code",
+    "technical_prose",
+    "python_code",
+    "technical_prose",
+    "python_code",
+    "technical_prose",
+    "python_code",
+    "python_code",
+    "technical_prose"
+  ],
+  "shared_across_methods_and_windows": true,
+  "timing_seed": 612206,
+  "timing_unit": "paired measured block, not document",
+  "CI_limit": "Small chosen document pool; shared family/authorship/topic dependence is not eliminated by stratification"
+}

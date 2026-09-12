@@ -1,0 +1,14 @@
+{
+  "structural_integrity": "PASS",
+  "quality_completion": "COMPLETE",
+  "timing_completion": "INCOMPLETE_OR_INVALID",
+  "timing_input_errors": [],
+  "input_errors": [],
+  "missing_planned_rows": 0,
+  "analysis_model_forwards": 0,
+  "negative_finite_KL_retained": true,
+  "no_successful_subset_substitution": true,
+  "reproduction_level": "RECOMPUTED_FROM_INCLUDED_SCALAR_OBSERVATIONS",
+  "tensor_to_metric": "NOT_VERIFIED_FROM_FULL_LOGITS",
+  "scientific_success": "SEPARATE_NUMERICS_QUALITY_COST_STORAGE_AXES"
+}

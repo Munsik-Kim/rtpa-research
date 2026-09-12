@@ -1,0 +1,21 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:  29%|██▉       | 138/473 [00:00<00:00, 1376.55it/s]Loading weights:  58%|█████▊    | 276/473 [00:00<00:00, 1376.18it/s]Loading weights:  89%|████████▉ | 423/473 [00:00<00:00, 1418.74it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 1569.92it/s]
+{"timing_block": 0, "method": "R2_DIAG", "decode_ms": 118.90835646875075}
+{"timing_block": 0, "method": "NATIVE", "decode_ms": 35.91652531247291}
+{"timing_block": 0, "method": "DAMP_R2_PAPER_ADAPTED", "decode_ms": 83.9616430624801}
+{"timing_block": 0, "method": "R2_MATCHED_ENERGY_REPEAT", "decode_ms": 110.92930115626132}
+{"timing_block": 0, "method": "R2_DIAG_REFERENCE", "decode_ms": 137.256630187494}
+{"timing_block": 0, "method": "R2_MATCHED_ENERGY", "decode_ms": 104.0733644687748}
+{"timing_block": 1, "method": "DAMP_R2_PAPER_ADAPTED", "decode_ms": 112.01148018750473}
+{"timing_block": 1, "method": "R2_MATCHED_ENERGY_REPEAT", "decode_ms": 113.96203468751764}
+{"timing_block": 1, "method": "NATIVE", "decode_ms": 38.67087287500226}
+{"timing_block": 1, "method": "R2_DIAG_REFERENCE", "decode_ms": 122.10984140625669}
+{"timing_block": 1, "method": "R2_DIAG", "decode_ms": 96.43540578122156}
+{"timing_block": 1, "method": "R2_MATCHED_ENERGY", "decode_ms": 118.76611368751355}
+{"timing_block": 2, "method": "NATIVE", "decode_ms": 34.01121465628876}
+{"timing_block": 2, "method": "R2_DIAG", "decode_ms": 121.00362162499323}
+{"timing_block": 2, "method": "DAMP_R2_PAPER_ADAPTED", "decode_ms": 97.5772405000157}
+{"timing_block": 2, "method": "R2_DIAG_REFERENCE", "decode_ms": 107.62314003125084}
+{"timing_block": 2, "method": "R2_MATCHED_ENERGY_REPEAT", "decode_ms": 93.30642146875334}
+{"timing_block": 2, "method": "R2_MATCHED_ENERGY", "decode_ms": 124.03714106250163}
+{"timing_block": 3, "method": "R2_DIAG", "decode_ms": 124.75975362502822}

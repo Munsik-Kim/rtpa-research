@@ -1,0 +1,213 @@
+{
+  "run_id": "RTPA_DIAG_STABLE_R2_20260912_V1",
+  "rows": [
+    {
+      "method": "NATIVE",
+      "status": "RECORDED_MEASUREMENT",
+      "source_path": "memory/NATIVE.json",
+      "source_sha256": "c214032a07f05218376b8e3e5fd1a5a5b042e25a7dcfe2a916c52fb583a7cdf5",
+      "pid": 57183,
+      "profile": "native",
+      "physical_forwards": 1056,
+      "payload_bytes": 9437184,
+      "cache_tensor_bytes": 23298048,
+      "static_policy_bytes": 0,
+      "shared_policy_engine_level": false,
+      "model_parameter_bytes": 1705971840,
+      "allocated_after_model_load": 1736535040,
+      "steady_allocated_bytes": 1780542464,
+      "peak_allocated_bytes": 1783764992,
+      "peak_reserved_bytes": 1858076672,
+      "nonpayload_cache_tensor_bytes": 13860864,
+      "GPU_wide_used_MiB": 4812.0,
+      "process_GPU_memory": "NOT_AVAILABLE_FROM_GPU_WIDE_SAMPLE",
+      "scratch": [],
+      "scratch_reason": "NOT_MEASURED_FOR_THIS_METHOD"
+    },
+    {
+      "method": "LEGACY_DIAG",
+      "status": "RECORDED_MEASUREMENT",
+      "source_path": "memory/LEGACY_DIAG.json",
+      "source_sha256": "bfef2ff5b78f9f1df5fdf43e1d63bf33e6c7c339897be86f0ab768e4274f69ef",
+      "pid": 57887,
+      "profile": "legacy_P_PRE",
+      "physical_forwards": 1056,
+      "payload_bytes": 5566464,
+      "cache_tensor_bytes": 19427328,
+      "static_policy_bytes": 299008,
+      "shared_policy_engine_level": false,
+      "model_parameter_bytes": 1705971840,
+      "allocated_after_model_load": 1736535040,
+      "steady_allocated_bytes": 1776979456,
+      "peak_allocated_bytes": 1791403520,
+      "peak_reserved_bytes": 1858076672,
+      "nonpayload_cache_tensor_bytes": 13860864,
+      "GPU_wide_used_MiB": 4593.0,
+      "process_GPU_memory": "NOT_AVAILABLE_FROM_GPU_WIDE_SAMPLE",
+      "scratch": [],
+      "scratch_reason": "NOT_MEASURED_FOR_THIS_METHOD"
+    },
+    {
+      "method": "R2_MATCHED_ENERGY",
+      "status": "RECORDED_MEASUREMENT",
+      "source_path": "memory/R2_MATCHED_ENERGY.json",
+      "source_sha256": "54c82cb7ee22dd2c81eec88bc55798d56d3c372979b26389d0d12b56794e2042",
+      "pid": 59842,
+      "profile": "R2_OFFSET",
+      "physical_forwards": 1056,
+      "payload_bytes": 5566464,
+      "cache_tensor_bytes": 19427328,
+      "static_policy_bytes": 299008,
+      "shared_policy_engine_level": true,
+      "model_parameter_bytes": 1705971840,
+      "allocated_after_model_load": 1736535040,
+      "steady_allocated_bytes": 1776970752,
+      "peak_allocated_bytes": 1791394816,
+      "peak_reserved_bytes": 1858076672,
+      "nonpayload_cache_tensor_bytes": 13860864,
+      "GPU_wide_used_MiB": 4604.0,
+      "process_GPU_memory": "NOT_AVAILABLE_FROM_GPU_WIDE_SAMPLE",
+      "scratch": [
+        {
+          "operation": "encode",
+          "peak_increment_bytes": 5142016,
+          "max_new_allocated_from_trace": 5142016,
+          "max_transient_excluding_returned_storage_from_trace": 5111296,
+          "retained_output_tensor_bytes": 309248,
+          "address_reuse_corrected": true
+        },
+        {
+          "operation": "decode",
+          "peak_increment_bytes": 14415872,
+          "max_new_allocated_from_trace": 13891199,
+          "max_transient_excluding_returned_storage_from_trace": 12842623,
+          "retained_output_tensor_bytes": 1048576,
+          "address_reuse_corrected": true
+        }
+      ]
+    },
+    {
+      "method": "R2_DIAG_REFERENCE",
+      "status": "RECORDED_MEASUREMENT",
+      "source_path": "memory/R2_DIAG_REFERENCE.json",
+      "source_sha256": "b23eed6aea40e738830dacd25d01449ee7d5cfea6edc9bf60152524c32b8ec4c",
+      "pid": 61769,
+      "profile": "R2_OFFSET",
+      "physical_forwards": 1056,
+      "payload_bytes": 5566464,
+      "cache_tensor_bytes": 19427328,
+      "static_policy_bytes": 299008,
+      "shared_policy_engine_level": false,
+      "model_parameter_bytes": 1705971840,
+      "allocated_after_model_load": 1736535040,
+      "steady_allocated_bytes": 1776970752,
+      "peak_allocated_bytes": 1791394816,
+      "peak_reserved_bytes": 1858076672,
+      "nonpayload_cache_tensor_bytes": 13860864,
+      "GPU_wide_used_MiB": 4579.0,
+      "process_GPU_memory": "NOT_AVAILABLE_FROM_GPU_WIDE_SAMPLE",
+      "scratch": [
+        {
+          "operation": "encode",
+          "peak_increment_bytes": 5142016,
+          "max_new_allocated_from_trace": 5142016,
+          "max_transient_excluding_returned_storage_from_trace": 5111296,
+          "retained_output_tensor_bytes": 309248,
+          "address_reuse_corrected": true
+        },
+        {
+          "operation": "decode",
+          "peak_increment_bytes": 14415872,
+          "max_new_allocated_from_trace": 13891199,
+          "max_transient_excluding_returned_storage_from_trace": 12842623,
+          "retained_output_tensor_bytes": 1048576,
+          "address_reuse_corrected": true
+        }
+      ]
+    },
+    {
+      "method": "R2_DIAG",
+      "status": "RECORDED_MEASUREMENT",
+      "source_path": "memory/R2_DIAG.json",
+      "source_sha256": "a521768bb7db5851adf44d28e8d055f787b4f1257b5b93c4361ea1e7d92cd846",
+      "pid": 63522,
+      "profile": "R2_OFFSET",
+      "physical_forwards": 1056,
+      "payload_bytes": 5566464,
+      "cache_tensor_bytes": 19427328,
+      "static_policy_bytes": 299008,
+      "shared_policy_engine_level": true,
+      "model_parameter_bytes": 1705971840,
+      "allocated_after_model_load": 1736535040,
+      "steady_allocated_bytes": 1776970752,
+      "peak_allocated_bytes": 1791394816,
+      "peak_reserved_bytes": 1858076672,
+      "nonpayload_cache_tensor_bytes": 13860864,
+      "GPU_wide_used_MiB": 4529.0,
+      "process_GPU_memory": "NOT_AVAILABLE_FROM_GPU_WIDE_SAMPLE",
+      "scratch": [
+        {
+          "operation": "encode",
+          "peak_increment_bytes": 5142016,
+          "max_new_allocated_from_trace": 5142016,
+          "max_transient_excluding_returned_storage_from_trace": 5111296,
+          "retained_output_tensor_bytes": 309248,
+          "address_reuse_corrected": true
+        },
+        {
+          "operation": "decode",
+          "peak_increment_bytes": 14415872,
+          "max_new_allocated_from_trace": 13891199,
+          "max_transient_excluding_returned_storage_from_trace": 12842623,
+          "retained_output_tensor_bytes": 1048576,
+          "address_reuse_corrected": true
+        }
+      ]
+    },
+    {
+      "method": "DAMP_R2_PAPER_ADAPTED",
+      "status": "RECORDED_MEASUREMENT",
+      "source_path": "memory/DAMP_R2_PAPER_ADAPTED.json",
+      "source_sha256": "dc2ca11ddc98a0d40bae34575ed291a666d175cf9194b928b4a850a32533e457",
+      "pid": 65444,
+      "profile": "R2_OFFSET",
+      "physical_forwards": 1056,
+      "payload_bytes": 5566464,
+      "cache_tensor_bytes": 19427328,
+      "static_policy_bytes": 299008,
+      "shared_policy_engine_level": true,
+      "model_parameter_bytes": 1705971840,
+      "allocated_after_model_load": 1736535040,
+      "steady_allocated_bytes": 1776970752,
+      "peak_allocated_bytes": 1791394816,
+      "peak_reserved_bytes": 1858076672,
+      "nonpayload_cache_tensor_bytes": 13860864,
+      "GPU_wide_used_MiB": 4529.0,
+      "process_GPU_memory": "NOT_AVAILABLE_FROM_GPU_WIDE_SAMPLE",
+      "scratch": [
+        {
+          "operation": "encode",
+          "peak_increment_bytes": 5142016,
+          "max_new_allocated_from_trace": 5142016,
+          "max_transient_excluding_returned_storage_from_trace": 5111296,
+          "retained_output_tensor_bytes": 309248,
+          "address_reuse_corrected": true
+        },
+        {
+          "operation": "decode",
+          "peak_increment_bytes": 14415872,
+          "max_new_allocated_from_trace": 13891199,
+          "max_transient_excluding_returned_storage_from_trace": 12842623,
+          "retained_output_tensor_bytes": 1048576,
+          "address_reuse_corrected": true
+        }
+      ]
+    }
+  ],
+  "unit": "bytes unless explicitly MiB; 1 MiB = 1048576 B",
+  "scope": "One fresh process/cache per method; caller must separately audit lifecycle and forward counts",
+  "scratch_scope": "Re-encode/decode of one completed nonzero CAL layer0 stored-state reconstruction; not all runtime writes or a worst-case bound",
+  "transient_scope": "Generation-aware newly allocated live bytes excluding preexisting inputs/static and final returned storage; allocator alignment retained",
+  "GPU_model_calls_by_this_script": 0,
+  "source_script": "scripts/summarize_diag_r2_memory.py"
+}

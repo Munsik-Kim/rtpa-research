@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "rows": 5120,
+  "sha256": "69663c60b7f1464933d5791332fc69fb8202876267831356a18b2d9e1ff12510",
+  "physical_forwards": 5120,
+  "seconds": 528.6598762439999,
+  "failures": {},
+  "policy_sha256": "45a511cc987306a3e7c68a86d6b1fa61c80778e1fc8911d8f19042935cc8c0b1",
+  "source_freeze_sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640",
+  "successful_quantized_layer_writes": {
+    "NATIVE": 0,
+    "LEGACY_DIAG": 18432,
+    "R2_MATCHED_ENERGY": 18432,
+    "R2_DIAG": 18432,
+    "DAMP_R2_PAPER_ADAPTED": 18432
+  }
+}

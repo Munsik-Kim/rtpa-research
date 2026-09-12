@@ -1,0 +1,257 @@
+{
+  "files": [
+    {
+      "scope": "package",
+      "path": "src/rtpa_research/diag_r2_benchmark.py",
+      "sha256": "48d5198da63a8ee1d0041ff6eee9c918313aadc878ef7f02ec51bfb8e54f55de"
+    },
+    {
+      "scope": "package",
+      "path": "src/rtpa_research/diag_r2_runtime.py",
+      "sha256": "36012aee79be9394c531e8db371d8f7b8d8ed3c8161f5e53b501360646b5404f"
+    },
+    {
+      "scope": "package",
+      "path": "src/rtpa_research/diag_r2_execution.py",
+      "sha256": "5a0ffda87a639751a5fc647468d446ae7c7e591bf6fe931fa5e1851661a9ce1e"
+    },
+    {
+      "scope": "package",
+      "path": "src/rtpa_research/codec_r2.py",
+      "sha256": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2"
+    },
+    {
+      "scope": "package",
+      "path": "src/rtpa_research/codec_r2_optimized.py",
+      "sha256": "519975711d79ee0672a20d3585c6cd6c07002e237629ed48cabb006dffe9ad9e"
+    },
+    {
+      "scope": "package",
+      "path": "src/rtpa_research/calibration_r2.py",
+      "sha256": "52911fe4e2241f24230cc2f22d4ce621ee7f6bbd4ddd6202897f31d84be15efc"
+    },
+    {
+      "scope": "package",
+      "path": "src/rtpa_research/calibration.py",
+      "sha256": "1aac2598d1af6920285e6ccfa11bb4a92d3f1d2453549cb89841768e45db0038"
+    },
+    {
+      "scope": "package",
+      "path": "src/rtpa_research/runtime.py",
+      "sha256": "afbfcbad6f18879151a827a1473869ea60c5d80f1f32689ee408d7d08cb6f8d2"
+    },
+    {
+      "scope": "package",
+      "path": "src/rtpa_research/codec.py",
+      "sha256": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069"
+    },
+    {
+      "scope": "package",
+      "path": "src/rtpa_research/layout.py",
+      "sha256": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276"
+    },
+    {
+      "scope": "package",
+      "path": "src/rtpa_research/operators.py",
+      "sha256": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78"
+    },
+    {
+      "scope": "package",
+      "path": "src/rtpa_research/factorized.py",
+      "sha256": "d6947df1f614b9dcb7372878e7fbc9e05626ff40c7e86c2cb80e819ae560e08e"
+    },
+    {
+      "scope": "package",
+      "path": "src/rtpa_research/reference_encoder.py",
+      "sha256": "d7272e7c4d600da3cbfcb9196be140afdb08b0f33c6751d51c744b4429ac7b53"
+    },
+    {
+      "scope": "package",
+      "path": "src/rtpa_research/benchmark.py",
+      "sha256": "1a3d9efec4b9b712ae4728a4777429e451afe1ca0ef5e059d94b38baf0b64071"
+    },
+    {
+      "scope": "package",
+      "path": "src/rtpa_research/io.py",
+      "sha256": "9bfdd227e7db2626abf39418a0973e443a801a4657a7626385f536f6ede7300f"
+    },
+    {
+      "scope": "package",
+      "path": "src/rtpa_research/resources.py",
+      "sha256": "b96099e34810d68146be1e49862a38907458e9757dba0b6cf225c40cc94b457e"
+    },
+    {
+      "scope": "package",
+      "path": "src/rtpa_research/allocation_trace.py",
+      "sha256": "6175db2b7e4bdc1017c8d9959c6008848537348741ab057005002ccc3dac7e57"
+    },
+    {
+      "scope": "package",
+      "path": "src/rtpa_research/diag_r2_analysis.py",
+      "sha256": "0d037df87c23b90ff789ba60dc8f9748fcf7a417cb0e9158145214e19ba306d6"
+    },
+    {
+      "scope": "package",
+      "path": "configs/diag_r2_development.json",
+      "sha256": "70ac43607d929bc9b4dfb2a591a159b610ca391bdfda9d32b589d0cce19dd981"
+    },
+    {
+      "scope": "package",
+      "path": "docs/CODEC_R2_CONTRACT.md",
+      "sha256": "48d1e52d75ee48a08163888b95de1b8dada590ae17b7d11477e9beead620d6f4"
+    },
+    {
+      "scope": "package",
+      "path": "tests/test_diag_r2_runtime.py",
+      "sha256": "ca2c64e269ff15b3f6fb6deed700d0e2bb6fca1796cbed29c4163a24710a3385"
+    },
+    {
+      "scope": "package",
+      "path": "tests/test_diag_r2_allocations.py",
+      "sha256": "1525893357f0eb7ba9bf6ed0f8b1ab1c36113a13be853aa77cca8aadfba9ee31"
+    },
+    {
+      "scope": "package",
+      "path": "tests/test_diag_r2_math.py",
+      "sha256": "2bb58c3e39af62e2d7f7f731f0d69421de38df7bb5db8893f8dda84130ec91d6"
+    },
+    {
+      "scope": "package",
+      "path": "tests/test_codec_r2_optimized.py",
+      "sha256": "81fd0fa76e3ca70119fdb0c36929b55c4801d8cb4d503bac63bfe48909d94007"
+    },
+    {
+      "scope": "package",
+      "path": "tests/test_diag_r2_analysis.py",
+      "sha256": "16e12ab83abe3f2a9fabe5c266c2f67e082f6238a4aad9d3fd95739936111915"
+    },
+    {
+      "scope": "package",
+      "path": "tests/test_codec_r2.py",
+      "sha256": "5d08124a82d519189eb9fc1ce1de554db585dcb0049cc7e301585b0644f7ebf5"
+    },
+    {
+      "scope": "package",
+      "path": "scripts/revalidate_diag_r2_inputs.py",
+      "sha256": "99e39466a8203ac0274c3440f7da6a87f51c9f8c8d42e93a4e3e257f7209e8c0"
+    },
+    {
+      "scope": "package",
+      "path": "scripts/check_diag_r2_cpu.py",
+      "sha256": "6de3ef02280ed61eb5055316f01367db7ab07797dd7c5dd68c88b230be0b5a0a"
+    },
+    {
+      "scope": "package",
+      "path": "examples/diag_r2.py",
+      "sha256": "df032c28e87a7a8d47c73272ef3268b17b4133d87500583f10336dbf2214ff46"
+    },
+    {
+      "scope": "package",
+      "path": "examples/diag_r2_model.py",
+      "sha256": "e0eaceccf188b9543c014848393c84ec582125cdc9d622e1751ab3de16ed7bc2"
+    },
+    {
+      "scope": "run",
+      "path": "protocol.json",
+      "sha256": "3fe03f5bfde5d081474ccc551adac508147eeb0486cced46ed10430505040996"
+    },
+    {
+      "scope": "run",
+      "path": "test_panel.json",
+      "sha256": "2568ba5c61f2af75b40101c2bcc92c70c0ae1142752c9945ade86fc54373706c"
+    },
+    {
+      "scope": "run",
+      "path": "train_panel.json",
+      "sha256": "98ae62685d22fa3861f533e9fdb54e003c0bab00220766f2655449e247fcb63e"
+    },
+    {
+      "scope": "run",
+      "path": "cal_panel.json",
+      "sha256": "c68c8993a90341a60e1820e3f4871bfebc6faa8d4265328851340ded90c9a333"
+    },
+    {
+      "scope": "run",
+      "path": "timing_panel.json",
+      "sha256": "899cf40ec333a570d4401039f08c81ff41cecbe255890f457110ceb115cd837c"
+    },
+    {
+      "scope": "run",
+      "path": "policy_r2.npz",
+      "sha256": "45a511cc987306a3e7c68a86d6b1fa61c80778e1fc8911d8f19042935cc8c0b1"
+    },
+    {
+      "scope": "run",
+      "path": "codec_selection.json",
+      "sha256": "4d62c63c38dacf67cab2f4dc4d68810b06738d50e4055e9e8a39be49c38b5a3d"
+    },
+    {
+      "scope": "run",
+      "path": "optimization_contract.json",
+      "sha256": "ceda4a10bfa3aa49e17a84cf5314807b96e66c98d8cdf18428240afdd8cb312d"
+    },
+    {
+      "scope": "run",
+      "path": "document_overlap_audit.json",
+      "sha256": "4882e785625fa956109b1145e9b199b8f27a1c7f5c547c96bef754d743866be0"
+    },
+    {
+      "scope": "run",
+      "path": "input_revalidation.json",
+      "sha256": "cae78dc92326be51693d727e2d41140df3b8ff8f99233b1d5a63ce2c0afe0aa3"
+    },
+    {
+      "scope": "run",
+      "path": "calibration_cost.json",
+      "sha256": "3bce8a3de1da4b05ff14a121b9b687f02277ca6bf299b500e6d814dcb1d1250c"
+    },
+    {
+      "scope": "run",
+      "path": "environment.json",
+      "sha256": "4595291e7e45faebf3b3f208a082a091f12c5c98d8f9800ee669c0d4aa44dda0"
+    },
+    {
+      "scope": "run",
+      "path": "checkpoint_content_validation.json",
+      "sha256": "46450af9b46615b7bac67536a04c3d3fe58e5fd2a55516083bc49ed43b3a6ded"
+    },
+    {
+      "scope": "run",
+      "path": "conformance.json",
+      "sha256": "fbb20479e8a7fa45c1dc1205c90dc0939d4460da97c719ff88cd79f3ef63fe80"
+    },
+    {
+      "scope": "run",
+      "path": "cuda_codec_fixture.json",
+      "sha256": "13f6ed0960f674079154f3c5a6b716cffac3a77f54057932a3a569aa78949f37"
+    },
+    {
+      "scope": "run",
+      "path": "real_document_pool.json",
+      "sha256": "a75caea2a818a931e4dd002a03e9e207bb3cf44a86d9fe5d05d42a865c5c5548"
+    },
+    {
+      "scope": "run",
+      "path": "cpu_revision_validation.json",
+      "sha256": "e7fcced434699cb43275b8620c489887dd0c0fccc7cfe26d1570a0a21fd2f10a"
+    },
+    {
+      "scope": "run",
+      "path": "final_cpu_validation.json",
+      "sha256": "13f4a914daf713007535b55f7a907e95976f1e3642596b31fac3df823bfc90b0"
+    },
+    {
+      "scope": "run",
+      "path": "preTEST_wiring_revision.json",
+      "sha256": "e197a7a51a7fbf0155ac3c3db7a3b42f62048d71aee3648feba2cfccfac6de1e"
+    },
+    {
+      "scope": "run",
+      "path": "final_probe.json",
+      "sha256": "54efc34fd65753710920bdaac6ac2ea18def47205158a8e7d15018381db76fe7"
+    }
+  ],
+  "frozen_UTC": "2026-09-12T06:02:36Z",
+  "source_policy_and_inputs_before_TEST": true,
+  "allow_posthoc_numerical_mutation": false
+}

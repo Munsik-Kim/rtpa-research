@@ -1,7 +1,9 @@
 # References, DAMP provenance, and rights
 
-The current upgrade freshly checked primary GDN/GDN2/DAMP/Qronos sources.
+The 2026-09-11 upgrade checked primary GDN/GDN2/DAMP/Qronos sources.
 See [architecture contracts and exact source hashes](ARCHITECTURES.md).
+The subsequent stable-DIAG R2 run reuses that provenance; it is not another
+author-code search or a new GDN2 model evaluation.
 The historical publication provenance below is retained as historical, rather
 than silently relabeled as the new audit. No NVlabs noncommercial kernel source
 is vendored or re-licensed; the operator is an independently written equation
@@ -34,10 +36,49 @@ The historical status **AUTHOR_CODE_NOT_VERIFIED** is preserved. The retained 20
 
 Matching protected-row count and codec alone does not match calibration data, anchors, or scoring. DIAG versus paper-cal DAMP compares complete local procedures. Their ordering is not presented as a refutation of the published DAMP results.
 
+### DAMP in the stable-DIAG R2 comparison
+
+`DAMP_R2_PAPER_ADAPTED` is deliberately not called an official DAMP codec or
+author-code reproduction. It uses the selected **new R2_OFFSET codec**, local
+high8 budget, all 18 Qwen GDN layers, and token-by-token writes, shared with the
+new DIAG and matched-energy methods. Its TRAIN6 synthetic reference samples are
+the local Native pre-cast update at positions 7, 15, …, 255—not the paper's Pile
+calibration documents or all-FP32 recurrent reference.
+
+The fixed allocation score is mean low reconstruction energy times geometric
+decay persistence, with the existing local persistence floor `1e-4`. A GDN
+head's scalar persistence is common across key rows. The included energy,
+persistence and scores permit an independent check of the resulting row-rank
+identity. They do not establish the analogous identity for channel-decayed KDA
+or global/head-budget allocation. R2 mask fitting did not use TEST outputs.
+
+DIAG versus this baseline compares complete local allocation procedures,
+including their different reference/own-low anchors and residual definitions.
+DIAG versus R2 matched energy shares the own-low anchor and sampling, but still
+does not isolate a single transition-only causal effect.
+
+## Licensed source-file evaluation panel
+
+The R2 panel uses the first 1,024 tokenizer tokens of six technical-reference
+documents from [CPython v3.11.15](https://github.com/python/cpython/tree/2340a037f7450e70fccfe411e6531afb4d57a312)
+and six Python source files from [NumPy v2.2.0](https://github.com/numpy/numpy/tree/e7a123b2d3eca9897843791dd698c1803d9a39c2).
+Commit, source URL/path, original byte hash, token IDs, selection seed, and
+complete upstream license text are included in the R2 evidence pool. These are
+data, not code imported or executed by the experiment. Markup, examples,
+imports and docstrings were not rewritten into an artificial clean-prose task.
+Two related source projects do not supply broad independent-domain coverage;
+this is not an official upstream benchmark or a pretraining-novelty claim.
+
 ## License and source boundaries
 
 The repository owner has now authorized Apache-2.0 for original project contributions. This supersedes the initial snapshot's undecided project-license status, not third-party rights or historical source hashes. See [LICENSE](../LICENSE), [NOTICE](../NOTICE), and [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md).
 
-The included Qwen tokenizer/configuration retains its original license unchanged. Third-party installed library source trees, model weights, Pile documents, and external software-corpus texts are not bundled. Public availability of a dataset does not establish rights to redistribute every document. Existing private research originals and Drive materials have not been modified.
+The included Qwen tokenizer/configuration retains its original license unchanged.
+Third-party installed library trees, model weights and Pile documents are not
+bundled. The selected R2 CPython/NumPy source files are a separately licensed,
+explicit exception to the historical external-corpus exclusion; their upstream
+copyright notices and full applicable licenses accompany them. Public
+availability alone does not establish redistribution rights for other documents.
+Existing private research originals and Drive materials have not been modified.
 
 No author affiliation, publication acceptance, DOI, or institutional endorsement has been inferred. Repository citation metadata identifies the verified GitHub account rather than inventing a paper citation.
