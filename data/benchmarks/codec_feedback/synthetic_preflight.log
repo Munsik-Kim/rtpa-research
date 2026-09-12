@@ -1,0 +1,14 @@
+test_explicit_nonfinite_retains_input (test_diagnostic.DiagnosticTests.test_explicit_nonfinite_retains_input) ... ok
+test_high_rows_and_payload (test_diagnostic.DiagnosticTests.test_high_rows_and_payload) ... ok
+test_identity (test_diagnostic.DiagnosticTests.test_identity) ... ok
+test_legacy_adapter_encode_exact (test_diagnostic.DiagnosticTests.test_legacy_adapter_encode_exact) ... ok
+test_positive_and_negative_cross (test_diagnostic.DiagnosticTests.test_positive_and_negative_cross) ... ok
+test_readout_before_write_and_horizon (test_diagnostic.DiagnosticTests.test_readout_before_write_and_horizon) ... ok
+test_shape_and_budget (test_diagnostic.DiagnosticTests.test_shape_and_budget) ... ok
+test_strict_JSON_rejects_nan_and_duplicates (test_diagnostic.DiagnosticTests.test_strict_JSON_rejects_nan_and_duplicates) ... ok
+test_zero_denominator_is_null (test_diagnostic.DiagnosticTests.test_zero_denominator_is_null) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.166s
+
+OK

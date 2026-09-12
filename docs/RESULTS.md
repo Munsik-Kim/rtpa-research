@@ -75,6 +75,18 @@ remain unresolved. No further retry, kernel tuning or favorable block selection
 was performed. All quality and fresh-process memory measurements had already
 completed before this timing interruption.
 
+## Fixed-mask codec feedback: isolated error versus accumulation
+
+The [TRAIN-only CPU diagnostic](CODEC_FEEDBACK.md) keeps the old mask fixed
+and separates common-state single writes from repeated codec application and
+reference-driven recurrence. R2 has slightly lower isolated error, but **3.204×**
+higher pooled recurrent readout SSE than legacy across six documents and layers
+0/12/22. All 18 equation cases completed; the separate Native BF16 fidelity
+control failed its frozen tolerance in **7/18** cases. These results expose an
+accumulation phenomenon in this diagnostic, not a causal explanation of the
+16.34× whole-model KL regression. No new model logits, task accuracy, or
+serving timing were computed. [Raw-derived tables](../results/codec_feedback/TABLES.md).
+
 ## Earlier GDN/GDN2 benchmark — v1.1.0rc1
 
 **OBSERVED.** All 72 registered GDN quality trajectories completed: 12 synthetic
