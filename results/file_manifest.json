@@ -2727,8 +2727,8 @@
     },
     {
       "path": "scripts/codec_feedback/verify.py",
-      "bytes": 26223,
-      "sha256": "6e855a1315ffd056eceff638e5e7033c351e3d00ed7ea92f0e80acd9c9c6cddf"
+      "bytes": 26187,
+      "sha256": "2f228f3ef86aa349ebcdba09c2ed9382e38a496f2e1d5320bea947883dd61194"
     },
     {
       "path": "scripts/compare_codec_cpu.py",
