@@ -32,8 +32,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7945,
-      "sha256": "13a0b4765a1cf7eaf97e23efae5d6b9525db86cc2c4337e0fc97a80339e2879b"
+      "bytes": 6974,
+      "sha256": "7010d95ed730ba1741cab954243b63056067811d8c0de6e9b76cf2d6b0dba951"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -2012,13 +2012,13 @@
     },
     {
       "path": "docs/ARCHITECTURES.md",
-      "bytes": 11508,
-      "sha256": "ea4059d871f8e4edc1077f18e802be9137571067f8ca32c91ce46f942fda1b4e"
+      "bytes": 11555,
+      "sha256": "6fc39294b241cbdd1c894e14614b32cc27c8934a6b4141c84468e574bc15a100"
     },
     {
       "path": "docs/BENCHMARKS.md",
-      "bytes": 18576,
-      "sha256": "46633dc378faec917e56eaabf81f3cc552738a2fc772cfd88bbcd0e6ad5f90b2"
+      "bytes": 17739,
+      "sha256": "feb4927c24bef50b04385c4a420c9cf479c52d798f19139a333d820d740f3d2e"
     },
     {
       "path": "docs/CODEC_R2_CONTRACT.md",
@@ -2027,23 +2027,23 @@
     },
     {
       "path": "docs/EXPERIMENTS.md",
-      "bytes": 5278,
-      "sha256": "5caba8a77fae80e911b17bbddab47808e870fd7fb1dd97794416da429c8e5ab4"
+      "bytes": 5949,
+      "sha256": "f5fe8d251b13103f17f73ded4ac995a7b0bd1df6528757517480678fdba09201"
     },
     {
       "path": "docs/HYPOTHESES.md",
-      "bytes": 6941,
-      "sha256": "96f11c5a73c30e8b244417f111638ca42343d5139df6a576950dc60a40f0a8aa"
+      "bytes": 6463,
+      "sha256": "6650d869b35b0b15d594e8eba56f18741db85ef8670a3c131a290ff54b7e4762"
     },
     {
       "path": "docs/LIMITATIONS.md",
-      "bytes": 5679,
-      "sha256": "680d3c2811acfcbef1fdcbe76cf12341d1dac8a7b40b3ae0c051e5b0fb2e251b"
+      "bytes": 5750,
+      "sha256": "35d3156e4888e94e4ad3ba198acb76204891bca5445246473509c70ee7207b1b"
     },
     {
       "path": "docs/METHOD.md",
-      "bytes": 13120,
-      "sha256": "12629aa75805f8aab3f91e4cdf642d40d1ffa923d6dc8647fbddf346bedfbbf0"
+      "bytes": 13072,
+      "sha256": "50f608be3b62de998dab4f53c51e51d5345bafb0716a6d050c3dc2e8c0fbe069"
     },
     {
       "path": "docs/PREREGISTRATION_R2.md",
@@ -2052,33 +2052,33 @@
     },
     {
       "path": "docs/QUICKSTART.md",
-      "bytes": 11135,
-      "sha256": "d9375c6ca25c3bb9f07f9ebf2cdca4b13922c00193723432a6d09e48aecdfe2f"
+      "bytes": 10224,
+      "sha256": "4435bf20252599a6842eb19e0f4d1af912f09770051c66f5624fed2d26842921"
     },
     {
       "path": "docs/QUICKSTART_R2.md",
-      "bytes": 14491,
-      "sha256": "0ae6d6df7686adc26b36b082b234b5fe7296a67c6956ce4bb39ee431b65f7a6a"
+      "bytes": 13921,
+      "sha256": "db1a10f28258e5d06b90abef2d222a68c9521b5e486730c9eb90161aefe1ad29"
     },
     {
       "path": "docs/REFERENCES.md",
-      "bytes": 8069,
-      "sha256": "757ce885e6bebc0ce3d00e3d343b6f9c88998fe2d94f1d3558bd96c8526720f7"
+      "bytes": 7313,
+      "sha256": "39d682fdea43a86408045cb640fee8a3d144003a44700a88384a0661d9a82b92"
     },
     {
       "path": "docs/REPRODUCIBILITY.md",
-      "bytes": 10078,
-      "sha256": "2c62e287b75f86395144cb12140031934c433bd950333ab08a5b617827c9f4b0"
+      "bytes": 9731,
+      "sha256": "74ea46e19e9716aaaf967bcd6261c61c5d8f7009a04ff05886f46a7caac7868a"
     },
     {
       "path": "docs/REPRO_R2_SCOPE.md",
-      "bytes": 13399,
-      "sha256": "73c794febbce7a4ba265eeef3e2a7f2a8a856499ffcefa02d6ad9a2994da5534"
+      "bytes": 13079,
+      "sha256": "57dfc78ee803be70d51f0942aefd7af2202a02e81e4cd3d1cbac3710d25cd081"
     },
     {
       "path": "docs/RESULTS.md",
-      "bytes": 17698,
-      "sha256": "965f1275a8a6064a8d182b10edc2f693f1a1bbf16c176d1027382c74f0ff315f"
+      "bytes": 17594,
+      "sha256": "59241191c762c9b5e5a5048fdb107a2f72dbcb501972f4e8ef558a6bb6d9f669"
     },
     {
       "path": "examples/diag_r2.py",

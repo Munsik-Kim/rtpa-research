@@ -1,4 +1,4 @@
-# Stable-codec DIAG: what can be reproduced
+# R2 reproduction scope
 
 This page concerns `RTPA_DIAG_STABLE_R2_20260912_V1`, not a replacement for
 historical v0.4–v0.7 or FA_CODE evidence. R2_OFFSET is a **new codec revision**.
@@ -13,7 +13,7 @@ CPU CI is independent GPU replication or a general numerical-safety proof.
 
 ## Source provenance is phase-specific
 
-There are three relevant source states inside this development run. Full
+The run used three source states before its final freeze. Full
 SHA-256 values, not the abbreviated identifiers below, are authoritative in
 `input_revalidation.json`, `preTEST_wiring_revision.json`, `conformance.json`,
 `final_probe.json` and `freeze.json`.
@@ -32,8 +32,8 @@ analysis. This does **not** make earlier runner files identical to the final
 runner. The preserved source sets are identified by the receipt keys
 `executed_development_sources` and `executed_conformance_sources`; their
 publication mapping must retain the original bytes or explicitly identify an
-unavailable variant. A mapping is not permission to replace an old expected
-hash with today's source hash.
+unavailable variant. Original expected hashes remain authoritative for their
+recorded source state.
 
 The final freeze was created at `2026-09-12T06:02:36Z`. Source/config edits
 after that point cannot be silently used with its completed receipts.
@@ -61,10 +61,8 @@ are not claims that an absent or unfinished artifact has been verified.
 
 The large `reference_profile_trace.json` is also **LOCAL_ONLY**; retain its
 recorded identity and the small profile summary if referring to that phase.
-This is source/observation selection, not deletion from the original research
-workspace. Public verification must distinguish INCLUDED, LOCAL_ONLY and
-NOT_RUN/MISSING material rather than treating every external reference as a
-successful check.
+Availability statuses distinguish INCLUDED, LOCAL_ONLY and NOT_RUN/MISSING
+material. References to excluded files do not verify their bytes.
 
 The 108 capture tensors are needed to re-execute the original input
 revalidation and to refit from the exact saved operands. `revalidate_diag_r2_inputs.py`
@@ -73,7 +71,7 @@ calibration replay requires restoring them or generating a **newly identified
 capture** with the proper phase source and then comparing it. It must not
 overwrite the old receipt or call current-source output an original byte copy.
 The saved Kdiag/c files do not include the full K for all cases. Full-K checks
-were limited CAL audits; the main fitting path still retains the large
+used the first TRAIN document at layers 0, 12, and 22; the main fitting path still retains the large
 within-source transition history needed to compute Kdiag/c correctly.
 
 ## Freeze and derived publication manifests
@@ -118,7 +116,7 @@ undefined while a candidate's finite next-token NLL can remain observed.
 
 ## Data and third-party scope
 
-The current TEST pool contains six CPython documentation files at the recorded
+The R2 TEST pool contains six CPython documentation files at the recorded
 `v3.11.15` commit and six NumPy source files at the recorded `v2.2.0` commit.
 First-token prefixes include real upstream markup, imports, examples and
 docstrings; they are not rewritten as clean prose. Upstream source bytes,
@@ -133,14 +131,11 @@ local-only under the historical reproduction guide. Exact/common-prefix
 overlap checks cover the explicitly included prior TRAIN6/CAL3/TEST12 panel,
 not every historical input or pretraining corpus.
 
-## Completion is not scientific advantage
+## Interpretation
 
-Report structural verification, finite completion, quality effect, timing
-uncertainty, storage and task accuracy separately. R2 has no newly registered
-answer-accuracy evaluation. Retain adverse NLL, failures and undefined
-contrasts alongside any KL gain. No GPU full-replication or speed claim is
-created by a successful installed-package import, model-free reconstruction,
-or execution-script `--help`.
+R2 has no answer-accuracy evaluation. [Results](RESULTS.md) reports quality,
+completion, timing uncertainty, and storage separately; [Limitations](LIMITATIONS.md)
+defines the scope of the numerical and reconstruction checks.
 
 ## Interrupted timing and bounded accounting
 

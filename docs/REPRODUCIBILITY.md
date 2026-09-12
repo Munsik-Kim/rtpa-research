@@ -5,9 +5,9 @@ For the stable-codec DIAG state/model path, start with the
 The earlier model/operator commands remain in [Quickstart](QUICKSTART.md).
 [Benchmarks](BENCHMARKS.md) keeps the separate run IDs and numerical profiles
 distinct from the historical reconstruction described below.
-The CPU package now carries its curated evidence inside the wheel; neither the
-original research directory nor a particular user's absolute path is required.
-GPU imports remain opt-in. A successful CPU CI run is not GPU certification.
+The installed wheel includes the selected CPU evidence and resolves it through
+package resources. GPU dependencies are optional; CPU verification does not
+establish GPU performance or independent replication.
 
 ## Model-free CPU reconstruction
 
@@ -81,7 +81,8 @@ The CPU [task generator](../src/rtpa_research/task_generator.py) preserves the o
 
 The tokenizer/configuration is not model weights; its original Apache-2.0 [LICENSE](../data/tokenizer/LICENSE) is retained. Selected tensor fixtures were converted to pickle-free NPZ. BF16 values retain their uint16 bit patterns with original dtype/shape recorded separately. An original .pt hash is not equated with its derived NPZ hash. Stored K/c .pt files support historical Torch loading, while NPZ versions permit CPU-only reconstruction without Torch; these are distinct roles.
 
-The English publication changes reader-facing documentation and licensing, not archived numerical sources, raw observations, masks, frozen decisions, or computed tables. Korean strings in historical report templates and evidence remain unchanged for provenance.
+Historical report templates and evidence retain their original language and
+content for provenance.
 
 ## Historical full GPU reproduction is separate and NOT_RUN by CPU verification
 
@@ -97,11 +98,15 @@ Additional requirements:
 2. Exact package versions, documents, hashes, and 1,024 input token IDs for the v0.4/v0.5 external software corpus. Provenance manifests are included; original text and reversible IDs with unclear redistribution rights remain local-only.
 3. Original TRAIN9 inputs, parent manifests, and operands. K/c is included, but not all raw trajectories required to regenerate source propagation.
 4. The 32 Pile validation documents for paper calibration. Dataset revision/split/row IDs/hashes are included, not original text. Exact document identity with the paper remains UNKNOWN.
-5. The historical freeze/parent-receipt layout. Export hashes for redacted paths must not replace old expected hashes. Restore the necessary original bytes and explicitly connect external paths in a separate reproduction plan. Private attachment/prompt administration once required by full runners is not automatically restored.
+5. The historical freeze/parent-receipt layout and original bytes for path-redacted files. Export hashes cannot replace original expected hashes. External paths and dependencies must be restored in a separate reproduction workspace; the public package does not recreate the complete historical environment.
 
 ## Inclusion, exclusion, and verification records
 
-The [evidence manifest](../results/evidence_manifest.json) maps originals to selected files and explains inclusion. URL/personal-path redactions are identified as derived metadata. Credentials, private Drive links, weights, caches, large ZIPs, duplicate reports, patch logs, and unrelated E0–E13 material were excluded from this tree, not deleted from the original project. No included file is 25 MiB or larger; that is this project's review threshold, not GitHub's file-size limit.
+The [evidence manifest](../results/evidence_manifest.json) records inclusion,
+exclusion, and source mappings. Path-redacted metadata is identified as derived.
+Model weights, caches, large captures, and external corpora remain outside the
+public package; their availability limits are listed above and in
+[R2 reproduction scope](REPRO_R2_SCOPE.md).
 
 The [verification receipt](../results/verification.json) separates CPU/scalar/tensor/source checks from unverified items. The local clean-copy test used only selected staged files. Actual remote CI status is attached to its GitHub commit; a local receipt is not evidence that a remote workflow ran.
 

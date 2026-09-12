@@ -1,23 +1,19 @@
 # RTPA — Output-Aware Recurrent-State Quantization
 
-**Quantize recurrent state with output sensitivity in mind.**
-
-RTPA brings output sensitivity into recurrent-state quantization. It uses
-offline response measurements to guide **fixed precision allocation**
+RTPA uses offline output-response measurements to guide **fixed precision allocation**
 (RTPA-DIAG) and **bounded integer-code correction** (FA_CODE), with quality,
 storage and runtime measured separately. Both aim to preserve a model's output
-under a fixed state-storage budget; they are separate methods, not a combined
-percentage gain.
+under a fixed state-storage budget. Each method has its own baseline and evaluation.
 
 ## What you can use and verify
 
-- **Output-aware allocation under a fixed budget:** on the new 12-source-file
+- **Output-aware allocation under a fixed budget:** on the R2 12-source-file
   panel, R2-DIAG reduces Native-reference KL by **58.10% [54.40–61.15]%** against
   R2 matched energy, at the same codec and payload. **It is nevertheless much
   worse than legacy DIAG:** mean KL is **0.07019 versus 0.004296 nat/token**.
-  This new codec is an experimental numerical revision, not a recommended
+  R2 is an experimental numerical revision, not a recommended
   quality replacement. [All five methods and paired intervals](results/diag_r2/benchmark_tables.md).
-- **A bounded repair of a known representation failure:** two new codec
+- **A bounded repair of a known representation failure:** two R2 codec
   candidates reconstruct the saved finite-input FP16 zero-point overflow
   fixtures without nonfinite values. All 60 registered quality trajectories
   completed. This does not establish universal stability or explain the
@@ -29,12 +25,12 @@ percentage gain.
   this run did not reduce whole-model peak. [Memory and bounded scratch measurements](results/diag_r2/memory_tables.md).
 - **Runnable, auditable paths:** fixed-mask GDN adapters, independent CPU codec
   checks, public token/sequence observations and model-free table reconstruction.
-  **The new latency target is unresolved:** timing was interrupted, and its
+  **R2 cost is INCOMPLETE:** timing was interrupted, and its
   single fixed retry stopped when another GPU PID appeared. Partial blocks
   are retained but do not supply a complete latency estimate.
-  [Current quickstart](docs/QUICKSTART_R2.md).
+  [R2 quickstart](docs/QUICKSTART_R2.md).
 
-The new revision does not rerun FA_CODE or GDN2. Their
+R2 does not rerun FA_CODE or GDN2. Their
 [earlier benchmark](results/upgrade/benchmark_tables.md) remains separate:
 legacy-codec DIAG reduced KL by 18.78% on a synthetic panel, while its cost
 target remained unresolved. Three-layer FA_CODE reduced KL by 3.05% versus
@@ -58,7 +54,7 @@ its successful fixtures and panel do not establish universal codec safety.
 
 ## Quickstart
 
-Install the repository, not an assumed PyPI package:
+Install from the repository with Python 3.11:
 
 ```bash
 git clone https://github.com/Munsik-Kim/rtpa-research.git
@@ -72,10 +68,10 @@ python scripts/reproduce_upgrade.py --root . --write-generated recomputed-upgrad
 python scripts/reproduce_diag_r2.py --public --out recomputed-r2 --expected results/diag_r2/recomputed_expected.json
 ```
 
-The demo and evidence commands require no GPU, Torch, model weights, API key or
-private Drive access. They recompute included observations, not new inference.
+The demo and evidence commands run on CPU without Torch or model weights.
+They reconstruct the included observations; they do not run model inference.
 For an actual state encode/decode example, optional GPU dependencies and the
-new-codec phased model benchmark, use the [R2 guide](docs/QUICKSTART_R2.md).
+R2 model benchmark, use the [R2 guide](docs/QUICKSTART_R2.md).
 The [earlier guide](docs/QUICKSTART.md) retains the original numerical paths.
 
 ## How it works
@@ -95,30 +91,21 @@ Neither encoder reads future TEST tokens or a Native shadow state. Offline
 response predictions are distinguished from the candidate's own nonlinear model
 trajectory and actual answers. [Method](docs/METHOD.md) · [Hypotheses](docs/HYPOTHESES.md).
 
-![New R2 allocation improves its matched baseline but regresses against legacy DIAG](results/diag_r2/figures/quality.png)
-
-Start with the CPU demo and the comparison tables. Use the R2 adapter to study
-the explicit numerical revision, not as a drop-in quality upgrade. Keep legacy
-DIAG and matched energy visible: representation stability, relative allocation
-quality, task accuracy and runtime cost are different requirements. FA_CODE
-remains an explicit, more expensive research option.
+![R2 allocation improves its matched baseline but regresses against legacy DIAG](results/diag_r2/figures/quality.png)
 
 ## Evidence, reuse and limits
 
-The repository preserves distinct panels and numerical profiles from the earlier
-RTPA study rather than relabeling them with the newest implementation. It also
-adds FA_CODE/GDN2 evidence and a later stable-codec GDN revision. Historical task panels
-did not establish added accuracy over simple baselines; near-ceiling ties do not
-prove equivalence. Runtime targets and numerical stability remain separate from
-quality gains. This is an actively developed research implementation, not a
-production-readiness certificate.
+Historical task panels did not establish added accuracy over simple baselines;
+near-ceiling ties do not prove equivalence. This repository provides research
+implementations with distinct numerical contracts and measured limitations.
 
 - [Benchmarks and scope](docs/BENCHMARKS.md)
 - [Integrated results, including failures](docs/RESULTS.md)
 - [Reproducibility and data availability](docs/REPRODUCIBILITY.md)
 - [References and baseline provenance](docs/REFERENCES.md)
 - [Historical experiment mapping](docs/EXPERIMENTS.md)
-- [Current machine-readable claims](results/diag_r2/claims.json) · [earlier upgrade claims](results/upgrade/claims.json) · [historical claims](results/claims.json)
+- [Limitations](docs/LIMITATIONS.md)
+- [R2 claims](results/diag_r2/claims.json) · [GDN/GDN2 claims](results/upgrade/claims.json) · [historical claims](results/claims.json)
 
 ## License and citation
 
@@ -129,6 +116,5 @@ attribution and the scope of included materials. External GDN2 code under its
 own noncommercial license has not been vendored or relicensed here.
 
 Please cite the repository and the commit used; [CITATION.cff](CITATION.cff)
-contains the existing author's citation metadata. A scholarly citation is a
-request, not an additional license restriction. No unverified DOI, publication,
-world-first claim or official DAMP author-kernel reproduction is implied.
+contains the author and version metadata. A scholarly citation is a request,
+not an additional license restriction.

@@ -1,16 +1,13 @@
 # References, DAMP provenance, and rights
 
-The 2026-09-11 upgrade checked primary GDN/GDN2/DAMP/Qronos sources.
+The 2026-09-11 source audit checked primary GDN/GDN2/DAMP/Qronos sources.
 See [architecture contracts and exact source hashes](ARCHITECTURES.md).
 The subsequent stable-DIAG R2 run reuses that provenance; it is not another
 author-code search or a new GDN2 model evaluation.
-The historical publication provenance below is retained as historical, rather
-than silently relabeled as the new audit. No NVlabs noncommercial kernel source
-is vendored or re-licensed; the operator is an independently written equation
-implementation. Generic output-weighted rounding is prior art, not claimed here
-as a first invention.
-
-Repository consolidation used preserved source audits and local implementations. The links below identify original sources; they do not imply that the paper or author code was freshly reverified for the English publication release.
+Historical audits retain their original dates and scope. No NVlabs
+noncommercial kernel source is vendored or re-licensed; the operator is an
+independently written equation implementation. Generic output-weighted
+rounding is prior art.
 
 - [DAMP: Decay-Aware Mixed-Precision Recurrent-State Quantization, v1](https://arxiv.org/html/2608.27513v1), arXiv:2608.27513. Preserved HTML SHA-256: `e55c235ee57d8bf7db1e535d26e136db96f880dc51dab53a6b5021e769691e1f`.
 - [Qwen/Qwen3.5-0.8B-Base](https://huggingface.co/Qwen/Qwen3.5-0.8B-Base/tree/dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68), fixed revision. The included tokenizer/configuration retains the original [Apache-2.0 license](../data/tokenizer/LICENSE) and Alibaba Cloud attribution.
@@ -20,7 +17,7 @@ Repository consolidation used preserved source audits and local implementations.
 
 ## DAMP: paper definitions versus the executed local paths
 
-The historical status **AUTHOR_CODE_NOT_VERIFIED** is preserved. The retained 2026-09-09 audit searched official arXiv external links, the Hugging Face paper API, and exact-title/ID web and GitHub searches. An error-reporting GitHub link was not accepted as author implementation provenance. An unverified repository, commit, or license does not establish that author code was never released. The original 2026-09-10 publication pass did not repeat that research search; the 2026-09-11 upgrade's separate source recheck is recorded in [Architectures](ARCHITECTURES.md).
+The historical status **AUTHOR_CODE_NOT_VERIFIED** is preserved. The 2026-09-09 audit searched official arXiv external links, the Hugging Face paper API, and exact-title/ID web and GitHub searches. An error-reporting GitHub link was not accepted as author implementation provenance. The 2026-09-11 source recheck is recorded in [Architectures](ARCHITECTURES.md). These bounded searches do not establish that author code was never released.
 
 | Contract | Paper / retained audit | Executed local implementation | Match, difference, or unknown |
 |---|---|---|---|
@@ -71,7 +68,9 @@ this is not an official upstream benchmark or a pretraining-novelty claim.
 
 ## License and source boundaries
 
-The repository owner has now authorized Apache-2.0 for original project contributions. This supersedes the initial snapshot's undecided project-license status, not third-party rights or historical source hashes. See [LICENSE](../LICENSE), [NOTICE](../NOTICE), and [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md).
+Original project contributions use Apache-2.0. Third-party materials retain
+their applicable licenses and notices. See [LICENSE](../LICENSE),
+[NOTICE](../NOTICE), and [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md).
 
 The included Qwen tokenizer/configuration retains its original license unchanged.
 Third-party installed library trees, model weights and Pile documents are not
@@ -79,6 +78,6 @@ bundled. The selected R2 CPython/NumPy source files are a separately licensed,
 explicit exception to the historical external-corpus exclusion; their upstream
 copyright notices and full applicable licenses accompany them. Public
 availability alone does not establish redistribution rights for other documents.
-Existing private research originals and Drive materials have not been modified.
 
-No author affiliation, publication acceptance, DOI, or institutional endorsement has been inferred. Repository citation metadata identifies the verified GitHub account rather than inventing a paper citation.
+Use [CITATION.cff](../CITATION.cff) to cite the repository and identify the
+commit used.

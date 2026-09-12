@@ -1,17 +1,17 @@
 # Integrated results
 
 **Benchmark map:** [measured implementations and scope](BENCHMARKS.md).
-The current revision evaluates GDN allocation and its codec; earlier all-layer
+The R2 revision evaluates GDN allocation and its codec; earlier all-layer
 allocation, limited-layer code correction and synthetic GDN2 operators remain
 separate. Their independent panels and percentages are not combined.
 
-## Current revision: bounded codec repair, adverse overall quality
+## R2: bounded codec repair, adverse overall quality
 
 **OBSERVED.** Run `RTPA_DIAG_STABLE_R2_20260912_V1` completed all 60 registered
 trajectories: twelve actual source-file prefixes × five methods × 1,024 tokens,
 all 18 GDN layers, **61,440 model forwards and zero numerical failures**.
-New R2-DIAG reduces pooled Native KL from **0.1675123 to 0.07019327 nat/token**
-against new R2 matched energy: **58.0967% [54.4040,61.1509]%**, twelve wins.
+R2-DIAG reduces pooled Native KL from **0.1675123 to 0.07019327 nat/token**
+against R2 matched energy: **58.0967% [54.4040,61.1509]%**, twelve wins.
 The next-token NLL difference is **−0.09238957 nat/token**, with a negative
 interval. Against the new-codec local DAMP adaptation, the KL reduction is
 55.0497% [51.4854,58.4875]% and ΔNLL is −0.08169055.
@@ -20,8 +20,7 @@ interval. Against the new-codec local DAMP adaptation, the KL reduction is
 method on this panel. Its mean KL is **0.00429589**, versus **0.07019327** for
 R2-DIAG—about **16.34×** the distortion. R2-DIAG loses all twelve paired KL
 comparisons and has **+0.06648736 nat/token** higher NLL, with a wholly positive
-interval. Later-window KL also worsens: 0.1292864 versus 0.005497989. This is
-not a small tradeoff hidden behind a favorable relative-to-energy percentage.
+interval. Later-window KL also worsens: 0.1292864 versus 0.005497989.
 
 **INTERPRETATION.** Output-aware allocation helps within the new codec, but the
 complete new codec-plus-mask method is **not an overall quality improvement**
@@ -107,7 +106,7 @@ Persistent GDN target-state payload falls from 9,437,184 to 5,566,464 bytes for
 all 18 layers, but measured allocator peak did not fall (Native 1,683.40 MiB;
 DIAG 1,686.29 MiB). The pre-TEST all-layer code-correction metadata failures
 remain retained. [Authoritative generated tables](../results/upgrade/benchmark_tables.md)
-contain both lengths, tails, cost, memory and exact scope; [current claims](../results/upgrade/claims.json)
+contain both lengths, tails, cost, memory and exact scope; [GDN/GDN2 claims](../results/upgrade/claims.json)
 link the underlying hashes. No new answer task was added.
 
 The later [FA_CODE historical reaggregation](../results/fa_code_historical/fa_code_historical.json)
@@ -209,5 +208,5 @@ DIAG task benefit over simple matched allocation remains unestablished; cost
 claims must use each implementation's separate measured interval.
 The GDN2 operator's adverse transfer and FA_CODE's baseline-relative cost failure
 remain separate. Known numerical failures and historical negative decisions
-are retained. This research release is not a production-readiness decision and
-does not initiate repeated experiments until DIAG wins.
+are retained. See [Limitations](LIMITATIONS.md) and
+[historical decisions](EXPERIMENTS.md#historical-decisions-versus-current-interpretation).

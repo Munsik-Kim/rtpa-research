@@ -1,6 +1,6 @@
 # Hypotheses and current evidence
 
-The research goal is better performance under the same low-precision storage conditions with little additional inference computation. This **integrated interpretation** does not overwrite any historical frozen decision. The original hypotheses are not relabeled as successes, and this snapshot does not automatically initiate follow-up experiments.
+The research goal is better output preservation under the same low-precision storage conditions with little additional inference computation. The hypotheses below distinguish implementation support, output quality, task accuracy, and cost. [Historical decisions](EXPERIMENTS.md#historical-decisions-versus-current-interpretation) retain their original experiment scope.
 
 ## H1 — When is error energy insufficient?
 
@@ -33,10 +33,10 @@ calibrated mask, so it does not identify a single cause. It strengthens the
 within-codec allocation observation while contradicting an unqualified
 "new numerical revision improves output preservation" claim.
 
-The subsequent FA_CODE implementation compresses offline responses into a fixed
+FA_CODE compresses offline responses into a fixed
 diagonal-plus-rank-two metric rather than a static precision mask. Its historical own-model
 recurrence improved KL against stored-nearest, but not every NLL comparison.
-The [new benchmark](BENCHMARKS.md) separates all-layer GDN allocation from
+The [GDN/GDN2 benchmark](BENCHMARKS.md) separates all-layer GDN allocation from
 three-layer inherited code correction. Synthetic GDN2 operator measurements
 are an unfavorable transfer observation, not pretrained-model evidence. These
 results are not combined into a single method or gain.
@@ -60,16 +60,9 @@ FA_CODE 32-item task had identical outcomes for all five methods and no Native
 correct / nearest wrong recovery cases. Its recovery rate is undefined, not
 zero. No new task search was performed for the GDN/GDN2 upgrade.
 
-These states are distinct from [mechanical verification](../results/verification.json). Input/hash checks passing, or a `DIAGNOSTIC_COMPLETE` label, does not mean a quality gate passed.
-
-Current implementation/evidence claims are linked separately in
-[upgrade/claims.json](../results/upgrade/claims.json). New measured GDN DIAG
-cost remains unresolved; FA_CODE misses the matched-nearest +5% target.
-Historical claims and decisions are not overwritten by these updates.
-
-The still later [R2 claims](../results/diag_r2/claims.json) and
-[fixed-work measurements](../results/diag_r2/benchmark_tables.md) have their own
-run identity. They do not add task evidence or update the earlier cost samples.
-The next minimal research question is why the bounded codec plus its
-recalibrated policy loses so much quality relative to legacy—not a search for
-a favorable new task or a post-TEST change to the current policy.
+The [GDN/GDN2 claims](../results/upgrade/claims.json) record unresolved DIAG
+cost and FA_CODE's failure to meet the matched-nearest +5% target. The
+[R2 claims](../results/diag_r2/claims.json) record incomplete timing and no new
+task evaluation. These conclusions are separate from
+[mechanical verification](../results/verification.json). The cause of R2's
+regression against legacy remains unresolved; see [Limitations](LIMITATIONS.md).
