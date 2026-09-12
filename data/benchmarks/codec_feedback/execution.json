@@ -1,0 +1,38 @@
+{
+  "run_id": "RTPA_FIXED_MASK_CODEC_FEEDBACK_20260912_V1",
+  "first_start_utc": "2026-09-12T09:48:32.124473+00:00",
+  "status": "COMPLETE",
+  "model_forwards": 0,
+  "GPU_forwards": 0,
+  "completed_cases": [
+    "train_associative_recall_0_L0",
+    "train_associative_recall_0_L12",
+    "train_associative_recall_0_L22",
+    "train_associative_recall_1_L0",
+    "train_associative_recall_1_L12",
+    "train_associative_recall_1_L22",
+    "train_code_0_L0",
+    "train_code_0_L12",
+    "train_code_0_L22",
+    "train_code_1_L0",
+    "train_code_1_L12",
+    "train_code_1_L22",
+    "train_natural_language_0_L0",
+    "train_natural_language_0_L12",
+    "train_natural_language_0_L22",
+    "train_natural_language_1_L0",
+    "train_natural_language_1_L12",
+    "train_natural_language_1_L22"
+  ],
+  "failures": [],
+  "planned_cases": 18,
+  "budget_seconds": 1200,
+  "seconds": 47.136271624000074,
+  "actual_attempted_operations": {
+    "codec_write_attempts": 10944,
+    "affine_only_write_attempts": 1728,
+    "recurrence_update_attempts": 18432,
+    "single_injection_transition_attempts": 3456
+  },
+  "source_unchanged": true
+}

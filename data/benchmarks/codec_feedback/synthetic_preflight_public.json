@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-12T09:48:13.574146+00:00",
+  "seconds": 2.539103784998588,
+  "source_hashes": {
+    "run_diagnostic.py": "2e4af2c937d793ceff0a3f3606b6c0249db36f005f0972e9b61707ac90ec816f",
+    "protocol.json": "2ee9f1224135bfda5d109e39fbc12cb6430df2ce1e4ee4961e0a2e6d9c31eb53",
+    "test_diagnostic.py": "c4d304ee84ed1934c3996239b48f8784621ca4cf53aeaeaa8ec4d2a38a178af8"
+  },
+  "log_sha256": "bdbaac29dc825b5e8123462db2151a548ac932f8cfbc0acc88df746fa5e86ef3",
+  "real_data_read": false,
+  "GPU_used": false,
+  "original_sha256": "05a384f5134093f2cc0900bf57d8c79c66189d7c7ff28c45a8abfc2f66b48a2f",
+  "transformation": "Removed command field containing a local executable path; other original fields unchanged."
+}

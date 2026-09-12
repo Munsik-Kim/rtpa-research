@@ -37,6 +37,11 @@ target remained unresolved. Three-layer FA_CODE reduced KL by 3.05% versus
 stored-nearest but cost 1.498× [1.360–1.660]. GDN2 operator SSE slightly worsened.
 These are different panels, policies and endpoints; gains are never added.
 
+A [fixed-mask CPU diagnostic](docs/CODEC_FEEDBACK.md) examines the R2 regression:
+one-write error improves slightly, but recurrent readout error increases.
+This is a reference-driven equation experiment, not another model benchmark;
+its failed Native-fidelity controls and causal limits are reported explicitly.
+
 ## Support and measurement scope
 
 | Architecture | Executable path | Evidence level |

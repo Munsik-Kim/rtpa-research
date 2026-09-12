@@ -1,0 +1,46 @@
+{
+  "run_id": "RTPA_FIXED_MASK_CODEC_FEEDBACK_20260912_V1",
+  "protocol_sha256": "2ee9f1224135bfda5d109e39fbc12cb6430df2ce1e4ee4961e0a2e6d9c31eb53",
+  "freeze_sha256": "196d2bfab8dfc0d014a08e0f4ee78f74c62a6ecb658f7e443d93836fa2c695a1",
+  "summary_sha256": "474ab9c80a35272c07f033a0087c72404169817aaee35a54728ece95e2115f97",
+  "observation_manifest": "data/benchmarks/codec_feedback/availability.json",
+  "source": "scripts/codec_feedback/run_diagnostic.py",
+  "source_sha256": "2e4af2c937d793ceff0a3f3606b6c0249db36f005f0972e9b61707ac90ec816f",
+  "aggregation": "scripts/codec_feedback/aggregate.py",
+  "report": "docs/CODEC_FEEDBACK.md",
+  "claims": [
+    {
+      "claim_id": "codec-feedback-isolated-versus-recurrent",
+      "status": "OBSERVED_IN_TRAIN_EQUATION_DIAGNOSTIC",
+      "reproduction": "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS",
+      "baseline": "LEGACY_P_PRE",
+      "candidate": "R2_OFFSET",
+      "selection": "Same pre-existing DIAG8 masks; no new fitting or TEST access",
+      "independent_units": 6,
+      "layer_cases": 18,
+      "endpoint": "Pooled readout SSE relative to reconstructed FP32 recurrence",
+      "candidate_over_baseline": 3.203976284215698,
+      "uncertainty": "Descriptive six-document paired summaries; no population CI",
+      "limits": [
+        "Native control fails 7/18 at its frozen tolerance",
+        "Not model KL, accuracy, or serving latency",
+        "Accumulation is observed; an individual codec operation is not causally identified"
+      ]
+    },
+    {
+      "claim_id": "codec-feedback-error-identity",
+      "status": "SCALAR_IDENTITY_VERIFIED",
+      "formula": "post_error_sse = pre_error_sse + injection_sse + 2<pre_error,injection>",
+      "reproduction": "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS",
+      "limit": "Algebraic identity and reinforcing cross term are not a causal fraction of historical model KL"
+    },
+    {
+      "claim_id": "codec-feedback-full-model-transfer",
+      "status": "NOT_EVALUATED",
+      "reproduction": "NOT_COMPUTED_OR_NOT_IDENTIFIABLE",
+      "model_forwards": 0,
+      "GPU_forwards": 0,
+      "limit": "No full-model rerun, pretrained GDN2 measurement, new mask, repair, or performance upgrade in this diagnostic"
+    }
+  ]
+}

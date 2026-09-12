@@ -55,6 +55,10 @@ jobs:
           cmp results/diag_r2/assessment.json /tmp/rtpa-r2-assessment/assessment.json
           cmp results/diag_r2/cal_fixed_mask.md /tmp/rtpa-r2-assessment/cal_fixed_mask.md
           cmp results/diag_r2/quality_details.md /tmp/rtpa-r2-assessment/quality_details.md
+      - name: Reconstruct fixed-mask codec feedback without model inference
+        run: |
+          python scripts/codec_feedback/aggregate.py --run data/benchmarks/codec_feedback --out /tmp/rtpa-feedback
+          python scripts/codec_feedback/verify.py --root . --out /tmp/rtpa-feedback-verification.json
       - name: Build and install the public wheel
         run: |
           python -m build --wheel
@@ -88,6 +92,7 @@ jobs:
           cmp "$evidence_root/results/diag_r2/assessment.json" /tmp/rtpa-installed-r2-assessment/assessment.json
           cmp "$evidence_root/results/diag_r2/cal_fixed_mask.md" /tmp/rtpa-installed-r2-assessment/cal_fixed_mask.md
           cmp "$evidence_root/results/diag_r2/quality_details.md" /tmp/rtpa-installed-r2-assessment/quality_details.md
+          /tmp/rtpa-wheel-test/bin/python "$evidence_root/scripts/codec_feedback/verify.py" --root "$evidence_root" --out /tmp/rtpa-installed-feedback-verification.json
   codec-cpu:
     runs-on: ubuntu-latest
     timeout-minutes: 20
@@ -114,3 +119,4 @@ jobs:
           python -m unittest discover -s tests -p 'test_diag_r2*.py' -v
           python examples/diag_r2.py --profile R2_OFFSET --out /tmp/r2-offset-api.json
           python examples/diag_r2.py --profile R2_ZERO_INCLUSIVE --out /tmp/r2-zero-api.json
+          python -m unittest discover -s scripts/codec_feedback -p test_diagnostic.py -v
