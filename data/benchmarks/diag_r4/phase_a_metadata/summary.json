@@ -1,0 +1,85 @@
+{
+  "status": "COMPLETE",
+  "scope": "Nondeployable FP32-metadata counterfactuals; not equal-byte candidates; fixed-code and recomputed-code effects must not be called total metadata contributions",
+  "completed_cases": 18,
+  "native_control_failed_cases": [
+    "train_associative_recall_0_L0",
+    "train_associative_recall_1_L12",
+    "train_code_0_L12",
+    "train_code_1_L0",
+    "train_code_1_L12",
+    "train_natural_language_0_L12",
+    "train_natural_language_0_L22"
+  ],
+  "native_control_unique_case_denominator": 18,
+  "sample_sums": {
+    "LEGACY_P_PRE": {
+      "actual_physical_sse": 6.366626200496071,
+      "actual_physical_signed_mean": -0.0009094483150919227,
+      "actual_transformed_sse": 6.353239193415887,
+      "actual_transformed_signed_mean": -0.0005317549545095996,
+      "fixed_code_FP32_physical_sse": 6.3466697553068325,
+      "recomputed_code_FP32_physical_sse": 6.3466697553068325,
+      "fixed_code_FP32_transformed_sse": 6.333282481362095,
+      "recomputed_code_FP32_transformed_sse": 6.333282481362095,
+      "recomputed_codes_changed": 0.0,
+      "constant_groups": 43008.0,
+      "zero_groups": 43008.0,
+      "saturated_values": 47.0,
+      "code_zero_occupancy": 37756277.0,
+      "code_255_occupancy": 36342725.0,
+      "scale_changed_groups": 31688657.0,
+      "metadata_changed_groups": 21185867.0,
+      "code_changed_values": 764230872.0,
+      "metadata_cast_signed_sum": 0.0,
+      "metadata_cast_absolute_sum": 0.0,
+      "scale_cast_signed_sum": -0.00010614613859516453,
+      "scale_cast_absolute_sum": 0.9142275731467144,
+      "R2_offset_induced_scale_sum": 0.0,
+      "underflow_floor_groups": 12254.0,
+      "no_quantization_transform_roundtrip_sse": 1.0132092639446664e-08,
+      "physical_minus_projected_grid_residual_sse": 1.0319654503328535e-08,
+      "reference_physical_energy": 744313.8428999543
+    },
+    "R2_OFFSET": {
+      "actual_physical_sse": 6.005021604092495,
+      "actual_physical_signed_mean": 0.008116631727844055,
+      "actual_transformed_sse": 5.991637735366298,
+      "actual_transformed_signed_mean": 0.012688143538364359,
+      "fixed_code_FP32_physical_sse": 6.244170424623723,
+      "recomputed_code_FP32_physical_sse": 5.959910903752069,
+      "fixed_code_FP32_transformed_sse": 6.230771273874596,
+      "recomputed_code_FP32_transformed_sse": 5.946524044003178,
+      "recomputed_codes_changed": 235281839.0,
+      "constant_groups": 43008.0,
+      "zero_groups": 43008.0,
+      "saturated_values": 0.0,
+      "code_zero_occupancy": 37646835.0,
+      "code_255_occupancy": 26090093.0,
+      "scale_changed_groups": 31703396.0,
+      "metadata_changed_groups": 33460556.0,
+      "code_changed_values": 763043734.0,
+      "metadata_cast_signed_sum": -168.6293444712923,
+      "metadata_cast_absolute_sum": 168.6293444712923,
+      "scale_cast_signed_sum": 1.828836921371483,
+      "scale_cast_absolute_sum": 1.828836921371483,
+      "R2_offset_induced_scale_sum": 0.6612915666447274,
+      "underflow_floor_groups": 24845.0,
+      "no_quantization_transform_roundtrip_sse": 1.0132092639446664e-08,
+      "physical_minus_projected_grid_residual_sse": 1.020848972653165e-08,
+      "reference_physical_energy": 744313.8428999543
+    }
+  },
+  "case_token_head_denominator": 73728,
+  "signed_means": {
+    "LEGACY_P_PRE": {
+      "actual_physical_signed_mean": -1.2335182225096608e-08,
+      "actual_transformed_signed_mean": -7.2123881633789e-09
+    },
+    "R2_OFFSET": {
+      "actual_physical_signed_mean": 1.1008886349614875e-07,
+      "actual_transformed_signed_mean": 1.7209396075255478e-07
+    }
+  },
+  "reduction": "All fields are explicitly sample sums; signed-mean fields additionally averaged over the common case/token/head denominator; SSE and count fields remain sums"
+}

@@ -1,5 +1,46 @@
 # Benchmarks
 
+Current R4 measurements: [quality, NLL and tail](../results/diag_r4/benchmark_tables.md),
+[fixed-work cost and memory](../results/diag_r4/cost_tables.md),
+[claim-to-evidence index](../results/diag_r4/claims.json), and
+[recorded execution accounting](../results/diag_r4/execution_accounting.json).
+The eight-document comparison supports coherent DIAG over promotion energy,
+but favors the simpler query-weighted score over coherent DIAG on every
+document. These are same-codec allocation contrasts, not a repaired-codec
+promotion or a new task benchmark.
+
+## Current fixed-codec attribution study
+
+Run `RTPA_DIAG_ATTRIBUTION_R4_20260912_V1` asks which information matters
+after separating storage arithmetic from mask fitting. Read the
+[attribution results and numerical boundaries](DIAG_ATTRIBUTION_R4.md) and
+[executable guide](QUICKSTART_R4.md).
+
+| Comparison | Input role and independent units | Scope |
+|---|---|---|
+| Legacy/R2 codec × legacy/R2 mask | Three reused synthetic DEV documents; nested 256/512/1,024-token prefixes | All 18 GDN layers, same model and reference backend |
+| Promotion energy / query weighting / independent-write response / coherent DIAG | Eight new source files, two per software project; 1,024 tokens each | Legacy P_PRE, high8 and 19,328 B/head for every mixed method |
+| Exact propagation / row chunks / adjoint probes | Synthetic fixtures and three head-level TRAIN fixtures | Offline frozen-response computation; not language-model quality |
+| DIAG / promotion energy / Native, plus an independent baseline repeat | Fixed previously consumed DEV input, prefix128 + decode32 | Planned eight paired blocks; NOT_RUN—both isolation prechecks stopped before model startup (0 forwards) |
+
+B4's whole mask and codec exactly equal the legacy quality anchor, so their
+registered alias does not create an extra physical trajectory. B1–B4 masks
+share TRAIN6 and source sampling. B1 includes the actual high-tier residual;
+B3 and B4 retain the same linear term and differ in cross-write quadratic
+accumulation. None changes the actual model transition to a diagonal matrix.
+
+The new source panel is Python code, comments, headers and docstrings from
+PyTorch, Transformers, SciPy and SymPy—not broad-domain prose, an answer task,
+or evidence that inputs were absent from pretraining. Its paired bootstrap
+resamples documents within project; shared-project dependence limits inference.
+The rejected rounding candidate, all failures and every incomplete cost
+attempt remain identified under the original frozen contracts.
+
+Only paths actually run supply measurements. Runtime optimization, metadata
+reallocation, additional DAMP adaptation and pretrained GDN2 are not inferred
+from the new allocation or CPU results. Earlier measurements follow with
+their original codecs, panels and run identities.
+
 ## R2 bounded-codec GDN revision
 
 Run `RTPA_DIAG_STABLE_R2_20260912_V1` is a separate numerical revision:

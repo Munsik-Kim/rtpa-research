@@ -1,0 +1,29 @@
+{
+  "status": "COMPLETE",
+  "model_forwards": 0,
+  "GPU_forwards": 0,
+  "completed_cases": [
+    "train_associative_recall_0_L0",
+    "train_associative_recall_0_L12",
+    "train_associative_recall_0_L22",
+    "train_associative_recall_1_L0",
+    "train_associative_recall_1_L12",
+    "train_associative_recall_1_L22",
+    "train_code_0_L0",
+    "train_code_0_L12",
+    "train_code_0_L22",
+    "train_code_1_L0",
+    "train_code_1_L12",
+    "train_code_1_L22",
+    "train_natural_language_0_L0",
+    "train_natural_language_0_L12",
+    "train_natural_language_0_L22",
+    "train_natural_language_1_L0",
+    "train_natural_language_1_L12",
+    "train_natural_language_1_L22"
+  ],
+  "failures": [],
+  "first_tensor_load_utc": "2026-09-12T10:43:33.415387+00:00",
+  "seconds": 211.05093893600133,
+  "sources_unchanged": true
+}

@@ -1,0 +1,1777 @@
+{
+  "utc": "2026-09-12T10:57:50.820330+00:00",
+  "fixtures": {
+    "data/evidence/fixtures/overflow.npz": "b4e08d28dc1f3ad79c1b7494bb79945d1a83b752ad7c5e478f4ea3b3f125a0d9",
+    "data/evidence/upgrade_failures/stored_nearest.npz": "0a8d654a9506896e7234b98ad4fd9afc7a8ae3bf1e32fca5e79bf92cdfddea57",
+    "data/evidence/upgrade_failures/fa_code_factorized.npz": "37a3a2070a21bd40f0459e9252f931d52e1a62459264cf1ae9fb393a6c463645"
+  },
+  "selected": {
+    "train_associative_recall_0_L0": {
+      "path": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_associative_recall_0_L0.npz",
+      "sha256": "af0c0e095f97984724fffa606cbea8d7e9f909671dfd2e79b46513e1a5accaae",
+      "selections": [
+        {
+          "id": "LEGACY_P_PRE_t31",
+          "profile": "LEGACY_P_PRE",
+          "token": 31,
+          "head": 8,
+          "low_row_position": 97,
+          "physical_key_row": 101,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 2.4300774281491022e-05
+        },
+        {
+          "id": "R2_OFFSET_t31",
+          "profile": "R2_OFFSET",
+          "token": 31,
+          "head": 8,
+          "low_row_position": 12,
+          "physical_key_row": 12,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 2.7544683707417944e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t127",
+          "profile": "LEGACY_P_PRE",
+          "token": 127,
+          "head": 8,
+          "low_row_position": 97,
+          "physical_key_row": 101,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 4.64324787077669e-05
+        },
+        {
+          "id": "R2_OFFSET_t127",
+          "profile": "R2_OFFSET",
+          "token": 127,
+          "head": 8,
+          "low_row_position": 97,
+          "physical_key_row": 101,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 3.8550074644427834e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t223",
+          "profile": "LEGACY_P_PRE",
+          "token": 223,
+          "head": 8,
+          "low_row_position": 97,
+          "physical_key_row": 101,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 6.595604646428277e-05
+        },
+        {
+          "id": "R2_OFFSET_t223",
+          "profile": "R2_OFFSET",
+          "token": 223,
+          "head": 8,
+          "low_row_position": 97,
+          "physical_key_row": 101,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 5.8288911272796895e-05
+        }
+      ]
+    },
+    "train_associative_recall_0_L12": {
+      "path": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_associative_recall_0_L12.npz",
+      "sha256": "3e6e7b602a4f29f40dc72ade0054d12563d879e61bdb4c2a32d9bdc510393369",
+      "selections": [
+        {
+          "id": "LEGACY_P_PRE_t31",
+          "profile": "LEGACY_P_PRE",
+          "token": 31,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 8.295718774977285e-05
+        },
+        {
+          "id": "R2_OFFSET_t31",
+          "profile": "R2_OFFSET",
+          "token": 31,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 9.464594728437372e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t127",
+          "profile": "LEGACY_P_PRE",
+          "token": 127,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 0.00013539904999975815
+        },
+        {
+          "id": "R2_OFFSET_t127",
+          "profile": "R2_OFFSET",
+          "token": 127,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 0.0001181696607837135
+        },
+        {
+          "id": "LEGACY_P_PRE_t223",
+          "profile": "LEGACY_P_PRE",
+          "token": 223,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 0.00015585650934403327
+        },
+        {
+          "id": "R2_OFFSET_t223",
+          "profile": "R2_OFFSET",
+          "token": 223,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 0.00013899609251740732
+        }
+      ]
+    },
+    "train_associative_recall_0_L22": {
+      "path": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_associative_recall_0_L22.npz",
+      "sha256": "7a8833f7083c37d8a5bff4e1a0b08e12f512cf53bdb33390e2b86d4e36c11029",
+      "selections": [
+        {
+          "id": "LEGACY_P_PRE_t31",
+          "profile": "LEGACY_P_PRE",
+          "token": 31,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 5.6110357192056304e-05
+        },
+        {
+          "id": "R2_OFFSET_t31",
+          "profile": "R2_OFFSET",
+          "token": 31,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 5.100000346002837e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t127",
+          "profile": "LEGACY_P_PRE",
+          "token": 127,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 5.493404407026723e-05
+        },
+        {
+          "id": "R2_OFFSET_t127",
+          "profile": "R2_OFFSET",
+          "token": 127,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 5.7946683629483904e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t223",
+          "profile": "LEGACY_P_PRE",
+          "token": 223,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 6.0773424083896766e-05
+        },
+        {
+          "id": "R2_OFFSET_t223",
+          "profile": "R2_OFFSET",
+          "token": 223,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 4.5504458865174404e-05
+        }
+      ]
+    },
+    "train_associative_recall_1_L0": {
+      "path": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_associative_recall_1_L0.npz",
+      "sha256": "c3f990e645f73a8518d497e176b5fed11c828fbc6ff85272b9c05d72edf6c7e5",
+      "selections": [
+        {
+          "id": "LEGACY_P_PRE_t31",
+          "profile": "LEGACY_P_PRE",
+          "token": 31,
+          "head": 8,
+          "low_row_position": 97,
+          "physical_key_row": 101,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 2.894860891221318e-05
+        },
+        {
+          "id": "R2_OFFSET_t31",
+          "profile": "R2_OFFSET",
+          "token": 31,
+          "head": 8,
+          "low_row_position": 30,
+          "physical_key_row": 31,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 2.383503768996209e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t127",
+          "profile": "LEGACY_P_PRE",
+          "token": 127,
+          "head": 8,
+          "low_row_position": 97,
+          "physical_key_row": 101,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 4.743270093289509e-05
+        },
+        {
+          "id": "R2_OFFSET_t127",
+          "profile": "R2_OFFSET",
+          "token": 127,
+          "head": 8,
+          "low_row_position": 97,
+          "physical_key_row": 101,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 4.858493574098899e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t223",
+          "profile": "LEGACY_P_PRE",
+          "token": 223,
+          "head": 8,
+          "low_row_position": 97,
+          "physical_key_row": 101,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 6.983091368784056e-05
+        },
+        {
+          "id": "R2_OFFSET_t223",
+          "profile": "R2_OFFSET",
+          "token": 223,
+          "head": 8,
+          "low_row_position": 97,
+          "physical_key_row": 101,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 8.737096089124485e-05
+        }
+      ]
+    },
+    "train_associative_recall_1_L12": {
+      "path": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_associative_recall_1_L12.npz",
+      "sha256": "f00962c1d5dad436d98c5d57b2aa577a05b1b393fc8d7d65ee6edf2ea750394a",
+      "selections": [
+        {
+          "id": "LEGACY_P_PRE_t31",
+          "profile": "LEGACY_P_PRE",
+          "token": 31,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 7.781134298838313e-05
+        },
+        {
+          "id": "R2_OFFSET_t31",
+          "profile": "R2_OFFSET",
+          "token": 31,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 8.069276458867925e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t127",
+          "profile": "LEGACY_P_PRE",
+          "token": 127,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 0.0001513740984028813
+        },
+        {
+          "id": "R2_OFFSET_t127",
+          "profile": "R2_OFFSET",
+          "token": 127,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 0.00011561806281723624
+        },
+        {
+          "id": "LEGACY_P_PRE_t223",
+          "profile": "LEGACY_P_PRE",
+          "token": 223,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 0.00013545067490913722
+        },
+        {
+          "id": "R2_OFFSET_t223",
+          "profile": "R2_OFFSET",
+          "token": 223,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 0.00013318190707138335
+        }
+      ]
+    },
+    "train_associative_recall_1_L22": {
+      "path": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_associative_recall_1_L22.npz",
+      "sha256": "a8335e87911c999c382045ea3391f6960718384a710b6966937401c1e52dfdd3",
+      "selections": [
+        {
+          "id": "LEGACY_P_PRE_t31",
+          "profile": "LEGACY_P_PRE",
+          "token": 31,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 4.108960827238053e-05
+        },
+        {
+          "id": "R2_OFFSET_t31",
+          "profile": "R2_OFFSET",
+          "token": 31,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 4.245174121616049e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t127",
+          "profile": "LEGACY_P_PRE",
+          "token": 127,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 3.531353115896149e-05
+        },
+        {
+          "id": "R2_OFFSET_t127",
+          "profile": "R2_OFFSET",
+          "token": 127,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 5.728525851169506e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t223",
+          "profile": "LEGACY_P_PRE",
+          "token": 223,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 4.895248268915677e-05
+        },
+        {
+          "id": "R2_OFFSET_t223",
+          "profile": "R2_OFFSET",
+          "token": 223,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 4.952347750147531e-05
+        }
+      ]
+    },
+    "train_code_0_L0": {
+      "path": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_code_0_L0.npz",
+      "sha256": "1df8038ffc3f45d0c4ca31c9a8e608cf5690fc7f9a19e7bf4ace3a8d21ddbc34",
+      "selections": [
+        {
+          "id": "LEGACY_P_PRE_t31",
+          "profile": "LEGACY_P_PRE",
+          "token": 31,
+          "head": 8,
+          "low_row_position": 97,
+          "physical_key_row": 101,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 2.8068267682701542e-05
+        },
+        {
+          "id": "R2_OFFSET_t31",
+          "profile": "R2_OFFSET",
+          "token": 31,
+          "head": 8,
+          "low_row_position": 97,
+          "physical_key_row": 101,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 3.0445222167066466e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t127",
+          "profile": "LEGACY_P_PRE",
+          "token": 127,
+          "head": 8,
+          "low_row_position": 115,
+          "physical_key_row": 123,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 4.536170086216762e-05
+        },
+        {
+          "id": "R2_OFFSET_t127",
+          "profile": "R2_OFFSET",
+          "token": 127,
+          "head": 8,
+          "low_row_position": 115,
+          "physical_key_row": 123,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 4.929643662912597e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t223",
+          "profile": "LEGACY_P_PRE",
+          "token": 223,
+          "head": 8,
+          "low_row_position": 97,
+          "physical_key_row": 101,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 5.833225123305641e-05
+        },
+        {
+          "id": "R2_OFFSET_t223",
+          "profile": "R2_OFFSET",
+          "token": 223,
+          "head": 8,
+          "low_row_position": 115,
+          "physical_key_row": 123,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 5.929823938305434e-05
+        }
+      ]
+    },
+    "train_code_0_L12": {
+      "path": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_code_0_L12.npz",
+      "sha256": "cff76c59dd35db514bc3c82a87bf9913afbea838d2542306f644ba090999eff0",
+      "selections": [
+        {
+          "id": "LEGACY_P_PRE_t31",
+          "profile": "LEGACY_P_PRE",
+          "token": 31,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 7.889766555832625e-05
+        },
+        {
+          "id": "R2_OFFSET_t31",
+          "profile": "R2_OFFSET",
+          "token": 31,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 8.644713872439668e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t127",
+          "profile": "LEGACY_P_PRE",
+          "token": 127,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 9.942954101234046e-05
+        },
+        {
+          "id": "R2_OFFSET_t127",
+          "profile": "R2_OFFSET",
+          "token": 127,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 9.768566403620094e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t223",
+          "profile": "LEGACY_P_PRE",
+          "token": 223,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 0.00011860866963418014
+        },
+        {
+          "id": "R2_OFFSET_t223",
+          "profile": "R2_OFFSET",
+          "token": 223,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 0.00010151772316965869
+        }
+      ]
+    },
+    "train_code_0_L22": {
+      "path": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_code_0_L22.npz",
+      "sha256": "a92893eeb7112c897ab1a0ae8f4da4dea6300114d2ac690080a248f9d9605a3e",
+      "selections": [
+        {
+          "id": "LEGACY_P_PRE_t31",
+          "profile": "LEGACY_P_PRE",
+          "token": 31,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 5.925297297117743e-05
+        },
+        {
+          "id": "R2_OFFSET_t31",
+          "profile": "R2_OFFSET",
+          "token": 31,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 6.170737158106404e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t127",
+          "profile": "LEGACY_P_PRE",
+          "token": 127,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 5.914292664598226e-05
+        },
+        {
+          "id": "R2_OFFSET_t127",
+          "profile": "R2_OFFSET",
+          "token": 127,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 4.887248819946907e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t223",
+          "profile": "LEGACY_P_PRE",
+          "token": 223,
+          "head": 13,
+          "low_row_position": 105,
+          "physical_key_row": 112,
+          "worst_value_group": 1,
+          "groups": [
+            0,
+            1,
+            2
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 3.171912922725448e-05
+        },
+        {
+          "id": "R2_OFFSET_t223",
+          "profile": "R2_OFFSET",
+          "token": 223,
+          "head": 13,
+          "low_row_position": 105,
+          "physical_key_row": 112,
+          "worst_value_group": 1,
+          "groups": [
+            0,
+            1,
+            2
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 3.281063388671664e-05
+        }
+      ]
+    },
+    "train_code_1_L0": {
+      "path": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_code_1_L0.npz",
+      "sha256": "b11bb40f73f17f8a2f5cb6fc96f1e676739a462ad46392cae1bca1fc755f5705",
+      "selections": [
+        {
+          "id": "LEGACY_P_PRE_t31",
+          "profile": "LEGACY_P_PRE",
+          "token": 31,
+          "head": 8,
+          "low_row_position": 97,
+          "physical_key_row": 101,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 3.3269329606525067e-05
+        },
+        {
+          "id": "R2_OFFSET_t31",
+          "profile": "R2_OFFSET",
+          "token": 31,
+          "head": 8,
+          "low_row_position": 97,
+          "physical_key_row": 101,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 3.046440857513988e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t127",
+          "profile": "LEGACY_P_PRE",
+          "token": 127,
+          "head": 8,
+          "low_row_position": 97,
+          "physical_key_row": 101,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 5.2481019763656045e-05
+        },
+        {
+          "id": "R2_OFFSET_t127",
+          "profile": "R2_OFFSET",
+          "token": 127,
+          "head": 8,
+          "low_row_position": 115,
+          "physical_key_row": 123,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 4.4636864713329394e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t223",
+          "profile": "LEGACY_P_PRE",
+          "token": 223,
+          "head": 8,
+          "low_row_position": 97,
+          "physical_key_row": 101,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 5.7718890309366166e-05
+        },
+        {
+          "id": "R2_OFFSET_t223",
+          "profile": "R2_OFFSET",
+          "token": 223,
+          "head": 8,
+          "low_row_position": 115,
+          "physical_key_row": 123,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 6.296884463707908e-05
+        }
+      ]
+    },
+    "train_code_1_L12": {
+      "path": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_code_1_L12.npz",
+      "sha256": "6cf052c62d1d537e18b6f4c0da74503efaf24e32bfd93b03107cce70472570f9",
+      "selections": [
+        {
+          "id": "LEGACY_P_PRE_t31",
+          "profile": "LEGACY_P_PRE",
+          "token": 31,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 8.920491416308718e-05
+        },
+        {
+          "id": "R2_OFFSET_t31",
+          "profile": "R2_OFFSET",
+          "token": 31,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 9.24121952185796e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t127",
+          "profile": "LEGACY_P_PRE",
+          "token": 127,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 9.24346591910863e-05
+        },
+        {
+          "id": "R2_OFFSET_t127",
+          "profile": "R2_OFFSET",
+          "token": 127,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 8.612677782465384e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t223",
+          "profile": "LEGACY_P_PRE",
+          "token": 223,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 0.00014841591395460367
+        },
+        {
+          "id": "R2_OFFSET_t223",
+          "profile": "R2_OFFSET",
+          "token": 223,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 0.0001458556439840213
+        }
+      ]
+    },
+    "train_code_1_L22": {
+      "path": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_code_1_L22.npz",
+      "sha256": "f99078a67b06c9d41d75f3625b5c09c548c4256b579e7434f98512a6a2866469",
+      "selections": [
+        {
+          "id": "LEGACY_P_PRE_t31",
+          "profile": "LEGACY_P_PRE",
+          "token": 31,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 6.0573178009145284e-05
+        },
+        {
+          "id": "R2_OFFSET_t31",
+          "profile": "R2_OFFSET",
+          "token": 31,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 5.4967684918337904e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t127",
+          "profile": "LEGACY_P_PRE",
+          "token": 127,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 5.1913260077435935e-05
+        },
+        {
+          "id": "R2_OFFSET_t127",
+          "profile": "R2_OFFSET",
+          "token": 127,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 5.4453125627095466e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t223",
+          "profile": "LEGACY_P_PRE",
+          "token": 223,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 3.605953956333565e-05
+        },
+        {
+          "id": "R2_OFFSET_t223",
+          "profile": "R2_OFFSET",
+          "token": 223,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 3.9494458885242466e-05
+        }
+      ]
+    },
+    "train_natural_language_0_L0": {
+      "path": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_natural_language_0_L0.npz",
+      "sha256": "ae047e4d8d2c1b36c943e7ba6b72c665d4203f024dc8f4a03e0b9af68b2df6fe",
+      "selections": [
+        {
+          "id": "LEGACY_P_PRE_t31",
+          "profile": "LEGACY_P_PRE",
+          "token": 31,
+          "head": 8,
+          "low_row_position": 30,
+          "physical_key_row": 31,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 3.369226911272005e-05
+        },
+        {
+          "id": "R2_OFFSET_t31",
+          "profile": "R2_OFFSET",
+          "token": 31,
+          "head": 8,
+          "low_row_position": 16,
+          "physical_key_row": 17,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 3.234810154718881e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t127",
+          "profile": "LEGACY_P_PRE",
+          "token": 127,
+          "head": 8,
+          "low_row_position": 92,
+          "physical_key_row": 95,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 7.62388234023248e-05
+        },
+        {
+          "id": "R2_OFFSET_t127",
+          "profile": "R2_OFFSET",
+          "token": 127,
+          "head": 8,
+          "low_row_position": 92,
+          "physical_key_row": 95,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 5.880218921153202e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t223",
+          "profile": "LEGACY_P_PRE",
+          "token": 223,
+          "head": 8,
+          "low_row_position": 92,
+          "physical_key_row": 95,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 6.397851642210572e-05
+        },
+        {
+          "id": "R2_OFFSET_t223",
+          "profile": "R2_OFFSET",
+          "token": 223,
+          "head": 8,
+          "low_row_position": 97,
+          "physical_key_row": 101,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 8.049792057225613e-05
+        }
+      ]
+    },
+    "train_natural_language_0_L12": {
+      "path": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_natural_language_0_L12.npz",
+      "sha256": "195a8596f1ff1afe47802dfa9e0ae93c982e285592b5f3c252f00e487e81ecf7",
+      "selections": [
+        {
+          "id": "LEGACY_P_PRE_t31",
+          "profile": "LEGACY_P_PRE",
+          "token": 31,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 7.33277913134894e-05
+        },
+        {
+          "id": "R2_OFFSET_t31",
+          "profile": "R2_OFFSET",
+          "token": 31,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 7.562292264405696e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t127",
+          "profile": "LEGACY_P_PRE",
+          "token": 127,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 0.00014085729671513189
+        },
+        {
+          "id": "R2_OFFSET_t127",
+          "profile": "R2_OFFSET",
+          "token": 127,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 0.00012874365849633728
+        },
+        {
+          "id": "LEGACY_P_PRE_t223",
+          "profile": "LEGACY_P_PRE",
+          "token": 223,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 0.0001737691385612934
+        },
+        {
+          "id": "R2_OFFSET_t223",
+          "profile": "R2_OFFSET",
+          "token": 223,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 0.00016503396409255625
+        }
+      ]
+    },
+    "train_natural_language_0_L22": {
+      "path": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_natural_language_0_L22.npz",
+      "sha256": "8355a9d74b9b7a60a50108ebaee4292d381110c1435ed2c334cc5c156addd5b9",
+      "selections": [
+        {
+          "id": "LEGACY_P_PRE_t31",
+          "profile": "LEGACY_P_PRE",
+          "token": 31,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 7.057197898178287e-05
+        },
+        {
+          "id": "R2_OFFSET_t31",
+          "profile": "R2_OFFSET",
+          "token": 31,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 5.107320827049977e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t127",
+          "profile": "LEGACY_P_PRE",
+          "token": 127,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 8.476301329475831e-05
+        },
+        {
+          "id": "R2_OFFSET_t127",
+          "profile": "R2_OFFSET",
+          "token": 127,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 9.67477343969802e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t223",
+          "profile": "LEGACY_P_PRE",
+          "token": 223,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 8.06130774926418e-05
+        },
+        {
+          "id": "R2_OFFSET_t223",
+          "profile": "R2_OFFSET",
+          "token": 223,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 5.572882390837572e-05
+        }
+      ]
+    },
+    "train_natural_language_1_L0": {
+      "path": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_natural_language_1_L0.npz",
+      "sha256": "0b4bda97c1619349ebb3fede48335e810b5943b84b7165c62660f80a16728f84",
+      "selections": [
+        {
+          "id": "LEGACY_P_PRE_t31",
+          "profile": "LEGACY_P_PRE",
+          "token": 31,
+          "head": 8,
+          "low_row_position": 30,
+          "physical_key_row": 31,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 3.080627632462418e-05
+        },
+        {
+          "id": "R2_OFFSET_t31",
+          "profile": "R2_OFFSET",
+          "token": 31,
+          "head": 8,
+          "low_row_position": 16,
+          "physical_key_row": 17,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 3.002747206058698e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t127",
+          "profile": "LEGACY_P_PRE",
+          "token": 127,
+          "head": 8,
+          "low_row_position": 92,
+          "physical_key_row": 95,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 7.354489681851706e-05
+        },
+        {
+          "id": "R2_OFFSET_t127",
+          "profile": "R2_OFFSET",
+          "token": 127,
+          "head": 8,
+          "low_row_position": 92,
+          "physical_key_row": 95,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 6.153825370355803e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t223",
+          "profile": "LEGACY_P_PRE",
+          "token": 223,
+          "head": 8,
+          "low_row_position": 92,
+          "physical_key_row": 95,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 7.423604080762647e-05
+        },
+        {
+          "id": "R2_OFFSET_t223",
+          "profile": "R2_OFFSET",
+          "token": 223,
+          "head": 8,
+          "low_row_position": 97,
+          "physical_key_row": 101,
+          "worst_value_group": 2,
+          "groups": [
+            1,
+            2,
+            3
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 8.072310696644047e-05
+        }
+      ]
+    },
+    "train_natural_language_1_L12": {
+      "path": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_natural_language_1_L12.npz",
+      "sha256": "9428efd14115c34337e2e9e48bd985ac2bf5a564ccee2260db92f1b9fa6faa3f",
+      "selections": [
+        {
+          "id": "LEGACY_P_PRE_t31",
+          "profile": "LEGACY_P_PRE",
+          "token": 31,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 0.00010977012101068478
+        },
+        {
+          "id": "R2_OFFSET_t31",
+          "profile": "R2_OFFSET",
+          "token": 31,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 8.11877684178015e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t127",
+          "profile": "LEGACY_P_PRE",
+          "token": 127,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 0.00015157011434929562
+        },
+        {
+          "id": "R2_OFFSET_t127",
+          "profile": "R2_OFFSET",
+          "token": 127,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 0.00015455226289305278
+        },
+        {
+          "id": "LEGACY_P_PRE_t223",
+          "profile": "LEGACY_P_PRE",
+          "token": 223,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 0.00019608916342122
+        },
+        {
+          "id": "R2_OFFSET_t223",
+          "profile": "R2_OFFSET",
+          "token": 223,
+          "head": 7,
+          "low_row_position": 77,
+          "physical_key_row": 83,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 0.00014439815932468225
+        }
+      ]
+    },
+    "train_natural_language_1_L22": {
+      "path": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_natural_language_1_L22.npz",
+      "sha256": "de5b1a94445ed7fb7986c57423be6c02395cac76f95e5ab71b8d8e70f45021cd",
+      "selections": [
+        {
+          "id": "LEGACY_P_PRE_t31",
+          "profile": "LEGACY_P_PRE",
+          "token": 31,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 5.006848740250152e-05
+        },
+        {
+          "id": "R2_OFFSET_t31",
+          "profile": "R2_OFFSET",
+          "token": 31,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 6.390471658681512e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t127",
+          "profile": "LEGACY_P_PRE",
+          "token": 127,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 8.784579949963156e-05
+        },
+        {
+          "id": "R2_OFFSET_t127",
+          "profile": "R2_OFFSET",
+          "token": 127,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 9.583121433884595e-05
+        },
+        {
+          "id": "LEGACY_P_PRE_t223",
+          "profile": "LEGACY_P_PRE",
+          "token": 223,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 7.346299085790646e-05
+        },
+        {
+          "id": "R2_OFFSET_t223",
+          "profile": "R2_OFFSET",
+          "token": 223,
+          "head": 10,
+          "low_row_position": 66,
+          "physical_key_row": 70,
+          "worst_value_group": 0,
+          "groups": [
+            0,
+            1
+          ],
+          "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+          "selection_sse": 7.00716155243189e-05
+        }
+      ]
+    }
+  },
+  "candidate_tensor_operations_started": false
+}

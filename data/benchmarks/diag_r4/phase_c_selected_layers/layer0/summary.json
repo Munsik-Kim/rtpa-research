@@ -1,0 +1,242 @@
+{
+  "scope": "Selected LEGACY_P_PRE GPU-generated FP32 codec/anchor and FP64 physical subtraction/response; TRAIN associative-recall0/layer0/head0 only; not full-training or deployment-mask evidence.",
+  "status": "PASS_EXACT_IDENTITIES",
+  "exact_checks": {
+    "NumPy_forward_Kdiag_vs_parent_Torch_F64": 2.1891728798993e-16,
+    "NumPy_forward_c_vs_parent_Torch_F64": 4.899101560262811e-16,
+    "NumPy_B4_vs_parent_Torch_F64": 2.2360087283363774e-16,
+    "NumPy_adjoint_c_vs_forward": 1.1431236973946546e-15,
+    "NumPy_B3_Gramian_vs_parent": 2.1963416303431888e-16,
+    "NumPy_B3_score_vs_parent": 2.2434880249984327e-16,
+    "row_chunk8_Kdiag": 0.0,
+    "row_chunk8_c": 0.0,
+    "row_chunk8_score_B4": 0.0,
+    "probe8_exact_shared_c": 1.6330338534209343e-15,
+    "probe16_exact_shared_c": 1.6330338534209343e-15,
+    "probe32_exact_shared_c": 1.6330338534209343e-15
+  },
+  "fixture_shape": [
+    256,
+    1,
+    128,
+    128
+  ],
+  "confidence_scope": "One predeclared probe seed on this fixed real trajectory; observed interval inclusion is a check, not empirical coverage-rate evidence. Conditional Gaussian intervals across supplied128rows and3stages; no FP64 rounding-error proof and no across-run95% claim unless family_heads was predeclared accordingly.",
+  "one_seed_all_rows_all_stages_interval_inclusion": true,
+  "exact_top8": [
+    3,
+    6,
+    10,
+    43,
+    45,
+    67,
+    105,
+    121
+  ],
+  "exact_mask_objectives": {
+    "diagonal_J": 1.548236467664475e-11,
+    "full_K_J": 1.536640234693547e-11
+  },
+  "B3_top8": [
+    3,
+    6,
+    10,
+    43,
+    45,
+    67,
+    105,
+    121
+  ],
+  "B3_mask_objectives": {
+    "diagonal_J": 1.548236467664475e-11,
+    "full_K_J": 1.536640234693547e-11
+  },
+  "probe_stages": [
+    {
+      "r": 8,
+      "Khat_relative_l2_error": 0.371943943924405,
+      "score_relative_l2_error": 0.3777908199490335,
+      "selected_row_ids": [
+        3,
+        10,
+        43,
+        45,
+        67,
+        94,
+        97,
+        121
+      ],
+      "selected_overlap_of8": 6,
+      "exact_mask": false,
+      "certified": false,
+      "interval_includes_exact_rows": 128,
+      "row_denominator": 128,
+      "unresolved_zero_count": 0,
+      "diagonal_J": 1.5818969473529664e-11,
+      "full_K_J": 1.5754989243491087e-11,
+      "diagonal_J_gap_vs_exact_mask": 3.366047968849157e-13,
+      "full_K_J_difference_vs_exact_mask": 3.885868965556166e-13
+    },
+    {
+      "r": 16,
+      "Khat_relative_l2_error": 0.7091292259392944,
+      "score_relative_l2_error": 0.7202765795586626,
+      "selected_row_ids": [
+        3,
+        10,
+        43,
+        45,
+        67,
+        97,
+        105,
+        121
+      ],
+      "selected_overlap_of8": 7,
+      "exact_mask": false,
+      "certified": false,
+      "interval_includes_exact_rows": 128,
+      "row_denominator": 128,
+      "unresolved_zero_count": 0,
+      "diagonal_J": 1.559893578008462e-11,
+      "full_K_J": 1.5585247417747633e-11,
+      "diagonal_J_gap_vs_exact_mask": 1.165711034398726e-13,
+      "full_K_J_difference_vs_exact_mask": 2.1884507081216228e-13
+    },
+    {
+      "r": 32,
+      "Khat_relative_l2_error": 0.2963357362763183,
+      "score_relative_l2_error": 0.30099406810286583,
+      "selected_row_ids": [
+        3,
+        10,
+        43,
+        45,
+        67,
+        97,
+        105,
+        121
+      ],
+      "selected_overlap_of8": 7,
+      "exact_mask": false,
+      "certified": false,
+      "interval_includes_exact_rows": 128,
+      "row_denominator": 128,
+      "unresolved_zero_count": 0,
+      "diagonal_J": 1.559893578008462e-11,
+      "full_K_J": 1.5585247417747633e-11,
+      "diagonal_J_gap_vs_exact_mask": 1.165711034398726e-13,
+      "full_K_J_difference_vs_exact_mask": 2.1884507081216228e-13
+    }
+  ],
+  "costs": [
+    {
+      "method": "adjoint_gramian",
+      "seconds": [
+        0.039787873000022955,
+        0.040396987002168316,
+        0.04193541599670425
+      ],
+      "median_seconds": 0.040396987002168316,
+      "input_bytes": 34867200,
+      "peak_RSS_before_compute_bytes": 171503616,
+      "peak_RSS_after_compute_bytes": 171503616,
+      "RSS_high_water_increase_bytes": 0,
+      "workspace_core_bytes": 264192,
+      "output_sha256": "2bb682ebc4b3570a4a3209b02fb7b8dfffca2f8893a4f0bc1991b1b4ccc604a1",
+      "minimum_gramian_diagonal_observed": 0.0
+    },
+    {
+      "method": "exact_full",
+      "seconds": [
+        1.114169733999006,
+        1.141312306997861,
+        1.1287444840017997
+      ],
+      "median_seconds": 1.1287444840017997,
+      "input_bytes": 34867200,
+      "peak_RSS_before_compute_bytes": 171487232,
+      "peak_RSS_after_compute_bytes": 221032448,
+      "RSS_high_water_increase_bytes": 49545216,
+      "workspace_core_bytes": 16779264,
+      "output_sha256": "c3b7770aec0fb7cafbf7e895daec77be9cd22af164d103ae0587c68ac9599034"
+    },
+    {
+      "method": "exact_chunk8",
+      "seconds": [
+        1.1684115969983395,
+        1.1143955170009576,
+        1.1049602850034717
+      ],
+      "median_seconds": 1.1143955170009576,
+      "input_bytes": 34867200,
+      "peak_RSS_before_compute_bytes": 171646976,
+      "peak_RSS_after_compute_bytes": 171646976,
+      "RSS_high_water_increase_bytes": 0,
+      "workspace_core_bytes": 1050624,
+      "output_sha256": "c3b7770aec0fb7cafbf7e895daec77be9cd22af164d103ae0587c68ac9599034"
+    },
+    {
+      "method": "probe8",
+      "seconds": [
+        0.10517785399861168,
+        0.10164962400085642,
+        0.1042920170002617
+      ],
+      "median_seconds": 0.1042920170002617,
+      "input_bytes": 34867200,
+      "peak_RSS_before_compute_bytes": 171397120,
+      "peak_RSS_after_compute_bytes": 171397120,
+      "RSS_high_water_increase_bytes": 0,
+      "workspace_core_bytes": 3154944,
+      "output_sha256": "f8f00427e723ff3e6b84819332a2d384ee10aa60a9a2022d5af555cdcb4bc326",
+      "per_row_head_stage_alpha": 4.340277777777778e-05,
+      "probability_scope": "Conditional Gaussian intervals; simultaneous across supplied heads/rows/stages; no numerical-roundoff proof"
+    },
+    {
+      "method": "probe16",
+      "seconds": [
+        0.1925843659992097,
+        0.1928024330009066,
+        0.19538197300062166
+      ],
+      "median_seconds": 0.1928024330009066,
+      "input_bytes": 34867200,
+      "peak_RSS_before_compute_bytes": 171315200,
+      "peak_RSS_after_compute_bytes": 171315200,
+      "RSS_high_water_increase_bytes": 0,
+      "workspace_core_bytes": 3163136,
+      "output_sha256": "d6fc60dece2dee2ccf72c983fb6d9d413d76e87eb1196495b53cacf4ab657529",
+      "per_row_head_stage_alpha": 4.340277777777778e-05,
+      "probability_scope": "Conditional Gaussian intervals; simultaneous across supplied heads/rows/stages; no numerical-roundoff proof"
+    },
+    {
+      "method": "probe32",
+      "seconds": [
+        0.3769611200004874,
+        0.371629633998964,
+        0.3810379560018191
+      ],
+      "median_seconds": 0.3769611200004874,
+      "input_bytes": 34867200,
+      "peak_RSS_before_compute_bytes": 171266048,
+      "peak_RSS_after_compute_bytes": 171266048,
+      "RSS_high_water_increase_bytes": 0,
+      "workspace_core_bytes": 3179520,
+      "output_sha256": "d667fc0423ebb6c94a6b3ead2bc61eb28755a272627e7b75209f2b04467e3101",
+      "per_row_head_stage_alpha": 4.3402777777777786e-05,
+      "probability_scope": "Conditional Gaussian intervals; simultaneous across supplied heads/rows/stages; no numerical-roundoff proof"
+    }
+  ],
+  "negative_Kdiag_count": 0,
+  "negative_independent_Kdiag_count": 0,
+  "structurally_zero_rows": 0,
+  "comparison_npz_sha256": "6ba329d7a8b71458b7d68cd3390bca8f927741ed8d1d3fd36e24f26159e8927d",
+  "claims_not_made": [
+    "No selected-codec result: this is the declared fixture only",
+    "No deployment/calibration mask selection",
+    "No empirical coverage estimate from one seed",
+    "No certified FP64 arithmetic-error bound",
+    "No cost extrapolation to all108 cases or model quality",
+    "No speed-only promotion"
+  ]
+}

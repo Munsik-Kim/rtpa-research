@@ -1,0 +1,107 @@
+{
+  "sources": {
+    "scripts/replay_diag_r4_local.py": "e357481c83ec0bd92bb1152c26d5edfd07ba48a0860312afb1ec22d5b5fd2373",
+    "src/rtpa_research/operators.py": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78",
+    "src/rtpa_research/codec.py": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069",
+    "src/rtpa_research/codec_r2.py": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2",
+    "src/rtpa_research/codec_r4_rne.py": "ac0f506bb9121dc16fd01a01a2d42e61c0f881468d32c4f3c5401fc23c90de36",
+    "src/rtpa_research/layout.py": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276",
+    "src/rtpa_research/diag_r2_benchmark.py": "48d5198da63a8ee1d0041ff6eee9c918313aadc878ef7f02ec51bfb8e54f55de",
+    "src/rtpa_research/io.py": "9bfdd227e7db2626abf39418a0973e443a801a4657a7626385f536f6ede7300f",
+    "src/rtpa_research/benchmark.py": "1a3d9efec4b9b712ae4728a4777429e451afe1ca0ef5e059d94b38baf0b64071"
+  },
+  "fit_freeze_sha256": "76be1f724af861f7dc943587d1f021ba8abac602d1a96004f68fb9d24e44a72b",
+  "selection_sha256": "1c28395cd8c461a6105eb3ed506fbc6733f7fb0079c8582c9f32de52e5bdcba8",
+  "policy_sha256": "f79767579e27368e9f1ad43f117dd962d618523ad4462a7dfc03bc66ac3bcb20",
+  "legacy_policy_sha256": "bd865a1a138ed25a98e8db5b5dabb26ff259307be3ba2f071a04ceb71faace68",
+  "config": {
+    "run_id": "RTPA_DIAG_ATTRIBUTION_R4_20260912_V1",
+    "phase": "B_TRAIN_FIXED_RESPONSE",
+    "codec": "LEGACY_P_PRE",
+    "codec_scope": "Known-overflow historical quality-reference only, not a repaired/default stable codec; no R2 quality repair selected",
+    "documents": [
+      "train_associative_recall_0",
+      "train_associative_recall_1",
+      "train_code_0",
+      "train_code_1",
+      "train_natural_language_0",
+      "train_natural_language_1"
+    ],
+    "layers": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "length": 256,
+    "scored_readouts": [
+      16,
+      256
+    ],
+    "source_writes": [
+      0,
+      256
+    ],
+    "source_weight": 1,
+    "anchor": "FP32 own-low recurrence on captured Native TRAIN q/k/v; not whole-model candidate-conditioned calibration",
+    "residual": "FP64 subtraction of actual decoded FP32 low/high states; high original-coordinate FP16",
+    "response_accumulation": "FP64; separately registered from historical FP32 source arithmetic; physical operator and c retained",
+    "B0": "sum ||eL||^2",
+    "B1": "sum (||eL||^2-||eH||^2), independently verified delta^2+2delta.eH",
+    "B2": "B1_total * q_square_sum_all_scored_TRAIN / number_scored_queries_all_TRAIN",
+    "B3": "independent write Gramian diagonal times delta energy, plus SAME 2c as B4",
+    "B4": "coherent K diagonal plus 2c",
+    "M": "B stacks physical injection across all write-time/state coordinates; rows have disjoint coordinate support; Mdiag=sum_t||delta_ti||^2; includes last unobserved write",
+    "high_rows": 8,
+    "tie_break": "descending finite score, ascending row index",
+    "negative_score": "retained, no clipping",
+    "relative_identity_tolerance": 1e-10,
+    "threads": 2,
+    "CPU_phase_cap_seconds": 6500,
+    "fixture_heads": [
+      0
+    ],
+    "fixture_layers": [
+      0,
+      12,
+      22
+    ],
+    "fixture_document": "train_associative_recall_0",
+    "failure": "Retain first failure; do not generate selected masks from incomplete TRAIN or changed frozen source",
+    "selection_receipt_sha256": "70ec2d78db1a79604889cf8a3c8b0dae75ab67cf03705f4b7cac6cffad454a58"
+  },
+  "layers": [
+    0,
+    12,
+    22
+  ],
+  "methods": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "LEGACY_DIAG"
+  ],
+  "scored_window": [
+    16,
+    256
+  ],
+  "dtype": "FP32 recurrence and codec; FP64 error/subtraction/reduction",
+  "operands": "captured native TRAIN; not candidate-conditioned whole-model replay",
+  "legacy_anchor_frozen_objective": "NOT_IDENTIFIABLE if selected codec differs",
+  "threads": 2
+}

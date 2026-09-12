@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "stage": "phase_b_fit_analysis",
+  "scientific_status": "PASS_INCLUDED_STATISTICS",
+  "curator_sha256": "c2fbaba51bb06f65ab4ccfac6ef55413cd6eb678f9e5e4af328f8ef831deb738",
+  "files": [
+    {
+      "path": "summary.json",
+      "sha256": "4742c85375c9ce9b455a70a77cd7e65efe19dde34b00e6fa8336693056730692",
+      "bytes": 418951,
+      "byte_identical": true,
+      "original_relative": "summary.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "source_dependency_bindings.json",
+      "sha256": "1a336bee38b6aa8ac863211d2ea3b43bb445ca72983efbee73d3dc26d5754909",
+      "bytes": 2033,
+      "byte_identical": false,
+      "role": "DERIVED_SOURCE_AND_DEPENDENCY_BINDINGS"
+    }
+  ],
+  "local_only": [],
+  "original_hash_links": [
+    {
+      "stage": "phase_b_fit_selected",
+      "path": "selection.json",
+      "sha256": "1c28395cd8c461a6105eb3ed506fbc6733f7fb0079c8582c9f32de52e5bdcba8",
+      "role": "ANALYSIS_SELECTED_FIT_INPUT"
+    },
+    {
+      "stage": "phase_b_fit_selected",
+      "path": "policy.npz",
+      "sha256": "f79767579e27368e9f1ad43f117dd962d618523ad4462a7dfc03bc66ac3bcb20",
+      "role": "ANALYSIS_SELECTED_FIT_INPUT"
+    },
+    {
+      "stage": "phase_b_fit_selected",
+      "path": "statistics.npz",
+      "sha256": "8a87ef7caab2f0fe082f9ac9b576ef297c7696279cad18646cdf5642a428a00b",
+      "role": "ANALYSIS_SELECTED_FIT_INPUT"
+    },
+    {
+      "stage": "phase_b_fit_selected",
+      "path": "freeze.json",
+      "sha256": "76be1f724af861f7dc943587d1f021ba8abac602d1a96004f68fb9d24e44a72b",
+      "role": "ANALYSIS_SELECTED_FIT_INPUT"
+    }
+  ],
+  "reproduction_levels": {
+    "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS": "Scalar/table aggregation only, where the public CPU verifier implements the corresponding reduction",
+    "INCLUDED_TENSOR_POINT_CHECKS": "Small selected fixtures support explicitly bounded arithmetic comparisons; they are not representative full trajectories",
+    "LOCAL_ONLY_REGENERATION": "Full model forwards and capture/response regeneration require hash-bound local inputs and sometimes local drivers; no blanket full-rerun promise"
+  },
+  "claim_boundary": "Curation establishes evidence identity, not new model quality, numerical success, or deployment promotion"
+}

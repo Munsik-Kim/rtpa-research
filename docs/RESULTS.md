@@ -1,9 +1,75 @@
 # Integrated results
 
 **Benchmark map:** [measured implementations and scope](BENCHMARKS.md).
-The R2 revision evaluates GDN allocation and its codec; earlier all-layer
-allocation, limited-layer code correction and synthetic GDN2 operators remain
-separate. Their independent panels and percentages are not combined.
+The current attribution study separates codec quality, mask-selection
+information, and offline calibration cost. Earlier all-layer allocation,
+limited-layer code correction and synthetic GDN2 operators remain separate.
+Their independent panels and percentages are not combined.
+
+## Current study: separate the codec from the allocation score
+
+Run `RTPA_DIAG_ATTRIBUTION_R4_20260912_V1` uses the fixed Qwen3.5-0.8B-Base
+revision, all 18 GDN layers and eight protected rows per head. The
+[attribution report](DIAG_ATTRIBUTION_R4.md) contains its distinct DEV, TRAIN,
+and new-panel evidence, including rejected candidates and failed controls.
+
+**OBSERVED — codec control.** A crossed codec × mask model diagnostic on
+three reused 1,024-token DEV documents completes 15,360 forwards. With either
+mask, R2_OFFSET has much larger long-context KL than legacy P_PRE. Holding
+the legacy mask fixed gives 0.337303 versus 0.000708070 nat/token; holding
+the R2 mask fixed gives 0.334464 versus 0.000673012. The R2 mask therefore
+does not explain the whole regression. These small nested DEV results do not
+replace the previous independent R2 panel below.
+
+**INTERPRETATION — a narrowed, unresolved mechanism.** R2's smaller isolated
+error and lower same-entry error correlation do not explain its larger
+recurrent distortion. Repeated selected-group probes expose small directed
+FP16 metadata changes, but not a complete causal account of model KL. A
+single preregistered round-to-nearest candidate passes bounded CPU/CUDA
+checks yet misses the DEV quality rules: its mean KL is 1.124827 times legacy.
+It is not promoted, and legacy retains its known metadata-overflow risk.
+
+**CALIBRATION.** Exact adjoint and row-chunked computations match the defined
+frozen response on tested fixtures. Small stochastic sketches sometimes match
+an exact mask, but none obtains the registered selection certificate. Their
+lower core cost does not establish equal-quality end-to-end calibration
+savings. The selected-layer wrapper's floating-point accounting failure is
+retained separately from the numerical child results.
+
+No repaired codec, new accuracy claim, pretrained GDN2 result, or general
+stability guarantee follows from these checks. The matched model-output and
+equal-work cost comparisons are distinct endpoints in the attribution report.
+
+### Fixed-codec allocation: which information helps?
+
+**OBSERVED.** The complete R4 TEST uses eight source documents, 1,024 tokens
+each, all 18 GDN layers and five physical paths (B4 is the registered legacy
+DIAG alias). All 40,960 model forwards completed without numerical failure.
+Each method's denominators are 8,064 KL and 8,056 next-token NLL observations.
+
+Coherent DIAG reduces Native-reference KL by **23.08%** relative to promotion
+energy (paired 95% interval 21.53–24.58%), with lower mean NLL. However, a
+simpler static query-weighted score has lower KL on **all eight documents**:
+B4's pooled KL is **14.96% higher** (adjusted secondary interval 12.23–18.01%
+higher). B4 improves KL by 5.67% against the independent-write response control,
+but its NLL difference is unresolved and its maximum token KL is worse than
+all three controls.
+
+**INTERPRETATION.** Output-sensitive selection adds value over promotion
+energy on this panel. The results do not establish that coherent DIAG is
+necessary over a strong simple query-weighted score. Cross-write coherence has
+a scoped KL effect against its registered ablation, not a universal accuracy
+benefit or a causal share of whole-model error.
+
+**LIMITATIONS.** Four shared software-project families, eight documents,
+teacher-forced output preservation, legacy codec's retained overflow limitation,
+and no new answer task. Do not combine this percentage with prior panels or
+treat low mean KL as a guarantee on individual token errors.
+
+The authoritative [quality/NLL/tail tables](../results/diag_r4/benchmark_tables.md)
+are regenerated from [included token observations](../data/benchmarks/diag_r4/phase_b_model/).
+[Fixed-work cost and memory](../results/diag_r4/cost_tables.md) have their own
+completion and uncertainty status.
 
 ## R2: bounded codec repair, adverse overall quality
 
@@ -136,7 +202,7 @@ new optimized timing result or an independent task success.
 
 **INTERPRETATION.** These observations motivate distinguishing error energy from output-response risk.
 
-**LIMITATION.** Linear-algebraic anisotropy conditions are not the same as causal GDN evidence. The matching injection M is absent, leaving energy-normalized risk unidentified.
+**LIMITATION.** Linear-algebraic anisotropy conditions are not the same as causal GDN evidence. The matching injection M is absent for these historical cases, leaving their energy-normalized risk unidentified. The current study defines a new, restricted physical-injection M for its own TRAIN sources; it does not reconstruct the missing historical matrix.
 
 ## 2. KL and NLL under the same codec and payload
 

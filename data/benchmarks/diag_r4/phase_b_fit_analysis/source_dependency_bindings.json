@@ -1,0 +1,54 @@
+{
+  "scope": "Frozen source expectations versus current public candidates; mismatches are not silently repaired",
+  "sources": [
+    {
+      "receipt": "summary.json",
+      "field": "/sources",
+      "source_id": "selection.json",
+      "expected_sha256": "1c28395cd8c461a6105eb3ed506fbc6733f7fb0079c8582c9f32de52e5bdcba8",
+      "candidate_public_path": "selection.json",
+      "current_public_sha256": null,
+      "status": "NOT_BOUND_TO_PUBLIC_FILE"
+    },
+    {
+      "receipt": "summary.json",
+      "field": "/sources",
+      "source_id": "policy.npz",
+      "expected_sha256": "f79767579e27368e9f1ad43f117dd962d618523ad4462a7dfc03bc66ac3bcb20",
+      "candidate_public_path": "policy.npz",
+      "current_public_sha256": null,
+      "status": "NOT_BOUND_TO_PUBLIC_FILE"
+    },
+    {
+      "receipt": "summary.json",
+      "field": "/sources",
+      "source_id": "statistics.npz",
+      "expected_sha256": "8a87ef7caab2f0fe082f9ac9b576ef297c7696279cad18646cdf5642a428a00b",
+      "candidate_public_path": "statistics.npz",
+      "current_public_sha256": null,
+      "status": "NOT_BOUND_TO_PUBLIC_FILE"
+    },
+    {
+      "receipt": "summary.json",
+      "field": "/sources",
+      "source_id": "freeze.json",
+      "expected_sha256": "76be1f724af861f7dc943587d1f021ba8abac602d1a96004f68fb9d24e44a72b",
+      "candidate_public_path": "freeze.json",
+      "current_public_sha256": null,
+      "status": "NOT_BOUND_TO_PUBLIC_FILE"
+    }
+  ],
+  "recorded_environments": [],
+  "external_capture_bindings": [],
+  "dependency_wiring": {
+    "pyproject.toml": {
+      "sha256": "70a71f91ae812d1563a379d1380a5e0c91efda493642d15e449cba6ee7dfa796",
+      "mentions_scipy": true
+    },
+    ".github/workflows/cpu-evidence.yml": {
+      "sha256": "a9d453cb829198afb172f0ad630aa8e25e69b75e39896a0c8a263620572f9156",
+      "mentions_scipy": true
+    }
+  },
+  "dependency_boundary": "Scalar aggregation and curation use NumPy/stdlib; adjoint interval tests additionally require SciPy. No dependency was installed or upgraded by curation."
+}

@@ -1,0 +1,7 @@
+{
+  "utc": "2026-09-12T10:27:31.931231+00:00",
+  "status": "FROZEN_BEFORE_REPEATED_SEED_RUN",
+  "initial_freeze_sha256": "358e45f6a36694ed974a8c8a7cec3f2195604c9d986adc8e4a3d99a9ef4822e2",
+  "driver_sha256": "c38b11b6097c42e54d7ece41582196f427ad8e2b31de1ccb8deaea974ff9bcf1",
+  "original_config_unchanged": true
+}

@@ -1,0 +1,55 @@
+{
+  "run_id": "RTPA_DIAG_ATTRIBUTION_R4_20260912_V1",
+  "phase": "A_MODEL_SINGLE_RNE_INTERVENTION",
+  "model_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "prefixes": [
+    256,
+    512,
+    1024
+  ],
+  "methods": {
+    "NATIVE": {
+      "codec": "NATIVE"
+    },
+    "RNE_LEGACY_MASK": {
+      "codec": "R4_OFFSET_RNE_V1",
+      "path": "data/benchmarks/gdn/policy.npz",
+      "sha256": "bd865a1a138ed25a98e8db5b5dabb26ff259307be3ba2f071a04ceb71faace68",
+      "name": "DIAG8"
+    }
+  },
+  "selection_rules": {
+    "candidate": "R4_OFFSET_RNE_V1",
+    "question": "Exploratory paired metadata-rounding intervention motivated by selected-group physical H32 round-trip amplification; not isolation of offset versus scale or proof of the full-model cause",
+    "frozen_before_candidate_DEV": true,
+    "changes": "Only directed offset floor and scale ceil become FP16 round-to-nearest-even; same H32, guards, high rows, UINT8 clamp, decoder and persistent bytes",
+    "mask": "fixed original legacy DIAG8 on all18GDN layers; no candidate mask fitting before selection",
+    "DEV_documents": [
+      "test_natural_language_0",
+      "test_code_0",
+      "test_associative_recall_0"
+    ],
+    "length": 1024,
+    "numerical_failures_max": 0,
+    "known_finite_overflow_fixtures_must_pass": true,
+    "pooled_KL_ratio_to_legacy_max": 1.05,
+    "mean_NLL_candidate_minus_legacy_max_nat": 0.005,
+    "every_document_KL_ratio_to_legacy_max": 1.1,
+    "undefined_denominator": "UNRESOLVED, no epsilon",
+    "Native_repeat_NLL_absolute_tolerance": 1e-12,
+    "secondary_reports": [
+      "clamp counts",
+      "local physical SSE",
+      "repeat drift",
+      "metadata changes",
+      "nested prefixes"
+    ],
+    "selection": "Only if every numerical and DEV criterion is met may this codec be selected for PhaseB; otherwise retain legacy quality-reference, no new stable default",
+    "additional_candidates": 0,
+    "no_result_based_threshold_changes": true
+  },
+  "selection_rules_sha256": "9bbc24087356c8922395bf0e42dd533f73c04e580338138cd802000bc69507fd",
+  "reference_A_freeze_sha256": "fb52ac69b68d9ca96f338e921d8cdf965b0e8a3366b37f37ba2e0bdec8908f21",
+  "planned_forwards": 6144,
+  "scope": "Exploratory codec intervention on same retrospective DEV; paired-rounding change, not isolated scale or offset effect"
+}

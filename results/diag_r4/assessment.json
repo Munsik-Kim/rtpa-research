@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "run_id": "RTPA_DIAG_ATTRIBUTION_R4_20260912_V1",
+  "model_stage_status": "COMPLETE",
+  "source_summary_sha256": "071d903fe162caa201d780e1ce6cd8e5c98031cb2cc753cd6f4800224c13a4ad",
+  "primary_and_secondary": [
+    {
+      "candidate": "B4",
+      "baseline": "B1",
+      "quality_status": "KL_ADVANTAGE_SUPPORTED_IN_SCOPE",
+      "scope": "fixed panel output preservation",
+      "relative_KL_reduction": 0.2308385159207806,
+      "absolute_KL_difference": -0.0012768993157767292,
+      "delta_NLL": -0.0013254897134748894,
+      "bootstrap": {
+        "confidence": 0.95,
+        "draws": 2000,
+        "seed": 612404,
+        "unit": "paired document within domain",
+        "KL_difference_interval": [
+          -0.001436774020358811,
+          -0.0011170246111946473
+        ],
+        "relative_KL_reduction_interval": [
+          0.21533615797977113,
+          0.24582489751306102
+        ],
+        "delta_NLL_interval": [
+          -0.0023153198762545096,
+          -0.0003356595506952692
+        ]
+      },
+      "wins": 8,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "candidate": "B4",
+      "baseline": "B2",
+      "quality_status": "KL_DISADVANTAGE_SUPPORTED_IN_SCOPE",
+      "scope": "fixed panel output preservation",
+      "relative_KL_reduction": -0.14957305193700512,
+      "absolute_KL_difference": 0.0005535829301301677,
+      "delta_NLL": 0.0008361555937676374,
+      "bootstrap": {
+        "confidence": 0.975,
+        "draws": 2000,
+        "seed": 612404,
+        "unit": "paired document within domain",
+        "KL_difference_interval": [
+          0.0004607868321452615,
+          0.0006487510801654814
+        ],
+        "relative_KL_reduction_interval": [
+          -0.18007058900714693,
+          -0.12231821185803371
+        ],
+        "delta_NLL_interval": [
+          -0.00019785298298572804,
+          0.001870005932525981
+        ]
+      },
+      "wins": 0,
+      "ties": 0,
+      "losses": 8
+    },
+    {
+      "candidate": "B4",
+      "baseline": "B3",
+      "quality_status": "KL_ADVANTAGE_SUPPORTED_IN_SCOPE",
+      "scope": "fixed panel output preservation",
+      "relative_KL_reduction": 0.0566963932957835,
+      "absolute_KL_difference": -0.0002557230330934631,
+      "delta_NLL": 0.00031520707941844195,
+      "bootstrap": {
+        "confidence": 0.975,
+        "draws": 2000,
+        "seed": 612404,
+        "unit": "paired document within domain",
+        "KL_difference_interval": [
+          -0.00042516883599380724,
+          -7.239472475882927e-05
+        ],
+        "relative_KL_reduction_interval": [
+          0.015576455169397652,
+          0.09822652403198007
+        ],
+        "delta_NLL_interval": [
+          -0.0014563325113258225,
+          0.001752101206605683
+        ]
+      },
+      "wins": 5,
+      "ties": 0,
+      "losses": 3
+    }
+  ],
+  "physical_forwards": 40960,
+  "coverage": {
+    "NATIVE": {
+      "planned_rows": 8192,
+      "status_counts": {
+        "OK": 8192
+      },
+      "reason_counts": {},
+      "first_failures": [],
+      "unavailable_metrics_on_OK_rows": {}
+    },
+    "LEGACY_DIAG": {
+      "planned_rows": 8192,
+      "status_counts": {
+        "OK": 8192
+      },
+      "reason_counts": {},
+      "first_failures": [],
+      "unavailable_metrics_on_OK_rows": {}
+    },
+    "B1": {
+      "planned_rows": 8192,
+      "status_counts": {
+        "OK": 8192
+      },
+      "reason_counts": {},
+      "first_failures": [],
+      "unavailable_metrics_on_OK_rows": {}
+    },
+    "B2": {
+      "planned_rows": 8192,
+      "status_counts": {
+        "OK": 8192
+      },
+      "reason_counts": {},
+      "first_failures": [],
+      "unavailable_metrics_on_OK_rows": {}
+    },
+    "B3": {
+      "planned_rows": 8192,
+      "status_counts": {
+        "OK": 8192
+      },
+      "reason_counts": {},
+      "first_failures": [],
+      "unavailable_metrics_on_OK_rows": {}
+    }
+  },
+  "codec_candidate_status": "NOT_PROMOTED_DEV_CRITERIA_FAILED",
+  "selected_codec": "LEGACY_P_PRE",
+  "new_stable_default": false,
+  "accuracy": "NOT_EVALUATED",
+  "pretrained_GDN2": "NOT_RUN",
+  "runtime_cost": "SEPARATE_FIXED_WORK_COST_RECEIPTS",
+  "production_ready": false,
+  "frozen_decisions_unchanged": true,
+  "mechanical_checks_are_not_scientific_success": true
+}

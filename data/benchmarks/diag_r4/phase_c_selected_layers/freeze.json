@@ -1,0 +1,57 @@
+{
+  "utc": "2026-09-12T11:25:58.570399+00:00",
+  "config": {
+    "id": "R4_C_SELECTED_THREE_LAYERS_20260912_V1",
+    "document": "train_associative_recall_0",
+    "layers": [
+      0,
+      12,
+      22
+    ],
+    "head": 0,
+    "codec": "LEGACY_P_PRE",
+    "fixture_generation_device": "cuda",
+    "scope": "Three representative layers of one TRAIN document and head0 from the selected-codec GPU FP64 fit; not all training documents/heads and not deployment masks",
+    "family_heads": 3,
+    "family_alpha": 0.05,
+    "probe_seed": 612431,
+    "probe_stages": [
+      8,
+      16,
+      32
+    ],
+    "Bonferroni_denominator": 1152,
+    "per_row_head_stage_alpha": 4.340277777777778e-05,
+    "shared_seed_note": "The same full-time Gaussian seed is reused across layers; cross-layer independence is not assumed or needed by Bonferroni",
+    "CPU_threads": 2,
+    "total_wall_budget_seconds": 300,
+    "model_forwards": 0,
+    "GPU_forwards": 0,
+    "method": "Unchanged frozen run_pilot.py with exact full/chunk8/adjoint+Gramian and nested8/16/32 probes;1warmup+3timed repeats per method",
+    "no_selection": "No seed/method/chunk/tolerance optimization; no speed-only promotion and no empirical coverage-rate estimate from one shared seed"
+  },
+  "inputs": [
+    {
+      "layer": 0,
+      "fixture_sha256": "2b0eae25718ec46780b61c0dfbc2114fa9030bdb8f4db769650a4414cc13968c",
+      "case_stats_sha256": "9b90aa0ff9f88c6fc79ae9ab8dbd3e726b642503bdc71966cf8dc8e0d91de4d0",
+      "case_receipt_sha256": "b5e3330273ef9598c82473da1549cfeb2fe57b211bbb701550715bdea4280de9"
+    },
+    {
+      "layer": 12,
+      "fixture_sha256": "0f3d4993ff6c807b1fd784d09d45da566df42beb188b2092308204a57ef32484",
+      "case_stats_sha256": "100df6ac7d3814fe5c34e0859c27866afcaa9eaf981e929742fcc629c3e5b98c",
+      "case_receipt_sha256": "89a59fd00f1d2f73a6f3bf9e1cfa42116ed701ffef749b113367c247a4198951"
+    },
+    {
+      "layer": 22,
+      "fixture_sha256": "7c1e2a4afd460b5e7f6f47ccd7d098c1134d4679bed8dd1ea339cc578a299cde",
+      "case_stats_sha256": "4b7275d3d3a0e141d30d5f1fe772a340249cea4bd5762200f209996ee624f4f6",
+      "case_receipt_sha256": "15608b415d113b02205d30600a9e3fff4c0f912e22e7222bbf37a579b2679d15"
+    }
+  ],
+  "fit_freeze_sha256": "76be1f724af861f7dc943587d1f021ba8abac602d1a96004f68fb9d24e44a72b",
+  "driver_sha256": "cdbf2b0adb173b56ec5ef411a2438366a9f0ab0f73f9dd708809e30b42b6140f",
+  "orchestrator_sha256": "ad66377ed8f6531c33aa8d0fc7855f99346250191e3adcde292e494842c24a1f",
+  "state": "ALL_THREE_SCOPES_REGISTERED_BEFORE_ANY_SELECTED_FIXTURE_C_COMPUTATION"
+}

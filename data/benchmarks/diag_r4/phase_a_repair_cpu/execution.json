@@ -1,0 +1,17 @@
+{
+  "status": "PASS_CPU_GATE",
+  "utc": "2026-09-12T10:57:50.804217+00:00",
+  "freeze_sha256": "61fb843f0f180f912815bc8e42aa677dc0eb139b44ba445fdd10d92b432c4d8b",
+  "model_forwards": 0,
+  "GPU_forwards": 0,
+  "tests": {
+    "run": 13,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0
+  },
+  "seconds": 0.2904977809994307,
+  "fixtures_unchanged": true,
+  "sources_unchanged": true,
+  "DEV_status": "NOT_RUN_BY_CPU_AGENT; fixed parent-owned acceptance criteria remain necessary"
+}

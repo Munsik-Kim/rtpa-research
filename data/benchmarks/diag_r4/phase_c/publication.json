@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "stage": "phase_c",
+  "scientific_status": "COMPLETE_BOUNDED_CPU_PROTOTYPE",
+  "curator_sha256": "c2fbaba51bb06f65ab4ccfac6ef55413cd6eb678f9e5e4af328f8ef831deb738",
+  "files": [
+    {
+      "path": "coverage_0.npz",
+      "sha256": "050b3d5c56b88cd7023c0ee33d56e7bf56cccfbb72af11a0e87e0b72898ee1eb",
+      "bytes": 56773,
+      "byte_identical": true,
+      "original_relative": "coverage_0.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "coverage_1.npz",
+      "sha256": "9fc53ff4cafc26f66e2ced65d501e02ee0d667d76c65c503a730b4b68010b662",
+      "bytes": 58688,
+      "byte_identical": true,
+      "original_relative": "coverage_1.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "358e45f6a36694ed974a8c8a7cec3f2195604c9d986adc8e4a3d99a9ef4822e2",
+      "bytes": 2882,
+      "byte_identical": true,
+      "original_relative": "freeze.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "pilot_exact_chunked.json",
+      "sha256": "f80052087d9568ab000e0edf7dc2268ecb715fbbc57d4ca12be4e7aeb8f7fc3a",
+      "bytes": 1034,
+      "byte_identical": true,
+      "original_relative": "pilot_exact_chunked.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "pilot_exact_chunked.npz",
+      "sha256": "ad8bd0577039145f7072c851185b072e2471b86307332776ae38a6bce7ae6c0f",
+      "bytes": 6996,
+      "byte_identical": true,
+      "original_relative": "pilot_exact_chunked.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "pilot_exact_full.json",
+      "sha256": "07d7b937770cdfb6818b055f929d1795db1eca5747a12c58d53c6c6754bd7a5f",
+      "bytes": 1038,
+      "byte_identical": true,
+      "original_relative": "pilot_exact_full.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "pilot_exact_full.npz",
+      "sha256": "ad8bd0577039145f7072c851185b072e2471b86307332776ae38a6bce7ae6c0f",
+      "bytes": 6996,
+      "byte_identical": true,
+      "original_relative": "pilot_exact_full.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "pilot_output_subsample.json",
+      "sha256": "fcc191e3c4336a008a562b88fb36bd15b8a9c0111bc643009b428117c9a923f3",
+      "bytes": 1038,
+      "byte_identical": true,
+      "original_relative": "pilot_output_subsample.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "pilot_output_subsample.npz",
+      "sha256": "460707a922fabc81a3e4ceefa2bb7d231bb3d5d9da8efda276c99050696923d8",
+      "bytes": 7276,
+      "byte_identical": true,
+      "original_relative": "pilot_output_subsample.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "pilot_probe_16.json",
+      "sha256": "3dfe273ac3593c39b1529d48f28828ec3923d9ad61325d0898e7fe7ae4fa76e6",
+      "bytes": 1027,
+      "byte_identical": true,
+      "original_relative": "pilot_probe_16.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "pilot_probe_16.npz",
+      "sha256": "74faeae7f134d54fac6d7982c20917da1c45dbd6ae4f1ba481da35d1b2ff9f3b",
+      "bytes": 7218,
+      "byte_identical": true,
+      "original_relative": "pilot_probe_16.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "pilot_probe_32.json",
+      "sha256": "30550be0a648277a84ffeb3f44abf7d5a51cf6f85fa2d235a4911cd4dbaca626",
+      "bytes": 1015,
+      "byte_identical": true,
+      "original_relative": "pilot_probe_32.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "pilot_probe_32.npz",
+      "sha256": "edf86a1fafa984e981c143092f6884b45b3b7e27b80a648426a07caac4313c84",
+      "bytes": 7203,
+      "byte_identical": true,
+      "original_relative": "pilot_probe_32.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "pilot_probe_8.json",
+      "sha256": "387a016bfc290c2effbcdc5c9ca74ecf48fb95f85776a57055336e3cafa0abef",
+      "bytes": 1027,
+      "byte_identical": true,
+      "original_relative": "pilot_probe_8.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "pilot_probe_8.npz",
+      "sha256": "8a969d2859e94b70c07f2c6c96a0ce4f6f9c7da23a56bd9a9748731bba693a7b",
+      "bytes": 7219,
+      "byte_identical": true,
+      "original_relative": "pilot_probe_8.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "protocol.json",
+      "sha256": "6341f2691e7b82796e75df0c484a190aff6fb2dc9a2e3313781a72ce9fa9368c",
+      "bytes": 2037,
+      "byte_identical": true,
+      "original_relative": "protocol.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "prototype_execution_binding.json",
+      "sha256": "a01039b7e399a9f8a4a55edb25c00aa15e877ab7248281f7cb6506aa006fb8a3",
+      "bytes": 314,
+      "byte_identical": true,
+      "original_relative": "prototype_execution_binding.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "prototype_results.json",
+      "sha256": "884eeafb3e26dd9e592e39dfaf183e4ae8c63150f48b6bc249e5064796da6064",
+      "bytes": 18448,
+      "byte_identical": true,
+      "original_relative": "prototype_results.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "unit_tests.log",
+      "sha256": "fa51bf3db0f3ffe3c836cad9d15ecc2e155fd5f13aee5273b112d5d899879ba0",
+      "bytes": 1553,
+      "byte_identical": true,
+      "original_relative": "unit_tests.log",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "source_dependency_bindings.json",
+      "sha256": "63abc2144bb4dcb785cf1a1a576883789fc892e1912c33eadc4b6b4a18cbb983",
+      "bytes": 2273,
+      "byte_identical": false,
+      "role": "DERIVED_SOURCE_AND_DEPENDENCY_BINDINGS"
+    }
+  ],
+  "local_only": [
+    {
+      "path": "run_prototype.py",
+      "sha256": "c38b11b6097c42e54d7ece41582196f427ad8e2b31de1ccb8deaea974ff9bcf1",
+      "bytes": 14801,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    }
+  ],
+  "original_hash_links": [
+    {
+      "path": "freeze.json",
+      "sha256": "358e45f6a36694ed974a8c8a7cec3f2195604c9d986adc8e4a3d99a9ef4822e2",
+      "role": "INITIAL_FREEZE"
+    },
+    {
+      "path": "unit_tests.log",
+      "sha256": "fa51bf3db0f3ffe3c836cad9d15ecc2e155fd5f13aee5273b112d5d899879ba0",
+      "role": "UNIT_TEST_LOG"
+    },
+    {
+      "path": "coverage_0.npz",
+      "sha256": "050b3d5c56b88cd7023c0ee33d56e7bf56cccfbb72af11a0e87e0b72898ee1eb",
+      "role": "SYNTHETIC_ARRAYS"
+    },
+    {
+      "path": "coverage_1.npz",
+      "sha256": "9fc53ff4cafc26f66e2ced65d501e02ee0d667d76c65c503a730b4b68010b662",
+      "role": "SYNTHETIC_ARRAYS"
+    },
+    {
+      "path": "pilot_exact_full.npz",
+      "sha256": "ad8bd0577039145f7072c851185b072e2471b86307332776ae38a6bce7ae6c0f",
+      "role": "SYNTHETIC_ARRAYS"
+    },
+    {
+      "path": "pilot_exact_chunked.npz",
+      "sha256": "ad8bd0577039145f7072c851185b072e2471b86307332776ae38a6bce7ae6c0f",
+      "role": "SYNTHETIC_ARRAYS"
+    },
+    {
+      "path": "pilot_probe_8.npz",
+      "sha256": "8a969d2859e94b70c07f2c6c96a0ce4f6f9c7da23a56bd9a9748731bba693a7b",
+      "role": "SYNTHETIC_ARRAYS"
+    },
+    {
+      "path": "pilot_probe_16.npz",
+      "sha256": "74faeae7f134d54fac6d7982c20917da1c45dbd6ae4f1ba481da35d1b2ff9f3b",
+      "role": "SYNTHETIC_ARRAYS"
+    },
+    {
+      "path": "pilot_probe_32.npz",
+      "sha256": "edf86a1fafa984e981c143092f6884b45b3b7e27b80a648426a07caac4313c84",
+      "role": "SYNTHETIC_ARRAYS"
+    },
+    {
+      "path": "pilot_output_subsample.npz",
+      "sha256": "460707a922fabc81a3e4ceefa2bb7d231bb3d5d9da8efda276c99050696923d8",
+      "role": "SYNTHETIC_ARRAYS"
+    }
+  ],
+  "reproduction_levels": {
+    "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS": "Scalar/table aggregation only, where the public CPU verifier implements the corresponding reduction",
+    "INCLUDED_TENSOR_POINT_CHECKS": "Small selected fixtures support explicitly bounded arithmetic comparisons; they are not representative full trajectories",
+    "LOCAL_ONLY_REGENERATION": "Full model forwards and capture/response regeneration require hash-bound local inputs and sometimes local drivers; no blanket full-rerun promise"
+  },
+  "claim_boundary": "Curation establishes evidence identity, not new model quality, numerical success, or deployment promotion"
+}

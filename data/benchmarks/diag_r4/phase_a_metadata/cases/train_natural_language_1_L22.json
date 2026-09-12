@@ -1,0 +1,149 @@
+{
+  "case": "train_natural_language_1_L22",
+  "status": "COMPLETE",
+  "fields": [
+    "actual_physical_sse",
+    "actual_physical_signed_mean",
+    "actual_transformed_sse",
+    "actual_transformed_signed_mean",
+    "fixed_code_FP32_physical_sse",
+    "recomputed_code_FP32_physical_sse",
+    "fixed_code_FP32_transformed_sse",
+    "recomputed_code_FP32_transformed_sse",
+    "recomputed_codes_changed",
+    "constant_groups",
+    "zero_groups",
+    "saturated_values",
+    "code_zero_occupancy",
+    "code_255_occupancy",
+    "scale_changed_groups",
+    "metadata_changed_groups",
+    "code_changed_values",
+    "metadata_cast_signed_sum",
+    "metadata_cast_absolute_sum",
+    "scale_cast_signed_sum",
+    "scale_cast_absolute_sum",
+    "R2_offset_induced_scale_sum",
+    "underflow_floor_groups",
+    "no_quantization_transform_roundtrip_sse",
+    "physical_minus_projected_grid_residual_sse",
+    "reference_physical_energy"
+  ],
+  "profiles": [
+    "LEGACY_P_PRE",
+    "R2_OFFSET"
+  ],
+  "native_control": {
+    "nL2": 2.8806238715523973e-05,
+    "numerator_sse": 3.2390973436540375e-09,
+    "denominator_sse": 3.9034703891603213,
+    "tolerance": 0.0001,
+    "pass": true
+  },
+  "observations": {
+    "path": "cases/train_natural_language_1_L22.npz",
+    "sha256": "fa91ef4f40f8289410c21faa3baabf5f2e406f42907815084848cb247308a966"
+  },
+  "inspections": {
+    "path": "inspections/train_natural_language_1_L22.npz",
+    "sha256": "de5b1a94445ed7fb7986c57423be6c02395cac76f95e5ab71b8d8e70f45021cd",
+    "selections": [
+      {
+        "id": "LEGACY_P_PRE_t31",
+        "profile": "LEGACY_P_PRE",
+        "token": 31,
+        "head": 10,
+        "low_row_position": 66,
+        "physical_key_row": 70,
+        "worst_value_group": 0,
+        "groups": [
+          0,
+          1
+        ],
+        "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+        "selection_sse": 5.006848740250152e-05
+      },
+      {
+        "id": "R2_OFFSET_t31",
+        "profile": "R2_OFFSET",
+        "token": 31,
+        "head": 10,
+        "low_row_position": 66,
+        "physical_key_row": 70,
+        "worst_value_group": 0,
+        "groups": [
+          0,
+          1
+        ],
+        "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+        "selection_sse": 6.390471658681512e-05
+      },
+      {
+        "id": "LEGACY_P_PRE_t127",
+        "profile": "LEGACY_P_PRE",
+        "token": 127,
+        "head": 10,
+        "low_row_position": 66,
+        "physical_key_row": 70,
+        "worst_value_group": 0,
+        "groups": [
+          0,
+          1
+        ],
+        "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+        "selection_sse": 8.784579949963156e-05
+      },
+      {
+        "id": "R2_OFFSET_t127",
+        "profile": "R2_OFFSET",
+        "token": 127,
+        "head": 10,
+        "low_row_position": 66,
+        "physical_key_row": 70,
+        "worst_value_group": 0,
+        "groups": [
+          0,
+          1
+        ],
+        "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+        "selection_sse": 9.583121433884595e-05
+      },
+      {
+        "id": "LEGACY_P_PRE_t223",
+        "profile": "LEGACY_P_PRE",
+        "token": 223,
+        "head": 10,
+        "low_row_position": 66,
+        "physical_key_row": 70,
+        "worst_value_group": 0,
+        "groups": [
+          0,
+          1
+        ],
+        "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+        "selection_sse": 7.346299085790646e-05
+      },
+      {
+        "id": "R2_OFFSET_t223",
+        "profile": "R2_OFFSET",
+        "token": 223,
+        "head": 10,
+        "low_row_position": 66,
+        "physical_key_row": 70,
+        "worst_value_group": 0,
+        "groups": [
+          0,
+          1
+        ],
+        "selection_metric": "maximum actual physical low-group SSE at this registered snapshot",
+        "selection_sse": 7.00716155243189e-05
+      }
+    ]
+  },
+  "seconds": 12.625971740999375,
+  "first_write_metadata_change_counts": "zero because no preceding payload exists; 255 comparisons follow",
+  "metadata_cast_units": {
+    "LEGACY_P_PRE": "dimensionless zero point",
+    "R2_OFFSET": "physical transformed value"
+  }
+}

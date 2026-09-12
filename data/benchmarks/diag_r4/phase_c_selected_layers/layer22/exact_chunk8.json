@@ -1,0 +1,15 @@
+{
+  "method": "exact_chunk8",
+  "seconds": [
+    1.093068697999115,
+    1.0972316799998225,
+    1.0862566600007995
+  ],
+  "median_seconds": 1.093068697999115,
+  "input_bytes": 34867200,
+  "peak_RSS_before_compute_bytes": 171175936,
+  "peak_RSS_after_compute_bytes": 171175936,
+  "RSS_high_water_increase_bytes": 0,
+  "workspace_core_bytes": 1050624,
+  "output_sha256": "9d5f61601fe299e8a80dc1f50f32bf5b8f7c682b12fa20dcf0ed1af857193dea"
+}

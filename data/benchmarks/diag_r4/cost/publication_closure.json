@@ -1,0 +1,33 @@
+{
+  "schema": "R4_COST_PUBLICATION_CLOSURE_V1",
+  "status": "CLOSED",
+  "UTC": "2026-09-12T12:57:28.662050+00:00",
+  "operator_asserted_cost_ended": true,
+  "closure_builder_sha256": "4ea632443efd3fd2655c7fb23bde6bb67e6fd0a017560deef5c286c6793fe58b",
+  "model_forwards": 0,
+  "GPU_forwards": 0,
+  "artifacts": {
+    "analysis/summary.json": "8e3b938d40d6c4dc00dcb4fdb004da666fdbccb10ca9e49470badbccd3d97b12",
+    "analysis_contract.json": "376e2c6c65f29b11f9cc0d76984fd9f4c42aa0a7fc1810de3d12fa2344a120be",
+    "analysis_native_storage_diagnostic.json": "956a3cd88b6caad6fbf1f708f64e360fff21f6f2ed525f761ba3a3d7f782d43b",
+    "analysis_source_before_wiring/analysis_contract.json": "376e2c6c65f29b11f9cc0d76984fd9f4c42aa0a7fc1810de3d12fa2344a120be",
+    "analysis_source_before_wiring/analyze_diag_r4_cost.py": "8d12b1d6d36641e8567bf9c6e5517d62a1e93ce0cb770868fc4964a1f722c271",
+    "analysis_source_before_wiring/test_diag_r4_cost_analysis.py": "c83649dcb0ead81824186d06cbc871638291d160baa25918b528256b421c4201",
+    "analysis_wiring_preflight.json": "a9ccee27082d9763d703c063173dc796148337fc56ded543394e1672bc7780c4",
+    "analysis_wiring_revision.json": "d06caf8073abadc72796dba85fd6a1dc5abe02a7b6280b9e3cb899fc17a1c4b6",
+    "bootstrap_draws.npy": "96652acffc15d60bb71171eb531134c2770bbfd36c824ee64d798358a6e75e5e",
+    "cost_wiring_revision.json": "6a806f0ec2e914f64494738345ef3e4c1043282239153d1388cef019fc15085a",
+    "diagnose_native_storage.py": "496aadc253faf427f10e041ca898f09fdc93deb2c568c679f0376232f2da2e58",
+    "freeze.json": "88ab9252a4c189c10de16763dbc4ba270d4307fbb18217759a9f3594edb7cd73",
+    "omitted_phases.json": "fcadcb27a6526ffa1185eeed5ff038934adb7dfa221f7e372b4abbbc9ccf421e",
+    "source_before_wiring/diag_r4_cost.py": "c0996e7da3b3b6484d30184af7a802d039d359c5ccdb70a05d5e7fe968eddf1f",
+    "timing_attempts/attempt_1.json": "dd2a0bd979880913bb12c125122ee4e25d4b2dc056b6de33d11880e37953dceb",
+    "timing_attempts/attempt_2.json": "be5f38acaba4d0e84ddb4d94c3829341595aa02ec1791c47302cd8b937892268",
+    "wiring_preflight.json": "cfbdfd90eafc060ca8bcd6d946d17a4ee2b54d030272445ed41101237a097505"
+  },
+  "cost_freeze_sha256": "88ab9252a4c189c10de16763dbc4ba270d4307fbb18217759a9f3594edb7cd73",
+  "cost_wiring_revision_sha256": "6a806f0ec2e914f64494738345ef3e4c1043282239153d1388cef019fc15085a",
+  "analysis_contract_sha256": "376e2c6c65f29b11f9cc0d76984fd9f4c42aa0a7fc1810de3d12fa2344a120be",
+  "analysis_summary_sha256": "8e3b938d40d6c4dc00dcb4fdb004da666fdbccb10ca9e49470badbccd3d97b12",
+  "scientific_status": "COST_INCOMPLETE"
+}

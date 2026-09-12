@@ -1,0 +1,79 @@
+{
+  "status": "NOT_PROMOTED_DEV_CRITERIA_FAILED",
+  "selected_codec": "LEGACY_P_PRE",
+  "rows": [
+    {
+      "document": "test_natural_language_0",
+      "legacy_mean_KL": 0.0008417782629251925,
+      "candidate_mean_KL": 0.0010270138908104866,
+      "KL_ratio": 1.220052757410957,
+      "delta_NLL_candidate_minus_legacy": 0.0021019233459098306,
+      "native_repeat_NLL_max_abs": 0.0,
+      "complete": true
+    },
+    {
+      "document": "test_code_0",
+      "legacy_mean_KL": 0.0006007688985496642,
+      "candidate_mean_KL": 0.0007104744774975531,
+      "KL_ratio": 1.1826086190758756,
+      "delta_NLL_candidate_minus_legacy": 0.0010352119016215655,
+      "native_repeat_NLL_max_abs": 0.0,
+      "complete": true
+    },
+    {
+      "document": "test_associative_recall_0",
+      "legacy_mean_KL": 0.0006816625621583314,
+      "candidate_mean_KL": 0.0006518796414510318,
+      "KL_ratio": 0.9563084106995716,
+      "delta_NLL_candidate_minus_legacy": 0.000991416981555943,
+      "native_repeat_NLL_max_abs": 0.0,
+      "complete": true
+    }
+  ],
+  "pooled_KL_ratio": 1.124826792371689,
+  "mean_delta_NLL": 0.0013761840763624464,
+  "criteria": [
+    false,
+    false,
+    true,
+    false,
+    true
+  ],
+  "rules": {
+    "candidate": "R4_OFFSET_RNE_V1",
+    "question": "Exploratory paired metadata-rounding intervention motivated by selected-group physical H32 round-trip amplification; not isolation of offset versus scale or proof of the full-model cause",
+    "frozen_before_candidate_DEV": true,
+    "changes": "Only directed offset floor and scale ceil become FP16 round-to-nearest-even; same H32, guards, high rows, UINT8 clamp, decoder and persistent bytes",
+    "mask": "fixed original legacy DIAG8 on all18GDN layers; no candidate mask fitting before selection",
+    "DEV_documents": [
+      "test_natural_language_0",
+      "test_code_0",
+      "test_associative_recall_0"
+    ],
+    "length": 1024,
+    "numerical_failures_max": 0,
+    "known_finite_overflow_fixtures_must_pass": true,
+    "pooled_KL_ratio_to_legacy_max": 1.05,
+    "mean_NLL_candidate_minus_legacy_max_nat": 0.005,
+    "every_document_KL_ratio_to_legacy_max": 1.1,
+    "undefined_denominator": "UNRESOLVED, no epsilon",
+    "Native_repeat_NLL_absolute_tolerance": 1e-12,
+    "secondary_reports": [
+      "clamp counts",
+      "local physical SSE",
+      "repeat drift",
+      "metadata changes",
+      "nested prefixes"
+    ],
+    "selection": "Only if every numerical and DEV criterion is met may this codec be selected for PhaseB; otherwise retain legacy quality-reference, no new stable default",
+    "additional_candidates": 0,
+    "no_result_based_threshold_changes": true
+  },
+  "CPU_receipt_sha256": "130b66b9161fbafab3d99d2ef0b4c10c9b3aacf78f631e9b95cb6bb6475e3430",
+  "CUDA_receipt_sha256": "8cc8ca4a071b0f4f2254f55054f76910faeb929962a12fb4a47a599f297d30a6",
+  "baseline_freeze_sha256": "fb52ac69b68d9ca96f338e921d8cdf965b0e8a3366b37f37ba2e0bdec8908f21",
+  "candidate_freeze_sha256": "70853fef2be45eb0cdd1a890c91ccebe23c7ec68b5a8999624d5417878ed4b6e",
+  "selector_source_sha256": "ee359c4b116fc8e0020e1b210b5eb1ac14c50116d0a226254562e90d247181c8",
+  "production_ready": false,
+  "limitation": "Selected-group rounding mechanism and small retrospective DEV do not prove global stability or causal attribution"
+}

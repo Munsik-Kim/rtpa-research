@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "run_id": "RTPA_DIAG_ATTRIBUTION_R4_20260912_V1",
+  "original_budget_sha256": "34a88e63c44749f5d40a8807de10efe5e5cf10f94de4bcbc364da76cf35ccdd0",
+  "budget": {
+    "first_gpu_start_utc": "2026-09-12T10:31:21Z",
+    "GPU_active_seconds": 7085.430403858994,
+    "physical_forwards": 62464,
+    "attempts": [
+      {
+        "phase": "A_MODEL_DEV_CODEC_MASK_CROSS",
+        "status": "COMPLETE",
+        "seconds": 1715.249815930998,
+        "physical_forwards": 15360
+      },
+      {
+        "phase": "A_RNE_CUDA_BOUNDARY_PROBE",
+        "status": "COMPLETE",
+        "seconds": 0.5987605820009776,
+        "physical_forwards": 0
+      },
+      {
+        "phase": "A_MODEL_SINGLE_RNE_INTERVENTION",
+        "status": "COMPLETE",
+        "seconds": 542.315478499997,
+        "physical_forwards": 6144
+      },
+      {
+        "phase": "B_TRAIN_FIXED_RESPONSE",
+        "status": "PARTIAL",
+        "seconds": 5.323600949999673,
+        "physical_forwards": 0
+      },
+      {
+        "phase": "B_TRAIN_FIXED_RESPONSE",
+        "status": "COMPLETE",
+        "seconds": 271.7894225220007,
+        "physical_forwards": 0
+      },
+      {
+        "phase": "B_FROZEN_MODEL_SCORE_ATTRIBUTION",
+        "status": "COMPLETE",
+        "seconds": 4550.153325373998,
+        "physical_forwards": 40960
+      }
+    ],
+    "limit_seconds": 14400
+  },
+  "budget_canonical_SHA256": "fdb7f1e3f24468b10136d470d317cf4a611009e794c3b10e453d7efaa0596e5a",
+  "recorded_CPU_phases": [
+    {
+      "receipt": "phase_a_cpu/execution.json",
+      "receipt_original_sha256": "0afd5441ae40aacd97c1840a648ebdba8bf2c741a3713aa6d1a86e1c769ac4ad",
+      "status": "COMPLETE",
+      "seconds": 90.52867861100094,
+      "source_field": "active_seconds",
+      "model_forwards": 0,
+      "public_receipt": "data/benchmarks/diag_r4/phase_a_cpu/execution.json",
+      "availability": "INCLUDED"
+    },
+    {
+      "receipt": "phase_a_metadata/execution.json",
+      "receipt_original_sha256": "498d9c6d7af0a95fa32bb1d3208452569f3a6be40bb1f87deb16202789f36c3f",
+      "status": "COMPLETE",
+      "seconds": 211.05093893600133,
+      "source_field": "seconds",
+      "model_forwards": 0,
+      "public_receipt": "data/benchmarks/diag_r4/phase_a_metadata/execution.json",
+      "availability": "INCLUDED"
+    },
+    {
+      "receipt": "phase_a_repair_cpu/execution.json",
+      "receipt_original_sha256": "130b66b9161fbafab3d99d2ef0b4c10c9b3aacf78f631e9b95cb6bb6475e3430",
+      "status": "PASS_CPU_GATE",
+      "seconds": 0.2904977809994307,
+      "source_field": "seconds",
+      "model_forwards": 0,
+      "public_receipt": "data/benchmarks/diag_r4/phase_a_repair_cpu/execution.json",
+      "availability": "INCLUDED"
+    },
+    {
+      "receipt": "phase_b_fit_cpu/execution.json",
+      "receipt_original_sha256": "0f9429e52993667de72c33fdfa8adb317861d62ad70e11b2ce2be4310769c37a",
+      "status": "PILOT_OR_BUDGET_INCOMPLETE",
+      "seconds": 96.1187550249997,
+      "source_field": "active_seconds",
+      "model_forwards": 0,
+      "public_receipt": null,
+      "availability": "LOCAL_ONLY_RECEIPT"
+    },
+    {
+      "receipt": "phase_b_local_replay/execution.json",
+      "receipt_original_sha256": "7ff6b2d9988f4b3c85b5a28e07c13de103c8a3a54c40669abfbf59ece051df92",
+      "status": "COMPLETE",
+      "seconds": 143.64397242199993,
+      "source_field": "active_seconds",
+      "model_forwards": 0,
+      "public_receipt": "data/benchmarks/diag_r4/phase_b_local_replay/execution.json",
+      "availability": "INCLUDED"
+    },
+    {
+      "receipt": "phase_c/prototype_results.json",
+      "receipt_original_sha256": "884eeafb3e26dd9e592e39dfaf183e4ae8c63150f48b6bc249e5064796da6064",
+      "status": "COMPLETE_BOUNDED_CPU_PROTOTYPE",
+      "seconds": 7.284095304999937,
+      "source_field": "wall_seconds",
+      "model_forwards": 0,
+      "public_receipt": "data/benchmarks/diag_r4/phase_c/prototype_results.json",
+      "availability": "INCLUDED"
+    },
+    {
+      "receipt": "phase_c_real_pilot/execution.json",
+      "receipt_original_sha256": "ce63395f4c3a2158f325604d6aced4ba9c5bb6c9fb0414a933af4651f6771a7c",
+      "status": "COMPLETE",
+      "seconds": 25.06295078400217,
+      "source_field": "seconds",
+      "model_forwards": 0,
+      "public_receipt": "data/benchmarks/diag_r4/phase_c_real_pilot/execution.json",
+      "availability": "INCLUDED"
+    },
+    {
+      "receipt": "phase_c_selected_layers/execution.json",
+      "receipt_original_sha256": "58470a5c6317bb2e5aa9994fd03e088544db2cbf0fc3ae5d141569741d6d6b52",
+      "status": "FAILED",
+      "seconds": 49.52439265799694,
+      "source_field": "seconds",
+      "model_forwards": 0,
+      "public_receipt": "data/benchmarks/diag_r4/phase_c_selected_layers/execution.json",
+      "availability": "INCLUDED"
+    }
+  ],
+  "planning": {
+    "B_model_forecast": {
+      "costs": [
+        {
+          "run_freeze": "fb52ac69b68d9ca96f338e921d8cdf965b0e8a3366b37f37ba2e0bdec8908f21",
+          "receipt_sha256": "da791d51babbae5a49c52ada6c2716366e17b51b3b412548b70eaf6c71e9a380",
+          "seconds": 635.8763336930024,
+          "physical_forwards": 5120,
+          "seconds_per_forward": 0.12419459642441452
+        },
+        {
+          "run_freeze": "fb52ac69b68d9ca96f338e921d8cdf965b0e8a3366b37f37ba2e0bdec8908f21",
+          "receipt_sha256": "e2aa0b3ba4a2fd8742b3e34466181e8f2c38b01e0e111620eb759ca2fbbcb6a1",
+          "seconds": 505.16369662799843,
+          "physical_forwards": 5120,
+          "seconds_per_forward": 0.09866478449765595
+        },
+        {
+          "run_freeze": "fb52ac69b68d9ca96f338e921d8cdf965b0e8a3366b37f37ba2e0bdec8908f21",
+          "receipt_sha256": "430d08a88f86a97c57c8f3acec081f8c63b5d297938848dc7d293da3408b07e2",
+          "seconds": 568.6910567279992,
+          "physical_forwards": 5120,
+          "seconds_per_forward": 0.11107247201718735
+        },
+        {
+          "run_freeze": "70853fef2be45eb0cdd1a890c91ccebe23c7ec68b5a8999624d5417878ed4b6e",
+          "receipt_sha256": "6d6193e063977c9591d528e6511aba47164f3a2bf817c6254343abe8e122f796",
+          "seconds": 186.57367525500013,
+          "physical_forwards": 2048,
+          "seconds_per_forward": 0.09110042737060553
+        },
+        {
+          "run_freeze": "70853fef2be45eb0cdd1a890c91ccebe23c7ec68b5a8999624d5417878ed4b6e",
+          "receipt_sha256": "0c2e2932876b8f6002062abd1a531f369e734168da5788ca0e64522838a414a7",
+          "seconds": 174.42410897199807,
+          "physical_forwards": 2048,
+          "seconds_per_forward": 0.08516802195898343
+        },
+        {
+          "run_freeze": "70853fef2be45eb0cdd1a890c91ccebe23c7ec68b5a8999624d5417878ed4b6e",
+          "receipt_sha256": "81bf189124307504fa8e8eea2dc7a7bf8265ef04fabb163fbb0f94dd93bcb8d5",
+          "seconds": 179.31927753099808,
+          "physical_forwards": 2048,
+          "seconds_per_forward": 0.08755824098193266
+        }
+      ],
+      "remaining_GPU_seconds_before_TEST": 11864.722921515004,
+      "forecast_margin": 1.2,
+      "maximum_remaining_fraction": 0.7,
+      "candidates": [
+        {
+          "length": 1024,
+          "forwards": 40960,
+          "seconds": 6104.412803452823
+        },
+        {
+          "length": 768,
+          "forwards": 30720,
+          "seconds": 4578.3096025896175
+        }
+      ],
+      "selected": {
+        "length": 1024,
+        "forwards": 40960,
+        "seconds": 6104.412803452823
+      },
+      "role": "resource plan, not inference latency; includes diagnostic metric overhead and observed contention",
+      "design_sha256": "5b4b0d58bbb57a808773a34d2dddece73f741f3e6ce998d598bf3d52aa6ac8ad"
+    },
+    "source_sha256": "8db7caf05e679c4e2a3889b27acb27ab1c9ac1c07779614931bf06664688b6e9",
+    "successful_complete_cost_forwards": 7536,
+    "cost_components": {
+      "profile": 144,
+      "three_memory_runs": 1632,
+      "one_complete_timing_schedule": 5760
+    }
+  },
+  "derivation": "Original GPU budget parsed without field/value changes. CPU receipts projected to status/time/hash fields; original bytes remain distinct.",
+  "limitations": [
+    "GPU charges are own active-process wall time, not exclusive GPU utilization or serving latency.",
+    "Model startup, metric logging and guarded failures inside each phase are charged; zero-forward prechecks are separate receipts.",
+    "Recorded CPU worker phases are not the total authoring wall time. Short diagnostics, tests, aggregation, file hashing and packaging have separate logs or were not individually metered.",
+    "CPU phase wall values may overlap GPU work; they must not be added to GPU wall time as elapsed calendar time.",
+    "Partial TRAIN fit and selected-layer wrapper failures are retained. A zero model-forward count does not mean zero computation.",
+    "No continuous OS call trace independently confirms the driver counters."
+  ]
+}

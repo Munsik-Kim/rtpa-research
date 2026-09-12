@@ -1,0 +1,374 @@
+{
+  "status": "PASS_POSTRUN_SCALAR_AUDIT",
+  "utc": "2026-09-12T10:50:02.547810+00:00",
+  "scope": "Only frozen scalar observations and saved selected-group tensors; no trace/model/codec execution",
+  "script_sha256": "63825e1ebeb614118d00fb82ff292d98d6002a5ef3de2477dbea98a558c45b75",
+  "summary_sha256": "79694eaf559b15446a3efe594c910e8413d35751b02d35cea56e2ec7528ab1ed",
+  "bindings": [
+    {
+      "case": "train_associative_recall_0_L0",
+      "observations_sha256": "f03d872e014b3ae3a50f0cf6bef8757745a750c5ac591dbe81e3f5e0a208b3cc",
+      "receipt_sha256": "91bca12b8ddd381c61f6ba70cc5b7be3e5cebe4bdf0a85373a3a56f5b612d65c"
+    },
+    {
+      "case": "train_associative_recall_0_L12",
+      "observations_sha256": "85afa800fc40c59bbb2a0fe4ec2e0975322ac4f6c5cfd1a6051665a99d040cfd",
+      "receipt_sha256": "a556ca6102159af412be213414856f2e31de2e23e329639b5ea5afb6bc2a507a"
+    },
+    {
+      "case": "train_associative_recall_0_L22",
+      "observations_sha256": "eba57dc89d0c992bee65434763d72ca1137b7e6fc9c79fe97de05e0471f9ccda",
+      "receipt_sha256": "c509b9d28dd569a3b3cb77b5916167bd3926880a982232fbe2e10fd062d95676"
+    },
+    {
+      "case": "train_associative_recall_1_L0",
+      "observations_sha256": "7941738680d06c70d2f04bd6084f900fb9e2290856f2f6ad8c891d07a7acdf90",
+      "receipt_sha256": "0fdc43f46213b07b108439bdc73fbec0defd112cc667ade4bfe2d2458cc3b276"
+    },
+    {
+      "case": "train_associative_recall_1_L12",
+      "observations_sha256": "eb885d9ab8f306b1600bf67a41fd3a4c26304d7265be9b823b505a92c6f2c89a",
+      "receipt_sha256": "8986c91ecd9000ea9d6623d83c76739436d2869a8a465c45d323e3ac9a9ac217"
+    },
+    {
+      "case": "train_associative_recall_1_L22",
+      "observations_sha256": "901eca9a35189cedb4248e67e52306083a489e32f00671b5a179eb87ba0a0d41",
+      "receipt_sha256": "34551e4146fbe2b9c266e6c7154d79ce9c6914f3a2f561a05332dd7892a5a364"
+    },
+    {
+      "case": "train_code_0_L0",
+      "observations_sha256": "922d8fbbdbbc370465e9fd7df4514b7825b7bbaad64279dd38d99c14f732c716",
+      "receipt_sha256": "fcb20576ce139f7d2ad53e4022053f6d2d26b222f9dcbc569387b106daf18f83"
+    },
+    {
+      "case": "train_code_0_L12",
+      "observations_sha256": "701493a6050e61e8344047d0fb91574c10329cc1b50f4ae49d6f11b7a1bd346b",
+      "receipt_sha256": "2496b9455fc266fd99b0b9f38e74f5daaf87402759ac1fb5f3e71d591830e17f"
+    },
+    {
+      "case": "train_code_0_L22",
+      "observations_sha256": "477f795613259f0561bd200d20373a6db207a974f57ec1a2ee016259f394f189",
+      "receipt_sha256": "5e310f72ae3270a2ef28b4b3bd05f4ae38817799f4406b6983d9f466c08e56c3"
+    },
+    {
+      "case": "train_code_1_L0",
+      "observations_sha256": "0f73b3ab7a77dadf1331fdae5e9d61d188b0b22afa654398507e0b4c8aed9649",
+      "receipt_sha256": "c1ad886391715304545d2c7b2ce3c298fb28da6ce68c33662a5e08764ea61f73"
+    },
+    {
+      "case": "train_code_1_L12",
+      "observations_sha256": "94ffaeac44f7c7f1f6d1b09a87f16f91cd40075cb5c901d86e0c090a64fcdab2",
+      "receipt_sha256": "52bcb601437002ceb51c8e4efad1757f511450d7c9433866947a4d7d5d958fee"
+    },
+    {
+      "case": "train_code_1_L22",
+      "observations_sha256": "3fcc54d516b222c7de81a4ae8ea9fd92e76816e4c13327221a225a184c092c5f",
+      "receipt_sha256": "e2096b0cc794cb0c9c9a977bd3199d7212d5d4747830cd02342b5d6aaf31d0c5"
+    },
+    {
+      "case": "train_natural_language_0_L0",
+      "observations_sha256": "7a46fe9d1e06c2fc03045a8c3af266fd718d7a11826f50f265d465fdbd34a8fe",
+      "receipt_sha256": "b8f6d81674d41eaf190f8307f3583647df05e76e51e88d57321fd4fd34f08cef"
+    },
+    {
+      "case": "train_natural_language_0_L12",
+      "observations_sha256": "55974f7128aa35356c7c2988523401c51389e16193385225c4b25316a79c6acb",
+      "receipt_sha256": "48f740aa839b11c98938069da432c069b32e96ca9ebf8e875fa0da3597d4fecc"
+    },
+    {
+      "case": "train_natural_language_0_L22",
+      "observations_sha256": "94b5285a0ba9ac972a11ba3bb3e2e58f08d224cfb40299d1d7b6497499ca46e2",
+      "receipt_sha256": "6f2c7a5dd4951732189425ea0ecd29c4e97174c6c51e8350303f1794e20e937b"
+    },
+    {
+      "case": "train_natural_language_1_L0",
+      "observations_sha256": "cca38e691dc63da937759881926d57b0f921d676bb5129062ad50d86b51e0f95",
+      "receipt_sha256": "418af6e0e817b1e25c4cc40ed5d189602fd8a633471733076ad47f7eba174320"
+    },
+    {
+      "case": "train_natural_language_1_L12",
+      "observations_sha256": "c8e97f17938da7e8354a8e081a1df967dade4e18650757e796f01572ceff466e",
+      "receipt_sha256": "1e8deb947e98ebf8eae8d74577c6d26b494434bc90ef0fbdbdeb56bb4d8850c1"
+    },
+    {
+      "case": "train_natural_language_1_L22",
+      "observations_sha256": "fa91ef4f40f8289410c21faa3baabf5f2e406f42907815084848cb247308a966",
+      "receipt_sha256": "0b251c087aa5b196c6e9f38b1081d6b64211477cb7f9634acd5e3413a4ca4b96"
+    }
+  ],
+  "case_ratios": [
+    {
+      "case": "train_associative_recall_0_L0",
+      "R2_over_legacy_actual_physical_sse": 0.9410032748629754,
+      "actual_physical_sse": {
+        "LEGACY_P_PRE": 0.4603325990838305,
+        "R2_OFFSET": 0.4331744832640696
+      }
+    },
+    {
+      "case": "train_associative_recall_0_L12",
+      "R2_over_legacy_actual_physical_sse": 0.9434848124075909,
+      "actual_physical_sse": {
+        "LEGACY_P_PRE": 0.35131978852250456,
+        "R2_OFFSET": 0.3314648847692297
+      }
+    },
+    {
+      "case": "train_associative_recall_0_L22",
+      "R2_over_legacy_actual_physical_sse": 0.9400724905238355,
+      "actual_physical_sse": {
+        "LEGACY_P_PRE": 0.20342633964893858,
+        "R2_OFFSET": 0.19123550575192536
+      }
+    },
+    {
+      "case": "train_associative_recall_1_L0",
+      "R2_over_legacy_actual_physical_sse": 0.9480816982250133,
+      "actual_physical_sse": {
+        "LEGACY_P_PRE": 0.45382496826242746,
+        "R2_OFFSET": 0.430263146607155
+      }
+    },
+    {
+      "case": "train_associative_recall_1_L12",
+      "R2_over_legacy_actual_physical_sse": 0.9429598053974287,
+      "actual_physical_sse": {
+        "LEGACY_P_PRE": 0.3454238551032041,
+        "R2_OFFSET": 0.325720811187747
+      }
+    },
+    {
+      "case": "train_associative_recall_1_L22",
+      "R2_over_legacy_actual_physical_sse": 0.9470573562745904,
+      "actual_physical_sse": {
+        "LEGACY_P_PRE": 0.20269098806590533,
+        "R2_OFFSET": 0.19195999129838084
+      }
+    },
+    {
+      "case": "train_code_0_L0",
+      "R2_over_legacy_actual_physical_sse": 0.9438260945607179,
+      "actual_physical_sse": {
+        "LEGACY_P_PRE": 0.4154024656163106,
+        "R2_OFFSET": 0.3920676867935353
+      }
+    },
+    {
+      "case": "train_code_0_L12",
+      "R2_over_legacy_actual_physical_sse": 0.9398265914546634,
+      "actual_physical_sse": {
+        "LEGACY_P_PRE": 0.4025838029271151,
+        "R2_OFFSET": 0.3783589632798465
+      }
+    },
+    {
+      "case": "train_code_0_L22",
+      "R2_over_legacy_actual_physical_sse": 0.9368768095844896,
+      "actual_physical_sse": {
+        "LEGACY_P_PRE": 0.26829802335107783,
+        "R2_OFFSET": 0.2513621961349827
+      }
+    },
+    {
+      "case": "train_code_1_L0",
+      "R2_over_legacy_actual_physical_sse": 0.9466475882308137,
+      "actual_physical_sse": {
+        "LEGACY_P_PRE": 0.41602782781407377,
+        "R2_OFFSET": 0.3938317398370972
+      }
+    },
+    {
+      "case": "train_code_1_L12",
+      "R2_over_legacy_actual_physical_sse": 0.942401063270998,
+      "actual_physical_sse": {
+        "LEGACY_P_PRE": 0.3937857000955614,
+        "R2_OFFSET": 0.37110406247097144
+      }
+    },
+    {
+      "case": "train_code_1_L22",
+      "R2_over_legacy_actual_physical_sse": 0.9422068536451729,
+      "actual_physical_sse": {
+        "LEGACY_P_PRE": 0.26819359217694483,
+        "R2_OFFSET": 0.25269384065283584
+      }
+    },
+    {
+      "case": "train_natural_language_0_L0",
+      "R2_over_legacy_actual_physical_sse": 0.941115726360637,
+      "actual_physical_sse": {
+        "LEGACY_P_PRE": 0.49712636826846357,
+        "R2_OFFSET": 0.46785344316600064
+      }
+    },
+    {
+      "case": "train_natural_language_0_L12",
+      "R2_over_legacy_actual_physical_sse": 0.9395905519766545,
+      "actual_physical_sse": {
+        "LEGACY_P_PRE": 0.36490943306296064,
+        "R2_OFFSET": 0.34286545563311527
+      }
+    },
+    {
+      "case": "train_natural_language_0_L22",
+      "R2_over_legacy_actual_physical_sse": 0.9409192449821813,
+      "actual_physical_sse": {
+        "LEGACY_P_PRE": 0.22550403785337775,
+        "R2_OFFSET": 0.2121810890374334
+      }
+    },
+    {
+      "case": "train_natural_language_1_L0",
+      "R2_over_legacy_actual_physical_sse": 0.9473728884653574,
+      "actual_physical_sse": {
+        "LEGACY_P_PRE": 0.4894724793532811,
+        "R2_OFFSET": 0.4637129565892179
+      }
+    },
+    {
+      "case": "train_natural_language_1_L12",
+      "R2_over_legacy_actual_physical_sse": 0.945434704655746,
+      "actual_physical_sse": {
+        "LEGACY_P_PRE": 0.3803035052714103,
+        "R2_OFFSET": 0.35955213218582077
+      }
+    },
+    {
+      "case": "train_natural_language_1_L22",
+      "R2_over_legacy_actual_physical_sse": 0.9456965462663938,
+      "actual_physical_sse": {
+        "LEGACY_P_PRE": 0.22800042601868203,
+        "R2_OFFSET": 0.21561921543313403
+      }
+    }
+  ],
+  "pooled_R2_over_legacy_physical_sse": 0.9432031055356453,
+  "document_pooled_ratios": {
+    "train_associative_recall_0": 0.9416756041867476,
+    "train_associative_recall_1": 0.9461086766668082,
+    "train_code_0": 0.940627470941647,
+    "train_code_1": 0.94399157853352,
+    "train_natural_language_0": 0.9405632336221307,
+    "train_natural_language_1": 0.9463532775306351
+  },
+  "six_document_macro_mean_ratio": 0.9432199735802481,
+  "layer_pooled_ratios": {
+    "0": 0.9446292408654627,
+    "12": 0.942251588665634,
+    "22": 0.941937690453279
+  },
+  "lag_summary": {
+    "LEGACY_P_PRE": {
+      "lag_entry_centered_correlation_sum": 491905.54371414497,
+      "lag_entry_centered_valid_count": 4713216.0,
+      "lag_uncentered_dot": 2.4113527488860846,
+      "lag_previous_squared": 6.336684855597656,
+      "lag_current_squared": 6.364650720795554,
+      "lag_negative_variance_count": 0.0,
+      "lag_abs_correlation_above_one_count": 0.0,
+      "mean_per_entry_lag1_Pearson": 0.10436728206688277,
+      "pooled_uncentered_same_entry_cosine": 0.37970158011455
+    },
+    "R2_OFFSET": {
+      "lag_entry_centered_correlation_sum": 377033.5642409512,
+      "lag_entry_centered_valid_count": 4713216.0,
+      "lag_uncentered_dot": 1.954753017602193,
+      "lag_previous_squared": 5.977004871216822,
+      "lag_current_squared": 6.00320711990043,
+      "lag_negative_variance_count": 0.0,
+      "lag_abs_correlation_above_one_count": 0.0,
+      "mean_per_entry_lag1_Pearson": 0.07999496824269271,
+      "pooled_uncentered_same_entry_cosine": 0.3263310689951211
+    }
+  },
+  "raw_grid_probes": {
+    "LEGACY_P_PRE": {
+      "actual_physical_sse": 6.36662620049607,
+      "fixed_code_FP32_physical_sse": 6.346669755306838,
+      "recomputed_code_FP32_physical_sse": 6.346669755306838,
+      "recomputed_codes_changed": 0.0
+    },
+    "R2_OFFSET": {
+      "actual_physical_sse": 6.005021604092499,
+      "fixed_code_FP32_physical_sse": 6.244170424623722,
+      "recomputed_code_FP32_physical_sse": 5.959910903752063,
+      "recomputed_codes_changed": 235281839.0
+    }
+  },
+  "native_control_failed_unique_cases": [
+    "train_associative_recall_0_L0",
+    "train_associative_recall_1_L12",
+    "train_code_0_L12",
+    "train_code_1_L0",
+    "train_code_1_L12",
+    "train_natural_language_0_L12",
+    "train_natural_language_0_L22"
+  ],
+  "native_control_unique_denominator": 18,
+  "ratchet_selected_group_counts": {
+    "affine_only": {
+      "scale_increase": 0,
+      "scale_decrease": 0,
+      "scale_one_upward_ULP": 0,
+      "offset_decrease": 0,
+      "offset_increase": 0,
+      "offset_one_downward_ULP": 0,
+      "codes_changed": 0,
+      "decode_change_sse_FP64": 0.0,
+      "groups": 381,
+      "fullrange_groups": 381,
+      "fullrange_scale_increase": 0,
+      "fullrange_scale_one_upward_ULP": 0
+    },
+    "physical_H_roundtrip": {
+      "scale_increase": 42,
+      "scale_decrease": 0,
+      "scale_one_upward_ULP": 41,
+      "offset_decrease": 40,
+      "offset_increase": 0,
+      "offset_one_downward_ULP": 40,
+      "codes_changed": 0,
+      "decode_change_sse_FP64": 0.00011082063952017052,
+      "groups": 381,
+      "fullrange_groups": 381,
+      "fullrange_scale_increase": 42,
+      "fullrange_scale_one_upward_ULP": 41
+    }
+  },
+  "ratchet_examples": {
+    "scale_and_offset": {
+      "record": "train_associative_recall_0_L0/R2_OFFSET_t127/current/physical_H_roundtrip",
+      "value_group": 1,
+      "s0": 0.0027942657470703125,
+      "s1": 0.002796173095703125,
+      "o0": -0.1773681640625,
+      "o1": -0.177490234375,
+      "raw_scale_FP32_minus_s0_FP64": 4.78699803352356e-07,
+      "raw_scale_FP64_minus_s0_FP64": 4.787071078431356e-07,
+      "minimum_input_change": -1.4901161193847656e-08,
+      "maximum_input_change": 0.0,
+      "codes_changed": 0
+    },
+    "scale_only": {
+      "record": "train_code_1_L0/R2_OFFSET_t31/previous/physical_H_roundtrip",
+      "value_group": 2,
+      "s0": 0.003734588623046875,
+      "s1": 0.0037364959716796875,
+      "o0": -0.46337890625,
+      "o1": -0.46337890625,
+      "raw_scale_FP32_minus_s0_FP64": 2.3283064365386963e-10,
+      "raw_scale_FP64_minus_s0_FP64": 2.3374370494710917e-10,
+      "minimum_input_change": 0.0,
+      "maximum_input_change": 5.960464477539063e-08,
+      "codes_changed": 0
+    }
+  },
+  "interpretation_limits": [
+    "R2 lower one-write SSE in all 18 common-state cases and lower aggregate lag correlation contradict a blanket larger one-write error or larger common-state residual lag explanation. They do not predict own-loop error amplification.",
+    "Raw metadata with fixed codes makes the R2 SSE larger here; recomputing codes on that raw grid makes it smaller. These different interventions are not additive metadata contributions or equal-byte candidates.",
+    "All 381 selected affine-only groups were unchanged. That is no evidence for an affine-only ratchet in this sample; it does not negate prior observations on different inputs.",
+    "Selected physical-to-H32 re-encoding changes FP16 scale/offset at directional cast thresholds while codes stay fixed. This establishes an available operation-level feedback mechanism, not its population incidence, aggregate error contribution, or model-KL causality.",
+    "The saved-group H32 branch uses the selected-group matrix shape, not the full-state batched matmul; exact backend arithmetic parity with a complete native codec replay is not asserted.",
+    "Seven of eighteen unique CPU BF16 Native controls fail the frozen tolerance and remain visible. This is reconstructed FP32 common-state evidence, not a verified Native or GPU replay."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "method": "exact_full",
+  "seconds": [
+    1.1335756340013177,
+    1.0977738369983854,
+    1.121588737998536
+  ],
+  "median_seconds": 1.121588737998536,
+  "input_bytes": 34867200,
+  "peak_RSS_before_compute_bytes": 171024384,
+  "peak_RSS_after_compute_bytes": 220610560,
+  "RSS_high_water_increase_bytes": 49586176,
+  "workspace_core_bytes": 16779264,
+  "output_sha256": "9d5f61601fe299e8a80dc1f50f32bf5b8f7c682b12fa20dcf0ed1af857193dea"
+}

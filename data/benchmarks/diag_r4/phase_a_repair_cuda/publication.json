@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "stage": "phase_a_repair_cuda",
+  "scientific_status": "PASS_TESTED_POINTS",
+  "curator_sha256": "c2fbaba51bb06f65ab4ccfac6ef55413cd6eb678f9e5e4af328f8ef831deb738",
+  "files": [
+    {
+      "path": "freeze.json",
+      "sha256": "4797675030d6f0d63898db8d2ae73bf3657acafbe616a10b16cd5fcf0cab35c4",
+      "bytes": 745,
+      "byte_identical": true,
+      "original_relative": "freeze.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "result.json",
+      "sha256": "8cc8ca4a071b0f4f2254f55054f76910faeb929962a12fb4a47a599f297d30a6",
+      "bytes": 612,
+      "byte_identical": true,
+      "original_relative": "result.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "source_dependency_bindings.json",
+      "sha256": "58d4ad446dbf68543ebd44863aff1930657cfc7b7c5f481f652e006ab26d5e52",
+      "bytes": 2782,
+      "byte_identical": false,
+      "role": "DERIVED_SOURCE_AND_DEPENDENCY_BINDINGS"
+    }
+  ],
+  "local_only": [],
+  "original_hash_links": [
+    {
+      "path": "freeze.json",
+      "sha256": "4797675030d6f0d63898db8d2ae73bf3657acafbe616a10b16cd5fcf0cab35c4",
+      "role": "CUDA_PROBE_FREEZE"
+    }
+  ],
+  "reproduction_levels": {
+    "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS": "Scalar/table aggregation only, where the public CPU verifier implements the corresponding reduction",
+    "INCLUDED_TENSOR_POINT_CHECKS": "Small selected fixtures support explicitly bounded arithmetic comparisons; they are not representative full trajectories",
+    "LOCAL_ONLY_REGENERATION": "Full model forwards and capture/response regeneration require hash-bound local inputs and sometimes local drivers; no blanket full-rerun promise"
+  },
+  "claim_boundary": "Curation establishes evidence identity, not new model quality, numerical success, or deployment promotion"
+}

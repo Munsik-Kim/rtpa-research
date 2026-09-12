@@ -1,0 +1,243 @@
+{
+  "scope": "Frozen source expectations versus current public candidates; mismatches are not silently repaired",
+  "sources": [
+    {
+      "receipt": "evaluation_panel.json",
+      "field": "/items/source_sha256",
+      "expected_sha256": "c80c7fe13d976266817da1fd7caafdb407852c0ebe6945b60c9b5852f3dabac2",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    },
+    {
+      "receipt": "evaluation_panel.json",
+      "field": "/items/source_sha256",
+      "expected_sha256": "bd51118b2efcb3b62969537309af57190e84606877819a7d326c3ad1255239e7",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    },
+    {
+      "receipt": "evaluation_panel.json",
+      "field": "/items/source_sha256",
+      "expected_sha256": "697da038c4fb9b3768c05c74b6c60c8e66aabddc58de131bfdaaa80a7aa86b85",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    },
+    {
+      "receipt": "evaluation_panel.json",
+      "field": "/items/source_sha256",
+      "expected_sha256": "f1977185be107a5a184b88f30c56a3bfaef75a34908bc52bbbf596e13186476f",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    },
+    {
+      "receipt": "evaluation_panel.json",
+      "field": "/items/source_sha256",
+      "expected_sha256": "8fe545fea4279ddceffdef173b43966baa1f633997666eb71deaab9b6046aa13",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    },
+    {
+      "receipt": "evaluation_panel.json",
+      "field": "/items/source_sha256",
+      "expected_sha256": "7edf7c689d373ef514bc85e5ba4fb821464b6c340f17764b7455217e9461e598",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    },
+    {
+      "receipt": "evaluation_panel.json",
+      "field": "/items/source_sha256",
+      "expected_sha256": "d483a96bf78b6307728b13640e12d72504a0e1f421c0e1fb61b9b58d64786900",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    },
+    {
+      "receipt": "evaluation_panel.json",
+      "field": "/items/source_sha256",
+      "expected_sha256": "8e8a5bd415fcd37a59b4302d2e629f16a4558e8de6c927a4c82f342eefac2643",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/diag_r4_execution.py",
+      "expected_sha256": "77ee439c16ae0245107b190ee381e41f07c8d58700e7b794216de545b7d4294d",
+      "candidate_public_path": "src/rtpa_research/diag_r4_execution.py",
+      "current_public_sha256": "77ee439c16ae0245107b190ee381e41f07c8d58700e7b794216de545b7d4294d",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/runtime.py",
+      "expected_sha256": "afbfcbad6f18879151a827a1473869ea60c5d80f1f32689ee408d7d08cb6f8d2",
+      "candidate_public_path": "src/rtpa_research/runtime.py",
+      "current_public_sha256": "afbfcbad6f18879151a827a1473869ea60c5d80f1f32689ee408d7d08cb6f8d2",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/diag_r2_runtime.py",
+      "expected_sha256": "36012aee79be9394c531e8db371d8f7b8d8ed3c8161f5e53b501360646b5404f",
+      "candidate_public_path": "src/rtpa_research/diag_r2_runtime.py",
+      "current_public_sha256": "36012aee79be9394c531e8db371d8f7b8d8ed3c8161f5e53b501360646b5404f",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/codec.py",
+      "expected_sha256": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069",
+      "candidate_public_path": "src/rtpa_research/codec.py",
+      "current_public_sha256": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/codec_r2.py",
+      "expected_sha256": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2",
+      "candidate_public_path": "src/rtpa_research/codec_r2.py",
+      "current_public_sha256": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/codec_r2_optimized.py",
+      "expected_sha256": "519975711d79ee0672a20d3585c6cd6c07002e237629ed48cabb006dffe9ad9e",
+      "candidate_public_path": "src/rtpa_research/codec_r2_optimized.py",
+      "current_public_sha256": "519975711d79ee0672a20d3585c6cd6c07002e237629ed48cabb006dffe9ad9e",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/factorized.py",
+      "expected_sha256": "d6947df1f614b9dcb7372878e7fbc9e05626ff40c7e86c2cb80e819ae560e08e",
+      "candidate_public_path": "src/rtpa_research/factorized.py",
+      "current_public_sha256": "d6947df1f614b9dcb7372878e7fbc9e05626ff40c7e86c2cb80e819ae560e08e",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/reference_encoder.py",
+      "expected_sha256": "d7272e7c4d600da3cbfcb9196be140afdb08b0f33c6751d51c744b4429ac7b53",
+      "candidate_public_path": "src/rtpa_research/reference_encoder.py",
+      "current_public_sha256": "d7272e7c4d600da3cbfcb9196be140afdb08b0f33c6751d51c744b4429ac7b53",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/layout.py",
+      "expected_sha256": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276",
+      "candidate_public_path": "src/rtpa_research/layout.py",
+      "current_public_sha256": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/io.py",
+      "expected_sha256": "9bfdd227e7db2626abf39418a0973e443a801a4657a7626385f536f6ede7300f",
+      "candidate_public_path": "src/rtpa_research/io.py",
+      "current_public_sha256": "9bfdd227e7db2626abf39418a0973e443a801a4657a7626385f536f6ede7300f",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/benchmark.py",
+      "expected_sha256": "1a3d9efec4b9b712ae4728a4777429e451afe1ca0ef5e059d94b38baf0b64071",
+      "candidate_public_path": "src/rtpa_research/benchmark.py",
+      "current_public_sha256": "1a3d9efec4b9b712ae4728a4777429e451afe1ca0ef5e059d94b38baf0b64071",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/diag_r2_benchmark.py",
+      "expected_sha256": "48d5198da63a8ee1d0041ff6eee9c918313aadc878ef7f02ec51bfb8e54f55de",
+      "candidate_public_path": "src/rtpa_research/diag_r2_benchmark.py",
+      "current_public_sha256": "48d5198da63a8ee1d0041ff6eee9c918313aadc878ef7f02ec51bfb8e54f55de",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/operators.py",
+      "expected_sha256": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78",
+      "candidate_public_path": "src/rtpa_research/operators.py",
+      "current_public_sha256": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/panel/items/source_sha256",
+      "expected_sha256": "c80c7fe13d976266817da1fd7caafdb407852c0ebe6945b60c9b5852f3dabac2",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/panel/items/source_sha256",
+      "expected_sha256": "bd51118b2efcb3b62969537309af57190e84606877819a7d326c3ad1255239e7",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/panel/items/source_sha256",
+      "expected_sha256": "697da038c4fb9b3768c05c74b6c60c8e66aabddc58de131bfdaaa80a7aa86b85",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/panel/items/source_sha256",
+      "expected_sha256": "f1977185be107a5a184b88f30c56a3bfaef75a34908bc52bbbf596e13186476f",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/panel/items/source_sha256",
+      "expected_sha256": "8fe545fea4279ddceffdef173b43966baa1f633997666eb71deaab9b6046aa13",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/panel/items/source_sha256",
+      "expected_sha256": "7edf7c689d373ef514bc85e5ba4fb821464b6c340f17764b7455217e9461e598",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/panel/items/source_sha256",
+      "expected_sha256": "d483a96bf78b6307728b13640e12d72504a0e1f421c0e1fb61b9b58d64786900",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/panel/items/source_sha256",
+      "expected_sha256": "8e8a5bd415fcd37a59b4302d2e629f16a4558e8de6c927a4c82f342eefac2643",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/native_source_sha256",
+      "expected_sha256": "d67880b98f47d55a9d40679c901a740aa0618b97458824cab2abe9a1f7861be6",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    },
+    {
+      "receipt": "selection_receipt.json",
+      "field": "/source_sha256",
+      "expected_sha256": "99e936d7c9c523eaf1774f88691e8599305511da27c59c98888845a5ee01d3f3",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    }
+  ],
+  "recorded_environments": [],
+  "external_capture_bindings": [],
+  "dependency_wiring": {
+    "pyproject.toml": {
+      "sha256": "92ec0ded45a646e1612b1f471c6d9a392864916d9c8ef7e265b7c6763e6bcebb",
+      "mentions_scipy": true
+    },
+    ".github/workflows/cpu-evidence.yml": {
+      "sha256": "19cd16f2fc1df2d081111b5c9d4904949e205d3b9a678f4120b8a649b8b8337e",
+      "mentions_scipy": true
+    }
+  },
+  "dependency_boundary": "Scalar aggregation and curation use NumPy/stdlib; adjoint interval tests additionally require SciPy. No dependency was installed or upgraded by curation."
+}

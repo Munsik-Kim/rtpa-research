@@ -1,0 +1,66 @@
+{
+  "status": "FROZEN_BEFORE_TRACE_OR_RESULT_READS",
+  "utc": "2026-09-12T10:43:15.529834+00:00",
+  "config": {
+    "run_id": "RTPA_R4_METADATA_COMMON_STATE_20260912_V1",
+    "device": "cpu",
+    "threads": 2,
+    "wall_budget_seconds": 900,
+    "documents": [
+      "train_associative_recall_0",
+      "train_associative_recall_1",
+      "train_code_0",
+      "train_code_1",
+      "train_natural_language_0",
+      "train_natural_language_1"
+    ],
+    "layers": [
+      0,
+      12,
+      22
+    ],
+    "tokens": 256,
+    "profiles": [
+      "LEGACY_P_PRE",
+      "R2_OFFSET"
+    ],
+    "snapshot_tokens": [
+      31,
+      127,
+      223
+    ],
+    "probe_seed": 612420,
+    "mask_path": "data/benchmarks/gdn/policy.npz",
+    "mask_sha256": "bd865a1a138ed25a98e8db5b5dabb26ff259307be3ba2f071a04ceb71faace68",
+    "reference": "Zero-start reconstructed FP32 state from captured normalized/scaled Native operands; no quantization feedback in this common-state reference",
+    "native_control": "Separate BF16-after-write reconstruction; retain every failed 1e-4 nL2 check, including prior 7/18 unique failures",
+    "native_control_tolerance": 0.0001,
+    "FP32_metadata_fixed_code": "Decode original actual UINT8 codes using the declared raw FP32 metadata below",
+    "FP32_metadata_recomputed_code": "Recompute nearest/clamped codes using that same raw FP32 grid, then decode it",
+    "legacy_raw_grid": "effective_s and raw_z from P_PRE before final FP16 metadata casts; retain its constant exception and underflow-floor convention",
+    "R2_raw_grid": "offset=lo; scale=max((hi-lo)/255,2^-24), with exact-zero scale=1; thus removing offset-floor and its dependent span expansion as well as final upward scale storage",
+    "probe_scope": "Nondeployable FP32-metadata counterfactuals; not equal-byte candidates; fixed-code and recomputed-code effects must not be called total metadata contributions",
+    "lag_scope": "All255 adjacent-write pairs at identical physical entries; per-entry time-centered Pearson aggregated by key row plus uncentered pooled same-entry row cosine; undefined variances retained by counts, no clipping",
+    "inspection_selection": "At each registered snapshot/profile choose largest actual physical low-group SSE, tie by head/low-row/group order; retain that group and adjacent value groups at t-1,t,t+1; selection only for inspection, never filters aggregate performance",
+    "test_group_rtol": 3e-07,
+    "test_group_atol": 1e-12,
+    "failure_policy": "Retain first error, exact case/token/profile context, common pre-encode state and fully completed token observations; stop and mark incomplete, never fill missing observations",
+    "summary_reduction": "All fields are explicitly sample sums; signed-mean fields additionally averaged over the common case/token/head denominator; SSE and count fields remain sums",
+    "model_forwards": 0,
+    "GPU_forwards": 0
+  },
+  "sources": {
+    "script": "4a5acd60d73c052a13f6d820b7bc93b696437b079d5d3f09db0510b0d3b3e13b",
+    "src/rtpa_research/codec.py": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069",
+    "src/rtpa_research/codec_r2.py": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2",
+    "src/rtpa_research/layout.py": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276",
+    "src/rtpa_research/operators.py": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78"
+  },
+  "environment": {
+    "python": "3.11.15",
+    "torch": "2.11.0+cu128",
+    "numpy": "1.26.4",
+    "threads": 2
+  },
+  "note": "Source/config frozen before even reading capture receipts; input bindings recorded separately before tensor loading"
+}

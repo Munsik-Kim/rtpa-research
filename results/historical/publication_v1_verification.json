@@ -1,0 +1,61 @@
+{
+  "structural_integrity": "PASS",
+  "CPU_scalar_reaggregation": "PASS",
+  "tensor_point_audit": "PASS",
+  "mask_payload": {
+    "mask_heads_checked": 1008,
+    "DIAG_MATCHED_identical_heads": 1,
+    "DIAG_MATCHED_row_overlap": 132,
+    "paper_energy_persistence_same_top8_heads": 48,
+    "mixed_bytes_head": 19328,
+    "uniform_low_bytes_head": 18432,
+    "bits_per_value": 9.4375,
+    "target3_payload_bytes": 927744,
+    "static_indices_bytes_head": 1024,
+    "H32_bytes_layer": 4096,
+    "decode_output_scratch_bytes_layer": 1048576
+  },
+  "source_mapping": {
+    "included_source_modules": 77,
+    "historical_source_hash_checks": 40,
+    "exact_byte_files": 68,
+    "path_redacted_files": 9,
+    "GPU_equivalence": "NOT_RUN"
+  },
+  "strict_JSON_files": 111,
+  "source_evidence_mappings": 504,
+  "document_local_links": 48,
+  "model_downloads": 0,
+  "GPU_forwards": 0,
+  "original_experiments_repeated": false,
+  "scientific_success": "NOT_A_MECHANICAL_VERIFICATION_RESULT",
+  "author_code_verification": "NOT_RUN_HISTORICAL_AUTHOR_CODE_NOT_VERIFIED",
+  "full_GPU_reproduction": "NOT_RUN",
+  "missing_same_injection_M": "NOT_COMPUTED_OR_NOT_IDENTIFIABLE",
+  "clean_copy_scope": "same-agent CPU reproduction, not independent-researcher replication",
+  "original_source_and_evidence_preservation": {
+    "unique_original_files": 538,
+    "changed": 0
+  },
+  "unit_tests": {
+    "passed": 12,
+    "failed": 0
+  },
+  "clean_copy_CPU": {
+    "status": "PASS",
+    "copy_source": "selected staged Git index only",
+    "unit_tests_passed": 12,
+    "original_project_or_model_cache_required": false,
+    "model_forwards": 0,
+    "scope": "same-agent clean-copy CPU reconstruction, not independent researcher replication"
+  },
+  "publication_revision": {
+    "reader_language": "English",
+    "project_license": "Apache-2.0",
+    "third_party_license_preserved": true,
+    "numerical_source_changed": false,
+    "observations_masks_tables_or_scientific_expectations_changed": false,
+    "scholarly_citation": "requested, not an additional license condition"
+  },
+  "remote_CI": "NOT_RUN_FOR_THIS_REVISION_AT_LOCAL_RECEIPT_TIME; consult GitHub commit checks"
+}

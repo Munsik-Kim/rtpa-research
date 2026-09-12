@@ -1,0 +1,61 @@
+{
+  "scope": "Frozen source expectations versus current public candidates; mismatches are not silently repaired",
+  "sources": [
+    {
+      "receipt": "freeze.json",
+      "field": "/source_hashes",
+      "source_id": "module",
+      "expected_sha256": "cd75a56b196dd1b7f02a0acd18cf33c9df2e30471ffd954811da4290f2393c1b",
+      "candidate_public_path": "src/rtpa_research/diag_r4_adjoint.py",
+      "current_public_sha256": "cd75a56b196dd1b7f02a0acd18cf33c9df2e30471ffd954811da4290f2393c1b",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/source_hashes",
+      "source_id": "tests",
+      "expected_sha256": "88881fc7f4b0267e911d83591159b042e459f1a3555d9133733de1e422207ee6",
+      "candidate_public_path": "tests/test_diag_r4_adjoint.py",
+      "current_public_sha256": "88881fc7f4b0267e911d83591159b042e459f1a3555d9133733de1e422207ee6",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/source_hashes",
+      "source_id": "protocol",
+      "expected_sha256": "6341f2691e7b82796e75df0c484a190aff6fb2dc9a2e3313781a72ce9fa9368c",
+      "candidate_public_path": "protocol",
+      "current_public_sha256": null,
+      "status": "NOT_BOUND_TO_PUBLIC_FILE"
+    },
+    {
+      "receipt": "prototype_execution_binding.json",
+      "field": "/driver_sha256",
+      "expected_sha256": "c38b11b6097c42e54d7ece41582196f427ad8e2b31de1ccb8deaea974ff9bcf1",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    }
+  ],
+  "recorded_environments": [
+    {
+      "receipt": "freeze.json",
+      "recorded": {
+        "python": "3.11.15",
+        "numpy": "1.26.4",
+        "scipy": "1.17.1",
+        "threads": 2
+      }
+    }
+  ],
+  "external_capture_bindings": [],
+  "dependency_wiring": {
+    "pyproject.toml": {
+      "sha256": "70a71f91ae812d1563a379d1380a5e0c91efda493642d15e449cba6ee7dfa796",
+      "mentions_scipy": true
+    },
+    ".github/workflows/cpu-evidence.yml": {
+      "sha256": "a9d453cb829198afb172f0ad630aa8e25e69b75e39896a0c8a263620572f9156",
+      "mentions_scipy": true
+    }
+  },
+  "dependency_boundary": "Scalar aggregation and curation use NumPy/stdlib; adjoint interval tests additionally require SciPy. No dependency was installed or upgraded by curation."
+}

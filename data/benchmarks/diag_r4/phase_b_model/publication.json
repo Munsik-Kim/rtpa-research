@@ -1,0 +1,415 @@
+{
+  "schema_version": 1,
+  "stage": "phase_b_model",
+  "scientific_status": "CLOSED_MODEL_RECORDS",
+  "curator_sha256": "c143db1b887d9b7cec7f49070a7b311456824b7e7901f93b30f96e032118c09a",
+  "files": [
+    {
+      "path": "evaluation_panel.json",
+      "sha256": "71942b2e9bf9aafa683f517549b4a1cfcb7943a4b44e3b975467503ad8301284",
+      "bytes": 421891,
+      "byte_identical": true,
+      "original_relative": "evaluation_panel.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "extra_license_receipt.json",
+      "sha256": "c94b23564dfa675cc887fb38c987ade75813a69cb4d6162dd97605d8b0f74b30",
+      "bytes": 576,
+      "byte_identical": true,
+      "original_relative": "extra_license_receipt.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "0e9a6cea81ea87d36c35b2e7e63428dc294f5855e427d9bb8d2c58591feabdaa",
+      "bytes": 462903,
+      "byte_identical": true,
+      "original_relative": "freeze.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "licenses/scipy/LICENSE.txt",
+      "sha256": "4daf14e37432e7026165979ecb7a39930707a3e89bef4876cfaf9dad36ed364a",
+      "bytes": 46838,
+      "byte_identical": true,
+      "original_relative": "licenses/scipy/LICENSE.txt",
+      "role": "UNCHANGED_THIRD_PARTY_LICENSE_OR_NOTICE"
+    },
+    {
+      "path": "licenses/scipy/PRIMA_LICENCE.txt",
+      "sha256": "997379b2c1bf53a391d2fd3295dce75bf3c94ed28d64882ede30d1b518cb0dd6",
+      "bytes": 1533,
+      "byte_identical": true,
+      "original_relative": "licenses/scipy/PRIMA_LICENCE.txt",
+      "role": "UNCHANGED_THIRD_PARTY_LICENSE_OR_NOTICE"
+    },
+    {
+      "path": "licenses/sympy/LICENSE",
+      "sha256": "07a5e9819f727b4986ad2829c7a29a6320d42575f720eb24d71b7fef573a0286",
+      "bytes": 7885,
+      "byte_identical": true,
+      "original_relative": "licenses/sympy/LICENSE",
+      "role": "UNCHANGED_THIRD_PARTY_LICENSE_OR_NOTICE"
+    },
+    {
+      "path": "licenses/torch/LICENSE",
+      "sha256": "a0d7abc10248a062a2f309bf12981524973f2a61aadccf4c5099d96d8c388cf4",
+      "bytes": 351341,
+      "byte_identical": true,
+      "original_relative": "licenses/torch/LICENSE",
+      "role": "UNCHANGED_THIRD_PARTY_LICENSE_OR_NOTICE"
+    },
+    {
+      "path": "licenses/torch/NOTICE",
+      "sha256": "c2cc7bf0caec7652c2b460a8a470bea1677f241e4ab8e431df34cf17f5a9fec0",
+      "bytes": 23632,
+      "byte_identical": true,
+      "original_relative": "licenses/torch/NOTICE",
+      "role": "UNCHANGED_THIRD_PARTY_LICENSE_OR_NOTICE"
+    },
+    {
+      "path": "licenses/transformers/LICENSE",
+      "sha256": "77fd4710def9ec3c0f6225800e0235f15a425abd4a8b03559127fcd782612049",
+      "bytes": 11418,
+      "byte_identical": true,
+      "original_relative": "licenses/transformers/LICENSE",
+      "role": "UNCHANGED_THIRD_PARTY_LICENSE_OR_NOTICE"
+    },
+    {
+      "path": "partials/r4_test_scipy_0_1789214764548944943.jsonl.gz",
+      "sha256": "48364916d0074f720319d966aad5ac5d169d1cb2d1a880be7fa765aaa3ac6f3f",
+      "bytes": 126986,
+      "byte_identical": false,
+      "original_relative": "partials/r4_test_scipy_0_1789214764548944943.jsonl",
+      "original_sha256": "c3440e4ac992685c5736a34d7ade22e5e0277f7f13cba68fc344dc5a6761b8ee",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Lossless deterministic gzip of the entire original checkpoint, including any failures/truncated bytes"
+    },
+    {
+      "path": "partials/r4_test_scipy_1_1789215332263518513.jsonl.gz",
+      "sha256": "af4bede6aa65a6a87d4ae01731e9e48355cd95305af9bf5cc00abe6fb68a3a7b",
+      "bytes": 125543,
+      "byte_identical": false,
+      "original_relative": "partials/r4_test_scipy_1_1789215332263518513.jsonl",
+      "original_sha256": "12d2f90ca0cbefff17b646d33072231463756a5fda931574bcba37ba7a2fde6e",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Lossless deterministic gzip of the entire original checkpoint, including any failures/truncated bytes"
+    },
+    {
+      "path": "partials/r4_test_sympy_0_1789215892187650694.jsonl.gz",
+      "sha256": "d675682fb6e386f169d209e21b6228906535294d14d4afe1161ba1a7ef201e1e",
+      "bytes": 125516,
+      "byte_identical": false,
+      "original_relative": "partials/r4_test_sympy_0_1789215892187650694.jsonl",
+      "original_sha256": "340b76fe144eb3151e7a03e256b0a7354ccec0eff732a5c8f65a4b6ccd217ea6",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Lossless deterministic gzip of the entire original checkpoint, including any failures/truncated bytes"
+    },
+    {
+      "path": "partials/r4_test_sympy_1_1789216456033772883.jsonl.gz",
+      "sha256": "43bd4fbf07ac7b32ae8a70d8804d2e6b33b3ffa951b0d500f0507d7980f0816b",
+      "bytes": 125734,
+      "byte_identical": false,
+      "original_relative": "partials/r4_test_sympy_1_1789216456033772883.jsonl",
+      "original_sha256": "e12bcbd8b55c64595b213eacadeb278020b608d8ec489c17157ac5ff8c16f162",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Lossless deterministic gzip of the entire original checkpoint, including any failures/truncated bytes"
+    },
+    {
+      "path": "partials/r4_test_torch_0_1789212457172219908.jsonl.gz",
+      "sha256": "b2c15c72ed5f7e27697c694c487dfde12c5f8b6cd2097c58cf7edc5274facfc3",
+      "bytes": 126345,
+      "byte_identical": false,
+      "original_relative": "partials/r4_test_torch_0_1789212457172219908.jsonl",
+      "original_sha256": "b2d11cf6461ec03f9c9157cc7b23ea6f1760f30995275fb27b2f0b5e268fff8f",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Lossless deterministic gzip of the entire original checkpoint, including any failures/truncated bytes"
+    },
+    {
+      "path": "partials/r4_test_torch_1_1789213052540665745.jsonl.gz",
+      "sha256": "db5b0c377b73d964e9334ae09b732167390c33efb9b200751f2a9ad42eeb96ee",
+      "bytes": 126622,
+      "byte_identical": false,
+      "original_relative": "partials/r4_test_torch_1_1789213052540665745.jsonl",
+      "original_sha256": "3e8a8e0dec02e801f29101097949a03c0484e96b87b85ea4bbf0a70fa5d04fd2",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Lossless deterministic gzip of the entire original checkpoint, including any failures/truncated bytes"
+    },
+    {
+      "path": "partials/r4_test_transformers_0_1789213662374944534.jsonl.gz",
+      "sha256": "bf1d9ffe790655d769b1755eafb457d913641c349f144240f3534797557ba8d4",
+      "bytes": 127497,
+      "byte_identical": false,
+      "original_relative": "partials/r4_test_transformers_0_1789213662374944534.jsonl",
+      "original_sha256": "54e0fb3c6b9148bca9f955cf3a8ef6dc0732ba56637a9cd484c43569700fb617",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Lossless deterministic gzip of the entire original checkpoint, including any failures/truncated bytes"
+    },
+    {
+      "path": "partials/r4_test_transformers_1_1789214224842673373.jsonl.gz",
+      "sha256": "d7052b5feb192e7ae9ecdf21eaa08b32908941fff8aed06638478c5344f24154",
+      "bytes": 126924,
+      "byte_identical": false,
+      "original_relative": "partials/r4_test_transformers_1_1789214224842673373.jsonl",
+      "original_sha256": "99ccbae7b07698a1c47101aa8f326b8fca7aeae8986803c7d17d33561841fab8",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Lossless deterministic gzip of the entire original checkpoint, including any failures/truncated bytes"
+    },
+    {
+      "path": "protocol.json",
+      "sha256": "8dbe73ca57ecb55cca1dbad68ee789b5855b13d58099cb9a8603464225c5cf8b",
+      "bytes": 4143,
+      "byte_identical": true,
+      "original_relative": "protocol.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "selection_receipt.json",
+      "sha256": "761e6db082b5b1ec039d8623fc9191e29cbc7dc790108fd35738def378fe3119",
+      "bytes": 14370,
+      "byte_identical": true,
+      "original_relative": "selection_receipt.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "tokens/r4_test_scipy_0.jsonl.gz",
+      "sha256": "e6ab9a9a123ae5c9cce029269568b0031a726f30c7d046f29114ef301d20827a",
+      "bytes": 127019,
+      "byte_identical": true,
+      "original_relative": "tokens/r4_test_scipy_0.jsonl.gz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "tokens/r4_test_scipy_0.jsonl.receipt.json",
+      "sha256": "f62d8d657f2f2d3c7a842fce0bb38bde78a70fec0e9c95058dbcc6e15e17c660",
+      "bytes": 507,
+      "byte_identical": true,
+      "original_relative": "tokens/r4_test_scipy_0.jsonl.receipt.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "tokens/r4_test_scipy_1.jsonl.gz",
+      "sha256": "229f104675dd9ac31a78a65e3c4cf6bbb703a7d11cd3cff363e191ba4b09f09f",
+      "bytes": 125575,
+      "byte_identical": true,
+      "original_relative": "tokens/r4_test_scipy_1.jsonl.gz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "tokens/r4_test_scipy_1.jsonl.receipt.json",
+      "sha256": "7c5ee15c06fed3f2db75c706d6e4854e6988891c7dcb731346e5ddb5bccf7dee",
+      "bytes": 507,
+      "byte_identical": true,
+      "original_relative": "tokens/r4_test_scipy_1.jsonl.receipt.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "tokens/r4_test_sympy_0.jsonl.gz",
+      "sha256": "1ce1bb58ddb45f3884b10c6f396c04e5be26288a95fc7fd3086d63791341b98f",
+      "bytes": 125548,
+      "byte_identical": true,
+      "original_relative": "tokens/r4_test_sympy_0.jsonl.gz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "tokens/r4_test_sympy_0.jsonl.receipt.json",
+      "sha256": "61e89d11242d0f67a8ed8a1a201d3487cc137c26c7be99bc4f4037c28ba7411c",
+      "bytes": 507,
+      "byte_identical": true,
+      "original_relative": "tokens/r4_test_sympy_0.jsonl.receipt.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "tokens/r4_test_sympy_1.jsonl.gz",
+      "sha256": "3417eb6c904764244a8dd92fff59d2ec7789697f1a23f54c4d5f5facd214bfd7",
+      "bytes": 125767,
+      "byte_identical": true,
+      "original_relative": "tokens/r4_test_sympy_1.jsonl.gz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "tokens/r4_test_sympy_1.jsonl.receipt.json",
+      "sha256": "f93bb74d15df2b05582c9c01694125d2a6073843af1b072f1cfe99d325e79ad0",
+      "bytes": 507,
+      "byte_identical": true,
+      "original_relative": "tokens/r4_test_sympy_1.jsonl.receipt.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "tokens/r4_test_torch_0.jsonl.gz",
+      "sha256": "99de37ffc320c6290079f2b8bdb158275afeeefe9f5b52ea821f1b4c4536989a",
+      "bytes": 126377,
+      "byte_identical": true,
+      "original_relative": "tokens/r4_test_torch_0.jsonl.gz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "tokens/r4_test_torch_0.jsonl.receipt.json",
+      "sha256": "49caaa33b63f44540ed9d7c6e11324d2e3b5a5368f2f2978da0702a618520c80",
+      "bytes": 507,
+      "byte_identical": true,
+      "original_relative": "tokens/r4_test_torch_0.jsonl.receipt.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "tokens/r4_test_torch_1.jsonl.gz",
+      "sha256": "85c617941eae587f334e08d7cd6be250ff40c300f46f3da5f048901fb2940975",
+      "bytes": 126654,
+      "byte_identical": true,
+      "original_relative": "tokens/r4_test_torch_1.jsonl.gz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "tokens/r4_test_torch_1.jsonl.receipt.json",
+      "sha256": "892f5708377c84b8132dcaf2946ac3ba22fefb39e0f31e4fa5bdcdb9896b7d5e",
+      "bytes": 507,
+      "byte_identical": true,
+      "original_relative": "tokens/r4_test_torch_1.jsonl.receipt.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "tokens/r4_test_transformers_0.jsonl.gz",
+      "sha256": "ba73e17bb18445784f93dbdc38906a52c42b1b2dbfa0a69ab4403dfe2454ac4c",
+      "bytes": 127536,
+      "byte_identical": true,
+      "original_relative": "tokens/r4_test_transformers_0.jsonl.gz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "tokens/r4_test_transformers_0.jsonl.receipt.json",
+      "sha256": "c75d07d9ec05fb642f574c581bffed1b068e2700ac4947cafff2f3b78ca3fe88",
+      "bytes": 507,
+      "byte_identical": true,
+      "original_relative": "tokens/r4_test_transformers_0.jsonl.receipt.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "tokens/r4_test_transformers_1.jsonl.gz",
+      "sha256": "c98d83c7c282e17f115f41e954646abdb9bd6101f54fa737730bf032ba945fbb",
+      "bytes": 126964,
+      "byte_identical": true,
+      "original_relative": "tokens/r4_test_transformers_1.jsonl.gz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "tokens/r4_test_transformers_1.jsonl.receipt.json",
+      "sha256": "542458ee75143819af791988215b7bbb6c020aaea67eeaf2f6891379506ff3ec",
+      "bytes": 506,
+      "byte_identical": true,
+      "original_relative": "tokens/r4_test_transformers_1.jsonl.receipt.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "workload_freeze.json",
+      "sha256": "8db7caf05e679c4e2a3889b27acb27ab1c9ac1c07779614931bf06664688b6e9",
+      "bytes": 2519,
+      "byte_identical": true,
+      "original_relative": "workload_freeze.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "source_dependency_bindings.json",
+      "sha256": "86fa5dc7b509a5275296c5fa48090b1f2d95ba52133a161368793c6d88950349",
+      "bytes": 10736,
+      "byte_identical": false,
+      "role": "DERIVED_SOURCE_AND_DEPENDENCY_BINDINGS"
+    }
+  ],
+  "local_only": [
+    {
+      "path": "partials/r4_test_scipy_0_1789214764548944943.jsonl",
+      "sha256": "c3440e4ac992685c5736a34d7ade22e5e0277f7f13cba68fc344dc5a6761b8ee",
+      "bytes": 1045435,
+      "availability": "LOCAL_ONLY",
+      "reason": "Exact decompressed bytes included as .gz; not deleted or filtered"
+    },
+    {
+      "path": "partials/r4_test_scipy_1_1789215332263518513.jsonl",
+      "sha256": "12d2f90ca0cbefff17b646d33072231463756a5fda931574bcba37ba7a2fde6e",
+      "bytes": 1042322,
+      "availability": "LOCAL_ONLY",
+      "reason": "Exact decompressed bytes included as .gz; not deleted or filtered"
+    },
+    {
+      "path": "partials/r4_test_sympy_0_1789215892187650694.jsonl",
+      "sha256": "340b76fe144eb3151e7a03e256b0a7354ccec0eff732a5c8f65a4b6ccd217ea6",
+      "bytes": 1046037,
+      "availability": "LOCAL_ONLY",
+      "reason": "Exact decompressed bytes included as .gz; not deleted or filtered"
+    },
+    {
+      "path": "partials/r4_test_sympy_1_1789216456033772883.jsonl",
+      "sha256": "e12bcbd8b55c64595b213eacadeb278020b608d8ec489c17157ac5ff8c16f162",
+      "bytes": 1045240,
+      "availability": "LOCAL_ONLY",
+      "reason": "Exact decompressed bytes included as .gz; not deleted or filtered"
+    },
+    {
+      "path": "partials/r4_test_torch_0_1789212457172219908.jsonl",
+      "sha256": "b2d11cf6461ec03f9c9157cc7b23ea6f1760f30995275fb27b2f0b5e268fff8f",
+      "bytes": 1046280,
+      "availability": "LOCAL_ONLY",
+      "reason": "Exact decompressed bytes included as .gz; not deleted or filtered"
+    },
+    {
+      "path": "partials/r4_test_torch_1_1789213052540665745.jsonl",
+      "sha256": "3e8a8e0dec02e801f29101097949a03c0484e96b87b85ea4bbf0a70fa5d04fd2",
+      "bytes": 1048155,
+      "availability": "LOCAL_ONLY",
+      "reason": "Exact decompressed bytes included as .gz; not deleted or filtered"
+    },
+    {
+      "path": "partials/r4_test_transformers_0_1789213662374944534.jsonl",
+      "sha256": "54e0fb3c6b9148bca9f955cf3a8ef6dc0732ba56637a9cd484c43569700fb617",
+      "bytes": 1120005,
+      "availability": "LOCAL_ONLY",
+      "reason": "Exact decompressed bytes included as .gz; not deleted or filtered"
+    },
+    {
+      "path": "partials/r4_test_transformers_1_1789214224842673373.jsonl",
+      "sha256": "99ccbae7b07698a1c47101aa8f326b8fca7aeae8986803c7d17d33561841fab8",
+      "bytes": 1118875,
+      "availability": "LOCAL_ONLY",
+      "reason": "Exact decompressed bytes included as .gz; not deleted or filtered"
+    },
+    {
+      "path": "panel.json",
+      "sha256": "93cf69bef07ea14cf47666c309606083bdb4328fe3ed206abfbb1d4a5ce69995",
+      "bytes": 419763,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "startup_wait_01.json",
+      "sha256": "0ef01562e80d169baa8fef038f540cb4b6a055118aa7001a0a848d2946fa52b7",
+      "bytes": 559,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    }
+  ],
+  "original_hash_links": [
+    {
+      "path": "evaluation_panel.json",
+      "sha256": "71942b2e9bf9aafa683f517549b4a1cfcb7943a4b44e3b975467503ad8301284",
+      "role": "MODEL_PANEL"
+    },
+    {
+      "path": "workload_freeze.json",
+      "sha256": "8db7caf05e679c4e2a3889b27acb27ab1c9ac1c07779614931bf06664688b6e9",
+      "role": "MODEL_WORKLOAD_FREEZE"
+    },
+    {
+      "stage": "phase_b_fit_selected",
+      "path": "selection.json",
+      "sha256": "1c28395cd8c461a6105eb3ed506fbc6733f7fb0079c8582c9f32de52e5bdcba8",
+      "role": "MODEL_SELECTED_FIT"
+    }
+  ],
+  "reproduction_levels": {
+    "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS": "Scalar/table aggregation only, where the public CPU verifier implements the corresponding reduction",
+    "INCLUDED_TENSOR_POINT_CHECKS": "Small selected fixtures support explicitly bounded arithmetic comparisons; they are not representative full trajectories",
+    "LOCAL_ONLY_REGENERATION": "Full model forwards and capture/response regeneration require hash-bound local inputs and sometimes local drivers; no blanket full-rerun promise"
+  },
+  "claim_boundary": "Curation establishes evidence identity, not new model quality, numerical success, or deployment promotion"
+}

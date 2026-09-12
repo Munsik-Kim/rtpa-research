@@ -1,0 +1,9 @@
+{
+  "file": "licenses/scipy/PRIMA_LICENCE.txt",
+  "source_url": "https://raw.githubusercontent.com/scipy/scipy/v1.17.1/scipy/_lib/pyprima/LICENCE.txt",
+  "scope_source": "https://raw.githubusercontent.com/scipy/scipy/v1.17.1/LICENSES_bundled.txt",
+  "source_version": "scipy/v1.17.1",
+  "sha256": "997379b2c1bf53a391d2fd3295dce75bf3c94ed28d64882ede30d1b518cb0dd6",
+  "reason": "Wheel omitted the nested PRIMA license; upstream exact SciPy version identifies this directory as BSD-3-Clause. No corpus substitution or selected input change.",
+  "retrieved_date": "2026-09-12"
+}

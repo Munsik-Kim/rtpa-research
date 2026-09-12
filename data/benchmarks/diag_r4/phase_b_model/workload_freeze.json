@@ -1,0 +1,68 @@
+{
+  "costs": [
+    {
+      "run_freeze": "fb52ac69b68d9ca96f338e921d8cdf965b0e8a3366b37f37ba2e0bdec8908f21",
+      "receipt_sha256": "da791d51babbae5a49c52ada6c2716366e17b51b3b412548b70eaf6c71e9a380",
+      "seconds": 635.8763336930024,
+      "physical_forwards": 5120,
+      "seconds_per_forward": 0.12419459642441452
+    },
+    {
+      "run_freeze": "fb52ac69b68d9ca96f338e921d8cdf965b0e8a3366b37f37ba2e0bdec8908f21",
+      "receipt_sha256": "e2aa0b3ba4a2fd8742b3e34466181e8f2c38b01e0e111620eb759ca2fbbcb6a1",
+      "seconds": 505.16369662799843,
+      "physical_forwards": 5120,
+      "seconds_per_forward": 0.09866478449765595
+    },
+    {
+      "run_freeze": "fb52ac69b68d9ca96f338e921d8cdf965b0e8a3366b37f37ba2e0bdec8908f21",
+      "receipt_sha256": "430d08a88f86a97c57c8f3acec081f8c63b5d297938848dc7d293da3408b07e2",
+      "seconds": 568.6910567279992,
+      "physical_forwards": 5120,
+      "seconds_per_forward": 0.11107247201718735
+    },
+    {
+      "run_freeze": "70853fef2be45eb0cdd1a890c91ccebe23c7ec68b5a8999624d5417878ed4b6e",
+      "receipt_sha256": "6d6193e063977c9591d528e6511aba47164f3a2bf817c6254343abe8e122f796",
+      "seconds": 186.57367525500013,
+      "physical_forwards": 2048,
+      "seconds_per_forward": 0.09110042737060553
+    },
+    {
+      "run_freeze": "70853fef2be45eb0cdd1a890c91ccebe23c7ec68b5a8999624d5417878ed4b6e",
+      "receipt_sha256": "0c2e2932876b8f6002062abd1a531f369e734168da5788ca0e64522838a414a7",
+      "seconds": 174.42410897199807,
+      "physical_forwards": 2048,
+      "seconds_per_forward": 0.08516802195898343
+    },
+    {
+      "run_freeze": "70853fef2be45eb0cdd1a890c91ccebe23c7ec68b5a8999624d5417878ed4b6e",
+      "receipt_sha256": "81bf189124307504fa8e8eea2dc7a7bf8265ef04fabb163fbb0f94dd93bcb8d5",
+      "seconds": 179.31927753099808,
+      "physical_forwards": 2048,
+      "seconds_per_forward": 0.08755824098193266
+    }
+  ],
+  "remaining_GPU_seconds_before_TEST": 11864.722921515004,
+  "forecast_margin": 1.2,
+  "maximum_remaining_fraction": 0.7,
+  "candidates": [
+    {
+      "length": 1024,
+      "forwards": 40960,
+      "seconds": 6104.412803452823
+    },
+    {
+      "length": 768,
+      "forwards": 30720,
+      "seconds": 4578.3096025896175
+    }
+  ],
+  "selected": {
+    "length": 1024,
+    "forwards": 40960,
+    "seconds": 6104.412803452823
+  },
+  "role": "resource plan, not inference latency; includes diagnostic metric overhead and observed contention",
+  "design_sha256": "5b4b0d58bbb57a808773a34d2dddece73f741f3e6ce998d598bf3d52aa6ac8ad"
+}

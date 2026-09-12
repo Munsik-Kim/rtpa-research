@@ -1,0 +1,23 @@
+{
+  "run_id": "RTPA_DIAG_ATTRIBUTION_R4_20260912_V1",
+  "phase": "A_CPU_CODEC_MASK_CROSS",
+  "documents": ["train_associative_recall_0", "train_associative_recall_1", "train_code_0", "train_code_1", "train_natural_language_0", "train_natural_language_1"],
+  "layers": [0, 12, 22],
+  "length": 256,
+  "threads": 2,
+  "profiles": ["LEGACY_P_PRE", "R2_OFFSET"],
+  "masks": {
+    "LEGACY_DIAG": {"path": "data/benchmarks/gdn/policy.npz", "sha256": "bd865a1a138ed25a98e8db5b5dabb26ff259307be3ba2f071a04ceb71faace68"},
+    "R2_DIAG": {"path": "data/benchmarks/diag_r2/policy_r2.npz", "sha256": "45a511cc987306a3e7c68a86d6b1fa61c80778e1fc8911d8f19042935cc8c0b1"}
+  },
+  "snapshot_tokens": [31, 127, 223],
+  "single_injection_horizon": 32,
+  "codec_repeat_steps": [1, 2, 4, 8, 16],
+  "warmup": 16,
+  "state_energy_identity_relative_tolerance": 1e-10,
+  "fidelity_nL2_tolerance": 0.0001,
+  "CPU_phase_seconds_cap": 1800,
+  "interpretation": "TRAIN-only frozen-operand codec-by-mask experiment, not native model logits. BF16 reference controls retain the historical tolerance and any failures. No codec repair or default selection follows from local SSE alone.",
+  "failure_policy": "Retain first failure and partial observations. Never replace nonfinite metrics by zero. Resume only identical input/source/config hashes.",
+  "forward_count": 0
+}

@@ -1,0 +1,242 @@
+{
+  "scope": "Selected LEGACY_P_PRE GPU-generated FP32 codec/anchor and FP64 physical subtraction/response; TRAIN associative-recall0/layer12/head0 only; not full-training or deployment-mask evidence.",
+  "status": "PASS_EXACT_IDENTITIES",
+  "exact_checks": {
+    "NumPy_forward_Kdiag_vs_parent_Torch_F64": 1.310693968994221e-16,
+    "NumPy_forward_c_vs_parent_Torch_F64": 4.773661188492354e-16,
+    "NumPy_B4_vs_parent_Torch_F64": 1.246521218056164e-16,
+    "NumPy_adjoint_c_vs_forward": 3.5404653814651594e-15,
+    "NumPy_B3_Gramian_vs_parent": 1.415279275846063e-16,
+    "NumPy_B3_score_vs_parent": 4.63131041195295e-16,
+    "row_chunk8_Kdiag": 0.0,
+    "row_chunk8_c": 0.0,
+    "row_chunk8_score_B4": 0.0,
+    "probe8_exact_shared_c": 3.460904361656955e-15,
+    "probe16_exact_shared_c": 3.460904361656955e-15,
+    "probe32_exact_shared_c": 3.460904361656955e-15
+  },
+  "fixture_shape": [
+    256,
+    1,
+    128,
+    128
+  ],
+  "confidence_scope": "One predeclared probe seed on this fixed real trajectory; observed interval inclusion is a check, not empirical coverage-rate evidence. Conditional Gaussian intervals across supplied128rows and3stages; no FP64 rounding-error proof and no across-run95% claim unless family_heads was predeclared accordingly.",
+  "one_seed_all_rows_all_stages_interval_inclusion": true,
+  "exact_top8": [
+    9,
+    28,
+    32,
+    35,
+    60,
+    73,
+    85,
+    126
+  ],
+  "exact_mask_objectives": {
+    "diagonal_J": 2.703216840713266e-05,
+    "full_K_J": 2.649227207632573e-05
+  },
+  "B3_top8": [
+    9,
+    28,
+    30,
+    32,
+    35,
+    73,
+    85,
+    126
+  ],
+  "B3_mask_objectives": {
+    "diagonal_J": 2.712554382807335e-05,
+    "full_K_J": 2.6897231371892928e-05
+  },
+  "probe_stages": [
+    {
+      "r": 8,
+      "Khat_relative_l2_error": 0.10044508343569303,
+      "score_relative_l2_error": 0.09812964855838031,
+      "selected_row_ids": [
+        9,
+        28,
+        32,
+        35,
+        51,
+        73,
+        85,
+        126
+      ],
+      "selected_overlap_of8": 7,
+      "exact_mask": false,
+      "certified": false,
+      "interval_includes_exact_rows": 128,
+      "row_denominator": 128,
+      "unresolved_zero_count": 0,
+      "diagonal_J": 2.7135749676780632e-05,
+      "full_K_J": 2.717660179943917e-05,
+      "diagonal_J_gap_vs_exact_mask": 1.035812696479733e-07,
+      "full_K_J_difference_vs_exact_mask": 6.843297231134422e-07
+    },
+    {
+      "r": 16,
+      "Khat_relative_l2_error": 0.17610318225444851,
+      "score_relative_l2_error": 0.17204369585401405,
+      "selected_row_ids": [
+        9,
+        28,
+        32,
+        35,
+        60,
+        73,
+        85,
+        126
+      ],
+      "selected_overlap_of8": 8,
+      "exact_mask": true,
+      "certified": false,
+      "interval_includes_exact_rows": 128,
+      "row_denominator": 128,
+      "unresolved_zero_count": 0,
+      "diagonal_J": 2.703216840713266e-05,
+      "full_K_J": 2.649227207632573e-05,
+      "diagonal_J_gap_vs_exact_mask": 0.0,
+      "full_K_J_difference_vs_exact_mask": 0.0
+    },
+    {
+      "r": 32,
+      "Khat_relative_l2_error": 0.13439149540620424,
+      "score_relative_l2_error": 0.1312935363520217,
+      "selected_row_ids": [
+        9,
+        28,
+        32,
+        35,
+        60,
+        73,
+        85,
+        126
+      ],
+      "selected_overlap_of8": 8,
+      "exact_mask": true,
+      "certified": false,
+      "interval_includes_exact_rows": 128,
+      "row_denominator": 128,
+      "unresolved_zero_count": 0,
+      "diagonal_J": 2.703216840713266e-05,
+      "full_K_J": 2.649227207632573e-05,
+      "diagonal_J_gap_vs_exact_mask": 0.0,
+      "full_K_J_difference_vs_exact_mask": 0.0
+    }
+  ],
+  "costs": [
+    {
+      "method": "adjoint_gramian",
+      "seconds": [
+        0.039195369001390645,
+        0.03946252899913816,
+        0.035825470000418136
+      ],
+      "median_seconds": 0.039195369001390645,
+      "input_bytes": 34867200,
+      "peak_RSS_before_compute_bytes": 171659264,
+      "peak_RSS_after_compute_bytes": 171659264,
+      "RSS_high_water_increase_bytes": 0,
+      "workspace_core_bytes": 264192,
+      "output_sha256": "ad8d747aec4e9c89433127b3fde151865c0fccf15c9d77150542b1be0b042f90",
+      "minimum_gramian_diagonal_observed": 0.0
+    },
+    {
+      "method": "exact_full",
+      "seconds": [
+        1.2080745359999128,
+        1.1617924890015274,
+        1.1250299809980788
+      ],
+      "median_seconds": 1.1617924890015274,
+      "input_bytes": 34867200,
+      "peak_RSS_before_compute_bytes": 171384832,
+      "peak_RSS_after_compute_bytes": 220868608,
+      "RSS_high_water_increase_bytes": 49483776,
+      "workspace_core_bytes": 16779264,
+      "output_sha256": "f8dd09cad53cece1cfabe522f7358686c81e2837acc1d7a80b5bda53255dd64a"
+    },
+    {
+      "method": "exact_chunk8",
+      "seconds": [
+        1.0962341200029186,
+        1.1231209639990993,
+        1.2169749300010153
+      ],
+      "median_seconds": 1.1231209639990993,
+      "input_bytes": 34867200,
+      "peak_RSS_before_compute_bytes": 171323392,
+      "peak_RSS_after_compute_bytes": 171323392,
+      "RSS_high_water_increase_bytes": 0,
+      "workspace_core_bytes": 1050624,
+      "output_sha256": "f8dd09cad53cece1cfabe522f7358686c81e2837acc1d7a80b5bda53255dd64a"
+    },
+    {
+      "method": "probe8",
+      "seconds": [
+        0.10285732400006964,
+        0.09642674499991699,
+        0.09958285399989109
+      ],
+      "median_seconds": 0.09958285399989109,
+      "input_bytes": 34867200,
+      "peak_RSS_before_compute_bytes": 171319296,
+      "peak_RSS_after_compute_bytes": 171319296,
+      "RSS_high_water_increase_bytes": 0,
+      "workspace_core_bytes": 3154944,
+      "output_sha256": "72eab39bff3e9112ccfb9a35ae2f9144f6a36b2eae679aa49aabd45803e8c735",
+      "per_row_head_stage_alpha": 4.340277777777778e-05,
+      "probability_scope": "Conditional Gaussian intervals; simultaneous across supplied heads/rows/stages; no numerical-roundoff proof"
+    },
+    {
+      "method": "probe16",
+      "seconds": [
+        0.18831900299846893,
+        0.18471938900256646,
+        0.19292225400204188
+      ],
+      "median_seconds": 0.18831900299846893,
+      "input_bytes": 34867200,
+      "peak_RSS_before_compute_bytes": 171184128,
+      "peak_RSS_after_compute_bytes": 171184128,
+      "RSS_high_water_increase_bytes": 0,
+      "workspace_core_bytes": 3163136,
+      "output_sha256": "30672faae0bef53464c6923d696a50359d10905ca365e5e3b6d33b08479ce622",
+      "per_row_head_stage_alpha": 4.340277777777778e-05,
+      "probability_scope": "Conditional Gaussian intervals; simultaneous across supplied heads/rows/stages; no numerical-roundoff proof"
+    },
+    {
+      "method": "probe32",
+      "seconds": [
+        0.35597962999963784,
+        0.3640554939993308,
+        0.35487456699775066
+      ],
+      "median_seconds": 0.35597962999963784,
+      "input_bytes": 34867200,
+      "peak_RSS_before_compute_bytes": 171446272,
+      "peak_RSS_after_compute_bytes": 171446272,
+      "RSS_high_water_increase_bytes": 0,
+      "workspace_core_bytes": 3179520,
+      "output_sha256": "2a2dc7aa536d8185b4712eb52bd7bb71611cd8efd18a320e64e81d87119a8648",
+      "per_row_head_stage_alpha": 4.3402777777777786e-05,
+      "probability_scope": "Conditional Gaussian intervals; simultaneous across supplied heads/rows/stages; no numerical-roundoff proof"
+    }
+  ],
+  "negative_Kdiag_count": 0,
+  "negative_independent_Kdiag_count": 0,
+  "structurally_zero_rows": 0,
+  "comparison_npz_sha256": "a884ef05c51d985f03bd12bff63738f624e2f580e7bb2314e10091ef0654ab57",
+  "claims_not_made": [
+    "No selected-codec result: this is the declared fixture only",
+    "No deployment/calibration mask selection",
+    "No empirical coverage estimate from one seed",
+    "No certified FP64 arithmetic-error bound",
+    "No cost extrapolation to all108 cases or model quality",
+    "No speed-only promotion"
+  ]
+}

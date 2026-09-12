@@ -1,0 +1,23 @@
+{
+  "utc": "2026-09-12T10:46:06.226681+00:00",
+  "config": {
+    "id": "A3_SAVED_GROUP_RATCHET_OBSERVATION_20260912_V1",
+    "threads": 2,
+    "wall_budget_seconds": 30,
+    "model_forwards": 0,
+    "GPU_forwards": 0,
+    "inputs": "All R2 previous/current/next groups already selected by the frozen A3 maximum-SSE snapshot rule, including saved adjacent value groups",
+    "branches": [
+      "one re-encode of actual FP32 affine decode without H",
+      "one re-encode of saved actual physical FP32 decode transformed again by source H32"
+    ],
+    "observations": "Original and re-encoded UINT8/FP16 payloads; directed one-ULP checks; required raw scale FP32/FP64 minus original stored scale; extrema and mean/SSE decode changes",
+    "ideal_fullrange_check": "If codes contain 0 and 255, ideal real affine decode has extrema offset and offset+255*scale. Binary FP64 exactly represents half metadata times UINT8 and their sums in this bounded contract; its required raw scale recovers the stored half scale. Such a grid is mathematically fixed, not necessarily FP32-operation fixed.",
+    "scope": "Selected-group operation evidence only; no prevalence, performance-filter, total-metadata causal decomposition, or model-KL claim"
+  },
+  "sources": {
+    "script": "4cb3e3f9210ecc47ac9562b0df4a35cff76225cd680502fa6b2a258cac51f48f",
+    "codec_r2": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2"
+  },
+  "state": "BEFORE_SAVED_GROUP_INPUT_READS"
+}

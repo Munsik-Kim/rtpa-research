@@ -1,0 +1,25 @@
+{
+  "schema": "R4_COST_ANALYSIS_WIRING_V2",
+  "UTC": "2026-09-12T12:12:23Z",
+  "GPU_work": false,
+  "pre_cost_measurement": true,
+  "original_analysis_contract_sha256": "376e2c6c65f29b11f9cc0d76984fd9f4c42aa0a7fc1810de3d12fa2344a120be",
+  "original_analysis_source_sha256": "8d12b1d6d36641e8567bf9c6e5517d62a1e93ce0cb770868fc4964a1f722c271",
+  "new_analysis_source_sha256": "669cdaf3d3e7240405cbb6e9f4b1740939bf2685f2145d6a86f3aa1ddb51d793",
+  "original_tests_sha256": "c83649dcb0ead81824186d06cbc871638291d160baa25918b528256b421c4201",
+  "new_tests_sha256": "7e49e0cb01ecbe5904bfc2021ef735aaf8b3e6a8317fa773e8b0ad4f821c012a",
+  "bootstrap_draws_sha256": "96652acffc15d60bb71171eb531134c2770bbfd36c824ee64d798358a6e75e5e",
+  "cost_freeze_sha256": "88ab9252a4c189c10de16763dbc4ba270d4307fbb18217759a9f3594edb7cd73",
+  "cost_wiring_revision_sha256": "6a806f0ec2e914f64494738345ef3e4c1043282239153d1388cef019fc15085a",
+  "native_storage_diagnostic_sha256": "956a3cd88b6caad6fbf1f708f64e360fff21f6f2ed525f761ba3a3d7f782d43b",
+  "change": "Correct Native persistent cache descriptor from FP32 to BF16 (2 bytes), and explicitly resolve the archived analysis contract to this source revision.",
+  "unchanged": [
+    "original analysis contract bytes",
+    "saved bootstrap draws",
+    "all statistical formulas, thresholds, counts and seeds",
+    "GPU cost driver and cost schedule",
+    "model, codecs and masks",
+    "Native payload 9437184 bytes and 32768 bytes/head"
+  ],
+  "supplemental_dependency_scope": "cache_utils.py hash and tiny CPU behavior were observed after the original execution freeze; it was not separately hash-bound by that original freeze."
+}

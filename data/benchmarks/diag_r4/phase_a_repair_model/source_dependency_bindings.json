@@ -1,0 +1,159 @@
+{
+  "scope": "Frozen source expectations versus current public candidates; mismatches are not silently repaired",
+  "sources": [
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/diag_r4_execution.py",
+      "expected_sha256": "77ee439c16ae0245107b190ee381e41f07c8d58700e7b794216de545b7d4294d",
+      "candidate_public_path": "src/rtpa_research/diag_r4_execution.py",
+      "current_public_sha256": "77ee439c16ae0245107b190ee381e41f07c8d58700e7b794216de545b7d4294d",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/runtime.py",
+      "expected_sha256": "afbfcbad6f18879151a827a1473869ea60c5d80f1f32689ee408d7d08cb6f8d2",
+      "candidate_public_path": "src/rtpa_research/runtime.py",
+      "current_public_sha256": "afbfcbad6f18879151a827a1473869ea60c5d80f1f32689ee408d7d08cb6f8d2",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/diag_r2_runtime.py",
+      "expected_sha256": "36012aee79be9394c531e8db371d8f7b8d8ed3c8161f5e53b501360646b5404f",
+      "candidate_public_path": "src/rtpa_research/diag_r2_runtime.py",
+      "current_public_sha256": "36012aee79be9394c531e8db371d8f7b8d8ed3c8161f5e53b501360646b5404f",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/codec.py",
+      "expected_sha256": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069",
+      "candidate_public_path": "src/rtpa_research/codec.py",
+      "current_public_sha256": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/codec_r2.py",
+      "expected_sha256": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2",
+      "candidate_public_path": "src/rtpa_research/codec_r2.py",
+      "current_public_sha256": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/codec_r2_optimized.py",
+      "expected_sha256": "519975711d79ee0672a20d3585c6cd6c07002e237629ed48cabb006dffe9ad9e",
+      "candidate_public_path": "src/rtpa_research/codec_r2_optimized.py",
+      "current_public_sha256": "519975711d79ee0672a20d3585c6cd6c07002e237629ed48cabb006dffe9ad9e",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/factorized.py",
+      "expected_sha256": "d6947df1f614b9dcb7372878e7fbc9e05626ff40c7e86c2cb80e819ae560e08e",
+      "candidate_public_path": "src/rtpa_research/factorized.py",
+      "current_public_sha256": "d6947df1f614b9dcb7372878e7fbc9e05626ff40c7e86c2cb80e819ae560e08e",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/reference_encoder.py",
+      "expected_sha256": "d7272e7c4d600da3cbfcb9196be140afdb08b0f33c6751d51c744b4429ac7b53",
+      "candidate_public_path": "src/rtpa_research/reference_encoder.py",
+      "current_public_sha256": "d7272e7c4d600da3cbfcb9196be140afdb08b0f33c6751d51c744b4429ac7b53",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/layout.py",
+      "expected_sha256": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276",
+      "candidate_public_path": "src/rtpa_research/layout.py",
+      "current_public_sha256": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/io.py",
+      "expected_sha256": "9bfdd227e7db2626abf39418a0973e443a801a4657a7626385f536f6ede7300f",
+      "candidate_public_path": "src/rtpa_research/io.py",
+      "current_public_sha256": "9bfdd227e7db2626abf39418a0973e443a801a4657a7626385f536f6ede7300f",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/benchmark.py",
+      "expected_sha256": "1a3d9efec4b9b712ae4728a4777429e451afe1ca0ef5e059d94b38baf0b64071",
+      "candidate_public_path": "src/rtpa_research/benchmark.py",
+      "current_public_sha256": "1a3d9efec4b9b712ae4728a4777429e451afe1ca0ef5e059d94b38baf0b64071",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/diag_r2_benchmark.py",
+      "expected_sha256": "48d5198da63a8ee1d0041ff6eee9c918313aadc878ef7f02ec51bfb8e54f55de",
+      "candidate_public_path": "src/rtpa_research/diag_r2_benchmark.py",
+      "current_public_sha256": "48d5198da63a8ee1d0041ff6eee9c918313aadc878ef7f02ec51bfb8e54f55de",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/operators.py",
+      "expected_sha256": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78",
+      "candidate_public_path": "src/rtpa_research/operators.py",
+      "current_public_sha256": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/codec_r4_rne.py",
+      "expected_sha256": "ac0f506bb9121dc16fd01a01a2d42e61c0f881468d32c4f3c5401fc23c90de36",
+      "candidate_public_path": "src/rtpa_research/codec_r4_rne.py",
+      "current_public_sha256": "ac0f506bb9121dc16fd01a01a2d42e61c0f881468d32c4f3c5401fc23c90de36",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/package",
+      "source_id": "src/rtpa_research/diag_r4_repair_execution.py",
+      "expected_sha256": "d586e8c731c08acd33e15eb579824cad249166b9848f32d699ba56c8e4c603ac",
+      "candidate_public_path": "src/rtpa_research/diag_r4_repair_execution.py",
+      "current_public_sha256": "d586e8c731c08acd33e15eb579824cad249166b9848f32d699ba56c8e4c603ac",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/binding/native_source_sha256",
+      "expected_sha256": "d67880b98f47d55a9d40679c901a740aa0618b97458824cab2abe9a1f7861be6",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    }
+  ],
+  "recorded_environments": [],
+  "external_capture_bindings": [],
+  "dependency_wiring": {
+    "pyproject.toml": {
+      "sha256": "70a71f91ae812d1563a379d1380a5e0c91efda493642d15e449cba6ee7dfa796",
+      "mentions_scipy": true
+    },
+    ".github/workflows/cpu-evidence.yml": {
+      "sha256": "a9d453cb829198afb172f0ad630aa8e25e69b75e39896a0c8a263620572f9156",
+      "mentions_scipy": true
+    }
+  },
+  "dependency_boundary": "Scalar aggregation and curation use NumPy/stdlib; adjoint interval tests additionally require SciPy. No dependency was installed or upgraded by curation."
+}

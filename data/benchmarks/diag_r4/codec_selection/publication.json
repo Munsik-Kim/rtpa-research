@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "stage": "codec_selection",
+  "scientific_status": "NOT_PROMOTED_DEV_CRITERIA_FAILED",
+  "curator_sha256": "c2fbaba51bb06f65ab4ccfac6ef55413cd6eb678f9e5e4af328f8ef831deb738",
+  "files": [
+    {
+      "path": "selection.json",
+      "sha256": "70ec2d78db1a79604889cf8a3c8b0dae75ab67cf03705f4b7cac6cffad454a58",
+      "bytes": 3305,
+      "byte_identical": true,
+      "original_relative": "../codec_selection.json",
+      "role": "IMMUTABLE_CODEC_SELECTOR_RECEIPT"
+    },
+    {
+      "path": "diag_r4_repair_selection.json",
+      "sha256": "9bbc24087356c8922395bf0e42dd533f73c04e580338138cd802000bc69507fd",
+      "bytes": 1350,
+      "byte_identical": true,
+      "original_relative": "configs/diag_r4_repair_selection.json",
+      "role": "UNCHANGED_FIXED_RULES_OR_SELECTED_CONFIG"
+    },
+    {
+      "path": "diag_r4_selected_scores.json",
+      "sha256": "d4f8b92b133298e936e791db0ab39b4d1e98401f7e34f40023520e2a8d7264dd",
+      "bytes": 2132,
+      "byte_identical": true,
+      "original_relative": "configs/diag_r4_selected_scores.json",
+      "role": "UNCHANGED_FIXED_RULES_OR_SELECTED_CONFIG"
+    },
+    {
+      "path": "historical_source/select_diag_r4_codec.py",
+      "sha256": "ee359c4b116fc8e0020e1b210b5eb1ac14c50116d0a226254562e90d247181c8",
+      "bytes": 7694,
+      "byte_identical": true,
+      "original_relative": "../selection_executed_source/select_diag_r4_codec.py",
+      "role": "HISTORICAL_SELECTOR_SOURCE_OR_SEPARATE_BINDING_SUPPLEMENT"
+    },
+    {
+      "path": "selection_binding_supplement.json",
+      "sha256": "1599b960220ec2bfe79006c617953e4a6d62d5fb54b71b906f00b843f674de17",
+      "bytes": 538,
+      "byte_identical": true,
+      "original_relative": "../selection_binding_supplement.json",
+      "role": "HISTORICAL_SELECTOR_SOURCE_OR_SEPARATE_BINDING_SUPPLEMENT"
+    },
+    {
+      "path": "source_dependency_bindings.json",
+      "sha256": "cbd588032a94673a8b5b69279d15116a676bc4018bf729a8b635ca6726c89dd3",
+      "bytes": 971,
+      "byte_identical": false,
+      "role": "DERIVED_SOURCE_AND_DEPENDENCY_BINDINGS"
+    }
+  ],
+  "local_only": [],
+  "original_hash_links": [
+    {
+      "path": "historical_source/select_diag_r4_codec.py",
+      "sha256": "ee359c4b116fc8e0020e1b210b5eb1ac14c50116d0a226254562e90d247181c8",
+      "role": "EXACT_EXECUTED_SELECTOR_SOURCE"
+    },
+    {
+      "stage": "phase_a_repair_cpu",
+      "path": "execution.json",
+      "sha256": "130b66b9161fbafab3d99d2ef0b4c10c9b3aacf78f631e9b95cb6bb6475e3430",
+      "role": "SELECTOR_INPUT"
+    },
+    {
+      "stage": "phase_a_repair_cuda",
+      "path": "result.json",
+      "sha256": "8cc8ca4a071b0f4f2254f55054f76910faeb929962a12fb4a47a599f297d30a6",
+      "role": "SELECTOR_INPUT"
+    },
+    {
+      "stage": "phase_a_model",
+      "path": "freeze.json",
+      "sha256": "fb52ac69b68d9ca96f338e921d8cdf965b0e8a3366b37f37ba2e0bdec8908f21",
+      "role": "SELECTOR_INPUT"
+    },
+    {
+      "stage": "phase_a_repair_model",
+      "path": "freeze.json",
+      "sha256": "70853fef2be45eb0cdd1a890c91ccebe23c7ec68b5a8999624d5417878ed4b6e",
+      "role": "SELECTOR_INPUT"
+    }
+  ],
+  "reproduction_levels": {
+    "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS": "Scalar/table aggregation only, where the public CPU verifier implements the corresponding reduction",
+    "INCLUDED_TENSOR_POINT_CHECKS": "Small selected fixtures support explicitly bounded arithmetic comparisons; they are not representative full trajectories",
+    "LOCAL_ONLY_REGENERATION": "Full model forwards and capture/response regeneration require hash-bound local inputs and sometimes local drivers; no blanket full-rerun promise"
+  },
+  "claim_boundary": "Curation establishes evidence identity, not new model quality, numerical success, or deployment promotion"
+}

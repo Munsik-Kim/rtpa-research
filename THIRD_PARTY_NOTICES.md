@@ -22,6 +22,25 @@ them. They are third-party content, not relicensed as RTPA-authored Apache code.
 Any publicly named upstream contributors in those files are attribution, not
 RTPA author or affiliation claims.
 
+The R4 panel separately includes eight unmodified source files (plus their
+first 1,024 token IDs) as **evaluation data**, not executed library replacements.
+They were selected from the installed package versions below. Exact content
+hashes, original relative paths, zero-offset selection, text/token hashes and
+retained licenses live in `data/benchmarks/diag_r4/phase_b_model/`.
+An installed-package version is not represented as an independently checked
+source-repository commit. The root Apache license does not relicense these files.
+
+| R4 source family | Installed version | Retained terms |
+|---|---|---|
+| PyTorch | 2.11.0+cu128 | Upstream BSD-style [LICENSE](data/benchmarks/diag_r4/phase_b_model/licenses/torch/LICENSE) and [NOTICE](data/benchmarks/diag_r4/phase_b_model/licenses/torch/NOTICE) |
+| Transformers | 5.9.0 | [Apache-2.0](data/benchmarks/diag_r4/phase_b_model/licenses/transformers/LICENSE) |
+| SciPy | 1.17.1 | [BSD-3-Clause](data/benchmarks/diag_r4/phase_b_model/licenses/scipy/LICENSE.txt); the selected vendored PRIMA file additionally retains its exact-version upstream [license](data/benchmarks/diag_r4/phase_b_model/licenses/scipy/PRIMA_LICENCE.txt) |
+| SymPy | 1.14.0 | Upstream [BSD-style license](data/benchmarks/diag_r4/phase_b_model/licenses/sympy/LICENSE) |
+
+The nested PRIMA license was fetched from the exact SciPy v1.17.1 upstream
+path because it was missing from the installed wheel. Its retrieval/version
+receipt is retained; neither the selected document nor its tokens were changed.
+
 The [source mapping](configs/source_mapping.json) covers the included historical project modules. Model and cache adapters call external Transformers interfaces; the installed Transformers implementation and other third-party library source trees are not vendored here. Mathematical reimplementations and adapters are not represented as official author kernels. Existing attribution must not be removed if additional third-party material is brought into a downstream version.
 
 ## Referenced or externally required, not redistributed

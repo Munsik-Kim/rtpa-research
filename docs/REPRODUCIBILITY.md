@@ -1,7 +1,8 @@
 # Reproduction guide and verification levels
 
-For the stable-codec DIAG state/model path, start with the
-[R2 Quickstart](QUICKSTART_R2.md) and [phase-specific reproduction scope](REPRO_R2_SCOPE.md).
+For the current attribution study, start with [R4](DIAG_ATTRIBUTION_R4.md).
+The experimental R2 state/model path retains its
+[quickstart](QUICKSTART_R2.md) and [phase-specific scope](REPRO_R2_SCOPE.md).
 The earlier model/operator commands remain in [Quickstart](QUICKSTART.md).
 [Benchmarks](BENCHMARKS.md) keeps the separate run IDs and numerical profiles
 distinct from the historical reconstruction described below.
@@ -11,16 +12,22 @@ establish GPU performance or independent replication.
 
 ## Model-free CPU reconstruction
 
-Requirements: Python 3.11, NumPy 1.26.4, and tokenizers 0.22.2. From this repository's root, without the original project, CUDA, model cache, Torch, Transformers, or API credentials:
+Evidence reconstruction requires Python 3.11, NumPy 1.26.4, and tokenizers
+0.22.2. The model-free test suite additionally needs the optional
+`test` dependencies, SciPy 1.17.1 and pytest 9.1.1, for Gaussian-probe intervals
+and cost-contract tests. From the
+repository root, without the original project, CUDA, model cache, or credentials:
 
 ```bash
-PYTHONPATH=src python -m unittest discover -s tests -v
 PYTHONPATH=src python -m rtpa_research verify --out recomputed
+python -m pip install '.[test]'
+PYTHONPATH=src python -m unittest discover -s tests -v
+PYTHONPATH=src python -m pytest -q tests/test_diag_r4_cost.py tests/test_diag_r4_cost_analysis.py
 ```
 
 The `reproduce` command creates aggregates in a separate output directory and compares them with the original frozen scalar expectations. `verify` also checks committed tables, source/evidence hashes, schemas, masks, payload arithmetic, and documentation links. It does not automatically update expectations or tolerances to make a failed check pass. The initial FP64 comparison rule is absolute 1e−12 plus relative 1e−10; counts and identifiers use exact comparison. See the [verification contract](../configs/verification_contract.json).
 
-The lightweight GitHub job uses the two declared CPU dependencies and build
+The lightweight GitHub job uses the declared CPU dependencies, SciPy, and build
 tools; optional Torch tests are explicitly skipped there. A separate numerical
 job installs CPU-only Torch and Transformers to exercise the codec/API tests.
 Neither job downloads model weights, starts a GPU benchmark, or requires a
@@ -67,7 +74,8 @@ strictly narrower public reconstruction scope.
 | FP16 overflow | INCLUDED: same finite group, original row, stored metadata | CHECKED_AT_INCLUDED_TENSOR_POINTS | Whole-model causal replay from token 499 to 500 |
 | Positive v0.3 A/B context | INCLUDED: paired sequence scalars | RECOMPUTED_FROM_INCLUDED_OBSERVATIONS | Token-tail and CI reconstruction for that context |
 | FSBQ mechanism context | INCLUDED summary | REPORTED_ONLY | Raw FSBQ snapshots or training reproduction |
-| Matching-injection M and generalized spectrum | MISSING: not stored | NOT_COMPUTED_OR_NOT_IDENTIFIABLE | Substitution of a different energy quantity |
+| Historical matching-injection M and generalized spectrum | MISSING: not stored | NOT_COMPUTED_OR_NOT_IDENTIFIABLE | Substitution of R4's different TRAIN injection map |
+| R4 physical row-injection statistics and masks | INCLUDED: diagonal energy, response scores and case receipts; full K local-only | RECOMPUTED_FROM_INCLUDED_OBSERVATIONS for scores/masks; retained full-K spectral receipts only | Full tensor propagation or a historical M reconstruction |
 | v0.6 common-history KL/NLL | Not computed | NOT_COMPUTED_OR_NOT_IDENTIFIABLE | Retrospective substitution of v0.7/v0.5 values |
 | DAMP author-code parity | NOT_VERIFIED | REPORTED_ONLY: historical audit status | Proof of code nonavailability or author-kernel reproduction |
 
@@ -108,6 +116,13 @@ Model weights, caches, large captures, and external corpora remain outside the
 public package; their availability limits are listed above and in
 [R2 reproduction scope](REPRO_R2_SCOPE.md).
 
-The [verification receipt](../results/verification.json) separates CPU/scalar/tensor/source checks from unverified items. The local clean-copy test used only selected staged files. Actual remote CI status is attached to its GitHub commit; a local receipt is not evidence that a remote workflow ran.
+The [verification index](../results/verification.json) separates the unchanged
+historical receipt from current R4 source-bound reconstruction and installed
+package checks. The [R4 checker revision](../results/diag_r4/verification_provenance/revision.json)
+preserves the first failed installation check: installer-generated Python
+bytecode is now reported separately from inventoried evidence, while source
+hashes and all scientific expectations remain checked. The local clean-copy
+test uses only selected staged files. Actual remote CI status is attached to
+its GitHub commit; a local receipt is not evidence that a remote workflow ran.
 
 For reuse conditions and the distinction between original research materials and third-party files, see [third-party notices](../THIRD_PARTY_NOTICES.md).

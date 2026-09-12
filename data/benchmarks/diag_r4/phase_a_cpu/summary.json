@@ -1,0 +1,60 @@
+{
+  "run_id": "RTPA_DIAG_ATTRIBUTION_R4_20260912_V1",
+  "scope": "TRAIN-only frozen-operand codec-by-mask experiment, not native model logits. BF16 reference controls retain the historical tolerance and any failures. No codec repair or default selection follows from local SSE alone.",
+  "groups": [
+    {
+      "mask": "LEGACY_DIAG",
+      "profile": "LEGACY_P_PRE",
+      "completed": 18,
+      "planned": 18,
+      "readout_sse_vs_fp32": 0.013739690501658748,
+      "readout_sse_vs_captured_native": 0.023463155351953095,
+      "injection_sse": 3.1460197350779433,
+      "cross_term": 1.8735074626792323,
+      "post_error_sse": 393.6514698303758,
+      "whole_panel_aggregate_valid": true
+    },
+    {
+      "mask": "LEGACY_DIAG",
+      "profile": "R2_OFFSET",
+      "completed": 18,
+      "planned": 18,
+      "readout_sse_vs_fp32": 0.04402164251977832,
+      "readout_sse_vs_captured_native": 0.05500601820751165,
+      "injection_sse": 3.3879631648430273,
+      "cross_term": 13.747296826207624,
+      "post_error_sse": 1090.6517016493458,
+      "whole_panel_aggregate_valid": true
+    },
+    {
+      "mask": "R2_DIAG",
+      "profile": "LEGACY_P_PRE",
+      "completed": 18,
+      "planned": 18,
+      "readout_sse_vs_fp32": 0.01092900226877266,
+      "readout_sse_vs_captured_native": 0.02165988492448214,
+      "injection_sse": 3.1086381583805722,
+      "cross_term": 1.8247267234754334,
+      "post_error_sse": 387.4602848734207,
+      "whole_panel_aggregate_valid": true
+    },
+    {
+      "mask": "R2_DIAG",
+      "profile": "R2_OFFSET",
+      "completed": 18,
+      "planned": 18,
+      "readout_sse_vs_fp32": 0.037057038907929093,
+      "readout_sse_vs_captured_native": 0.04656824142191222,
+      "injection_sse": 3.3424698592942756,
+      "cross_term": 13.239134418972963,
+      "post_error_sse": 1058.464687881253,
+      "whole_panel_aggregate_valid": true
+    }
+  ],
+  "native_control_failed_cases": 14,
+  "control_denominator": 36,
+  "failures": [],
+  "model_logits": "NOT_COMPUTED",
+  "causal_codec_repair": "NOT_IDENTIFIED_BY_THIS_CONTRAST",
+  "freeze_sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02"
+}

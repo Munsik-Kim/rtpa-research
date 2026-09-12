@@ -6,7 +6,7 @@ The research goal is better output preservation under the same low-precision sto
 
 **Claim and scope.** For a fixed linear response `δy = L e`, error energy `E = eᵀe` and output-response energy `J = eᵀLᵀL e` are different objectives. They are proportional if `LᵀL = αI` on the permitted subspace. Anisotropy can give equal-norm directions different risks and can reverse energy and risk rankings. Coincident rankings over a finite candidate set are a weaker property than isotropy.
 
-**Status: MIXED.** These are linear-algebraic conditions and counterexamples. The normalized anisotropy of the actual, identically defined physical injections in GDN remains unidentified. The algebra is not presented as a new GDN theorem.
+**Status: SUPPORTED_IN_SCOPE for a fixed response; MIXED for model/task transfer.** These are linear-algebraic conditions and counterexamples, not a new GDN theorem. R4 additionally constructs M and K for the same restricted physical stacked-write injection map in its TRAIN fit. It does not recover missing historical injections or identify arbitrary-state/model-level risk.
 
 - Supporting observations: historical FSBQ diagnostics in which lower common-snapshot Q4 error coexisted with worse isolated readout distortion; disagreement between own-path write error, readout, and answer metrics in `same-input-diagnostic`.
 - Additional measured evidence: the separate FA_CODE common-state panel had
@@ -16,7 +16,7 @@ The research goal is better output preservation under the same low-precision sto
   a new theorem or the missing physical-injection M/K spectrum.
 - Counterevidence and boundaries: different own-path states do not constitute the same-injection comparison. Direction, scale, and upstream changes remain alternative explanations.
 - Evidence links: C1, C5, C6 in [claims.json](../results/claims.json); `diagnostic_items.csv`, `readout_by_layer.csv`, and `boundary.json`.
-- Unresolved: `M = BᵀB` for exactly the injections corresponding to K, the energy-normalized response spectrum, and intervention-based causal contributions in the same case.
+- Historical unresolved: `M = BᵀB` and its matching normalized spectrum for the v0.7 cases were not stored. New R4 positive-support spectra concern a separately defined TRAIN row-injection space; they do not fill that historical gap. Intervention-based causal contributions to particular final answers remain unresolved.
 
 ## H2 — Can offline output responses be compressed into a useful fixed mask?
 
@@ -32,6 +32,26 @@ quality replacement in this protocol. This contrast changes both codec and
 calibrated mask, so it does not identify a single cause. It strengthens the
 within-codec allocation observation while contradicting an unqualified
 "new numerical revision improves output preservation" claim.
+
+R4's three-document codec × mask model DEV narrows that ambiguity: both fixed
+masks deteriorate strongly at long context under R2, while a newly registered
+round-to-nearest offset candidate fails its model-quality acceptance limits.
+The selected-group rounding observations identify a possible amplification
+mechanism, not a complete cause of the model regression. R4's allocation fit
+then keeps legacy P_PRE fixed and distinguishes promotion energy, query
+weighting, independent writes, and coherent DIAG. Its [study](DIAG_ATTRIBUTION_R4.md)
+keeps frozen objectives, captured-operand replay, and whole-model results
+separate; none is evidence for an automatic new stable default.
+
+The completed eight-document R4 TEST supports B4 over promotion energy:
+23.08% KL reduction, 95% interval 21.53–24.58%, with lower mean NLL.
+But B4 is worse than static query-weighted promotion on every document:
+14.96% higher pooled KL, with the adjusted secondary interval excluding zero.
+Keeping cross-write coherence improves KL by 5.67% against the independent-write
+control, but not its NLL with resolved uncertainty. Thus **the need for coherent
+DIAG over a strong simple query-weighted score is not supported on this panel**.
+This does not identify a universal sufficient score or task-accuracy effect.
+[Registered contrasts and intervals](../results/diag_r4/benchmark_tables.md).
 
 FA_CODE compresses offline responses into a fixed
 diagonal-plus-rank-two metric rather than a static precision mask. Its historical own-model

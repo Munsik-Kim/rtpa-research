@@ -1,0 +1,13 @@
+{
+  "sources": {
+    "scripts/probe_diag_r4_cuda.py": "e48605ad8f194d28822e954af794751a57c5bbaeaa53c701700c30c8c0bbf90c",
+    "tests/test_codec_r4_rne.py": "ba78ecb23bc32f6cbf8debb07cf219e2ab3f7f2a5292ba0e6cf63d51fe5661c0",
+    "src/rtpa_research/codec_r4_rne.py": "ac0f506bb9121dc16fd01a01a2d42e61c0f881468d32c4f3c5401fc23c90de36",
+    "src/rtpa_research/codec_r2.py": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2",
+    "src/rtpa_research/layout.py": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276"
+  },
+  "seed": 612431,
+  "device": "cuda",
+  "affine_comparison": "exact independentNumPy payload/decode",
+  "full_state_checks": "finite guarded payload/high8/19328B; notCPU-vsCUDA physicalbitidentity"
+}

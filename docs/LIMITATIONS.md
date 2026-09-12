@@ -1,5 +1,52 @@
 # Limitations
 
+## Current attribution study
+
+The fixed-codec R4 comparison does **not** establish coherent DIAG as the best
+score: static query-weighted promotion has lower mean KL on all eight source
+documents. Coherence improves a registered independent-write ablation's KL,
+but not NLL with resolved uncertainty; B4 also has the largest single-token
+KL among the four mixed methods. A mean benefit cannot erase those outcomes.
+
+The RNE codec candidate failed its DEV acceptance limits. Legacy P_PRE remains
+a quality reference with a known overflow limitation, not a newly validated
+stable default. Selected-group H32/rounding probes narrow a possible mechanism
+without identifying its full-model causal contribution.
+
+The new timing attempts were both stopped by the competing-GPU-worker precheck
+before model startup. No new timing, profiler, or fresh-process peak-memory
+measurement is claimed. Historical process peaks and quality-run wall time
+cannot substitute for this missing measurement. Fixed payload arithmetic is
+separate from whole-model memory or a +5% runtime bound.
+
+## Current attribution scope
+
+R4 separates a small retrospective codec × mask DEV comparison from a new
+fixed-codec allocation panel. Both old masks expose R2's long-context damage;
+this rules out a mask-only explanation on those inputs, not every alternative
+numerical cause. Selected-group H32/metadata probes reveal round-up amplification
+but are not random samples of all groups and do not explain the full model KL.
+The single round-to-nearest candidate failed its preregistered DEV quality
+criteria. Legacy P_PRE remains only a quality-reference path with its known
+overflow; neither finite completion nor a local repair establishes a safe default.
+
+R4's frozen source statistics use captured Native operands and FP64 response
+propagation. The local replay uses CPU FP32 codec arithmetic under the captured
+operands. Its actual loss need not exactly equal the GPU-constructed frozen
+quadratic, and neither predicts final nonlinear model KL by an identity.
+The new M/K analysis is confined to identically defined stacked row injections
+on positive energy support, including the declared unread last write. It is
+not a stability certificate, a binary-mask optimality theorem, or a substitute
+for the historically missing physical M.
+
+The sketch's chi-square formulas assume exact arithmetic and Gaussian probes.
+Three representative head pilots produce no certified top-eight selection.
+A one-ULP discrepancy in floating alpha bookkeeping failed the parent wrapper;
+the child numerical outputs and the separate exact-rational accounting audit
+are preserved. No GPU sketch or metadata-budget extension is promoted on the
+basis of an uncertified partial match. New B0/DAMP model contrasts, pretrained
+GDN2, FA_CODE, and answer accuracy are not evaluated in R4.
+
 ## Stable-codec revision boundaries
 
 R2 is a new decoder and newly calibrated fixed-mask protocol. Its two FP16

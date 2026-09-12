@@ -1,0 +1,16 @@
+{
+  "method": "adjoint_gramian",
+  "seconds": [
+    0.03377448800165439,
+    0.03416856700278004,
+    0.03877512799954275
+  ],
+  "median_seconds": 0.03416856700278004,
+  "input_bytes": 34867200,
+  "peak_RSS_before_compute_bytes": 171139072,
+  "peak_RSS_after_compute_bytes": 171139072,
+  "RSS_high_water_increase_bytes": 0,
+  "workspace_core_bytes": 264192,
+  "output_sha256": "3615e501833ec6a18209a039556a80692516850a997dd4be46eb67a65dc5d306",
+  "minimum_gramian_diagonal_observed": 0.0
+}

@@ -1,0 +1,34 @@
+{
+  "method": "output_subsample",
+  "warmup_calls": 1,
+  "measured_calls": 3,
+  "samples": [
+    {
+      "repeat": 0,
+      "wall_seconds": 0.1739085070003057,
+      "cpu_seconds": 0.1735116
+    },
+    {
+      "repeat": 1,
+      "wall_seconds": 0.17196890199920745,
+      "cpu_seconds": 0.17142869999999988
+    },
+    {
+      "repeat": 2,
+      "wall_seconds": 0.17554310400009854,
+      "cpu_seconds": 0.17481009999999997
+    }
+  ],
+  "median_wall_seconds": 0.1739085070003057,
+  "worker_wall_seconds": 0.7026931150030578,
+  "worker_cpu_seconds": 0.6999443999999999,
+  "process_peak_RSS_bytes": 113807360,
+  "RSS_before_calls_bytes": 111206400,
+  "input_trace_array_bytes": 9569280,
+  "workspace_core_estimated_bytes": 528384,
+  "memory_scope": "Fresh worker process peak RSS includes interpreter/dependencies/input arrays/allocator; core estimate excludes temporaries and input arrays",
+  "observations": {
+    "path": "pilot_output_subsample.npz",
+    "sha256": "460707a922fabc81a3e4ceefa2bb7d231bb3d5d9da8efda276c99050696923d8"
+  }
+}

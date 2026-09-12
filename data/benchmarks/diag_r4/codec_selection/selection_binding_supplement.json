@@ -1,0 +1,9 @@
+{
+  "status": "PASS_EXISTING_INPUTS_ADDITIONAL_ROLE_CHECK",
+  "original_selector_sha256": "ee359c4b116fc8e0020e1b210b5eb1ac14c50116d0a226254562e90d247181c8",
+  "current_selector_sha256": "76ee8c914ab647942df7e485f4891c47344bf9a3cde9c0818c722b5ffb968c88",
+  "decision_receipt_sha256": "70ec2d78db1a79604889cf8a3c8b0dae75ab67cf03705f4b7cac6cffad454a58",
+  "change": "Explicit assertions of Native/legacy/RNE numerical identities; no thresholds/formulas/data/decision changed",
+  "original_decision_unchanged": true,
+  "model_forwards": 0
+}

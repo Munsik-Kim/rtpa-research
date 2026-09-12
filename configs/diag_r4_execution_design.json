@@ -1,0 +1,30 @@
+{
+  "run_id": "RTPA_DIAG_ATTRIBUTION_R4_20260912_V1",
+  "phase": "B_FROZEN_MODEL_SCORE_ATTRIBUTION",
+  "registered_before_final_TRAIN_score_and_TEST_outputs": true,
+  "document_count": 8,
+  "document_selection": "Unchanged diag_r4_test_selection.json; full1024token inputs frozen separately",
+  "execution_lengths_descending": [1024, 768],
+  "length_selection": "Largest listed prefix satisfying workload budget; only measured DEV processing cost and remaining budget used, never quality",
+  "cost_forecast": "maximum seconds/physical_forward across all completed A DEV documents and both completed codecs stages, multiplied by1.20; native repeat and method mix overhead included",
+  "maximum_remaining_GPU_fraction": 0.70,
+  "methods": ["NATIVE", "LEGACY_DIAG", "B1", "B2", "B3", "B4"],
+  "alias_rule": "Only B4 with LEGACY_DIAG if selected codec LEGACY_P_PRE and all18whole masks byteequal",
+  "optional_B0_DAMP_sketch": "NOT_RUN: preserve6requiredpaths and resource margin",
+  "primary": {"candidate": "B4", "baseline": "B1", "confidence": 0.95},
+  "secondary": [
+    {"candidate": "B4", "baseline": "B2", "confidence": 0.975},
+    {"candidate": "B4", "baseline": "B3", "confidence": 0.975}
+  ],
+  "whole_method_anchor": {"candidate": "B4", "baseline": "LEGACY_DIAG", "confidence": 0.95, "role": "descriptive codec-and-mask contrast, not pureallocation"},
+  "bootstrap_draws": 2000,
+  "bootstrap_seed": 612404,
+  "resampling": "paired source-document within four fixed software-project strata,2documents/stratum; sourcefamily dependence limitsgeneralization",
+  "KL_window": "[16,L)",
+  "NLL_window": "[16,L-1), explicit next input token",
+  "late_window": "[L/2,L)",
+  "primary_aggregation": "token-pooled meanKL, document-paired CI; no mean of tokenratios",
+  "failure_rule": "firstfailure retained; failed full-panel metric undefined; subsequent rows NOT_RUN reason; no successful-subset primary",
+  "decision_axes": "quality pointgain and interval, NLL, tails/failures independently; no singlePASS and noaccuracyclaim",
+  "no_feasible_prefix": "NOT_RUN_BUDGET; do not drop requiredmethods or unfavorabledocuments"
+}

@@ -1,0 +1,20 @@
+{
+  "candidate": "R4_OFFSET_RNE_V1",
+  "question": "Exploratory paired metadata-rounding intervention motivated by selected-group physical H32 round-trip amplification; not isolation of offset versus scale or proof of the full-model cause",
+  "frozen_before_candidate_DEV": true,
+  "changes": "Only directed offset floor and scale ceil become FP16 round-to-nearest-even; same H32, guards, high rows, UINT8 clamp, decoder and persistent bytes",
+  "mask": "fixed original legacy DIAG8 on all18GDN layers; no candidate mask fitting before selection",
+  "DEV_documents": ["test_natural_language_0", "test_code_0", "test_associative_recall_0"],
+  "length": 1024,
+  "numerical_failures_max": 0,
+  "known_finite_overflow_fixtures_must_pass": true,
+  "pooled_KL_ratio_to_legacy_max": 1.05,
+  "mean_NLL_candidate_minus_legacy_max_nat": 0.005,
+  "every_document_KL_ratio_to_legacy_max": 1.10,
+  "undefined_denominator": "UNRESOLVED, no epsilon",
+  "Native_repeat_NLL_absolute_tolerance": 1e-12,
+  "secondary_reports": ["clamp counts", "local physical SSE", "repeat drift", "metadata changes", "nested prefixes"],
+  "selection": "Only if every numerical and DEV criterion is met may this codec be selected for PhaseB; otherwise retain legacy quality-reference, no new stable default",
+  "additional_candidates": 0,
+  "no_result_based_threshold_changes": true
+}

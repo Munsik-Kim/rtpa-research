@@ -1,0 +1,330 @@
+{
+  "status": "FROZEN_INPUTS_NO_MODEL_OUTPUT",
+  "config": {
+    "run_id": "RTPA_DIAG_ATTRIBUTION_R4_20260912_V1",
+    "seed": 612401,
+    "candidate_documents": 8,
+    "documents_per_source_family": 2,
+    "source_families": [
+      "torch",
+      "transformers",
+      "scipy",
+      "sympy"
+    ],
+    "length": 1024,
+    "source_min_bytes": 8192,
+    "source_max_bytes": 262144,
+    "excluded_path_components": [
+      "tests",
+      "test",
+      "_vendor",
+      "vendor",
+      "_internal",
+      "_generated",
+      "__pycache__"
+    ],
+    "selection_order": "ascending SHA256 of seed:family:relativepath, before any model outputs",
+    "source_unit": "one original Python source file, first1024tokens; no alternate offsets or padding",
+    "exclusion": "same original source path, raw or normalized text hash, token hash, prefix256 hash, or token5gram Jaccard>=0.5 against accessible prior panels and already selected inputs",
+    "scope": "8 code-source documents from4 software projects, not broad natural language or task accuracy; source-family dependence remains",
+    "bootstrap": "paired document resampling within fixed source-family strata; no independent-token sampling",
+    "budget_gate": "Freeze physical methods and measured forecast separately before TEST; predicted TEST wall with20percent margin must be<=70percent remainingGPUbudget",
+    "no_result_based_replacement": true
+  },
+  "config_sha256": "ad73f4f2a3f036911a72cf47c203e5bc998992b761fbc23c73ef529446123c11",
+  "source_sha256": "99e936d7c9c523eaf1774f88691e8599305511da27c59c98888845a5ee01d3f3",
+  "panel_sha256": "93cf69bef07ea14cf47666c309606083bdb4328fe3ed206abfbb1d4a5ce69995",
+  "prior_manifests": [
+    {
+      "path": "external/e12_damp_functional_tail/input_audit.json",
+      "sha256": "90979d6808911c36694da0946b9ad9853466260ed9164808397690762253097d"
+    },
+    {
+      "path": "external/e12_functional_observability/panel_manifest.json",
+      "sha256": "d2cc48a4d02c4caa7e45c81ead7f937c9e325fa8cccd466ae1d5dec84def392a"
+    },
+    {
+      "path": "external/e12r_functional_observability/input_audit.json",
+      "sha256": "159fee1acf1f7d4e50488612edf1dc7b2d6053b5c07f1bf307ab9247c93e2dfb"
+    },
+    {
+      "path": "external/e13_causal_persistence_error_memory_v1/config_and_input_manifest.json",
+      "sha256": "6c74d4a3921290d89569ff11658628f4db24ee78369d648dc0a1e19b549cf023"
+    },
+    {
+      "path": "external/e13_causal_persistence_error_memory_v1/fresh_panel_manifest.json",
+      "sha256": "61f03712122d9cc4925bbc6787a69fcb2a5b32dc2d36e3e7d8fc801c2c7d2677"
+    },
+    {
+      "path": "external/e13_causal_persistence_error_memory_v1/input_output_manifest.json",
+      "sha256": "28559e53c676fe6a5757d5d99a084c6c6d13941c55ef2847ef5ced8087599adf"
+    },
+    {
+      "path": "external/e13_causal_pilot_5h_v2/input_receipt.json",
+      "sha256": "ea1f9ffce4d058cf25ec89c47209aaf4b2eb59dbcb3997602e0d5b4e4ccbe4a4"
+    },
+    {
+      "path": "external/e13a_codebook_capacity_v3/input_audit.json",
+      "sha256": "d5938b564f9ad0e6d5dcb765809a689c6fad0a0fedbf90a59bbace1bf3b484db"
+    },
+    {
+      "path": "external/e13a_codebook_capacity_v3/replay_execution_revision2_preserved_audit/input_audit.json",
+      "sha256": "d5938b564f9ad0e6d5dcb765809a689c6fad0a0fedbf90a59bbace1bf3b484db"
+    },
+    {
+      "path": "external/fsbq_v02_identity_gap/config_and_inputs.json",
+      "sha256": "2af9fa0726fe50d67e988a7dfe1a4c5878cfd3bbdbf1044221ef22f03b86aa63"
+    },
+    {
+      "path": "external/fsbq_v02_identity_gap/v01_input_audit.json",
+      "sha256": "27fbab20fb4100141c9d036abcaf685c802402837c44bf25fc0318add318e953"
+    },
+    {
+      "path": "external/rtpa_v01_joint_precision/fresh_input_manifest.json",
+      "sha256": "811bdccede72c9f46efec294614f445f9733b67167cdc76a19a59634e86a2437"
+    },
+    {
+      "path": "external/rtpa_v01_joint_precision/input_manifest.json",
+      "sha256": "2d6404fc976f685e27cd9bf28cec907b974c9fab0ae02a6ad3f12fca973b7b3b"
+    },
+    {
+      "path": "external/rtpa_v02_frozen_mask_confirmation/input_manifest.json",
+      "sha256": "310b8bbe6d0588d8255be978590c510f8a33ea2603de2f46217289fea5055521"
+    },
+    {
+      "path": "external/rtpa_v03_damp_comparison/input_roles.json",
+      "sha256": "cce251bc54d4a9059f2a441aab4143dd761243deeb94f61cc10cc23a58989009"
+    },
+    {
+      "path": "external/rtpa_v04_frozen_external_confirmation/historical_input_scan.json",
+      "sha256": "af6e908f69b1a640405a71db08f79c042a5ac6ad0275679a91e5790cd6b8cf31"
+    },
+    {
+      "path": "external/rtpa_v04_frozen_external_confirmation/input_manifest.json",
+      "sha256": "7484e19af36a0326c3c84b533a61dafc6b361e31af4ee1f551c398c3c2f8a780"
+    },
+    {
+      "path": "external/rtpa_v05_numerical_matched_energy/diagnosis_input.json",
+      "sha256": "f0862685849cd4e7b644bfa5498592df6596a996113e5722310e2591ba9021d9"
+    },
+    {
+      "path": "external/rtpa_v05_numerical_matched_energy/historical_input_scan.json",
+      "sha256": "f275e7755dea70ae4d86c3daa92e2fe95b27e05207e2733c67338b5206345b97"
+    },
+    {
+      "path": "external/rtpa_v05_numerical_matched_energy/input_manifest.json",
+      "sha256": "522ce4e9eb3b68afd630aae5c58d2b3c61b0e54354bb7112a586f7302aa2b081"
+    },
+    {
+      "path": "external/rtpa_v05_numerical_matched_energy/reproduction_input_receipts.json",
+      "sha256": "dab72a2d179a1694fc54d09b3844c698932d37dee1ceaf94d33f22dcc345ed9c"
+    },
+    {
+      "path": "external/rtpa_v06_fixed_task_damp_audit/cal_panel_template1.json",
+      "sha256": "6e725b5cbe89d6e4695e4f4d8f12a1000bb312fb0b87e09d89b12223f0ec92ba"
+    },
+    {
+      "path": "external/rtpa_v06_fixed_task_damp_audit/cal_panel_template2.json",
+      "sha256": "36699717ed20bea7c626540beaa5c89abc4120da7a9307e84756479cebfaaaec"
+    },
+    {
+      "path": "external/rtpa_v06_fixed_task_damp_audit/eval_panel.json",
+      "sha256": "5de5526982d1da58187ba4fe1a1797cd83ca1ca4a887965c6ca98c506197f8f0"
+    },
+    {
+      "path": "external/rtpa_v06_fixed_task_damp_audit/fresh_input_audit.json",
+      "sha256": "d11e577b24621e8f729616c49af67ea8058e453297bdd3e628df2a100e11d5a0"
+    },
+    {
+      "path": "external/rtpa_v06_fixed_task_damp_audit/input_source_manifest.json",
+      "sha256": "edbce3afa2a6d3177628fba958eab207c64c64f5e9bec11adba482ca889a7a1b"
+    },
+    {
+      "path": "external/rtpa_v06_fixed_task_damp_audit/paper_cal_input_manifest.json",
+      "sha256": "51fb09eafdfe094d8a3cf5e31a741291e8f8af1fd2e849b0134d01935e0c6a0d"
+    },
+    {
+      "path": "external/rtpa_v06_fixed_task_damp_audit/paper_cal_input_manifest_initial_label_audit.json",
+      "sha256": "cb797a8e3c1f450aa878b5c3ec2dfdee01fefe3305d21f6b663c97280a65611c"
+    },
+    {
+      "path": "external/rtpa_v06_fixed_task_damp_audit/timing_input.json",
+      "sha256": "4da13da59c2b63bd498dbb899b9084043ca551ea713c87a492dcedb2b86823fb"
+    },
+    {
+      "path": "external/rtpa_v06_postrun_integrated_analysis/derived/independent_input_and_scoring_audit.json",
+      "sha256": "ef64fd3499ac8981a0afe969b20492b266d6a5d290eebf6b0e987c8f55e6c584"
+    },
+    {
+      "path": "external/rtpa_v06_postrun_integrated_analysis/frozen_inputs/artifacts/rtpa_v05_numerical_matched_energy/input_manifest.json",
+      "sha256": "522ce4e9eb3b68afd630aae5c58d2b3c61b0e54354bb7112a586f7302aa2b081"
+    },
+    {
+      "path": "external/rtpa_v06_postrun_integrated_analysis/frozen_inputs/artifacts/rtpa_v06_fixed_task_damp_audit/cal_panel_template1.json",
+      "sha256": "6e725b5cbe89d6e4695e4f4d8f12a1000bb312fb0b87e09d89b12223f0ec92ba"
+    },
+    {
+      "path": "external/rtpa_v06_postrun_integrated_analysis/frozen_inputs/artifacts/rtpa_v06_fixed_task_damp_audit/cal_panel_template2.json",
+      "sha256": "36699717ed20bea7c626540beaa5c89abc4120da7a9307e84756479cebfaaaec"
+    },
+    {
+      "path": "external/rtpa_v06_postrun_integrated_analysis/frozen_inputs/artifacts/rtpa_v06_fixed_task_damp_audit/eval_panel.json",
+      "sha256": "5de5526982d1da58187ba4fe1a1797cd83ca1ca4a887965c6ca98c506197f8f0"
+    },
+    {
+      "path": "external/rtpa_v06_postrun_integrated_analysis/frozen_inputs/artifacts/rtpa_v06_fixed_task_damp_audit/fresh_input_audit.json",
+      "sha256": "d11e577b24621e8f729616c49af67ea8058e453297bdd3e628df2a100e11d5a0"
+    },
+    {
+      "path": "external/rtpa_v06_postrun_integrated_analysis/frozen_inputs/artifacts/rtpa_v06_fixed_task_damp_audit/input_source_manifest.json",
+      "sha256": "edbce3afa2a6d3177628fba958eab207c64c64f5e9bec11adba482ca889a7a1b"
+    },
+    {
+      "path": "external/rtpa_v06_postrun_integrated_analysis/frozen_inputs/artifacts/rtpa_v06_fixed_task_damp_audit/paper_cal_input_manifest.json",
+      "sha256": "51fb09eafdfe094d8a3cf5e31a741291e8f8af1fd2e849b0134d01935e0c6a0d"
+    },
+    {
+      "path": "external/rtpa_v06_postrun_integrated_analysis/frozen_inputs/artifacts/rtpa_v06_fixed_task_damp_audit/paper_cal_input_manifest_initial_label_audit.json",
+      "sha256": "cb797a8e3c1f450aa878b5c3ec2dfdee01fefe3305d21f6b663c97280a65611c"
+    },
+    {
+      "path": "external/rtpa_v06_postrun_integrated_analysis/frozen_inputs/artifacts/rtpa_v06_fixed_task_damp_audit/timing_input.json",
+      "sha256": "4da13da59c2b63bd498dbb899b9084043ca551ea713c87a492dcedb2b86823fb"
+    },
+    {
+      "path": "external/rtpa_v06_postrun_integrated_analysis/input_freeze_manifest.json",
+      "sha256": "7b97f7769e931c2b115e789087cb74116dc0ccdfc6c143bc624adaa909cf9bce"
+    },
+    {
+      "path": "external/rtpa_v06_postrun_integrated_analysis/supplemental_input_freeze_manifest.json",
+      "sha256": "19e7d5c8296a3dd3c890a63aa45d1ddaa28b51dad8cb5f2eb31a76a68e43358e"
+    },
+    {
+      "path": "external/rtpa_v07_same_input_diagnostic/candidate_panel.json",
+      "sha256": "e8c00cc9701901271879406f35d55c79edf366a5e3863f5762ba9a6bbb78d007"
+    },
+    {
+      "path": "external/rtpa_v07_same_input_diagnostic/diagnostic_panel_freeze.json",
+      "sha256": "ba1074a52d2da66a14312099a269794c31cd21b7c2650500e744b2943f674594"
+    },
+    {
+      "path": "external/rtpa_v07_same_input_diagnostic/final_input_freeze.json",
+      "sha256": "0dc67d734a9e79833eac5b0901e740b302a6d9bc5dd9fd68ecad7ba53c303136"
+    },
+    {
+      "path": "external/rtpa_v07_same_input_diagnostic/observer_CAL_input.json",
+      "sha256": "9da6701a3c48af6a688b606eb619f5604ad57faed323c65e010066f6ad8f281c"
+    },
+    {
+      "path": "data/benchmarks/diag_r2/cal_panel.json",
+      "sha256": "c68c8993a90341a60e1820e3f4871bfebc6faa8d4265328851340ded90c9a333"
+    },
+    {
+      "path": "data/benchmarks/diag_r2/input_revalidation.json",
+      "sha256": "cae78dc92326be51693d727e2d41140df3b8ff8f99233b1d5a63ce2c0afe0aa3"
+    },
+    {
+      "path": "data/benchmarks/diag_r2/test_panel.json",
+      "sha256": "2568ba5c61f2af75b40101c2bcc92c70c0ae1142752c9945ade86fc54373706c"
+    },
+    {
+      "path": "data/benchmarks/diag_r2/timing_panel.json",
+      "sha256": "899cf40ec333a570d4401039f08c81ff41cecbe255890f457110ceb115cd837c"
+    },
+    {
+      "path": "data/benchmarks/diag_r2/train_panel.json",
+      "sha256": "98ae62685d22fa3861f533e9fdb54e003c0bab00220766f2655449e247fcb63e"
+    },
+    {
+      "path": "data/benchmarks/gdn/cal_panel.json",
+      "sha256": "e592b296f6049b6a16f21a7fdee0fffeddd40f72c30227f0506dd6868b279f6c"
+    },
+    {
+      "path": "data/benchmarks/gdn/pilot_cal_panel.json",
+      "sha256": "86e7c8e494ac99522c489b324dd8056c2d5cae98d7a1fee33ed47b9d1ff48e9b"
+    },
+    {
+      "path": "data/benchmarks/gdn/test_panel.json",
+      "sha256": "7bfd31dbe94a1e482f72f999da48b385eb82e32293ebf7c0678fafe0ce2516fa"
+    },
+    {
+      "path": "data/benchmarks/gdn/train_panel.json",
+      "sha256": "970d31bd52c0ba0b2e667df93b2e523466c2c6a14df6b69d4cad90040ba20b6d"
+    },
+    {
+      "path": "data/evidence/fa_code_v01/cal_panel.json",
+      "sha256": "8192c45dae91c2eadd359cf51ffa8a9c9dcd44e73d9385d6e3a47d9b4a986c2b"
+    },
+    {
+      "path": "data/evidence/fa_code_v01/task_panel.json",
+      "sha256": "9a3d9ae435170bb84224163b708dd610b1a84cb1744de61a870571bd7d6bbe14"
+    },
+    {
+      "path": "data/evidence/v07/candidate_panel.json",
+      "sha256": "e8c00cc9701901271879406f35d55c79edf366a5e3863f5762ba9a6bbb78d007"
+    },
+    {
+      "path": "data/evidence/v07/diagnostic_panel_freeze.json",
+      "sha256": "ba1074a52d2da66a14312099a269794c31cd21b7c2650500e744b2943f674594"
+    },
+    {
+      "path": "data/panels/v04_sources.json",
+      "sha256": "1c2e44388f0802ccc0389eb385270efc3af4b062d434b91c734e629dd5797a50"
+    },
+    {
+      "path": "data/panels/v05_sources.json",
+      "sha256": "05eb1403d20d0e0400d6202efbda075162febfccdd0b538243e24f21aaacd12b"
+    },
+    {
+      "path": "data/panels/v06_cal_panel_template1.json",
+      "sha256": "6e725b5cbe89d6e4695e4f4d8f12a1000bb312fb0b87e09d89b12223f0ec92ba"
+    },
+    {
+      "path": "data/panels/v06_cal_panel_template2.json",
+      "sha256": "36699717ed20bea7c626540beaa5c89abc4120da7a9307e84756479cebfaaaec"
+    },
+    {
+      "path": "data/panels/v06_eval_panel.json",
+      "sha256": "5de5526982d1da58187ba4fe1a1797cd83ca1ca4a887965c6ca98c506197f8f0"
+    },
+    {
+      "path": "data/panels/v06_timing_input.json",
+      "sha256": "4da13da59c2b63bd498dbb899b9084043ca551ea713c87a492dcedb2b86823fb"
+    }
+  ],
+  "excluded": [],
+  "unavailable_prior_checks": [],
+  "licenses": [
+    {
+      "family": "torch",
+      "version": "2.11.0+cu128",
+      "path": "licenses/torch/LICENSE",
+      "sha256": "a0d7abc10248a062a2f309bf12981524973f2a61aadccf4c5099d96d8c388cf4"
+    },
+    {
+      "family": "torch",
+      "version": "2.11.0+cu128",
+      "path": "licenses/torch/NOTICE",
+      "sha256": "c2cc7bf0caec7652c2b460a8a470bea1677f241e4ab8e431df34cf17f5a9fec0"
+    },
+    {
+      "family": "transformers",
+      "version": "5.9.0",
+      "path": "licenses/transformers/LICENSE",
+      "sha256": "77fd4710def9ec3c0f6225800e0235f15a425abd4a8b03559127fcd782612049"
+    },
+    {
+      "family": "scipy",
+      "version": "1.17.1",
+      "path": "licenses/scipy/LICENSE.txt",
+      "sha256": "4daf14e37432e7026165979ecb7a39930707a3e89bef4876cfaf9dad36ed364a"
+    },
+    {
+      "family": "sympy",
+      "version": "1.14.0",
+      "path": "licenses/sympy/LICENSE",
+      "sha256": "07a5e9819f727b4986ad2829c7a29a6320d42575f720eb24d71b7fef573a0286"
+    }
+  ],
+  "coverage_limit": "Accessible recorded manifests only; does not claim pretraining independence or an unrecorded consumed-input audit"
+}
