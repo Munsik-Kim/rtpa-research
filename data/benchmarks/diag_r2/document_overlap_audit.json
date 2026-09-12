@@ -1,0 +1,9 @@
+{
+  "canonical_token_hash": "SHA256 contiguous little-endian signed int64 ID bytes",
+  "new_documents": 12,
+  "prior_documents": 21,
+  "exact_and_common_prefix_matches": [],
+  "shortest_prefix_checked": 256,
+  "first_producer_check_issue": "Original check compared two incompatible stored hash conventions. Original pool bytes retained; corrected actual-ID validation completed before any TEST output.",
+  "scope": "included prior synthetic TRAIN6/CAL3/TEST12; not proof of all-history or pretraining novelty"
+}

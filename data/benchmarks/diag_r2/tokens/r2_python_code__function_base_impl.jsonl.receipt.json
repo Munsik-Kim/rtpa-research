@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "rows": 5120,
+  "sha256": "8af01ca97055ff3954a1c26296c2d0e22e92cee0cf9161d98b6d6cf4779f01cd",
+  "physical_forwards": 5120,
+  "seconds": 512.6356220189991,
+  "failures": {},
+  "policy_sha256": "45a511cc987306a3e7c68a86d6b1fa61c80778e1fc8911d8f19042935cc8c0b1",
+  "source_freeze_sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640",
+  "successful_quantized_layer_writes": {
+    "NATIVE": 0,
+    "LEGACY_DIAG": 18432,
+    "R2_MATCHED_ENERGY": 18432,
+    "R2_DIAG": 18432,
+    "DAMP_R2_PAPER_ADAPTED": 18432
+  }
+}

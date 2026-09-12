@@ -24,6 +24,15 @@ The research goal is better performance under the same low-precision storage con
 
 **Output-preservation transfer: SUPPORTED_IN_SCOPE for measured GDN KL; MIXED across endpoints and architectures.** DIAG reduced mean KL against same-codec, same-payload baselines in `allocation-confirmation`, `matched-allocation`, and the new all-18-layer GDN benchmark. Retrospective controls and deeper layers include adverse directions; correct-answer probability does not consistently improve with KL. GDN2 synthetic operator SSE worsened.
 
+The later stable-codec revision sharpens this distinction. R2-DIAG improves KL
+and NLL against its new-codec matched-energy baseline on all twelve source-file
+documents, but its mean KL is about **16.34 times legacy DIAG's** on those same
+inputs. The bounded representation repair is therefore not a useful overall
+quality replacement in this protocol. This contrast changes both codec and
+calibrated mask, so it does not identify a single cause. It strengthens the
+within-codec allocation observation while contradicting an unqualified
+"new numerical revision improves output preservation" claim.
+
 The subsequent FA_CODE implementation compresses offline responses into a fixed
 diagonal-plus-rank-two metric rather than a static precision mask. Its historical own-model
 recurrence improved KL against stored-nearest, but not every NLL comparison.
@@ -57,3 +66,10 @@ Current implementation/evidence claims are linked separately in
 [upgrade/claims.json](../results/upgrade/claims.json). New measured GDN DIAG
 cost remains unresolved; FA_CODE misses the matched-nearest +5% target.
 Historical claims and decisions are not overwritten by these updates.
+
+The still later [R2 claims](../results/diag_r2/claims.json) and
+[fixed-work measurements](../results/diag_r2/benchmark_tables.md) have their own
+run identity. They do not add task evidence or update the earlier cost samples.
+The next minimal research question is why the bounded codec plus its
+recalibrated policy loses so much quality relative to legacy—not a search for
+a favorable new task or a post-TEST change to the current policy.

@@ -1,0 +1,30 @@
+{
+  "selected_profile": "R2_OFFSET",
+  "scores": {
+    "R2_OFFSET": {
+      "eligible": true,
+      "document_scores": [
+        8.443263193956059e-06,
+        8.478299156608413e-06,
+        8.488330494389963e-06
+      ],
+      "score": 8.469964281651479e-06
+    },
+    "R2_ZERO_INCLUSIVE": {
+      "eligible": true,
+      "document_scores": [
+        8.954971614316634e-06,
+        9.005238588285373e-06,
+        8.996134625859104e-06
+      ],
+      "score": 8.985448276153703e-06
+    }
+  },
+  "selection_rule": "predeclared min document-average physical reconstruction ratio; tie1e-12 favorsOFFSET",
+  "TEST_accessed": false,
+  "oldmask_used_for_both_CAL_profiles": true,
+  "readout_and_KL_not_used_to_select": true,
+  "development_contract_sha256": "70ac43607d929bc9b4dfb2a591a159b610ca391bdfda9d32b589d0cce19dd981",
+  "source_sha256": "8ea1589ebae3279995fa686b1e999c17823a3c7562baead58ff7380976d1ffac",
+  "codec_source_sha256": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2"
+}

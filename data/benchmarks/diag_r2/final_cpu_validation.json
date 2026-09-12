@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "tests_run": 65,
+  "failures": 0,
+  "errors": 0,
+  "skips": 0,
+  "seconds": 1.478206506999868,
+  "GPU_forwards": 0,
+  "checker_sha256": "d86ffd08b27449cb9bb2da8911d8ceae38296eae0f0a4386f8cdf22d2f8a4ab0",
+  "tests": {
+    "tests/test_diag_r2_runtime.py": "ca2c64e269ff15b3f6fb6deed700d0e2bb6fca1796cbed29c4163a24710a3385",
+    "tests/test_diag_r2_allocations.py": "1525893357f0eb7ba9bf6ed0f8b1ab1c36113a13be853aa77cca8aadfba9ee31",
+    "tests/test_diag_r2_math.py": "2bb58c3e39af62e2d7f7f731f0d69421de38df7bb5db8893f8dda84130ec91d6",
+    "tests/test_codec_r2_optimized.py": "81fd0fa76e3ca70119fdb0c36929b55c4801d8cb4d503bac63bfe48909d94007",
+    "tests/test_diag_r2_analysis.py": "16e12ab83abe3f2a9fabe5c266c2f67e082f6238a4aad9d3fd95739936111915",
+    "tests/test_codec_r2.py": "5d08124a82d519189eb9fc1ce1de554db585dcb0049cc7e301585b0644f7ebf5"
+  }
+}

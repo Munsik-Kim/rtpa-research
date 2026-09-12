@@ -1,0 +1,43 @@
+{
+  "method": "LEGACY_DIAG",
+  "pid": 57887,
+  "fresh_process_for_method": true,
+  "profile": "legacy_P_PRE",
+  "prompt_tokens": 1024,
+  "decode_tokens": 32,
+  "physical_forwards": 1056,
+  "payload_bytes": 5566464,
+  "payload_bytes_per_head": 19328,
+  "cache_tensor_bytes": 19427328,
+  "static_policy_bytes_by_type": {
+    "low_index": 276480,
+    "high_index": 18432,
+    "H32": 4096
+  },
+  "static_policy_bytes": 299008,
+  "shared_policy_engine_level": false,
+  "model_parameter_bytes": 1705971840,
+  "allocated_after_model_load": 1736535040,
+  "steady_allocated_bytes": 1776979456,
+  "peak_allocated_bytes": 1791403520,
+  "peak_reserved_bytes": 1858076672,
+  "gpu": {
+    "temperature_C": 60.0,
+    "used_MiB": 4593.0,
+    "total_MiB": 16303.0,
+    "utilization_percent": 18.0
+  },
+  "sampled_isolation": {
+    "status_ok": true,
+    "processes": [
+      {
+        "pid": 57887,
+        "process": "[Not Found]"
+      }
+    ],
+    "no_competing_GPU_worker": true,
+    "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+  },
+  "scratch": "measured separately on actual nonzero CAL layer0 codec call; not derived from tensor shapes alone",
+  "source_freeze_sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640"
+}

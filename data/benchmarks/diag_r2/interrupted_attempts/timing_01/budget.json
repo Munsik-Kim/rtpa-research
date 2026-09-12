@@ -1,0 +1,70 @@
+{
+  "first_gpu_start_utc": "2026-09-12T05:26:06Z",
+  "GPU_active_seconds": 8997.490495957998,
+  "physical_forwards": 84652,
+  "attempts": [
+    {
+      "phase": "cuda_fixture",
+      "status": "COMPLETE",
+      "seconds": 1.8115428749999865,
+      "physical_forwards": 0
+    },
+    {
+      "phase": "pilot",
+      "status": "COMPLETE",
+      "seconds": 269.50212221900006,
+      "physical_forwards": 2304
+    },
+    {
+      "phase": "capture",
+      "status": "COMPLETE",
+      "seconds": 107.14142172300012,
+      "physical_forwards": 1536
+    },
+    {
+      "phase": "fit",
+      "status": "COMPLETE",
+      "seconds": 195.85255826300022,
+      "physical_forwards": 0
+    },
+    {
+      "phase": "profile",
+      "status": "COMPLETE",
+      "seconds": 31.331200998999975,
+      "physical_forwards": 72
+    },
+    {
+      "phase": "conformance",
+      "status": "COMPLETE",
+      "seconds": 575.8707186929996,
+      "physical_forwards": 5572
+    },
+    {
+      "phase": "final_probe",
+      "status": "COMPLETE",
+      "seconds": 18.82632959700004,
+      "physical_forwards": 128
+    },
+    {
+      "phase": "evaluate",
+      "status": "COMPLETE",
+      "seconds": 6392.842206085999,
+      "physical_forwards": 61440
+    },
+    {
+      "phase": "timing",
+      "status": "RUNNING",
+      "seconds": 1404.3123955029987,
+      "physical_forwards": 13600,
+      "block": 3,
+      "method": "R2_DIAG",
+      "gpu": {
+        "temperature_C": 41.0,
+        "used_MiB": 5054.0,
+        "total_MiB": 16303.0,
+        "utilization_percent": 24.0
+      }
+    }
+  ],
+  "limit_seconds": 14400
+}

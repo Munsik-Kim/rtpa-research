@@ -1,0 +1,36 @@
+{
+  "status": "PRETEST_WIRING_REVIEW_COMPLETE",
+  "before_TEST": true,
+  "previous_receipts_not_rewritten": true,
+  "executed_sources": {
+    "executed_development_sources": {
+      "codec_r2.py": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2",
+      "diag_r2_benchmark.py": "8ea1589ebae3279995fa686b1e999c17823a3c7562baead58ff7380976d1ffac",
+      "calibration_r2.py": "52911fe4e2241f24230cc2f22d4ce621ee7f6bbd4ddd6202897f31d84be15efc",
+      "diag_r2_runtime.py": "2494cb73737f689a5ce6d1b3a52d7736f6d62be6319607bac6c5f5af46cf5643"
+    },
+    "executed_conformance_sources": {
+      "diag_r2_benchmark.py": "48d5198da63a8ee1d0041ff6eee9c918313aadc878ef7f02ec51bfb8e54f55de",
+      "diag_r2_execution.py": "81cac2a856919e1f385e51fc1afb6d934feed6ae47e3f7839c36a4e654a14ae8",
+      "diag_r2_runtime.py": "14f543483a1c25bdfbf176cf1736c639a298c313ca9813448bfd428ff92ac40b"
+    }
+  },
+  "changes": [
+    "retain first nonfinite logits and nested payload on failure",
+    "explicit capture/fit receipt revalidation path",
+    "bind receipt inputs and checker into freeze",
+    "timing/memory failure context; mandatory final-logit guards disclosed",
+    "allocator lifetime accounting handles address reuse",
+    "optional-dependency tests and unavailable-Native analysis"
+  ],
+  "unchanged_numerical_modules": {
+    "codec_r2.py": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2",
+    "codec_r2_optimized.py": "519975711d79ee0672a20d3585c6cd6c07002e237629ed48cabb006dffe9ad9e",
+    "calibration_r2.py": "52911fe4e2241f24230cc2f22d4ce621ee7f6bbd4ddd6202897f31d84be15efc",
+    "calibration.py": "1aac2598d1af6920285e6ccfa11bb4a92d3f1d2453549cb89841768e45db0038",
+    "layout.py": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276",
+    "runtime.py": "afbfcbad6f18879151a827a1473869ea60c5d80f1f32689ee408d7d08cb6f8d2"
+  },
+  "short_post_wiring_GPU_probe_required": true,
+  "checker_sha256": "d86ffd08b27449cb9bb2da8911d8ceae38296eae0f0a4386f8cdf22d2f8a4ab0"
+}

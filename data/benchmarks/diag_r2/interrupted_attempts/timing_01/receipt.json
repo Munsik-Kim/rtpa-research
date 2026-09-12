@@ -1,0 +1,50 @@
+{
+  "status": "INTERRUPTED_EXTERNAL_PROCESS_TERMINATION",
+  "cause": "UNKNOWN; exit143/SIGTERM; no Python numerical traceback; host PID absent and nvidia-smi shows no compute worker",
+  "exit_code": 143,
+  "signal": 15,
+  "pid": 48788,
+  "original_attempt_index": 8,
+  "phase": "timing",
+  "last_completed_block": 3,
+  "last_completed_method": "R2_DIAG",
+  "completed_measured_rows": 19,
+  "calls_per_label": 544,
+  "warmup_calls": 3264,
+  "recorded_physical_forwards": 13600,
+  "additional_unrecorded_calls_lower_bound": 0,
+  "additional_unrecorded_calls_upper_bound": 544,
+  "attempt_physical_forwards_lower_bound": 13600,
+  "attempt_physical_forwards_upper_bound": 14144,
+  "physical_forward_count_exact": false,
+  "unknown_bound_basis": "One next label may have started; no later durable timing row exists. The frozen loop persists a row before advancing past a completed label.",
+  "last_recorded_seconds": 1404.3123955029987,
+  "last_budget_write_utc": "2026-09-12T08:14:36.895791+00:00",
+  "confirmed_dead_utc": "2026-09-12T08:15:30+00:00",
+  "charged_seconds_upper_bound": 1459,
+  "wall_charge_basis": "last phase clock + elapsed wall until first confirmed-dead observation + one-second allowance, rounded up; not exact GPU occupancy",
+  "archived_files": [
+    {
+      "path": "budget.json",
+      "bytes": 1585,
+      "sha256": "d538b03c8c809ac249f07c2b4d7ff5f58d25d92bc3861f36a26da7fda011e938"
+    },
+    {
+      "path": "progress.json",
+      "bytes": 272,
+      "sha256": "686e1d978b64d723b136f39a08c93fc5fc6ad9742484ef065b6869503c22c787"
+    },
+    {
+      "path": "timing.json",
+      "bytes": 28829,
+      "sha256": "bbe559e399fffadc3142a79f61af47a1a8067acaa922cce8dcdb9eb627d38b8b"
+    },
+    {
+      "path": "timing_execution.log",
+      "bytes": 2200,
+      "sha256": "7fc86cd5456fb4dcc598c8018b71b2805f885509112014ec50bc852271ed1e1a"
+    }
+  ],
+  "retry_policy": "At most one full frozen eight-block retry, not selection of favorable partial blocks. Original partial results and unknown calls remain separate.",
+  "numerical_source_or_protocol_changed": false
+}

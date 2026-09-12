@@ -1,0 +1,9 @@
+{
+  "repository": "python/cpython",
+  "tag": "v3.11.15",
+  "commit": "2340a037f7450e70fccfe411e6531afb4d57a312",
+  "url": "https://raw.githubusercontent.com/python/cpython/2340a037f7450e70fccfe411e6531afb4d57a312/LICENSE",
+  "path": "LICENSE",
+  "bytes": 13936,
+  "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+}

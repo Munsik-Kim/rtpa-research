@@ -1,0 +1,171 @@
+{
+  "run_id": "RTPA_DIAG_STABLE_R2_20260912_V1",
+  "model_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "codec_revision": "R2_OFFSET",
+  "methods": [
+    "NATIVE",
+    "LEGACY_DIAG",
+    "R2_MATCHED_ENERGY",
+    "R2_DIAG",
+    "DAMP_R2_PAPER_ADAPTED"
+  ],
+  "max_context": 1024,
+  "windows": [
+    1024
+  ],
+  "TEST_documents": 12,
+  "warmup_tokens": 16,
+  "domains": [
+    "technical_prose",
+    "python_code"
+  ],
+  "method_layers": {
+    "NATIVE": [],
+    "LEGACY_DIAG": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "R2_MATCHED_ENERGY": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "R2_DIAG": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "DAMP_R2_PAPER_ADAPTED": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ]
+  },
+  "bootstrap_draws": 2000,
+  "bootstrap_seed": 612204,
+  "timing_bootstrap_seed": 612206,
+  "timing_seed": 612205,
+  "timing_labels": [
+    "NATIVE",
+    "R2_MATCHED_ENERGY",
+    "R2_DIAG_REFERENCE",
+    "R2_DIAG",
+    "DAMP_R2_PAPER_ADAPTED",
+    "R2_MATCHED_ENERGY_REPEAT"
+  ],
+  "timing_prefix": 512,
+  "timing_decode": 32,
+  "timing_measured_blocks": 8,
+  "timing_warmup_blocks": 1,
+  "memory_labels": [
+    "NATIVE",
+    "LEGACY_DIAG",
+    "R2_MATCHED_ENERGY",
+    "R2_DIAG_REFERENCE",
+    "R2_DIAG",
+    "DAMP_R2_PAPER_ADAPTED"
+  ],
+  "memory_prefix": 1024,
+  "memory_decode": 32,
+  "policy_sha256": "45a511cc987306a3e7c68a86d6b1fa61c80778e1fc8911d8f19042935cc8c0b1",
+  "legacy_policy_sha256": "bd865a1a138ed25a98e8db5b5dabb26ff259307be3ba2f071a04ceb71faace68",
+  "cost_target": 1.05,
+  "quality_primary": [
+    "R2_DIAG/R2_MATCHED_ENERGY"
+  ],
+  "source_families": "raw CPython rst and NumPy source-file prefixes; not representative task benchmark",
+  "remaining_seconds_at_freeze": 13199.664105631,
+  "budget_plans_before_TEST": [
+    {
+      "plan": "preferred",
+      "quality_seconds": 5891.179768752008,
+      "timing_seconds": 5336.884010192625,
+      "memory_seconds": 627.7103967461259,
+      "installed_API_smoke_reserved_seconds": 50,
+      "total_with20percent_margin_and_report_reserve": 15486.929010828911
+    },
+    {
+      "plan": "timing_prefix512",
+      "quality_seconds": 5891.179768752008,
+      "timing_seconds": 2749.3038840386253,
+      "memory_seconds": 627.7103967461259,
+      "installed_API_smoke_reserved_seconds": 50,
+      "total_with20percent_margin_and_report_reserve": 12381.832859444112
+    }
+  ],
+  "selected_estimate": {
+    "quality_seconds": 5891.179768752008,
+    "timing_seconds": 2749.3038840386253,
+    "memory_seconds": 627.7103967461259,
+    "installed_API_smoke_reserved_seconds": 50,
+    "total_with20percent_margin_and_report_reserve": 12381.832859444112
+  },
+  "no_TEST_output_accessed_during_design": true,
+  "selection_receipt_sha256": "4d62c63c38dacf67cab2f4dc4d68810b06738d50e4055e9e8a39be49c38b5a3d",
+  "optimization_receipt_sha256": "ceda4a10bfa3aa49e17a84cf5314807b96e66c98d8cdf18428240afdd8cb312d",
+  "failure_rule": "First failure retained; afterfailure NOT_RUN. Required fullwindow anymissing/nonfinite=>fullpanelcontrast undefined, no success-only substitution",
+  "primary_KL": "full_vocab Native||method16:L",
+  "NLL": "realnexttarget16:L-1",
+  "no_epsilon_relative_gain": true
+}

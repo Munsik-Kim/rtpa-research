@@ -1,0 +1,43 @@
+{
+  "run_id": "RTPA_DIAG_STABLE_R2_20260912_V1",
+  "source_recomputed_sha256": "9a7f705c4fe0fb1d235b8a1dfd734075b58030cadc2f3d614d20d7e34c284401",
+  "quality": [
+    {
+      "method": "LEGACY_DIAG",
+      "mean_KL": 0.004295890480791102,
+      "mean_KL_CI95": [
+        0.00396232413425396,
+        0.004689670954917236
+      ]
+    },
+    {
+      "method": "R2_MATCHED_ENERGY",
+      "mean_KL": 0.16751233663667056,
+      "mean_KL_CI95": [
+        0.1484580427769423,
+        0.18742764207917317
+      ]
+    },
+    {
+      "method": "R2_DIAG",
+      "mean_KL": 0.07019327423268436,
+      "mean_KL_CI95": [
+        0.0613742964389847,
+        0.07901206258011498
+      ]
+    },
+    {
+      "method": "DAMP_R2_PAPER_ADAPTED",
+      "mean_KL": 0.1561574880260992,
+      "mean_KL_CI95": [
+        0.13927591715836407,
+        0.17312705288093955
+      ]
+    }
+  ],
+  "latency": "NOT_DRAWN_INCOMPLETE_TIMING",
+  "model_or_GPU_run": false,
+  "figure_source": "scripts/plot_diag_r2.py",
+  "matplotlib": "3.10.9",
+  "figures_generated": 1
+}

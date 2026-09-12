@@ -1,0 +1,9 @@
+{
+  "repository": "numpy/numpy",
+  "tag": "v2.2.0",
+  "commit": "e7a123b2d3eca9897843791dd698c1803d9a39c2",
+  "url": "https://raw.githubusercontent.com/numpy/numpy/e7a123b2d3eca9897843791dd698c1803d9a39c2/LICENSE.txt",
+  "path": "LICENSE.txt",
+  "bytes": 1543,
+  "sha256": "01fb016849aa427edb1bbbbd55f91c26ca6cadb32a5b20e7f000655dd05b0760"
+}

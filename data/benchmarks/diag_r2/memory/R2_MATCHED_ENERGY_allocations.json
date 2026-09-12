@@ -1,0 +1,3042 @@
+{
+  "records": [
+    {
+      "operation": "encode",
+      "baseline_allocated_bytes": 1778019328,
+      "peak_increment_bytes": 5142016,
+      "retained_output_tensor_bytes": 309248,
+      "max_new_allocated_from_trace": 5142016,
+      "max_transient_excluding_returned_storage_from_trace": 5111296,
+      "allocation_lifetimes": 62,
+      "retained_output_allocation_lifetimes": 4,
+      "address_reuse_corrected": true,
+      "trace_entries": [
+        {
+          "action": "alloc",
+          "addr": 49419284480,
+          "size": 65536,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49404706816,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49408901120,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417432064,
+          "size": 65536,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415070720,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415070720,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415070720,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49209351680,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49419218944,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417267200,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49419218944,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49419218944,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49209351680,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49209351680,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49417432064,
+          "size": 65536,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49417432064,
+          "size": 65536,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417432064,
+          "size": 65536,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415070720,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415070720,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415070720,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49209351680,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49417432064,
+          "size": 65536,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49417432064,
+          "size": 65536,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49419218944,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49417267200,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49417267200,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49209351680,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49209351680,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415070720,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49419218944,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49419218944,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49409884160,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49418567680,
+          "size": 245760,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417909248,
+          "size": 245760,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49418155008,
+          "size": 245760,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49417909248,
+          "size": 245760,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49417909248,
+          "size": 245760,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49418567680,
+          "size": 245760,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49418567680,
+          "size": 245760,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49409884160,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49409884160,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49409884160,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417909248,
+          "size": 245760,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49409884160,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49409884160,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49418567680,
+          "size": 245760,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49418155008,
+          "size": 245760,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49418155008,
+          "size": 245760,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49417909248,
+          "size": 245760,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49417909248,
+          "size": 245760,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415152640,
+          "size": 30,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49406261248,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49406261248,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49406261248,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415152640,
+          "size": 30,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415152640,
+          "size": 30,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49418567680,
+          "size": 245760,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49418567680,
+          "size": 245760,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415152640,
+          "size": 2,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49406261248,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49406261248,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49406261248,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415070720,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415070720,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415152640,
+          "size": 2,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415152640,
+          "size": 2,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49406730240,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49418828800,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415183872,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49406589952,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49209547264,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415183872,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415183872,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49406589952,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49406589952,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415024640,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49209351680,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49419218944,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49209351680,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49209351680,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49416272896,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415183872,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49416272896,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49416272896,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49209351680,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415070720,
+          "size": 2,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415070720,
+          "size": 2,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415070720,
+          "size": 2,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415183872,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415183872,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415024640,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415024640,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49419218944,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49419218944,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49416272896,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417432064,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49416272896,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49416272896,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49416272896,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417462784,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417493504,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49417462784,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49417462784,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415024640,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49419218944,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417267200,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49419218944,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49419218944,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417462784,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415183872,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49417462784,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49417462784,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49419218944,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415070720,
+          "size": 2,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415070720,
+          "size": 2,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415070720,
+          "size": 2,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415183872,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415183872,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49417493504,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49417493504,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415024640,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415024640,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49417267200,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49417267200,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415024640,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417267200,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415070720,
+          "size": 2,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415070720,
+          "size": 2,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415070720,
+          "size": 2,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415024640,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415024640,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49419218944,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49419218944,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417462784,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49409884160,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49417462784,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49417462784,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49410867200,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49406803968,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49409884160,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49409884160,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49410867200,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49410867200,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49409884160,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49407787008,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49409884160,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49409884160,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49418567680,
+          "size": 245760,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49407787008,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49407787008,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49406730240,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49406730240,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49418828800,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49418828800,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49209547264,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49209547264,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49417432064,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49417432064,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49416272896,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49416272896,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49406803968,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49406803968,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49416272896,
+          "size": 32768,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49419284480,
+          "size": 65536,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49419284480,
+          "size": 65536,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49408901120,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49408901120,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49404706816,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49404706816,
+          "size": 983040,
+          "stream": 0
+        }
+      ],
+      "trace_scope": "CUDA allocator events for one actual CAL state; block/requested size accounting may include alignment",
+      "output_storage_addresses": [
+        49209351680,
+        49416272896,
+        49417267200,
+        49418567680
+      ]
+    },
+    {
+      "operation": "decode",
+      "baseline_allocated_bytes": 1778328576,
+      "peak_increment_bytes": 14415872,
+      "retained_output_tensor_bytes": 1048576,
+      "max_new_allocated_from_trace": 13891199,
+      "max_transient_excluding_returned_storage_from_trace": 12842623,
+      "allocation_lifetimes": 108,
+      "retained_output_allocation_lifetimes": 1,
+      "address_reuse_corrected": true,
+      "trace_entries": [
+        {
+          "action": "alloc",
+          "addr": 49415024640,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415070720,
+          "size": 2,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415070720,
+          "size": 2,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415070720,
+          "size": 2,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415183872,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49406589952,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49209547264,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49406589952,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49406589952,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415183872,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415183872,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415024640,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415024640,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415183872,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49406589952,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49209547264,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49209547264,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415183872,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415183872,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415070720,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49406589952,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49406589952,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415024640,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 2,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 2,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 2,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415183872,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49406589952,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49209547264,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49406589952,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49406589952,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415183872,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415183872,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415024640,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415024640,
+          "size": 15360,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49209547264,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49209547264,
+          "size": 7680,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49419284480,
+          "size": 32768,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415152640,
+          "size": 2,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415152640,
+          "size": 2,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415152640,
+          "size": 2,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49419218944,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49406730240,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49418828800,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49406730240,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49406730240,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49419218944,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49419218944,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49419284480,
+          "size": 32768,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49419284480,
+          "size": 32768,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49418828800,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49418828800,
+          "size": 16384,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49209367040,
+          "size": 3,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49209367552,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49209367040,
+          "size": 3,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49209367040,
+          "size": 3,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49209367552,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49209367552,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415070720,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415070720,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49408901120,
+          "size": 1048576,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49404706816,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49406730240,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49409949696,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49410932736,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49406803968,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49409949696,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49409949696,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49410932736,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49410932736,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49404706816,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49404706816,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49406730240,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49406730240,
+          "size": 30720,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49404706816,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49406803968,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49406803968,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415070720,
+          "size": 128,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49209367040,
+          "size": 1024,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415152640,
+          "size": 240,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49406261248,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49406261248,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49406261248,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415152640,
+          "size": 240,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415152640,
+          "size": 240,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415152640,
+          "size": 240,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49406261248,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49406261248,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49406261248,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415152640,
+          "size": 240,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415152640,
+          "size": 240,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 48874127360,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415152640,
+          "size": 240,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49406261248,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49406261248,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49406261248,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415152640,
+          "size": 240,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415152640,
+          "size": 240,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415152640,
+          "size": 240,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49406261248,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49406261248,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49406261248,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415152640,
+          "size": 240,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415152640,
+          "size": 240,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 48916070400,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 48916070400,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 48916070400,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415152640,
+          "size": 240,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49406261248,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49406261248,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49406261248,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415152640,
+          "size": 240,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415152640,
+          "size": 240,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415152640,
+          "size": 240,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49406261248,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49406261248,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49406261248,
+          "size": 4,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415152640,
+          "size": 240,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415152640,
+          "size": 240,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 48916070400,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 48916070400,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 48916070400,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 48916070400,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 48958013440,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49387012096,
+          "size": 3994111,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49387012096,
+          "size": 3994111,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49387012096,
+          "size": 3994111,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 48958013440,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 48958013440,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 48916070400,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 48916070400,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 48609886208,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 48874127360,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 48874127360,
+          "size": 1966080,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415070720,
+          "size": 128,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415070720,
+          "size": 128,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49209367040,
+          "size": 1024,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49209367040,
+          "size": 1024,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49404706816,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49404706816,
+          "size": 983040,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49419284480,
+          "size": 65536,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415070720,
+          "size": 128,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49209367040,
+          "size": 1024,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417909248,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49418040320,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49418040320,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49418040320,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415152640,
+          "size": 1,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49418040320,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49418040320,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49418040320,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49418040320,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49418171392,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415119360,
+          "size": 8,
+          "stream": 0
+        },
+        {
+          "action": "alloc",
+          "addr": 49404706816,
+          "size": 272895,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49404706816,
+          "size": 272895,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49404706816,
+          "size": 272895,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49418171392,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49418171392,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49418040320,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49418040320,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49417432064,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49417909248,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49417909248,
+          "size": 131072,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49415070720,
+          "size": 128,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49415070720,
+          "size": 128,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49209367040,
+          "size": 1024,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49209367040,
+          "size": 1024,
+          "stream": 0
+        },
+        {
+          "action": "free_requested",
+          "addr": 49419284480,
+          "size": 65536,
+          "stream": 0
+        },
+        {
+          "action": "free_completed",
+          "addr": 49419284480,
+          "size": 65536,
+          "stream": 0
+        }
+      ],
+      "trace_scope": "CUDA allocator events for one actual CAL state; block/requested size accounting may include alignment",
+      "output_storage_addresses": [
+        49408901120
+      ]
+    }
+  ],
+  "no_model_forward_in_this_codec_only_trace": true
+}

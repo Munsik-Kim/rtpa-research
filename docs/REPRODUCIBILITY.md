@@ -1,8 +1,10 @@
 # Reproduction guide and verification levels
 
-For the newly executable model/operator paths and installed-wheel commands, see
-[Quickstart](QUICKSTART.md). [Benchmarks](BENCHMARKS.md) identifies new GPU
-measurements separately from the historical reconstruction described below.
+For the stable-codec DIAG state/model path, start with the
+[R2 Quickstart](QUICKSTART_R2.md) and [phase-specific reproduction scope](REPRO_R2_SCOPE.md).
+The earlier model/operator commands remain in [Quickstart](QUICKSTART.md).
+[Benchmarks](BENCHMARKS.md) keeps the separate run IDs and numerical profiles
+distinct from the historical reconstruction described below.
 The CPU package now carries its curated evidence inside the wheel; neither the
 original research directory nor a particular user's absolute path is required.
 GPU imports remain opt-in. A successful CPU CI run is not GPU certification.
@@ -18,7 +20,41 @@ PYTHONPATH=src python -m rtpa_research verify --out recomputed
 
 The `reproduce` command creates aggregates in a separate output directory and compares them with the original frozen scalar expectations. `verify` also checks committed tables, source/evidence hashes, schemas, masks, payload arithmetic, and documentation links. It does not automatically update expectations or tolerances to make a failed check pass. The initial FP64 comparison rule is absolute 1e−12 plus relative 1e−10; counts and identifiers use exact comparison. See the [verification contract](../configs/verification_contract.json).
 
-The GitHub CPU workflow runs the same commands and installs only the two declared CPU dependencies and their package dependencies. It requires no model download, GPU, secret, or paid API. The [environment receipt](../configs/environment.json) and [historical model-execution environment](../data/evidence/v06/environment.json) are recorded separately.
+The lightweight GitHub job uses the two declared CPU dependencies and build
+tools; optional Torch tests are explicitly skipped there. A separate numerical
+job installs CPU-only Torch and Transformers to exercise the codec/API tests.
+Neither job downloads model weights, starts a GPU benchmark, or requires a
+secret or paid API. The [environment receipt](../configs/environment.json) and
+[historical model-execution environment](../data/evidence/v06/environment.json)
+are recorded separately. Remote results apply only to the exact checked commit.
+
+## Stable-codec DIAG reconstruction
+
+```bash
+python -m rtpa_research.diag_r2_analysis --public --out r2-recomputed \
+  --expected results/diag_r2/recomputed_expected.json
+python scripts/audit_diag_r2_observations.py \
+  --run data/benchmarks/diag_r2 --analysis r2-recomputed \
+  --out r2-independent-audit.json
+python scripts/audit_diag_r2_dependencies.py \
+  --run data/benchmarks/diag_r2 --out r2-dependencies.json
+```
+
+The explicit expected path in this example is relative to the checkout.
+`--public` itself also works outside a checkout using the installed wheel's
+bundled observations. The R2 Quickstart shows how to resolve installed scripts
+and how to create a **new** fixed-mask GPU replay directory without inheriting
+completed results or resetting an existing budget. Installed-module resolution
+is checked separately against the bundled frozen source; matching only a copy
+inside `_evidence` would not establish which module Python actually imports.
+
+The R2 run's own freeze and the earlier published source freeze remain separate
+authorities. The static import-closure audit can bind unchanged inherited helper
+modules to that earlier authority without replacing its expected hashes. This
+publication audit is not represented as an additional pre-TEST freeze or as
+proof that every conditional import ran. Original capture tensors and large
+profiler events remain local-only; small statistics and phase receipts have a
+strictly narrower public reconstruction scope.
 
 ## Included evidence and actual reconstruction scope
 

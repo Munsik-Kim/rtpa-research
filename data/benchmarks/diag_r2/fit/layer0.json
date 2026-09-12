@@ -1,0 +1,35 @@
+{
+  "layer": 0,
+  "sha256": "e3857f4a1af64da69659076a562bd2a043e26168f62b8c71429be15d9b994c3b",
+  "seconds": 14.116832217000137,
+  "peak_allocated_bytes": 571007488,
+  "TRAIN_documents": 6,
+  "sources": "all0:256 unitweights",
+  "readouts": "16:256",
+  "DAMP_sampling": "Native7,15,...255",
+  "fullK_only_on_audit_cases": {
+    "Kdiag_normalized_max": 2.172040155055522e-16,
+    "c_normalized_max": 0.0,
+    "mask_exact": true,
+    "diag_path_seconds": 2.3381817090000823,
+    "fullK_audit_path_seconds": 1.5506988410002123,
+    "timing_not_isolated": true,
+    "Kdiag_bytes": 16384,
+    "fullK_bytes": 2097152
+  },
+  "source_audits": [
+    {
+      "composition_nL2": 5.727782265406428e-07,
+      "direct_mask_objective_normalized_max": 2.789211829391471e-07,
+      "tolerance": 0.0001,
+      "pass": true,
+      "mask_replays_are_frozen_source_audits_not_actual_candidate_model_runs": true
+    },
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "DAMP_energy_persistence_top8_exact": true
+}

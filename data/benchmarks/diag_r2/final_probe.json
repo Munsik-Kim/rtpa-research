@@ -1,0 +1,29 @@
+{
+  "status": "PASS_BOUNDED_CAL",
+  "tokens_per_method": 64,
+  "physical_forwards": 128,
+  "logits_exact": true,
+  "final_cache_tensors_exact": true,
+  "every_intermediate_payload_compared": false,
+  "sources": {
+    "diag_r2_benchmark.py": "48d5198da63a8ee1d0041ff6eee9c918313aadc878ef7f02ec51bfb8e54f55de",
+    "diag_r2_runtime.py": "36012aee79be9394c531e8db371d8f7b8d8ed3c8161f5e53b501360646b5404f",
+    "diag_r2_execution.py": "5a0ffda87a639751a5fc647468d446ae7c7e591bf6fe931fa5e1851661a9ce1e",
+    "codec_r2.py": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2",
+    "codec_r2_optimized.py": "519975711d79ee0672a20d3585c6cd6c07002e237629ed48cabb006dffe9ad9e",
+    "calibration_r2.py": "52911fe4e2241f24230cc2f22d4ce621ee7f6bbd4ddd6202897f31d84be15efc",
+    "calibration.py": "1aac2598d1af6920285e6ccfa11bb4a92d3f1d2453549cb89841768e45db0038",
+    "runtime.py": "afbfcbad6f18879151a827a1473869ea60c5d80f1f32689ee408d7d08cb6f8d2",
+    "codec.py": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069",
+    "layout.py": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276",
+    "operators.py": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78",
+    "factorized.py": "d6947df1f614b9dcb7372878e7fbc9e05626ff40c7e86c2cb80e819ae560e08e",
+    "reference_encoder.py": "d7272e7c4d600da3cbfcb9196be140afdb08b0f33c6751d51c744b4429ac7b53",
+    "benchmark.py": "1a3d9efec4b9b712ae4728a4777429e451afe1ca0ef5e059d94b38baf0b64071",
+    "io.py": "9bfdd227e7db2626abf39418a0973e443a801a4657a7626385f536f6ede7300f",
+    "resources.py": "b96099e34810d68146be1e49862a38907458e9757dba0b6cf225c40cc94b457e",
+    "allocation_trace.py": "6175db2b7e4bdc1017c8d9959c6008848537348741ab057005002ccc3dac7e57",
+    "diag_r2_analysis.py": "0d037df87c23b90ff789ba60dc8f9748fcf7a417cb0e9158145214e19ba306d6"
+  },
+  "not_new_quality_evaluation": true
+}

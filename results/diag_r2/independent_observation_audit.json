@@ -1,0 +1,1092 @@
+{
+  "status": "PASS_INCLUDED_OBSERVATION_AUDIT",
+  "checks": 505656,
+  "errors": [],
+  "run_id": "RTPA_DIAG_STABLE_R2_20260912_V1",
+  "tolerances": {
+    "absolute": 1e-12,
+    "relative": 1e-10
+  },
+  "physical_quality_forward_attempts": 61440,
+  "status_counts": {
+    "OK": 61440
+  },
+  "first_failures": [],
+  "pooled_metrics": [
+    {
+      "method": "NATIVE",
+      "context": 1024,
+      "planned_documents": 12,
+      "complete_documents": 12,
+      "finite_complete_documents": 12,
+      "KL_tokens": 12096,
+      "NLL_tokens": 12084,
+      "status": "COMPLETE_PLANNED_WINDOW",
+      "NLL_status": "COMPLETE_PLANNED_WINDOW",
+      "mean_KL": 0.0,
+      "mean_NLL": 1.6544081599221472,
+      "late_mean_KL": 0.0
+    },
+    {
+      "method": "LEGACY_DIAG",
+      "context": 1024,
+      "planned_documents": 12,
+      "complete_documents": 12,
+      "finite_complete_documents": 12,
+      "KL_tokens": 12096,
+      "NLL_tokens": 12084,
+      "status": "COMPLETE_PLANNED_WINDOW",
+      "NLL_status": "COMPLETE_PLANNED_WINDOW",
+      "mean_KL": 0.004295890480791102,
+      "mean_NLL": 1.6570252297793684,
+      "late_mean_KL": 0.0054979893119763415
+    },
+    {
+      "method": "R2_MATCHED_ENERGY",
+      "context": 1024,
+      "planned_documents": 12,
+      "complete_documents": 12,
+      "finite_complete_documents": 12,
+      "KL_tokens": 12096,
+      "NLL_tokens": 12084,
+      "status": "COMPLETE_PLANNED_WINDOW",
+      "NLL_status": "COMPLETE_PLANNED_WINDOW",
+      "mean_KL": 0.16751233663667056,
+      "mean_NLL": 1.8159021549754533,
+      "late_mean_KL": 0.3087037399015085
+    },
+    {
+      "method": "R2_DIAG",
+      "context": 1024,
+      "planned_documents": 12,
+      "complete_documents": 12,
+      "finite_complete_documents": 12,
+      "KL_tokens": 12096,
+      "NLL_tokens": 12084,
+      "status": "COMPLETE_PLANNED_WINDOW",
+      "NLL_status": "COMPLETE_PLANNED_WINDOW",
+      "mean_KL": 0.07019327423268436,
+      "mean_NLL": 1.7235125889437954,
+      "late_mean_KL": 0.12928643742379295
+    },
+    {
+      "method": "DAMP_R2_PAPER_ADAPTED",
+      "context": 1024,
+      "planned_documents": 12,
+      "complete_documents": 12,
+      "finite_complete_documents": 12,
+      "KL_tokens": 12096,
+      "NLL_tokens": 12084,
+      "status": "COMPLETE_PLANNED_WINDOW",
+      "NLL_status": "COMPLETE_PLANNED_WINDOW",
+      "mean_KL": 0.1561574880260992,
+      "mean_NLL": 1.8052031380465414,
+      "late_mean_KL": 0.2876574655652714
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "candidate": "R2_DIAG",
+      "baseline": "R2_MATCHED_ENERGY",
+      "context": 1024,
+      "status": "COMPUTED",
+      "gain": 0.5809665386918246,
+      "gain_CI95": [
+        0.5440402875654411,
+        0.6115087252011174
+      ],
+      "delta_NLL": -0.09238956603165799,
+      "delta_NLL_CI95": [
+        -0.10518283905292854,
+        -0.07928763348050182
+      ],
+      "candidate_mean_KL": 0.07019327423268436,
+      "baseline_mean_KL": 0.16751233663667056,
+      "mean_KL_difference": -0.0973190624039862,
+      "wins": 12,
+      "ties": 0,
+      "losses": 0,
+      "mean_KL_difference_CI95": [
+        -0.1111780198388176,
+        -0.08453746638078428
+      ],
+      "paired_KL_tokens": 12096,
+      "paired_NLL_tokens": 12084,
+      "candidate_late_KL": 0.12928643742379295,
+      "baseline_late_KL": 0.3087037399015085
+    },
+    {
+      "candidate": "R2_DIAG",
+      "baseline": "LEGACY_DIAG",
+      "context": 1024,
+      "status": "COMPUTED",
+      "gain": -15.33963308574804,
+      "gain_CI95": [
+        -17.280700674489854,
+        -13.260004947418487
+      ],
+      "delta_NLL": 0.06648735916442704,
+      "delta_NLL_CI95": [
+        0.055242054024088195,
+        0.07836527375967801
+      ],
+      "candidate_mean_KL": 0.07019327423268436,
+      "baseline_mean_KL": 0.004295890480791102,
+      "mean_KL_difference": 0.06589738375189326,
+      "wins": 0,
+      "ties": 0,
+      "losses": 12,
+      "mean_KL_difference_CI95": [
+        0.05724143784759785,
+        0.07457836885113293
+      ],
+      "paired_KL_tokens": 12096,
+      "paired_NLL_tokens": 12084,
+      "candidate_late_KL": 0.12928643742379295,
+      "baseline_late_KL": 0.0054979893119763415
+    },
+    {
+      "candidate": "R2_DIAG",
+      "baseline": "DAMP_R2_PAPER_ADAPTED",
+      "context": 1024,
+      "status": "COMPUTED",
+      "gain": 0.5504969046316069,
+      "gain_CI95": [
+        0.514854124495986,
+        0.584875030630193
+      ],
+      "delta_NLL": -0.08169054910274595,
+      "delta_NLL_CI95": [
+        -0.09275682417757367,
+        -0.07155062676887189
+      ],
+      "candidate_mean_KL": 0.07019327423268436,
+      "baseline_mean_KL": 0.1561574880260992,
+      "mean_KL_difference": -0.08596421379341483,
+      "wins": 12,
+      "ties": 0,
+      "losses": 0,
+      "mean_KL_difference_CI95": [
+        -0.09813211923398416,
+        -0.07569187433399269
+      ],
+      "paired_KL_tokens": 12096,
+      "paired_NLL_tokens": 12084,
+      "candidate_late_KL": 0.12928643742379295,
+      "baseline_late_KL": 0.2876574655652714
+    },
+    {
+      "candidate": "R2_MATCHED_ENERGY",
+      "baseline": "DAMP_R2_PAPER_ADAPTED",
+      "context": 1024,
+      "status": "COMPUTED",
+      "gain": -0.07271408341733565,
+      "gain_CI95": [
+        -0.11921856135082018,
+        -0.025555181882901172
+      ],
+      "delta_NLL": 0.010699016928912038,
+      "delta_NLL_CI95": [
+        0.004713773574657441,
+        0.01713676274447127
+      ],
+      "candidate_mean_KL": 0.16751233663667056,
+      "baseline_mean_KL": 0.1561574880260992,
+      "mean_KL_difference": 0.011354848610571372,
+      "wins": 3,
+      "ties": 0,
+      "losses": 9,
+      "mean_KL_difference_CI95": [
+        0.004114634556091757,
+        0.01889871098865886
+      ],
+      "paired_KL_tokens": 12096,
+      "paired_NLL_tokens": 12084,
+      "candidate_late_KL": 0.3087037399015085,
+      "baseline_late_KL": 0.2876574655652714
+    }
+  ],
+  "write_counter_audit": [
+    {
+      "document": "r2_technical_prose_decimal",
+      "method": "NATIVE",
+      "actual": 0,
+      "expected_exact": 0,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_decimal",
+      "method": "LEGACY_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_decimal",
+      "method": "R2_MATCHED_ENERGY",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_decimal",
+      "method": "R2_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_decimal",
+      "method": "DAMP_R2_PAPER_ADAPTED",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__arraypad_impl",
+      "method": "NATIVE",
+      "actual": 0,
+      "expected_exact": 0,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__arraypad_impl",
+      "method": "LEGACY_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__arraypad_impl",
+      "method": "R2_MATCHED_ENERGY",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__arraypad_impl",
+      "method": "R2_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__arraypad_impl",
+      "method": "DAMP_R2_PAPER_ADAPTED",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_sqlite3",
+      "method": "NATIVE",
+      "actual": 0,
+      "expected_exact": 0,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_sqlite3",
+      "method": "LEGACY_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_sqlite3",
+      "method": "R2_MATCHED_ENERGY",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_sqlite3",
+      "method": "R2_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_sqlite3",
+      "method": "DAMP_R2_PAPER_ADAPTED",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__shape_base_impl",
+      "method": "NATIVE",
+      "actual": 0,
+      "expected_exact": 0,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__shape_base_impl",
+      "method": "LEGACY_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__shape_base_impl",
+      "method": "R2_MATCHED_ENERGY",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__shape_base_impl",
+      "method": "R2_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__shape_base_impl",
+      "method": "DAMP_R2_PAPER_ADAPTED",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_logging",
+      "method": "NATIVE",
+      "actual": 0,
+      "expected_exact": 0,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_logging",
+      "method": "LEGACY_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_logging",
+      "method": "R2_MATCHED_ENERGY",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_logging",
+      "method": "R2_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_logging",
+      "method": "DAMP_R2_PAPER_ADAPTED",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__type_check_impl",
+      "method": "NATIVE",
+      "actual": 0,
+      "expected_exact": 0,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__type_check_impl",
+      "method": "LEGACY_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__type_check_impl",
+      "method": "R2_MATCHED_ENERGY",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__type_check_impl",
+      "method": "R2_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__type_check_impl",
+      "method": "DAMP_R2_PAPER_ADAPTED",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_multiprocessing",
+      "method": "NATIVE",
+      "actual": 0,
+      "expected_exact": 0,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_multiprocessing",
+      "method": "LEGACY_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_multiprocessing",
+      "method": "R2_MATCHED_ENERGY",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_multiprocessing",
+      "method": "R2_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_multiprocessing",
+      "method": "DAMP_R2_PAPER_ADAPTED",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__arraysetops_impl",
+      "method": "NATIVE",
+      "actual": 0,
+      "expected_exact": 0,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__arraysetops_impl",
+      "method": "LEGACY_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__arraysetops_impl",
+      "method": "R2_MATCHED_ENERGY",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__arraysetops_impl",
+      "method": "R2_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__arraysetops_impl",
+      "method": "DAMP_R2_PAPER_ADAPTED",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_asyncio_task",
+      "method": "NATIVE",
+      "actual": 0,
+      "expected_exact": 0,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_asyncio_task",
+      "method": "LEGACY_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_asyncio_task",
+      "method": "R2_MATCHED_ENERGY",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_asyncio_task",
+      "method": "R2_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_asyncio_task",
+      "method": "DAMP_R2_PAPER_ADAPTED",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__nanfunctions_impl",
+      "method": "NATIVE",
+      "actual": 0,
+      "expected_exact": 0,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__nanfunctions_impl",
+      "method": "LEGACY_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__nanfunctions_impl",
+      "method": "R2_MATCHED_ENERGY",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__nanfunctions_impl",
+      "method": "R2_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__nanfunctions_impl",
+      "method": "DAMP_R2_PAPER_ADAPTED",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__function_base_impl",
+      "method": "NATIVE",
+      "actual": 0,
+      "expected_exact": 0,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__function_base_impl",
+      "method": "LEGACY_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__function_base_impl",
+      "method": "R2_MATCHED_ENERGY",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__function_base_impl",
+      "method": "R2_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_python_code__function_base_impl",
+      "method": "DAMP_R2_PAPER_ADAPTED",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_typing",
+      "method": "NATIVE",
+      "actual": 0,
+      "expected_exact": 0,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_typing",
+      "method": "LEGACY_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_typing",
+      "method": "R2_MATCHED_ENERGY",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_typing",
+      "method": "R2_DIAG",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    },
+    {
+      "document": "r2_technical_prose_typing",
+      "method": "DAMP_R2_PAPER_ADAPTED",
+      "actual": 18432,
+      "expected_exact": 18432,
+      "status": "EXACT_CHECKED"
+    }
+  ],
+  "mask_score_audit": [
+    {
+      "layer": 0,
+      "method": "MATCHED_ENERGY8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 0,
+      "method": "DIAG8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 0,
+      "method": "DAMP8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 1,
+      "method": "MATCHED_ENERGY8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 1,
+      "method": "DIAG8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 1,
+      "method": "DAMP8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 2,
+      "method": "MATCHED_ENERGY8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 2,
+      "method": "DIAG8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 2,
+      "method": "DAMP8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 4,
+      "method": "MATCHED_ENERGY8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 4,
+      "method": "DIAG8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 4,
+      "method": "DAMP8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 5,
+      "method": "MATCHED_ENERGY8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 5,
+      "method": "DIAG8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 5,
+      "method": "DAMP8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 6,
+      "method": "MATCHED_ENERGY8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 6,
+      "method": "DIAG8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 6,
+      "method": "DAMP8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 8,
+      "method": "MATCHED_ENERGY8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 8,
+      "method": "DIAG8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 8,
+      "method": "DAMP8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 9,
+      "method": "MATCHED_ENERGY8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 9,
+      "method": "DIAG8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 9,
+      "method": "DAMP8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 10,
+      "method": "MATCHED_ENERGY8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 10,
+      "method": "DIAG8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 10,
+      "method": "DAMP8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 12,
+      "method": "MATCHED_ENERGY8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 12,
+      "method": "DIAG8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 12,
+      "method": "DAMP8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 13,
+      "method": "MATCHED_ENERGY8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 13,
+      "method": "DIAG8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 13,
+      "method": "DAMP8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 14,
+      "method": "MATCHED_ENERGY8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 14,
+      "method": "DIAG8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 14,
+      "method": "DAMP8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 16,
+      "method": "MATCHED_ENERGY8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 16,
+      "method": "DIAG8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 16,
+      "method": "DAMP8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 17,
+      "method": "MATCHED_ENERGY8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 17,
+      "method": "DIAG8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 17,
+      "method": "DAMP8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 18,
+      "method": "MATCHED_ENERGY8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 18,
+      "method": "DIAG8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 18,
+      "method": "DAMP8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 20,
+      "method": "MATCHED_ENERGY8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 20,
+      "method": "DIAG8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 20,
+      "method": "DAMP8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 21,
+      "method": "MATCHED_ENERGY8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 21,
+      "method": "DIAG8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 21,
+      "method": "DAMP8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 22,
+      "method": "MATCHED_ENERGY8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 22,
+      "method": "DIAG8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    },
+    {
+      "layer": 22,
+      "method": "DAMP8",
+      "heads": 16,
+      "high_rows_per_head": 8,
+      "mixed_payload_bytes_per_head": 19328
+    }
+  ],
+  "source_sha256": "c84f67ccea362c1f4ebd4078edc6046ef8b2784e8ec77f33029bf111a597afcb",
+  "observation_hashes": {
+    "protocol.json": "3fe03f5bfde5d081474ccc551adac508147eeb0486cced46ed10430505040996",
+    "test_panel.json": "2568ba5c61f2af75b40101c2bcc92c70c0ae1142752c9945ade86fc54373706c",
+    "freeze.json": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640",
+    "tokens/r2_technical_prose_decimal.jsonl.gz": "31134ec9cf6595eec08ff6230c4fe0cfd55c3fb8c22b40035789649b3e9f5c7b",
+    "tokens/r2_technical_prose_decimal.jsonl.receipt.json": "55a3ced29b95aa71b73b0bfdba093917d3915a8d100eeb16aa27c2ef8846348e",
+    "tokens/r2_python_code__arraypad_impl.jsonl.gz": "dfc9807b83519603da6b2181c444d746a0e96350f5c7ad9648930d32fcd6e0f4",
+    "tokens/r2_python_code__arraypad_impl.jsonl.receipt.json": "2a300aed6293ac6b2c56537e44f824c8f3c702c7b240fc199e4947bf44715f80",
+    "tokens/r2_technical_prose_sqlite3.jsonl.gz": "13d2d114c559537db430327d74c7ec79a9c1858674ac4081274bf9de98c53367",
+    "tokens/r2_technical_prose_sqlite3.jsonl.receipt.json": "354e749cf4deb6da9ae6cf46a7a7299d6d0e1bd223dda55c405b63c21f1b333a",
+    "tokens/r2_python_code__shape_base_impl.jsonl.gz": "60181662aa4d0a97ce750f7ecef5dd9b066a431e5a02764d67b31ffac3cdcff6",
+    "tokens/r2_python_code__shape_base_impl.jsonl.receipt.json": "12b55fd6e01ca68770e34506d202f0ffbcc5d051c9e48cc8d98b604df9b32600",
+    "tokens/r2_technical_prose_logging.jsonl.gz": "95f84994982cef2aceaa4cb451b22426dc067e519368e1f31bab6fbb46194fdc",
+    "tokens/r2_technical_prose_logging.jsonl.receipt.json": "3b0af2e9491f45f509b04d0f51349f7a96e06a248f25ed5a3e93395f66574431",
+    "tokens/r2_python_code__type_check_impl.jsonl.gz": "69663c60b7f1464933d5791332fc69fb8202876267831356a18b2d9e1ff12510",
+    "tokens/r2_python_code__type_check_impl.jsonl.receipt.json": "ae7ab740276e8865cfabe64b3fda021636574b168e75d933c2ad2f1a125dad39",
+    "tokens/r2_technical_prose_multiprocessing.jsonl.gz": "86edd0bc468cf9115e4f78c8a10e06fb76ddb769539bb5ef5a8ab4dfecdf4d3c",
+    "tokens/r2_technical_prose_multiprocessing.jsonl.receipt.json": "5645528cb7c1a621ae664590308f8d4e0e03c9bdf9135c4912f1891ecd8de18f",
+    "tokens/r2_python_code__arraysetops_impl.jsonl.gz": "e4737471047480124e263e086dc994b62bd257ceb07cc3d9b9ca693982a6f1d9",
+    "tokens/r2_python_code__arraysetops_impl.jsonl.receipt.json": "03b23cf4d6056ea1cc2af4fd2294cf5dcdce75f8fd54e15b681bde1fe74326e9",
+    "tokens/r2_technical_prose_asyncio_task.jsonl.gz": "e98de7e58b44bbef97f3cd60e8d1db210c5208e2ee1a73f2f89340dc09cf9e46",
+    "tokens/r2_technical_prose_asyncio_task.jsonl.receipt.json": "bbbc84c579783259273d080b3f6ace5e4872b08c099464a0a1ee020ff13644a9",
+    "tokens/r2_python_code__nanfunctions_impl.jsonl.gz": "95125d2048be07a978198b3e16612a4bc7bab4bd3472d2728c3e52ea28489148",
+    "tokens/r2_python_code__nanfunctions_impl.jsonl.receipt.json": "4bc3a75d7f8548ffa7e7a2a45b5435844aef012a20d82f0bb6329913cc6c8c6c",
+    "tokens/r2_python_code__function_base_impl.jsonl.gz": "8af01ca97055ff3954a1c26296c2d0e22e92cee0cf9161d98b6d6cf4779f01cd",
+    "tokens/r2_python_code__function_base_impl.jsonl.receipt.json": "d8715f009d7de1d0911f4fa2a552dd463cdde4861785b9bc8b198c4e92d185d9",
+    "tokens/r2_technical_prose_typing.jsonl.gz": "9d9ab23d7b6f235aaa81925a9e13161ffa104b76a64b12f8072cd0c3477cf8bd",
+    "tokens/r2_technical_prose_typing.jsonl.receipt.json": "1c38fc04f747c1f856ab2e032d6cc4b2ee376d1409f9bd8ee20c0878a1062130",
+    "policy_r2.npz": "45a511cc987306a3e7c68a86d6b1fa61c80778e1fc8911d8f19042935cc8c0b1",
+    "fit/layer0.npz": "e3857f4a1af64da69659076a562bd2a043e26168f62b8c71429be15d9b994c3b",
+    "fit/layer0.json": "8698065b0c93b5569a9d1a77550864dcfee8cd1894e11fcac00dc7684518ac8e",
+    "fit/layer1.npz": "b7d1b96a49d360e67d36fd9fef9d88a0c9bcefb9808b4758059c090d1dfc72b1",
+    "fit/layer1.json": "698b2f966252a678e39ff1f0308ebaf90aacab72c4d56dccb07a3b37cadeb7de",
+    "fit/layer2.npz": "71791db039195b44779e55a8c5563f8c497c76cb1d636de94b16f7693b9a3e79",
+    "fit/layer2.json": "0b24c3b3c46cb800d1e77752786b60537135fc4579359e9bf02c6e631c6d6db2",
+    "fit/layer4.npz": "2c5f240f16e1e0fb9af540fae8fd946ce115966d39ca80d8baf033cf55905c0e",
+    "fit/layer4.json": "b12a86bdcce9adc716c6f4ffcd4332da1dee550e6878ff584dca28d64bd15e4b",
+    "fit/layer5.npz": "f43cfd07a1e550ac31da4168ffbb36fccdb9567f405f9772427508ec924ae450",
+    "fit/layer5.json": "e47175978ba2107b4a834f8aab29ff106c5077870f1a598b20ca66ed67281683",
+    "fit/layer6.npz": "c7b575a6cd4da886e072fe222827bcb0d82c895e82dd7cb9339672fefee3d575",
+    "fit/layer6.json": "f0ee1105c8e7e787f64009496af4d5e18652a852779b9391a9da1d6d7d46ffa9",
+    "fit/layer8.npz": "5f67e74011c5bdfe8d832a2fdbbed82d991944b207407935f182e0b55d70b53d",
+    "fit/layer8.json": "5c0e5cde0684d7d94784b98cb60dd746b329142f9daa3c2f7c21e64e0441b5ea",
+    "fit/layer9.npz": "ab974b58ea5e24e0044372fd16214fb374e645b2c9098cdedf29ac846c6f6912",
+    "fit/layer9.json": "1b41a1b05a9ad99dbedac398705eb6575dab31f3ac7f8aa3fb1cf4885de87d83",
+    "fit/layer10.npz": "7b26eb4044227f045f450a9e1b0193e5c4f3f85aa2e65f8cf6d20da77b3d58b8",
+    "fit/layer10.json": "77b2f683d71ea24b15f18857597df89c21b5b4fb0abd43f4a01d1767d263f3f3",
+    "fit/layer12.npz": "0aaf66dfee67d8537c2e9702c003b3a4cd6e675752a198c2a1d7af14afc42e47",
+    "fit/layer12.json": "383a9ccd2edccb6839b1772492daff6122af75d7134d4b83b419e9ff2381d17a",
+    "fit/layer13.npz": "be1e8849817799674a297d9030b82dad4ee82bdb5b4887c2acf9e4e57138049d",
+    "fit/layer13.json": "202969b1deff57eab61f53a706433e503b3ef292b56f73a14a954ce8a8dd235f",
+    "fit/layer14.npz": "927bc23afffebba9445e521e1f0125f478ebe332890337522d09470fea97a1e6",
+    "fit/layer14.json": "a079118eeb7143cf8151526dd803e6e4f49c207afdc253d9fe199c8b88de2eb1",
+    "fit/layer16.npz": "c98617f1bb1f5848dc69b592d45eca9eba551de099971cab77d048a3e112ecae",
+    "fit/layer16.json": "a48ac862bbafc9456006b1279ef2dab2e64bdfeb7594d9c630ebce4e86ded4cb",
+    "fit/layer17.npz": "029976c506f79722410cab5cce5db528d6f491fc81fea62595af909f67851fec",
+    "fit/layer17.json": "6c781ae52f44d0b5f0024274678de8722b92ac9944a8600817a3041ded27b5f3",
+    "fit/layer18.npz": "91711032ad569ddcb72983052b8388cb53c9eb8790b860d51876f16426d42839",
+    "fit/layer18.json": "f134ea7b41cc8aacd6467b5702789f7a71fa57266469846de254aa77ceee672b",
+    "fit/layer20.npz": "fe6b4bb9e64031eeb76c52bb24ac7576ee5953bed182d0f6be26561b67b08f6b",
+    "fit/layer20.json": "58ebaba65ee9bc7ddf1fdf1d87279a606df7d10a3694bd716cb4a3a78951c487",
+    "fit/layer21.npz": "7bf62338e0d9b58184f54d39e3634e724c821167c074406570eb8f8888134d28",
+    "fit/layer21.json": "6d0183ec65a0a9b37e04520a045c527b17ad07c9e048a07485301b4e20c3fc24",
+    "fit/layer22.npz": "6b5d566bb3839f2fb579639415c9d0210433051e6c0b3d9b8d8da8343a533b34",
+    "fit/layer22.json": "bb6297766757e516d4b73848a145c12a34134bfc4d8bd9c8e229c860d9a8c421"
+  },
+  "analysis_sha256": "9a7f705c4fe0fb1d235b8a1dfd734075b58030cadc2f3d614d20d7e34c284401",
+  "execution": "CPU_STDLIB_NUMPY_ONLY",
+  "new_model_forwards": 0,
+  "expectations_updated": false,
+  "scope": "Raw saved scalar and token/receipt alignment audit; not independent full-logit/codec-to-metric reconstruction",
+  "not_checked": [
+    "Fresh GPU replication",
+    "Tokenizer semantic retokenization",
+    "Model logits to KL/NLL derivation",
+    "Timing and memory measurements (separate audits)",
+    "Population generalization"
+  ],
+  "missing_counter_claim_scope": "Unavailable optional counters are explicitly NOT_REPORTED; required observations never silently skipped",
+  "elapsed_CPU_wall_seconds": 0.7160570160012867
+}

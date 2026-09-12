@@ -1,0 +1,14 @@
+{
+  "pid": 48788,
+  "phase": "timing",
+  "status": "RUNNING",
+  "elapsed_active_seconds": 8997.490495957998,
+  "block": 3,
+  "method": "R2_DIAG",
+  "gpu": {
+    "temperature_C": 41.0,
+    "used_MiB": 5054.0,
+    "total_MiB": 16303.0,
+    "utilization_percent": 24.0
+  }
+}

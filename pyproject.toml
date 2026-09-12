@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rtpa-research"
-version = "1.1.0rc1"
+version = "1.2.0rc1"
 description = "Output-aware recurrent-state quantization with reproducible evidence and GDN operators"
 readme = "README.md"
 license = {file = "LICENSE"}

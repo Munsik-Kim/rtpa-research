@@ -1,0 +1,203 @@
+{
+  "status": "INCOMPLETE_OR_INVALID",
+  "labels": {
+    "NATIVE": {
+      "status": "INCOMPLETE_NO_FULL_ESTIMATE",
+      "planned_blocks": 8,
+      "observed_blocks": 3,
+      "isolated_at_all_recorded_boundaries": true,
+      "raw_decode_ms_per_token": [
+        38.43720312499954,
+        40.57366068747115,
+        31.933629593709156
+      ],
+      "median_decode_ms_per_token": null,
+      "median_tokens_per_second": null,
+      "median_prefill_seconds": null,
+      "median_TTFT_seconds": null
+    },
+    "R2_MATCHED_ENERGY": {
+      "status": "INCOMPLETE_NO_FULL_ESTIMATE",
+      "planned_blocks": 8,
+      "observed_blocks": 2,
+      "isolated_at_all_recorded_boundaries": true,
+      "raw_decode_ms_per_token": [
+        103.8935460624657,
+        77.53238643749683
+      ],
+      "median_decode_ms_per_token": null,
+      "median_tokens_per_second": null,
+      "median_prefill_seconds": null,
+      "median_TTFT_seconds": null
+    },
+    "R2_DIAG_REFERENCE": {
+      "status": "INCOMPLETE_NO_FULL_ESTIMATE",
+      "planned_blocks": 8,
+      "observed_blocks": 2,
+      "isolated_at_all_recorded_boundaries": true,
+      "raw_decode_ms_per_token": [
+        120.15906543751953,
+        127.40724268752501
+      ],
+      "median_decode_ms_per_token": null,
+      "median_tokens_per_second": null,
+      "median_prefill_seconds": null,
+      "median_TTFT_seconds": null
+    },
+    "R2_DIAG": {
+      "status": "INCOMPLETE_NO_FULL_ESTIMATE",
+      "planned_blocks": 8,
+      "observed_blocks": 3,
+      "isolated_at_all_recorded_boundaries": true,
+      "raw_decode_ms_per_token": [
+        119.25564803124189,
+        105.79213712503588,
+        120.81581359376514
+      ],
+      "median_decode_ms_per_token": null,
+      "median_tokens_per_second": null,
+      "median_prefill_seconds": null,
+      "median_TTFT_seconds": null
+    },
+    "DAMP_R2_PAPER_ADAPTED": {
+      "status": "INCOMPLETE_NO_FULL_ESTIMATE",
+      "planned_blocks": 8,
+      "observed_blocks": 3,
+      "isolated_at_all_recorded_boundaries": false,
+      "raw_decode_ms_per_token": [
+        100.48651624998683,
+        93.6463031562198,
+        85.58271143749607
+      ],
+      "median_decode_ms_per_token": null,
+      "median_tokens_per_second": null,
+      "median_prefill_seconds": null,
+      "median_TTFT_seconds": null
+    },
+    "R2_MATCHED_ENERGY_REPEAT": {
+      "status": "INCOMPLETE_NO_FULL_ESTIMATE",
+      "planned_blocks": 8,
+      "observed_blocks": 2,
+      "isolated_at_all_recorded_boundaries": true,
+      "raw_decode_ms_per_token": [
+        118.1568642499542,
+        110.29962478124844
+      ],
+      "median_decode_ms_per_token": null,
+      "median_tokens_per_second": null,
+      "median_prefill_seconds": null,
+      "median_TTFT_seconds": null
+    }
+  },
+  "comparisons": [
+    {
+      "candidate": "R2_DIAG",
+      "baseline": "R2_MATCHED_ENERGY",
+      "planned_paired_blocks": 8,
+      "status": "UNDEFINED_INCOMPLETE_TIMING",
+      "median_ratio": null,
+      "median_ratio_CI95": null,
+      "speedup_status": "UNRESOLVED",
+      "target_ratio": 1.05,
+      "unit": "within-block candidate/baseline decode latency; median across paired blocks"
+    },
+    {
+      "candidate": "R2_DIAG",
+      "baseline": "R2_DIAG_REFERENCE",
+      "planned_paired_blocks": 8,
+      "status": "UNDEFINED_INCOMPLETE_TIMING",
+      "median_ratio": null,
+      "median_ratio_CI95": null,
+      "speedup_status": "UNRESOLVED",
+      "target_ratio": 1.05,
+      "unit": "within-block candidate/baseline decode latency; median across paired blocks"
+    },
+    {
+      "candidate": "R2_DIAG",
+      "baseline": "DAMP_R2_PAPER_ADAPTED",
+      "planned_paired_blocks": 8,
+      "status": "UNDEFINED_INCOMPLETE_TIMING",
+      "median_ratio": null,
+      "median_ratio_CI95": null,
+      "speedup_status": "UNRESOLVED",
+      "target_ratio": 1.05,
+      "unit": "within-block candidate/baseline decode latency; median across paired blocks"
+    },
+    {
+      "candidate": "R2_MATCHED_ENERGY_REPEAT",
+      "baseline": "R2_MATCHED_ENERGY",
+      "planned_paired_blocks": 8,
+      "status": "UNDEFINED_INCOMPLETE_TIMING",
+      "median_ratio": null,
+      "median_ratio_CI95": null,
+      "speedup_status": "UNRESOLVED",
+      "target_ratio": 1.05,
+      "unit": "within-block candidate/baseline decode latency; median across paired blocks"
+    },
+    {
+      "candidate": "R2_MATCHED_ENERGY",
+      "baseline": "NATIVE",
+      "planned_paired_blocks": 8,
+      "status": "UNDEFINED_INCOMPLETE_TIMING",
+      "median_ratio": null,
+      "median_ratio_CI95": null,
+      "speedup_status": "UNRESOLVED",
+      "target_ratio": 1.05,
+      "unit": "within-block candidate/baseline decode latency; median across paired blocks"
+    },
+    {
+      "candidate": "R2_DIAG_REFERENCE",
+      "baseline": "NATIVE",
+      "planned_paired_blocks": 8,
+      "status": "UNDEFINED_INCOMPLETE_TIMING",
+      "median_ratio": null,
+      "median_ratio_CI95": null,
+      "speedup_status": "UNRESOLVED",
+      "target_ratio": 1.05,
+      "unit": "within-block candidate/baseline decode latency; median across paired blocks"
+    },
+    {
+      "candidate": "R2_DIAG",
+      "baseline": "NATIVE",
+      "planned_paired_blocks": 8,
+      "status": "UNDEFINED_INCOMPLETE_TIMING",
+      "median_ratio": null,
+      "median_ratio_CI95": null,
+      "speedup_status": "UNRESOLVED",
+      "target_ratio": 1.05,
+      "unit": "within-block candidate/baseline decode latency; median across paired blocks"
+    },
+    {
+      "candidate": "DAMP_R2_PAPER_ADAPTED",
+      "baseline": "NATIVE",
+      "planned_paired_blocks": 8,
+      "status": "UNDEFINED_INCOMPLETE_TIMING",
+      "median_ratio": null,
+      "median_ratio_CI95": null,
+      "speedup_status": "UNRESOLVED",
+      "target_ratio": 1.05,
+      "unit": "within-block candidate/baseline decode latency; median across paired blocks"
+    },
+    {
+      "candidate": "R2_MATCHED_ENERGY_REPEAT",
+      "baseline": "NATIVE",
+      "planned_paired_blocks": 8,
+      "status": "UNDEFINED_INCOMPLETE_TIMING",
+      "median_ratio": null,
+      "median_ratio_CI95": null,
+      "speedup_status": "UNRESOLVED",
+      "target_ratio": 1.05,
+      "unit": "within-block candidate/baseline decode latency; median across paired blocks"
+    }
+  ],
+  "input_errors": [],
+  "measured_rows": 15,
+  "stored_warmup_rows": 0,
+  "input_execution_status": "RUNNING",
+  "bootstrap_seed": 612206,
+  "bootstrap_draws": 2000,
+  "scope": "UNREPORTED",
+  "isolation_scope": "Recorded block boundaries only, not continuous exclusivity proof; ratios retained when unverified",
+  "warmup_scope": "No stored warmup row is not evidence that warmup was omitted or performed",
+  "timing_is_not_quality_or_serving_certification": true
+}

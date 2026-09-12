@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "tests_run": 62,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "seconds": 1.3542086409997864,
+  "GPU_execution": false,
+  "test_sources": {
+    "tests/test_diag_r2_runtime.py": "05012554a32d59d5ca21f6c7ef61380c9adbd0601b3a5602de0ca960da6efc06",
+    "tests/test_diag_r2_math.py": "2bb58c3e39af62e2d7f7f731f0d69421de38df7bb5db8893f8dda84130ec91d6",
+    "tests/test_codec_r2_optimized.py": "81fd0fa76e3ca70119fdb0c36929b55c4801d8cb4d503bac63bfe48909d94007",
+    "tests/test_diag_r2_analysis.py": "e39ff738ee1abc6ba283b610b9d65efb5dd9b8bf48b643887493608b46c8441a",
+    "tests/test_codec_r2.py": "5d08124a82d519189eb9fc1ce1de554db585dcb0049cc7e301585b0644f7ebf5"
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "status": "PASS_CPU_CONTRACT_AT_TESTED_POINTS",
+  "profiles": [
+    "R2_OFFSET",
+    "R2_ZERO_INCLUSIVE"
+  ],
+  "execution": "CPU_TORCH_AND_INDEPENDENT_NUMPY;NO_MODEL;NO_GPU",
+  "python": "3.11.15",
+  "torch": "2.11.0+cu128",
+  "numpy": "1.26.4",
+  "cpu_threads": 2,
+  "cuda_initialized": false,
+  "source_manifest": [
+    {
+      "path": "src/rtpa_research/codec_r2.py",
+      "sha256": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2",
+      "bytes": 12289
+    },
+    {
+      "path": "tests/test_codec_r2.py",
+      "sha256": "5d08124a82d519189eb9fc1ce1de554db585dcb0049cc7e301585b0644f7ebf5",
+      "bytes": 10335
+    },
+    {
+      "path": "docs/CODEC_R2_CONTRACT.md",
+      "sha256": "48d1e52d75ee48a08163888b95de1b8dada590ae17b7d11477e9beead620d6f4",
+      "bytes": 7288
+    },
+    {
+      "path": "scripts/audit_codec_r2.py",
+      "sha256": "714b2c6713352c8935446611f4890959678ea6bb7cde8a361aa50a48ca03cf44",
+      "bytes": 7034
+    }
+  ],
+  "fixture_initial_hashes": {
+    "data/evidence/fixtures/overflow.npz": "b4e08d28dc1f3ad79c1b7494bb79945d1a83b752ad7c5e478f4ea3b3f125a0d9",
+    "data/evidence/upgrade_failures/stored_nearest.npz": "0a8d654a9506896e7234b98ad4fd9afc7a8ae3bf1e32fca5e79bf92cdfddea57",
+    "data/evidence/upgrade_failures/fa_code_factorized.npz": "37a3a2070a21bd40f0459e9252f931d52e1a62459264cf1ae9fb393a6c463645"
+  },
+  "fixtures_unchanged": true,
+  "rows": [
+    {
+      "fixture": "data/evidence/fixtures/overflow.npz",
+      "profile": "P_PRE",
+      "role": "HISTORICAL_EXPECTED_FAILURE",
+      "metadata_nonfinite": 1,
+      "status": "EXPECTED_OVERFLOW_REPRODUCED"
+    },
+    {
+      "fixture": "data/evidence/fixtures/overflow.npz",
+      "profile": "P_STORE",
+      "role": "HISTORICAL_EXPECTED_FAILURE",
+      "metadata_nonfinite": 1,
+      "status": "EXPECTED_OVERFLOW_REPRODUCED"
+    },
+    {
+      "fixture": "data/evidence/fixtures/overflow.npz",
+      "profile": "R2_OFFSET",
+      "role": "NEW_CONTRACT_AT_SAVED_POINT",
+      "independent_group_payload_exact": true,
+      "independent_group_decode_exact": true,
+      "payload_bytes": 36,
+      "payload_scope": "one_transformed_group32",
+      "SSE": 9.320669236423385e-15,
+      "input_energy": 0.00041129735236977195,
+      "NMSE": 2.266163198649465e-11,
+      "NMSE_reason": null,
+      "max_absolute_error": 2.9569491744041443e-08,
+      "decoded_finite": true,
+      "rounded_code_outside_0_255": 0,
+      "endpoint_code_count": 0,
+      "code_count": 32,
+      "scale_subnormal_count": 1,
+      "scale_min": 5.960464477539063e-08,
+      "scale_max": 5.960464477539063e-08,
+      "status": "PASS_AT_INCLUDED_POINT"
+    },
+    {
+      "fixture": "data/evidence/fixtures/overflow.npz",
+      "profile": "R2_ZERO_INCLUSIVE",
+      "role": "NEW_CONTRACT_AT_SAVED_POINT",
+      "independent_group_payload_exact": true,
+      "independent_group_decode_exact": true,
+      "payload_bytes": 36,
+      "payload_scope": "one_transformed_group32",
+      "SSE": 6.951625611956169e-10,
+      "input_energy": 0.00041129735236977195,
+      "NMSE": 1.6901702799453942e-06,
+      "NMSE_reason": null,
+      "max_absolute_error": 6.991671398282051e-06,
+      "decoded_finite": true,
+      "rounded_code_outside_0_255": 0,
+      "endpoint_code_count": 0,
+      "code_count": 32,
+      "scale_subnormal_count": 1,
+      "scale_min": 1.4126300811767578e-05,
+      "scale_max": 1.4126300811767578e-05,
+      "status": "PASS_AT_INCLUDED_POINT"
+    },
+    {
+      "fixture": "data/evidence/upgrade_failures/stored_nearest.npz",
+      "profile": "P_PRE",
+      "role": "HISTORICAL_EXPECTED_FAILURE",
+      "metadata_nonfinite": 1,
+      "status": "EXPECTED_OVERFLOW_REPRODUCED"
+    },
+    {
+      "fixture": "data/evidence/upgrade_failures/stored_nearest.npz",
+      "profile": "P_STORE",
+      "role": "HISTORICAL_EXPECTED_FAILURE",
+      "metadata_nonfinite": 1,
+      "status": "EXPECTED_OVERFLOW_REPRODUCED"
+    },
+    {
+      "fixture": "data/evidence/upgrade_failures/stored_nearest.npz",
+      "profile": "R2_OFFSET",
+      "role": "NEW_CONTRACT_AT_SAVED_POINT",
+      "independent_group_payload_exact": true,
+      "independent_group_decode_exact": true,
+      "payload_bytes": 19328,
+      "payload_scope": "one128x128head_high8",
+      "SSE": 8.777315228189255e-07,
+      "input_energy": 0.7384484915327705,
+      "NMSE": 1.1886157706098775e-06,
+      "NMSE_reason": null,
+      "max_absolute_error": 0.00017750263214111328,
+      "decoded_finite": true,
+      "rounded_code_outside_0_255": 0,
+      "endpoint_code_count": 805,
+      "code_count": 15360,
+      "scale_subnormal_count": 465,
+      "scale_min": 5.960464477539063e-08,
+      "scale_max": 0.00010269880294799805,
+      "status": "PASS_AT_INCLUDED_POINT"
+    },
+    {
+      "fixture": "data/evidence/upgrade_failures/stored_nearest.npz",
+      "profile": "R2_ZERO_INCLUSIVE",
+      "role": "NEW_CONTRACT_AT_SAVED_POINT",
+      "independent_group_payload_exact": true,
+      "independent_group_decode_exact": true,
+      "payload_bytes": 19328,
+      "payload_scope": "one128x128head_high8",
+      "SSE": 1.0538295738078352e-06,
+      "input_energy": 0.7384484915327705,
+      "NMSE": 1.4270860945499933e-06,
+      "NMSE_reason": null,
+      "max_absolute_error": 0.00017750263214111328,
+      "decoded_finite": true,
+      "rounded_code_outside_0_255": 0,
+      "endpoint_code_count": 762,
+      "code_count": 15360,
+      "scale_subnormal_count": 464,
+      "scale_min": 6.556510925292969e-07,
+      "scale_max": 0.00010269880294799805,
+      "status": "PASS_AT_INCLUDED_POINT"
+    },
+    {
+      "fixture": "data/evidence/upgrade_failures/fa_code_factorized.npz",
+      "profile": "P_PRE",
+      "role": "HISTORICAL_EXPECTED_FAILURE",
+      "metadata_nonfinite": 1,
+      "status": "EXPECTED_OVERFLOW_REPRODUCED"
+    },
+    {
+      "fixture": "data/evidence/upgrade_failures/fa_code_factorized.npz",
+      "profile": "P_STORE",
+      "role": "HISTORICAL_EXPECTED_FAILURE",
+      "metadata_nonfinite": 1,
+      "status": "EXPECTED_OVERFLOW_REPRODUCED"
+    },
+    {
+      "fixture": "data/evidence/upgrade_failures/fa_code_factorized.npz",
+      "profile": "R2_OFFSET",
+      "role": "NEW_CONTRACT_AT_SAVED_POINT",
+      "independent_group_payload_exact": true,
+      "independent_group_decode_exact": true,
+      "payload_bytes": 19328,
+      "payload_scope": "one128x128head_high8",
+      "SSE": 8.581749852163164e-07,
+      "input_energy": 0.772770536948865,
+      "NMSE": 1.110517215892643e-06,
+      "NMSE_reason": null,
+      "max_absolute_error": 7.832050323486328e-05,
+      "decoded_finite": true,
+      "rounded_code_outside_0_255": 0,
+      "endpoint_code_count": 793,
+      "code_count": 15360,
+      "scale_subnormal_count": 467,
+      "scale_min": 5.960464477539063e-08,
+      "scale_max": 0.00010144710540771484,
+      "status": "PASS_AT_INCLUDED_POINT"
+    },
+    {
+      "fixture": "data/evidence/upgrade_failures/fa_code_factorized.npz",
+      "profile": "R2_ZERO_INCLUSIVE",
+      "role": "NEW_CONTRACT_AT_SAVED_POINT",
+      "independent_group_payload_exact": true,
+      "independent_group_decode_exact": true,
+      "payload_bytes": 19328,
+      "payload_scope": "one128x128head_high8",
+      "SSE": 9.943568432341542e-07,
+      "input_energy": 0.772770536948865,
+      "NMSE": 1.2867426948757389e-06,
+      "NMSE_reason": null,
+      "max_absolute_error": 7.832050323486328e-05,
+      "decoded_finite": true,
+      "rounded_code_outside_0_255": 0,
+      "endpoint_code_count": 744,
+      "code_count": 15360,
+      "scale_subnormal_count": 465,
+      "scale_min": 5.960464477539062e-07,
+      "scale_max": 0.00010144710540771484,
+      "status": "PASS_AT_INCLUDED_POINT"
+    }
+  ],
+  "tests": {
+    "run": 23,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0
+  },
+  "unit_log": "test_alllow_and_allhigh_payloads (test_codec_r2.CodecR2Contract.test_alllow_and_allhigh_payloads) ... ok\ntest_h32_axis_normalization_independent (test_codec_r2.CodecR2Contract.test_h32_axis_normalization_independent) ... ok\ntest_half_floor_and_ceiling (test_codec_r2.CodecR2Contract.test_half_floor_and_ceiling) ... ok\ntest_high_overflow_rejected_before_return (test_codec_r2.CodecR2Contract.test_high_overflow_rejected_before_return) ... ok\ntest_independent_request_payload_and_no_master (test_codec_r2.CodecR2Contract.test_independent_request_payload_and_no_master) ... ok\ntest_mixed_sign_and_extrema (test_codec_r2.CodecR2Contract.test_mixed_sign_and_extrema) ... ok\ntest_narrow_negative_group (test_codec_r2.CodecR2Contract.test_narrow_negative_group) ... ok\ntest_narrow_positive_group (test_codec_r2.CodecR2Contract.test_narrow_positive_group) ... ok\ntest_nonzero_constants (test_codec_r2.CodecR2Contract.test_nonzero_constants) ... ok\ntest_odd_zero_tie_uses_add_before_round (test_codec_r2.CodecR2Contract.test_odd_zero_tie_uses_add_before_round) ... ok\ntest_outside_transformed_bound_rejected (test_codec_r2.CodecR2Contract.test_outside_transformed_bound_rejected) ... ok\ntest_overflow_group_legacy_reproduced_and_r2_finite (test_codec_r2.CodecR2Contract.test_overflow_group_legacy_reproduced_and_r2_finite) ... ok\ntest_payload_bytes_and_protected_original_coordinates (test_codec_r2.CodecR2Contract.test_payload_bytes_and_protected_original_coordinates) ... ok\ntest_payload_corruption_rejected (test_codec_r2.CodecR2Contract.test_payload_corruption_rejected) ... ok\ntest_payload_wrong_shape_dtype_and_profile_rejected (test_codec_r2.CodecR2Contract.test_payload_wrong_shape_dtype_and_profile_rejected) ... ok\ntest_random_group_independent_reference (test_codec_r2.CodecR2Contract.test_random_group_independent_reference) ... ok\ntest_small_underflow_scales (test_codec_r2.CodecR2Contract.test_small_underflow_scales) ... ok\ntest_ties_round_even_on_stored_grid (test_codec_r2.CodecR2Contract.test_ties_round_even_on_stored_grid) ... ok\ntest_transform_bound_distinct_from_original_bound (test_codec_r2.CodecR2Contract.test_transform_bound_distinct_from_original_bound) ... ok\ntest_two_all18_legacy_failure_heads_r2_finite (test_codec_r2.CodecR2Contract.test_two_all18_legacy_failure_heads_r2_finite) ... ok\ntest_zero_exact (test_codec_r2.CodecR2Contract.test_zero_exact) ... ok\ntest_zero_point_is_inside_range (test_codec_r2.CodecR2Contract.test_zero_point_is_inside_range) ... ok\ntest_zero_point_payload_bounds_rejected (test_codec_r2.CodecR2Contract.test_zero_point_payload_bounds_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 23 tests in 0.069s\n\nOK\n",
+  "elapsed_cpu_wall_seconds": 0.15887322000003223,
+  "limits": [
+    "No CUDA arithmetic equivalence test in this receipt",
+    "No all18 CAL replay or quality selection",
+    "Finite support is abs<=65504 after low H32 and separately before high cast",
+    "No claim of all finite FP32 input safety"
+  ]
+}

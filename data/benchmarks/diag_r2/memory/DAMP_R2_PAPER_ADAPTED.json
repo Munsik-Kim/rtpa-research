@@ -1,0 +1,73 @@
+{
+  "method": "DAMP_R2_PAPER_ADAPTED",
+  "pid": 65444,
+  "fresh_process_for_method": true,
+  "profile": "R2_OFFSET",
+  "prompt_tokens": 1024,
+  "decode_tokens": 32,
+  "physical_forwards": 1056,
+  "payload_bytes": 5566464,
+  "payload_bytes_per_head": 19328,
+  "cache_tensor_bytes": 19427328,
+  "static_policy_bytes_by_type": {
+    "low_index": 276480,
+    "high_index": 18432,
+    "H32": 4096
+  },
+  "static_policy_bytes": 299008,
+  "shared_policy_engine_level": true,
+  "model_parameter_bytes": 1705971840,
+  "allocated_after_model_load": 1736535040,
+  "steady_allocated_bytes": 1776970752,
+  "peak_allocated_bytes": 1791394816,
+  "peak_reserved_bytes": 1858076672,
+  "gpu": {
+    "temperature_C": 55.0,
+    "used_MiB": 4529.0,
+    "total_MiB": 16303.0,
+    "utilization_percent": 29.0
+  },
+  "sampled_isolation": {
+    "status_ok": true,
+    "processes": [
+      {
+        "pid": 65444,
+        "process": "[Not Found]"
+      }
+    ],
+    "no_competing_GPU_worker": true,
+    "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+  },
+  "scratch": "measured separately on actual nonzero CAL layer0 codec call; not derived from tensor shapes alone",
+  "source_freeze_sha256": "7c470687d49c6f3b5a6ba0d05f06b0147a2b7189b14f21c8d353e3397abe0640",
+  "codec_scratch_measurement": {
+    "file": "DAMP_R2_PAPER_ADAPTED_allocations.json",
+    "sha256": "97d29e7fed2562a87a02e357fc74f741fc040843417eb42df17bf9aef0459fca",
+    "records": [
+      {
+        "operation": "encode",
+        "baseline_allocated_bytes": 1778019328,
+        "peak_increment_bytes": 5142016,
+        "retained_output_tensor_bytes": 309248,
+        "max_new_allocated_from_trace": 5142016,
+        "max_transient_excluding_returned_storage_from_trace": 5111296,
+        "allocation_lifetimes": 62,
+        "retained_output_allocation_lifetimes": 4,
+        "address_reuse_corrected": true,
+        "trace_scope": "CUDA allocator events for one actual CAL state; block/requested size accounting may include alignment"
+      },
+      {
+        "operation": "decode",
+        "baseline_allocated_bytes": 1778328576,
+        "peak_increment_bytes": 14415872,
+        "retained_output_tensor_bytes": 1048576,
+        "max_new_allocated_from_trace": 13891199,
+        "max_transient_excluding_returned_storage_from_trace": 12842623,
+        "allocation_lifetimes": 108,
+        "retained_output_allocation_lifetimes": 1,
+        "address_reuse_corrected": true,
+        "trace_scope": "CUDA allocator events for one actual CAL state; block/requested size accounting may include alignment"
+      }
+    ]
+  }
+}
