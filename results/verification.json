@@ -19,7 +19,7 @@
   "clean_installed_CPU": {
     "status": "PASS_CLEAN_INDEX_AND_INSTALLED_CPU_EVIDENCE",
     "receipt_availability": "LOCAL_ONLY",
-    "receipt_sha256": "e68e633f9571a92bd591eba3a6a1c20b102d4ca39588146d72cef88f3dd0def0",
+    "receipt_sha256": "67698751b5413251b24b3eee3a67fc53ff55d4caafda5b1eeb7abdd404d7d6e3",
     "GPU_work": false,
     "model_download": false,
     "dependency_network": false,
