@@ -1,0 +1,169 @@
+{
+  "scope": "Frozen source expectations versus current public candidates; mismatches are not silently repaired",
+  "sources": [
+    {
+      "receipt": "freeze.json",
+      "field": "/driver_sha256",
+      "expected_sha256": "cdbf2b0adb173b56ec5ef411a2438366a9f0ab0f73f9dd708809e30b42b6140f",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/orchestrator_sha256",
+      "expected_sha256": "ad66377ed8f6531c33aa8d0fc7855f99346250191e3adcde292e494842c24a1f",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    },
+    {
+      "receipt": "layer0/freeze.json",
+      "field": "/source_hashes",
+      "source_id": "driver",
+      "expected_sha256": "cdbf2b0adb173b56ec5ef411a2438366a9f0ab0f73f9dd708809e30b42b6140f",
+      "candidate_public_path": "driver",
+      "current_public_sha256": null,
+      "status": "NOT_BOUND_TO_PUBLIC_FILE"
+    },
+    {
+      "receipt": "layer0/freeze.json",
+      "field": "/source_hashes",
+      "source_id": "adjoint_module",
+      "expected_sha256": "cd75a56b196dd1b7f02a0acd18cf33c9df2e30471ffd954811da4290f2393c1b",
+      "candidate_public_path": "adjoint_module",
+      "current_public_sha256": null,
+      "status": "NOT_BOUND_TO_PUBLIC_FILE"
+    },
+    {
+      "receipt": "layer0/freeze.json",
+      "field": "/source_hashes",
+      "source_id": "adjoint_tests",
+      "expected_sha256": "88881fc7f4b0267e911d83591159b042e459f1a3555d9133733de1e422207ee6",
+      "candidate_public_path": "adjoint_tests",
+      "current_public_sha256": null,
+      "status": "NOT_BOUND_TO_PUBLIC_FILE"
+    },
+    {
+      "receipt": "layer0/freeze.json",
+      "field": "/source_hashes",
+      "source_id": "parent_calibration",
+      "expected_sha256": "f20494a39ae78b253edb8fa07354de8f30037082f51b9e285e233a484d02ead9",
+      "candidate_public_path": "parent_calibration",
+      "current_public_sha256": null,
+      "status": "NOT_BOUND_TO_PUBLIC_FILE"
+    },
+    {
+      "receipt": "layer12/freeze.json",
+      "field": "/source_hashes",
+      "source_id": "driver",
+      "expected_sha256": "cdbf2b0adb173b56ec5ef411a2438366a9f0ab0f73f9dd708809e30b42b6140f",
+      "candidate_public_path": "driver",
+      "current_public_sha256": null,
+      "status": "NOT_BOUND_TO_PUBLIC_FILE"
+    },
+    {
+      "receipt": "layer12/freeze.json",
+      "field": "/source_hashes",
+      "source_id": "adjoint_module",
+      "expected_sha256": "cd75a56b196dd1b7f02a0acd18cf33c9df2e30471ffd954811da4290f2393c1b",
+      "candidate_public_path": "adjoint_module",
+      "current_public_sha256": null,
+      "status": "NOT_BOUND_TO_PUBLIC_FILE"
+    },
+    {
+      "receipt": "layer12/freeze.json",
+      "field": "/source_hashes",
+      "source_id": "adjoint_tests",
+      "expected_sha256": "88881fc7f4b0267e911d83591159b042e459f1a3555d9133733de1e422207ee6",
+      "candidate_public_path": "adjoint_tests",
+      "current_public_sha256": null,
+      "status": "NOT_BOUND_TO_PUBLIC_FILE"
+    },
+    {
+      "receipt": "layer12/freeze.json",
+      "field": "/source_hashes",
+      "source_id": "parent_calibration",
+      "expected_sha256": "f20494a39ae78b253edb8fa07354de8f30037082f51b9e285e233a484d02ead9",
+      "candidate_public_path": "parent_calibration",
+      "current_public_sha256": null,
+      "status": "NOT_BOUND_TO_PUBLIC_FILE"
+    },
+    {
+      "receipt": "layer22/freeze.json",
+      "field": "/source_hashes",
+      "source_id": "driver",
+      "expected_sha256": "cdbf2b0adb173b56ec5ef411a2438366a9f0ab0f73f9dd708809e30b42b6140f",
+      "candidate_public_path": "driver",
+      "current_public_sha256": null,
+      "status": "NOT_BOUND_TO_PUBLIC_FILE"
+    },
+    {
+      "receipt": "layer22/freeze.json",
+      "field": "/source_hashes",
+      "source_id": "adjoint_module",
+      "expected_sha256": "cd75a56b196dd1b7f02a0acd18cf33c9df2e30471ffd954811da4290f2393c1b",
+      "candidate_public_path": "adjoint_module",
+      "current_public_sha256": null,
+      "status": "NOT_BOUND_TO_PUBLIC_FILE"
+    },
+    {
+      "receipt": "layer22/freeze.json",
+      "field": "/source_hashes",
+      "source_id": "adjoint_tests",
+      "expected_sha256": "88881fc7f4b0267e911d83591159b042e459f1a3555d9133733de1e422207ee6",
+      "candidate_public_path": "adjoint_tests",
+      "current_public_sha256": null,
+      "status": "NOT_BOUND_TO_PUBLIC_FILE"
+    },
+    {
+      "receipt": "layer22/freeze.json",
+      "field": "/source_hashes",
+      "source_id": "parent_calibration",
+      "expected_sha256": "f20494a39ae78b253edb8fa07354de8f30037082f51b9e285e233a484d02ead9",
+      "candidate_public_path": "parent_calibration",
+      "current_public_sha256": null,
+      "status": "NOT_BOUND_TO_PUBLIC_FILE"
+    },
+    {
+      "receipt": "postrun_accounting_audit.json",
+      "field": "/audit_source_sha256",
+      "expected_sha256": "ad088cd0edc57113276a96f3c3534437c46ac45028a4278409533ba02c3ffc4b",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    }
+  ],
+  "recorded_environments": [
+    {
+      "receipt": "layer0/freeze.json",
+      "recorded": {
+        "numpy": "1.26.4",
+        "scipy": "1.17.1",
+        "threads": 2
+      }
+    },
+    {
+      "receipt": "layer12/freeze.json",
+      "recorded": {
+        "numpy": "1.26.4",
+        "scipy": "1.17.1",
+        "threads": 2
+      }
+    },
+    {
+      "receipt": "layer22/freeze.json",
+      "recorded": {
+        "numpy": "1.26.4",
+        "scipy": "1.17.1",
+        "threads": 2
+      }
+    }
+  ],
+  "external_capture_bindings": [],
+  "dependency_wiring": {
+    "pyproject.toml": {
+      "sha256": "70a71f91ae812d1563a379d1380a5e0c91efda493642d15e449cba6ee7dfa796",
+      "mentions_scipy": true
+    },
+    ".github/workflows/cpu-evidence.yml": {
+      "sha256": "a9d453cb829198afb172f0ad630aa8e25e69b75e39896a0c8a263620572f9156",
+      "mentions_scipy": true
+    }
+  },
+  "dependency_boundary": "Scalar aggregation and curation use NumPy/stdlib; adjoint interval tests additionally require SciPy. No dependency was installed or upgraded by curation."
+}

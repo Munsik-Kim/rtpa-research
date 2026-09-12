@@ -1,0 +1,24 @@
+{
+  "scope": "Frozen source expectations versus current public candidates; mismatches are not silently repaired",
+  "sources": [
+    {
+      "receipt": "../codec_selection.json",
+      "field": "/selector_source_sha256",
+      "expected_sha256": "ee359c4b116fc8e0020e1b210b5eb1ac14c50116d0a226254562e90d247181c8",
+      "status": "SOURCE_HASH_RETAINED_NO_FILE_SUBSTITUTION"
+    }
+  ],
+  "recorded_environments": [],
+  "external_capture_bindings": [],
+  "dependency_wiring": {
+    "pyproject.toml": {
+      "sha256": "70a71f91ae812d1563a379d1380a5e0c91efda493642d15e449cba6ee7dfa796",
+      "mentions_scipy": true
+    },
+    ".github/workflows/cpu-evidence.yml": {
+      "sha256": "a9d453cb829198afb172f0ad630aa8e25e69b75e39896a0c8a263620572f9156",
+      "mentions_scipy": true
+    }
+  },
+  "dependency_boundary": "Scalar aggregation and curation use NumPy/stdlib; adjoint interval tests additionally require SciPy. No dependency was installed or upgraded by curation."
+}

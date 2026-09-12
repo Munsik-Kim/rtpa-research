@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "stage": "phase_a_repair_cpu",
+  "scientific_status": "PASS_CPU_GATE",
+  "curator_sha256": "c2fbaba51bb06f65ab4ccfac6ef55413cd6eb678f9e5e4af328f8ef831deb738",
+  "files": [
+    {
+      "path": "execution.json",
+      "sha256": "130b66b9161fbafab3d99d2ef0b4c10c9b3aacf78f631e9b95cb6bb6475e3430",
+      "bytes": 481,
+      "byte_identical": true,
+      "original_relative": "execution.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "61fb843f0f180f912815bc8e42aa677dc0eb139b44ba445fdd10d92b432c4d8b",
+      "bytes": 3688,
+      "byte_identical": true,
+      "original_relative": "freeze.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "input_binding.public.json",
+      "sha256": "d0d6733a63e4046b08d07e9a5eceadb7cbc66c10b169b6f39ef18384bc179a62",
+      "bytes": 54366,
+      "byte_identical": false,
+      "original_relative": "input_binding.json",
+      "original_sha256": "53553d4e41149168ed50eb47a5bbc5600b178c9019ad02f5c5fd5a0f7242ff7d",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [],
+      "path_reference_replacements": [
+        {
+          "field": "/selected/train_associative_recall_0_L0/path",
+          "public_reference": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_associative_recall_0_L0.npz",
+          "original_string_sha256": "77adc6906ab684be2dd777d519fe16d375ed6fc7d6c371f73fa6df2c5307e158"
+        },
+        {
+          "field": "/selected/train_associative_recall_0_L12/path",
+          "public_reference": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_associative_recall_0_L12.npz",
+          "original_string_sha256": "78e2c40258aab7b3a91a3ac86a6aa7ec131c8304be42746d23e2564226c0e6a9"
+        },
+        {
+          "field": "/selected/train_associative_recall_0_L22/path",
+          "public_reference": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_associative_recall_0_L22.npz",
+          "original_string_sha256": "c6a141dc68ad6c00d5e025941848c066e819388275fcc794fadebf44381b2be7"
+        },
+        {
+          "field": "/selected/train_associative_recall_1_L0/path",
+          "public_reference": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_associative_recall_1_L0.npz",
+          "original_string_sha256": "05a5dd8db61cec95115b80278c525e6a43ad571f0b7a1e9aa85ecb31ded196fe"
+        },
+        {
+          "field": "/selected/train_associative_recall_1_L12/path",
+          "public_reference": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_associative_recall_1_L12.npz",
+          "original_string_sha256": "bfd5b67981f1fbec540acf35fe2f1339aafe1021b03b10fcae9376cf650bf687"
+        },
+        {
+          "field": "/selected/train_associative_recall_1_L22/path",
+          "public_reference": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_associative_recall_1_L22.npz",
+          "original_string_sha256": "7d6505359d46ddd54839fef1298eda0f6c3fdb5f22a16da13c785e9ecb9fc865"
+        },
+        {
+          "field": "/selected/train_code_0_L0/path",
+          "public_reference": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_code_0_L0.npz",
+          "original_string_sha256": "6b35ab1530f82022c75d46e945c0e7c1e4c5fa25a0832e08bf1ec8ec338649d5"
+        },
+        {
+          "field": "/selected/train_code_0_L12/path",
+          "public_reference": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_code_0_L12.npz",
+          "original_string_sha256": "e83cb362f7e11fc058bc76d1d7461c329e9940f3d6ee7eea2f15c74da25d346d"
+        },
+        {
+          "field": "/selected/train_code_0_L22/path",
+          "public_reference": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_code_0_L22.npz",
+          "original_string_sha256": "6422405c2c4249837e8dfde5d3081499a91469e13ee29f75058c2db00d1e6af6"
+        },
+        {
+          "field": "/selected/train_code_1_L0/path",
+          "public_reference": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_code_1_L0.npz",
+          "original_string_sha256": "6618a751750e38a9f2197b64a43ce3d4080ec5dcd8840c708ac6cb6b6029cccd"
+        },
+        {
+          "field": "/selected/train_code_1_L12/path",
+          "public_reference": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_code_1_L12.npz",
+          "original_string_sha256": "ef89ddbe3f0ef643714f6eb4bd49add1facaeac2579dc7a990630d47835f4754"
+        },
+        {
+          "field": "/selected/train_code_1_L22/path",
+          "public_reference": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_code_1_L22.npz",
+          "original_string_sha256": "4003c49651e2105cc58a7a54c9d2fc666b78c6e6f3860e37c104463f956fc98a"
+        },
+        {
+          "field": "/selected/train_natural_language_0_L0/path",
+          "public_reference": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_natural_language_0_L0.npz",
+          "original_string_sha256": "5683941e8117ff20f39690d1ae283f792b743bc80243e9c32830f3509e495468"
+        },
+        {
+          "field": "/selected/train_natural_language_0_L12/path",
+          "public_reference": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_natural_language_0_L12.npz",
+          "original_string_sha256": "c2975656c08e8701a716a7f01c42a5bf79b27b166f96a24f65cf615090067a21"
+        },
+        {
+          "field": "/selected/train_natural_language_0_L22/path",
+          "public_reference": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_natural_language_0_L22.npz",
+          "original_string_sha256": "8ddb53c7dc4c03227399787443e89da6c8d52486e02a4f03fd9a94e231e569a0"
+        },
+        {
+          "field": "/selected/train_natural_language_1_L0/path",
+          "public_reference": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_natural_language_1_L0.npz",
+          "original_string_sha256": "d703c280b4782e662726f485d26e5ebf2aacba8623119d000c73882175f144d7"
+        },
+        {
+          "field": "/selected/train_natural_language_1_L12/path",
+          "public_reference": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_natural_language_1_L12.npz",
+          "original_string_sha256": "b99584a2a26b068fe85767d267ad0f6cb5950256914d75f5ecc5604bff54733c"
+        },
+        {
+          "field": "/selected/train_natural_language_1_L22/path",
+          "public_reference": "data/benchmarks/diag_r4/phase_a_metadata/inspections/train_natural_language_1_L22.npz",
+          "original_string_sha256": "5dd08f74624a2479d5e021b98f1f4561e9eca2c7f8f831e8e2d0ba1fa4d1acb1"
+        }
+      ]
+    },
+    {
+      "path": "protocol.json",
+      "sha256": "fa830b35a7c579828dcbfcdb7dafa8989026d96f9d1bc9f8eb012f070dfb2efd",
+      "bytes": 2632,
+      "byte_identical": true,
+      "original_relative": "protocol.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "selected_physical_repeat.json",
+      "sha256": "ebf8156d48cacfb440801154219b600e51de25bb9a9a12a7757c763c8a5a8c81",
+      "bytes": 69660,
+      "byte_identical": true,
+      "original_relative": "selected_physical_repeat.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "selected_physical_repeat.npz",
+      "sha256": "fcd23b469c8d73e9aea59f0887dd5e46cc8858e4351f5c9f85d5eaad95c3a291",
+      "bytes": 800263,
+      "byte_identical": true,
+      "original_relative": "selected_physical_repeat.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "unit_tests.log",
+      "sha256": "1fdaddde6aed65a4dbe79f540f13be3bf2f4550a08648424377abcd22b438374",
+      "bytes": 1824,
+      "byte_identical": true,
+      "original_relative": "unit_tests.log",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "source_dependency_bindings.json",
+      "sha256": "c1339ea63687f63f4f656358df86906ae10e65e62539802afc971c446b3ba9a7",
+      "bytes": 3672,
+      "byte_identical": false,
+      "role": "DERIVED_SOURCE_AND_DEPENDENCY_BINDINGS"
+    }
+  ],
+  "local_only": [
+    {
+      "path": "input_binding.json",
+      "sha256": "53553d4e41149168ed50eb47a5bbc5600b178c9019ad02f5c5fd5a0f7242ff7d",
+      "bytes": 54906,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "run_candidate.py",
+      "sha256": "232dcedda563efe6db8d7845399b5314c314c88a450d359e9d069b2e5b387c34",
+      "bytes": 10679,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    }
+  ],
+  "original_hash_links": [
+    {
+      "path": "selected_physical_repeat.npz",
+      "sha256": "fcd23b469c8d73e9aea59f0887dd5e46cc8858e4351f5c9f85d5eaad95c3a291",
+      "role": "SELECTED_GROUP_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "61fb843f0f180f912815bc8e42aa677dc0eb139b44ba445fdd10d92b432c4d8b",
+      "role": "CPU_GATE_FREEZE"
+    }
+  ],
+  "reproduction_levels": {
+    "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS": "Scalar/table aggregation only, where the public CPU verifier implements the corresponding reduction",
+    "INCLUDED_TENSOR_POINT_CHECKS": "Small selected fixtures support explicitly bounded arithmetic comparisons; they are not representative full trajectories",
+    "LOCAL_ONLY_REGENERATION": "Full model forwards and capture/response regeneration require hash-bound local inputs and sometimes local drivers; no blanket full-rerun promise"
+  },
+  "claim_boundary": "Curation establishes evidence identity, not new model quality, numerical success, or deployment promotion"
+}

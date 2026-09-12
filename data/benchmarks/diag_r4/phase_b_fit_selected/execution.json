@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETE",
+  "active_seconds": 277.1118667990013,
+  "device": "cuda",
+  "model_forwards": 0,
+  "completed_cases": 108,
+  "planned_cases": 108,
+  "attempts": [
+    {
+      "seconds": 5.32306484700166,
+      "new_cases": 1
+    },
+    {
+      "seconds": 271.78880195199963,
+      "new_cases": 107
+    }
+  ]
+}

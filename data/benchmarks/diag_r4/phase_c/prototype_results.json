@@ -1,0 +1,558 @@
+{
+  "status": "COMPLETE_BOUNDED_CPU_PROTOTYPE",
+  "run_id": "RTPA_R4_ADJOINT_CPU_PROTOTYPE_20260912_V1",
+  "unit_tests": {
+    "returncode": 0,
+    "log_sha256": "fa51bf3db0f3ffe3c836cad9d15ecc2e155fd5f13aee5273b112d5d899879ba0"
+  },
+  "coverage": [
+    {
+      "scenario": {
+        "family": "gdn",
+        "seed": 612402,
+        "shape": [
+          12,
+          2,
+          6,
+          3
+        ]
+      },
+      "independent_dense_relative_errors": {
+        "c": 4.2349570336842454e-16,
+        "B3_quadratic": 1.2882506140282062e-16,
+        "Kdiag": 1.9779164080647756e-16
+      },
+      "probe_trials": 128,
+      "rows": [
+        {
+          "r": 8,
+          "all_head_row_coverage_count": 123,
+          "mean_total_Khat_over_exact": 1.025695994098746,
+          "total_ratio_standard_error": 0.01922042311446419,
+          "per_row_mean_Khat_over_exact": [
+            [
+              1.0395179312939309,
+              1.0578252147024032,
+              0.9856060613774641,
+              1.0187367149855762,
+              1.0324318581074399,
+              1.0290021396783147
+            ],
+            [
+              1.0775617845859387,
+              0.987031599231157,
+              1.0388431490602548,
+              0.988228365261874,
+              1.034080307487026,
+              1.0502485811578173
+            ]
+          ],
+          "certified_head_count": 0,
+          "wrong_certified_head_count": 0,
+          "exact_mask_head_fraction": 0.8359375
+        },
+        {
+          "r": 16,
+          "all_head_row_coverage_count": 126,
+          "mean_total_Khat_over_exact": 1.0241352338058274,
+          "total_ratio_standard_error": 0.013184533468509962,
+          "per_row_mean_Khat_over_exact": [
+            [
+              1.0020319747061386,
+              1.0323285457235394,
+              0.9917620103091639,
+              1.0248192636638873,
+              0.9857377230386364,
+              1.0176229532304772
+            ],
+            [
+              1.0769147579771419,
+              1.0100599426468726,
+              1.0556618616524909,
+              0.9809199730669372,
+              1.0445336049911105,
+              1.0065452458968664
+            ]
+          ],
+          "certified_head_count": 0,
+          "wrong_certified_head_count": 0,
+          "exact_mask_head_fraction": 0.93359375
+        },
+        {
+          "r": 32,
+          "all_head_row_coverage_count": 124,
+          "mean_total_Khat_over_exact": 1.016372238942842,
+          "total_ratio_standard_error": 0.009353018342650822,
+          "per_row_mean_Khat_over_exact": [
+            [
+              1.0169583756759315,
+              1.018707011484673,
+              0.9947991423675274,
+              1.0021778470540177,
+              0.9803848893054031,
+              1.0082372950114544
+            ],
+            [
+              1.0422757108856986,
+              1.047241712001487,
+              1.0345012793497737,
+              1.0038079590450535,
+              1.0140455625391653,
+              1.0052597731910504
+            ]
+          ],
+          "certified_head_count": 0,
+          "wrong_certified_head_count": 0,
+          "exact_mask_head_fraction": 0.96484375
+        }
+      ],
+      "all_stage_head_row_coverage_count": 121,
+      "all_stage_coverage_95percent_binomial_interval": [
+        0.8905679484317433,
+        0.9777328541900766
+      ],
+      "nominal_simultaneous_coverage": 0.95,
+      "coverage_interpretation": "Descriptive finite-seed audit; no seed selection or alpha change; scenarios share probe seeds and are not pooled as independent trials",
+      "observations": {
+        "path": "coverage_0.npz",
+        "sha256": "050b3d5c56b88cd7023c0ee33d56e7bf56cccfbb72af11a0e87e0b72898ee1eb"
+      }
+    },
+    {
+      "scenario": {
+        "family": "gdn2",
+        "seed": 612403,
+        "shape": [
+          12,
+          2,
+          6,
+          3
+        ]
+      },
+      "independent_dense_relative_errors": {
+        "c": 2.839750335106492e-16,
+        "B3_quadratic": 2.0076386589901377e-16,
+        "Kdiag": 2.6172262081257487e-16
+      },
+      "probe_trials": 128,
+      "rows": [
+        {
+          "r": 8,
+          "all_head_row_coverage_count": 126,
+          "mean_total_Khat_over_exact": 1.0100897853962005,
+          "total_ratio_standard_error": 0.01542204261934917,
+          "per_row_mean_Khat_over_exact": [
+            [
+              1.0087953821002147,
+              1.0235281341714562,
+              0.9543360207519223,
+              0.9390347308355,
+              1.0961018994706841,
+              1.0578057857050431
+            ],
+            [
+              0.9795067024395719,
+              1.0292849189022695,
+              1.0170954437991484,
+              1.028588666312805,
+              0.9808205335184003,
+              0.9455104338692276
+            ]
+          ],
+          "certified_head_count": 0,
+          "wrong_certified_head_count": 0,
+          "exact_mask_head_fraction": 0.453125
+        },
+        {
+          "r": 16,
+          "all_head_row_coverage_count": 126,
+          "mean_total_Khat_over_exact": 1.011226623469162,
+          "total_ratio_standard_error": 0.009871933200280363,
+          "per_row_mean_Khat_over_exact": [
+            [
+              1.016104442472265,
+              0.9966416216468931,
+              0.9855282785432593,
+              0.9869868397269688,
+              1.0361797947733462,
+              1.0167227061450488
+            ],
+            [
+              0.9798637884505639,
+              1.0152386252564252,
+              1.0174257222181027,
+              0.9816158189270557,
+              0.998629841314399,
+              1.0582225113850074
+            ]
+          ],
+          "certified_head_count": 0,
+          "wrong_certified_head_count": 0,
+          "exact_mask_head_fraction": 0.54296875
+        },
+        {
+          "r": 32,
+          "all_head_row_coverage_count": 125,
+          "mean_total_Khat_over_exact": 1.0003897974524256,
+          "total_ratio_standard_error": 0.008396533175291836,
+          "per_row_mean_Khat_over_exact": [
+            [
+              1.0117632010494764,
+              0.9990033040911398,
+              0.9883310871224464,
+              0.9973052383474605,
+              1.0236813856923115,
+              1.0108762702196694
+            ],
+            [
+              0.9771302401142499,
+              1.0443003393444574,
+              0.9925760763901359,
+              1.0137148062549506,
+              0.9900517725766772,
+              0.994584630972146
+            ]
+          ],
+          "certified_head_count": 0,
+          "wrong_certified_head_count": 0,
+          "exact_mask_head_fraction": 0.6484375
+        }
+      ],
+      "all_stage_head_row_coverage_count": 122,
+      "all_stage_coverage_95percent_binomial_interval": [
+        0.9007648763061088,
+        0.9826059438597275
+      ],
+      "nominal_simultaneous_coverage": 0.95,
+      "coverage_interpretation": "Descriptive finite-seed audit; no seed selection or alpha change; scenarios share probe seeds and are not pooled as independent trials",
+      "observations": {
+        "path": "coverage_1.npz",
+        "sha256": "9fc53ff4cafc26f66e2ced65d501e02ee0d667d76c65c503a730b4b68010b662"
+      }
+    }
+  ],
+  "pilot": [
+    {
+      "method": "exact_full",
+      "warmup_calls": 1,
+      "measured_calls": 3,
+      "samples": [
+        {
+          "repeat": 0,
+          "wall_seconds": 0.18702080000002752,
+          "cpu_seconds": 0.18707010000000002
+        },
+        {
+          "repeat": 1,
+          "wall_seconds": 0.1822020289982902,
+          "cpu_seconds": 0.18228290000000003
+        },
+        {
+          "repeat": 2,
+          "wall_seconds": 0.18642221499976586,
+          "cpu_seconds": 0.18645089999999986
+        }
+      ],
+      "median_wall_seconds": 0.18642221499976586,
+      "worker_wall_seconds": 0.7621547239978099,
+      "worker_cpu_seconds": 0.7531004000000001,
+      "process_peak_RSS_bytes": 128053248,
+      "RSS_before_calls_bytes": 111001600,
+      "input_trace_array_bytes": 9569280,
+      "workspace_core_estimated_bytes": 4198400,
+      "memory_scope": "Fresh worker process peak RSS includes interpreter/dependencies/input arrays/allocator; core estimate excludes temporaries and input arrays",
+      "observations": {
+        "path": "pilot_exact_full.npz",
+        "sha256": "ad8bd0577039145f7072c851185b072e2471b86307332776ae38a6bce7ae6c0f"
+      },
+      "score_relative_L2_error": 0.0,
+      "mask_row_agreement_fraction": 1.0,
+      "exact_mask_heads": 4,
+      "frozen_objective": [
+        145.68022555912972,
+        137.39123005814386,
+        140.9358130051279,
+        136.20383484528736
+      ],
+      "frozen_objective_difference_vs_exact_mask": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "wall_ratio_vs_exact_chunked": 0.8681562685869262,
+      "wall_ratio_vs_output_subsample": 1.0719556979431615
+    },
+    {
+      "method": "exact_chunked",
+      "warmup_calls": 1,
+      "measured_calls": 3,
+      "samples": [
+        {
+          "repeat": 0,
+          "wall_seconds": 0.21473347799837939,
+          "cpu_seconds": 0.21467239999999999
+        },
+        {
+          "repeat": 1,
+          "wall_seconds": 0.21570202900329605,
+          "cpu_seconds": 0.21550619999999998
+        },
+        {
+          "repeat": 2,
+          "wall_seconds": 0.19743034000202897,
+          "cpu_seconds": 0.19725269999999995
+        }
+      ],
+      "median_wall_seconds": 0.21473347799837939,
+      "worker_wall_seconds": 0.851926357998309,
+      "worker_cpu_seconds": 0.8514083,
+      "process_peak_RSS_bytes": 113418240,
+      "RSS_before_calls_bytes": 110833664,
+      "input_trace_array_bytes": 9569280,
+      "workspace_core_estimated_bytes": 528384,
+      "memory_scope": "Fresh worker process peak RSS includes interpreter/dependencies/input arrays/allocator; core estimate excludes temporaries and input arrays",
+      "observations": {
+        "path": "pilot_exact_chunked.npz",
+        "sha256": "ad8bd0577039145f7072c851185b072e2471b86307332776ae38a6bce7ae6c0f"
+      },
+      "score_relative_L2_error": 0.0,
+      "mask_row_agreement_fraction": 1.0,
+      "exact_mask_heads": 4,
+      "frozen_objective": [
+        145.68022555912972,
+        137.39123005814386,
+        140.9358130051279,
+        136.20383484528736
+      ],
+      "frozen_objective_difference_vs_exact_mask": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "wall_ratio_vs_exact_chunked": 1.0,
+      "wall_ratio_vs_output_subsample": 1.234749706625921
+    },
+    {
+      "method": "probe_8",
+      "warmup_calls": 1,
+      "measured_calls": 3,
+      "samples": [
+        {
+          "repeat": 0,
+          "wall_seconds": 0.03935797799931606,
+          "cpu_seconds": 0.0393232
+        },
+        {
+          "repeat": 1,
+          "wall_seconds": 0.038875324000400724,
+          "cpu_seconds": 0.03883580000000009
+        },
+        {
+          "repeat": 2,
+          "wall_seconds": 0.04368408600203111,
+          "cpu_seconds": 0.043623499999999926
+        }
+      ],
+      "median_wall_seconds": 0.03935797799931606,
+      "worker_wall_seconds": 0.16979830200216384,
+      "worker_cpu_seconds": 0.16829280000000002,
+      "process_peak_RSS_bytes": 113610752,
+      "RSS_before_calls_bytes": 110862336,
+      "input_trace_array_bytes": 9569280,
+      "workspace_core_estimated_bytes": 1591296,
+      "memory_scope": "Fresh worker process peak RSS includes interpreter/dependencies/input arrays/allocator; core estimate excludes temporaries and input arrays",
+      "observations": {
+        "path": "pilot_probe_8.npz",
+        "sha256": "8a969d2859e94b70c07f2c6c96a0ce4f6f9c7da23a56bd9a9748731bba693a7b"
+      },
+      "score_relative_L2_error": 0.46850173493350994,
+      "mask_row_agreement_fraction": 0.8046875,
+      "exact_mask_heads": 0,
+      "frozen_objective": [
+        150.30496213642243,
+        141.89054255985477,
+        142.23811732661406,
+        139.576248331857
+      ],
+      "frozen_objective_difference_vs_exact_mask": [
+        4.624736577292708,
+        4.499312501710904,
+        1.3023043214861616,
+        3.372413486569627
+      ],
+      "wall_ratio_vs_exact_chunked": 0.18328757288424818,
+      "wall_ratio_vs_output_subsample": 0.22631427684700256
+    },
+    {
+      "method": "probe_16",
+      "warmup_calls": 1,
+      "measured_calls": 3,
+      "samples": [
+        {
+          "repeat": 0,
+          "wall_seconds": 0.07285177499943529,
+          "cpu_seconds": 0.07274910000000001
+        },
+        {
+          "repeat": 1,
+          "wall_seconds": 0.07726387000002433,
+          "cpu_seconds": 0.07714900000000002
+        },
+        {
+          "repeat": 2,
+          "wall_seconds": 0.07396223400064628,
+          "cpu_seconds": 0.07385969999999997
+        }
+      ],
+      "median_wall_seconds": 0.07396223400064628,
+      "worker_wall_seconds": 0.30447841900240746,
+      "worker_cpu_seconds": 0.3040404,
+      "process_peak_RSS_bytes": 113864704,
+      "RSS_before_calls_bytes": 110452736,
+      "input_trace_array_bytes": 9569280,
+      "workspace_core_estimated_bytes": 1607680,
+      "memory_scope": "Fresh worker process peak RSS includes interpreter/dependencies/input arrays/allocator; core estimate excludes temporaries and input arrays",
+      "observations": {
+        "path": "pilot_probe_16.npz",
+        "sha256": "74faeae7f134d54fac6d7982c20917da1c45dbd6ae4f1ba481da35d1b2ff9f3b"
+      },
+      "score_relative_L2_error": 0.31961168187426003,
+      "mask_row_agreement_fraction": 0.8828125,
+      "exact_mask_heads": 0,
+      "frozen_objective": [
+        147.35208661070982,
+        139.1056400603416,
+        142.97280115685362,
+        138.02459327776938
+      ],
+      "frozen_objective_difference_vs_exact_mask": [
+        1.6718610515800947,
+        1.7144100021977522,
+        2.0369881517257227,
+        1.8207584324820232
+      ],
+      "wall_ratio_vs_exact_chunked": 0.34443736808102404,
+      "wall_ratio_vs_output_subsample": 0.4252939391890488
+    },
+    {
+      "method": "probe_32",
+      "warmup_calls": 1,
+      "measured_calls": 3,
+      "samples": [
+        {
+          "repeat": 0,
+          "wall_seconds": 0.14406315999804065,
+          "cpu_seconds": 0.1437933
+        },
+        {
+          "repeat": 1,
+          "wall_seconds": 0.14740930200059665,
+          "cpu_seconds": 0.14713510000000007
+        },
+        {
+          "repeat": 2,
+          "wall_seconds": 0.14546527800121112,
+          "cpu_seconds": 0.14519439999999995
+        }
+      ],
+      "median_wall_seconds": 0.14546527800121112,
+      "worker_wall_seconds": 0.586694941001042,
+      "worker_cpu_seconds": 0.5855945,
+      "process_peak_RSS_bytes": 114520064,
+      "RSS_before_calls_bytes": 111316992,
+      "input_trace_array_bytes": 9569280,
+      "workspace_core_estimated_bytes": 1640448,
+      "memory_scope": "Fresh worker process peak RSS includes interpreter/dependencies/input arrays/allocator; core estimate excludes temporaries and input arrays",
+      "observations": {
+        "path": "pilot_probe_32.npz",
+        "sha256": "edf86a1fafa984e981c143092f6884b45b3b7e27b80a648426a07caac4313c84"
+      },
+      "score_relative_L2_error": 0.22770149449988702,
+      "mask_row_agreement_fraction": 0.9140625,
+      "exact_mask_heads": 0,
+      "frozen_objective": [
+        146.58527113443046,
+        138.81164515713536,
+        141.99342408766188,
+        136.29646171449178
+      ],
+      "frozen_objective_difference_vs_exact_mask": [
+        0.9050455753007327,
+        1.4204150989914979,
+        1.057611082533981,
+        0.0926268692044232
+      ],
+      "wall_ratio_vs_exact_chunked": 0.6774224464538732,
+      "wall_ratio_vs_output_subsample": 0.8364471670207336
+    },
+    {
+      "method": "output_subsample",
+      "warmup_calls": 1,
+      "measured_calls": 3,
+      "samples": [
+        {
+          "repeat": 0,
+          "wall_seconds": 0.1739085070003057,
+          "cpu_seconds": 0.1735116
+        },
+        {
+          "repeat": 1,
+          "wall_seconds": 0.17196890199920745,
+          "cpu_seconds": 0.17142869999999988
+        },
+        {
+          "repeat": 2,
+          "wall_seconds": 0.17554310400009854,
+          "cpu_seconds": 0.17481009999999997
+        }
+      ],
+      "median_wall_seconds": 0.1739085070003057,
+      "worker_wall_seconds": 0.7026931150030578,
+      "worker_cpu_seconds": 0.6999443999999999,
+      "process_peak_RSS_bytes": 113807360,
+      "RSS_before_calls_bytes": 111206400,
+      "input_trace_array_bytes": 9569280,
+      "workspace_core_estimated_bytes": 528384,
+      "memory_scope": "Fresh worker process peak RSS includes interpreter/dependencies/input arrays/allocator; core estimate excludes temporaries and input arrays",
+      "observations": {
+        "path": "pilot_output_subsample.npz",
+        "sha256": "460707a922fabc81a3e4ceefa2bb7d231bb3d5d9da8efda276c99050696923d8"
+      },
+      "score_relative_L2_error": 0.2228080502294506,
+      "mask_row_agreement_fraction": 0.8984375,
+      "exact_mask_heads": 0,
+      "frozen_objective": [
+        146.20065924604825,
+        136.4508279688825,
+        142.30759466222574,
+        138.19507777673175
+      ],
+      "frozen_objective_difference_vs_exact_mask": [
+        0.5204336869185227,
+        -0.9404020892613687,
+        1.3717816570978414,
+        1.9912429314443898
+      ],
+      "wall_ratio_vs_exact_chunked": 0.8098807350459727,
+      "wall_ratio_vs_output_subsample": 1.0
+    }
+  ],
+  "wall_seconds": 7.284095304999937,
+  "CPU_seconds_parent": 0.5067383,
+  "CPU_seconds_children": 7.359574,
+  "frozen_sources_unchanged": true,
+  "GPU_used": false,
+  "model_forwards": 0,
+  "real_traces_read": false,
+  "Torch_imported": false,
+  "limitations": [
+    "Synthetic CPU cost pilot only; representative real three-layer pilot still required for extension.",
+    "Output subsampling retains transitions/writes and inverse-inclusion weights, but quarter-sampling is not assumed to have equal measured time.",
+    "Timing calls include exact c, probes, intervals and mask certificate; warmup is separately counted.",
+    "RSS is fresh-process peak; working-set byte counts are estimates, not measured temporary peaks.",
+    "No per-token serving, full-model quality, or end-to-end trace collection speedup is measured.",
+    "No intervals are a proof of floating-point error bounds. Exact c is a FP64 mathematical identity, not native FP32 bit parity."
+  ]
+}

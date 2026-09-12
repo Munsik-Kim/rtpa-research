@@ -1,0 +1,21 @@
+{
+  "id": "train_code_0_L9",
+  "document": "train_code_0",
+  "layer": 9,
+  "seconds": 2.396432163001009,
+  "freeze_sha256": "76be1f724af861f7dc943587d1f021ba8abac602d1a96004f68fb9d24e44a72b",
+  "sha256": "92134673ec4f2b2ab0dde043d6ca12fd7403a5aac31f031c87ae99bf19637167",
+  "input_sha256": "353c62bd9677daf8b890f9c96a4202f25e45aca276f84bc30d0a5b38dafaf2d2",
+  "audit": {
+    "adjoint_c_relative_max": 1.9205225256022115e-15,
+    "promotion_identity_relative_max": 1.7534256731553483e-17,
+    "full_K_diagonal_relative_max": 3.0804994611346455e-16,
+    "all_low_objective_relative_max": 4.632909892583783e-16,
+    "relative_tolerance": 1e-10,
+    "pass": true
+  },
+  "scored_queries": 240,
+  "source_workspace_bytes": 268435456,
+  "retained_write_workspace_bytes": 541065216,
+  "status": "COMPLETE"
+}

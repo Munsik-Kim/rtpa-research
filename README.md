@@ -7,40 +7,49 @@ under a fixed state-storage budget. Each method has its own baseline and evaluat
 
 ## What you can use and verify
 
-- **Output-aware allocation under a fixed budget:** on the R2 12-source-file
-  panel, R2-DIAG reduces Native-reference KL by **58.10% [54.40–61.15]%** against
-  R2 matched energy, at the same codec and payload. **It is nevertheless much
-  worse than legacy DIAG:** mean KL is **0.07019 versus 0.004296 nat/token**.
-  R2 is an experimental numerical revision, not a recommended
-  quality replacement. [All five methods and paired intervals](results/diag_r2/benchmark_tables.md).
-- **A bounded repair of a known representation failure:** two R2 codec
-  candidates reconstruct the saved finite-input FP16 zero-point overflow
-  fixtures without nonfinite values. All 60 registered quality trajectories
-  completed. This does not establish universal stability or explain the
-  observed quality regression. [Numerical contract](docs/CODEC_R2_CONTRACT.md).
+- **Measured allocation trade-offs:** on eight fixed source documents,
+  Qwen3.5-0.8B-Base and all 18 GDN layers, coherent DIAG lowers mean
+  Native-reference KL by **23.08%** versus promotion energy (95% CI
+  21.53–24.58%) at the same payload. However, its pooled KL is **14.96% higher**
+  than the simpler query-weighted score, and it loses all eight document
+  comparisons. The evidence
+  supports output-sensitive allocation, not the need for the most elaborate
+  score. [Quality, NLL and tail table](results/diag_r4/benchmark_tables.md).
+- **A controlled allocation comparison:** promotion energy, query weighting,
+  independent-write response and coherent DIAG share one storage codec,
+  TRAIN input, source sampling and high-row budget. The current study measures
+  all 18 GDN layers and separates a score's contribution from a codec change.
+  [Attribution study](docs/DIAG_ATTRIBUTION_R4.md).
+- **Reproducible numerical and calibration boundaries:** independent small
+  response checks, exact adjoints, row-chunked calibration, fixed masks and
+  token-level observations. Probe masks that are not certified stay uncertified;
+  a rounding-codec candidate that missed DEV quality criteria is not a default.
+  [Method and controls](docs/METHOD.md).
 - **Explicit storage:** 19,328 B per 128×128 head, including FP16 metadata and
   eight high rows — **9.4375 bits/value**, 41.02% below the same head's BF16
-  state. All 18 GDN layers use 5,566,464 target-state bytes. Whole-model peak
-  allocated VRAM was **1,708.41 MiB for R2-DIAG versus 1,701.13 MiB for Native**:
-  this run did not reduce whole-model peak. [Memory and bounded scratch measurements](results/diag_r2/memory_tables.md).
+  state. All 18 GDN layers use 5,566,464 target-state bytes. Policy indices,
+  transforms, counters, scratch and whole-model peak are accounted separately;
+  **state-storage reduction is not the same as whole-VRAM reduction**.
+  [Measurement scope](docs/BENCHMARKS.md).
 - **Runnable, auditable paths:** fixed-mask GDN adapters, independent CPU codec
   checks, public token/sequence observations and model-free table reconstruction.
-  **R2 cost is INCOMPLETE:** timing was interrupted, and its
-  single fixed retry stopped when another GPU PID appeared. Partial blocks
-  are retained but do not supply a complete latency estimate.
-  [R2 quickstart](docs/QUICKSTART_R2.md).
+  [Current executable guide](docs/QUICKSTART_R4.md).
 
-R2 does not rerun FA_CODE or GDN2. Their
-[earlier benchmark](results/upgrade/benchmark_tables.md) remains separate:
-legacy-codec DIAG reduced KL by 18.78% on a synthetic panel, while its cost
-target remained unresolved. Three-layer FA_CODE reduced KL by 3.05% versus
-stored-nearest but cost 1.498× [1.360–1.660]. GDN2 operator SSE slightly worsened.
-These are different panels, policies and endpoints; gains are never added.
+Earlier measurements remain separate evidence. R2-DIAG improved its R2-energy
+baseline by 58.10%, but its mean KL was **16.34× worse than legacy DIAG**;
+it is not a recommended quality replacement. Three-layer FA_CODE improved
+KL by 3.05% but cost 1.498× its stored-nearest baseline in a different run.
+Historical task panels did not establish added answer accuracy.
+[All results and adverse comparisons](docs/RESULTS.md). These gains are never added.
 
-A [fixed-mask CPU diagnostic](docs/CODEC_FEEDBACK.md) examines the R2 regression:
-one-write error improves slightly, but recurrent readout error increases.
-This is a reference-driven equation experiment, not another model benchmark;
-its failed Native-fidelity controls and causal limits are reported explicitly.
+![Fixed-codec allocation contrasts: KL and next-token NLL](results/diag_r4/figures/allocation_contrasts.png)
+
+The current intervals are paired by source document within software project.
+They concern output preservation, not task accuracy or a population-wide
+performance guarantee. [Runtime and memory](results/diag_r4/cost_tables.md)
+are a separate axis: this run's timing was blocked by GPU isolation checks,
+and no new peak-VRAM measurement is available. Static masks do not establish
+zero overhead; the +5% cost target remains unassessed for this comparison.
 
 ## Support and measurement scope
 
@@ -55,6 +64,8 @@ Storage uses real UINT8/FP16 tensors and eager encode/decode, not a fused or
 optimized packed inference kernel. The legacy FP16 zero-point overflow remains
 reproducible. R2 uses a different decoder with a declared finite-input range;
 its successful fixtures and panel do not establish universal codec safety.
+The current attribution study uses the legacy codec only as a quality reference;
+no new stable default is promoted.
 [Architecture provenance](docs/ARCHITECTURES.md) · [Numerical limitations](docs/LIMITATIONS.md).
 
 ## Quickstart
@@ -69,15 +80,15 @@ source ../rtpa-demo-env/bin/activate
 python -m pip install .
 python -m rtpa_research demo --out demo.json
 python -m rtpa_research verify --out recomputed
-python scripts/reproduce_upgrade.py --root . --write-generated recomputed-upgrade --verify
-python scripts/reproduce_diag_r2.py --public --out recomputed-r2 --expected results/diag_r2/recomputed_expected.json
+python scripts/verify_diag_r4.py --root . --out recomputed-r4.json
 ```
 
 The demo and evidence commands run on CPU without Torch or model weights.
 They reconstruct the included observations; they do not run model inference.
-For an actual state encode/decode example, optional GPU dependencies and the
-R2 model benchmark, use the [R2 guide](docs/QUICKSTART_R2.md).
-The [earlier guide](docs/QUICKSTART.md) retains the original numerical paths.
+For a state encode/decode example, calibration dependencies and an opt-in
+model replay, use the [current guide](docs/QUICKSTART_R4.md).
+The [R2 guide](docs/QUICKSTART_R2.md) and [earlier guide](docs/QUICKSTART.md)
+retain the distinct numerical paths that generated previous results.
 
 ## How it works
 
@@ -96,8 +107,6 @@ Neither encoder reads future TEST tokens or a Native shadow state. Offline
 response predictions are distinguished from the candidate's own nonlinear model
 trajectory and actual answers. [Method](docs/METHOD.md) · [Hypotheses](docs/HYPOTHESES.md).
 
-![R2 allocation improves its matched baseline but regresses against legacy DIAG](results/diag_r2/figures/quality.png)
-
 ## Evidence, reuse and limits
 
 Historical task panels did not establish added accuracy over simple baselines;
@@ -108,9 +117,10 @@ implementations with distinct numerical contracts and measured limitations.
 - [Integrated results, including failures](docs/RESULTS.md)
 - [Reproducibility and data availability](docs/REPRODUCIBILITY.md)
 - [References and baseline provenance](docs/REFERENCES.md)
+- [Closest prior work and contribution boundaries](docs/RELATED_WORK_AND_NOVELTY.md)
 - [Historical experiment mapping](docs/EXPERIMENTS.md)
 - [Limitations](docs/LIMITATIONS.md)
-- [R2 claims](results/diag_r2/claims.json) · [GDN/GDN2 claims](results/upgrade/claims.json) · [historical claims](results/claims.json)
+- [Current attribution claims](results/diag_r4/claims.json) · [R2 claims](results/diag_r2/claims.json) · [GDN/GDN2 claims](results/upgrade/claims.json) · [historical claims](results/claims.json)
 
 ## License and citation
 

@@ -1,0 +1,37 @@
+{
+  "status": "CONFIRMED_ANALYZER_SCHEMA_ERROR_BEFORE_COST",
+  "GPU_work": false,
+  "model_loaded": false,
+  "CUDA_initialized": false,
+  "diagnostic_source_sha256": "496aadc253faf427f10e041ca898f09fdc93deb2c568c679f0376232f2da2e58",
+  "original_analyzer_sha256": "8d12b1d6d36641e8567bf9c6e5517d62a1e93ce0cb770868fc4964a1f722c271",
+  "original_analyzer_synthetic_rejection": "ValueError:PAYLOAD_DTYPE_SIZE",
+  "tiny_actual_CPU_input": {
+    "conv_state_shape": [
+      1,
+      2,
+      4
+    ],
+    "conv_state_dtype": "torch.bfloat16",
+    "recurrent_input_shape": [
+      1,
+      1,
+      2,
+      2
+    ],
+    "recurrent_input_dtype": "torch.float32"
+  },
+  "observed_persistent_state_dtype": "torch.bfloat16",
+  "observed_element_size": 2,
+  "architecture_byte_arithmetic_not_model_measurement": {
+    "native_all18_payload_bytes": 9437184,
+    "native_bytes_per_head": 32768
+  },
+  "supplemental_dependency": {
+    "file": "LOCAL_ONLY/SUPPLEMENTAL_CACHE_UTILS_SOURCE",
+    "sha256": "028a55fb163870d5f5d020473ee90fd3324e0a527ab33f1a626648f52690220a",
+    "after_sha256": "028a55fb163870d5f5d020473ee90fd3324e0a527ab33f1a626648f52690220a",
+    "limitation": "Observed after original execution freeze; cache_utils.py was not separately hash-bound by that original freeze."
+  },
+  "scope": "Tiny CPU LinearAttentionLayer observation plus synthetic descriptor rejection by archived analyzer; no model trace, quality result, GPU run or timing/memory measurement."
+}

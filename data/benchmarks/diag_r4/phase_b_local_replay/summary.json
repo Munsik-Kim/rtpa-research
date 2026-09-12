@@ -1,0 +1,46 @@
+{
+  "status": "COMPLETE",
+  "methods": {
+    "B1": {
+      "head_cases": 288,
+      "completed_head_cases": 288,
+      "actual_SSE": 0.02922872079726055,
+      "frozen_SSE": 0.029264967523557058
+    },
+    "B2": {
+      "head_cases": 288,
+      "completed_head_cases": 288,
+      "actual_SSE": 0.02285794496830319,
+      "frozen_SSE": 0.02378103068471639
+    },
+    "B3": {
+      "head_cases": 288,
+      "completed_head_cases": 288,
+      "actual_SSE": 0.02338519805825608,
+      "frozen_SSE": 0.024079798874124717
+    },
+    "B4": {
+      "head_cases": 288,
+      "completed_head_cases": 288,
+      "actual_SSE": 0.02346315535195308,
+      "frozen_SSE": 0.024101455315272455
+    },
+    "LEGACY_DIAG": {
+      "head_cases": 288,
+      "completed_head_cases": 288,
+      "actual_SSE": 0.02346315535195308,
+      "frozen_SSE": 0.024101455315272455
+    }
+  },
+  "scope": "captured native TRAIN; not candidate-conditioned whole-model replay",
+  "freeze_sha256": "3e7bd664f24441c54b0546d474453c0448d837446134c728796af4edf7dd5734",
+  "rows_sha256": "f7e2e3ea1d436649d2d00316dccf402643e3829cc4818d2fdeb546acfda1d46c",
+  "model_forwards": 0,
+  "TRAIN_documents": 6,
+  "layers": [
+    0,
+    12,
+    22
+  ],
+  "no_TEST_access": true
+}

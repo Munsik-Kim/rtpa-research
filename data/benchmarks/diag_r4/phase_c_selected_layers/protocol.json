@@ -1,0 +1,30 @@
+{
+  "id": "R4_C_SELECTED_THREE_LAYERS_20260912_V1",
+  "document": "train_associative_recall_0",
+  "layers": [
+    0,
+    12,
+    22
+  ],
+  "head": 0,
+  "codec": "LEGACY_P_PRE",
+  "fixture_generation_device": "cuda",
+  "scope": "Three representative layers of one TRAIN document and head0 from the selected-codec GPU FP64 fit; not all training documents/heads and not deployment masks",
+  "family_heads": 3,
+  "family_alpha": 0.05,
+  "probe_seed": 612431,
+  "probe_stages": [
+    8,
+    16,
+    32
+  ],
+  "Bonferroni_denominator": 1152,
+  "per_row_head_stage_alpha": 4.340277777777778e-05,
+  "shared_seed_note": "The same full-time Gaussian seed is reused across layers; cross-layer independence is not assumed or needed by Bonferroni",
+  "CPU_threads": 2,
+  "total_wall_budget_seconds": 300,
+  "model_forwards": 0,
+  "GPU_forwards": 0,
+  "method": "Unchanged frozen run_pilot.py with exact full/chunk8/adjoint+Gramian and nested8/16/32 probes;1warmup+3timed repeats per method",
+  "no_selection": "No seed/method/chunk/tolerance optimization; no speed-only promotion and no empirical coverage-rate estimate from one shared seed"
+}

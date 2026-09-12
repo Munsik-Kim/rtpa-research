@@ -1,0 +1,933 @@
+{
+  "schema_version": 1,
+  "stage": "phase_c_selected_layers",
+  "scientific_status": "COMPLETE_NUMERICAL_CHILD_PILOTS_WITH_PRESERVED_WRAPPER_ACCOUNTING_FAILURE",
+  "curator_sha256": "c2fbaba51bb06f65ab4ccfac6ef55413cd6eb678f9e5e4af328f8ef831deb738",
+  "files": [
+    {
+      "path": "execution.json",
+      "sha256": "58470a5c6317bb2e5aa9994fd03e088544db2cbf0fc3ae5d141569741d6d6b52",
+      "bytes": 182,
+      "byte_identical": true,
+      "original_relative": "execution.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "41b7596788080bd82f24aaad94b1254f5bad91b29c7514ed8f60ab4a5a52bab9",
+      "bytes": 2567,
+      "byte_identical": true,
+      "original_relative": "freeze.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer0/adjoint_gramian.json",
+      "sha256": "b8696497739f5fb74fe170fea614a4c68ffc5b24fbf4cf6a183590e7a66dbe74",
+      "bytes": 493,
+      "byte_identical": true,
+      "original_relative": "layer0/adjoint_gramian.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer0/adjoint_gramian.npz",
+      "sha256": "2bb682ebc4b3570a4a3209b02fb7b8dfffca2f8893a4f0bc1991b1b4ccc604a1",
+      "bytes": 3716,
+      "byte_identical": true,
+      "original_relative": "layer0/adjoint_gramian.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer0/comparison_arrays.npz",
+      "sha256": "6ba329d7a8b71458b7d68cd3390bca8f927741ed8d1d3fd36e24f26159e8927d",
+      "bytes": 7256,
+      "byte_identical": true,
+      "original_relative": "layer0/comparison_arrays.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer0/exact_chunk8.json",
+      "sha256": "17135d4de5babe5bdd86f7391aa2352ec52f855579bf6a0999dfeaab67f35977",
+      "bytes": 440,
+      "byte_identical": true,
+      "original_relative": "layer0/exact_chunk8.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer0/exact_chunk8.npz",
+      "sha256": "c3b7770aec0fb7cafbf7e895daec77be9cd22af164d103ae0587c68ac9599034",
+      "bytes": 4100,
+      "byte_identical": true,
+      "original_relative": "layer0/exact_chunk8.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer0/exact_full.json",
+      "sha256": "48c068cca53412f0b264ea0dd1234b09cc946de5e292e8d4bdaa99e8d21c1cc0",
+      "bytes": 444,
+      "byte_identical": true,
+      "original_relative": "layer0/exact_full.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer0/exact_full.npz",
+      "sha256": "c3b7770aec0fb7cafbf7e895daec77be9cd22af164d103ae0587c68ac9599034",
+      "bytes": 4100,
+      "byte_identical": true,
+      "original_relative": "layer0/exact_full.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer0/execution.json",
+      "sha256": "68ad8a586ba8c91bdfee6bd4171c8debd82f566d1c2b9adba5ff7e333616d68e",
+      "bytes": 315,
+      "byte_identical": true,
+      "original_relative": "layer0/execution.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer0/freeze.public.json",
+      "sha256": "7305d6be48f8159388069bae543182dd2e7b6a0c6e8e5e4701053b5f2b0c1946",
+      "bytes": 3590,
+      "byte_identical": false,
+      "original_relative": "layer0/freeze.json",
+      "original_sha256": "1331f5b014aaae7bf18e7b98c0bc128b613bbfc946fb7cce21fa2dd7ea8951c6",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [],
+      "path_reference_replacements": [
+        {
+          "field": "/config/fixture",
+          "public_reference": "LOCAL_ONLY/phase_b_fit_selected/fixtures/train_associative_recall_0_L0_head0.npz",
+          "original_string_sha256": "c9564fba6f1b348915311fbdfd53dd3bdb19126f8312d0242e84fa6f442b4b5c"
+        },
+        {
+          "field": "/config/case_stats",
+          "public_reference": "LOCAL_ONLY/phase_b_fit_selected/cases/train_associative_recall_0_L0.npz",
+          "original_string_sha256": "0d0f4bfffc02b0f241c399b0c54cc28b8f4064e9e20c6795b3fe4a96d0ea3801"
+        }
+      ]
+    },
+    {
+      "path": "layer0/probe16.json",
+      "sha256": "f94106f01ad1dc72f923f51485e1cb1303daa952ffe9e917685fe427205328a0",
+      "bytes": 623,
+      "byte_identical": true,
+      "original_relative": "layer0/probe16.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer0/probe16.npz",
+      "sha256": "d6fc60dece2dee2ccf72c983fb6d9d413d76e87eb1196495b53cacf4ab657529",
+      "bytes": 36104,
+      "byte_identical": true,
+      "original_relative": "layer0/probe16.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer0/probe32.json",
+      "sha256": "af9da64ac170f9671a8a4a9079653dcdd3cf2d1c7ebe8b6fc0fafc9c0f1c888c",
+      "bytes": 622,
+      "byte_identical": true,
+      "original_relative": "layer0/probe32.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer0/probe32.npz",
+      "sha256": "d667fc0423ebb6c94a6b3ead2bc61eb28755a272627e7b75209f2b04467e3101",
+      "bytes": 61167,
+      "byte_identical": true,
+      "original_relative": "layer0/probe32.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer0/probe8.json",
+      "sha256": "81f4d1796871dbcc9d813c478afef172880f54f540aa46b07f60ccec73e22719",
+      "bytes": 623,
+      "byte_identical": true,
+      "original_relative": "layer0/probe8.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer0/probe8.npz",
+      "sha256": "f8f00427e723ff3e6b84819332a2d384ee10aa60a9a2022d5af555cdcb4bc326",
+      "bytes": 18903,
+      "byte_identical": true,
+      "original_relative": "layer0/probe8.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer0/protocol.public.json",
+      "sha256": "ebcc4a12017d3c092f5023d789d95f51ad3911b51d8b7fbc7ac2bcfeea4ad3b6",
+      "bytes": 2706,
+      "byte_identical": false,
+      "original_relative": "layer0/protocol.json",
+      "original_sha256": "83247912c3741b19c35c98115c95d71663a0843afba2f74209c6353fdeaabaa1",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [],
+      "path_reference_replacements": [
+        {
+          "field": "/fixture",
+          "public_reference": "LOCAL_ONLY/phase_b_fit_selected/fixtures/train_associative_recall_0_L0_head0.npz",
+          "original_string_sha256": "c9564fba6f1b348915311fbdfd53dd3bdb19126f8312d0242e84fa6f442b4b5c"
+        },
+        {
+          "field": "/case_stats",
+          "public_reference": "LOCAL_ONLY/phase_b_fit_selected/cases/train_associative_recall_0_L0.npz",
+          "original_string_sha256": "0d0f4bfffc02b0f241c399b0c54cc28b8f4064e9e20c6795b3fe4a96d0ea3801"
+        }
+      ]
+    },
+    {
+      "path": "layer0/summary.json",
+      "sha256": "e0762285e039c86a68a28c7685799803ca9a59134a0600de18d08e153d474b53",
+      "bytes": 7941,
+      "byte_identical": true,
+      "original_relative": "layer0/summary.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer12/adjoint_gramian.json",
+      "sha256": "3bffb34972e7e3987044cdc82f9dc7123f706d6d126e73a724ccaa7f3e05b6b1",
+      "bytes": 493,
+      "byte_identical": true,
+      "original_relative": "layer12/adjoint_gramian.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer12/adjoint_gramian.npz",
+      "sha256": "ad8d747aec4e9c89433127b3fde151865c0fccf15c9d77150542b1be0b042f90",
+      "bytes": 3712,
+      "byte_identical": true,
+      "original_relative": "layer12/adjoint_gramian.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer12/comparison_arrays.npz",
+      "sha256": "a884ef05c51d985f03bd12bff63738f624e2f580e7bb2314e10091ef0654ab57",
+      "bytes": 7260,
+      "byte_identical": true,
+      "original_relative": "layer12/comparison_arrays.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer12/exact_chunk8.json",
+      "sha256": "330393a9dd760340ce81bca1d36f68c1a813540e16c0fcb46c3df51d00a02cb3",
+      "bytes": 440,
+      "byte_identical": true,
+      "original_relative": "layer12/exact_chunk8.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer12/exact_chunk8.npz",
+      "sha256": "f8dd09cad53cece1cfabe522f7358686c81e2837acc1d7a80b5bda53255dd64a",
+      "bytes": 4099,
+      "byte_identical": true,
+      "original_relative": "layer12/exact_chunk8.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer12/exact_full.json",
+      "sha256": "682b3d30285d17813a5f8fd45d359a04fe876d9c64a635fb472c57a94de4f598",
+      "bytes": 446,
+      "byte_identical": true,
+      "original_relative": "layer12/exact_full.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer12/exact_full.npz",
+      "sha256": "f8dd09cad53cece1cfabe522f7358686c81e2837acc1d7a80b5bda53255dd64a",
+      "bytes": 4099,
+      "byte_identical": true,
+      "original_relative": "layer12/exact_full.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer12/execution.json",
+      "sha256": "be78da227982e2ea4bce2e265ce0cfb8ed051f2d59bf4ee222ef1a4555e9c0bb",
+      "bytes": 315,
+      "byte_identical": true,
+      "original_relative": "layer12/execution.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer12/freeze.public.json",
+      "sha256": "d6f6919c92df8c536fb25282045637eb709f783caf99223f68ba41777aa5b373",
+      "bytes": 3593,
+      "byte_identical": false,
+      "original_relative": "layer12/freeze.json",
+      "original_sha256": "10a68a6364e90f1d25d56fac571082b3aa6c4b9a3a7174765a0df8fbbf508e9b",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [],
+      "path_reference_replacements": [
+        {
+          "field": "/config/fixture",
+          "public_reference": "LOCAL_ONLY/phase_b_fit_selected/fixtures/train_associative_recall_0_L12_head0.npz",
+          "original_string_sha256": "7d1fc4e9008a392b7c748c3410f6d1c14402aaf011a2416d2b4ac7245713ce1b"
+        },
+        {
+          "field": "/config/case_stats",
+          "public_reference": "LOCAL_ONLY/phase_b_fit_selected/cases/train_associative_recall_0_L12.npz",
+          "original_string_sha256": "9ba0c12d8423a50f3d18e1a8afe95834a737f424b3ad75bb2948041eb8f4b938"
+        }
+      ]
+    },
+    {
+      "path": "layer12/probe16.json",
+      "sha256": "80b470be079c8a4f951cc3d8e118778369466fb765b0625f09c2c7ed2fe02b7b",
+      "bytes": 626,
+      "byte_identical": true,
+      "original_relative": "layer12/probe16.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer12/probe16.npz",
+      "sha256": "30672faae0bef53464c6923d696a50359d10905ca365e5e3b6d33b08479ce622",
+      "bytes": 36254,
+      "byte_identical": true,
+      "original_relative": "layer12/probe16.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer12/probe32.json",
+      "sha256": "c98d9db6dc5e2b2505e2ad04aaf1cb6231ae344b3a36ce5ccb70dc217b8cb83b",
+      "bytes": 626,
+      "byte_identical": true,
+      "original_relative": "layer12/probe32.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer12/probe32.npz",
+      "sha256": "2a2dc7aa536d8185b4712eb52bd7bb71611cd8efd18a320e64e81d87119a8648",
+      "bytes": 61498,
+      "byte_identical": true,
+      "original_relative": "layer12/probe32.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer12/probe8.json",
+      "sha256": "a83c38276bda884580d07c7c6b8f4576ed322f8c1d79aee90077ec8863d0b36a",
+      "bytes": 625,
+      "byte_identical": true,
+      "original_relative": "layer12/probe8.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer12/probe8.npz",
+      "sha256": "72eab39bff3e9112ccfb9a35ae2f9144f6a36b2eae679aa49aabd45803e8c735",
+      "bytes": 18966,
+      "byte_identical": true,
+      "original_relative": "layer12/probe8.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer12/protocol.public.json",
+      "sha256": "700c40cc80a2a83bb38a7f76411078ee14b3b9048024e5e5461d24d53fa43a34",
+      "bytes": 2709,
+      "byte_identical": false,
+      "original_relative": "layer12/protocol.json",
+      "original_sha256": "7cf80f02326f35d8036e32cd5e5cde0570a01c91c24870b97696ea7c34c843d6",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [],
+      "path_reference_replacements": [
+        {
+          "field": "/fixture",
+          "public_reference": "LOCAL_ONLY/phase_b_fit_selected/fixtures/train_associative_recall_0_L12_head0.npz",
+          "original_string_sha256": "7d1fc4e9008a392b7c748c3410f6d1c14402aaf011a2416d2b4ac7245713ce1b"
+        },
+        {
+          "field": "/case_stats",
+          "public_reference": "LOCAL_ONLY/phase_b_fit_selected/cases/train_associative_recall_0_L12.npz",
+          "original_string_sha256": "9ba0c12d8423a50f3d18e1a8afe95834a737f424b3ad75bb2948041eb8f4b938"
+        }
+      ]
+    },
+    {
+      "path": "layer12/summary.json",
+      "sha256": "bc79f4d284cc56199c49d319a7435fed48bd062c0779f7285bd6b5474d6cb427",
+      "bytes": 7873,
+      "byte_identical": true,
+      "original_relative": "layer12/summary.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer22/adjoint_gramian.json",
+      "sha256": "13896aa38f6bb537cb671adac1dfddca77af12452778fce743e40ba4c6c231f2",
+      "bytes": 490,
+      "byte_identical": true,
+      "original_relative": "layer22/adjoint_gramian.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer22/adjoint_gramian.npz",
+      "sha256": "3615e501833ec6a18209a039556a80692516850a997dd4be46eb67a65dc5d306",
+      "bytes": 3736,
+      "byte_identical": true,
+      "original_relative": "layer22/adjoint_gramian.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer22/comparison_arrays.npz",
+      "sha256": "ab9fa8fac0beac83bf4ff1608a28b0b560b4db493f7f6a7c18d4ecb61370d249",
+      "bytes": 7296,
+      "byte_identical": true,
+      "original_relative": "layer22/comparison_arrays.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer22/exact_chunk8.json",
+      "sha256": "c4b41eac00c5f482161b84dedc92c870527a25e7f76b6210fb834b4577a19371",
+      "bytes": 438,
+      "byte_identical": true,
+      "original_relative": "layer22/exact_chunk8.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer22/exact_chunk8.npz",
+      "sha256": "9d5f61601fe299e8a80dc1f50f32bf5b8f7c682b12fa20dcf0ed1af857193dea",
+      "bytes": 4117,
+      "byte_identical": true,
+      "original_relative": "layer22/exact_chunk8.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer22/exact_full.json",
+      "sha256": "9cc320bd80cd012179f7bf6a54443ceb9318ed52b184daec52366666327e104b",
+      "bytes": 444,
+      "byte_identical": true,
+      "original_relative": "layer22/exact_full.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer22/exact_full.npz",
+      "sha256": "9d5f61601fe299e8a80dc1f50f32bf5b8f7c682b12fa20dcf0ed1af857193dea",
+      "bytes": 4117,
+      "byte_identical": true,
+      "original_relative": "layer22/exact_full.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer22/execution.json",
+      "sha256": "a74c2f1fa7543c9d199b6691f5664ead4bd088646736b9ee117c7634dd696745",
+      "bytes": 315,
+      "byte_identical": true,
+      "original_relative": "layer22/execution.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer22/freeze.public.json",
+      "sha256": "ec65f2acd489041f0ff57f707a56eb733d842630a84c1b09a628d29468000248",
+      "bytes": 3593,
+      "byte_identical": false,
+      "original_relative": "layer22/freeze.json",
+      "original_sha256": "93e37ccae253eca04e0d2ee6477ac3700ce1ba01344b2652cf659e2d29261714",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [],
+      "path_reference_replacements": [
+        {
+          "field": "/config/fixture",
+          "public_reference": "LOCAL_ONLY/phase_b_fit_selected/fixtures/train_associative_recall_0_L22_head0.npz",
+          "original_string_sha256": "67ceb8f7a2f6b1f6e4bd639324406cd396b898591f3b2a6f5a3e4f908ad90710"
+        },
+        {
+          "field": "/config/case_stats",
+          "public_reference": "LOCAL_ONLY/phase_b_fit_selected/cases/train_associative_recall_0_L22.npz",
+          "original_string_sha256": "8f6f6a6c4b2295de748c4cf575dd1ca8146089faf0c05b23fd76e15139388070"
+        }
+      ]
+    },
+    {
+      "path": "layer22/probe16.json",
+      "sha256": "f54b12c676ad0901bf4fbd48b500f24e9c066d9ddcd800992c2a81d2ff275384",
+      "bytes": 626,
+      "byte_identical": true,
+      "original_relative": "layer22/probe16.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer22/probe16.npz",
+      "sha256": "a6fd05938c73d5b0133bbe9a7a30aac96e1d1b5df13603e30c668aac2ffd94bd",
+      "bytes": 36355,
+      "byte_identical": true,
+      "original_relative": "layer22/probe16.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer22/probe32.json",
+      "sha256": "cec0504bb50946d5ad6d066bdc29cfafee8345fc5211a31799ccc74fdc834d6d",
+      "bytes": 625,
+      "byte_identical": true,
+      "original_relative": "layer22/probe32.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer22/probe32.npz",
+      "sha256": "1c4f26eb51fe9833cdbe77552762344851ccaa8778f84040e20c8214e766652d",
+      "bytes": 61610,
+      "byte_identical": true,
+      "original_relative": "layer22/probe32.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer22/probe8.json",
+      "sha256": "8abac94f0715e0c78dc0b46f48dd4e10ee60f7e5a6fbed4645275acbad93d041",
+      "bytes": 625,
+      "byte_identical": true,
+      "original_relative": "layer22/probe8.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer22/probe8.npz",
+      "sha256": "ab0c16efaac8de5f71962a3d03fc63c2bb2b7c94d0dd48c7609eedad6b220038",
+      "bytes": 19026,
+      "byte_identical": true,
+      "original_relative": "layer22/probe8.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "layer22/protocol.public.json",
+      "sha256": "a1b85f0c3161d375f0b57e5626e12268042c78cdeb787aca491b61076a33a7df",
+      "bytes": 2709,
+      "byte_identical": false,
+      "original_relative": "layer22/protocol.json",
+      "original_sha256": "c88eb58ac8b01bad768bcd5982c317a406f6e234b274c1b5c4b35f189078f5fe",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [],
+      "path_reference_replacements": [
+        {
+          "field": "/fixture",
+          "public_reference": "LOCAL_ONLY/phase_b_fit_selected/fixtures/train_associative_recall_0_L22_head0.npz",
+          "original_string_sha256": "67ceb8f7a2f6b1f6e4bd639324406cd396b898591f3b2a6f5a3e4f908ad90710"
+        },
+        {
+          "field": "/case_stats",
+          "public_reference": "LOCAL_ONLY/phase_b_fit_selected/cases/train_associative_recall_0_L22.npz",
+          "original_string_sha256": "8f6f6a6c4b2295de748c4cf575dd1ca8146089faf0c05b23fd76e15139388070"
+        }
+      ]
+    },
+    {
+      "path": "layer22/summary.json",
+      "sha256": "ce1cbe54775bd8aee8c7162f0231cc90364add82132aa5f9da8d2cceccd71d5a",
+      "bytes": 7922,
+      "byte_identical": true,
+      "original_relative": "layer22/summary.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "postrun_accounting_audit.json",
+      "sha256": "356136e4ea73b06b0cd9d9867ec19c048e41835b6394f0089ac837505b89aee9",
+      "bytes": 27164,
+      "byte_identical": true,
+      "original_relative": "postrun_accounting_audit.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "protocol.json",
+      "sha256": "68c9709032ad7709b50c8e152466e960c55b817ccf86e2a4788f2e4449ab4f35",
+      "bytes": 1131,
+      "byte_identical": true,
+      "original_relative": "protocol.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "source_dependency_bindings.json",
+      "sha256": "0b7264763664f720e616d519fff77ecd9c70eb750aefef77ba0d38978c6196cc",
+      "bytes": 6017,
+      "byte_identical": false,
+      "role": "DERIVED_SOURCE_AND_DEPENDENCY_BINDINGS"
+    }
+  ],
+  "local_only": [
+    {
+      "path": "layer0/freeze.json",
+      "sha256": "1331f5b014aaae7bf18e7b98c0bc128b613bbfc946fb7cce21fa2dd7ea8951c6",
+      "bytes": 3676,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "layer0/protocol.json",
+      "sha256": "83247912c3741b19c35c98115c95d71663a0843afba2f74209c6353fdeaabaa1",
+      "bytes": 2792,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "layer12/freeze.json",
+      "sha256": "10a68a6364e90f1d25d56fac571082b3aa6c4b9a3a7174765a0df8fbbf508e9b",
+      "bytes": 3679,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "layer12/protocol.json",
+      "sha256": "7cf80f02326f35d8036e32cd5e5cde0570a01c91c24870b97696ea7c34c843d6",
+      "bytes": 2795,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "layer22/freeze.json",
+      "sha256": "93e37ccae253eca04e0d2ee6477ac3700ce1ba01344b2652cf659e2d29261714",
+      "bytes": 3679,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "layer22/protocol.json",
+      "sha256": "c88eb58ac8b01bad768bcd5982c317a406f6e234b274c1b5c4b35f189078f5fe",
+      "bytes": 2795,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "audit_completed_children.py",
+      "sha256": "ad088cd0edc57113276a96f3c3534437c46ac45028a4278409533ba02c3ffc4b",
+      "bytes": 6649,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer0/adjoint_gramian.log",
+      "sha256": "6057ebe1bbb63673f56dc8dc6e53e45ea58bbc9ae424d632e7cc3d9591d07899",
+      "bytes": 99,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer0/exact_chunk8.log",
+      "sha256": "641b6f9cdfdbab7679ebef6e6df0a9108459f9fcb3d39eeb3c6f9ecd5a1122a0",
+      "bytes": 94,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer0/exact_full.log",
+      "sha256": "1ac1ad89ab92ddd7a966b5c9bbf7c19f120713cda6033f0496431aa2ddb527c3",
+      "bytes": 92,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer0/probe16.log",
+      "sha256": "b1b4e9ef720689a72d83d9647c6a9859ef8d86cefa3d276bf19256a86c07f241",
+      "bytes": 89,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer0/probe32.log",
+      "sha256": "95d634f2bac83af485153216caaf8bc2dadeab403d278c2e3b27871d40622a91",
+      "bytes": 89,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer0/probe8.log",
+      "sha256": "c4fda84d697ecc634526f73850c2fa35b1a4f9af87c25216edbc7f283f5f8166",
+      "bytes": 88,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer0_execution.log",
+      "sha256": "b40f8944e05f94c831296e2c9d3139878e6465a993a4c1198d515d12d5fc1183",
+      "bytes": 822,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer0_freeze.log",
+      "sha256": "2aa50dbfd0c8d57bae4029ee5855933e6fffc591a3a7e8749f6c1ef02c65b0f5",
+      "bytes": 18,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer12/adjoint_gramian.log",
+      "sha256": "d1f0f55be47dbf692d180b318359404ae3e738813be11096ce3bcb45822f86a0",
+      "bytes": 99,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer12/exact_chunk8.log",
+      "sha256": "624fd396c7a7a56733df88cec08a3ad6a09aa5d563219f2eb8d185c1e1565ca7",
+      "bytes": 94,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer12/exact_full.log",
+      "sha256": "5fffb85ff16ea01776552131e1e698eac38ad94170fa39d5a0e9080953b37d82",
+      "bytes": 92,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer12/probe16.log",
+      "sha256": "73efa331631dc9a1367deefc00c427fbd6bde25a117bab1716087518ddb9b180",
+      "bytes": 90,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer12/probe32.log",
+      "sha256": "462c068707fcb2fd2b696a67ab0beef31ad33f93ad197a6adcb04e321bf998f2",
+      "bytes": 90,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer12/probe8.log",
+      "sha256": "2a3e18199d4345abbbdad547cccc00963a324029a18941debea27468328e35b5",
+      "bytes": 89,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer12_execution.log",
+      "sha256": "21eba8b1616de1179027e845de3e09ededa13ab6ba346008aef345359a6ba3f8",
+      "bytes": 825,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer12_freeze.log",
+      "sha256": "2aa50dbfd0c8d57bae4029ee5855933e6fffc591a3a7e8749f6c1ef02c65b0f5",
+      "bytes": 18,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer22/adjoint_gramian.log",
+      "sha256": "15cb68c489bbafb952e6366a09a922f290c0fb2744e265dfce247d4a50780e2d",
+      "bytes": 98,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer22/exact_chunk8.log",
+      "sha256": "2e4f04c4aca79640bf08981f1f871cb2c44b145c5e780bced4c54662e5ccdff1",
+      "bytes": 93,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer22/exact_full.log",
+      "sha256": "a0e5df57cde6f163cb013b66d993a4b28be427880d4383d83b72c195c926eb70",
+      "bytes": 91,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer22/probe16.log",
+      "sha256": "dc98069bc4ba8872bf22c5b9473ba62f1ce47cb528fffa46a63171b10dcf3b85",
+      "bytes": 90,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer22/probe32.log",
+      "sha256": "12210e365110110099320bbd7642fecafb9e00bc84af21e0a410d262355fd54d",
+      "bytes": 90,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer22/probe8.log",
+      "sha256": "9f3e49c9ea47764e51f5adcb2ff39e7a88a80fca21526a27c27b6028ab011b54",
+      "bytes": 89,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer22_execution.log",
+      "sha256": "7ceed9908ead578dc6702954611085295d5067e7910868c839059f31aa6b23ad",
+      "bytes": 822,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "layer22_freeze.log",
+      "sha256": "2aa50dbfd0c8d57bae4029ee5855933e6fffc591a3a7e8749f6c1ef02c65b0f5",
+      "bytes": 18,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "run_three.py",
+      "sha256": "ad66377ed8f6531c33aa8d0fc7855f99346250191e3adcde292e494842c24a1f",
+      "bytes": 7490,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    }
+  ],
+  "original_hash_links": [
+    {
+      "path": "freeze.json",
+      "sha256": "41b7596788080bd82f24aaad94b1254f5bad91b29c7514ed8f60ab4a5a52bab9",
+      "role": "ORIGINAL_WRAPPER_FREEZE"
+    },
+    {
+      "path": "execution.json",
+      "sha256": "58470a5c6317bb2e5aa9994fd03e088544db2cbf0fc3ae5d141569741d6d6b52",
+      "role": "PRESERVED_WRAPPER_FAILURE"
+    },
+    {
+      "stage": "phase_b_fit_selected",
+      "path": "freeze.json",
+      "sha256": "76be1f724af861f7dc943587d1f021ba8abac602d1a96004f68fb9d24e44a72b",
+      "role": "SELECTED_FIT_NOT_CPU_PILOT"
+    },
+    {
+      "path": "layer0/summary.json",
+      "sha256": "e0762285e039c86a68a28c7685799803ca9a59134a0600de18d08e153d474b53",
+      "role": "CHILD_SUMMARY"
+    },
+    {
+      "path": "layer0/comparison_arrays.npz",
+      "sha256": "6ba329d7a8b71458b7d68cd3390bca8f927741ed8d1d3fd36e24f26159e8927d",
+      "role": "CHILD_COMPARISON"
+    },
+    {
+      "path": "layer0/adjoint_gramian.npz",
+      "sha256": "2bb682ebc4b3570a4a3209b02fb7b8dfffca2f8893a4f0bc1991b1b4ccc604a1",
+      "role": "CHILD_OUTPUT"
+    },
+    {
+      "path": "layer0/exact_full.npz",
+      "sha256": "c3b7770aec0fb7cafbf7e895daec77be9cd22af164d103ae0587c68ac9599034",
+      "role": "CHILD_OUTPUT"
+    },
+    {
+      "path": "layer0/exact_chunk8.npz",
+      "sha256": "c3b7770aec0fb7cafbf7e895daec77be9cd22af164d103ae0587c68ac9599034",
+      "role": "CHILD_OUTPUT"
+    },
+    {
+      "path": "layer0/probe8.npz",
+      "sha256": "f8f00427e723ff3e6b84819332a2d384ee10aa60a9a2022d5af555cdcb4bc326",
+      "role": "CHILD_OUTPUT"
+    },
+    {
+      "path": "layer0/probe16.npz",
+      "sha256": "d6fc60dece2dee2ccf72c983fb6d9d413d76e87eb1196495b53cacf4ab657529",
+      "role": "CHILD_OUTPUT"
+    },
+    {
+      "path": "layer0/probe32.npz",
+      "sha256": "d667fc0423ebb6c94a6b3ead2bc61eb28755a272627e7b75209f2b04467e3101",
+      "role": "CHILD_OUTPUT"
+    },
+    {
+      "path": "layer12/summary.json",
+      "sha256": "bc79f4d284cc56199c49d319a7435fed48bd062c0779f7285bd6b5474d6cb427",
+      "role": "CHILD_SUMMARY"
+    },
+    {
+      "path": "layer12/comparison_arrays.npz",
+      "sha256": "a884ef05c51d985f03bd12bff63738f624e2f580e7bb2314e10091ef0654ab57",
+      "role": "CHILD_COMPARISON"
+    },
+    {
+      "path": "layer12/adjoint_gramian.npz",
+      "sha256": "ad8d747aec4e9c89433127b3fde151865c0fccf15c9d77150542b1be0b042f90",
+      "role": "CHILD_OUTPUT"
+    },
+    {
+      "path": "layer12/exact_full.npz",
+      "sha256": "f8dd09cad53cece1cfabe522f7358686c81e2837acc1d7a80b5bda53255dd64a",
+      "role": "CHILD_OUTPUT"
+    },
+    {
+      "path": "layer12/exact_chunk8.npz",
+      "sha256": "f8dd09cad53cece1cfabe522f7358686c81e2837acc1d7a80b5bda53255dd64a",
+      "role": "CHILD_OUTPUT"
+    },
+    {
+      "path": "layer12/probe8.npz",
+      "sha256": "72eab39bff3e9112ccfb9a35ae2f9144f6a36b2eae679aa49aabd45803e8c735",
+      "role": "CHILD_OUTPUT"
+    },
+    {
+      "path": "layer12/probe16.npz",
+      "sha256": "30672faae0bef53464c6923d696a50359d10905ca365e5e3b6d33b08479ce622",
+      "role": "CHILD_OUTPUT"
+    },
+    {
+      "path": "layer12/probe32.npz",
+      "sha256": "2a2dc7aa536d8185b4712eb52bd7bb71611cd8efd18a320e64e81d87119a8648",
+      "role": "CHILD_OUTPUT"
+    },
+    {
+      "path": "layer22/summary.json",
+      "sha256": "ce1cbe54775bd8aee8c7162f0231cc90364add82132aa5f9da8d2cceccd71d5a",
+      "role": "CHILD_SUMMARY"
+    },
+    {
+      "path": "layer22/comparison_arrays.npz",
+      "sha256": "ab9fa8fac0beac83bf4ff1608a28b0b560b4db493f7f6a7c18d4ecb61370d249",
+      "role": "CHILD_COMPARISON"
+    },
+    {
+      "path": "layer22/adjoint_gramian.npz",
+      "sha256": "3615e501833ec6a18209a039556a80692516850a997dd4be46eb67a65dc5d306",
+      "role": "CHILD_OUTPUT"
+    },
+    {
+      "path": "layer22/exact_full.npz",
+      "sha256": "9d5f61601fe299e8a80dc1f50f32bf5b8f7c682b12fa20dcf0ed1af857193dea",
+      "role": "CHILD_OUTPUT"
+    },
+    {
+      "path": "layer22/exact_chunk8.npz",
+      "sha256": "9d5f61601fe299e8a80dc1f50f32bf5b8f7c682b12fa20dcf0ed1af857193dea",
+      "role": "CHILD_OUTPUT"
+    },
+    {
+      "path": "layer22/probe8.npz",
+      "sha256": "ab0c16efaac8de5f71962a3d03fc63c2bb2b7c94d0dd48c7609eedad6b220038",
+      "role": "CHILD_OUTPUT"
+    },
+    {
+      "path": "layer22/probe16.npz",
+      "sha256": "a6fd05938c73d5b0133bbe9a7a30aac96e1d1b5df13603e30c668aac2ffd94bd",
+      "role": "CHILD_OUTPUT"
+    },
+    {
+      "path": "layer22/probe32.npz",
+      "sha256": "1c4f26eb51fe9833cdbe77552762344851ccaa8778f84040e20c8214e766652d",
+      "role": "CHILD_OUTPUT"
+    },
+    {
+      "stage": "phase_b_fit_selected",
+      "path": "cases/train_associative_recall_0_L0.json",
+      "sha256": "b5e3330273ef9598c82473da1549cfeb2fe57b211bbb701550715bdea4280de9",
+      "role": "SELECTED_FIT_CASE_RECEIPT"
+    },
+    {
+      "stage": "phase_b_fit_selected",
+      "path": "cases/train_associative_recall_0_L12.json",
+      "sha256": "89a59fd00f1d2f73a6f3bf9e1cfa42116ed701ffef749b113367c247a4198951",
+      "role": "SELECTED_FIT_CASE_RECEIPT"
+    },
+    {
+      "stage": "phase_b_fit_selected",
+      "path": "cases/train_associative_recall_0_L22.json",
+      "sha256": "15608b415d113b02205d30600a9e3fff4c0f912e22e7222bbf37a579b2679d15",
+      "role": "SELECTED_FIT_CASE_RECEIPT"
+    }
+  ],
+  "reproduction_levels": {
+    "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS": "Scalar/table aggregation only, where the public CPU verifier implements the corresponding reduction",
+    "INCLUDED_TENSOR_POINT_CHECKS": "Small selected fixtures support explicitly bounded arithmetic comparisons; they are not representative full trajectories",
+    "LOCAL_ONLY_REGENERATION": "Full model forwards and capture/response regeneration require hash-bound local inputs and sometimes local drivers; no blanket full-rerun promise"
+  },
+  "claim_boundary": "Curation establishes evidence identity, not new model quality, numerical success, or deployment promotion"
+}

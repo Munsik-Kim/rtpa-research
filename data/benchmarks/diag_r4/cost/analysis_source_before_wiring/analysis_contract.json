@@ -1,0 +1,49 @@
+{
+  "schema": "R4_COST_ANALYSIS_V1",
+  "cost_freeze_sha256": "88ab9252a4c189c10de16763dbc4ba270d4307fbb18217759a9f3594edb7cd73",
+  "cost_wiring_revision_sha256": "6a806f0ec2e914f64494738345ef3e4c1043282239153d1388cef019fc15085a",
+  "analysis_source_sha256": "8d12b1d6d36641e8567bf9c6e5517d62a1e93ce0cb770868fc4964a1f722c271",
+  "numpy_version": "1.26.4",
+  "GPU_work": false,
+  "pre_timing_measurement": true,
+  "complete_attempt_rule": "Only one COMPLETE attempt, and it must be last. No pooling across attempts. Every incomplete/failed attempt is excluded in full with raw receipt retained.",
+  "complete_counts": {
+    "blocks_including_warmup": 9,
+    "measured_paired_blocks": 8,
+    "warmup_rows": 4,
+    "measured_rows": 32,
+    "physical_forwards": 5760
+  },
+  "bootstrap": {
+    "seed": 612410,
+    "draws": 2000,
+    "blocks_per_draw": 8,
+    "generator": "NumPy default_rng(seed).integers(0,8,size=(2000,8),dtype=int64)",
+    "unit": "Paired complete block; one shared draw matrix for every method comparison and timing metric.",
+    "statistic": "Median of 8 within-block numerator elapsed-time / denominator elapsed-time ratios; NOT ratio of independent medians.",
+    "interval": "Two-sided 95% percentile interval of 2000 bootstrap medians; NumPy quantile([0.025,0.975],method=linear).",
+    "coverage": "Pointwise descriptive intervals; no simultaneous coverage, population hardware generalization, or optional stopping claim."
+  },
+  "comparisons": [
+    "B4/B1",
+    "B4/NATIVE",
+    "B1_REPEAT/B1"
+  ],
+  "metrics": [
+    "prefill_seconds",
+    "decode_seconds"
+  ],
+  "target": {
+    "comparison": "B4/B1",
+    "ratio": 1.05,
+    "rule": "For each metric separately: upper<=1.05 is within target; lower>1.05 is above target; otherwise inconclusive.",
+    "other_comparisons": "Native-relative and B1_REPEAT/B1 are descriptive controls, not protocol target success/failure."
+  },
+  "absolute_costs": "Per-method medians and raw eight values, Native included. Prefill is last-logits TTFT proxy; decode is fixed teacher-forced 32-token elapsed time and ms/token.",
+  "memory": "Require all NATIVE/B1/B4 receipts with distinct PIDs and fresh_process assertions; no inference of whole-device VRAM from payload. Policy indices/H32 and shared diagnostic counters reported separately.",
+  "profile": "Top 20 operators by self_cpu_us with name tie break; profiler timings are not latency measurements. Keep all raw events in the original receipt.",
+  "conditional_optimization": "NOT_RUN_NO_PROMOTED_REPAIR",
+  "scope": "Selected legacy reference codec only. No cost approximation from quality runs, no optimization candidate, no source/mask tuning, no expectation updates.",
+  "bootstrap_draws_sha256": "96652acffc15d60bb71171eb531134c2770bbfd36c824ee64d798358a6e75e5e",
+  "UTC": "2026-09-12T12:04:38Z"
+}

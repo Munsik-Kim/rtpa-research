@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETE",
+  "sha256": "1839606fc2b8021eb14ac9310ee755f060fca72cd72c9260d0c08e93619586f6",
+  "freeze_sha256": "70853fef2be45eb0cdd1a890c91ccebe23c7ec68b5a8999624d5417878ed4b6e",
+  "rows": 2048,
+  "physical_forwards": 2048,
+  "seconds": 186.57367525500013,
+  "failures": {},
+  "successful_quantized_layer_writes": {
+    "NATIVE": 0,
+    "RNE_LEGACY_MASK": 18432
+  },
+  "diagnostic_logging_included_in_wall_time": true,
+  "serving_timing": false
+}

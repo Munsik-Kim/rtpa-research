@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETE",
+  "utc": "2026-09-12T11:10:44.280011+00:00",
+  "completed": [
+    "adjoint_gramian",
+    "exact_full",
+    "exact_chunk8",
+    "probe8",
+    "probe16",
+    "probe32"
+  ],
+  "model_forwards": 0,
+  "GPU_forwards": 0,
+  "seconds": 25.06295078400217,
+  "inputs_and_sources_unchanged": true
+}

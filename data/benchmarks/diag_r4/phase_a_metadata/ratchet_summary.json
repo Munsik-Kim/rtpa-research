@@ -1,0 +1,3810 @@
+{
+  "status": "COMPLETE",
+  "utc": "2026-09-12T10:47:25.303022+00:00",
+  "seconds": 2.227301905000786,
+  "config": {
+    "id": "A3_SAVED_GROUP_RATCHET_OBSERVATION_20260912_V1",
+    "threads": 2,
+    "wall_budget_seconds": 30,
+    "model_forwards": 0,
+    "GPU_forwards": 0,
+    "inputs": "All R2 previous/current/next groups already selected by the frozen A3 maximum-SSE snapshot rule, including saved adjacent value groups",
+    "branches": [
+      "one re-encode of actual FP32 affine decode without H",
+      "one re-encode of saved actual physical FP32 decode transformed again by source H32"
+    ],
+    "observations": "Original and re-encoded UINT8/FP16 payloads; directed one-ULP checks; required raw scale FP32/FP64 minus original stored scale; extrema and mean/SSE decode changes",
+    "ideal_fullrange_check": "If codes contain 0 and 255, ideal real affine decode has extrema offset and offset+255*scale. Binary FP64 exactly represents half metadata times UINT8 and their sums in this bounded contract; its required raw scale recovers the stored half scale. Such a grid is mathematically fixed, not necessarily FP32-operation fixed.",
+    "scope": "Selected-group operation evidence only; no prevalence, performance-filter, total-metadata causal decomposition, or model-KL claim"
+  },
+  "freeze_sha256": "15ff89cf060e6d32a6bcc148295cc80dc82480a5e259c753c3f61351b570fc01",
+  "input_bindings": [
+    {
+      "case": "train_associative_recall_0_L0",
+      "sha256": "af0c0e095f97984724fffa606cbea8d7e9f909671dfd2e79b46513e1a5accaae"
+    },
+    {
+      "case": "train_associative_recall_0_L12",
+      "sha256": "3e6e7b602a4f29f40dc72ade0054d12563d879e61bdb4c2a32d9bdc510393369"
+    },
+    {
+      "case": "train_associative_recall_0_L22",
+      "sha256": "7a8833f7083c37d8a5bff4e1a0b08e12f512cf53bdb33390e2b86d4e36c11029"
+    },
+    {
+      "case": "train_associative_recall_1_L0",
+      "sha256": "c3f990e645f73a8518d497e176b5fed11c828fbc6ff85272b9c05d72edf6c7e5"
+    },
+    {
+      "case": "train_associative_recall_1_L12",
+      "sha256": "f00962c1d5dad436d98c5d57b2aa577a05b1b393fc8d7d65ee6edf2ea750394a"
+    },
+    {
+      "case": "train_associative_recall_1_L22",
+      "sha256": "a8335e87911c999c382045ea3391f6960718384a710b6966937401c1e52dfdd3"
+    },
+    {
+      "case": "train_code_0_L0",
+      "sha256": "1df8038ffc3f45d0c4ca31c9a8e608cf5690fc7f9a19e7bf4ace3a8d21ddbc34"
+    },
+    {
+      "case": "train_code_0_L12",
+      "sha256": "cff76c59dd35db514bc3c82a87bf9913afbea838d2542306f644ba090999eff0"
+    },
+    {
+      "case": "train_code_0_L22",
+      "sha256": "a92893eeb7112c897ab1a0ae8f4da4dea6300114d2ac690080a248f9d9605a3e"
+    },
+    {
+      "case": "train_code_1_L0",
+      "sha256": "b11bb40f73f17f8a2f5cb6fc96f1e676739a462ad46392cae1bca1fc755f5705"
+    },
+    {
+      "case": "train_code_1_L12",
+      "sha256": "6cf052c62d1d537e18b6f4c0da74503efaf24e32bfd93b03107cce70472570f9"
+    },
+    {
+      "case": "train_code_1_L22",
+      "sha256": "f99078a67b06c9d41d75f3625b5c09c548c4256b579e7434f98512a6a2866469"
+    },
+    {
+      "case": "train_natural_language_0_L0",
+      "sha256": "ae047e4d8d2c1b36c943e7ba6b72c665d4203f024dc8f4a03e0b9af68b2df6fe"
+    },
+    {
+      "case": "train_natural_language_0_L12",
+      "sha256": "195a8596f1ff1afe47802dfa9e0ae93c982e285592b5f3c252f00e487e81ecf7"
+    },
+    {
+      "case": "train_natural_language_0_L22",
+      "sha256": "8355a9d74b9b7a60a50108ebaee4292d381110c1435ed2c334cc5c156addd5b9"
+    },
+    {
+      "case": "train_natural_language_1_L0",
+      "sha256": "0b4bda97c1619349ebb3fede48335e810b5943b84b7165c62660f80a16728f84"
+    },
+    {
+      "case": "train_natural_language_1_L12",
+      "sha256": "9428efd14115c34337e2e9e48bd985ac2bf5a564ccee2260db92f1b9fa6faa3f"
+    },
+    {
+      "case": "train_natural_language_1_L22",
+      "sha256": "de5b1a94445ed7fb7986c57423be6c02395cac76f95e5ab71b8d8e70f45021cd"
+    }
+  ],
+  "observations": {
+    "path": "ratchet_observations.npz",
+    "sha256": "2fad7dc5b7ea1e0381a71897cbfdeda951a3993bec57c2099e4cb27c45cec4d2"
+  },
+  "records": [
+    {
+      "id": "train_associative_recall_0_L0/R2_OFFSET_t31/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L0/R2_OFFSET_t31/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L0/R2_OFFSET_t31/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L0/R2_OFFSET_t31/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L0/R2_OFFSET_t31/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L0/R2_OFFSET_t31/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L0/R2_OFFSET_t127/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L0/R2_OFFSET_t127/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L0/R2_OFFSET_t127/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L0/R2_OFFSET_t127/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L0/R2_OFFSET_t127/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L0/R2_OFFSET_t127/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L0/R2_OFFSET_t223/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L0/R2_OFFSET_t223/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L0/R2_OFFSET_t223/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L0/R2_OFFSET_t223/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L0/R2_OFFSET_t223/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L0/R2_OFFSET_t223/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L12/R2_OFFSET_t31/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L12/R2_OFFSET_t31/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L12/R2_OFFSET_t31/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L12/R2_OFFSET_t31/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L12/R2_OFFSET_t31/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L12/R2_OFFSET_t31/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L12/R2_OFFSET_t127/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L12/R2_OFFSET_t127/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L12/R2_OFFSET_t127/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L12/R2_OFFSET_t127/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L12/R2_OFFSET_t127/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L12/R2_OFFSET_t127/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L12/R2_OFFSET_t223/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L12/R2_OFFSET_t223/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L12/R2_OFFSET_t223/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L12/R2_OFFSET_t223/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L12/R2_OFFSET_t223/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L12/R2_OFFSET_t223/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L22/R2_OFFSET_t31/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L22/R2_OFFSET_t31/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L22/R2_OFFSET_t31/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L22/R2_OFFSET_t31/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L22/R2_OFFSET_t31/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L22/R2_OFFSET_t31/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L22/R2_OFFSET_t127/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L22/R2_OFFSET_t127/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L22/R2_OFFSET_t127/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L22/R2_OFFSET_t127/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L22/R2_OFFSET_t127/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L22/R2_OFFSET_t127/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L22/R2_OFFSET_t223/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L22/R2_OFFSET_t223/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L22/R2_OFFSET_t223/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L22/R2_OFFSET_t223/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L22/R2_OFFSET_t223/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_0_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_0_L22/R2_OFFSET_t223/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_0_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L0/R2_OFFSET_t31/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L0/R2_OFFSET_t31/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L0/R2_OFFSET_t31/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L0/R2_OFFSET_t31/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L0/R2_OFFSET_t31/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L0/R2_OFFSET_t31/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L0/R2_OFFSET_t127/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L0/R2_OFFSET_t127/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L0/R2_OFFSET_t127/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L0/R2_OFFSET_t127/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L0/R2_OFFSET_t127/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L0/R2_OFFSET_t127/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L0/R2_OFFSET_t223/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L0/R2_OFFSET_t223/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L0/R2_OFFSET_t223/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L0/R2_OFFSET_t223/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L0/R2_OFFSET_t223/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L0/R2_OFFSET_t223/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L12/R2_OFFSET_t31/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L12/R2_OFFSET_t31/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L12/R2_OFFSET_t31/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L12/R2_OFFSET_t31/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L12/R2_OFFSET_t31/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L12/R2_OFFSET_t31/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L12/R2_OFFSET_t127/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L12/R2_OFFSET_t127/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L12/R2_OFFSET_t127/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L12/R2_OFFSET_t127/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L12/R2_OFFSET_t127/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L12/R2_OFFSET_t127/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L12/R2_OFFSET_t223/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L12/R2_OFFSET_t223/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L12/R2_OFFSET_t223/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L12/R2_OFFSET_t223/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L12/R2_OFFSET_t223/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L12/R2_OFFSET_t223/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L22/R2_OFFSET_t31/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L22/R2_OFFSET_t31/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L22/R2_OFFSET_t31/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L22/R2_OFFSET_t31/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L22/R2_OFFSET_t31/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L22/R2_OFFSET_t31/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L22/R2_OFFSET_t127/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L22/R2_OFFSET_t127/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L22/R2_OFFSET_t127/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L22/R2_OFFSET_t127/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L22/R2_OFFSET_t127/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L22/R2_OFFSET_t127/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L22/R2_OFFSET_t223/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L22/R2_OFFSET_t223/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L22/R2_OFFSET_t223/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L22/R2_OFFSET_t223/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L22/R2_OFFSET_t223/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_associative_recall_1_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_associative_recall_1_L22/R2_OFFSET_t223/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_associative_recall_1_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L0/R2_OFFSET_t31/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_0_L0/R2_OFFSET_t31/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_0_L0/R2_OFFSET_t31/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_0_L0/R2_OFFSET_t31/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_0_L0/R2_OFFSET_t31/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_0_L0/R2_OFFSET_t31/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_0_L0/R2_OFFSET_t127/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_0_L0/R2_OFFSET_t127/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_0_L0/R2_OFFSET_t127/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_0_L0/R2_OFFSET_t127/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_0_L0/R2_OFFSET_t127/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_0_L0/R2_OFFSET_t127/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_0_L0/R2_OFFSET_t223/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_0_L0/R2_OFFSET_t223/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_0_L0/R2_OFFSET_t223/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_0_L0/R2_OFFSET_t223/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_0_L0/R2_OFFSET_t223/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_0_L0/R2_OFFSET_t223/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_0_L12/R2_OFFSET_t31/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L12/R2_OFFSET_t31/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L12/R2_OFFSET_t31/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L12/R2_OFFSET_t31/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L12/R2_OFFSET_t31/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L12/R2_OFFSET_t31/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L12/R2_OFFSET_t127/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L12/R2_OFFSET_t127/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L12/R2_OFFSET_t127/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L12/R2_OFFSET_t127/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L12/R2_OFFSET_t127/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L12/R2_OFFSET_t127/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L12/R2_OFFSET_t223/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L12/R2_OFFSET_t223/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L12/R2_OFFSET_t223/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L12/R2_OFFSET_t223/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L12/R2_OFFSET_t223/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L12/R2_OFFSET_t223/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L22/R2_OFFSET_t31/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L22/R2_OFFSET_t31/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L22/R2_OFFSET_t31/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L22/R2_OFFSET_t31/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L22/R2_OFFSET_t31/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L22/R2_OFFSET_t31/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L22/R2_OFFSET_t127/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L22/R2_OFFSET_t127/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L22/R2_OFFSET_t127/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L22/R2_OFFSET_t127/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L22/R2_OFFSET_t127/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L22/R2_OFFSET_t127/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_0_L22/R2_OFFSET_t223/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "train_code_0_L22/R2_OFFSET_t223/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "train_code_0_L22/R2_OFFSET_t223/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "train_code_0_L22/R2_OFFSET_t223/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "train_code_0_L22/R2_OFFSET_t223/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_0_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "train_code_0_L22/R2_OFFSET_t223/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_0_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "train_code_1_L0/R2_OFFSET_t31/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_1_L0/R2_OFFSET_t31/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_1_L0/R2_OFFSET_t31/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_1_L0/R2_OFFSET_t31/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_1_L0/R2_OFFSET_t31/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_1_L0/R2_OFFSET_t31/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_1_L0/R2_OFFSET_t127/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_1_L0/R2_OFFSET_t127/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_1_L0/R2_OFFSET_t127/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_1_L0/R2_OFFSET_t127/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_1_L0/R2_OFFSET_t127/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_1_L0/R2_OFFSET_t127/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_1_L0/R2_OFFSET_t223/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_1_L0/R2_OFFSET_t223/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_1_L0/R2_OFFSET_t223/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_1_L0/R2_OFFSET_t223/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_1_L0/R2_OFFSET_t223/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_1_L0/R2_OFFSET_t223/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_code_1_L12/R2_OFFSET_t31/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L12/R2_OFFSET_t31/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L12/R2_OFFSET_t31/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L12/R2_OFFSET_t31/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L12/R2_OFFSET_t31/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L12/R2_OFFSET_t31/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L12/R2_OFFSET_t127/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L12/R2_OFFSET_t127/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L12/R2_OFFSET_t127/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L12/R2_OFFSET_t127/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L12/R2_OFFSET_t127/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L12/R2_OFFSET_t127/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L12/R2_OFFSET_t223/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L12/R2_OFFSET_t223/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L12/R2_OFFSET_t223/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L12/R2_OFFSET_t223/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L12/R2_OFFSET_t223/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L12/R2_OFFSET_t223/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L22/R2_OFFSET_t31/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L22/R2_OFFSET_t31/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L22/R2_OFFSET_t31/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L22/R2_OFFSET_t31/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L22/R2_OFFSET_t31/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L22/R2_OFFSET_t31/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L22/R2_OFFSET_t127/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L22/R2_OFFSET_t127/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L22/R2_OFFSET_t127/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L22/R2_OFFSET_t127/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L22/R2_OFFSET_t127/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L22/R2_OFFSET_t127/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L22/R2_OFFSET_t223/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L22/R2_OFFSET_t223/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L22/R2_OFFSET_t223/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L22/R2_OFFSET_t223/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L22/R2_OFFSET_t223/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_code_1_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_code_1_L22/R2_OFFSET_t223/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_code_1_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L0/R2_OFFSET_t31/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L0/R2_OFFSET_t31/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L0/R2_OFFSET_t31/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L0/R2_OFFSET_t31/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L0/R2_OFFSET_t31/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L0/R2_OFFSET_t31/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L0/R2_OFFSET_t127/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L0/R2_OFFSET_t127/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L0/R2_OFFSET_t127/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L0/R2_OFFSET_t127/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L0/R2_OFFSET_t127/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L0/R2_OFFSET_t127/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L0/R2_OFFSET_t223/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L0/R2_OFFSET_t223/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L0/R2_OFFSET_t223/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L0/R2_OFFSET_t223/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L0/R2_OFFSET_t223/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L0/R2_OFFSET_t223/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L12/R2_OFFSET_t31/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L12/R2_OFFSET_t31/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L12/R2_OFFSET_t31/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L12/R2_OFFSET_t31/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L12/R2_OFFSET_t31/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L12/R2_OFFSET_t31/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L12/R2_OFFSET_t127/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L12/R2_OFFSET_t127/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L12/R2_OFFSET_t127/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L12/R2_OFFSET_t127/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L12/R2_OFFSET_t127/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L12/R2_OFFSET_t127/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L12/R2_OFFSET_t223/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L12/R2_OFFSET_t223/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L12/R2_OFFSET_t223/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L12/R2_OFFSET_t223/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L12/R2_OFFSET_t223/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L12/R2_OFFSET_t223/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L22/R2_OFFSET_t31/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L22/R2_OFFSET_t31/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L22/R2_OFFSET_t31/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L22/R2_OFFSET_t31/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L22/R2_OFFSET_t31/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L22/R2_OFFSET_t31/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L22/R2_OFFSET_t127/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L22/R2_OFFSET_t127/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L22/R2_OFFSET_t127/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L22/R2_OFFSET_t127/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L22/R2_OFFSET_t127/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L22/R2_OFFSET_t127/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L22/R2_OFFSET_t223/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L22/R2_OFFSET_t223/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L22/R2_OFFSET_t223/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L22/R2_OFFSET_t223/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L22/R2_OFFSET_t223/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_0_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_0_L22/R2_OFFSET_t223/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_0_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L0/R2_OFFSET_t31/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L0/R2_OFFSET_t31/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L0/R2_OFFSET_t31/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L0/R2_OFFSET_t31/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L0/R2_OFFSET_t31/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L0/R2_OFFSET_t31/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L0",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L0/R2_OFFSET_t127/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L0/R2_OFFSET_t127/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L0/R2_OFFSET_t127/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L0/R2_OFFSET_t127/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L0/R2_OFFSET_t127/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L0/R2_OFFSET_t127/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L0",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L0/R2_OFFSET_t223/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L0/R2_OFFSET_t223/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L0/R2_OFFSET_t223/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L0/R2_OFFSET_t223/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L0/R2_OFFSET_t223/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L0/R2_OFFSET_t223/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L0",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L12/R2_OFFSET_t31/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L12/R2_OFFSET_t31/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L12/R2_OFFSET_t31/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L12/R2_OFFSET_t31/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L12/R2_OFFSET_t31/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L12/R2_OFFSET_t31/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L12",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L12/R2_OFFSET_t127/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L12/R2_OFFSET_t127/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L12/R2_OFFSET_t127/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L12/R2_OFFSET_t127/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L12/R2_OFFSET_t127/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L12/R2_OFFSET_t127/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L12",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L12/R2_OFFSET_t223/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L12/R2_OFFSET_t223/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L12/R2_OFFSET_t223/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L12/R2_OFFSET_t223/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L12/R2_OFFSET_t223/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L12/R2_OFFSET_t223/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L12",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L22/R2_OFFSET_t31/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L22/R2_OFFSET_t31/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L22/R2_OFFSET_t31/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L22/R2_OFFSET_t31/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L22/R2_OFFSET_t31/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L22/R2_OFFSET_t31/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L22",
+      "selection": "R2_OFFSET_t31",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L22/R2_OFFSET_t127/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L22/R2_OFFSET_t127/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L22/R2_OFFSET_t127/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L22/R2_OFFSET_t127/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L22/R2_OFFSET_t127/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L22/R2_OFFSET_t127/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L22",
+      "selection": "R2_OFFSET_t127",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L22/R2_OFFSET_t223/previous/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L22/R2_OFFSET_t223/previous/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "previous",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L22/R2_OFFSET_t223/current/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L22/R2_OFFSET_t223/current/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "current",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L22/R2_OFFSET_t223/next/affine_only",
+      "branch": "affine_only",
+      "case": "train_natural_language_1_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "train_natural_language_1_L22/R2_OFFSET_t223/next/physical_H_roundtrip",
+      "branch": "physical_H_roundtrip",
+      "case": "train_natural_language_1_L22",
+      "selection": "R2_OFFSET_t223",
+      "relative_token": "next",
+      "groups": [
+        0,
+        1
+      ]
+    }
+  ],
+  "totals": {
+    "affine_only": {
+      "scale_increase": 0,
+      "scale_decrease": 0,
+      "scale_one_upward_ULP": 0,
+      "offset_decrease": 0,
+      "offset_increase": 0,
+      "offset_one_downward_ULP": 0,
+      "codes_changed": 0,
+      "decode_change_sse_FP64": 0.0,
+      "groups": 381,
+      "fullrange_groups": 381,
+      "fullrange_scale_increase": 0,
+      "fullrange_scale_one_upward_ULP": 0
+    },
+    "physical_H_roundtrip": {
+      "scale_increase": 42,
+      "scale_decrease": 0,
+      "scale_one_upward_ULP": 41,
+      "offset_decrease": 40,
+      "offset_increase": 0,
+      "offset_one_downward_ULP": 40,
+      "codes_changed": 0,
+      "decode_change_sse_FP64": 0.00011082063952017052,
+      "groups": 381,
+      "fullrange_groups": 381,
+      "fullrange_scale_increase": 42,
+      "fullrange_scale_one_upward_ULP": 41
+    }
+  },
+  "sources_unchanged": true
+}

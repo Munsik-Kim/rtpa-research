@@ -1,0 +1,12 @@
+{
+  "schema": "PUBLICATION_VERSION_ONLY_SOURCE_V1",
+  "path": "src/rtpa_research/__init__.py",
+  "original_path": "configs/publication_sources/__init__.py.txt",
+  "original_sha256": "586553eed9a87aed61252d3e7e1228e37489bdb2e0b21ae1ddc10d41ced4f5fa",
+  "published_sha256": "c7c82c286616a9a449a92c9ffd83b9e47dab7f53042228f63a27a012a202d5bd",
+  "original_literal": "__version__ = '1.1.0rc1'\n",
+  "published_literal": "__version__ = '1.3.0rc1'\n",
+  "project_version": "1.3.0rc1",
+  "scope": "PACKAGE_VERSION_METADATA_ONLY",
+  "historical_expected_hashes_modified": false
+}

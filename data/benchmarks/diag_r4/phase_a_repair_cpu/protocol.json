@@ -1,0 +1,49 @@
+{
+  "codec_id": "R4_OFFSET_RNE_V1",
+  "payload_schema": "R2_OFFSET",
+  "candidate_count": 1,
+  "intervention": "Only paired floor-half offset / ceil-half scale storage replaced by RNE-half; scale still depends on stored offset; same UINT8 RNE/clamp, H32, guards, zero convention, high FP16, decoder, layout",
+  "status": "Exploratory mechanism test, not repaired default",
+  "threads": 2,
+  "CPU_wall_budget_seconds": 300,
+  "seed": 612430,
+  "model_forwards": 0,
+  "GPU_forwards": 0,
+  "CPU_acceptance": "All frozen tests PASS with no skips; independent NumPy payload/decoded arithmetic equality; actual saved overflow group and two failure heads finite for candidate while historical legacy failures remain reproduced; expected invalid-input and non-closed-range re-encode guard rejections are explicit passing contract checks",
+  "CPU_quality_selection": "No SSE/repeat/clipping outcome changes the candidate or adds optimization; no CPU error-improvement threshold",
+  "diagnostics": "Endpoint clamp counts outside runtime policy; one-write and physical zero-dynamics repeat steps1/2/4/8/16 on all prior A3 R2-selected previous/current/next physical-input groups, with legacy/R2 anchors. This selected-group shape is not full-state GEMM replay or population sampling.",
+  "repeat_steps": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "fixture_paths": [
+    "data/evidence/fixtures/overflow.npz",
+    "data/evidence/upgrade_failures/stored_nearest.npz",
+    "data/evidence/upgrade_failures/fa_code_factorized.npz"
+  ],
+  "DEV_acceptance_preregistered_before_candidate_outputs": {
+    "panel": [
+      "test_natural_language_0",
+      "test_code_0",
+      "test_associative_recall_0"
+    ],
+    "split": "RETROSPECTIVE_DEV; historical test IDs do not create a new independent test",
+    "tokens": 1024,
+    "mask": "legacy DIAG8 only",
+    "mask_path": "data/benchmarks/gdn/policy.npz",
+    "mask_sha256": "bd865a1a138ed25a98e8db5b5dabb26ff259307be3ba2f071a04ceb71faace68",
+    "comparator": "LEGACY_P_PRE with the identical fixed legacy DIAG8 mask",
+    "numerical_failures_allowed": 0,
+    "bounded_overflow_probes": "PASS required",
+    "pooled_KL_ratio_max": 1.05,
+    "pooled_NLL_difference_max": 0.005,
+    "each_document_KL_ratio_max": 1.1,
+    "epsilon": null,
+    "primary_window": "KL[16,1024); NLL[16,1023), preserving original A primary timing and tokens",
+    "GPU_execution": "Parent-owned later thin wrapper; this CPU program never evaluates DEV or selects a default"
+  },
+  "failure_policy": "Record first failure and test transcript; no silent retry, source edit, missing-to-zero conversion, or second candidate"
+}

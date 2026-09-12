@@ -1,0 +1,31 @@
+{
+  "run_id": "RTPA_R4_ADJOINT_CPU_PROTOTYPE_20260912_V1",
+  "scope": "CPU-only synthetic fixed-trajectory math and calibration-cost prototype; no model, GPU, or real TRAIN/DEV/TEST tensors",
+  "cpu_threads": 2,
+  "wall_budget_seconds": 1200,
+  "exact_relative_tolerance": 1e-10,
+  "tolerance_basis": "Conservative FP64 tolerance fixed before results: at most 128 recurrence reductions on small synthetic dimensions; not a rigorous native FP32 roundoff certificate",
+  "fixture_seed": 612401,
+  "probe_seed": 612407,
+  "probe_stages": [8,16,32],
+  "alpha": 0.05,
+  "coverage_repeats": 128,
+  "coverage_probe_seed_start": 612800,
+  "coverage_scenarios": [
+    {"family":"gdn","seed":612402,"shape":[12,2,6,3]},
+    {"family":"gdn2","seed":612403,"shape":[12,2,6,3]}
+  ],
+  "coverage_high_budget": 2,
+  "coverage_rule": "Record per-stage and simultaneous all-stage/head/row score interval coverage; Bonferroni alpha divided by three stages and every head/row; do not retune alpha or choose seeds from results",
+  "bias_rule": "Report mean Khat/exact K and sample standard error across all128 frozen probe seeds, with per-row and pooled summaries; finite-sample deviation is not a proof of bias/unbiasedness",
+  "pilot_seed": 612404,
+  "pilot_shape": [128,4,64,32],
+  "pilot_repeats": 3,
+  "pilot_row_chunk": 8,
+  "pilot_high_budget": 8,
+  "subsample_seed": 612408,
+  "subsample_fraction": 0.25,
+  "subsample_scope": "Uniform scored-output subsampling with inverse-inclusion weights and unchanged source writes/transitions; exact shared c computed separately; no claim of time matching until observed costs are compared",
+  "cost_rule": "Compare complete calibration calls including exact c and probe generation; report measured CPU wall/CPU time and array working-set estimates separately; no runtime-serving speedup or real-trace collection cost claim",
+  "GPU_expansion": "NOT_AUTHORIZED_BY_THIS_PROTOTYPE_ALONE: requires representative real three-layer pilot advantage over exact chunking and equal-cost subsampling in root protocol"
+}

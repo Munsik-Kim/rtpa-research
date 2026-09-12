@@ -1,0 +1,18 @@
+test_exact_zero (frozen_candidate_tests.CodecR4RNEContract.test_exact_zero) ... ok
+test_extrema_finite_not_range_closure (frozen_candidate_tests.CodecR4RNEContract.test_extrema_finite_not_range_closure) ... ok
+test_input_and_payload_guards_unchanged (frozen_candidate_tests.CodecR4RNEContract.test_input_and_payload_guards_unchanged) ... ok
+test_nonzero_constants_and_documented_endpoint_clamp (frozen_candidate_tests.CodecR4RNEContract.test_nonzero_constants_and_documented_endpoint_clamp) ... ok
+test_physical_repeat_finite_and_high_unchanged (frozen_candidate_tests.CodecR4RNEContract.test_physical_repeat_finite_and_high_unchanged) ... ok
+test_positive_negative_offset_halfway_ties (frozen_candidate_tests.CodecR4RNEContract.test_positive_negative_offset_halfway_ties) ... ok
+test_protected_rows_payload_bytes_and_no_master (frozen_candidate_tests.CodecR4RNEContract.test_protected_rows_payload_bytes_and_no_master) ... ok
+test_random_groups (frozen_candidate_tests.CodecR4RNEContract.test_random_groups) ... ok
+test_revision_and_inherited_numerical_paths (frozen_candidate_tests.CodecR4RNEContract.test_revision_and_inherited_numerical_paths) ... ok
+test_saved_group_legacy_overflow_preserved_candidate_finite (frozen_candidate_tests.CodecR4RNEContract.test_saved_group_legacy_overflow_preserved_candidate_finite) ... ok
+test_scale_halfway_ties_and_code_ties (frozen_candidate_tests.CodecR4RNEContract.test_scale_halfway_ties_and_code_ties) ... ok
+test_subnormal_and_narrow_spans (frozen_candidate_tests.CodecR4RNEContract.test_subnormal_and_narrow_spans) ... ok
+test_two_saved_failure_heads_legacy_failure_retained (frozen_candidate_tests.CodecR4RNEContract.test_two_saved_failure_heads_legacy_failure_retained) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.071s
+
+OK

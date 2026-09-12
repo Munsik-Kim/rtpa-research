@@ -1,0 +1,47 @@
+{
+  "id": "R4_C_REAL_HEAD_PILOT_20260912_V1",
+  "family": "gdn",
+  "CPU_threads": 2,
+  "CPU_wall_budget_seconds": 300,
+  "shape": [
+    256,
+    1,
+    128,
+    128
+  ],
+  "methods": [
+    "adjoint_gramian",
+    "exact_full",
+    "exact_chunk8",
+    "probe8",
+    "probe16",
+    "probe32"
+  ],
+  "warmup_runs": 1,
+  "timed_runs": 3,
+  "row_chunk": 8,
+  "seed": 612431,
+  "stages": [
+    8,
+    16,
+    32
+  ],
+  "probe_chunk": 8,
+  "high_budget": 8,
+  "family_alpha": 0.05,
+  "score_numerical_slack": 0.0,
+  "exact_relative_tolerance": 1e-10,
+  "probe_timing_allocation": "For terminal stage r, pass the nested stage prefix and alpha=.05*prefix_stage_count/3/family_heads. Thus every interval retains the full three-stage Bonferroni allocation, including shorter timed runs.",
+  "target": "Supplied physical low-minus-high write sources and shared h only; output before current write, no model/codec/trace reconstruction. B3 independent-write K plus exactly the same signed2c; B4 coherent Kdiag plus2c.",
+  "mask_scope": "Per-fixture/per-head top8 is an objective diagnostic, not a TRAIN-aggregated calibration mask or deployed policy.",
+  "timing": "Fresh process per method; identical fixture and SciPy/NumPy imports; one untimed warmup then3 full-API timings. Includes repeated input checks and exactc within probe API, excludes process startup/load/serialization. All samples retained; no extrapolated end-to-end calibration claim.",
+  "memory": "Linux process peak RSS after load and after measured work, high-water increase, input bytes, and API-declared core workspace; core workspace excludes allocations/transients/imports and is not peak memory.",
+  "confidence_scope": "One predeclared probe seed on this fixed real trajectory; observed interval inclusion is a check, not empirical coverage-rate evidence. Conditional Gaussian intervals across supplied128rows and3stages; no FP64 rounding-error proof and no across-run95% claim unless family_heads was predeclared accordingly.",
+  "no_selection": "No speed-based promotion without exact mask/certificate; no method/seed/chunk/tolerance tuning or repeated-seed coverage experiment.",
+  "failure_policy": "First mismatch/nonfinite/timeout is retained and ends this frozen run; no silent retry or substitute numbers.",
+  "fixture": "LOCAL_ONLY/phase_b_fit_selected/fixtures/train_associative_recall_0_L12_head0.npz",
+  "case_stats": "LOCAL_ONLY/phase_b_fit_selected/cases/train_associative_recall_0_L12.npz",
+  "head": 0,
+  "family_heads": 3,
+  "codec_scope": "Selected LEGACY_P_PRE GPU-generated FP32 codec/anchor and FP64 physical subtraction/response; TRAIN associative-recall0/layer12/head0 only; not full-training or deployment-mask evidence."
+}

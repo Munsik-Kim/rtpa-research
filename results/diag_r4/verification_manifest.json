@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "UTC": "2026-09-12T13:16:07.631517+00:00",
+  "raw_root": "data/benchmarks/diag_r4",
+  "source_files": {
+    "configs/diag_r4_selected_scores.json": "d4f8b92b133298e936e791db0ab39b4d1e98401f7e34f40023520e2a8d7264dd",
+    "examples/diag_r4.py": "bc27aaf7d0b554ba744654303b2627212c68cb68f9a288219a5edfccfbf39583",
+    "scripts/account_diag_r4.py": "11318d8583d3cbfccd8cd8ec1487039ab0465b6ecc5bcfd871c87d449069a447",
+    "scripts/aggregate_diag_r4.py": "3113f0861dcd38cd1387775f3d6d73fe0059984eb419a6822b3ae5171742fa87",
+    "scripts/analyze_diag_r4_cost.py": "669cdaf3d3e7240405cbb6e9f4b1740939bf2685f2145d6a86f3aa1ddb51d793",
+    "scripts/analyze_diag_r4_fit.py": "7b6f4a5cfddf76438a3f77d45bdfaed1e2eb2ad67989843961a2748e7afafee8",
+    "scripts/build_diag_r4_claims.py": "0229211867e316d292e74be5a9394daa71965f0ce398d36deb7c767e6e51a795",
+    "scripts/check_diag_r4_install.py": "de3159521b68ba8c410fa76b53d56fa54db62dd311938bd105bb4cdc67465855",
+    "scripts/check_diag_r4_public.py": "90f1119a7ce71c6fc763b54974a90705e0307c7dcdc27e19f1757e93ec9f344b",
+    "scripts/close_diag_r4_cost.py": "4ea632443efd3fd2655c7fb23bde6bb67e6fd0a017560deef5c286c6793fe58b",
+    "scripts/curate_diag_r4.py": "c143db1b887d9b7cec7f49070a7b311456824b7e7901f93b30f96e032118c09a",
+    "scripts/fit_diag_r4_selected.py": "11220373de9cbf80abed46be3ca23ec0aa85cec26e43152a0dd9e3ee9c0830b3",
+    "scripts/plot_diag_r4.py": "9a1335a111faaec8ec186aa4c8529de715ff75e6fcbc8f8d880f6cdc89406120",
+    "scripts/render_diag_r4.py": "04d2d437c93d7bff825e55de4f1da8e038d48905a10538c1fd9e0d2fe889715f",
+    "scripts/render_diag_r4_cost.py": "97141007292af73c9bd7209febc8efbbd66e1445e42a35467555e76eedc47625",
+    "scripts/verify_diag_r4.py": "0d31d230798f5abc047d745a0d53a8615cf25b6636b4847d811ff515932928b1",
+    "src/rtpa_research/__init__.py": "c7c82c286616a9a449a92c9ffd83b9e47dab7f53042228f63a27a012a202d5bd",
+    "src/rtpa_research/_build.py": "c6defb50fe8473bb837a8864db08ed3ee59b1971360f7cec9d1c6180d04e26e1",
+    "src/rtpa_research/allocation_trace.py": "6175db2b7e4bdc1017c8d9959c6008848537348741ab057005002ccc3dac7e57",
+    "src/rtpa_research/benchmark.py": "1a3d9efec4b9b712ae4728a4777429e451afe1ca0ef5e059d94b38baf0b64071",
+    "src/rtpa_research/calibration_r4.py": "f20494a39ae78b253edb8fa07354de8f30037082f51b9e285e233a484d02ead9",
+    "src/rtpa_research/codec.py": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069",
+    "src/rtpa_research/codec_r2.py": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2",
+    "src/rtpa_research/codec_r2_optimized.py": "519975711d79ee0672a20d3585c6cd6c07002e237629ed48cabb006dffe9ad9e",
+    "src/rtpa_research/codec_r4_rne.py": "ac0f506bb9121dc16fd01a01a2d42e61c0f881468d32c4f3c5401fc23c90de36",
+    "src/rtpa_research/diag_r2_benchmark.py": "48d5198da63a8ee1d0041ff6eee9c918313aadc878ef7f02ec51bfb8e54f55de",
+    "src/rtpa_research/diag_r2_execution.py": "5a0ffda87a639751a5fc647468d446ae7c7e591bf6fe931fa5e1851661a9ce1e",
+    "src/rtpa_research/diag_r2_runtime.py": "36012aee79be9394c531e8db371d8f7b8d8ed3c8161f5e53b501360646b5404f",
+    "src/rtpa_research/diag_r4_adjoint.py": "cd75a56b196dd1b7f02a0acd18cf33c9df2e30471ffd954811da4290f2393c1b",
+    "src/rtpa_research/diag_r4_cost.py": "a18fbbe1976e2f655360fbf0554a59e951e9d5b022ffdfc9219db8c6ba0682cc",
+    "src/rtpa_research/diag_r4_execution.py": "77ee439c16ae0245107b190ee381e41f07c8d58700e7b794216de545b7d4294d",
+    "src/rtpa_research/diag_r4_repair_execution.py": "d586e8c731c08acd33e15eb579824cad249166b9848f32d699ba56c8e4c603ac",
+    "src/rtpa_research/factorized.py": "d6947df1f614b9dcb7372878e7fbc9e05626ff40c7e86c2cb80e819ae560e08e",
+    "src/rtpa_research/io.py": "9bfdd227e7db2626abf39418a0973e443a801a4657a7626385f536f6ede7300f",
+    "src/rtpa_research/layout.py": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276",
+    "src/rtpa_research/operators.py": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78",
+    "src/rtpa_research/reference_encoder.py": "d7272e7c4d600da3cbfcb9196be140afdb08b0f33c6751d51c744b4429ac7b53",
+    "src/rtpa_research/resources.py": "b96099e34810d68146be1e49862a38907458e9757dba0b6cf225c40cc94b457e",
+    "src/rtpa_research/runtime.py": "afbfcbad6f18879151a827a1473869ea60c5d80f1f32689ee408d7d08cb6f8d2",
+    "tests/test_calibration_r4.py": "ed61795da644e60372c386b27949aeacaa82e3d0629f5f3ab1d3e7c28f12b446",
+    "tests/test_diag_r4_aggregation.py": "29fdf2fb219ad09e5683a21cd98a785e42b1e35080623435815993b1ad181f03",
+    "tests/test_diag_r4_cost_analysis.py": "7e49e0cb01ecbe5904bfc2021ef735aaf8b3e6a8317fa773e8b0ad4f821c012a",
+    "tests/test_diag_r4_cost_renderer.py": "f57dd8022438de8266c34d5b519d41fa09a6437e990302729c134e8090314367"
+  },
+  "published_artifacts": {
+    "data/benchmarks/diag_r4/codec_selection/publication.json": "7579fc9ed6ac06d9d4be578515316fde3b99ed4e67a8f202b3c19ec37510342f",
+    "data/benchmarks/diag_r4/cost/publication.json": "e614e4ce35c3c9c04e2ef143bfb39976186f6d54b688bd6f270b156672253707",
+    "data/benchmarks/diag_r4/phase_a_cpu/publication.json": "810615b122798c7c95f509e2ce2464743585ca468da30fdd9f27dd179e010d00",
+    "data/benchmarks/diag_r4/phase_a_metadata/publication.json": "e198a2247397ccff2bf60cf57305b5cabef748f1772ce3b5101a4de838c358b0",
+    "data/benchmarks/diag_r4/phase_a_model/publication.json": "d6b199fda76f935c0dd3e30af726384a3b459821cbbe638c2f95f844be6a6b18",
+    "data/benchmarks/diag_r4/phase_a_repair_cpu/publication.json": "09a23f2d48749fbb6bce650dc73bf2d6db2e4ba4b9680abdfc65a20130fbbaee",
+    "data/benchmarks/diag_r4/phase_a_repair_cuda/publication.json": "7644e541d9c4ed101b7f4ea13d6b4c5be9b2475a44543cdaa2fa3ce4e138ebcd",
+    "data/benchmarks/diag_r4/phase_a_repair_model/publication.json": "0c7c10f14ebbce71c1d46d575832ced61e39cd7df5a0bfe747849fa91b63afb8",
+    "data/benchmarks/diag_r4/phase_b_fit_analysis/publication.json": "4d1445902cbd66d5d71093c7d55cb92c1cbe0a8ddab2efe78e2d3f5e6879bfae",
+    "data/benchmarks/diag_r4/phase_b_fit_selected/publication.json": "cac3eddc6c75b35485dadbe92e0db6f2013b71a22645b8c57c3014befc2bf209",
+    "data/benchmarks/diag_r4/phase_b_local_replay/publication.json": "c222af6e00ae9a6c060f94c4947607adcd508763aa36d8ad68013373c5b99ad1",
+    "data/benchmarks/diag_r4/phase_b_model/publication.json": "533558945304ce1bcd89b62e7562bbf9160dff33753fc4c6d4756edf4f44ff53",
+    "data/benchmarks/diag_r4/phase_c/publication.json": "a7256d86113cf351875b747a9ebbeb5f7dbbdcae63a05f95c24ff729b71fc460",
+    "data/benchmarks/diag_r4/phase_c_real_pilot/publication.json": "126c0c58e1920aff7f0275f9f6a5c612587fe74a2e564057f4c09c79856336db",
+    "data/benchmarks/diag_r4/phase_c_selected_layers/publication.json": "71659f70c16bf90a7af1a9a05fe421e4ffa953d5dcbeb328c5b505d49a611382",
+    "data/benchmarks/diag_r4/policy.npz": "f79767579e27368e9f1ad43f117dd962d618523ad4462a7dfc03bc66ac3bcb20",
+    "data/benchmarks/diag_r4_runtime_ledger.json": "c4d6c6b8f9faa799b252adcb0d0deef7196c94f2557c20105516a2f69614e1f6",
+    "results/diag_r4/assessment.json": "c734e0fcddc37bf7005142ce4234641deef5ec2b3a208506f7ff8848653df54d",
+    "results/diag_r4/benchmark_tables.md": "87d4c57e7024095f40980309a4c369760895e45117923976c40a0a581ff18c36",
+    "results/diag_r4/claims.json": "e98041c6e0690c30dc6267db341a2dd3fb9385debb55905efccb978cd5b1017e",
+    "results/diag_r4/cost_tables.md": "ad293edf6f8ec45ca566c2867d16fa33a719df977acb26c85542e92b2bd1f72e",
+    "results/diag_r4/execution_accounting.json": "17396b499b96ade76df0d8a936da7e974ede5cd7667ff6909e701b6990b91fa9",
+    "results/diag_r4/figures/allocation_contrasts.png": "df8a62b94e99043faf08faeeef7b1ba06084fdb4bc2a48325bcc74846c4631da",
+    "results/diag_r4/figures/codec_mask_dev.png": "aa610e0be41379760cbc7253463d8e12ee47701ee29946334f50b7f77831472c",
+    "results/diag_r4/phase_a_cpu/summary.json": "8d05f97b1cb10cfa3d57de45bedce98891e4ec78953f30578a8c10464bee6d91",
+    "results/diag_r4/phase_a_model/summary.json": "2f97e16d3df5819fc1a956bc087f8890152e50a9c96bb7c322db808926ffc2ac",
+    "results/diag_r4/phase_a_repair_model/summary.json": "241c189810c7c6124f55720fcd6abf788d325168e47eb5821bea2f88514a07e3",
+    "results/diag_r4/phase_b_model/bootstrap_draws.npz": "5dce7ff08c6e88cadd279fbc099480553072d177cd2ade481f6597d977db1d97",
+    "results/diag_r4/phase_b_model/summary.json": "071d903fe162caa201d780e1ce6cd8e5c98031cb2cc753cd6f4800224c13a4ad",
+    "results/diag_r4/verification_provenance/initial_check_diag_r4_public.py": "a7741424768f5a3909fe0ee0d1f78ca10a24f8fa4cd28376e24267478683f5d0",
+    "results/diag_r4/verification_provenance/revision.json": "03f24db64750533861df0f987132cb5dd224bc3e84789e332e871dac056a7dce",
+    "results/diag_r4/verification_provenance/initial_manifest.json": "4bdb1f88aa92f08f9526f442f4c5002246c3ebfd27dec82002a432f0a7b865ca",
+    "results/diag_r4/verification_provenance/initial_test_diag_r4_aggregation.py": "f928239ed2feab550b0c54a3b70bd7ba721887f151ce647179438bbc6efa9c10"
+  },
+  "expected_summaries": [
+    {
+      "stage": "phase_a_cpu",
+      "kind": "dev",
+      "path": "results/diag_r4/phase_a_cpu/summary.json",
+      "sha256": "8d05f97b1cb10cfa3d57de45bedce98891e4ec78953f30578a8c10464bee6d91"
+    },
+    {
+      "stage": "phase_a_model",
+      "kind": "dev",
+      "path": "results/diag_r4/phase_a_model/summary.json",
+      "sha256": "2f97e16d3df5819fc1a956bc087f8890152e50a9c96bb7c322db808926ffc2ac"
+    },
+    {
+      "stage": "phase_a_repair_model",
+      "kind": "dev",
+      "path": "results/diag_r4/phase_a_repair_model/summary.json",
+      "sha256": "241c189810c7c6124f55720fcd6abf788d325168e47eb5821bea2f88514a07e3"
+    },
+    {
+      "stage": "phase_b_model",
+      "kind": "test",
+      "path": "results/diag_r4/phase_b_model/summary.json",
+      "sha256": "071d903fe162caa201d780e1ce6cd8e5c98031cb2cc753cd6f4800224c13a4ad",
+      "bootstrap_draws_path": "results/diag_r4/phase_b_model/bootstrap_draws.npz"
+    }
+  ],
+  "publication_reductions": true,
+  "comparison_rtol": 1e-12,
+  "comparison_atol": 1e-15,
+  "prepublication_comparisons": {
+    "initial_A_comparison": {
+      "availability": "LOCAL_ONLY",
+      "sha256": "eba951322f297838add3ed4875a81be2ed88b74bfb030ea1f2c819aa628db27a",
+      "status": "PASS_INITIAL_CLOSED_PUBLICATION"
+    },
+    "closed_B_exact_comparison": {
+      "availability": "LOCAL_ONLY",
+      "sha256": "66ddb6891d2bf8c7edf7d1208df9995d60b7b5a621221e4b9917f4a184b7ea70",
+      "status": "PASS_CLOSED_B_PRIVATE_PUBLIC_EXACT"
+    }
+  },
+  "prepublication_original_budget_check": {
+    "availability": "LOCAL_ONLY",
+    "original_byte_sha256": "34a88e63c44749f5d40a8807de10efe5e5cf10f94de4bcbc364da76cf35ccdd0",
+    "ledger_sha256": "c4d6c6b8f9faa799b252adcb0d0deef7196c94f2557c20105516a2f69614e1f6",
+    "status": "ORIGINAL_BYTES_MATCH_DECLARED_SHA_AND_PARSED_CONTENTS_MATCH_PUBLIC_COPY",
+    "public_verification_boundary": "Original serialization is not included; public checks its declared identity and canonical copied contents through bound accounting source"
+  },
+  "manifest_builder": {
+    "availability": "LOCAL_ONLY",
+    "sha256": "0e1a2dafc9dbc7fc3b0ab9238021da577c4d009ddb4490431748c2a721b81e30",
+    "role": "Hash existing reviewed artifacts; no expected or scientific output regeneration"
+  },
+  "claim_boundary": "Mechanical verification and closed coverage are not scientific success, universal numerical safety, or a promoted default.",
+  "publication_wiring_revision": "results/diag_r4/verification_provenance/revision.json"
+}

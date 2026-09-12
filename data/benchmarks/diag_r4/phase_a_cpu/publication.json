@@ -1,0 +1,3397 @@
+{
+  "schema_version": 1,
+  "stage": "phase_a_cpu",
+  "scientific_status": "COMPLETE",
+  "curator_sha256": "c2fbaba51bb06f65ab4ccfac6ef55413cd6eb678f9e5e4af328f8ef831deb738",
+  "files": [
+    {
+      "path": "cases/train_associative_recall_0_L0_LEGACY_DIAG.npz",
+      "sha256": "215ec2a05e21bb69bf0d1a39278ddcefc75a64252d45c0e7d2051dceb71ab32f",
+      "bytes": 762290,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_0_L0_LEGACY_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L0_LEGACY_DIAG.public.json",
+      "sha256": "f6b0c2e5f01445757588d973e75935991eac69a186dafd508878f289e0e1af24",
+      "bytes": 86585,
+      "byte_identical": false,
+      "original_relative": "cases/train_associative_recall_0_L0_LEGACY_DIAG.json",
+      "original_sha256": "f0c317bcb5db672bc9a575c111699d22bb05177fd4ee4225e6a3bf1e72046b58",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "1a785489c8f45140fba34762bb7b242a5213f6039a9010147db1114225511544"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "1b39d92bd03db83ec5b1075889a95a097965f299fd25264b43364e6d04332e2f"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "5826ea18d8887154d490f5ab944e83a9bdec60396779dca8d321c84d50f13487"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "f1993dd7afc1021bdc9b9146f8e99600d9df5b98ba6c53da324bbdd5b284a54a"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "8c35b183555009f1035f52200d60dac6a6ff4c2a8c1cfbecc4d8faaaeb1ecded"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "fb3456c434c071924fd825fe3f9ea8e7845c062f457388de2d1b979f848303d7"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "cf01a24dee7d78959f0f0bc8d2b40fdce42ae08d9daabb0043a7836e73a4b21a"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "8f4fa0c42a760ef674e64f9e867d25775a4ff42d22af87f83d4c34e100359ebd"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "0b908987538f2de5247ad8c499df4a65136aa99ea09a0cf699718fde63009583"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "bdeed606c84c2ffbcfcc89da774163c57f85e83ea452f93c733fde2fe9c5347a"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "968c819d4de6ef0092179f67951f6a11bf00df67cc248b0993fd8443ab08d24d"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "2a4242707a68c01c6eeba1d59754daf805e0f6ef7b3b6027b8d92b853d90f805"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_associative_recall_0_L0_R2_DIAG.npz",
+      "sha256": "69c11ed5636ece6042d3b6c031d57788b1d9db6a3bebc1c41350d012ce99c984",
+      "bytes": 762260,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_0_L0_R2_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L0_R2_DIAG.public.json",
+      "sha256": "8f899d8671a0e6c922bdc47a70d50483ded48b16abe5583eed5e56339e762e02",
+      "bytes": 86797,
+      "byte_identical": false,
+      "original_relative": "cases/train_associative_recall_0_L0_R2_DIAG.json",
+      "original_sha256": "3ec63cd64255de015ffc183381babaa357c5950c647918a363cbe992b4f66f71",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "bd8d578503dcda230025438b12f38c3469a70fb03075ee48598fc86ddbb43e8a"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "bb82f73964a3581dd7b62b5c357f233677ee00998c93b77744aa73f3c77dd255"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "2a96e744efc3d2813789a0d727a2fd533c9e1a1834354aaff7c0f9a81e49bb8f"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "c53565d80de12ae79360c6d43ebfa787371bc6132c6a69b21dae7c9f6750b75a"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "14c6fffa3c1a096bcf35b9788f8bd3a0186a422d1d0fed3ec6d2336d708d958f"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "ae7210b12b68852911761080cabe4a85314dbcd9ec2454ca93b6dc4fbb705e27"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "a71ff42433a273feac1dd00c4b698340ee7ae7ec72452b5ccaaa77fe0eaf918a"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "eeb24295d6a947a4adb72f8f5cb5a87741e3630293838b457b839a4ce0823bda"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "9fd3c3f023e4980a4fd630edaee9125f831e0a399f7e38988b1b0f14be638a15"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "d5502fb69ee58cecb1a4b5ccfc4eecbe3a0f047faa1b3ceb29a2f6da74fba14a"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "d500421ceaf207d26e52033cc6d59010bd462f049fb1931e56edc0c298bb47bb"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "7bedef04a44f8372d6ed1a17e5ca32ec776ba8eb0a905a087db51900804e9886"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_associative_recall_0_L12_LEGACY_DIAG.npz",
+      "sha256": "9f7cb2975808d398b222783bd943e47d9d2b891576e3e8dca6758cf34f5a8304",
+      "bytes": 761810,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_0_L12_LEGACY_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L12_LEGACY_DIAG.public.json",
+      "sha256": "c45dbcfbfd84e6cf22c20d7105293d85a4b7210df1a63df8e430f4275d15a097",
+      "bytes": 86665,
+      "byte_identical": false,
+      "original_relative": "cases/train_associative_recall_0_L12_LEGACY_DIAG.json",
+      "original_sha256": "5f7975d4a207e335554c6aeea0756e366f2c213fe8c6c3c951d96de7acd4d336",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "304a42f8423514a4a523420bcccc001285aa1ca0be24cb1acb971465f0969963"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "b7ebd109f48fc9b17daa9c320ead8780bc8221db9cba808cad03ed8e1c492b83"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "f1dcb0a73b16966d0eb3e4eb90dba42a82eb94d247f35a0433fa36dc7abdb27b"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "a61b8a761513614b4690e406e78b3c5e6b7a617089e76d2540a4ce3bbc0080b3"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "d902d26bb8ae9c721a9d1598110d6ae35680b5fe4fc6d9d1d033885a01f66631"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "f1ef7e15ed106fca1996271eaddf7c721c18513b9501db4cb556bf660025ce39"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "b4dfe7c7163ce4f2c32d742692977753c2cd48a6fc2f6c37d0cb683cf5b9915c"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "2c17813bf0d296c8d40ae7473212f33be4a13bb328da4d5d5d6da8d589955791"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "324be5a4eed4a71c4a8c504a6f97987ad0ab28e85778a2e8a3330c62189f50bb"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "d50f920e8ad7f6d82347adf260e9624ed066d6d5a2390041a050ac3515b8098b"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "5c65fd5c6bcbc26f1abde00f51743818fab0f0626c855296d0cc6d98f93a2aa3"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "a3b34a591a3d4e8aaa05274db1a4cc0db7edac92b4b22d77245e017afea05cdd"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_associative_recall_0_L12_R2_DIAG.npz",
+      "sha256": "e20237b804ed2d3d836fd72e45729ffb9fd8605077e295929700759bf1b16389",
+      "bytes": 761890,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_0_L12_R2_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L12_R2_DIAG.public.json",
+      "sha256": "cb917241c99aeb13a680cd71bfb7dbd1d0d917a399b4bfb3c9de823ccf9ded02",
+      "bytes": 86667,
+      "byte_identical": false,
+      "original_relative": "cases/train_associative_recall_0_L12_R2_DIAG.json",
+      "original_sha256": "b9fe16ecace3d3fa79c722cee61ab7fb7aa41ae419ad17e20eaec41201940f4b",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "ba12980efbc4d43cd69b258eddec27087751a67c8729f1cd737fc4b31fd9867a"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "eb69261f938749f1cecb67f6e73dde148da317b2bc50435e8dd05453418ced7f"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "0610fa4bcad933b6c6a9efe8999eb7a97d2373091932f68a09d37edac3d81fb2"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "8322898d86de76db9b55d9cee55fa5b698642891919f03a548c6b0e188e44826"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "d930f8989823163d0a7d7f9f95f78d877adaa9ed4db36f3ff4cd804e6f5c1f4c"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "9432477f0bf0888e7bf6d131290f9de312224df7346f1b3c6a2f5f05023e65a5"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "a7ce3111a3b452d266cc9d5967799d5ea3d69698a9130749eca57090d793d3d9"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "2b9c0d27c22a7416c851b344adda6e8b05559c2f3e1df0fa5e58c23990ce1f72"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "b33785665613fa89aa070ec73b3715779209f3a31b52208e1bf1e3b08ef32aae"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "d5b590652dc83a14b90a207f600d25a69674a6758a4be202563e7e068749f971"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "77eb7023199b4107741104c1d541be6794b1f7c4440ace5a2004d9acfc340180"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "e67f4e3f693e9b43228227f04df36832527491a5a96bd7a2c18406938b43c8a4"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_associative_recall_0_L22_LEGACY_DIAG.npz",
+      "sha256": "032ac87c79a3965793aed6cb13d3ed3176d48d87dd6316d8acc9a31848c114c2",
+      "bytes": 761389,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_0_L22_LEGACY_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L22_LEGACY_DIAG.public.json",
+      "sha256": "50569b95c122344a19dc0104cff672e1a6ebadd3e5845ab7e52d83fa16e8b645",
+      "bytes": 86265,
+      "byte_identical": false,
+      "original_relative": "cases/train_associative_recall_0_L22_LEGACY_DIAG.json",
+      "original_sha256": "2e499b2ecd144f82a5aae897b874d0755d565933ba3c67c3689f46fecaa8df83",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "8ddba7d666fe89496a29a047a6fd384fcceee2644d608b2a54279157c29015d0"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "3c350cb73c6a1e17b8519940f151540d512694e8412af9af92b6ae8d1d15d9aa"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "33ddab8b8b819024d6a435f0c29561de504e4d69d86b76210b9b8398f49b7e39"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "a9575e3f27e40165f1b801a2c8e71c18e4add6d1b1137b6bb56d4a189e32c6c8"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "7780afc8a778ebbfc2e618a81edb7e60a562bfaaf3c008437c33004d7366029f"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "295e4e9450b74d9896dab354628226b298963d7f97fe8351e4dd4d86e7617873"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "8cfa0880e1e763bcbcc647b2930689fe01885344bbc8626376dbebca9872696e"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "140ffe20739310920b0adf461b0d75ca83d9fd290a546a5e85d742cfbf9c3f31"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "08e4d5ebe99066a1d4ad3c8f19594259814b646ff626a730b03b4e4659ea22f8"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "2a257f66bc4c7fea9063041fb76dc067d4334a779d37982019674b7e049fee2c"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "10668c09686cfde7fece25de55e3b7ccd87d6f68b432af02b12435270d52713f"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "8496e9fd460a5010d8124da613f641b5ed9969fe7624b1c55ccbbd9c4f72bf52"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_associative_recall_0_L22_R2_DIAG.npz",
+      "sha256": "e0f2aea48e861c24ba1541ee04bb23da471cf0f1bbb84263f21389f2f54ada32",
+      "bytes": 761229,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_0_L22_R2_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L22_R2_DIAG.public.json",
+      "sha256": "e901a2d9e2ab60bf0ee1341e1ed71224676e920a4954a6ed0fe06301a6a2de5f",
+      "bytes": 86234,
+      "byte_identical": false,
+      "original_relative": "cases/train_associative_recall_0_L22_R2_DIAG.json",
+      "original_sha256": "a73f26da67ce83761c01ad6bddceff1ff53e7237ef43e13359882daae0f4b849",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "de1e86238fee0ec4eac462dd17cdea0deb4846be5a18c654747a083f92e4483a"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "ad0d2f127bb500081b882aa02b883c88ace6904c8d6ea0a4f8167827131db7bf"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "a486b24d06bed902cc82ba5f41e5a12caa0dfd5ff696158b01bfe065dc5d2185"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "edb093135f37836ff03fed0a979b986b7ce6cb9b3d89c231df526a54fed3624f"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "53c468677fef4950dcbcb29841799c76a78edde10b7017e0fb12e87d882c0a6c"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "e31646238b93f800cf5118d73b33e8b318ed6539ac8edc657deb7938a5bafa68"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "ba320ab1017e5e7ee6ff18ff100fba10f0676e5bba82e8733fd0e12e4f3d53ea"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "e99275f1aab58eeaad7cb3a8059b9081497a83f6cfd04a0f34112795b0e7e26a"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "00c032c4b755cf5d790ee41c2f591efed273edac682c609f7c8abd9cafecdca6"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "9b9ba311b346193da11f448bb42d80cd8202aacc64dc91e7087dae77e0b062a1"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "ad20e77fe7460162e5cc2c66608c3924f5448704a58eeb4b47477d37db51000a"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "ca8d6e6c25b2b23e9d95282468d6f9b28b9f25d255d9cb14268dda78723e99fd"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_associative_recall_1_L0_LEGACY_DIAG.npz",
+      "sha256": "8876254e429e37673e745adb64ed1234c2fa9e0fa2e54c999f50986d42e7082c",
+      "bytes": 762087,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_1_L0_LEGACY_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L0_LEGACY_DIAG.public.json",
+      "sha256": "0ff0725993a5b8a54f8a82249e1824389db78357a5a4cd65d6626344a30f656c",
+      "bytes": 86632,
+      "byte_identical": false,
+      "original_relative": "cases/train_associative_recall_1_L0_LEGACY_DIAG.json",
+      "original_sha256": "057d316b879188df91a6383a072ea4490d6880bd91e7fba3bfd4d01fb51971f7",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "f09021b825fe4f00f458cb7386f0c57ab5e720bb2367a6575c9ef8d7b601f48d"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "a4e60c0a7ebef0f65666a0ab6ba6e0847d5850e15e944831b337e6958fe16146"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "acbbd4dc773e1c72b3b2dbed4c9c664baa863bd0758bdecc51a03c3d61f70a65"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "dfc91aa3c2ba5295fafd4551247d51afa25a84574aa1ddb1edf90282d6c7f828"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "d06d2878a384124c57b478a2b831363b9c22997c3fe236b2bcfb6100994e360f"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "079b635a348f8911e906263142d859a5715c5c8763d7eca271cc2bca3de33d22"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "8985351e020f5d59318ec044097327c7076c65830b0c575cfc8dc42908a49f42"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "a5cc3410cbb050b1670a6f3ace3d0e87a51d222318694c4b1b9c83df4bdd4387"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "6f91f2ef1dec8f359f1164a7a4399798b12942188ae7e86ddb8bcd19b7493c4b"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "ac7dee86b06d6cb614e2685400b998d3452df839d18d1843d1b2d515f590a773"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "588d7d721bddda3e327434709703082ca1f10ac1c8fff5cfbe5a99e3e7d98f55"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "64e9c5127cd9fccc82320bdbbb2579ce52a3f07dc186e5574554115edd0d103f"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_associative_recall_1_L0_R2_DIAG.npz",
+      "sha256": "9504ec918108fe5399ff20131ffef81e4df73d560ef21f5001edbe190a81b86f",
+      "bytes": 762169,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_1_L0_R2_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L0_R2_DIAG.public.json",
+      "sha256": "ea0e899278e475d74e35fcecfd341e38fa6cea8927718d7d70fb6351811fa18a",
+      "bytes": 86619,
+      "byte_identical": false,
+      "original_relative": "cases/train_associative_recall_1_L0_R2_DIAG.json",
+      "original_sha256": "af877854158032cc7235e6667120f879b35fa14434f26a26562f9b1d072f1432",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "d552fcf77a3f16ae90cb429090c4eae94aeeae79cb0d001895c3fe3ca87b5bd2"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "1ddf58e066df2f016f42d940bb0facdda1143c65561b5b77d9e91d7bdd3bf56c"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "91da2bff95ebce93dfe4f299088d5b5d0a244bd53bafde9f1a41eb1ce02787ca"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "a16de0d484a50d654f3c284bb21e7bcd55a26c843dc6b85db9e6e0f266a03c4a"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "61eca14a7833138d6f92037120a216556927f9d0346b14337cf836cd7c26f404"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "0df505f8cce47d73dd8208494cc9e6fff8a9fc1af275d90b7767f4f5d2a1812e"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "ee484de14b8bd8903481e250f8ef9bfc1f2ca8b900b52f3be99c2ab07f65233f"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "ba153a9e354a2b9e82dff32bb649a7a0862588b17cd453ff6b21839b755f642b"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "772f60a480c37afa9726e67f9cdc34abd44a3dd2314e504b666db9036bf3e428"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "47a409cbc14af3a8ee18d10170ab8605496aebec72c97e2cd19afc4d99f6369b"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "5273c70965143032bc83dea31bebb2f7c7f49c64555fc59f54c02a7a304d4c67"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "3f90f335d86e01535a667c31c6fa77010d3256914835e57ad95765fc02c89e78"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_associative_recall_1_L12_LEGACY_DIAG.npz",
+      "sha256": "a4001034f7915e89202aa07ff003b46b07f6cfe270214e7ccc9b8bbc31d31545",
+      "bytes": 761844,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_1_L12_LEGACY_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L12_LEGACY_DIAG.public.json",
+      "sha256": "fa6c3b78a9bd326749e928c05135b69692ec9e8e50151cd5cfd6c5492e7e5086",
+      "bytes": 86329,
+      "byte_identical": false,
+      "original_relative": "cases/train_associative_recall_1_L12_LEGACY_DIAG.json",
+      "original_sha256": "ed7c318f082ae1746a080a62e801a488370f94fcc3cbe0169d206d9bef6915c9",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "e7cd542050e04d34ebd0e8248637202284c8843775f7d1d5358f9bb0c5724537"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "3c619b68950202ffe29e159ab443afa397fbf56bf14804c17531da251ec17b27"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "e8ac3f66e8171348a25f8b4e81e9c588f1ff7f70076c4e0b57351e307f892c61"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "4e08ee965f2ed6edeca4e951058664525a85ed64dd9ff445b442a91f8a1ea278"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "47c989839450a77e9cfcf7c40047246dd1df37d33e432657bbcdbc8fba06f371"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "91324f670bc6b84b3c1f2bdb3e0aa2c30dd679b68cf7665488befcf0e6613010"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "2b3694eefa310f70a04571d089cc5ae14f49f4772f002175ff35bcf080bc4514"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "6b2648f55d23b64017ca6c8a3b1b94da94af229fccea0ad60391aada80fc8377"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "3eca96a0bf50efa511b442b3e5b9792084dc1235fb26404dd12e57f6df65dacf"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "87e165019b506a314b3b844e3a66f0477fdf2d77ab96364cb32a2fff4bd7e7e8"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "3467536555bad193041e6953e454eb2e1511acae9cdb654010c9eeacbcd96d3a"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "8da3e601c28aaf161c00ee79def1f712cf8eab83c1aacf873c7de49778d07538"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_associative_recall_1_L12_R2_DIAG.npz",
+      "sha256": "0872673ac09d21ba335ff59aa42b1ca0d74715be05ebf7efb3b46bc04916afe1",
+      "bytes": 761923,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_1_L12_R2_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L12_R2_DIAG.public.json",
+      "sha256": "c68cb071ab05e7a6a86ec779997c2f5b045a6a4bf5c3e2ed1434cee1b808cb7c",
+      "bytes": 86307,
+      "byte_identical": false,
+      "original_relative": "cases/train_associative_recall_1_L12_R2_DIAG.json",
+      "original_sha256": "2e1b54f7e1e1e85d2abb5104d9eb1cdd7269ca9b96ffb7cdfedef48af28b5d3c",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "38e51378c281181c66acf27f73155bfe3ee0994e5a8a04f4c444aadb2479d0dd"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "75ac24ac19b98e77ceed4f3672139ac72deb1e9a4a89a5ca18620b3be856c498"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "9f3c61194cbe99d59d2834dbb3b82359e844765fbd139eea74b534b5468d0141"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "24b6cc0c4da2fbeadcf5da689fe05cf448afaf6c9d3fe1e437ca3017654a92a9"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "f31a7bcb7a995be673aa8110725854ec4da6bf4db4fde50a6e45d1fb22955027"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "2b8c2e3e72f1e2adc96c2beb71f24182b48ee4a354ce530911266dd1de3c23da"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "77d4436b86f1be57c502f26c046db6862144e53c7dda3e0163444f741db0abcd"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "f8fbddb44185f0bda2fb517acb5a4ee5e26727870765a767fca4a6adaf58ae26"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "fe0daefa99546d47b016f156c70c6c1ed8c4e279448d47a266de04abe04d2fb7"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "3f3831461109db6ec93f72e94efa92839c534de5ba3e4d762db28496735d2f0a"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "4335d9cbecb4d7122ce6f532b708499ad1e65460cd566bb5ea04aa9137345ca9"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "2ebd30c956403c0968cfd5b7a753364cc92e9ad89b30cffb7be782cceb412b5f"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_associative_recall_1_L22_LEGACY_DIAG.npz",
+      "sha256": "90308ffcd97874bcb8bbcd436fc0ae145e6ab9fa93d126fc3cf58132112b57c7",
+      "bytes": 761427,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_1_L22_LEGACY_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L22_LEGACY_DIAG.public.json",
+      "sha256": "4dc6eb1b6815c02ed2e5801c3079d6f0876723ec9e0459e35297eb8fe19b4679",
+      "bytes": 86274,
+      "byte_identical": false,
+      "original_relative": "cases/train_associative_recall_1_L22_LEGACY_DIAG.json",
+      "original_sha256": "a3f9a302c630afa4688e43618c59c86a97d0d0dc7cfbd266c5c4ffcbbd73678d",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "3bfd8bfafde53f6510ad03eb9771eec5cea4bb3784d35c97aff5990c4592a354"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "5da3a7288c09005ef0361608f908e07544e9bfc98548a6cd8be657755334176d"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "baf9144f81e7b0c971e815558aab38cb2d67a5f78fce7b21f0c70d5119d3ecd7"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "fee18465cc508639e064ad27a92e57b7abd120ce64131f07451a4e02900e1365"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "b13579f379dd3214600e729646a175771185fb081556d82c1733a6415f9d479c"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "033f38c5f3d7ecaf291a28ba3b3645dd309121af5b87d47b85cd358be3e2b434"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "227629027fdedf69d2d0fdcff6a5d881369d4b2289e82ee868868b725b53705e"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "6836f18a1fd7107170855cb43c7e5f580839c5eb158d46a297111ef11974ef73"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "31c5ba06c1359a801355ff2485c0d017603e0e804974f8717825824265d790c5"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "595985a77cf438b2e6c4ebcd3c1b8caca0bad89aa2a38fafe450bb2d0766cbd5"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "efe3d99c643651671375eed1a1ecc0cb9ad6ee998a91d5cd12f680fa14872236"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "c2c850245a29e642f553e2106ad2592332ae93d85e67deca170db7a80d53a57f"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_associative_recall_1_L22_R2_DIAG.npz",
+      "sha256": "230f746ad61fade468df68373bb1f7d56e5ca6a415cff56b9f152bb0eb35681c",
+      "bytes": 761277,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_1_L22_R2_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L22_R2_DIAG.public.json",
+      "sha256": "46808c5d85f86f6c4ebc8ae975bc9a1e94057d183a41d682de5180b7425985c2",
+      "bytes": 86236,
+      "byte_identical": false,
+      "original_relative": "cases/train_associative_recall_1_L22_R2_DIAG.json",
+      "original_sha256": "89edaa5c1bf7ba73e148e006feb87b7124bbc7cd0868449d8d1448afa482a98c",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "6b9b9d0b83631f2dcaae467a719a279b163f60bdbe23598485f9e22342d6a005"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "c15cf49a40ecc989c6a962eb1fccb69a6bb49a0d100e65e2a0d4a608dc8af7b5"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "02a7ca3b1b2c7cfd1e2f0c29f688a79bfb2081830c060eca155b4ab7b678a0c5"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "08e63dc79cf59ce21762ca92cbbd73bb3c5a42c48c8236afcd9f7f5389ca7151"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "728a9362171587308ed737d8469f8601abf4802cef9471d4870dd6edaf6a5799"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "b89f7900fe2054bae4abd13c462de994e20ebed787f61dd8d76df69ce6597cc4"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "736aa720ed598012ef0b0a465f23c116b6ec845ed72b6d79076718d36e24bbbd"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "6cbd857bb5fdaf415351f1919a5b21c0409373cda53bc58c8306286d9f10600c"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "4837133d47c500192960b65367159211bf29cc922f75289c25d5a261159db17d"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "8318244dafed52b6002cc6db9a8a2523859dd38c0066b5dc6f98cd57658f8415"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "35a292d1ac16a9b954541a797733c6a1fcdc048daa80e7c8fb67198811be9d05"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "0b6f8d12dc73ae872fa1b04fe43083917e43885968acac2d1a8ef7e27ed1201d"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_code_0_L0_LEGACY_DIAG.npz",
+      "sha256": "73640f34c67a7ec2f565646b69fee159657a310ed927c4bedfae4321c482e4a6",
+      "bytes": 762241,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_0_L0_LEGACY_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_0_L0_LEGACY_DIAG.public.json",
+      "sha256": "32a92da15c7117881e21322d26a8ad86abb5614ac90b73b137f0031848873a7a",
+      "bytes": 86558,
+      "byte_identical": false,
+      "original_relative": "cases/train_code_0_L0_LEGACY_DIAG.json",
+      "original_sha256": "35705b41cd1b785c2ad3f4dbff24f48a2badc8093dbb1c593b4f2b874ea3f20a",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "9cf764c84d6c17f4a6b05ebfee924322154240431cb4fa8b13ff1b266540e408"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "6501b420cfcf278d89be82c5a370cbdee753a487abcdeffacb9f5725ee8bfc1a"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "63fd63b3a2dacc0490e0955800ed08de8efa841b26c89a4c9c878f4cef245abd"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "a4a5d0840f0707d2b7de2c3e446dca5a7bb8cc51fdbd251e8a0277f2aafadfb4"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "71fc700e0543bfc216d3c7f163733514c520abf49be8ccacfb254d7a5cefbead"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "087fd40dee845db856daed2b0538ee6cc708d97cf4a22f3e126cf7276856960a"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "a6bfa93b5978733f07d38cfcede02a0e09a3753640b559e58f59caee2915b47d"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "523174369ad847a62ef7adfcb7e51b20787aeecb0301e727769725c02195a38d"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "47a5aa3e925a3e9477c40b4cce9a34269d92b91176cada4fe4fadbe9c5f655c9"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "9759d0d01b29cc95803366280aa151c34f6df54b0e3ec29fece3dee085a717c5"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "722b07f8e0a9862885ef91628ff21877f628007207ee6411aca62606ea8b9482"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "54ed871eafd6da7ef8a5447ba71aaf0bfd9c9d421e5181e620c7a90469784133"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_code_0_L0_R2_DIAG.npz",
+      "sha256": "0a31ac29b7930f1428f2ef33debc7a3ac00348cb4b5e271eb066340b4ad07af8",
+      "bytes": 762283,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_0_L0_R2_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_0_L0_R2_DIAG.public.json",
+      "sha256": "456bd18e44a1a6dad6b884cf30d3fe9e612b43716b2bdefdcb2898ca72e61792",
+      "bytes": 86531,
+      "byte_identical": false,
+      "original_relative": "cases/train_code_0_L0_R2_DIAG.json",
+      "original_sha256": "4f8019e2fe49cf858213c7d8e5df800b5537cca0ce8165b5aef1a0748e89743e",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "50cf28d844a5b9552fb0c6a396b0f11f09316abd8bd41b9029154313d1d4a6e1"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "42ce3218d53cc6d89971ac5ff13c9d4ddb7cb30a780c5b356e1a6f30a15a9a2c"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "68e68f6989c2f1e9fe8f327580ad92168d0e04192b6abd2385231553fc99c1c0"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "5db8877c71fe1ff5dbd2fd0cd504db133d2ece0341359b8cb3f9ff7bcf255d6e"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "8c8efacef3834d5417d1c9127e73e12bf793c259d60cb597902e2110fe5e7c76"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "146950413a8a34677581c7a40a5af3e8ad673ad7a06d319ba61ef499a40f378f"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "37106f07ee4b605d5e22d336f7ae2f55c84e257ebb25c9afb6317a60cda43b66"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "97e32a8950d64282dfa74c547f7e9c34efea15aa73a9300f04fcb27db97f3de3"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "253aab9f4ca94982304c70978ebe928c8a1abb7a3a0188963aa9ce45fadeb7c7"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "d90c2ce46372e3b00466261d6687c22f1f45ddd7d227947d334dfae2ed14f64c"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "7ec383cfd51f0167260cbb930ddebaf64f2201b147459117d48c098749abd6da"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "41a9ae06e34e8991a3c2a9a93de8a07a5dd2e67f6c5f9ede0495804ca65b5fd9"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_code_0_L12_LEGACY_DIAG.npz",
+      "sha256": "772e8ac3ac579ff6b37051b6bbb929a530d705b815392eb3d5ea369a0b12eed7",
+      "bytes": 761974,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_0_L12_LEGACY_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_0_L12_LEGACY_DIAG.public.json",
+      "sha256": "f5c6d2adf95d1cefe139bbdadbb282d515547c228f4ea719012ce84b71bf49e9",
+      "bytes": 86356,
+      "byte_identical": false,
+      "original_relative": "cases/train_code_0_L12_LEGACY_DIAG.json",
+      "original_sha256": "94f9429e71688220cfd3a889fd3365093018bcab4e9a11d53980770b31e71df1",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "11b699c057ec991367a06fd089f5f4927e27be3ad68bc81f473e24109b9a3039"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "341b40a96bafe0f6d2dea58c5a46f5e9b48a4f7907dc52155f44b410763e2b7e"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "d0908fa85d6ab13f995e80fdb25616dd573631c8a94ab568371f819c61862abd"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "14801f9875f121775452453779955462bce110dc84375330f52aa91ab30b65c9"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "74ab97937bb5552c8787d7919da64080be52cf483eda99ec2011c15280c60cb7"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "a2ba4bb6f814afe24761428e23f2f7a1c6d81c71bd99fb4aab7491648cc39314"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "4eccdbc8304ef6f66d8b9a3ab9a9081231cc0a44a71b9ebe33781cacef580c29"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "8105840dc1054d1e388d094f9048168ea55d20bf9fde75caeea27f54f68bdd15"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "b75dedd6724c3f2af6e7264939489da2a38bf7b72940a611904459c2abdc935a"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "21c25dc6450675be4a6c1eddeb4f20a59f50f93dc059c5a13f7a3fb359864d7a"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "e73d2018f189794b3fdc0ff87d39c3a424efab874c4f28ea1358afcf4475368d"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "11e424802839d59f85fd296c9b83a2ea969e42d8466ca5c6c5951e14a2aa9a47"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_code_0_L12_R2_DIAG.npz",
+      "sha256": "76e3df5c386642fb0c1e7335547989a14d842915d96293e483c9b6bb0bf4d23c",
+      "bytes": 761823,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_0_L12_R2_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_0_L12_R2_DIAG.public.json",
+      "sha256": "448da2185324cf025ede60275f1cf25e077ccfd4bdfff1654079ab1029a70da0",
+      "bytes": 86335,
+      "byte_identical": false,
+      "original_relative": "cases/train_code_0_L12_R2_DIAG.json",
+      "original_sha256": "cc9d82382370435965926a37c90e1d12b6380b047e4d4e22d1a839e54dfc2e0e",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "d394943a9fd5de7b22a8e8205e7a768970555a6d60c568103045c57052fefa11"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "1fedec0e061fd01e97b0dd27a610466c6f06b2083fb24f3bf87273dfc03fe743"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "2944ca6166878370e0169d436b71f1ab92a32c191bee59ec26c66088eae2f168"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "9972abf89fd51d73cb434f03be749662d26b9713e9556fc83131675aba46dcfc"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "61c82a8dcac6aa334d12c01bfb2a59fba2fe9cf52e07740e52cb16992ee81372"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "a6e29c28395a2c7f9d9c21b2af3daa948d76f5bb2b319c82cfa4fe96503d1dea"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "532281e69e4139b97a9a2b92ccdaeecd728e8c96081426934f3ee9dc4a73f839"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "673f0ad360fe223a570ac57b9695528a9f581b4a5fc64c94296dcd245fb77015"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "16b569e6cf7864e65124181c92509fb34ef3b5fc423bec34cae30bf2640d5e68"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "3c7a83d5762c862ad6d622b334fc49ca7cef6c01f4890fea2b1d869dd2d2e7db"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "0b06597e5fc1c1cc6f630a279c92700634f6144d1e03606517a9ed5b0892ee27"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "16e9615aaf5ffdc6534d6de1009da017613faf310a79b1845eb741a40791b02f"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_code_0_L22_LEGACY_DIAG.npz",
+      "sha256": "05ae631d20420f4893052049ed7139b396c235d0fa9c2cc9f9e2fcae12a412b3",
+      "bytes": 761521,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_0_L22_LEGACY_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_0_L22_LEGACY_DIAG.public.json",
+      "sha256": "7e97beae9af6b36c4cd0a2557768aa9a16b5799aee43a80a183f7d39de4083ad",
+      "bytes": 86009,
+      "byte_identical": false,
+      "original_relative": "cases/train_code_0_L22_LEGACY_DIAG.json",
+      "original_sha256": "0dc316b74787aa833240dce68dac14fc26d07dad31ab09c488c9cd79689e8fd8",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "f13fae4e15414901ec5821acbcab5474814e5c6536ce32f5948c465c53313fe8"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "25dc384ae3f8db6ba14cc960e0f7cc1942c5dc613ab1245599d6f5644ff66397"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "4b8c4b88f1d8f9f723e37aebbe49d3dffa637cb1c17a0b5867bd9eb7a6899ac6"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "001658e873894249ab9ede4d3bd81f00f13e7b5590db040abeb5a2619a415415"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "6d33b7e32d415dc2cf66a76c53317fae617773e2ccdd66c23c7f9a81783fa577"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "d944b8f4f16459f9a001e1f240e430f54188a4b29339019d6f24887a795db624"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "fecaf38447f6805eb39547b264e70aacead3fdb92e08f5217a53f003df515873"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "048288ae7ffa330b069bcb0382087a8ccaa4ec49f25eb238d3760d1ed7dd9d80"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "f03b92d2791956449f1e9cacf6b5fef8a43cfe3bb4372629f1699b65bee9e6f9"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "3c490f40951b49ae98de5a36c0726bf64f665b98a3b75c2c502fd1b2b3cc969c"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "6cfdab3bb3ba326c023741ed028ae4f721424bba8ebb6dccdc853345cc5686ed"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "9d125e03290f5d6ef3a37feb23315c74c90d8df5bde0684d2f61136977ffc909"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_code_0_L22_R2_DIAG.npz",
+      "sha256": "a9d6d7f24e0d2c1c8b484fdfbdece9af2535513269456bd3c753e746fbf0d21b",
+      "bytes": 761401,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_0_L22_R2_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_0_L22_R2_DIAG.public.json",
+      "sha256": "1bdc5b52ed748be1f9ec8a61b121cf1da95f31a849a24725f65a47100f530c4a",
+      "bytes": 86067,
+      "byte_identical": false,
+      "original_relative": "cases/train_code_0_L22_R2_DIAG.json",
+      "original_sha256": "25f2090909c21cc262b553e90e7eb066c8a1ab014ad0d8dcf4d70f22818e37d6",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "8b6b71618056b69261775b1ad87aaf7679e43173f21655bcf2f762ed024847da"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "2681ab23e2aa73f46bc50c4b44536cd95862d13f2db838110d8f70a700c12ed0"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "416447c0265a7ed5b1f813d0ce945809144e7349d59fd82092b8a054a48c4ffc"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "0f53a2fe53bb25f35c079d5ae47d790e9d7756919a96ab57953b218a5fb76562"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "a6414f9c6d086188865058c932d0fea7722137f334f81b13e361cc9924897e71"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "1112ea8f6e7582ac4977c864e1934331af968eaa8eaada21165f8670cf40caf3"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "c0a0977db7623fc2c36409f57cd224917017e8ab14ccb0b7cdc30589b92d57d9"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "a7aa6ee42f5bf4cd2da1df1827c7a3a0f0dde00843ade5865cc3858d6e43e01d"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "c61dddb16a665c657395224906c1d68829e64160a46060a9c387c7f6fa8485ac"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "bcc09c73ae34382b6710e670135010a8c3f44199015045d7895fcf7f564ea29a"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "2c3d1b4c30fdc8aee2080adb2e4cb50311a4b910e39eff57732c07283d0c4f42"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "c1197b15555de7b62fcd58033dfd5525fc6cf79d1aef554794a1d45f9dbfb1d7"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_code_1_L0_LEGACY_DIAG.npz",
+      "sha256": "afe32f82c54358203d45afcdf7dc2a2a17006538c0ea5088b339ce6dc1a32537",
+      "bytes": 762085,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_1_L0_LEGACY_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_1_L0_LEGACY_DIAG.public.json",
+      "sha256": "124c52e1eeeb749d90af5b557d2d8a0ab2252a90b88e7cfaff70c1c7c59fedda",
+      "bytes": 86567,
+      "byte_identical": false,
+      "original_relative": "cases/train_code_1_L0_LEGACY_DIAG.json",
+      "original_sha256": "8ccc94aac177912952c5a5765e57239c732fbcf802619bd4999d658481d06164",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "f3ccf7aeecdf3e7308e99e3dd539d2e0040199c54527499a0e9bc743de27ac13"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "ab797280aacc41f41df81673d057fce47282ede230e01512d6b24ae2577ee524"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "1128427e774e5740aead5fc49dceec7393a3415384bbc2ce24d724f93486ef17"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "fb93e6086b07b5aebd62435a97547cc913eed09902591ac7e7cef31561e1a227"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "533e34fda39095f4c4acc63800b56dd3db716fcd209f1610b1e9f56fdfffeb26"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "93d56fdff9a9cc64bad8b03c551580a007266547ece4fa3f13e554a13db5e4ba"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "0bb2f3931fea167eda3131eb26d90643fde4d96d72dd3b474cbf223b1dbc4e3a"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "3d72cecee0186c6703cd1b1c072c88fbb0be7c5d3c33a24a5ee11b42b353170f"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "9487344a6d0ebf42b2df6d1acd72507e0037be256d8a05e38a2e815bd7316b76"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "4c8c25032c58785a2ed5425a7f38a9ff29776f6cb3e7019405c666b3d58263c3"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "3afb23e34f99e640c96f42f027666cf3d0d0d2b952ff350b9e58265f89a5cf76"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "07eb8429e01c14c5b473948bf47e16b9907a1c601a90fe8833b75f8e3423b674"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_code_1_L0_R2_DIAG.npz",
+      "sha256": "18df72df95d69731b3d6aee512beae6180631e8ea78c909f0289d7b6e26789d3",
+      "bytes": 762173,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_1_L0_R2_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_1_L0_R2_DIAG.public.json",
+      "sha256": "bf8874ae5c971426a5fb6a5bade66f68e9ac47cd8cbcf05016c8c48508aa8d97",
+      "bytes": 86587,
+      "byte_identical": false,
+      "original_relative": "cases/train_code_1_L0_R2_DIAG.json",
+      "original_sha256": "ef06a18b1e4906a981fdfbcf1f4d259fb66b4fbf5dfdf4de52382f54acd35bfd",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "4ff1df26853f6e8896644a83c194628acd1c49325e203c23f4468b119201f289"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "8885f99f15ab42229bd460ea9185d9d4edb9651394f34b774c58efc7257cf3c2"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "a328c1556bf66f60d19998abd712f103ceef3f0b31d3a528139ccfcc55337b59"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "bda17f5324f1b43364ffde937ac4750f64d6c7b68b715b45f77c22312a0574bd"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "6187a27e18c4af2bc049012d74e914a73baf29e971eff36f3f9b7f94b2c4f525"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "ad9f9ea7b3f3e2f0ac39ba3cdf6a9098562843ae6f2d42b34c5bbfb02bdd9216"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "d008fed77833629ee680fb75ff60770e3d02a56dacb930502a6fa34db3befcc5"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "0a55ba773565d2e72b5a103db2218a34f26db8e5d46eed04eb4ce73f623f3ee4"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "b2d5889e7a5f0e80a4a2d536dd4bc2b2dbab21e43cb192ddba0b419e1caa0fbb"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "265c99a282b3e18545f31264847833c0aaa88f22a164c1f7fae9a9606b0e8138"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "6972ff25b9742febc352b256c8aebf9ea84f105dee2cc396831e5f28ddd69992"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "379b85c17f10c89b20bf16d65ed650d8897d52cd7f1fa156da9c42910d9119b8"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_code_1_L12_LEGACY_DIAG.npz",
+      "sha256": "1c8df65ce4251e37ac2976c026349d40bb429e3f8d5646ed855091934152a40b",
+      "bytes": 761825,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_1_L12_LEGACY_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_1_L12_LEGACY_DIAG.public.json",
+      "sha256": "0ebfb2d5342be7d5577cf374bfa20ff5366a17a3cb1995ff50faecab764aa859",
+      "bytes": 86277,
+      "byte_identical": false,
+      "original_relative": "cases/train_code_1_L12_LEGACY_DIAG.json",
+      "original_sha256": "a1ede73ca4bf5a3a7291b8badcbafd3b91d83924e0da2316c2b193781ec313da",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "50168b480ee6c00d3e4991c2e533251d91529975a2161e2c4bef2aed3e2d0f33"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "64e4dcd45c5d12225cc521dc34976acf119035c5c1c67cc9c79eddb6867285db"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "108fb24682b3e0d825d4a185a3d2f9eedf37f690017e0f9aaea2d618fc8261a9"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "eeac32bf206a554c9dbe97906c9fb1507a1ca280ce7c3ebafa3fa7d5b38cb82b"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "2a37148d0ecfcd7128e1988fa372b1e8a3f7dab70118f1c600594f68851e8929"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "4418163d8c5d136f07c5b5579c322e0b3b1eebe5dc471e4eded7c385a96f7f80"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "d0313f9b5f48b95215dd9f1147d448917971baf598b9cc166fd0e4a9c832def7"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "460ee619928382b5138a72d23a0f8b16f5e97a364f6cfa46748f9e354e82ff21"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "2a402c2e002a3e2fc2676cea557fbd4f42edef69e780bf8433e7e42618a955e5"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "d8152206a40e2fcf9eda5b2babb5d70a90628e59433a6446cf853ebf85410a6c"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "e86c5cf8f041719a8d9f66ed4796f0ed789dc55196971e76267fe6348e283203"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "55a82fdbf4db294a9202b5aa38c9eb782ec2f93b84e571d59bf1882d7cf55983"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_code_1_L12_R2_DIAG.npz",
+      "sha256": "6b7f248d0dc017b34e73b9027372baf2b631a93b6e79280b36f89bada3b77d00",
+      "bytes": 761747,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_1_L12_R2_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_1_L12_R2_DIAG.public.json",
+      "sha256": "328c978754258d0ef3459d71bd0e80d54d16d293c17ca8ac79d421a8c1e1489a",
+      "bytes": 86241,
+      "byte_identical": false,
+      "original_relative": "cases/train_code_1_L12_R2_DIAG.json",
+      "original_sha256": "a7da059ce11bdd1d27adc924848705f6a46db2c51bd083f9cdcff537eadcea04",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "be94183d7b9b49a21dc7d154b374d834f0d08739b7f368a7e16be38aa1b35ab7"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "79b270ed4a3e72396d6cb79a89c8a7d29d31c0ca50d940b66d1ded85b38ef5e8"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "e9df3e387647cf12e3ec37edec34414eafd5c90b3fd8c63210caf33a7cf63461"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "4330f57727c78844272bd3c5c7351a568b3101702d6da1eac3d99f2ae875486a"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "ac4fd1c1cd696ac224ef15d0685f306f6e2b316103daf8e7cc0db101eafebbab"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "ba7d284ec29cde0143b1642e73c2866eda3eecbf6fc8a58354e219c6cee2f0ed"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "4b2c08fd0b5fb264d2ec3a2d2f417aa32c6a29e4b0fd512e7d11c8a2be8cdc83"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "f03e594ddb545b80c7cae1e1beb348b9c5aaa92549a8039fa328dfb663378dc3"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "b4e8411ac520676144b249cb9c733c63ff930dc44d22b0b465facda3b7a147e3"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "6abe67e81e4bfde3c6e9a6decd7eb092a5df7a116fb750f2e686392aea95b209"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "2df88591eb4178e543d62f23d7e4c4c7169bb1070113a825c68fb2146e61e865"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "aad397de2ba2e02d827c87c9f1e6b5a758715dc6d3453852f4059453eabf57e4"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_code_1_L22_LEGACY_DIAG.npz",
+      "sha256": "85709b680a838e0522df3ee0d2f8d3fc0a1d6807e69994d38d4419b06c3d0d5b",
+      "bytes": 761558,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_1_L22_LEGACY_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_1_L22_LEGACY_DIAG.public.json",
+      "sha256": "892b1623774b794e04ba427eb3e88e7d336d484640ab05d58ea56968f4ac89eb",
+      "bytes": 85950,
+      "byte_identical": false,
+      "original_relative": "cases/train_code_1_L22_LEGACY_DIAG.json",
+      "original_sha256": "8384cb60c31cb73b9bdacdc46775286b461bf894667f0115adea0d9367b7866b",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "f0438cf1294ce11ab59cb7b74f32035ca1ba9df4bb0770c566cf9681403a2750"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "93f8c062779d3ebe6ab070b4deb1a0fb911c3141c2b82407f4bcbc8b03b82321"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "c78c11648fdf7c2ce93a4c163ad83a289061465ee3027263f4b33f552cbfa4eb"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "58b28035cdd0222ceae4ee9bd5f848a60d37ef6810f5ee0e0b5f14219ebe0ced"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "993a6222c3b17aca3f593f36c776f64e7f91fe8b3cda68fb58ea1f57e8d4a9eb"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "c273997f2bfcdeb7560b0787ad47e5b1005cd76af6a84ddd8fe3b9b46b76f78d"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "50c4c3f3651440a1de76d968919ede2f1ab8518a919d86f883c1960ee708ddd7"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "eb8ee86f0490997d9c25410891fe8fc34733ceb5a25b407e73478cc3051ab5f7"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "f5dba0f8272601714d02a83873f5b18d5f655d92bb72d33ad8d5375aa1984676"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "af68bd51ceef0ae52d4fc86fb5f8b0280237f926f0b95b6ddf44ae717036e92a"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "a61eb71317e0507430ececa651c44db3f7c82924dff9500d7023edd9036692b0"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "a35712f98f2845a93477c753e843f3b0724a89485f31f0110cdadcbca7a623b5"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_code_1_L22_R2_DIAG.npz",
+      "sha256": "9d2858f3802c583b570681eaebc890276fbfba44974e2bfda0f07acd546c0c49",
+      "bytes": 761427,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_1_L22_R2_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_1_L22_R2_DIAG.public.json",
+      "sha256": "fb284499e39a120eca5dae586158dc516baef46864dbbb7dee7e5b72a1da07b1",
+      "bytes": 86080,
+      "byte_identical": false,
+      "original_relative": "cases/train_code_1_L22_R2_DIAG.json",
+      "original_sha256": "43ffac3a20ec9e523ef713700c4086ab4d0ce27177df3096d97bb5b236cc02fc",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "4c1e571c7fc4e70541009356b3233c68999a6101723250d23ee2a94170288f41"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "a71a62f92213df8808a60c6dcb81ddda7ec0cc51949216301377b12042066d72"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "793b9f9fbd867bc665c47d01cc62074c960c85ca9a2d8cb2310ab197ed72af6f"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "b5221717ec17b51df79dddf78772cae305303d95cf54a01a397fe6c4604ceed6"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "49fbe6aee1808d6f7a6714e3eb46e6713d629f5cbfcb371af60c3610a54c8547"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "d4fcb6f4c8f74c28e576a7fdc4a469ac37ec52c686e1504deec16fdaaeea838c"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "ba49c9ae4c3689e8de5aa38e6fb19df685b55aeaa2fe604910a6a3fad7dd647d"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "34efb99b29b8da9b492cc6945310ebc68995c63b64fd2534b971b64f233f4847"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "99a90c3897c5125f4a0da65757dbb5ee2c4f28372492fd9bf715f3183abf5005"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "0389cdf1e76bab28d1a510a409b5d31524d2fa0841f6802138c0b31445585393"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "9e52ebde5d085eaa12feafdc2de2d0bea728f4691adb252f1aed852fe7d2f078"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "b49889ba86c5fba876595fd302beaa776f554feef566b9035d4025ed51a1f6c1"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_natural_language_0_L0_LEGACY_DIAG.npz",
+      "sha256": "ecd71d481c4734852af3814cb491288e1dc462c887085f0c185410970f009067",
+      "bytes": 762156,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_0_L0_LEGACY_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_0_L0_LEGACY_DIAG.public.json",
+      "sha256": "d4f52f29edbe2a0e4d765a15557ba9f7b00e5df225e50a624ceaa2981d2688d1",
+      "bytes": 86487,
+      "byte_identical": false,
+      "original_relative": "cases/train_natural_language_0_L0_LEGACY_DIAG.json",
+      "original_sha256": "e4594d74add91617dc3def3be85150cbbdd070e866f04975c410a5f69f437eff",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "44c9acf26cd7e1c93fc7999eebe1432709cb2de71f5ffa377cc6afe3929c6d66"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "d6b9c3b236aabca92e90fd8c73b462290e6acf884a301a318f3d0d605a223c43"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "79b89bc4d2b3302618cd9284af05921feba9c46b56dce100730c9ca875b06eab"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "9804124b241e40ae762d127f22762ef4576769d3bc32fc0efc530cbd68acf6e0"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "46cdd09ffa7b66531666b28fa7986b347281b321cd3fc5a782495bbca813f07f"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "9ce4e64e96e51e810e6c3af6e1a3ad20fa09e5ebf48dceed1a939187fff10b8a"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "195ce2fb35320fd33394b7f65480c030a670314874e1897309b785229c0b09b1"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "03b4286cc55fa67deb260da7e4c6c478dd76f104c0efe45bfbc2f175952d378b"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "19f47580bdbe34d00645868484b7fa9d2af3ab45b8bca85eb1116ee3238f791e"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "f5d2f7301d35d4574b3663bac38064a6d31898aa5db1cb1080e4d0358712df84"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "ad3a331bad47b64d72193ad739f8fe10fa303580d308bb9d537f3acfd96adafd"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "b78d9ff78f146f4a9598bfb8243cbe5798aa674332265aebcd4578973ed506bf"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_natural_language_0_L0_R2_DIAG.npz",
+      "sha256": "3e0183be45a6a3863e84e1887f3b2ab7cdbc4d926dd3d158f7061c27f9c27e63",
+      "bytes": 762066,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_0_L0_R2_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_0_L0_R2_DIAG.public.json",
+      "sha256": "06568067a8ed46c0e345421e22ac0756f2925d052dc5c40c5194d48b572db556",
+      "bytes": 86463,
+      "byte_identical": false,
+      "original_relative": "cases/train_natural_language_0_L0_R2_DIAG.json",
+      "original_sha256": "83795a2fee4f7334b291ff7391e60097544d8d572cf8d83aaedfcc8f6114b55f",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "0a20c35915e1cd1000a36f9c5a0a2eec47ec6082a479dd8ff77c5dc95e103a84"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "59646aceb30dde8b7df516a9834a3df1b43ca3c478345a95edef1d581947d363"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "ee0b02878fccf8f6f82110b6da5d325d6c410b7f68cafcd5c169cbe0b0dee562"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "88eb14c5617e9d9bf39cdc6defe122db9f21195ee72dd9cb6f1cda69c9124c64"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "bb945796b266482ea0aa8c3d9ace2ccda6abbfb4ec15781d43468e14939365aa"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "38220c94d86c8024d93a2c54351777a87937d9a1d1bb645e52882d067d0c67b8"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "4727f212d5bafa08ba97a00556354544664de25baacb9be6feb373a29b31df10"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "c1cf39fbe888d4ae8cb01098181c06322c040f5b71f2b464fc6273bc6e107cdf"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "89201bf007b925c2c488c4b83706989303add5263b9c2209513d2aa13ff2b1cb"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "6fc301279798c3c093ed791cc66ff0a3e6cec231a7a7c4ff7e0f99f47e86145b"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "009ed7f46e5be7abf62cf4acbb6c62f947d076313f66d55063aeefd902e1edab"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "2cbf8235f953d86057219f03bc02f61511fbbde9de7ea32a17695d1b77fba5b0"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_natural_language_0_L12_LEGACY_DIAG.npz",
+      "sha256": "5ef54ef9ffbcaf3ccdb9060a0253dd55a9e3e9911b8a9a5ef19420195d9323ad",
+      "bytes": 761950,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_0_L12_LEGACY_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_0_L12_LEGACY_DIAG.public.json",
+      "sha256": "b704d5a5c6b562698bc54263b824d2b14331cfabbd2d511ed36a30ca065a7643",
+      "bytes": 86622,
+      "byte_identical": false,
+      "original_relative": "cases/train_natural_language_0_L12_LEGACY_DIAG.json",
+      "original_sha256": "da0ecf28651bbff9fa88c4902d6cb0a296cd6c8bfaeeff45c1731f610cca5f5c",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "76dc87f412178954fe83ebf8993e234d7dd063466c9473f95a650d2dc1de8e8b"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "a3e5cbec4b911795a4319c267d8674aa4a54dfe0292706d38b57a65b2689cabf"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "a8764650e170d0d8b7e5afbc9425bd9c84b0a76d9328a9c07748031a16f504b2"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "cf3b6a1f133de8d27725293d8c98c2b2bb0c9db0e7ffb3920b12d07eda2c1917"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "3dcae2c937c36271c8dec258888ba9a9d53c53031ded508a664375b0be2ad5c8"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "0d1266c3fbb31e71d533167d74744e996a32554b72533d62096b6ae39cd71b27"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "c5ebca304c1b66eb8f96a99901f87f8fd2610fd32cba04a2c4cc2709cae8afd7"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "a3fe83d02be10e6a941cd84ca502ce372dbbd84ff3d6e7908796eebb00fac116"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "cf713f6371393ba5d458ad2832fe912a65b1429e14c0b1892200435184c5a58a"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "a05886af917dcda33f366a7fa1d38aa700066d197bbe0c8d74dd4066ad7b5716"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "8edf72d95dd7c08d0e1157a59e4d88f4e56d24ad012ff6379bf687b13c88ec21"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "80c5245518f0a0d34b463f90eeb899c3ce36c8a9557f60f1f51171be9d0e26bb"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_natural_language_0_L12_R2_DIAG.npz",
+      "sha256": "79dbfd191f583c33e96748a4adee0bf26c62bcd4de57e1f341566a91bc59dccd",
+      "bytes": 762093,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_0_L12_R2_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_0_L12_R2_DIAG.public.json",
+      "sha256": "05a8cacd56aab0f4d6501efa8762f8cc236ed528b0743858882a44177b7794be",
+      "bytes": 86518,
+      "byte_identical": false,
+      "original_relative": "cases/train_natural_language_0_L12_R2_DIAG.json",
+      "original_sha256": "f18e90712e6d200b7f9b20f9a683f6edc28367ab1b9bcd3845d5be3a636465ea",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "f19e3ee1e27fc1b12b3fdf4fb57a9aa1975e7ec33508d782d0ea576cd7790c91"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "38a48c0e7920f0f73e2232e681e1f10f8d954b439f7fbd79d00abc2f0f76275a"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "84f40f9b81fa89909e5b8d612987dc9084317d61ddec4ab83aeebce7349ea54a"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "29af9f2c1c474986147d6653246756cdec5face2683bd2c538674ec54c8131f6"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "852f0a3023442595ea2bd71010ee618dde7b5a45fd4926674a22ea93f8a8b6cf"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "0b05b13a82e9bca4130ea646f9c45a0029e1675829779d8c38848df5275fb5df"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "3e4b3a20b884eabacf769964dc69333f91fe5a0c47270dd7235b0b42da85354e"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "567b8599d494da2d4bbf95597bc69da94e90046853fa6bdfb104c70ec1c43787"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "07559501cb6be65e34a6a32013677bcacbb857a114274827053c60f76f5ab05e"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "9016b50a4aae66fa748504b6906665369934c1d8248bc985a5391ba1cbe5fe6b"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "3e14f5a17459e9ae28dd130e1258fb7cf6b291c20a4d030bb9be19d7d62c6656"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "6164b7df3238801e035b1dacf9fc966a8b927e333b6634e995ff931de54a01cb"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_natural_language_0_L22_LEGACY_DIAG.npz",
+      "sha256": "b609b4acd67ed869f68a7b0a4624b2a17d53f5eeb33e3bfaec4fb86691d1da44",
+      "bytes": 761874,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_0_L22_LEGACY_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_0_L22_LEGACY_DIAG.public.json",
+      "sha256": "3efe0fff042ca456b5d3ada08a810be9d3476d104c12dd1fd93a7938b61e86f4",
+      "bytes": 86118,
+      "byte_identical": false,
+      "original_relative": "cases/train_natural_language_0_L22_LEGACY_DIAG.json",
+      "original_sha256": "53039f31b67bfabc6303d309330504dce1db0933c8ab3c4ac8cf1f8da4bf5aa7",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "0ed256ae43a3f597a153882c22ca08cb6597d1a3658136671b1bf3d1f2ed5662"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "03ef0faaf7ff175f5a53892ccd80f709b83a1f43fb57da83f1e14458517be754"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "fe49a2e13f289bec571bd7d137a85cea76a74316491faaf99b5fe3bcf2facf03"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "b88a1b6a1b334c89f2df596c09d028565b1f4c85618bad981a65638de4d692e2"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "435129314315362aeddf44fc00d94dbc283a0aece35f406683dfd867cfd7c35b"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "9e1869cfc138ec755833150d6367bf3eb06862fd0d60d1e28a091a2f8ccfa8d8"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "5c53d412cf10994d84c0ca6379b22ccf5416cf2ea534df32f5641deb61d41dda"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "de1ad92cb1febaec5aa7febc113083366d7b9fb38f43124f56a2103ff89970a1"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "6d4eb06012e9a080346fe0e227de1e5fa9205b06fa100f578a29597b5cc23759"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "2084fd12a3efaba32722694e89a5889bca64e78a087f22e9d74c8679c0bb031d"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "af8a963455624e40bfae0165d9a70c384f9867b1ae82e105a6c63cba3bfc8208"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "30a8ffbcc8f995a37fe45bc52b4449a5ea3cfee264168a031e241adba4d2b956"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_natural_language_0_L22_R2_DIAG.npz",
+      "sha256": "c10b7918a63bbc20f16d6b1253ad64d18a35b741aacabd831b348edcfd3b3026",
+      "bytes": 761710,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_0_L22_R2_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_0_L22_R2_DIAG.public.json",
+      "sha256": "a5fae5e1f3cba561787809147faced2fc30fbbe00874db9541def069a9326895",
+      "bytes": 86220,
+      "byte_identical": false,
+      "original_relative": "cases/train_natural_language_0_L22_R2_DIAG.json",
+      "original_sha256": "77aa9d663cc91f3a9fbcd0afa7f7f7194701ab5f1e7597c71db0b6607ebb4fd7",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "0a34aea403f10f61190fb46127814cd39b0f4de5273aa14e4c76661624a8e8f1"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "ab3f33577b36f2c74d90fd17f6927fd033162ca7178d7d32bbb8593c85641ef8"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "73d850543b3a9de3eada7c404c13fadcc48025bf4794b0af01b27c3488b0afaf"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "78fd306fb5c15eff3d23c544d1a218079c38e769b6d235865859d600c831ace1"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "dfb2e2577e67acd2158dd57247652c8430bd3e4654c75a1d0bd0978b7cd58f32"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "20d9e49ec620326c2093ad06b3f486c6a02dfa5816fca57f497da6311688513c"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "f5c132c937698fd97379fdf3361bafd834e7829d8b9e65ac908a8667b52900bc"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "a64ce7f68da683a510228d07732be23510682aacebc058980eee1f3eb9a34489"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "c57bb1a31d7c4d6f056a35d3f288c32151ab5d95f7dcef7904615c1e366d549f"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "30935c4e0af1ce9d361e141bbb85a91bf83766e687059238393a72c162d3d8c3"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "766c7142c8964ff12d8b945e2313d08c159c6536695faff24fba7a08e5bc2b47"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "e6b6b297f58daa10f2a2aef1c64549d4a127f0df5d92970c8557a3545de0d3b9"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_natural_language_1_L0_LEGACY_DIAG.npz",
+      "sha256": "57647698fb68004ecd20770afa4fd30a9baac82d1897d5126bc53070c49b0f56",
+      "bytes": 762340,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_1_L0_LEGACY_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_1_L0_LEGACY_DIAG.public.json",
+      "sha256": "f30751be63e24dcfa3984fa50c338b892d5e438353050dabe3d11e3c45ca292c",
+      "bytes": 86556,
+      "byte_identical": false,
+      "original_relative": "cases/train_natural_language_1_L0_LEGACY_DIAG.json",
+      "original_sha256": "f60bc530f87166a5a1e0cbbf5ed189046a0b251fde1e06684d418286af77dcdb",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "3c84c481a0827454ab4ca542402c3367a4a607f327a714c3c3aaf09673ee4ae7"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "caf11ac70d9f8f160ceaf59afa9cfd24c46e1ba6981282384b46f5c958bb9ffa"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "bc14f3dd79e2bba9331fa7e83b6406499413ed2545338aa9dc4ece428020d67b"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "37fc7e9bc50e69f9dbcc970e8b7904f059ec52b650b106be14b3049ed6903566"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "2b0fc6457a6687f0df433a71fbb5401877248cfb305a5ffd273eeeb0754315e1"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "331056fe2e2c949d64699bd118c4c678d6adb4ea1b37fec5da60533803c016ec"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "656ff299ecbc36a00f7a7c85a66c740f49d8ea3b1194b37ed9141c1eacf6198a"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "a33c787a95a51f4129576fdd9dc307e44ae356f976fa178d39fcd098752f86d7"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "3f0d6777c00ae348bf58a263ad60c387568c5ae67897e1f4945c7520cb2fc331"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "9faaade7ef3d8fc0daa85f011689f753634f6f0af47166fd2d4189fc4c252b2f"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "e0f4c6d2d9b2c84eaa738c959ef7193e2e4b08b8659afb703e270d46849c519f"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "3c67cf64dd932824c05b7bcd4dea785fd129e4028730a4117f1971ed02b2d8d0"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_natural_language_1_L0_R2_DIAG.npz",
+      "sha256": "54bfbe8cafdaa90ae180eb18d5f8b295e4b6612f5685860f3fe7008e4fd91c26",
+      "bytes": 762226,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_1_L0_R2_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_1_L0_R2_DIAG.public.json",
+      "sha256": "bc14d091f1783bd73edfc3eef3acfc635f2002436f3a7aafaec0c9c94dea2b7f",
+      "bytes": 86519,
+      "byte_identical": false,
+      "original_relative": "cases/train_natural_language_1_L0_R2_DIAG.json",
+      "original_sha256": "fc138aa3440009be4f3087154d0950df4e0577a197e2bc66a160794870cb3beb",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "a6a0a67b17a13d322c4e5a8a9634ef2f7f7aede8430b13566369d961c1d0b9b9"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "bcce85fd1499a0719abf05842c066444e868f789ed1f00bf55efa75eb58b2c4a"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "45fe11a138687ae652fc914a5b6822f09bb28988d247be3991a4aa108e0d8d76"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "bc5528ebd9db3178ab4fe5cea456d345f3f7469d463cc14ed33c9d169425b206"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "18aafc0eadd18f83e4def2c5fd37ac308cc35e28fb7e4a7838d676e5cb6c69cb"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "fac28bc742a738100ad2ee08252bdd8788a177fe5bcc284f66daa164657b2e8e"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "45a3beace7dfe2a21420b42eecbd8d61d4165c21704fa6420b953c537bce5bca"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "b24c3e511a13ea272765dbf6ccd949ae700d2dd45c935f47f375ab507a71dfc1"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "ae52371df57787f096d3752af4fc5c0aeffe99274fc446e32226ed6bd5de6885"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "23d946f57fcf2a769b9b770beb481e016f4f261e60603f75e46df5e008e5560d"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "1784a8fcec936e3cc16df668b2bede7392daa1dfc23fe4de162389b58dd3380d"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "bb2f740cad4f5ca23de75f6758208050eb81857a2091fd4d9d054662739abadd"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_natural_language_1_L12_LEGACY_DIAG.npz",
+      "sha256": "714ff878be6a0ecb4b5f2fbd8e24bb974f50d9f886357e26967f0705bf342954",
+      "bytes": 762055,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_1_L12_LEGACY_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_1_L12_LEGACY_DIAG.public.json",
+      "sha256": "88ab047df5dda3d4ffc214741c17ab3ff9769001afc45a1afa8cfd5293933555",
+      "bytes": 86348,
+      "byte_identical": false,
+      "original_relative": "cases/train_natural_language_1_L12_LEGACY_DIAG.json",
+      "original_sha256": "8c03eebc7428d76de65aacbe8b3ada0f69bb9228674b7c755f28c70bfba625cf",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "0d6ebecf49e9c4bd8163e262b9df14efcd843b496aaa1eb4f5404149ca63946a"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "33daa311288d253d1d0a1a1c1ce8544a9c904d959d574fa6ef80bd95eacbcde7"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "4fd025d8280dbb086242f66f4d40ae04ee33ffd54488c6538d94db1b5b43e71d"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "5f1dc516c1c16460c9b70730e63632d7e8d3de37cb145112b82afe820391e725"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "24704d3e4d52ef800b3c4b99a534e379160f82424d967e060dd5719d4a2535c5"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "304b1ea4d13d8ef6c7f5db35c56084ab704ed5f554bc4905aaeb72b3ffee2a73"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "70f0fdb05376538269aefc369300ef2fb10904ea1a1d1f22c37fa95a22d81aee"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "bc3d34b8ec811fc99a1f375ea7df1259dc8432f0d6c9619e342f39ae7c217e9e"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "33b1c51cb1de2beb4c1a67f3797055bbf567222b084d567a209b1fe47a945b7f"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "54778c8914270ab32f2238635d09a047c05c3c2439dffbcff2bb0676f847d63c"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "45dd8894765ff69f3bac24663071ac155831f9259a89e9f341521c3b4ad9f94d"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "12236d0aa14f7791421fd28116c02902e10631e521b5685e5762d07028e0d269"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_natural_language_1_L12_R2_DIAG.npz",
+      "sha256": "065cdda2aacaad247dc5df77aff741a4b9ca7440136b6ddc2ffdf22ad4793609",
+      "bytes": 762139,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_1_L12_R2_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_1_L12_R2_DIAG.public.json",
+      "sha256": "621f1c59150e97e4ceab3d299386b2b2131e285557918ee5dd24bb577188faba",
+      "bytes": 86241,
+      "byte_identical": false,
+      "original_relative": "cases/train_natural_language_1_L12_R2_DIAG.json",
+      "original_sha256": "a370e2068ebaa8c07f12a884b3d4c49d5cf511771070f07d3b8c50a5139b8a7f",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "c4514bfc241ed02629053ee0e37d4dbf874410d9fa668f602c50877a1fe773f8"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "33f5dccf3190cf5be8750d1d12fde30f70e1e0e646d9ccb2b2eb8fb246bb1239"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "fca0945174fe7e63a4fb1adb33b32c77755fd3d3815e261b17171d95dbdfa35f"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "f1abaa53048a294b53f1d1caf0a51a956a57634fc27e4c74b12b50b8bd806d48"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "56a6c5f72dc581b068ebbd891dd042c7269eab057c1f904e4d18e92adf1c9333"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "e17272898cbafb158fd2523c858bd92a24f42e47fd383d13756117e116867a1b"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "35c1741642622111eff4a09a3bc59fd6c40b7eae13a284eb039288795ec1771a"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "e77e791003d357525e44d81f2f65b6701f98c7bfa91ceb13e4af22c4ac92ebdf"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "a523134982da017eba5374438f3362be5df2f7b9bcffb04042534eaae56a5abc"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "6860e42cddfe382936d92a5e29b946d1e06eca1c9d431e67e8bd657875847b0a"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "671a156ee2db7e591f5fe4e55ce50679338bc3722d4c61f750fdadf7165e2760"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "d3a9f5e65335b389c478c2170fc120c9339699e4b2d985b750d58d1ac8e0d064"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_natural_language_1_L22_LEGACY_DIAG.npz",
+      "sha256": "cf554724febfeb545a9d8f6cbdf52ec25e86b063c91e788d8118d0aab6d7e870",
+      "bytes": 761816,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_1_L22_LEGACY_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_1_L22_LEGACY_DIAG.public.json",
+      "sha256": "a8f1693d51f87e43b285532aa2d0dd66627852f4f30db9fe365fcd85bf49dd5d",
+      "bytes": 86277,
+      "byte_identical": false,
+      "original_relative": "cases/train_natural_language_1_L22_LEGACY_DIAG.json",
+      "original_sha256": "d7a264d641a95aba708bf9054a79410e343741e9b5cac4eed92a12d4f19b6fa3",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "676fd27e52ac033363f35661850ba21c1eb0a9643fd822f3081b3f5bdd179c3e"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "cf48c94e61d2520b3924753dbef47ce997d9434a953ae5c6d7eff881d06e5a4d"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "b5841f3c3a5b44aa1002578527ae86bb9d9880dc63d33d1850399efd984d2cde"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "6b7fe862a7d1a90c835272296d1ae541fdeca8c7d6a7e5ba43ac79425d909f2c"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "dde5426ed9fed46a5b62db26093bd9e13bec7d50e8973ff2d79bf851af4a6ecd"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "87345efc2c17e0eb4fd1d487f661e1635f0c30c5e39af660866214fac64f53a9"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "31362cfbe238c562f60b66e65da87afe3b749879da5c679569ef26694ffb807f"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "42bc5cf8b0414d01b514054709a9eda6700400261114ff3eaba36dc275d87280"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "317f02f3110ae5eb662f5c684739c701988f84c505b976541bf099844824e0d2"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "b289aa091e9ccc04ca67cc48477dbe5ed6238a46e4a7dd40882fab5a33678fe6"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "e6dfc29a72702ae487df47dade11c0b4572452b447ed8687355f45456e7f92a2"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "d1a997970a6702bff9ab8df5589f44f4cdce1245215b87f3e35122aa096ef342"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "cases/train_natural_language_1_L22_R2_DIAG.npz",
+      "sha256": "6c831fb80dccf85673745cb54d97140a899e5d6be3d28ddb74aa567338976fe0",
+      "bytes": 761665,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_1_L22_R2_DIAG.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_1_L22_R2_DIAG.public.json",
+      "sha256": "314b2627c71513dcb5f97ea8200487d8052d872b086cf0c479b6aeabfa08bf66",
+      "bytes": 86207,
+      "byte_identical": false,
+      "original_relative": "cases/train_natural_language_1_L22_R2_DIAG.json",
+      "original_sha256": "a95a5cb93dce89df7f51fd41974d89a2ec3284b77fe0b3f38f89cf366606975f",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [
+        {
+          "field": "/snapshots/0/physical_signed_mean_mod32",
+          "canonical_json_sha256": "a756556096b5f95268b464b99cfbe7641123b042ac77abb330b99b59079a4324"
+        },
+        {
+          "field": "/snapshots/0/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "f577bdd8eb0dfa2a55dfd5f3ebfda0aa04c88f1bfc04898ca143630691cc963e"
+        },
+        {
+          "field": "/snapshots/1/physical_signed_mean_mod32",
+          "canonical_json_sha256": "24f8d24280fc4e3685729b65d0dbbb675dc70e53e319672ceaa29dd578416e32"
+        },
+        {
+          "field": "/snapshots/1/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "83074e1dd7206f0895190c6542e081eab90a0e4a84a02ab824eb19011df650a6"
+        },
+        {
+          "field": "/snapshots/2/physical_signed_mean_mod32",
+          "canonical_json_sha256": "ddb2ea9605c979215b54e1beaf1dd115fbb4d87f711d32afcc1513dcb278ffc7"
+        },
+        {
+          "field": "/snapshots/2/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "ae4e5e9de718cf757bf78ef728c9bede6d920e5d1296ef48262baa85653053cc"
+        },
+        {
+          "field": "/snapshots/3/physical_signed_mean_mod32",
+          "canonical_json_sha256": "c6f6d2c79b2bb62bf2da138aa4f4a049ce44ac83b056ed2c0bbb462abf5a1a4f"
+        },
+        {
+          "field": "/snapshots/3/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "74e286f70543ab9c4890cc32da5cab3421c523373298435df631f3366ee51473"
+        },
+        {
+          "field": "/snapshots/4/physical_signed_mean_mod32",
+          "canonical_json_sha256": "72dbb187a900138dfd3b68b85daf422f15a50b085d3e8bed2b633dbe2133f105"
+        },
+        {
+          "field": "/snapshots/4/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "1495ba8685628834be0f80eb82862dcdb280782909f56c710ce3406a3f113f2a"
+        },
+        {
+          "field": "/snapshots/5/physical_signed_mean_mod32",
+          "canonical_json_sha256": "8af606480cea648ceed4ad03db02ab22fe215b74156f2348e85711afe9f5241d"
+        },
+        {
+          "field": "/snapshots/5/transformed_signed_mean_mod32",
+          "canonical_json_sha256": "ae8713e63c7ca723303a3b188c5a73a82d8edd88fe03db73eb4c027ef3ef73bc"
+        }
+      ],
+      "path_reference_replacements": []
+    },
+    {
+      "path": "execution.json",
+      "sha256": "0afd5441ae40aacd97c1840a648ebdba8bf2c741a3713aa6d1a86e1c769ac4ad",
+      "bytes": 393,
+      "byte_identical": true,
+      "original_relative": "execution.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "bytes": 10868,
+      "byte_identical": true,
+      "original_relative": "freeze.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "summary.json",
+      "sha256": "0de86f309461e4274712b6b44c3b52f150211245ef490176f760dee8316821a3",
+      "bytes": 2152,
+      "byte_identical": true,
+      "original_relative": "summary.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "source_dependency_bindings.json",
+      "sha256": "47288d6195e81ae58f7cc1dfbccddc0926b4bd3abee1f09732cf6dbfa94100a8",
+      "bytes": 12010,
+      "byte_identical": false,
+      "role": "DERIVED_SOURCE_AND_DEPENDENCY_BINDINGS"
+    }
+  ],
+  "local_only": [
+    {
+      "path": "cases/train_associative_recall_0_L0_LEGACY_DIAG.json",
+      "sha256": "f0c317bcb5db672bc9a575c111699d22bb05177fd4ee4225e6a3bf1e72046b58",
+      "bytes": 299111,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L0_R2_DIAG.json",
+      "sha256": "3ec63cd64255de015ffc183381babaa357c5950c647918a363cbe992b4f66f71",
+      "bytes": 299283,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L12_LEGACY_DIAG.json",
+      "sha256": "5f7975d4a207e335554c6aeea0756e366f2c213fe8c6c3c951d96de7acd4d336",
+      "bytes": 299256,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L12_R2_DIAG.json",
+      "sha256": "b9fe16ecace3d3fa79c722cee61ab7fb7aa41ae419ad17e20eaec41201940f4b",
+      "bytes": 299224,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L22_LEGACY_DIAG.json",
+      "sha256": "2e499b2ecd144f82a5aae897b874d0755d565933ba3c67c3689f46fecaa8df83",
+      "bytes": 298668,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L22_R2_DIAG.json",
+      "sha256": "a73f26da67ce83761c01ad6bddceff1ff53e7237ef43e13359882daae0f4b849",
+      "bytes": 298702,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L0_LEGACY_DIAG.json",
+      "sha256": "057d316b879188df91a6383a072ea4490d6880bd91e7fba3bfd4d01fb51971f7",
+      "bytes": 299008,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L0_R2_DIAG.json",
+      "sha256": "af877854158032cc7235e6667120f879b35fa14434f26a26562f9b1d072f1432",
+      "bytes": 299031,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L12_LEGACY_DIAG.json",
+      "sha256": "ed7c318f082ae1746a080a62e801a488370f94fcc3cbe0169d206d9bef6915c9",
+      "bytes": 298981,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L12_R2_DIAG.json",
+      "sha256": "2e1b54f7e1e1e85d2abb5104d9eb1cdd7269ca9b96ffb7cdfedef48af28b5d3c",
+      "bytes": 299029,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L22_LEGACY_DIAG.json",
+      "sha256": "a3f9a302c630afa4688e43618c59c86a97d0d0dc7cfbd266c5c4ffcbbd73678d",
+      "bytes": 298473,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L22_R2_DIAG.json",
+      "sha256": "89edaa5c1bf7ba73e148e006feb87b7124bbc7cd0868449d8d1448afa482a98c",
+      "bytes": 298501,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_code_0_L0_LEGACY_DIAG.json",
+      "sha256": "35705b41cd1b785c2ad3f4dbff24f48a2badc8093dbb1c593b4f2b874ea3f20a",
+      "bytes": 298891,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_code_0_L0_R2_DIAG.json",
+      "sha256": "4f8019e2fe49cf858213c7d8e5df800b5537cca0ce8165b5aef1a0748e89743e",
+      "bytes": 298932,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_code_0_L12_LEGACY_DIAG.json",
+      "sha256": "94f9429e71688220cfd3a889fd3365093018bcab4e9a11d53980770b31e71df1",
+      "bytes": 298949,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_code_0_L12_R2_DIAG.json",
+      "sha256": "cc9d82382370435965926a37c90e1d12b6380b047e4d4e22d1a839e54dfc2e0e",
+      "bytes": 298943,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_code_0_L22_LEGACY_DIAG.json",
+      "sha256": "0dc316b74787aa833240dce68dac14fc26d07dad31ab09c488c9cd79689e8fd8",
+      "bytes": 298360,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_code_0_L22_R2_DIAG.json",
+      "sha256": "25f2090909c21cc262b553e90e7eb066c8a1ab014ad0d8dcf4d70f22818e37d6",
+      "bytes": 298261,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_code_1_L0_LEGACY_DIAG.json",
+      "sha256": "8ccc94aac177912952c5a5765e57239c732fbcf802619bd4999d658481d06164",
+      "bytes": 298978,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_code_1_L0_R2_DIAG.json",
+      "sha256": "ef06a18b1e4906a981fdfbcf1f4d259fb66b4fbf5dfdf4de52382f54acd35bfd",
+      "bytes": 299040,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_code_1_L12_LEGACY_DIAG.json",
+      "sha256": "a1ede73ca4bf5a3a7291b8badcbafd3b91d83924e0da2316c2b193781ec313da",
+      "bytes": 298918,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_code_1_L12_R2_DIAG.json",
+      "sha256": "a7da059ce11bdd1d27adc924848705f6a46db2c51bd083f9cdcff537eadcea04",
+      "bytes": 298990,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_code_1_L22_LEGACY_DIAG.json",
+      "sha256": "8384cb60c31cb73b9bdacdc46775286b461bf894667f0115adea0d9367b7866b",
+      "bytes": 298162,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_code_1_L22_R2_DIAG.json",
+      "sha256": "43ffac3a20ec9e523ef713700c4086ab4d0ce27177df3096d97bb5b236cc02fc",
+      "bytes": 298340,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_natural_language_0_L0_LEGACY_DIAG.json",
+      "sha256": "e4594d74add91617dc3def3be85150cbbdd070e866f04975c410a5f69f437eff",
+      "bytes": 298804,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_natural_language_0_L0_R2_DIAG.json",
+      "sha256": "83795a2fee4f7334b291ff7391e60097544d8d572cf8d83aaedfcc8f6114b55f",
+      "bytes": 298833,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_natural_language_0_L12_LEGACY_DIAG.json",
+      "sha256": "da0ecf28651bbff9fa88c4902d6cb0a296cd6c8bfaeeff45c1731f610cca5f5c",
+      "bytes": 299199,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_natural_language_0_L12_R2_DIAG.json",
+      "sha256": "f18e90712e6d200b7f9b20f9a683f6edc28367ab1b9bcd3845d5be3a636465ea",
+      "bytes": 299124,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_natural_language_0_L22_LEGACY_DIAG.json",
+      "sha256": "53039f31b67bfabc6303d309330504dce1db0933c8ab3c4ac8cf1f8da4bf5aa7",
+      "bytes": 298492,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_natural_language_0_L22_R2_DIAG.json",
+      "sha256": "77aa9d663cc91f3a9fbcd0afa7f7f7194701ab5f1e7597c71db0b6607ebb4fd7",
+      "bytes": 298671,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_natural_language_1_L0_LEGACY_DIAG.json",
+      "sha256": "f60bc530f87166a5a1e0cbbf5ed189046a0b251fde1e06684d418286af77dcdb",
+      "bytes": 298906,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_natural_language_1_L0_R2_DIAG.json",
+      "sha256": "fc138aa3440009be4f3087154d0950df4e0577a197e2bc66a160794870cb3beb",
+      "bytes": 298922,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_natural_language_1_L12_LEGACY_DIAG.json",
+      "sha256": "8c03eebc7428d76de65aacbe8b3ada0f69bb9228674b7c755f28c70bfba625cf",
+      "bytes": 298924,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_natural_language_1_L12_R2_DIAG.json",
+      "sha256": "a370e2068ebaa8c07f12a884b3d4c49d5cf511771070f07d3b8c50a5139b8a7f",
+      "bytes": 298896,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_natural_language_1_L22_LEGACY_DIAG.json",
+      "sha256": "d7a264d641a95aba708bf9054a79410e343741e9b5cac4eed92a12d4f19b6fa3",
+      "bytes": 298645,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_natural_language_1_L22_R2_DIAG.json",
+      "sha256": "a95a5cb93dce89df7f51fd41974d89a2ec3284b77fe0b3f38f89cf366606975f",
+      "bytes": 298524,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L0_LEGACY_DIAG.partial.npz",
+      "sha256": "215ec2a05e21bb69bf0d1a39278ddcefc75a64252d45c0e7d2051dceb71ab32f",
+      "bytes": 762290,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L0_R2_DIAG.partial.npz",
+      "sha256": "69c11ed5636ece6042d3b6c031d57788b1d9db6a3bebc1c41350d012ce99c984",
+      "bytes": 762260,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L12_LEGACY_DIAG.partial.npz",
+      "sha256": "9f7cb2975808d398b222783bd943e47d9d2b891576e3e8dca6758cf34f5a8304",
+      "bytes": 761810,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L12_R2_DIAG.partial.npz",
+      "sha256": "e20237b804ed2d3d836fd72e45729ffb9fd8605077e295929700759bf1b16389",
+      "bytes": 761890,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L22_LEGACY_DIAG.partial.npz",
+      "sha256": "032ac87c79a3965793aed6cb13d3ed3176d48d87dd6316d8acc9a31848c114c2",
+      "bytes": 761389,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L22_R2_DIAG.partial.npz",
+      "sha256": "e0f2aea48e861c24ba1541ee04bb23da471cf0f1bbb84263f21389f2f54ada32",
+      "bytes": 761229,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L0_LEGACY_DIAG.partial.npz",
+      "sha256": "8876254e429e37673e745adb64ed1234c2fa9e0fa2e54c999f50986d42e7082c",
+      "bytes": 762087,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L0_R2_DIAG.partial.npz",
+      "sha256": "9504ec918108fe5399ff20131ffef81e4df73d560ef21f5001edbe190a81b86f",
+      "bytes": 762169,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L12_LEGACY_DIAG.partial.npz",
+      "sha256": "a4001034f7915e89202aa07ff003b46b07f6cfe270214e7ccc9b8bbc31d31545",
+      "bytes": 761844,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L12_R2_DIAG.partial.npz",
+      "sha256": "0872673ac09d21ba335ff59aa42b1ca0d74715be05ebf7efb3b46bc04916afe1",
+      "bytes": 761923,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L22_LEGACY_DIAG.partial.npz",
+      "sha256": "90308ffcd97874bcb8bbcd436fc0ae145e6ab9fa93d126fc3cf58132112b57c7",
+      "bytes": 761427,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L22_R2_DIAG.partial.npz",
+      "sha256": "230f746ad61fade468df68373bb1f7d56e5ca6a415cff56b9f152bb0eb35681c",
+      "bytes": 761277,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_code_0_L0_LEGACY_DIAG.partial.npz",
+      "sha256": "73640f34c67a7ec2f565646b69fee159657a310ed927c4bedfae4321c482e4a6",
+      "bytes": 762241,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_code_0_L0_R2_DIAG.partial.npz",
+      "sha256": "0a31ac29b7930f1428f2ef33debc7a3ac00348cb4b5e271eb066340b4ad07af8",
+      "bytes": 762283,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_code_0_L12_LEGACY_DIAG.partial.npz",
+      "sha256": "772e8ac3ac579ff6b37051b6bbb929a530d705b815392eb3d5ea369a0b12eed7",
+      "bytes": 761974,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_code_0_L12_R2_DIAG.partial.npz",
+      "sha256": "76e3df5c386642fb0c1e7335547989a14d842915d96293e483c9b6bb0bf4d23c",
+      "bytes": 761823,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_code_0_L22_LEGACY_DIAG.partial.npz",
+      "sha256": "05ae631d20420f4893052049ed7139b396c235d0fa9c2cc9f9e2fcae12a412b3",
+      "bytes": 761521,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_code_0_L22_R2_DIAG.partial.npz",
+      "sha256": "a9d6d7f24e0d2c1c8b484fdfbdece9af2535513269456bd3c753e746fbf0d21b",
+      "bytes": 761401,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_code_1_L0_LEGACY_DIAG.partial.npz",
+      "sha256": "afe32f82c54358203d45afcdf7dc2a2a17006538c0ea5088b339ce6dc1a32537",
+      "bytes": 762085,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_code_1_L0_R2_DIAG.partial.npz",
+      "sha256": "18df72df95d69731b3d6aee512beae6180631e8ea78c909f0289d7b6e26789d3",
+      "bytes": 762173,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_code_1_L12_LEGACY_DIAG.partial.npz",
+      "sha256": "1c8df65ce4251e37ac2976c026349d40bb429e3f8d5646ed855091934152a40b",
+      "bytes": 761825,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_code_1_L12_R2_DIAG.partial.npz",
+      "sha256": "6b7f248d0dc017b34e73b9027372baf2b631a93b6e79280b36f89bada3b77d00",
+      "bytes": 761747,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_code_1_L22_LEGACY_DIAG.partial.npz",
+      "sha256": "85709b680a838e0522df3ee0d2f8d3fc0a1d6807e69994d38d4419b06c3d0d5b",
+      "bytes": 761558,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_code_1_L22_R2_DIAG.partial.npz",
+      "sha256": "9d2858f3802c583b570681eaebc890276fbfba44974e2bfda0f07acd546c0c49",
+      "bytes": 761427,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_natural_language_0_L0_LEGACY_DIAG.partial.npz",
+      "sha256": "ecd71d481c4734852af3814cb491288e1dc462c887085f0c185410970f009067",
+      "bytes": 762156,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_natural_language_0_L0_R2_DIAG.partial.npz",
+      "sha256": "3e0183be45a6a3863e84e1887f3b2ab7cdbc4d926dd3d158f7061c27f9c27e63",
+      "bytes": 762066,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_natural_language_0_L12_LEGACY_DIAG.partial.npz",
+      "sha256": "5ef54ef9ffbcaf3ccdb9060a0253dd55a9e3e9911b8a9a5ef19420195d9323ad",
+      "bytes": 761950,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_natural_language_0_L12_R2_DIAG.partial.npz",
+      "sha256": "79dbfd191f583c33e96748a4adee0bf26c62bcd4de57e1f341566a91bc59dccd",
+      "bytes": 762093,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_natural_language_0_L22_LEGACY_DIAG.partial.npz",
+      "sha256": "b609b4acd67ed869f68a7b0a4624b2a17d53f5eeb33e3bfaec4fb86691d1da44",
+      "bytes": 761874,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_natural_language_0_L22_R2_DIAG.partial.npz",
+      "sha256": "c10b7918a63bbc20f16d6b1253ad64d18a35b741aacabd831b348edcfd3b3026",
+      "bytes": 761710,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_natural_language_1_L0_LEGACY_DIAG.partial.npz",
+      "sha256": "57647698fb68004ecd20770afa4fd30a9baac82d1897d5126bc53070c49b0f56",
+      "bytes": 762340,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_natural_language_1_L0_R2_DIAG.partial.npz",
+      "sha256": "54bfbe8cafdaa90ae180eb18d5f8b295e4b6612f5685860f3fe7008e4fd91c26",
+      "bytes": 762226,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_natural_language_1_L12_LEGACY_DIAG.partial.npz",
+      "sha256": "714ff878be6a0ecb4b5f2fbd8e24bb974f50d9f886357e26967f0705bf342954",
+      "bytes": 762055,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_natural_language_1_L12_R2_DIAG.partial.npz",
+      "sha256": "065cdda2aacaad247dc5df77aff741a4b9ca7440136b6ddc2ffdf22ad4793609",
+      "bytes": 762139,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_natural_language_1_L22_LEGACY_DIAG.partial.npz",
+      "sha256": "cf554724febfeb545a9d8f6cbdf52ec25e86b063c91e788d8118d0aab6d7e870",
+      "bytes": 761816,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "cases/train_natural_language_1_L22_R2_DIAG.partial.npz",
+      "sha256": "6c831fb80dccf85673745cb54d97140a899e5d6be3d28ddb74aa567338976fe0",
+      "bytes": 761665,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    }
+  ],
+  "original_hash_links": [
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L0_LEGACY_DIAG.npz",
+      "sha256": "215ec2a05e21bb69bf0d1a39278ddcefc75a64252d45c0e7d2051dceb71ab32f",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L0_R2_DIAG.npz",
+      "sha256": "69c11ed5636ece6042d3b6c031d57788b1d9db6a3bebc1c41350d012ce99c984",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L12_LEGACY_DIAG.npz",
+      "sha256": "9f7cb2975808d398b222783bd943e47d9d2b891576e3e8dca6758cf34f5a8304",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L12_R2_DIAG.npz",
+      "sha256": "e20237b804ed2d3d836fd72e45729ffb9fd8605077e295929700759bf1b16389",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L22_LEGACY_DIAG.npz",
+      "sha256": "032ac87c79a3965793aed6cb13d3ed3176d48d87dd6316d8acc9a31848c114c2",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L22_R2_DIAG.npz",
+      "sha256": "e0f2aea48e861c24ba1541ee04bb23da471cf0f1bbb84263f21389f2f54ada32",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L0_LEGACY_DIAG.npz",
+      "sha256": "8876254e429e37673e745adb64ed1234c2fa9e0fa2e54c999f50986d42e7082c",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L0_R2_DIAG.npz",
+      "sha256": "9504ec918108fe5399ff20131ffef81e4df73d560ef21f5001edbe190a81b86f",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L12_LEGACY_DIAG.npz",
+      "sha256": "a4001034f7915e89202aa07ff003b46b07f6cfe270214e7ccc9b8bbc31d31545",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L12_R2_DIAG.npz",
+      "sha256": "0872673ac09d21ba335ff59aa42b1ca0d74715be05ebf7efb3b46bc04916afe1",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L22_LEGACY_DIAG.npz",
+      "sha256": "90308ffcd97874bcb8bbcd436fc0ae145e6ab9fa93d126fc3cf58132112b57c7",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L22_R2_DIAG.npz",
+      "sha256": "230f746ad61fade468df68373bb1f7d56e5ca6a415cff56b9f152bb0eb35681c",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_code_0_L0_LEGACY_DIAG.npz",
+      "sha256": "73640f34c67a7ec2f565646b69fee159657a310ed927c4bedfae4321c482e4a6",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_code_0_L0_R2_DIAG.npz",
+      "sha256": "0a31ac29b7930f1428f2ef33debc7a3ac00348cb4b5e271eb066340b4ad07af8",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_code_0_L12_LEGACY_DIAG.npz",
+      "sha256": "772e8ac3ac579ff6b37051b6bbb929a530d705b815392eb3d5ea369a0b12eed7",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_code_0_L12_R2_DIAG.npz",
+      "sha256": "76e3df5c386642fb0c1e7335547989a14d842915d96293e483c9b6bb0bf4d23c",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_code_0_L22_LEGACY_DIAG.npz",
+      "sha256": "05ae631d20420f4893052049ed7139b396c235d0fa9c2cc9f9e2fcae12a412b3",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_code_0_L22_R2_DIAG.npz",
+      "sha256": "a9d6d7f24e0d2c1c8b484fdfbdece9af2535513269456bd3c753e746fbf0d21b",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_code_1_L0_LEGACY_DIAG.npz",
+      "sha256": "afe32f82c54358203d45afcdf7dc2a2a17006538c0ea5088b339ce6dc1a32537",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_code_1_L0_R2_DIAG.npz",
+      "sha256": "18df72df95d69731b3d6aee512beae6180631e8ea78c909f0289d7b6e26789d3",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_code_1_L12_LEGACY_DIAG.npz",
+      "sha256": "1c8df65ce4251e37ac2976c026349d40bb429e3f8d5646ed855091934152a40b",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_code_1_L12_R2_DIAG.npz",
+      "sha256": "6b7f248d0dc017b34e73b9027372baf2b631a93b6e79280b36f89bada3b77d00",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_code_1_L22_LEGACY_DIAG.npz",
+      "sha256": "85709b680a838e0522df3ee0d2f8d3fc0a1d6807e69994d38d4419b06c3d0d5b",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_code_1_L22_R2_DIAG.npz",
+      "sha256": "9d2858f3802c583b570681eaebc890276fbfba44974e2bfda0f07acd546c0c49",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_natural_language_0_L0_LEGACY_DIAG.npz",
+      "sha256": "ecd71d481c4734852af3814cb491288e1dc462c887085f0c185410970f009067",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_natural_language_0_L0_R2_DIAG.npz",
+      "sha256": "3e0183be45a6a3863e84e1887f3b2ab7cdbc4d926dd3d158f7061c27f9c27e63",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_natural_language_0_L12_LEGACY_DIAG.npz",
+      "sha256": "5ef54ef9ffbcaf3ccdb9060a0253dd55a9e3e9911b8a9a5ef19420195d9323ad",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_natural_language_0_L12_R2_DIAG.npz",
+      "sha256": "79dbfd191f583c33e96748a4adee0bf26c62bcd4de57e1f341566a91bc59dccd",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_natural_language_0_L22_LEGACY_DIAG.npz",
+      "sha256": "b609b4acd67ed869f68a7b0a4624b2a17d53f5eeb33e3bfaec4fb86691d1da44",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_natural_language_0_L22_R2_DIAG.npz",
+      "sha256": "c10b7918a63bbc20f16d6b1253ad64d18a35b741aacabd831b348edcfd3b3026",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_natural_language_1_L0_LEGACY_DIAG.npz",
+      "sha256": "57647698fb68004ecd20770afa4fd30a9baac82d1897d5126bc53070c49b0f56",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_natural_language_1_L0_R2_DIAG.npz",
+      "sha256": "54bfbe8cafdaa90ae180eb18d5f8b295e4b6612f5685860f3fe7008e4fd91c26",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_natural_language_1_L12_LEGACY_DIAG.npz",
+      "sha256": "714ff878be6a0ecb4b5f2fbd8e24bb974f50d9f886357e26967f0705bf342954",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_natural_language_1_L12_R2_DIAG.npz",
+      "sha256": "065cdda2aacaad247dc5df77aff741a4b9ca7440136b6ddc2ffdf22ad4793609",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_natural_language_1_L22_LEGACY_DIAG.npz",
+      "sha256": "cf554724febfeb545a9d8f6cbdf52ec25e86b063c91e788d8118d0aab6d7e870",
+      "role": "CASE_ARRAYS"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "507453d21c6beb155bc36686458bd85eaf8f0bb42b535ddda3c1e044f74cad02",
+      "role": "CASE_FREEZE"
+    },
+    {
+      "path": "cases/train_natural_language_1_L22_R2_DIAG.npz",
+      "sha256": "6c831fb80dccf85673745cb54d97140a899e5d6be3d28ddb74aa567338976fe0",
+      "role": "CASE_ARRAYS"
+    }
+  ],
+  "reproduction_levels": {
+    "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS": "Scalar/table aggregation only, where the public CPU verifier implements the corresponding reduction",
+    "INCLUDED_TENSOR_POINT_CHECKS": "Small selected fixtures support explicitly bounded arithmetic comparisons; they are not representative full trajectories",
+    "LOCAL_ONLY_REGENERATION": "Full model forwards and capture/response regeneration require hash-bound local inputs and sometimes local drivers; no blanket full-rerun promise"
+  },
+  "claim_boundary": "Curation establishes evidence identity, not new model quality, numerical success, or deployment promotion"
+}

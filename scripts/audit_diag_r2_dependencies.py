@@ -10,6 +10,7 @@ import hashlib
 import json
 from datetime import datetime, timezone
 from pathlib import Path
+from rtpa_research.publication_sources import check_frozen_publication_source
 
 
 def digest(path):
@@ -43,10 +44,21 @@ def audit(root, run):
             errors.append({'missing_local_module': name, 'path': rel})
             continue
         actual = digest(path)
-        matches = [{'authority': label, 'expected_sha256': hashes[rel],
-                    'match': actual == hashes[rel]}
-                   for label, _, hashes in authorities if rel in hashes]
-        if not matches or not all(m['match'] for m in matches):
+        matches = []
+        for label, _, hashes in authorities:
+            if rel not in hashes:
+                continue
+            item = {'authority': label, 'expected_sha256': hashes[rel],
+                    'match': actual == hashes[rel], 'matches_frozen_bytes': actual == hashes[rel]}
+            try:
+                proof = check_frozen_publication_source(root, rel, hashes[rel])
+                item.update(accepted_source_identity=True, source_identity_status=proof['status'])
+                if not proof['matches_frozen_bytes']:
+                    item['publication_only_mapping'] = proof
+            except ValueError as exc:
+                item.update(accepted_source_identity=False, source_identity_error=str(exc))
+            matches.append(item)
+        if not matches or not all(m['accepted_source_identity'] for m in matches):
             errors.append({'path': rel, 'reason': 'NO_FROZEN_AUTHORITY_OR_MISMATCH'})
         rows.append({'path': rel, 'sha256': actual, 'authorities': matches})
         tree = ast.parse(path.read_text())

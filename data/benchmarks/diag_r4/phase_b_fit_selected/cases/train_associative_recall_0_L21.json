@@ -1,0 +1,21 @@
+{
+  "id": "train_associative_recall_0_L21",
+  "document": "train_associative_recall_0",
+  "layer": 21,
+  "seconds": 2.202000607998343,
+  "freeze_sha256": "76be1f724af861f7dc943587d1f021ba8abac602d1a96004f68fb9d24e44a72b",
+  "sha256": "e145e43a6b42beda428bf60982a4a15464170e342cc363c72bb2f285b20aae05",
+  "input_sha256": "0081093f51269520f93c93042e925ec35422e5a3583d35a2a221d7f84d8e18d4",
+  "audit": {
+    "adjoint_c_relative_max": 3.7216284079133817e-16,
+    "promotion_identity_relative_max": 6.681831215091276e-17,
+    "full_K_diagonal_relative_max": 8.667453615031856e-17,
+    "all_low_objective_relative_max": 1.1760407517913587e-16,
+    "relative_tolerance": 1e-10,
+    "pass": true
+  },
+  "scored_queries": 240,
+  "source_workspace_bytes": 268435456,
+  "retained_write_workspace_bytes": 541065216,
+  "status": "COMPLETE"
+}

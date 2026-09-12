@@ -1,0 +1,29 @@
+{
+  "status": "PASS_TESTED_POINTS",
+  "rows": [
+    {
+      "scope": "transformed_groups",
+      "groups": 259,
+      "payload_exact": {
+        "low_codes": true,
+        "low_scales": true,
+        "low_offsets": true
+      },
+      "decode_exact": true
+    },
+    {
+      "scope": "stored_nearest",
+      "finite": true,
+      "bytes": 19328,
+      "high_exact": true
+    },
+    {
+      "scope": "fa_code_factorized",
+      "finite": true,
+      "bytes": 19328,
+      "high_exact": true
+    }
+  ],
+  "model_forwards": 0,
+  "freeze_sha256": "4797675030d6f0d63898db8d2ae73bf3657acafbe616a10b16cd5fcf0cab35c4"
+}

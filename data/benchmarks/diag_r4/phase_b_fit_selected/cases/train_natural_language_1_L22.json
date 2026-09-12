@@ -1,0 +1,21 @@
+{
+  "id": "train_natural_language_1_L22",
+  "document": "train_natural_language_1",
+  "layer": 22,
+  "seconds": 2.3136073620007664,
+  "freeze_sha256": "76be1f724af861f7dc943587d1f021ba8abac602d1a96004f68fb9d24e44a72b",
+  "sha256": "e072b3243f40b8dbc9c0a3dbca1874cca8fb4f07aaa246df0ee188841a49042e",
+  "input_sha256": "b9b4d891fd216912942561e20a5946daf78586b3f2ae39751965d271d3bb18e0",
+  "audit": {
+    "adjoint_c_relative_max": 1.0897465157914557e-15,
+    "promotion_identity_relative_max": 2.2041922401101283e-16,
+    "full_K_diagonal_relative_max": 4.9831492775618543e-17,
+    "all_low_objective_relative_max": 3.642162663678757e-16,
+    "relative_tolerance": 1e-10,
+    "pass": true
+  },
+  "scored_queries": 240,
+  "source_workspace_bytes": 268435456,
+  "retained_write_workspace_bytes": 541065216,
+  "status": "COMPLETE"
+}

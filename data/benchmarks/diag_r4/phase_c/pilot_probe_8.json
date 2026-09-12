@@ -1,0 +1,34 @@
+{
+  "method": "probe_8",
+  "warmup_calls": 1,
+  "measured_calls": 3,
+  "samples": [
+    {
+      "repeat": 0,
+      "wall_seconds": 0.03935797799931606,
+      "cpu_seconds": 0.0393232
+    },
+    {
+      "repeat": 1,
+      "wall_seconds": 0.038875324000400724,
+      "cpu_seconds": 0.03883580000000009
+    },
+    {
+      "repeat": 2,
+      "wall_seconds": 0.04368408600203111,
+      "cpu_seconds": 0.043623499999999926
+    }
+  ],
+  "median_wall_seconds": 0.03935797799931606,
+  "worker_wall_seconds": 0.16979830200216384,
+  "worker_cpu_seconds": 0.16829280000000002,
+  "process_peak_RSS_bytes": 113610752,
+  "RSS_before_calls_bytes": 110862336,
+  "input_trace_array_bytes": 9569280,
+  "workspace_core_estimated_bytes": 1591296,
+  "memory_scope": "Fresh worker process peak RSS includes interpreter/dependencies/input arrays/allocator; core estimate excludes temporaries and input arrays",
+  "observations": {
+    "path": "pilot_probe_8.npz",
+    "sha256": "8a969d2859e94b70c07f2c6c96a0ce4f6f9c7da23a56bd9a9748731bba693a7b"
+  }
+}

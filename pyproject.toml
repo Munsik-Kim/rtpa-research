@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rtpa-research"
-version = "1.2.0rc1"
+version = "1.3.0rc1"
 description = "Output-aware recurrent-state quantization with reproducible evidence and GDN operators"
 readme = "README.md"
 license = {file = "LICENSE"}
@@ -14,6 +14,8 @@ dependencies = ["numpy==1.26.4", "tokenizers==0.22.2"]
 [project.optional-dependencies]
 gpu = ["torch==2.11.0", "transformers==5.9.0"]
 plots = ["matplotlib==3.10.9"]
+calibration = ["scipy==1.17.1"]
+test = ["scipy==1.17.1", "pytest==9.1.1"]
 
 [project.scripts]
 rtpa-research = "rtpa_research.__main__:main"

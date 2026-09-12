@@ -1,0 +1,64 @@
+{
+  "utc": "2026-09-12T11:10:19.103014+00:00",
+  "config": {
+    "id": "R4_C_REAL_HEAD_PILOT_20260912_V1",
+    "family": "gdn",
+    "CPU_threads": 2,
+    "CPU_wall_budget_seconds": 300,
+    "shape": [
+      256,
+      1,
+      128,
+      128
+    ],
+    "methods": [
+      "adjoint_gramian",
+      "exact_full",
+      "exact_chunk8",
+      "probe8",
+      "probe16",
+      "probe32"
+    ],
+    "warmup_runs": 1,
+    "timed_runs": 3,
+    "row_chunk": 8,
+    "seed": 612431,
+    "stages": [
+      8,
+      16,
+      32
+    ],
+    "probe_chunk": 8,
+    "high_budget": 8,
+    "family_alpha": 0.05,
+    "score_numerical_slack": 0.0,
+    "exact_relative_tolerance": 1e-10,
+    "probe_timing_allocation": "For terminal stage r, pass the nested stage prefix and alpha=.05*prefix_stage_count/3/family_heads. Thus every interval retains the full three-stage Bonferroni allocation, including shorter timed runs.",
+    "target": "Supplied physical low-minus-high write sources and shared h only; output before current write, no model/codec/trace reconstruction. B3 independent-write K plus exactly the same signed2c; B4 coherent Kdiag plus2c.",
+    "mask_scope": "Per-fixture/per-head top8 is an objective diagnostic, not a TRAIN-aggregated calibration mask or deployed policy.",
+    "timing": "Fresh process per method; identical fixture and SciPy/NumPy imports; one untimed warmup then3 full-API timings. Includes repeated input checks and exactc within probe API, excludes process startup/load/serialization. All samples retained; no extrapolated end-to-end calibration claim.",
+    "memory": "Linux process peak RSS after load and after measured work, high-water increase, input bytes, and API-declared core workspace; core workspace excludes allocations/transients/imports and is not peak memory.",
+    "confidence_scope": "One predeclared probe seed on this fixed real trajectory; observed interval inclusion is a check, not empirical coverage-rate evidence. Conditional Gaussian intervals across supplied128rows and3stages; no FP64 rounding-error proof and no across-run95% claim unless family_heads was predeclared accordingly.",
+    "no_selection": "No speed-based promotion without exact mask/certificate; no method/seed/chunk/tolerance tuning or repeated-seed coverage experiment.",
+    "failure_policy": "First mismatch/nonfinite/timeout is retained and ends this frozen run; no silent retry or substitute numbers.",
+    "fixture": "LOCAL_ONLY/phase_b_fit_cpu/fixtures/train_associative_recall_0_L0_head0.npz",
+    "case_stats": "LOCAL_ONLY/phase_b_fit_cpu/cases/train_associative_recall_0_L0.npz",
+    "head": 0,
+    "family_heads": 1,
+    "codec_scope": "LEGACY_P_PRE CPU-generated TRAIN associative-recall0/layer0/head0; FP32 codec/anchor with FP64 physical subtraction and response. Not the upcoming selected codec."
+  },
+  "source_hashes": {
+    "driver": "cdbf2b0adb173b56ec5ef411a2438366a9f0ab0f73f9dd708809e30b42b6140f",
+    "adjoint_module": "cd75a56b196dd1b7f02a0acd18cf33c9df2e30471ffd954811da4290f2393c1b",
+    "adjoint_tests": "88881fc7f4b0267e911d83591159b042e459f1a3555d9133733de1e422207ee6",
+    "parent_calibration": "f20494a39ae78b253edb8fa07354de8f30037082f51b9e285e233a484d02ead9"
+  },
+  "fixture_sha256": "875594bea81f7ee7c5a4a0c26d709046a68bf4b7e88243e499ad27640ee4819e",
+  "case_stats_sha256": "6f8c3f302a0d15c0a190883eec4d81ea0f11677d07e6a803086a9b730d1e22fd",
+  "environment": {
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "threads": 2
+  },
+  "state": "FROZEN_BEFORE_REAL_RESPONSE_OR_PROBE_COMPUTATION; schema was inspected"
+}

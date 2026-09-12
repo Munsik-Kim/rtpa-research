@@ -1,0 +1,17 @@
+{
+  "method": "probe8",
+  "seconds": [
+    0.10857061999922735,
+    0.1065558880000026,
+    0.13597369999843067
+  ],
+  "median_seconds": 0.10857061999922735,
+  "input_bytes": 34867200,
+  "peak_RSS_before_compute_bytes": 171008000,
+  "peak_RSS_after_compute_bytes": 171008000,
+  "RSS_high_water_increase_bytes": 0,
+  "workspace_core_bytes": 3154944,
+  "output_sha256": "125b74163a89241d5967a50290434340f1214ac0e57877b0b0a3bc11c5d6cb84",
+  "per_row_head_stage_alpha": 0.00013020833333333333,
+  "probability_scope": "Conditional Gaussian intervals; simultaneous across supplied heads/rows/stages; no numerical-roundoff proof"
+}

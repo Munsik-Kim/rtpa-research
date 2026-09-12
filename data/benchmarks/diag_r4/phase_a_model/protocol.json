@@ -1,0 +1,46 @@
+{
+  "run_id": "RTPA_DIAG_ATTRIBUTION_R4_20260912_V1",
+  "phase": "A_MODEL_DEV_CODEC_MASK_CROSS",
+  "methods": {
+    "NATIVE": {
+      "codec": "NATIVE"
+    },
+    "LEGACY_P_PRE__LEGACY_DIAG": {
+      "codec": "LEGACY_P_PRE",
+      "path": "data/benchmarks/gdn/policy.npz",
+      "sha256": "bd865a1a138ed25a98e8db5b5dabb26ff259307be3ba2f071a04ceb71faace68",
+      "name": "DIAG8"
+    },
+    "LEGACY_P_PRE__R2_DIAG": {
+      "codec": "LEGACY_P_PRE",
+      "path": "data/benchmarks/diag_r2/policy_r2.npz",
+      "sha256": "45a511cc987306a3e7c68a86d6b1fa61c80778e1fc8911d8f19042935cc8c0b1",
+      "name": "DIAG8"
+    },
+    "R2_OFFSET__LEGACY_DIAG": {
+      "codec": "R2_OFFSET",
+      "path": "data/benchmarks/gdn/policy.npz",
+      "sha256": "bd865a1a138ed25a98e8db5b5dabb26ff259307be3ba2f071a04ceb71faace68",
+      "name": "DIAG8"
+    },
+    "R2_OFFSET__R2_DIAG": {
+      "codec": "R2_OFFSET",
+      "path": "data/benchmarks/diag_r2/policy_r2.npz",
+      "sha256": "45a511cc987306a3e7c68a86d6b1fa61c80778e1fc8911d8f19042935cc8c0b1",
+      "name": "DIAG8"
+    }
+  },
+  "model_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "layers": "all18_GDN",
+  "prefixes": [
+    256,
+    512,
+    1024
+  ],
+  "primary_window": "KL[16,L); NLL[16,L-1), own input tokens, output before storage",
+  "sampling": "first predefined prior upgrade TEST document per family; now DEV; no new independent test",
+  "planned_forwards": 15360,
+  "backend": "readable codec references; BF16 native, FP32 recurrence, TF32 off",
+  "new_codec_repair_candidates": [],
+  "frozen_before_outputs": true
+}

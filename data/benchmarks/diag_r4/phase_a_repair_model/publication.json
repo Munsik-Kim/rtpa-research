@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "stage": "phase_a_repair_model",
+  "scientific_status": "CLOSED_MODEL_RECORDS",
+  "curator_sha256": "c2fbaba51bb06f65ab4ccfac6ef55413cd6eb678f9e5e4af328f8ef831deb738",
+  "files": [
+    {
+      "path": "freeze.json",
+      "sha256": "70853fef2be45eb0cdd1a890c91ccebe23c7ec68b5a8999624d5417878ed4b6e",
+      "bytes": 138971,
+      "byte_identical": true,
+      "original_relative": "freeze.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "panel.json",
+      "sha256": "7307df3a23af68b39ab0cc6b62fb678e404a7612509865dce94f9d5690230131",
+      "bytes": 121124,
+      "byte_identical": true,
+      "original_relative": "panel.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "partials/test_associative_recall_0_1789211548554362797.jsonl.gz",
+      "sha256": "c9fe8ab2a9155eb854a3deb1c30f726df8d7930e78e31d37caf6d9fa70b609c3",
+      "bytes": 44550,
+      "byte_identical": false,
+      "original_relative": "partials/test_associative_recall_0_1789211548554362797.jsonl",
+      "original_sha256": "17de5d620d963585ed1fc27011e4d7d48d86fe579fd7b2553c99852b1a64b616",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Lossless deterministic gzip of the entire original checkpoint, including any failures/truncated bytes"
+    },
+    {
+      "path": "partials/test_code_0_1789211373953831716.jsonl.gz",
+      "sha256": "bec11a752925bbc38f4cb43cc9a49ada2cc54a65e1d75ce4b498dd8d74b974d1",
+      "bytes": 44607,
+      "byte_identical": false,
+      "original_relative": "partials/test_code_0_1789211373953831716.jsonl",
+      "original_sha256": "5cd556cf406083aaa672e1c565c530db5393104ed038784b87be7ea9baa1e7f1",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Lossless deterministic gzip of the entire original checkpoint, including any failures/truncated bytes"
+    },
+    {
+      "path": "partials/test_natural_language_0_1789211194436295616.jsonl.gz",
+      "sha256": "d41f43e58eb5a15b297802221db30a394d6a693524e14054740c1eedd1ca6015",
+      "bytes": 44448,
+      "byte_identical": false,
+      "original_relative": "partials/test_natural_language_0_1789211194436295616.jsonl",
+      "original_sha256": "7defaf799f5212f055cc638c129e6f10f127a5fa51120b7b31da1a16cd5728a0",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Lossless deterministic gzip of the entire original checkpoint, including any failures/truncated bytes"
+    },
+    {
+      "path": "protocol.json",
+      "sha256": "0db424622768ce1a3688ba2bd0c3587f7745ab4a042a82c1c5596b0269c812ed",
+      "bytes": 2324,
+      "byte_identical": true,
+      "original_relative": "protocol.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "tokens/test_associative_recall_0.jsonl.gz",
+      "sha256": "1839606fc2b8021eb14ac9310ee755f060fca72cd72c9260d0c08e93619586f6",
+      "bytes": 44593,
+      "byte_identical": true,
+      "original_relative": "tokens/test_associative_recall_0.jsonl.gz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "tokens/test_associative_recall_0.jsonl.receipt.json",
+      "sha256": "6d6193e063977c9591d528e6511aba47164f3a2bf817c6254343abe8e122f796",
+      "bytes": 461,
+      "byte_identical": true,
+      "original_relative": "tokens/test_associative_recall_0.jsonl.receipt.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "tokens/test_code_0.jsonl.gz",
+      "sha256": "fb1ee43db74892ed5f7558e3711e2c7fda1e092ae8585ced6b44de9c3b3b5471",
+      "bytes": 44636,
+      "byte_identical": true,
+      "original_relative": "tokens/test_code_0.jsonl.gz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "tokens/test_code_0.jsonl.receipt.json",
+      "sha256": "0c2e2932876b8f6002062abd1a531f369e734168da5788ca0e64522838a414a7",
+      "bytes": 461,
+      "byte_identical": true,
+      "original_relative": "tokens/test_code_0.jsonl.receipt.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "tokens/test_natural_language_0.jsonl.gz",
+      "sha256": "6a07d10a47a4606ed44582755eafcbbad3cd5ec9c6245ca19ad10af3a20de8cb",
+      "bytes": 44488,
+      "byte_identical": true,
+      "original_relative": "tokens/test_natural_language_0.jsonl.gz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "tokens/test_natural_language_0.jsonl.receipt.json",
+      "sha256": "81bf189124307504fa8e8eea2dc7a7bf8265ef04fabb163fbb0f94dd93bcb8d5",
+      "bytes": 461,
+      "byte_identical": true,
+      "original_relative": "tokens/test_natural_language_0.jsonl.receipt.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "source_dependency_bindings.json",
+      "sha256": "49d31f62f46f1b7894ba3c0deee5f273252af7ff12e689216060d8c8681ded43",
+      "bytes": 7392,
+      "byte_identical": false,
+      "role": "DERIVED_SOURCE_AND_DEPENDENCY_BINDINGS"
+    }
+  ],
+  "local_only": [
+    {
+      "path": "partials/test_associative_recall_0_1789211548554362797.jsonl",
+      "sha256": "17de5d620d963585ed1fc27011e4d7d48d86fe579fd7b2553c99852b1a64b616",
+      "bytes": 465230,
+      "availability": "LOCAL_ONLY",
+      "reason": "Exact decompressed bytes included as .gz; not deleted or filtered"
+    },
+    {
+      "path": "partials/test_code_0_1789211373953831716.jsonl",
+      "sha256": "5cd556cf406083aaa672e1c565c530db5393104ed038784b87be7ea9baa1e7f1",
+      "bytes": 408652,
+      "availability": "LOCAL_ONLY",
+      "reason": "Exact decompressed bytes included as .gz; not deleted or filtered"
+    },
+    {
+      "path": "partials/test_natural_language_0_1789211194436295616.jsonl",
+      "sha256": "7defaf799f5212f055cc638c129e6f10f127a5fa51120b7b31da1a16cd5728a0",
+      "bytes": 460399,
+      "availability": "LOCAL_ONLY",
+      "reason": "Exact decompressed bytes included as .gz; not deleted or filtered"
+    }
+  ],
+  "original_hash_links": [
+    {
+      "path": "panel.json",
+      "sha256": "7307df3a23af68b39ab0cc6b62fb678e404a7612509865dce94f9d5690230131",
+      "role": "MODEL_PANEL"
+    }
+  ],
+  "reproduction_levels": {
+    "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS": "Scalar/table aggregation only, where the public CPU verifier implements the corresponding reduction",
+    "INCLUDED_TENSOR_POINT_CHECKS": "Small selected fixtures support explicitly bounded arithmetic comparisons; they are not representative full trajectories",
+    "LOCAL_ONLY_REGENERATION": "Full model forwards and capture/response regeneration require hash-bound local inputs and sometimes local drivers; no blanket full-rerun promise"
+  },
+  "claim_boundary": "Curation establishes evidence identity, not new model quality, numerical success, or deployment promotion"
+}

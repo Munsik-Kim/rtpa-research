@@ -1,0 +1,28 @@
+{
+  "status": "COST_INCOMPLETE",
+  "reason": "OTHER_GPU_COMPUTE_PROCESS_NO_TERMINATION",
+  "isolation": {
+    "status_ok": true,
+    "processes": [
+      {
+        "pid": 190605,
+        "process": "[Not Found]"
+      }
+    ],
+    "no_competing_GPU_worker": false,
+    "coverage": "before/after sampled nvidia-smi compute workers; not continuous Windows visibility"
+  },
+  "freeze_sha256": "88ab9252a4c189c10de16763dbc4ba270d4307fbb18217759a9f3594edb7cd73",
+  "physical_forwards": 0,
+  "cost_wiring_revision_sha256": "6a806f0ec2e914f64494738345ef3e4c1043282239153d1388cef019fc15085a",
+  "start_binding_validation": {
+    "status": "PASS",
+    "full_content_hashes": true,
+    "loaded_module_paths_checked": false
+  },
+  "end_binding_validation": {
+    "status": "PASS",
+    "full_content_hashes": true,
+    "loaded_module_paths_checked": false
+  }
+}

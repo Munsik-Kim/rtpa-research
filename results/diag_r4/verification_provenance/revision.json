@@ -1,0 +1,30 @@
+{
+  "revision": "PUBLICATION_INSTALLATION_CHECKER_R2",
+  "reason": "pip installation compiles inventoried historical Python sources into auxiliary __pycache__ bytecode; the initial checker treated those generated files as added scientific evidence.",
+  "original_manifest_sha256": "4bdb1f88aa92f08f9526f442f4c5002246c3ebfd27dec82002a432f0a7b865ca",
+  "source_changes": {
+    "scripts/check_diag_r4_public.py": {
+      "original_sha256": "a7741424768f5a3909fe0ee0d1f78ca10a24f8fa4cd28376e24267478683f5d0",
+      "revised_sha256": "90f1119a7ce71c6fc763b54974a90705e0307c7dcdc27e19f1757e93ec9f344b",
+      "original_path": "results/diag_r4/verification_provenance/initial_check_diag_r4_public.py"
+    },
+    "tests/test_diag_r4_aggregation.py": {
+      "original_sha256": "f928239ed2feab550b0c54a3b70bd7ba721887f151ce647179438bbc6efa9c10",
+      "revised_sha256": "29fdf2fb219ad09e5683a21cd98a785e42b1e35080623435815993b1ad181f03",
+      "original_path": "results/diag_r4/verification_provenance/initial_test_diag_r4_aggregation.py"
+    }
+  },
+  "retained_failed_clean_install": {
+    "availability": "LOCAL_ONLY",
+    "sha256": "04ba0110c992cf283df56bccbb566c92f1033f061c605248537167f13de937c5",
+    "status": "FAILED",
+    "step": "installed_r4",
+    "error": "PUBLICATION_INTEGRITY_FAILED",
+    "unlisted_files": 5,
+    "category": "pip-generated CPython bytecode"
+  },
+  "scope": "Only conventional bytecode cache paths corresponding to inventoried Python sources are excluded from evidence-file enumeration and reported separately. Source bytes, data bytes and unrecognized files remain checked. Derived bytecode is not itself validated scientific evidence.",
+  "scientific_expected_summaries_changed": false,
+  "tolerances_changed": false,
+  "model_or_calibration_reexecuted": false
+}

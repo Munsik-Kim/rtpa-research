@@ -1,0 +1,454 @@
+{
+  "schema_version": 1,
+  "run_id": "RTPA_DIAG_ATTRIBUTION_R4_20260912_V1",
+  "claims": [
+    {
+      "claim_id": "R4_A_CODEC_MASK",
+      "statement": "The codec disadvantage remains when either mask is fixed.",
+      "status": "SUPPORTED_IN_DEV_SCOPE",
+      "observed": {
+        "public_summary": "results/diag_r4/phase_a_model/summary.json",
+        "n_documents": 3,
+        "role": "Reused synthetic DEV, nested prefixes",
+        "physical_forwards": 15360
+      },
+      "evidence": [
+        {
+          "path": "results/diag_r4/phase_a_model/summary.json",
+          "sha256": "2f97e16d3df5819fc1a956bc087f8890152e50a9c96bb7c322db808926ffc2ac"
+        },
+        {
+          "path": "scripts/aggregate_diag_r4.py",
+          "sha256": "3113f0861dcd38cd1387775f3d6d73fe0059984eb419a6822b3ae5171742fa87"
+        }
+      ],
+      "reproduction_level": "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS",
+      "limitations": [
+        "Not a complete numerical-cause attribution or an additional independent TEST panel."
+      ],
+      "mechanical_PASS_is_scientific_success": false
+    },
+    {
+      "claim_id": "R4_A_REPAIR",
+      "statement": "The preregistered rounding candidate is not a promoted default.",
+      "status": "NOT_PROMOTED_DEV_CRITERIA_FAILED",
+      "observed": {
+        "candidate": "R4_OFFSET_RNE_V1",
+        "pooled_KL_ratio": 1.124826792371689,
+        "mean_delta_NLL": 0.0013761840763624464,
+        "selected_codec": "LEGACY_P_PRE"
+      },
+      "evidence": [
+        {
+          "path": "data/benchmarks/diag_r4/codec_selection/selection.json",
+          "sha256": "70ec2d78db1a79604889cf8a3c8b0dae75ab67cf03705f4b7cac6cffad454a58"
+        },
+        {
+          "path": "results/diag_r4/phase_a_repair_model/summary.json",
+          "sha256": "241c189810c7c6124f55720fcd6abf788d325168e47eb5821bea2f88514a07e3"
+        }
+      ],
+      "reproduction_level": "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS",
+      "limitations": [
+        "Bounded fixture success is not whole-model quality or universal range closure.",
+        "The selected legacy reference retains its known FP16 zero-point failure."
+      ],
+      "mechanical_PASS_is_scientific_success": false
+    },
+    {
+      "claim_id": "R4_B4_VS_B1",
+      "statement": "Coherent DIAG versus B1 under one codec and payload.",
+      "status": "KL_ADVANTAGE_SUPPORTED_IN_SCOPE",
+      "observed": {
+        "run_id": "RTPA_DIAG_ATTRIBUTION_R4_20260912_V1",
+        "checkpoint_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+        "model_source_sha256": "d67880b98f47d55a9d40679c901a740aa0618b97458824cab2abe9a1f7861be6",
+        "model_numeric_source_files": {
+          "src/rtpa_research/diag_r4_execution.py": "77ee439c16ae0245107b190ee381e41f07c8d58700e7b794216de545b7d4294d",
+          "src/rtpa_research/runtime.py": "afbfcbad6f18879151a827a1473869ea60c5d80f1f32689ee408d7d08cb6f8d2",
+          "src/rtpa_research/diag_r2_runtime.py": "36012aee79be9394c531e8db371d8f7b8d8ed3c8161f5e53b501360646b5404f",
+          "src/rtpa_research/codec.py": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069",
+          "src/rtpa_research/codec_r2.py": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2",
+          "src/rtpa_research/codec_r2_optimized.py": "519975711d79ee0672a20d3585c6cd6c07002e237629ed48cabb006dffe9ad9e",
+          "src/rtpa_research/factorized.py": "d6947df1f614b9dcb7372878e7fbc9e05626ff40c7e86c2cb80e819ae560e08e",
+          "src/rtpa_research/reference_encoder.py": "d7272e7c4d600da3cbfcb9196be140afdb08b0f33c6751d51c744b4429ac7b53",
+          "src/rtpa_research/layout.py": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276",
+          "src/rtpa_research/io.py": "9bfdd227e7db2626abf39418a0973e443a801a4657a7626385f536f6ede7300f",
+          "src/rtpa_research/benchmark.py": "1a3d9efec4b9b712ae4728a4777429e451afe1ca0ef5e059d94b38baf0b64071",
+          "src/rtpa_research/diag_r2_benchmark.py": "48d5198da63a8ee1d0041ff6eee9c918313aadc878ef7f02ec51bfb8e54f55de",
+          "src/rtpa_research/operators.py": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78"
+        },
+        "experiment_protocol_sha256": "8dbe73ca57ecb55cca1dbad68ee789b5855b13d58099cb9a8603464225c5cf8b",
+        "checkpoint_config_sha256": "b90b86f35c8e6925ef74ee04d0e758f0a845c83a42089ad82bbaa948de9b4204",
+        "panel_sha256": "71942b2e9bf9aafa683f517549b4a1cfcb7943a4b44e3b975467503ad8301284",
+        "panel_role": "Fixed source-file TEST; not an answer task or broad-domain sample",
+        "independent_unit": "Source document; paired resampling within software project",
+        "n_documents": 8,
+        "profile": "LEGACY_P_PRE; all18 GDN; high8; actual UINT8/FP16 storage",
+        "logical_alias": "B4 = LEGACY_DIAG only after whole-mask and path identity",
+        "candidate": "B4",
+        "baseline": "B1",
+        "quality_status": "KL_ADVANTAGE_SUPPORTED_IN_SCOPE",
+        "scope": "fixed panel output preservation",
+        "relative_KL_reduction": 0.2308385159207806,
+        "absolute_KL_difference": -0.0012768993157767292,
+        "delta_NLL": -0.0013254897134748894,
+        "bootstrap": {
+          "confidence": 0.95,
+          "draws": 2000,
+          "seed": 612404,
+          "unit": "paired document within domain",
+          "KL_difference_interval": [
+            -0.001436774020358811,
+            -0.0011170246111946473
+          ],
+          "relative_KL_reduction_interval": [
+            0.21533615797977113,
+            0.24582489751306102
+          ],
+          "delta_NLL_interval": [
+            -0.0023153198762545096,
+            -0.0003356595506952692
+          ]
+        },
+        "wins": 8,
+        "ties": 0,
+        "losses": 0
+      },
+      "evidence": [
+        {
+          "path": "results/diag_r4/phase_b_model/summary.json",
+          "sha256": "071d903fe162caa201d780e1ce6cd8e5c98031cb2cc753cd6f4800224c13a4ad"
+        },
+        {
+          "path": "results/diag_r4/phase_b_model/bootstrap_draws.npz",
+          "sha256": "5dce7ff08c6e88cadd279fbc099480553072d177cd2ade481f6597d977db1d97"
+        },
+        {
+          "path": "data/benchmarks/diag_r4/policy.npz",
+          "sha256": "f79767579e27368e9f1ad43f117dd962d618523ad4462a7dfc03bc66ac3bcb20"
+        },
+        {
+          "path": "scripts/aggregate_diag_r4.py",
+          "sha256": "3113f0861dcd38cd1387775f3d6d73fe0059984eb419a6822b3ae5171742fa87"
+        }
+      ],
+      "reproduction_level": "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS",
+      "limitations": [
+        "KL preservation and next-token NLL are distinct; no accuracy endpoint.",
+        "B4/B1 changes the score procedure; B4/B3 isolates the registered cross-write quadratic term, not a whole-model causal share.",
+        "Primary 95% and two secondary 97.5% intervals; shared-project dependence remains."
+      ],
+      "mechanical_PASS_is_scientific_success": false
+    },
+    {
+      "claim_id": "R4_B4_VS_B2",
+      "statement": "Coherent DIAG versus B2 under one codec and payload.",
+      "status": "KL_DISADVANTAGE_SUPPORTED_IN_SCOPE",
+      "observed": {
+        "run_id": "RTPA_DIAG_ATTRIBUTION_R4_20260912_V1",
+        "checkpoint_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+        "model_source_sha256": "d67880b98f47d55a9d40679c901a740aa0618b97458824cab2abe9a1f7861be6",
+        "model_numeric_source_files": {
+          "src/rtpa_research/diag_r4_execution.py": "77ee439c16ae0245107b190ee381e41f07c8d58700e7b794216de545b7d4294d",
+          "src/rtpa_research/runtime.py": "afbfcbad6f18879151a827a1473869ea60c5d80f1f32689ee408d7d08cb6f8d2",
+          "src/rtpa_research/diag_r2_runtime.py": "36012aee79be9394c531e8db371d8f7b8d8ed3c8161f5e53b501360646b5404f",
+          "src/rtpa_research/codec.py": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069",
+          "src/rtpa_research/codec_r2.py": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2",
+          "src/rtpa_research/codec_r2_optimized.py": "519975711d79ee0672a20d3585c6cd6c07002e237629ed48cabb006dffe9ad9e",
+          "src/rtpa_research/factorized.py": "d6947df1f614b9dcb7372878e7fbc9e05626ff40c7e86c2cb80e819ae560e08e",
+          "src/rtpa_research/reference_encoder.py": "d7272e7c4d600da3cbfcb9196be140afdb08b0f33c6751d51c744b4429ac7b53",
+          "src/rtpa_research/layout.py": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276",
+          "src/rtpa_research/io.py": "9bfdd227e7db2626abf39418a0973e443a801a4657a7626385f536f6ede7300f",
+          "src/rtpa_research/benchmark.py": "1a3d9efec4b9b712ae4728a4777429e451afe1ca0ef5e059d94b38baf0b64071",
+          "src/rtpa_research/diag_r2_benchmark.py": "48d5198da63a8ee1d0041ff6eee9c918313aadc878ef7f02ec51bfb8e54f55de",
+          "src/rtpa_research/operators.py": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78"
+        },
+        "experiment_protocol_sha256": "8dbe73ca57ecb55cca1dbad68ee789b5855b13d58099cb9a8603464225c5cf8b",
+        "checkpoint_config_sha256": "b90b86f35c8e6925ef74ee04d0e758f0a845c83a42089ad82bbaa948de9b4204",
+        "panel_sha256": "71942b2e9bf9aafa683f517549b4a1cfcb7943a4b44e3b975467503ad8301284",
+        "panel_role": "Fixed source-file TEST; not an answer task or broad-domain sample",
+        "independent_unit": "Source document; paired resampling within software project",
+        "n_documents": 8,
+        "profile": "LEGACY_P_PRE; all18 GDN; high8; actual UINT8/FP16 storage",
+        "logical_alias": "B4 = LEGACY_DIAG only after whole-mask and path identity",
+        "candidate": "B4",
+        "baseline": "B2",
+        "quality_status": "KL_DISADVANTAGE_SUPPORTED_IN_SCOPE",
+        "scope": "fixed panel output preservation",
+        "relative_KL_reduction": -0.14957305193700512,
+        "absolute_KL_difference": 0.0005535829301301677,
+        "delta_NLL": 0.0008361555937676374,
+        "bootstrap": {
+          "confidence": 0.975,
+          "draws": 2000,
+          "seed": 612404,
+          "unit": "paired document within domain",
+          "KL_difference_interval": [
+            0.0004607868321452615,
+            0.0006487510801654814
+          ],
+          "relative_KL_reduction_interval": [
+            -0.18007058900714693,
+            -0.12231821185803371
+          ],
+          "delta_NLL_interval": [
+            -0.00019785298298572804,
+            0.001870005932525981
+          ]
+        },
+        "wins": 0,
+        "ties": 0,
+        "losses": 8
+      },
+      "evidence": [
+        {
+          "path": "results/diag_r4/phase_b_model/summary.json",
+          "sha256": "071d903fe162caa201d780e1ce6cd8e5c98031cb2cc753cd6f4800224c13a4ad"
+        },
+        {
+          "path": "results/diag_r4/phase_b_model/bootstrap_draws.npz",
+          "sha256": "5dce7ff08c6e88cadd279fbc099480553072d177cd2ade481f6597d977db1d97"
+        },
+        {
+          "path": "data/benchmarks/diag_r4/policy.npz",
+          "sha256": "f79767579e27368e9f1ad43f117dd962d618523ad4462a7dfc03bc66ac3bcb20"
+        },
+        {
+          "path": "scripts/aggregate_diag_r4.py",
+          "sha256": "3113f0861dcd38cd1387775f3d6d73fe0059984eb419a6822b3ae5171742fa87"
+        }
+      ],
+      "reproduction_level": "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS",
+      "limitations": [
+        "KL preservation and next-token NLL are distinct; no accuracy endpoint.",
+        "B4/B1 changes the score procedure; B4/B3 isolates the registered cross-write quadratic term, not a whole-model causal share.",
+        "Primary 95% and two secondary 97.5% intervals; shared-project dependence remains."
+      ],
+      "mechanical_PASS_is_scientific_success": false
+    },
+    {
+      "claim_id": "R4_B4_VS_B3",
+      "statement": "Coherent DIAG versus B3 under one codec and payload.",
+      "status": "KL_ADVANTAGE_SUPPORTED_IN_SCOPE",
+      "observed": {
+        "run_id": "RTPA_DIAG_ATTRIBUTION_R4_20260912_V1",
+        "checkpoint_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+        "model_source_sha256": "d67880b98f47d55a9d40679c901a740aa0618b97458824cab2abe9a1f7861be6",
+        "model_numeric_source_files": {
+          "src/rtpa_research/diag_r4_execution.py": "77ee439c16ae0245107b190ee381e41f07c8d58700e7b794216de545b7d4294d",
+          "src/rtpa_research/runtime.py": "afbfcbad6f18879151a827a1473869ea60c5d80f1f32689ee408d7d08cb6f8d2",
+          "src/rtpa_research/diag_r2_runtime.py": "36012aee79be9394c531e8db371d8f7b8d8ed3c8161f5e53b501360646b5404f",
+          "src/rtpa_research/codec.py": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069",
+          "src/rtpa_research/codec_r2.py": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2",
+          "src/rtpa_research/codec_r2_optimized.py": "519975711d79ee0672a20d3585c6cd6c07002e237629ed48cabb006dffe9ad9e",
+          "src/rtpa_research/factorized.py": "d6947df1f614b9dcb7372878e7fbc9e05626ff40c7e86c2cb80e819ae560e08e",
+          "src/rtpa_research/reference_encoder.py": "d7272e7c4d600da3cbfcb9196be140afdb08b0f33c6751d51c744b4429ac7b53",
+          "src/rtpa_research/layout.py": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276",
+          "src/rtpa_research/io.py": "9bfdd227e7db2626abf39418a0973e443a801a4657a7626385f536f6ede7300f",
+          "src/rtpa_research/benchmark.py": "1a3d9efec4b9b712ae4728a4777429e451afe1ca0ef5e059d94b38baf0b64071",
+          "src/rtpa_research/diag_r2_benchmark.py": "48d5198da63a8ee1d0041ff6eee9c918313aadc878ef7f02ec51bfb8e54f55de",
+          "src/rtpa_research/operators.py": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78"
+        },
+        "experiment_protocol_sha256": "8dbe73ca57ecb55cca1dbad68ee789b5855b13d58099cb9a8603464225c5cf8b",
+        "checkpoint_config_sha256": "b90b86f35c8e6925ef74ee04d0e758f0a845c83a42089ad82bbaa948de9b4204",
+        "panel_sha256": "71942b2e9bf9aafa683f517549b4a1cfcb7943a4b44e3b975467503ad8301284",
+        "panel_role": "Fixed source-file TEST; not an answer task or broad-domain sample",
+        "independent_unit": "Source document; paired resampling within software project",
+        "n_documents": 8,
+        "profile": "LEGACY_P_PRE; all18 GDN; high8; actual UINT8/FP16 storage",
+        "logical_alias": "B4 = LEGACY_DIAG only after whole-mask and path identity",
+        "candidate": "B4",
+        "baseline": "B3",
+        "quality_status": "KL_ADVANTAGE_SUPPORTED_IN_SCOPE",
+        "scope": "fixed panel output preservation",
+        "relative_KL_reduction": 0.0566963932957835,
+        "absolute_KL_difference": -0.0002557230330934631,
+        "delta_NLL": 0.00031520707941844195,
+        "bootstrap": {
+          "confidence": 0.975,
+          "draws": 2000,
+          "seed": 612404,
+          "unit": "paired document within domain",
+          "KL_difference_interval": [
+            -0.00042516883599380724,
+            -7.239472475882927e-05
+          ],
+          "relative_KL_reduction_interval": [
+            0.015576455169397652,
+            0.09822652403198007
+          ],
+          "delta_NLL_interval": [
+            -0.0014563325113258225,
+            0.001752101206605683
+          ]
+        },
+        "wins": 5,
+        "ties": 0,
+        "losses": 3
+      },
+      "evidence": [
+        {
+          "path": "results/diag_r4/phase_b_model/summary.json",
+          "sha256": "071d903fe162caa201d780e1ce6cd8e5c98031cb2cc753cd6f4800224c13a4ad"
+        },
+        {
+          "path": "results/diag_r4/phase_b_model/bootstrap_draws.npz",
+          "sha256": "5dce7ff08c6e88cadd279fbc099480553072d177cd2ade481f6597d977db1d97"
+        },
+        {
+          "path": "data/benchmarks/diag_r4/policy.npz",
+          "sha256": "f79767579e27368e9f1ad43f117dd962d618523ad4462a7dfc03bc66ac3bcb20"
+        },
+        {
+          "path": "scripts/aggregate_diag_r4.py",
+          "sha256": "3113f0861dcd38cd1387775f3d6d73fe0059984eb419a6822b3ae5171742fa87"
+        }
+      ],
+      "reproduction_level": "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS",
+      "limitations": [
+        "KL preservation and next-token NLL are distinct; no accuracy endpoint.",
+        "B4/B1 changes the score procedure; B4/B3 isolates the registered cross-write quadratic term, not a whole-model causal share.",
+        "Primary 95% and two secondary 97.5% intervals; shared-project dependence remains."
+      ],
+      "mechanical_PASS_is_scientific_success": false
+    },
+    {
+      "claim_id": "R4_C_CALIBRATION",
+      "statement": "Exact adjoints and row chunks reproduce tested frozen responses; sketches are not promoted.",
+      "status": "EXACT_POINT_CHECKS_WITH_UNCERTIFIED_SKETCHES",
+      "observed": {
+        "selected_layers": [
+          0,
+          12,
+          22
+        ],
+        "heads_per_layer": 1,
+        "model_extension": "NOT_RUN",
+        "certified_masks": 0,
+        "accounting_wrapper_status": "FAILED_WITH_SEPARATE_POSTRUN_AUDIT"
+      },
+      "evidence": [
+        {
+          "path": "data/benchmarks/diag_r4/phase_c_selected_layers/execution.json",
+          "sha256": "58470a5c6317bb2e5aa9994fd03e088544db2cbf0fc3ae5d141569741d6d6b52"
+        },
+        {
+          "path": "data/benchmarks/diag_r4/phase_c_selected_layers/layer0/summary.json",
+          "sha256": "e0762285e039c86a68a28c7685799803ca9a59134a0600de18d08e153d474b53"
+        },
+        {
+          "path": "data/benchmarks/diag_r4/phase_c_selected_layers/layer12/summary.json",
+          "sha256": "bc79f4d284cc56199c49d319a7435fed48bd062c0779f7285bd6b5474d6cb427"
+        },
+        {
+          "path": "data/benchmarks/diag_r4/phase_c_selected_layers/layer22/summary.json",
+          "sha256": "ce1cbe54775bd8aee8c7162f0231cc90364add82132aa5f9da8d2cceccd71d5a"
+        },
+        {
+          "path": "data/benchmarks/diag_r4/phase_c_selected_layers/postrun_accounting_audit.json",
+          "sha256": "356136e4ea73b06b0cd9d9867ec19c048e41835b6394f0089ac837505b89aee9"
+        },
+        {
+          "path": "src/rtpa_research/diag_r4_adjoint.py",
+          "sha256": "cd75a56b196dd1b7f02a0acd18cf33c9df2e30471ffd954811da4290f2393c1b"
+        }
+      ],
+      "reproduction_level": "INCLUDED_TENSOR_POINT_CHECKS",
+      "limitations": [
+        "Pointwise exact masks at some probe sizes do not certify selection.",
+        "Core timing excludes capture, fitting I/O and model evaluation; no end-to-end savings claim.",
+        "The original one-ULP alpha-accounting discrepancy is retained, not relabeled as an exact nominal bound."
+      ],
+      "mechanical_PASS_is_scientific_success": false
+    },
+    {
+      "claim_id": "R4_RUNTIME",
+      "statement": "Equal-work one-cache cost, separate from quality instrumentation.",
+      "status": "COST_INCOMPLETE",
+      "observed": {
+        "timing": {
+          "status": "COST_INCOMPLETE",
+          "statistics": null
+        },
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "COST_INCOMPLETE",
+            "receipt_sha256": "dd2a0bd979880913bb12c125122ee4e25d4b2dc056b6de33d11880e37953dceb",
+            "physical_forwards": 0,
+            "completed_rows": 0,
+            "included": false,
+            "reason": "OTHER_GPU_COMPUTE_PROCESS_NO_TERMINATION"
+          },
+          {
+            "attempt": 2,
+            "status": "COST_INCOMPLETE",
+            "receipt_sha256": "be5f38acaba4d0e84ddb4d94c3829341595aa02ec1791c47302cd8b937892268",
+            "physical_forwards": 0,
+            "completed_rows": 0,
+            "included": false,
+            "reason": "OTHER_GPU_COMPUTE_PROCESS_NO_TERMINATION"
+          }
+        ],
+        "optimization": "NOT_RUN_NO_PROMOTED_REPAIR"
+      },
+      "evidence": [
+        {
+          "path": "data/benchmarks/diag_r4/cost/analysis/summary.json",
+          "sha256": "8e3b938d40d6c4dc00dcb4fdb004da666fdbccb10ca9e49470badbccd3d97b12"
+        },
+        {
+          "path": "scripts/analyze_diag_r4_cost.py",
+          "sha256": "669cdaf3d3e7240405cbb6e9f4b1740939bf2685f2145d6a86f3aa1ddb51d793"
+        }
+      ],
+      "reproduction_level": "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS",
+      "limitations": [
+        "Eight paired blocks from one fixed already-consumed DEV code input, not a workload population.",
+        "Sampled nvidia-smi guards are not continuous Windows visibility. Mandatory codec/finite guards and Python context bookkeeping remain timed.",
+        "Per-token prefill last-logits TTFT proxy and teacher-forced decode, not optimized chunked prefill, token delivery or a serving claim.",
+        "No statistics use partial/failed attempts, quality-run wall times, or post-hoc optimized candidates."
+      ],
+      "mechanical_PASS_is_scientific_success": false
+    },
+    {
+      "claim_id": "R4_MEMORY",
+      "statement": "Actual state payload and fresh-process peaks are separate quantities.",
+      "status": "INCOMPLETE",
+      "observed": {
+        "status": "INCOMPLETE",
+        "missing": [
+          "NATIVE",
+          "B1",
+          "B4"
+        ],
+        "rows": [],
+        "fresh_process_evidence": "Distinct recorded PIDs and per-method driver assertions; not an independent OS process-lifecycle trace.",
+        "scope": "Actual payload, cache and process allocator bytes; H32 shared within each cache. GPU-wide samples are not process memory; no payload-to-wholeVRAM extrapolation."
+      },
+      "evidence": [
+        {
+          "path": "data/benchmarks/diag_r4/cost/analysis/summary.json",
+          "sha256": "8e3b938d40d6c4dc00dcb4fdb004da666fdbccb10ca9e49470badbccd3d97b12"
+        },
+        {
+          "path": "src/rtpa_research/diag_r4_cost.py",
+          "sha256": "a18fbbe1976e2f655360fbf0554a59e951e9d5b022ffdfc9219db8c6ba0682cc"
+        }
+      ],
+      "reproduction_level": "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS",
+      "limitations": [
+        "No fresh-process peak or memory receipt was measured in this run.",
+        "Policy indices/H32, shared counters, scratch, KV/conv cache and model weights are not target payload.",
+        "No multi-request serving capacity or total-VRAM proportional saving is inferred."
+      ],
+      "mechanical_PASS_is_scientific_success": false
+    }
+  ],
+  "mechanical_verification": "SEPARATE results/diag_r4/verification_manifest.json",
+  "old_decisions_and_expectations": "UNCHANGED",
+  "new_stable_default": false,
+  "production_readiness": "NOT_ESTABLISHED",
+  "index_source_sha256": "0229211867e316d292e74be5a9394daa71965f0ce398d36deb7c767e6e51a795"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETE",
+  "active_seconds": 90.52867861100094,
+  "attempts": [
+    {
+      "seconds": 90.52867861100094,
+      "pid": 2
+    }
+  ],
+  "model_forwards": 0,
+  "GPU_forwards": 0,
+  "counters_this_attempt": {
+    "codec_write_attempts": 21888,
+    "affine_only_write_attempts": 3456,
+    "recurrence_update_attempts": 36864,
+    "single_injection_transition_attempts": 6912
+  }
+}

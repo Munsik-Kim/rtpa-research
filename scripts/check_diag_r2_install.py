@@ -7,6 +7,15 @@ from pathlib import Path
 import sys
 
 from rtpa_research.resources import evidence_root
+from rtpa_research.publication_sources import check_frozen_publication_source
+
+
+def source_identity(root, relative, wanted, resolved):
+    """Require resolved/bundled equality before any historical metadata mapping."""
+    bundled=hashlib.sha256((root/relative).read_bytes()).hexdigest()
+    if resolved!=bundled:
+        raise ValueError('RESOLVED_BUNDLED_SOURCE_MISMATCH:'+relative)
+    return check_frozen_publication_source(root,relative,wanted)
 
 
 def main():
@@ -35,9 +44,14 @@ def main():
         resolved=hashlib.sha256(actual.read_bytes()).hexdigest()
         bundled=hashlib.sha256((root/relative).read_bytes()).hexdigest()
         matches=resolved==bundled==wanted
+        proof=None
+        try:
+            proof=source_identity(root,relative,wanted,resolved)
+        except ValueError:
+            errors.append('SOURCE_MISMATCH:'+module)
         records.append({'module':module,'matches_frozen_and_bundled':matches,
-                        'under_environment_prefix':inside,'sha256':resolved})
-        if not matches:errors.append('SOURCE_MISMATCH:'+module)
+                        'matches_frozen_bytes':resolved==wanted,'matches_bundled_bytes':resolved==bundled,
+                        'source_identity':proof,'under_environment_prefix':inside,'sha256':resolved})
         if a.require_installed and not inside:errors.append('NOT_INSTALLED_MODULE:'+module)
     heavy=[m for m in ('torch','transformers') if m in sys.modules]
     if heavy:errors.append('HEAVY_MODULE_IMPORTED:'+','.join(heavy))

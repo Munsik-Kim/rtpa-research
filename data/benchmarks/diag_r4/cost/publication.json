@@ -1,0 +1,335 @@
+{
+  "schema_version": 1,
+  "stage": "cost",
+  "scientific_status": "COST_INCOMPLETE",
+  "curator_sha256": "c143db1b887d9b7cec7f49070a7b311456824b7e7901f93b30f96e032118c09a",
+  "files": [
+    {
+      "path": "analysis/summary.json",
+      "sha256": "8e3b938d40d6c4dc00dcb4fdb004da666fdbccb10ca9e49470badbccd3d97b12",
+      "bytes": 2918,
+      "byte_identical": true,
+      "original_relative": "analysis/summary.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "analysis_contract.json",
+      "sha256": "376e2c6c65f29b11f9cc0d76984fd9f4c42aa0a7fc1810de3d12fa2344a120be",
+      "bytes": 2817,
+      "byte_identical": true,
+      "original_relative": "analysis_contract.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "analysis_native_storage_diagnostic.public.json",
+      "sha256": "0bc6547e37d947a8e9a68d1b76fab7c1263d0e1a2df47afa19fac6a1a06cf140",
+      "bytes": 1468,
+      "byte_identical": false,
+      "original_relative": "analysis_native_storage_diagnostic.json",
+      "original_sha256": "956a3cd88b6caad6fbf1f708f64e360fff21f6f2ed525f761ba3a3d7f782d43b",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [],
+      "path_reference_replacements": [
+        {
+          "field": "/supplemental_dependency/file",
+          "public_reference": "LOCAL_ONLY/SUPPLEMENTAL_CACHE_UTILS_SOURCE",
+          "original_string_sha256": "4b2c6e9ebd8753903bc6204c31c1dc21c46f03ffd07a0dc317981f15cc8a827f"
+        }
+      ]
+    },
+    {
+      "path": "analysis_source_before_wiring/analysis_contract.json",
+      "sha256": "376e2c6c65f29b11f9cc0d76984fd9f4c42aa0a7fc1810de3d12fa2344a120be",
+      "bytes": 2817,
+      "byte_identical": true,
+      "original_relative": "analysis_source_before_wiring/analysis_contract.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "analysis_source_before_wiring/analyze_diag_r4_cost.py",
+      "sha256": "8d12b1d6d36641e8567bf9c6e5517d62a1e93ce0cb770868fc4964a1f722c271",
+      "bytes": 20458,
+      "byte_identical": true,
+      "original_relative": "analysis_source_before_wiring/analyze_diag_r4_cost.py",
+      "role": "EXACT_CLOSED_COST_SOURCE_OBSERVATION_OR_FAILURE"
+    },
+    {
+      "path": "analysis_source_before_wiring/test_diag_r4_cost_analysis.py",
+      "sha256": "c83649dcb0ead81824186d06cbc871638291d160baa25918b528256b421c4201",
+      "bytes": 9261,
+      "byte_identical": true,
+      "original_relative": "analysis_source_before_wiring/test_diag_r4_cost_analysis.py",
+      "role": "EXACT_CLOSED_COST_SOURCE_OBSERVATION_OR_FAILURE"
+    },
+    {
+      "path": "analysis_wiring_preflight.public.json",
+      "sha256": "3b3ad3a41b87737b3c55a87ed9268de0299fc141bb54c512ec58d4c170999c81",
+      "bytes": 1683,
+      "byte_identical": false,
+      "original_relative": "analysis_wiring_preflight.json",
+      "original_sha256": "a9ccee27082d9763d703c063173dc796148337fc56ded543394e1672bc7780c4",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [],
+      "path_reference_replacements": [
+        {
+          "field": "/tests/command",
+          "public_reference": "env OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 PYTHONPATH=src python -m pytest -q tests/test_diag_r4_cost_analysis.py tests/test_diag_r4_cost.py tests/test_diag_r4_workflow.py",
+          "original_string_sha256": "c52f7815cab44fc3b2553de75ed609bb198308003fbba764bc3fed30b42c5b4d",
+          "substitution_scope": "Private interpreter pathname only; command arguments and environment assignments unchanged"
+        }
+      ]
+    },
+    {
+      "path": "analysis_wiring_revision.json",
+      "sha256": "d06caf8073abadc72796dba85fd6a1dc5abe02a7b6280b9e3cb899fc17a1c4b6",
+      "bytes": 1659,
+      "byte_identical": true,
+      "original_relative": "analysis_wiring_revision.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "bootstrap_draws.npy",
+      "sha256": "96652acffc15d60bb71171eb531134c2770bbfd36c824ee64d798358a6e75e5e",
+      "bytes": 128128,
+      "byte_identical": true,
+      "original_relative": "bootstrap_draws.npy",
+      "role": "EXACT_CLOSED_COST_SOURCE_OBSERVATION_OR_FAILURE"
+    },
+    {
+      "path": "cost_wiring_revision.public.json",
+      "sha256": "41826ba57e4cd546eef20a3be81389e34a92275ebf544dd0474c40b203e3d1ba",
+      "bytes": 4284,
+      "byte_identical": false,
+      "original_relative": "cost_wiring_revision.json",
+      "original_sha256": "6a806f0ec2e914f64494738345ef3e4c1043282239153d1388cef019fc15085a",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [],
+      "path_reference_replacements": [
+        {
+          "field": "/model_path",
+          "public_reference": "LOCAL_ONLY/MODEL_CHECKPOINT",
+          "original_string_sha256": "3fb6371793e3af2ecf84be5f6ea204dff0e406cf257027c060306a613349dbe0"
+        },
+        {
+          "field": "/native_source_path",
+          "public_reference": "LOCAL_ONLY/NATIVE_IMPLEMENTATION",
+          "original_string_sha256": "4afb3b36c2189f485619da9ddbb6a69affdf8880262b3b4afb4f16dda577ca5f"
+        }
+      ]
+    },
+    {
+      "path": "diagnose_native_storage.py",
+      "sha256": "496aadc253faf427f10e041ca898f09fdc93deb2c568c679f0376232f2da2e58",
+      "bytes": 3533,
+      "byte_identical": true,
+      "original_relative": "diagnose_native_storage.py",
+      "role": "EXACT_CLOSED_COST_SOURCE_OBSERVATION_OR_FAILURE"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "88ab9252a4c189c10de16763dbc4ba270d4307fbb18217759a9f3594edb7cd73",
+      "bytes": 8627,
+      "byte_identical": true,
+      "original_relative": "freeze.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "omitted_phases.json",
+      "sha256": "fcadcb27a6526ffa1185eeed5ff038934adb7dfa221f7e372b4abbbc9ccf421e",
+      "bytes": 1567,
+      "byte_identical": true,
+      "original_relative": "omitted_phases.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "publication_closure.json",
+      "sha256": "4578a4a545d9c1ce5b309a30abb6e4192a94e9bd5860a497eabcbbe28f44a620",
+      "bytes": 2561,
+      "byte_identical": true,
+      "original_relative": "publication_closure.json",
+      "role": "EXPLICIT_POST_EXECUTION_PUBLICATION_CLOSURE"
+    },
+    {
+      "path": "source_before_wiring/diag_r4_cost.py",
+      "sha256": "c0996e7da3b3b6484d30184af7a802d039d359c5ccdb70a05d5e7fe968eddf1f",
+      "bytes": 10629,
+      "byte_identical": true,
+      "original_relative": "source_before_wiring/diag_r4_cost.py",
+      "role": "EXACT_CLOSED_COST_SOURCE_OBSERVATION_OR_FAILURE"
+    },
+    {
+      "path": "timing_attempts/attempt_1.json",
+      "sha256": "dd2a0bd979880913bb12c125122ee4e25d4b2dc056b6de33d11880e37953dceb",
+      "bytes": 850,
+      "byte_identical": true,
+      "original_relative": "timing_attempts/attempt_1.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "timing_attempts/attempt_2.json",
+      "sha256": "be5f38acaba4d0e84ddb4d94c3829341595aa02ec1791c47302cd8b937892268",
+      "bytes": 850,
+      "byte_identical": true,
+      "original_relative": "timing_attempts/attempt_2.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "wiring_preflight.public.json",
+      "sha256": "9c2bf1561295ff36b0e984861753220fc9fdc6c3efa976f2591d0f3ddcc9eaf9",
+      "bytes": 1390,
+      "byte_identical": false,
+      "original_relative": "wiring_preflight.json",
+      "original_sha256": "cfbdfd90eafc060ca8bcd6d946d17a4ee2b54d030272445ed41101237a097505",
+      "role": "DERIVED_PUBLIC_EVIDENCE",
+      "derivation": "Exact JSON values retained except listed forensic matrix omissions and explicit private-path reference substitutions; original receipt remains LOCAL_ONLY",
+      "removed_fields": [],
+      "path_reference_replacements": [
+        {
+          "field": "/tests/command",
+          "public_reference": "env OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 PYTHONPATH=src python -m pytest -q tests/test_diag_r4_cost.py tests/test_diag_r4_workflow.py tests/test_diag_r2_allocations.py",
+          "original_string_sha256": "f812d182c8ac6f81732d09a3d848d79fa9320bbc43410026a95a2a58985dac6a",
+          "substitution_scope": "Private interpreter pathname only; command arguments and environment assignments unchanged"
+        }
+      ]
+    },
+    {
+      "path": "source_dependency_bindings.json",
+      "sha256": "c9239810c140e04c6da148023e84d8ada58059b5abfc08c7e56b31166ecc479e",
+      "bytes": 18441,
+      "byte_identical": false,
+      "role": "DERIVED_SOURCE_AND_DEPENDENCY_BINDINGS"
+    }
+  ],
+  "local_only": [
+    {
+      "path": "analysis_native_storage_diagnostic.json",
+      "sha256": "956a3cd88b6caad6fbf1f708f64e360fff21f6f2ed525f761ba3a3d7f782d43b",
+      "bytes": 1520,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "analysis_wiring_preflight.json",
+      "sha256": "a9ccee27082d9763d703c063173dc796148337fc56ded543394e1672bc7780c4",
+      "bytes": 1725,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "cost_wiring_revision.json",
+      "sha256": "6a806f0ec2e914f64494738345ef3e4c1043282239153d1388cef019fc15085a",
+      "bytes": 4413,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    },
+    {
+      "path": "wiring_preflight.json",
+      "sha256": "cfbdfd90eafc060ca8bcd6d946d17a4ee2b54d030272445ed41101237a097505",
+      "bytes": 1432,
+      "availability": "LOCAL_ONLY",
+      "reason": "Original JSON retained locally; public derivative lists every omitted field/path replacement and binds the original hash"
+    }
+  ],
+  "original_hash_links": [
+    {
+      "path": "analysis/summary.json",
+      "sha256": "8e3b938d40d6c4dc00dcb4fdb004da666fdbccb10ca9e49470badbccd3d97b12",
+      "role": "CLOSED_COST_ARTIFACT_ORIGINAL_IDENTITY"
+    },
+    {
+      "path": "analysis_contract.json",
+      "sha256": "376e2c6c65f29b11f9cc0d76984fd9f4c42aa0a7fc1810de3d12fa2344a120be",
+      "role": "CLOSED_COST_ARTIFACT_ORIGINAL_IDENTITY"
+    },
+    {
+      "path": "analysis_native_storage_diagnostic.json",
+      "sha256": "956a3cd88b6caad6fbf1f708f64e360fff21f6f2ed525f761ba3a3d7f782d43b",
+      "role": "CLOSED_COST_ARTIFACT_ORIGINAL_IDENTITY"
+    },
+    {
+      "path": "analysis_source_before_wiring/analysis_contract.json",
+      "sha256": "376e2c6c65f29b11f9cc0d76984fd9f4c42aa0a7fc1810de3d12fa2344a120be",
+      "role": "CLOSED_COST_ARTIFACT_ORIGINAL_IDENTITY"
+    },
+    {
+      "path": "analysis_source_before_wiring/analyze_diag_r4_cost.py",
+      "sha256": "8d12b1d6d36641e8567bf9c6e5517d62a1e93ce0cb770868fc4964a1f722c271",
+      "role": "CLOSED_COST_ARTIFACT_ORIGINAL_IDENTITY"
+    },
+    {
+      "path": "analysis_source_before_wiring/test_diag_r4_cost_analysis.py",
+      "sha256": "c83649dcb0ead81824186d06cbc871638291d160baa25918b528256b421c4201",
+      "role": "CLOSED_COST_ARTIFACT_ORIGINAL_IDENTITY"
+    },
+    {
+      "path": "analysis_wiring_preflight.json",
+      "sha256": "a9ccee27082d9763d703c063173dc796148337fc56ded543394e1672bc7780c4",
+      "role": "CLOSED_COST_ARTIFACT_ORIGINAL_IDENTITY"
+    },
+    {
+      "path": "analysis_wiring_revision.json",
+      "sha256": "d06caf8073abadc72796dba85fd6a1dc5abe02a7b6280b9e3cb899fc17a1c4b6",
+      "role": "CLOSED_COST_ARTIFACT_ORIGINAL_IDENTITY"
+    },
+    {
+      "path": "bootstrap_draws.npy",
+      "sha256": "96652acffc15d60bb71171eb531134c2770bbfd36c824ee64d798358a6e75e5e",
+      "role": "CLOSED_COST_ARTIFACT_ORIGINAL_IDENTITY"
+    },
+    {
+      "path": "cost_wiring_revision.json",
+      "sha256": "6a806f0ec2e914f64494738345ef3e4c1043282239153d1388cef019fc15085a",
+      "role": "CLOSED_COST_ARTIFACT_ORIGINAL_IDENTITY"
+    },
+    {
+      "path": "diagnose_native_storage.py",
+      "sha256": "496aadc253faf427f10e041ca898f09fdc93deb2c568c679f0376232f2da2e58",
+      "role": "CLOSED_COST_ARTIFACT_ORIGINAL_IDENTITY"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "88ab9252a4c189c10de16763dbc4ba270d4307fbb18217759a9f3594edb7cd73",
+      "role": "CLOSED_COST_ARTIFACT_ORIGINAL_IDENTITY"
+    },
+    {
+      "path": "omitted_phases.json",
+      "sha256": "fcadcb27a6526ffa1185eeed5ff038934adb7dfa221f7e372b4abbbc9ccf421e",
+      "role": "CLOSED_COST_ARTIFACT_ORIGINAL_IDENTITY"
+    },
+    {
+      "path": "source_before_wiring/diag_r4_cost.py",
+      "sha256": "c0996e7da3b3b6484d30184af7a802d039d359c5ccdb70a05d5e7fe968eddf1f",
+      "role": "CLOSED_COST_ARTIFACT_ORIGINAL_IDENTITY"
+    },
+    {
+      "path": "timing_attempts/attempt_1.json",
+      "sha256": "dd2a0bd979880913bb12c125122ee4e25d4b2dc056b6de33d11880e37953dceb",
+      "role": "CLOSED_COST_ARTIFACT_ORIGINAL_IDENTITY"
+    },
+    {
+      "path": "timing_attempts/attempt_2.json",
+      "sha256": "be5f38acaba4d0e84ddb4d94c3829341595aa02ec1791c47302cd8b937892268",
+      "role": "CLOSED_COST_ARTIFACT_ORIGINAL_IDENTITY"
+    },
+    {
+      "path": "wiring_preflight.json",
+      "sha256": "cfbdfd90eafc060ca8bcd6d946d17a4ee2b54d030272445ed41101237a097505",
+      "role": "CLOSED_COST_ARTIFACT_ORIGINAL_IDENTITY"
+    },
+    {
+      "stage": "phase_b_model",
+      "path": "freeze.json",
+      "sha256": "0e9a6cea81ea87d36c35b2e7e63428dc294f5855e427d9bb8d2c58591feabdaa",
+      "role": "COST_FROZEN_MODEL_AND_METHOD_SELECTION"
+    }
+  ],
+  "reproduction_levels": {
+    "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS": "Scalar/table aggregation only, where the public CPU verifier implements the corresponding reduction",
+    "INCLUDED_TENSOR_POINT_CHECKS": "Small selected fixtures support explicitly bounded arithmetic comparisons; they are not representative full trajectories",
+    "LOCAL_ONLY_REGENERATION": "Full model forwards and capture/response regeneration require hash-bound local inputs and sometimes local drivers; no blanket full-rerun promise"
+  },
+  "claim_boundary": "Curation establishes evidence identity, not new model quality, numerical success, or deployment promotion"
+}

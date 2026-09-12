@@ -1,0 +1,746 @@
+{
+  "schema_version": 1,
+  "stage": "phase_a_metadata",
+  "scientific_status": "COMPLETE",
+  "curator_sha256": "c2fbaba51bb06f65ab4ccfac6ef55413cd6eb678f9e5e4af328f8ef831deb738",
+  "files": [
+    {
+      "path": "cases/train_associative_recall_0_L0.json",
+      "sha256": "91bca12b8ddd381c61f6ba70cc5b7be3e5cebe4bdf0a85373a3a56f5b612d65c",
+      "bytes": 4412,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_0_L0.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L0.npz",
+      "sha256": "f03d872e014b3ae3a50f0cf6bef8757745a750c5ac591dbe81e3f5e0a208b3cc",
+      "bytes": 1057945,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_0_L0.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L12.json",
+      "sha256": "a556ca6102159af412be213414856f2e31de2e23e329639b5ea5afb6bc2a507a",
+      "bytes": 4331,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_0_L12.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L12.npz",
+      "sha256": "85afa800fc40c59bbb2a0fe4ec2e0975322ac4f6c5cfd1a6051665a99d040cfd",
+      "bytes": 1047740,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_0_L12.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L22.json",
+      "sha256": "c509b9d28dd569a3b3cb77b5916167bd3926880a982232fbe2e10fd062d95676",
+      "bytes": 4339,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_0_L22.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L22.npz",
+      "sha256": "eba57dc89d0c992bee65434763d72ca1137b7e6fc9c79fe97de05e0471f9ccda",
+      "bytes": 1046348,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_0_L22.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L0.json",
+      "sha256": "0fdc43f46213b07b108439bdc73fbec0defd112cc667ade4bfe2d2458cc3b276",
+      "bytes": 4406,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_1_L0.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L0.npz",
+      "sha256": "7941738680d06c70d2f04bd6084f900fb9e2290856f2f6ad8c891d07a7acdf90",
+      "bytes": 1057776,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_1_L0.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L12.json",
+      "sha256": "8986c91ecd9000ea9d6623d83c76739436d2869a8a465c45d323e3ac9a9ac217",
+      "bytes": 4330,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_1_L12.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L12.npz",
+      "sha256": "eb885d9ab8f306b1600bf67a41fd3a4c26304d7265be9b823b505a92c6f2c89a",
+      "bytes": 1047717,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_1_L12.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L22.json",
+      "sha256": "34551e4146fbe2b9c266e6c7154d79ce9c6914f3a2f561a05332dd7892a5a364",
+      "bytes": 4336,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_1_L22.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L22.npz",
+      "sha256": "901eca9a35189cedb4248e67e52306083a489e32f00671b5a179eb87ba0a0d41",
+      "bytes": 1046222,
+      "byte_identical": true,
+      "original_relative": "cases/train_associative_recall_1_L22.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_0_L0.json",
+      "sha256": "fcb20576ce139f7d2ad53e4022053f6d2d26b222f9dcbc569387b106daf18f83",
+      "bytes": 4372,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_0_L0.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_0_L0.npz",
+      "sha256": "922d8fbbdbbc370465e9fd7df4514b7825b7bbaad64279dd38d99c14f732c716",
+      "bytes": 1058102,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_0_L0.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_0_L12.json",
+      "sha256": "2496b9455fc266fd99b0b9f38e74f5daaf87402759ac1fb5f3e71d591830e17f",
+      "bytes": 4289,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_0_L12.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_0_L12.npz",
+      "sha256": "701493a6050e61e8344047d0fb91574c10329cc1b50f4ae49d6f11b7a1bd346b",
+      "bytes": 1047433,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_0_L12.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_0_L22.json",
+      "sha256": "5e310f72ae3270a2ef28b4b3bd05f4ae38817799f4406b6983d9f466c08e56c3",
+      "bytes": 4319,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_0_L22.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_0_L22.npz",
+      "sha256": "477f795613259f0561bd200d20373a6db207a974f57ec1a2ee016259f394f189",
+      "bytes": 1043997,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_0_L22.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_1_L0.json",
+      "sha256": "c1ad886391715304545d2c7b2ce3c298fb28da6ce68c33662a5e08764ea61f73",
+      "bytes": 4373,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_1_L0.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_1_L0.npz",
+      "sha256": "0f73b3ab7a77dadf1331fdae5e9d61d188b0b22afa654398507e0b4c8aed9649",
+      "bytes": 1057580,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_1_L0.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_1_L12.json",
+      "sha256": "52bcb601437002ceb51c8e4efad1757f511450d7c9433866947a4d7d5d958fee",
+      "bytes": 4285,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_1_L12.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_1_L12.npz",
+      "sha256": "94ffaeac44f7c7f1f6d1b09a87f16f91cd40075cb5c901d86e0c090a64fcdab2",
+      "bytes": 1047592,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_1_L12.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_1_L22.json",
+      "sha256": "e2096b0cc794cb0c9c9a977bd3199d7212d5d4747830cd02342b5d6aaf31d0c5",
+      "bytes": 4297,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_1_L22.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_code_1_L22.npz",
+      "sha256": "3fcc54d516b222c7de81a4ae8ea9fd92e76816e4c13327221a225a184c092c5f",
+      "bytes": 1044274,
+      "byte_identical": true,
+      "original_relative": "cases/train_code_1_L22.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_0_L0.json",
+      "sha256": "b8f6d81674d41eaf190f8307f3583647df05e76e51e88d57321fd4fd34f08cef",
+      "bytes": 4396,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_0_L0.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_0_L0.npz",
+      "sha256": "7a46fe9d1e06c2fc03045a8c3af266fd718d7a11826f50f265d465fdbd34a8fe",
+      "bytes": 1058830,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_0_L0.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_0_L12.json",
+      "sha256": "48f740aa839b11c98938069da432c069b32e96ca9ebf8e875fa0da3597d4fecc",
+      "bytes": 4325,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_0_L12.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_0_L12.npz",
+      "sha256": "55974f7128aa35356c7c2988523401c51389e16193385225c4b25316a79c6acb",
+      "bytes": 1047638,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_0_L12.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_0_L22.json",
+      "sha256": "6f2c7a5dd4951732189425ea0ecd29c4e97174c6c51e8350303f1794e20e937b",
+      "bytes": 4328,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_0_L22.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_0_L22.npz",
+      "sha256": "94b5285a0ba9ac972a11ba3bb3e2e58f08d224cfb40299d1d7b6497499ca46e2",
+      "bytes": 1045860,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_0_L22.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_1_L0.json",
+      "sha256": "418af6e0e817b1e25c4cc40ed5d189602fd8a633471733076ad47f7eba174320",
+      "bytes": 4398,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_1_L0.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_1_L0.npz",
+      "sha256": "cca38e691dc63da937759881926d57b0f921d676bb5129062ad50d86b51e0f95",
+      "bytes": 1058676,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_1_L0.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_1_L12.json",
+      "sha256": "1e8deb947e98ebf8eae8d74577c6d26b494434bc90ef0fbdbdeb56bb4d8850c1",
+      "bytes": 4324,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_1_L12.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_1_L12.npz",
+      "sha256": "c8e97f17938da7e8354a8e081a1df967dade4e18650757e796f01572ceff466e",
+      "bytes": 1047487,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_1_L12.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_1_L22.json",
+      "sha256": "0b251c087aa5b196c6e9f38b1081d6b64211477cb7f9634acd5e3413a4ca4b96",
+      "bytes": 4329,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_1_L22.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "cases/train_natural_language_1_L22.npz",
+      "sha256": "fa91ef4f40f8289410c21faa3baabf5f2e406f42907815084848cb247308a966",
+      "bytes": 1045953,
+      "byte_identical": true,
+      "original_relative": "cases/train_natural_language_1_L22.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "execution.json",
+      "sha256": "498d9c6d7af0a95fa32bb1d3208452569f3a6be40bb1f87deb16202789f36c3f",
+      "bytes": 823,
+      "byte_identical": true,
+      "original_relative": "execution.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "614ac4205a1ad4b9dcfcd78595d48581704567bc2f19cf3b22b93662008ade69",
+      "bytes": 3672,
+      "byte_identical": true,
+      "original_relative": "freeze.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "input_binding.json",
+      "sha256": "8876c63d99a070da38d540b070fa4c0faaf2d77eb66f91c32a7139097cb60bdf",
+      "bytes": 7686,
+      "byte_identical": true,
+      "original_relative": "input_binding.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "inspections/train_associative_recall_0_L0.npz",
+      "sha256": "af0c0e095f97984724fffa606cbea8d7e9f909671dfd2e79b46513e1a5accaae",
+      "bytes": 110769,
+      "byte_identical": true,
+      "original_relative": "inspections/train_associative_recall_0_L0.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "inspections/train_associative_recall_0_L12.npz",
+      "sha256": "3e6e7b602a4f29f40dc72ade0054d12563d879e61bdb4c2a32d9bdc510393369",
+      "bytes": 97482,
+      "byte_identical": true,
+      "original_relative": "inspections/train_associative_recall_0_L12.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "inspections/train_associative_recall_0_L22.npz",
+      "sha256": "7a8833f7083c37d8a5bff4e1a0b08e12f512cf53bdb33390e2b86d4e36c11029",
+      "bytes": 97920,
+      "byte_identical": true,
+      "original_relative": "inspections/train_associative_recall_0_L22.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "inspections/train_associative_recall_1_L0.npz",
+      "sha256": "c3f990e645f73a8518d497e176b5fed11c828fbc6ff85272b9c05d72edf6c7e5",
+      "bytes": 110725,
+      "byte_identical": true,
+      "original_relative": "inspections/train_associative_recall_1_L0.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "inspections/train_associative_recall_1_L12.npz",
+      "sha256": "f00962c1d5dad436d98c5d57b2aa577a05b1b393fc8d7d65ee6edf2ea750394a",
+      "bytes": 97514,
+      "byte_identical": true,
+      "original_relative": "inspections/train_associative_recall_1_L12.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "inspections/train_associative_recall_1_L22.npz",
+      "sha256": "a8335e87911c999c382045ea3391f6960718384a710b6966937401c1e52dfdd3",
+      "bytes": 97711,
+      "byte_identical": true,
+      "original_relative": "inspections/train_associative_recall_1_L22.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "inspections/train_code_0_L0.npz",
+      "sha256": "1df8038ffc3f45d0c4ca31c9a8e608cf5690fc7f9a19e7bf4ace3a8d21ddbc34",
+      "bytes": 110961,
+      "byte_identical": true,
+      "original_relative": "inspections/train_code_0_L0.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "inspections/train_code_0_L12.npz",
+      "sha256": "cff76c59dd35db514bc3c82a87bf9913afbea838d2542306f644ba090999eff0",
+      "bytes": 97621,
+      "byte_identical": true,
+      "original_relative": "inspections/train_code_0_L12.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "inspections/train_code_0_L22.npz",
+      "sha256": "a92893eeb7112c897ab1a0ae8f4da4dea6300114d2ac690080a248f9d9605a3e",
+      "bytes": 102973,
+      "byte_identical": true,
+      "original_relative": "inspections/train_code_0_L22.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "inspections/train_code_1_L0.npz",
+      "sha256": "b11bb40f73f17f8a2f5cb6fc96f1e676739a462ad46392cae1bca1fc755f5705",
+      "bytes": 110732,
+      "byte_identical": true,
+      "original_relative": "inspections/train_code_1_L0.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "inspections/train_code_1_L12.npz",
+      "sha256": "6cf052c62d1d537e18b6f4c0da74503efaf24e32bfd93b03107cce70472570f9",
+      "bytes": 97670,
+      "byte_identical": true,
+      "original_relative": "inspections/train_code_1_L12.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "inspections/train_code_1_L22.npz",
+      "sha256": "f99078a67b06c9d41d75f3625b5c09c548c4256b579e7434f98512a6a2866469",
+      "bytes": 97866,
+      "byte_identical": true,
+      "original_relative": "inspections/train_code_1_L22.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "inspections/train_natural_language_0_L0.npz",
+      "sha256": "ae047e4d8d2c1b36c943e7ba6b72c665d4203f024dc8f4a03e0b9af68b2df6fe",
+      "bytes": 110642,
+      "byte_identical": true,
+      "original_relative": "inspections/train_natural_language_0_L0.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "inspections/train_natural_language_0_L12.npz",
+      "sha256": "195a8596f1ff1afe47802dfa9e0ae93c982e285592b5f3c252f00e487e81ecf7",
+      "bytes": 97948,
+      "byte_identical": true,
+      "original_relative": "inspections/train_natural_language_0_L12.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "inspections/train_natural_language_0_L22.npz",
+      "sha256": "8355a9d74b9b7a60a50108ebaee4292d381110c1435ed2c334cc5c156addd5b9",
+      "bytes": 97764,
+      "byte_identical": true,
+      "original_relative": "inspections/train_natural_language_0_L22.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "inspections/train_natural_language_1_L0.npz",
+      "sha256": "0b4bda97c1619349ebb3fede48335e810b5943b84b7165c62660f80a16728f84",
+      "bytes": 110558,
+      "byte_identical": true,
+      "original_relative": "inspections/train_natural_language_1_L0.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "inspections/train_natural_language_1_L12.npz",
+      "sha256": "9428efd14115c34337e2e9e48bd985ac2bf5a564ccee2260db92f1b9fa6faa3f",
+      "bytes": 97708,
+      "byte_identical": true,
+      "original_relative": "inspections/train_natural_language_1_L12.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "inspections/train_natural_language_1_L22.npz",
+      "sha256": "de5b1a94445ed7fb7986c57423be6c02395cac76f95e5ab71b8d8e70f45021cd",
+      "bytes": 97825,
+      "byte_identical": true,
+      "original_relative": "inspections/train_natural_language_1_L22.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "interpretation_receipt.json",
+      "sha256": "d8177cfa10e409ebd3baed5671fc180d1e5a1d83cd2fb8ddea2fe3ea0836aa02",
+      "bytes": 14792,
+      "byte_identical": true,
+      "original_relative": "interpretation_receipt.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "protocol.json",
+      "sha256": "0a8cd37acd1d528aa1f06d34a6420a57a05576def81ad6ca7059388ff61177bf",
+      "bytes": 2702,
+      "byte_identical": true,
+      "original_relative": "protocol.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "ratchet_freeze.json",
+      "sha256": "15ff89cf060e6d32a6bcc148295cc80dc82480a5e259c753c3f61351b570fc01",
+      "bytes": 1470,
+      "byte_identical": true,
+      "original_relative": "ratchet_freeze.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "ratchet_observations.npz",
+      "sha256": "2fad7dc5b7ea1e0381a71897cbfdeda951a3993bec57c2099e4cb27c45cec4d2",
+      "bytes": 3014774,
+      "byte_identical": true,
+      "original_relative": "ratchet_observations.npz",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "ratchet_summary.json",
+      "sha256": "b97533f078e82d131e66f487eec945bff0748db4350ce68892ddfa3d35f86f29",
+      "bytes": 99405,
+      "byte_identical": true,
+      "original_relative": "ratchet_summary.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "self_test.json",
+      "sha256": "f60ff271f87c13a5f6170ebf229e066fbcb16455af67842cd36cf3fa711bb1fd",
+      "bytes": 357,
+      "byte_identical": true,
+      "original_relative": "self_test.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "summary.json",
+      "sha256": "79694eaf559b15446a3efe594c910e8413d35751b02d35cea56e2ec7528ab1ed",
+      "bytes": 3765,
+      "byte_identical": true,
+      "original_relative": "summary.json",
+      "role": "OBSERVATION_OR_RECEIPT"
+    },
+    {
+      "path": "source_dependency_bindings.json",
+      "sha256": "24a9e08cbde41a0775c8304c27ab07667e5c679dbe5122761a2c7f94a21cecef",
+      "bytes": 12223,
+      "byte_identical": false,
+      "role": "DERIVED_SOURCE_AND_DEPENDENCY_BINDINGS"
+    }
+  ],
+  "local_only": [
+    {
+      "path": "inspect_ratchet.py",
+      "sha256": "4cb3e3f9210ecc47ac9562b0df4a35cff76225cd680502fa6b2a258cac51f48f",
+      "bytes": 8687,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    },
+    {
+      "path": "interpret_results.py",
+      "sha256": "63825e1ebeb614118d00fb82ff292d98d6002a5ef3de2477dbea98a558c45b75",
+      "bytes": 9665,
+      "availability": "LOCAL_ONLY",
+      "reason": "Not selected for public evidence; retained locally, never used to replace an essential observation"
+    }
+  ],
+  "original_hash_links": [
+    {
+      "path": "cases/train_associative_recall_0_L0.npz",
+      "sha256": "f03d872e014b3ae3a50f0cf6bef8757745a750c5ac591dbe81e3f5e0a208b3cc",
+      "role": "observations"
+    },
+    {
+      "path": "inspections/train_associative_recall_0_L0.npz",
+      "sha256": "af0c0e095f97984724fffa606cbea8d7e9f909671dfd2e79b46513e1a5accaae",
+      "role": "inspections"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L12.npz",
+      "sha256": "85afa800fc40c59bbb2a0fe4ec2e0975322ac4f6c5cfd1a6051665a99d040cfd",
+      "role": "observations"
+    },
+    {
+      "path": "inspections/train_associative_recall_0_L12.npz",
+      "sha256": "3e6e7b602a4f29f40dc72ade0054d12563d879e61bdb4c2a32d9bdc510393369",
+      "role": "inspections"
+    },
+    {
+      "path": "cases/train_associative_recall_0_L22.npz",
+      "sha256": "eba57dc89d0c992bee65434763d72ca1137b7e6fc9c79fe97de05e0471f9ccda",
+      "role": "observations"
+    },
+    {
+      "path": "inspections/train_associative_recall_0_L22.npz",
+      "sha256": "7a8833f7083c37d8a5bff4e1a0b08e12f512cf53bdb33390e2b86d4e36c11029",
+      "role": "inspections"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L0.npz",
+      "sha256": "7941738680d06c70d2f04bd6084f900fb9e2290856f2f6ad8c891d07a7acdf90",
+      "role": "observations"
+    },
+    {
+      "path": "inspections/train_associative_recall_1_L0.npz",
+      "sha256": "c3f990e645f73a8518d497e176b5fed11c828fbc6ff85272b9c05d72edf6c7e5",
+      "role": "inspections"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L12.npz",
+      "sha256": "eb885d9ab8f306b1600bf67a41fd3a4c26304d7265be9b823b505a92c6f2c89a",
+      "role": "observations"
+    },
+    {
+      "path": "inspections/train_associative_recall_1_L12.npz",
+      "sha256": "f00962c1d5dad436d98c5d57b2aa577a05b1b393fc8d7d65ee6edf2ea750394a",
+      "role": "inspections"
+    },
+    {
+      "path": "cases/train_associative_recall_1_L22.npz",
+      "sha256": "901eca9a35189cedb4248e67e52306083a489e32f00671b5a179eb87ba0a0d41",
+      "role": "observations"
+    },
+    {
+      "path": "inspections/train_associative_recall_1_L22.npz",
+      "sha256": "a8335e87911c999c382045ea3391f6960718384a710b6966937401c1e52dfdd3",
+      "role": "inspections"
+    },
+    {
+      "path": "cases/train_code_0_L0.npz",
+      "sha256": "922d8fbbdbbc370465e9fd7df4514b7825b7bbaad64279dd38d99c14f732c716",
+      "role": "observations"
+    },
+    {
+      "path": "inspections/train_code_0_L0.npz",
+      "sha256": "1df8038ffc3f45d0c4ca31c9a8e608cf5690fc7f9a19e7bf4ace3a8d21ddbc34",
+      "role": "inspections"
+    },
+    {
+      "path": "cases/train_code_0_L12.npz",
+      "sha256": "701493a6050e61e8344047d0fb91574c10329cc1b50f4ae49d6f11b7a1bd346b",
+      "role": "observations"
+    },
+    {
+      "path": "inspections/train_code_0_L12.npz",
+      "sha256": "cff76c59dd35db514bc3c82a87bf9913afbea838d2542306f644ba090999eff0",
+      "role": "inspections"
+    },
+    {
+      "path": "cases/train_code_0_L22.npz",
+      "sha256": "477f795613259f0561bd200d20373a6db207a974f57ec1a2ee016259f394f189",
+      "role": "observations"
+    },
+    {
+      "path": "inspections/train_code_0_L22.npz",
+      "sha256": "a92893eeb7112c897ab1a0ae8f4da4dea6300114d2ac690080a248f9d9605a3e",
+      "role": "inspections"
+    },
+    {
+      "path": "cases/train_code_1_L0.npz",
+      "sha256": "0f73b3ab7a77dadf1331fdae5e9d61d188b0b22afa654398507e0b4c8aed9649",
+      "role": "observations"
+    },
+    {
+      "path": "inspections/train_code_1_L0.npz",
+      "sha256": "b11bb40f73f17f8a2f5cb6fc96f1e676739a462ad46392cae1bca1fc755f5705",
+      "role": "inspections"
+    },
+    {
+      "path": "cases/train_code_1_L12.npz",
+      "sha256": "94ffaeac44f7c7f1f6d1b09a87f16f91cd40075cb5c901d86e0c090a64fcdab2",
+      "role": "observations"
+    },
+    {
+      "path": "inspections/train_code_1_L12.npz",
+      "sha256": "6cf052c62d1d537e18b6f4c0da74503efaf24e32bfd93b03107cce70472570f9",
+      "role": "inspections"
+    },
+    {
+      "path": "cases/train_code_1_L22.npz",
+      "sha256": "3fcc54d516b222c7de81a4ae8ea9fd92e76816e4c13327221a225a184c092c5f",
+      "role": "observations"
+    },
+    {
+      "path": "inspections/train_code_1_L22.npz",
+      "sha256": "f99078a67b06c9d41d75f3625b5c09c548c4256b579e7434f98512a6a2866469",
+      "role": "inspections"
+    },
+    {
+      "path": "cases/train_natural_language_0_L0.npz",
+      "sha256": "7a46fe9d1e06c2fc03045a8c3af266fd718d7a11826f50f265d465fdbd34a8fe",
+      "role": "observations"
+    },
+    {
+      "path": "inspections/train_natural_language_0_L0.npz",
+      "sha256": "ae047e4d8d2c1b36c943e7ba6b72c665d4203f024dc8f4a03e0b9af68b2df6fe",
+      "role": "inspections"
+    },
+    {
+      "path": "cases/train_natural_language_0_L12.npz",
+      "sha256": "55974f7128aa35356c7c2988523401c51389e16193385225c4b25316a79c6acb",
+      "role": "observations"
+    },
+    {
+      "path": "inspections/train_natural_language_0_L12.npz",
+      "sha256": "195a8596f1ff1afe47802dfa9e0ae93c982e285592b5f3c252f00e487e81ecf7",
+      "role": "inspections"
+    },
+    {
+      "path": "cases/train_natural_language_0_L22.npz",
+      "sha256": "94b5285a0ba9ac972a11ba3bb3e2e58f08d224cfb40299d1d7b6497499ca46e2",
+      "role": "observations"
+    },
+    {
+      "path": "inspections/train_natural_language_0_L22.npz",
+      "sha256": "8355a9d74b9b7a60a50108ebaee4292d381110c1435ed2c334cc5c156addd5b9",
+      "role": "inspections"
+    },
+    {
+      "path": "cases/train_natural_language_1_L0.npz",
+      "sha256": "cca38e691dc63da937759881926d57b0f921d676bb5129062ad50d86b51e0f95",
+      "role": "observations"
+    },
+    {
+      "path": "inspections/train_natural_language_1_L0.npz",
+      "sha256": "0b4bda97c1619349ebb3fede48335e810b5943b84b7165c62660f80a16728f84",
+      "role": "inspections"
+    },
+    {
+      "path": "cases/train_natural_language_1_L12.npz",
+      "sha256": "c8e97f17938da7e8354a8e081a1df967dade4e18650757e796f01572ceff466e",
+      "role": "observations"
+    },
+    {
+      "path": "inspections/train_natural_language_1_L12.npz",
+      "sha256": "9428efd14115c34337e2e9e48bd985ac2bf5a564ccee2260db92f1b9fa6faa3f",
+      "role": "inspections"
+    },
+    {
+      "path": "cases/train_natural_language_1_L22.npz",
+      "sha256": "fa91ef4f40f8289410c21faa3baabf5f2e406f42907815084848cb247308a966",
+      "role": "observations"
+    },
+    {
+      "path": "inspections/train_natural_language_1_L22.npz",
+      "sha256": "de5b1a94445ed7fb7986c57423be6c02395cac76f95e5ab71b8d8e70f45021cd",
+      "role": "inspections"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "614ac4205a1ad4b9dcfcd78595d48581704567bc2f19cf3b22b93662008ade69",
+      "role": "INPUT_FREEZE"
+    },
+    {
+      "path": "ratchet_freeze.json",
+      "sha256": "15ff89cf060e6d32a6bcc148295cc80dc82480a5e259c753c3f61351b570fc01",
+      "role": "RATCHET_FREEZE"
+    },
+    {
+      "path": "ratchet_observations.npz",
+      "sha256": "2fad7dc5b7ea1e0381a71897cbfdeda951a3993bec57c2099e4cb27c45cec4d2",
+      "role": "RATCHET_ARRAYS"
+    }
+  ],
+  "reproduction_levels": {
+    "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS": "Scalar/table aggregation only, where the public CPU verifier implements the corresponding reduction",
+    "INCLUDED_TENSOR_POINT_CHECKS": "Small selected fixtures support explicitly bounded arithmetic comparisons; they are not representative full trajectories",
+    "LOCAL_ONLY_REGENERATION": "Full model forwards and capture/response regeneration require hash-bound local inputs and sometimes local drivers; no blanket full-rerun promise"
+  },
+  "claim_boundary": "Curation establishes evidence identity, not new model quality, numerical success, or deployment promotion"
+}

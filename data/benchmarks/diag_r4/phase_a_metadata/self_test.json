@@ -1,0 +1,9 @@
+{
+  "status": "PASS_TINY_INDEPENDENT_TESTS",
+  "numpy_raw_grid_profiles": 2,
+  "legacy_fixed_recomputed_identity": true,
+  "R2_fixed_recomputed_constant_difference": true,
+  "lag_positive_negative_undefined_controls": true,
+  "utc": "2026-09-12T10:43:33.333966+00:00",
+  "script_sha256": "4a5acd60d73c052a13f6d820b7bc93b696437b079d5d3f09db0510b0d3b3e13b"
+}

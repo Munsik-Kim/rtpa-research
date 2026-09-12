@@ -1,61 +1,40 @@
 {
-  "structural_integrity": "PASS",
-  "CPU_scalar_reaggregation": "PASS",
-  "tensor_point_audit": "PASS",
-  "mask_payload": {
-    "mask_heads_checked": 1008,
-    "DIAG_MATCHED_identical_heads": 1,
-    "DIAG_MATCHED_row_overlap": 132,
-    "paper_energy_persistence_same_top8_heads": 48,
-    "mixed_bytes_head": 19328,
-    "uniform_low_bytes_head": 18432,
-    "bits_per_value": 9.4375,
-    "target3_payload_bytes": 927744,
-    "static_indices_bytes_head": 1024,
-    "H32_bytes_layer": 4096,
-    "decode_output_scratch_bytes_layer": 1048576
+  "schema_version": 2,
+  "role": "Verification index; historical and current scopes remain separate",
+  "historical_publication": {
+    "path": "results/historical/publication_v1_verification.json",
+    "sha256": "5b5fb047bcb1320c4923f282f7e091330591e2b2497b6cd34dcd9e5a521911f7",
+    "scope": "Original publication CPU/tensor/source receipt, including its historical 12-test run; not the current R4 test count"
   },
-  "source_mapping": {
-    "included_source_modules": 77,
-    "historical_source_hash_checks": 40,
-    "exact_byte_files": 68,
-    "path_redacted_files": 9,
-    "GPU_equivalence": "NOT_RUN"
-  },
-  "strict_JSON_files": 111,
-  "source_evidence_mappings": 504,
-  "document_local_links": 48,
-  "model_downloads": 0,
-  "GPU_forwards": 0,
-  "original_experiments_repeated": false,
-  "scientific_success": "NOT_A_MECHANICAL_VERIFICATION_RESULT",
-  "author_code_verification": "NOT_RUN_HISTORICAL_AUTHOR_CODE_NOT_VERIFIED",
-  "full_GPU_reproduction": "NOT_RUN",
-  "missing_same_injection_M": "NOT_COMPUTED_OR_NOT_IDENTIFIABLE",
-  "clean_copy_scope": "same-agent CPU reproduction, not independent-researcher replication",
-  "original_source_and_evidence_preservation": {
-    "unique_original_files": 538,
-    "changed": 0
-  },
-  "unit_tests": {
-    "passed": 12,
-    "failed": 0
-  },
-  "clean_copy_CPU": {
+  "R4_CPU_reconstruction": {
     "status": "PASS",
-    "copy_source": "selected staged Git index only",
-    "unit_tests_passed": 12,
-    "original_project_or_model_cache_required": false,
-    "model_forwards": 0,
-    "scope": "same-agent clean-copy CPU reconstruction, not independent researcher replication"
+    "frozen_contract": "results/diag_r4/verification_manifest.json",
+    "frozen_contract_sha256": "4f0917f16023005ecafdad3ae4a6fe6879e0ef84dd71096da700260a20e59e3e",
+    "actual_receipt_availability": "LOCAL_ONLY",
+    "actual_receipt_sha256": "96602a4135836c72097152e009f330eb14409b6d63bbb0751b10adbd8fd7b1ce",
+    "command": "python scripts/verify_diag_r4.py --root . --out recomputed-r4.json",
+    "scope": "Included observations, source bindings and declared limited evidence; no model inference",
+    "installation_checker_revision": "results/diag_r4/verification_provenance/revision.json"
   },
-  "publication_revision": {
-    "reader_language": "English",
-    "project_license": "Apache-2.0",
-    "third_party_license_preserved": true,
-    "numerical_source_changed": false,
-    "observations_masks_tables_or_scientific_expectations_changed": false,
-    "scholarly_citation": "requested, not an additional license condition"
+  "clean_installed_CPU": {
+    "status": "PASS_CLEAN_INDEX_AND_INSTALLED_CPU_EVIDENCE",
+    "receipt_availability": "LOCAL_ONLY",
+    "receipt_sha256": "67698751b5413251b24b3eee3a67fc53ff55d4caafda5b1eeb7abdd404d7d6e3",
+    "GPU_work": false,
+    "model_download": false,
+    "dependency_network": false,
+    "scope": "Same-agent selected-index export and installed-wheel check, not independent GPU replication"
   },
-  "remote_CI": "NOT_RUN_FOR_THIS_REVISION_AT_LOCAL_RECEIPT_TIME; consult GitHub commit checks"
+  "remote_CI": {
+    "status": "CONSULT_COMMIT_CHECKS_NOT_INFERRED_FROM_LOCAL_PASS",
+    "url": "https://github.com/Munsik-Kim/rtpa-research/actions/workflows/cpu-evidence.yml"
+  },
+  "R4_model_completion": {
+    "status": "COMPLETE_REGISTERED_A_B_QUALITY_PATHS",
+    "accounting": "results/diag_r4/execution_accounting.json",
+    "scientific_results": "results/diag_r4/claims.json",
+    "cost": "COST_INCOMPLETE",
+    "full_GPU_reproduction_by_CPU_check": false
+  },
+  "scientific_success": "NOT_A_MECHANICAL_VERIFICATION_RESULT"
 }

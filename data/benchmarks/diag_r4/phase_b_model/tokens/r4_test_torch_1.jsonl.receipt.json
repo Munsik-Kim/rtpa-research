@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETE",
+  "sha256": "85c617941eae587f334e08d7cd6be250ff40c300f46f3da5f048901fb2940975",
+  "freeze_sha256": "0e9a6cea81ea87d36c35b2e7e63428dc294f5855e427d9bb8d2c58591feabdaa",
+  "rows": 5120,
+  "physical_forwards": 5120,
+  "seconds": 609.5125783229996,
+  "failures": {},
+  "successful_quantized_layer_writes": {
+    "NATIVE": 0,
+    "LEGACY_DIAG": 18432,
+    "B1": 18432,
+    "B2": 18432,
+    "B3": 18432
+  },
+  "diagnostic_logging_included_in_wall_time": true,
+  "serving_timing": false
+}

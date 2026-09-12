@@ -1,0 +1,18 @@
+{
+  "run_id": "RTPA_DIAG_ATTRIBUTION_R4_20260912_V1",
+  "seed": 612401,
+  "candidate_documents": 8,
+  "documents_per_source_family": 2,
+  "source_families": ["torch", "transformers", "scipy", "sympy"],
+  "length": 1024,
+  "source_min_bytes": 8192,
+  "source_max_bytes": 262144,
+  "excluded_path_components": ["tests", "test", "_vendor", "vendor", "_internal", "_generated", "__pycache__"],
+  "selection_order": "ascending SHA256 of seed:family:relativepath, before any model outputs",
+  "source_unit": "one original Python source file, first1024tokens; no alternate offsets or padding",
+  "exclusion": "same original source path, raw or normalized text hash, token hash, prefix256 hash, or token5gram Jaccard>=0.5 against accessible prior panels and already selected inputs",
+  "scope": "8 code-source documents from4 software projects, not broad natural language or task accuracy; source-family dependence remains",
+  "bootstrap": "paired document resampling within fixed source-family strata; no independent-token sampling",
+  "budget_gate": "Freeze physical methods and measured forecast separately before TEST; predicted TEST wall with20percent margin must be<=70percent remainingGPUbudget",
+  "no_result_based_replacement": true
+}

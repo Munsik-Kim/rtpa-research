@@ -1,0 +1,17 @@
+{
+  "method": "probe32",
+  "seconds": [
+    0.3769611200004874,
+    0.371629633998964,
+    0.3810379560018191
+  ],
+  "median_seconds": 0.3769611200004874,
+  "input_bytes": 34867200,
+  "peak_RSS_before_compute_bytes": 171266048,
+  "peak_RSS_after_compute_bytes": 171266048,
+  "RSS_high_water_increase_bytes": 0,
+  "workspace_core_bytes": 3179520,
+  "output_sha256": "d667fc0423ebb6c94a6b3ead2bc61eb28755a272627e7b75209f2b04467e3101",
+  "per_row_head_stage_alpha": 4.3402777777777786e-05,
+  "probability_scope": "Conditional Gaussian intervals; simultaneous across supplied heads/rows/stages; no numerical-roundoff proof"
+}

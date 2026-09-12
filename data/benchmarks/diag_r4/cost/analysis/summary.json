@@ -1,0 +1,67 @@
+{
+  "status": "COST_INCOMPLETE",
+  "timing": {
+    "status": "COST_INCOMPLETE",
+    "statistics": null
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "COST_INCOMPLETE",
+      "receipt_sha256": "dd2a0bd979880913bb12c125122ee4e25d4b2dc056b6de33d11880e37953dceb",
+      "physical_forwards": 0,
+      "completed_rows": 0,
+      "included": false,
+      "reason": "OTHER_GPU_COMPUTE_PROCESS_NO_TERMINATION"
+    },
+    {
+      "attempt": 2,
+      "status": "COST_INCOMPLETE",
+      "receipt_sha256": "be5f38acaba4d0e84ddb4d94c3829341595aa02ec1791c47302cd8b937892268",
+      "physical_forwards": 0,
+      "completed_rows": 0,
+      "included": false,
+      "reason": "OTHER_GPU_COMPUTE_PROCESS_NO_TERMINATION"
+    }
+  ],
+  "all_timing_attempts_physical_forwards": 0,
+  "excluded_timing_attempts_physical_forwards": 0,
+  "memory": {
+    "status": "INCOMPLETE",
+    "missing": [
+      "NATIVE",
+      "B1",
+      "B4"
+    ],
+    "rows": [],
+    "fresh_process_evidence": "Distinct recorded PIDs and per-method driver assertions; not an independent OS process-lifecycle trace.",
+    "scope": "Actual payload, cache and process allocator bytes; H32 shared within each cache. GPU-wide samples are not process memory; no payload-to-wholeVRAM extrapolation."
+  },
+  "profile": {
+    "status": "NOT_RUN"
+  },
+  "binding": {
+    "cost_freeze_sha256": "88ab9252a4c189c10de16763dbc4ba270d4307fbb18217759a9f3594edb7cd73",
+    "cost_wiring_revision_sha256": "6a806f0ec2e914f64494738345ef3e4c1043282239153d1388cef019fc15085a",
+    "evaluation_freeze_sha256": "0e9a6cea81ea87d36c35b2e7e63428dc294f5855e427d9bb8d2c58591feabdaa",
+    "source_and_mask_contents_checked": true,
+    "external_identities_match_evaluation": true,
+    "local_external_contents_rehashed": true
+  },
+  "analysis_source_wiring": {
+    "original_source_sha256": "8d12b1d6d36641e8567bf9c6e5517d62a1e93ce0cb770868fc4964a1f722c271",
+    "executed_source_sha256": "669cdaf3d3e7240405cbb6e9f4b1740939bf2685f2145d6a86f3aa1ddb51d793",
+    "revision_sha256": "d06caf8073abadc72796dba85fd6a1dc5abe02a7b6280b9e3cb899fc17a1c4b6"
+  },
+  "analysis_contract_sha256": "376e2c6c65f29b11f9cc0d76984fd9f4c42aa0a7fc1810de3d12fa2344a120be",
+  "bootstrap_draws_sha256": "96652acffc15d60bb71171eb531134c2770bbfd36c824ee64d798358a6e75e5e",
+  "bootstrap_replicates": 2000,
+  "conditional_optimization": "NOT_RUN_NO_PROMOTED_REPAIR",
+  "GPU_work": false,
+  "limitations": [
+    "Eight paired blocks from one fixed already-consumed DEV code input, not a workload population.",
+    "Sampled nvidia-smi guards are not continuous Windows visibility. Mandatory codec/finite guards and Python context bookkeeping remain timed.",
+    "Per-token prefill last-logits TTFT proxy and teacher-forced decode, not optimized chunked prefill, token delivery or a serving claim.",
+    "No statistics use partial/failed attempts, quality-run wall times, or post-hoc optimized candidates."
+  ]
+}

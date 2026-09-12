@@ -1,0 +1,63 @@
+{
+  "scope": "Frozen source expectations versus current public candidates; mismatches are not silently repaired",
+  "sources": [
+    {
+      "receipt": "freeze.json",
+      "field": "/sources",
+      "source_id": "scripts/probe_diag_r4_cuda.py",
+      "expected_sha256": "e48605ad8f194d28822e954af794751a57c5bbaeaa53c701700c30c8c0bbf90c",
+      "candidate_public_path": "scripts/probe_diag_r4_cuda.py",
+      "current_public_sha256": "e48605ad8f194d28822e954af794751a57c5bbaeaa53c701700c30c8c0bbf90c",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/sources",
+      "source_id": "tests/test_codec_r4_rne.py",
+      "expected_sha256": "ba78ecb23bc32f6cbf8debb07cf219e2ab3f7f2a5292ba0e6cf63d51fe5661c0",
+      "candidate_public_path": "tests/test_codec_r4_rne.py",
+      "current_public_sha256": "ba78ecb23bc32f6cbf8debb07cf219e2ab3f7f2a5292ba0e6cf63d51fe5661c0",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/sources",
+      "source_id": "src/rtpa_research/codec_r4_rne.py",
+      "expected_sha256": "ac0f506bb9121dc16fd01a01a2d42e61c0f881468d32c4f3c5401fc23c90de36",
+      "candidate_public_path": "src/rtpa_research/codec_r4_rne.py",
+      "current_public_sha256": "ac0f506bb9121dc16fd01a01a2d42e61c0f881468d32c4f3c5401fc23c90de36",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/sources",
+      "source_id": "src/rtpa_research/codec_r2.py",
+      "expected_sha256": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2",
+      "candidate_public_path": "src/rtpa_research/codec_r2.py",
+      "current_public_sha256": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "receipt": "freeze.json",
+      "field": "/sources",
+      "source_id": "src/rtpa_research/layout.py",
+      "expected_sha256": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276",
+      "candidate_public_path": "src/rtpa_research/layout.py",
+      "current_public_sha256": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276",
+      "status": "BYTE_IDENTICAL"
+    }
+  ],
+  "recorded_environments": [],
+  "external_capture_bindings": [],
+  "dependency_wiring": {
+    "pyproject.toml": {
+      "sha256": "70a71f91ae812d1563a379d1380a5e0c91efda493642d15e449cba6ee7dfa796",
+      "mentions_scipy": true
+    },
+    ".github/workflows/cpu-evidence.yml": {
+      "sha256": "a9d453cb829198afb172f0ad630aa8e25e69b75e39896a0c8a263620572f9156",
+      "mentions_scipy": true
+    }
+  },
+  "dependency_boundary": "Scalar aggregation and curation use NumPy/stdlib; adjoint interval tests additionally require SciPy. No dependency was installed or upgraded by curation."
+}

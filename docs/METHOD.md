@@ -7,7 +7,75 @@ research motivation, not an additive or multiplicative performance claim.
 See the [legacy-codec and FA_CODE guide](QUICKSTART.md) or the
 [experimental R2 state/model guide](QUICKSTART_R2.md) for runnable examples.
 
-## Fixed allocation with an explicit storage revision
+## Attribution under one fixed codec
+
+The [R4 attribution study](DIAG_ATTRIBUTION_R4.md) separates codec, mask
+information, and offline computation. Its new rounding candidate failed
+predefined model-DEV quality limits. The allocation comparison therefore uses
+**legacy P_PRE as a quality reference**, not a repaired or universally safe
+default. No guard hides its known FP16 zero-point overflow.
+
+Six frozen TRAIN documents, 256 writes, all 18 recurrent layers, and eight
+protected rows per head are shared by these scores. The low anchor follows
+captured Native operands; it is not a full candidate-conditioned model run.
+Let `eL=QL(Z)-Z`, `eH=QH(Z)-Z`, and `delta=eL-eH` after the actual decoder,
+in original state coordinates. The subtraction, response propagation, and
+reductions in this new calibration are FP64; codec arithmetic remains FP32.
+This response-precision revision is separate from earlier fits.
+
+| Score | Information used to select the eight largest rows |
+|---|---|
+| B0: legacy energy | `sum norm(eL)²`; low-only diagnostic baseline |
+| B1: promotion energy | `sum (norm(eL)²-norm(eH)²) = sum (norm(delta)²+2 delta·eH)` |
+| B2: query-only | B1 multiplied by `mean(q_i²)` over all TRAIN scored readouts |
+| B3: independent-write response | `sum_t norm(L B_ti)² + 2c_i` |
+| B4: coherent DIAG | `norm(sum_t L B_ti)² + 2c_i` |
+
+All source writes participate; readouts are `[16,256)`. B2 uses one pooled
+query mean, not per-time decay weighting or an online selector. B3 and B4 use
+**the same signed `c_i=<sum_t L B_ti,h>`**, with `h=y-sum_i V_i`. Negative
+scores and adverse rows are retained. Ties use ascending row index. The last
+write has no future scored readout under output-before-storage. B3/B4 differ
+in cross-write quadratic terms, not JOINT's cross-row terms. B4/B1 changes
+readout response, temporal accumulation, and the residual baseline; it is
+not a pure intervention on one transition component.
+
+The new fit stores full K for independent checks. Runtime stores only a fixed
+mask and does not read K, future tokens, Native states, or evaluation logits.
+B4 matches the entire legacy mask across all layers. The evaluation aliases
+B4 to legacy DIAG only after full-mask and codec checks; partial head overlap
+never creates a trajectory alias.
+
+### Exact response and bounded-probe computation
+
+`diag_r4_adjoint.py` implements the exact reverse response for `c=BᵀLᵀh`,
+exact row-chunked forward scores, and Gaussian output-space probes for the
+coherent diagonal. One probe is shared across **all writes before squaring**:
+`z_ij=<B_i,Lᵀxi_j>`, `Khat_ii=mean_j z_ij²`. The independent-write quadratic
+is a separate calculation, not a replacement for coherent DIAG.
+
+Chi-square intervals assume a fixed response and Gaussian probes in exact
+arithmetic. Simultaneous row/head/stage accounting and strictly separated
+selected/unselected bounds are required for a top-eight certificate. Exact
+mask agreement at a tested seed is not certification. The representative
+three-layer pilots produced no certificate and did not justify a GPU sketch
+extension. CPU operator timing is not inference latency or full calibration
+time. The study retains an accounting-assertion failure and its separate
+one-ULP audit; historical expectations were not rewritten to pass it.
+
+### Matching physical injection energy
+
+For **this new fit only**, B stacks actual low-minus-high writes in the same
+time/state coordinates used to form K. Source-row columns have disjoint
+key-row support, so `M_injection=BᵀB` is diagonal. The last unread write remains
+part of this declared energy space. On positive support,
+`M_injection^-1/2 K M_injection^-1/2` describes response energy relative to
+this restricted stacked-write energy. Zero-energy rows, signed c, and the
+high-residual baseline remain explicit. This is not `LᵀL` on arbitrary state
+errors, a model-KL bound, or a proof about realizable binary-mask optima.
+It does not recover the missing M from the historical studies below.
+
+## Historical R2 allocation and storage revision
 
 R2 keeps unsigned low codes, value-axis normalized H32, groups of 32, two FP16
 metadata values per group, and eight original-coordinate FP16 high rows. It

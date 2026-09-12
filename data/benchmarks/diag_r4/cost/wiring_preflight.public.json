@@ -1,0 +1,26 @@
+{
+  "status": "PASS_CPU_ONLY_WIRING_PREFLIGHT",
+  "cost_source_sha256": "a18fbbe1976e2f655360fbf0554a59e951e9d5b022ffdfc9219db8c6ba0682cc",
+  "cost_tests_sha256": "8d9ee7b49c57a3a2cd9e3fe55ce4790ef8a6b2b5d552bce196dd6f64cb9c53ff",
+  "original_cost_freeze_sha256": "88ab9252a4c189c10de16763dbc4ba270d4307fbb18217759a9f3594edb7cd73",
+  "cost_wiring_revision_sha256": "6a806f0ec2e914f64494738345ef3e4c1043282239153d1388cef019fc15085a",
+  "tests": {
+    "command": "env OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 PYTHONPATH=src python -m pytest -q tests/test_diag_r4_cost.py tests/test_diag_r4_workflow.py tests/test_diag_r2_allocations.py",
+    "passed": 41,
+    "failed": 0,
+    "reported_seconds": 2.38,
+    "cost_test_count": 13,
+    "scope": "Synthetic binding mutation, shared counter storage, and mocked current-label/block/token failure with retained nonfinite evidence; no CUDA timing or model quality measurement."
+  },
+  "actual_installed_import_and_content_check": {
+    "status": "PASS",
+    "full_content_hashes": true,
+    "loaded_module_paths_checked": true,
+    "CUDA_initialized": false,
+    "model_loaded": false
+  },
+  "GPU_work": false,
+  "scientific_outputs_changed": false,
+  "original_freeze_changed": false,
+  "limitation": "Mocked failure and CPU content checks cannot establish CUDA timing, GPU memory behavior, or uninterrupted runtime isolation."
+}

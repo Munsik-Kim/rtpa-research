@@ -23,8 +23,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m pip install numpy==1.26.4 tokenizers==0.22.2 build
+      - run: python -m pip install numpy==1.26.4 tokenizers==0.22.2 scipy==1.17.1 pytest==9.1.1 build
       - run: python -m unittest discover -s tests -v
+      - run: python -m pytest -q tests/test_diag_r4_cost.py tests/test_diag_r4_cost_analysis.py tests/test_diag_r4_cost_renderer.py
       - run: python -m rtpa_research verify --out recomputed
       - name: Run the model-free demonstration and historical FA_CODE reconstruction
         run: |
@@ -59,6 +60,19 @@ jobs:
         run: |
           python scripts/codec_feedback/aggregate.py --run data/benchmarks/codec_feedback --out /tmp/rtpa-feedback
           python scripts/codec_feedback/verify.py --root . --out /tmp/rtpa-feedback-verification.json
+      - name: Reconstruct attribution, failures and declared CPU evidence
+        run: |
+          python scripts/verify_diag_r4.py --root . --out /tmp/rtpa-r4-verification.json
+          python scripts/check_diag_r4_install.py --root . --out /tmp/rtpa-r4-resolved.json
+          python scripts/render_diag_r4.py --root . --out /tmp/rtpa-r4-render
+          cmp results/diag_r4/benchmark_tables.md /tmp/rtpa-r4-render/benchmark_tables.md
+          cmp results/diag_r4/assessment.json /tmp/rtpa-r4-render/assessment.json
+          python scripts/render_diag_r4_cost.py --root . --out /tmp/rtpa-r4-cost-tables.md
+          cmp results/diag_r4/cost_tables.md /tmp/rtpa-r4-cost-tables.md
+          python scripts/account_diag_r4.py --root . --out /tmp/rtpa-r4-accounting.json
+          cmp results/diag_r4/execution_accounting.json /tmp/rtpa-r4-accounting.json
+          python scripts/build_diag_r4_claims.py --root . --out /tmp/rtpa-r4-claims.json
+          cmp results/diag_r4/claims.json /tmp/rtpa-r4-claims.json
       - name: Build and install the public wheel
         run: |
           python -m build --wheel
@@ -93,6 +107,12 @@ jobs:
           cmp "$evidence_root/results/diag_r2/cal_fixed_mask.md" /tmp/rtpa-installed-r2-assessment/cal_fixed_mask.md
           cmp "$evidence_root/results/diag_r2/quality_details.md" /tmp/rtpa-installed-r2-assessment/quality_details.md
           /tmp/rtpa-wheel-test/bin/python "$evidence_root/scripts/codec_feedback/verify.py" --root "$evidence_root" --out /tmp/rtpa-installed-feedback-verification.json
+          /tmp/rtpa-wheel-test/bin/python "$evidence_root/scripts/verify_diag_r4.py" --root "$evidence_root" --out /tmp/rtpa-installed-r4.json
+          /tmp/rtpa-wheel-test/bin/python "$evidence_root/scripts/check_diag_r4_install.py" --root "$evidence_root" --out /tmp/rtpa-installed-r4-resolution.json
+          /tmp/rtpa-wheel-test/bin/python "$evidence_root/scripts/account_diag_r4.py" --root "$evidence_root" --out /tmp/rtpa-installed-r4-accounting.json
+          cmp "$evidence_root/results/diag_r4/execution_accounting.json" /tmp/rtpa-installed-r4-accounting.json
+          /tmp/rtpa-wheel-test/bin/python "$evidence_root/scripts/render_diag_r4_cost.py" --root "$evidence_root" --out /tmp/rtpa-installed-r4-cost.md
+          cmp "$evidence_root/results/diag_r4/cost_tables.md" /tmp/rtpa-installed-r4-cost.md
   codec-cpu:
     runs-on: ubuntu-latest
     timeout-minutes: 20
@@ -111,7 +131,7 @@ jobs:
           python-version: '3.11'
       - name: Install CPU-only numerical dependencies, not model weights
         run: |
-          python -m pip install numpy==1.26.4 tokenizers==0.22.2 transformers==5.9.0
+          python -m pip install numpy==1.26.4 tokenizers==0.22.2 scipy==1.17.1 transformers==5.9.0 pytest==9.1.1
           python -m pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cpu
       - name: Check stable codecs and reference-equivalent optimizations on CPU
         run: |
@@ -120,3 +140,10 @@ jobs:
           python examples/diag_r2.py --profile R2_OFFSET --out /tmp/r2-offset-api.json
           python examples/diag_r2.py --profile R2_ZERO_INCLUSIVE --out /tmp/r2-zero-api.json
           python -m unittest discover -s scripts/codec_feedback -p test_diagnostic.py -v
+      - name: Check attribution codec, fixed-response identities and API on CPU
+        run: |
+          python -m unittest discover -s tests -p 'test_codec_r4_rne.py' -v
+          python -m unittest discover -s tests -p 'test_calibration_r4.py' -v
+          python -m unittest discover -s tests -p 'test_diag_r4*.py' -v
+          python -m pytest -q tests/test_diag_r4_cost.py tests/test_diag_r4_cost_analysis.py tests/test_diag_r4_cost_renderer.py
+          python examples/diag_r4.py --method B4 --layer 0

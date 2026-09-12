@@ -1,0 +1,17 @@
+test_chunks_subset_and_stable_ties (test_diag_r4_adjoint.AdjointTests.test_chunks_subset_and_stable_ties) ... ok
+test_dense_gdn_statistics_and_shared_c (test_diag_r4_adjoint.AdjointTests.test_dense_gdn_statistics_and_shared_c) ... ok
+test_full_probe_matches_dense_and_is_nested (test_diag_r4_adjoint.AdjointTests.test_full_probe_matches_dense_and_is_nested) ... ok
+test_input_contract (test_diag_r4_adjoint.AdjointTests.test_input_contract) ... ok
+test_lastwrite_and_zero_response (test_diag_r4_adjoint.AdjointTests.test_lastwrite_and_zero_response) ... ok
+test_nonsymmetric_gdn2_and_inner_product (test_diag_r4_adjoint.AdjointTests.test_nonsymmetric_gdn2_and_inner_product) ... ok
+test_probability_intervals_and_strict_certificate (test_diag_r4_adjoint.AdjointTests.test_probability_intervals_and_strict_certificate) ... ok
+test_signed_c_cancellation_and_cross_write (test_diag_r4_adjoint.AdjointTests.test_signed_c_cancellation_and_cross_write) ... ok
+test_tiny_nonzero_source_not_certified_as_zero (test_diag_r4_adjoint.AdjointTests.test_tiny_nonzero_source_not_certified_as_zero) ... ok
+test_transition_adjoint_direct_nonsymmetric (test_diag_r4_adjoint.AdjointTests.test_transition_adjoint_direct_nonsymmetric) ... ok
+test_two_tokens_output_before_storage (test_diag_r4_adjoint.AdjointTests.test_two_tokens_output_before_storage) ... ok
+test_warmup_and_first_query_unused (test_diag_r4_adjoint.AdjointTests.test_warmup_and_first_query_unused) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.370s
+
+OK

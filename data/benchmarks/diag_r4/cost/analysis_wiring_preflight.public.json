@@ -1,0 +1,30 @@
+{
+  "status": "PASS_ANALYSIS_WIRING_V2_CPU_ONLY",
+  "analysis_source_sha256": "669cdaf3d3e7240405cbb6e9f4b1740939bf2685f2145d6a86f3aa1ddb51d793",
+  "tests_sha256": "7e49e0cb01ecbe5904bfc2021ef735aaf8b3e6a8317fa773e8b0ad4f821c012a",
+  "analysis_wiring_revision_sha256": "d06caf8073abadc72796dba85fd6a1dc5abe02a7b6280b9e3cb899fc17a1c4b6",
+  "original_analysis_contract_sha256": "376e2c6c65f29b11f9cc0d76984fd9f4c42aa0a7fc1810de3d12fa2344a120be",
+  "unchanged_bootstrap_draws_sha256": "96652acffc15d60bb71171eb531134c2770bbfd36c824ee64d798358a6e75e5e",
+  "tests": {
+    "command": "env OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 PYTHONPATH=src python -m pytest -q tests/test_diag_r4_cost_analysis.py tests/test_diag_r4_cost.py tests/test_diag_r4_workflow.py",
+    "passed": 58,
+    "failed": 0,
+    "reported_seconds": 3.51,
+    "scope": "Synthetic statistics, complete-attempt accounting, immutable source-revision mapping, Native BF16 storage descriptors, current-context failures and workflow guards; no GPU execution."
+  },
+  "wire_execution": {
+    "status": "ANALYSIS_WIRING_V2_REGISTERED_BEFORE_COST",
+    "environment": "New isolated CPU venv, NumPy 1.26.4, no Torch package, Python -I",
+    "no_cost_measurement_receipts_present": true
+  },
+  "preserved_diagnostic": {
+    "file": "analysis_native_storage_diagnostic.json",
+    "sha256": "956a3cd88b6caad6fbf1f708f64e360fff21f6f2ed525f761ba3a3d7f782d43b",
+    "old_analyzer_error": "ValueError:PAYLOAD_DTYPE_SIZE",
+    "actual_tiny_CPU_native_storage": "torch.bfloat16",
+    "CUDA_initialized": false
+  },
+  "GPU_work": false,
+  "model_loaded": false,
+  "scientific_policy_or_statistical_rule_changed": false
+}
