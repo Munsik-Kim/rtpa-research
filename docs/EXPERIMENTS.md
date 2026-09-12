@@ -10,9 +10,10 @@
 | numerical-failure | Stage A of the same v0.5 | Reproduction on v0.4 natural_language_confirm0 | Same finite encode-group fixture and historical failure receipts; no new model replay |
 | task-evaluation | `rtpa-v0.6-fixed-task-damp-audit-20260909-v1` | New T1 panel: 28 items, 14 short/14 long, five methods | Rescore 140 EVAL and 32 CAL raw answers; regenerate 60 synthetic contexts |
 | same-input-diagnostic | RTPA v0.7 (`rtpa_v07_same_input_diagnostic`) | Eight existing v0.6 items, four methods; focal deliberately included | 2,232 token scalars, 105,984 local/head rows, four focal tensor points |
-| bounded-code-correction-history | `FA_CODE_V01_20260911_0814` | Common-state12, own-recurrence8, separate task32; existing3-layerpolicy | Selected paired observations and adverse cost/task evidence; no repeat of the historical GPU run |
-| all-layer-allocation / factorized-code-transfer | `RTPA_GDN_GDN2_20260911_V1` (GDN) | New syntheticTRAIN6/CAL3/TEST12; all18-layerallocation and separate inherited3-layerFA_CODE | New model execution, fixed scope/input/source receipts, token scalars, fixed-work timing; completion and effects in current benchmark tables |
-| channel-wise-operator-transfer | Same upgrade, GDN2 operator subrun | SyntheticTRAIN3/TEST12×256,4heads; no pretrained model | Forward/adjoint conformance, actual readoutSSE, parity and operator cost; initial confounded timing retained separately |
+| bounded-code-correction-history | `FA_CODE_V01_20260911_0814` | Common-state 12, own-recurrence 8, separate task 32; existing three-layer policy | Selected paired observations and adverse cost/task evidence; no repeat of the historical GPU run |
+| all-layer-allocation / factorized-code-transfer | `RTPA_GDN_GDN2_20260911_V1` (GDN) | Synthetic TRAIN6/CAL3/TEST12; all-18-layer allocation and separate inherited three-layer FA_CODE | Model execution, fixed scope/input/source receipts, token scalars and fixed-work timing; [benchmark tables](../results/upgrade/benchmark_tables.md) |
+| channel-wise-operator-transfer | Same upgrade, GDN2 operator subrun | Synthetic TRAIN3/TEST12 × 256, four heads; no pretrained model | Forward/adjoint conformance, actual readout SSE, parity and operator cost; initial confounded timing retained separately |
+| bounded-codec-allocation | `RTPA_DIAG_STABLE_R2_20260912_V1` | Inherited TRAIN6/CAL3; twelve CPython/NumPy source-file prefixes × 1,024 tokens; all 18 GDN layers | Five-method quality and fresh-process memory completed; timing INCOMPLETE; [R2 benchmark tables](../results/diag_r2/benchmark_tables.md) |
 
 Different panels, numerical profiles, and research questions are not pooled or overwritten. The [panel manifests](../data/panels) identify external v0.4/v0.5 sources by version, hash, and offset. Natural-language sources are English software documentation, not a representative prose population. Recall inputs share a generator family; pretraining contamination is UNKNOWN. Resampling units are documents/sequences, not independent tokens or heads.
 
@@ -25,10 +26,16 @@ Different panels, numerical profiles, and research questions are not pooled or o
 
 Original preregistration configurations and frozen source receipts remain in [configs](../configs) and [evidence](../data/evidence). Reader-oriented names are mappings, not new execution IDs.
 
-The [new benchmark protocol](BENCHMARKS.md) specifies separate comparison scopes
-and retains pre-TEST all18-layer FA_CODE applicability failures. New quality
-observations do not retroactively change the older decisions below.
+The [GDN/GDN2 benchmark](BENCHMARKS.md) retains its separate comparison scopes
+and pre-TEST all-18-layer FA_CODE applicability failures. The
+[R2 preregistration](PREREGISTRATION_R2.md) defines the subsequent bounded-codec
+study. Each run retains its own frozen decisions and observations.
 
 ## Historical decisions versus current interpretation
 
 The historical context of v0.4 `QUALITY_SIGNAL_WITH_UNRESOLVED_RISK` and v0.5 `POSITIVE_SIGNAL_NEEDS_TASK_CONFIRMATION` is retained. The v0.6 runner's `NO_RESOLVED_TASK_ADVANTAGE_IN_SCREENING` is distinguished from its postrun integrated decision `STOP_METHOD_ADVANTAGE_NOT_SUPPORTED`. The v0.7 `DIAGNOSTIC_COMPLETE` label denotes completion, not a quality win. Original decision JSON files are unchanged.
+
+The historical product-path decision is `CONTINUES_STOPPED`, as recorded in
+[historical claims](../results/claims.json). Later runs have separate measured
+scope and do not revise that decision; [Results](RESULTS.md) explains their
+quality, cost, and storage conclusions.

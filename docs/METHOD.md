@@ -4,8 +4,8 @@ RTPA has two distinct mechanisms. **RTPA-DIAG** compresses offline output
 responses into a fixed precision mask. **FA_CODE** uses a fixed small metric
 to choose bounded integer-code changes at each recurrent write. They share a
 research motivation, not an additive or multiplicative performance claim.
-The current fixed-mask entrypoint is the [R2 state/model guide](QUICKSTART_R2.md).
-FA_CODE remains a separate, unchanged optional research path.
+See the [legacy-codec and FA_CODE guide](QUICKSTART.md) or the
+[experimental R2 state/model guide](QUICKSTART_R2.md) for runnable examples.
 
 ## Fixed allocation with an explicit storage revision
 
@@ -46,7 +46,7 @@ Native-reference states sampled every eight writes and a scalar geometric-
 persistence factor. This new-codec/r8/all-18-layer local adaptation is not an
 official DAMP implementation, paper calibration or kernel reproduction.
 
-## Equivalent execution changes, not another allocation policy
+## Reference and optimized R2 execution
 
 `CodecR2` is the readable reference. `CodecR2Optimized` combines the successful-
 path high/low input checks into one host decision and validates each decoded
@@ -105,7 +105,7 @@ method; it is not a new theorem about final language-model accuracy. Multiple
 writes, cross-time terms, own-trajectory changes and the nonlinear final model
 remain outside that single-write equivalence.
 
-## Current versus historical scope
+## Architecture and version scope
 
 The preserved source independently supports the GDN2 channel-wise transition and
 its nonsymmetric adjoint. It does not reuse GDN's scalar-decay shortcut. GDN2
@@ -116,8 +116,8 @@ Historical results below used layers 0/12/22. The preceding v1.1.0rc1 study sepa
 all-18-layer allocation and three-layer FA_CODE experiments. Scope is part of each
 comparison, never inferred from the package name. Request cache payloads are
 independent. The v1.1.0rc1 runner loads policy tensors per cache, so its ledger is
-**per request**. The R2 fixed-mask engine now shares immutable policy tensors;
-that new implementation does not retroactively change the earlier byte ledger.
+**per request**. The R2 fixed-mask engine shares immutable policy tensors;
+its memory accounting is separate from the earlier byte ledger.
 
 ## Historical shared numerical contract
 

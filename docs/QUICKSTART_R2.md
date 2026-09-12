@@ -1,17 +1,17 @@
 # Use the bounded R2 codec and fixed-mask path
 
-**Experimental opt-in, not a quality replacement for legacy DIAG.** The new
+**Experimental opt-in, not a quality replacement for legacy DIAG.** The R2
 codec repairs the saved overflow cases within its declared range, but the
 complete R2 method regressed substantially against legacy on the measured
 panel. Use this guide to reproduce that revision; see the
 [separate quality, cost and storage results](RESULTS.md) before choosing it.
 
-Start with one state on CPU, then reconstruct the included observations. Loading
-a language model or rerunning calibration is a separate, explicit action. R2 is
-a new numerical codec revision: do not decode an old P_PRE/P_STORE payload with
-the new decoder or treat a newly fitted mask as the source of an old result.
+Start with one state on CPU, then reconstruct the included observations. The
+model replay below requires local weights and a GPU. R2 payloads and policies
+have a distinct numerical contract: P_PRE/P_STORE payloads are incompatible
+with the R2 decoder.
 
-## Install the actual repository
+## Install from the repository
 
 ```bash
 git clone https://github.com/Munsik-Kim/rtpa-research.git
@@ -21,10 +21,8 @@ source ../rtpa-env/bin/activate
 python -m pip install .
 ```
 
-The base package contains the model-free reconstruction path. It does not
-install a language model, initialize CUDA, or assume an identically named PyPI
-package. For the state example, use an existing compatible Torch environment or
-the official CPU-only wheel:
+The base package supports model-free reconstruction. The state example also
+requires a compatible Torch environment; a CPU-only installation is sufficient:
 
 ```bash
 python -m pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cpu
@@ -65,8 +63,8 @@ point on a zero-inclusive range. Their decoder rules differ. Pick the profile
 recorded with the policy/result rather than changing it after seeing outputs.
 The [numerical contract](CODEC_R2_CONTRACT.md) specifies value-axis H32, original-
 coordinate high rows, stored-grid rounding, input bounds and explicit failure.
-`CodecRangeError` is not an invitation to silently clip inputs or widen
-persistent precision.
+Out-of-range inputs raise `CodecRangeError`; clipping or widening persistent
+precision would change the numerical contract.
 
 ## Load a real frozen DIAG mask
 
@@ -116,10 +114,8 @@ python -m rtpa_research.diag_r2_analysis --public --out ../r2-public-recomputed
 ```
 
 The public form resolves `data/benchmarks/diag_r2` through the installed package
-resources, not the original researcher's filesystem. If that release does not
-include the selected R2 observations, it fails explicitly instead of generating
-fake data. To select a public checkout explicitly, add `--root /path/to/checkout`
-alongside `--public`.
+resources and fails if required observations are missing. To select a checkout
+explicitly, add `--root /path/to/checkout` alongside `--public`.
 
 The output contains `summary.json`, `comparisons.json`, `sequence_metrics.csv`,
 `coverage.json`, `verification.json`, `memory_ledger.json`, `claims.json`,
@@ -144,12 +140,11 @@ Different package versions are not assumed numerically equivalent.
 
 For a separate GPU environment, the optional dependency group is
 `python -m pip install '.[gpu]'`. Choose the CUDA-enabled Torch build compatible
-with the recorded driver/runtime; do not replace a working research environment
-to run the CPU example. The base evidence installation and CPU-wheel recipe
-above intentionally do not enable model inference.
+with the recorded driver/runtime. The CPU-only environment above does not
+enable GPU model inference.
 
-`RTPA_DIAG_STABLE_R2_20260912_V1` freezes the following conditions; these are
-the planned scope, not a claim that every trajectory completed successfully.
+`RTPA_DIAG_STABLE_R2_20260912_V1` freezes the following conditions. Quality and
+memory completed; timing remains **INCOMPLETE**. See [Results](RESULTS.md).
 
 | Component | Frozen setting |
 |---|---|
@@ -191,8 +186,7 @@ and runs Native and R2-DIAG in separate zero-start caches. A successful
 32-token invocation performs 64 attempted model forwards. Its JSON records
 attempted/finite-completed forwards, actual R2 layer writes, payload bytes,
 and any first failure. It is not a latency benchmark or independent quality
-replication. The command's existence and successful `--help` do not establish
-that a GPU smoke has run; consult the separate execution receipt.
+replication; execution status is recorded in the separate receipt.
 
 ## Execute the frozen quality, timing and memory phases
 
@@ -252,16 +246,15 @@ observations and review the remaining budget rather than rerunning them as if
 free. A method failure must remain recorded; continue only phases whose
 required conditions still hold.
 
-For the implementation's actual CLI options, use
+For available CLI options, use
 `python -m rtpa_research.diag_r2_execution --help`. Its explicit phases are
 `conformance`, `final_probe`, `freeze`, `evaluate`, `timing`, and `memory`.
 Recreating calibration is a different workflow: `diag_r2_benchmark` exposes
 `cuda_fixture`, `pilot`, `capture`, `fit`, and `profile`. Those operations need
 the original phase-specific numerical sources and the capture/revalidation
-dependencies described in [Reproduction scope](REPRO_R2_SCOPE.md). Do not
-rerun development scripts against frozen public receipts: some write new
-CPU receipts and are not read-only verifiers. Do not refreeze an existing run
-or describe a current-source calibration as byte-identical historical replay.
+dependencies described in [Reproduction scope](REPRO_R2_SCOPE.md). These
+calibration commands write new receipts and require a separate run directory;
+they must not overwrite or refreeze a completed run.
 
 For direct integration, the concrete model adapter is
 `rtpa_research.diag_r2_runtime.R2Engine`: call `r2_cache(masks, profile,
@@ -276,5 +269,5 @@ Run one GPU worker and keep competing applications out of timed intervals.
 Per-token prompt processing is not optimized chunk prefill. Reference versus
 optimized execution, DIAG versus matched energy, and all methods versus Native
 are distinct comparisons. `backend="reference"` retains the explicit reference
-implementation. Read the exact result scope before describing a
-path as faster, stable on arbitrary input, or production ready.
+implementation. See [Limitations](LIMITATIONS.md) for the scope of the measured
+quality, timing, and numerical checks.

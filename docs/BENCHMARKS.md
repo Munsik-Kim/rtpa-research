@@ -1,13 +1,13 @@
-# Benchmarks: stable DIAG and preserved earlier evidence
+# Benchmarks
 
-## Stable-codec GDN revision
+## R2 bounded-codec GDN revision
 
 Run `RTPA_DIAG_STABLE_R2_20260912_V1` is a separate numerical revision:
 `R2_OFFSET` stores physical FP16 offsets instead of the legacy dimensionless
 zero points. The two metadata fields, eight protected rows and **19,328 B/head**
 budget are unchanged; the decoder and newly calibrated masks are not.
 
-The [stable-DIAG result tables](../results/diag_r2/benchmark_tables.md) are the
+The [R2 result tables](../results/diag_r2/benchmark_tables.md) are the
 authoritative measurements for this revision. Their matched allocation
 contrast is `R2_DIAG / R2_MATCHED_ENERGY`; `R2_DIAG / LEGACY_DIAG` changes both
 codec and calibrated mask. DAMP_R2 is a local paper-adapted selection rule using
@@ -47,20 +47,14 @@ guards and ordinary lazy allocation inside model forwards remain measured;
 model loading, cache-object construction and metric computation do not. TTFT
 is time through the last prompt logits, not a serving-system measurement.
 
-The first timing process received SIGTERM, with no recorded numerical
-traceback; the external cause is unknown. Its nineteen measured rows, original
-ledger and log remain under `interrupted_attempts/timing_01`. They are not
-silently pooled into the final timing estimate. The interruption leaves
-**0–544 additional unrecorded forward attempts** beyond its 13,600 confirmed
-calls; total execution accounting is therefore a bounded interval, not an exact
-count. The sole frozen retry stopped after 15/48 planned measured-label rows
-because another GPU PID appeared after a DAMP label. The application is unknown.
-Its 11,424 forwards are recorded separately; the raw checkpoint retains its
-last `RUNNING` value, while lifecycle, failure receipt and ledger record that
-the process ended. The contaminated row is retained. There is no complete
-latency ratio, interval or optimization-speedup claim, and no additional retry.
-The partial attempt's wall time is conservatively charged to the first
-confirmed-dead observation, with the exact convention retained in its receipt.
+The first timing process received SIGTERM for an unknown reason. The sole
+frozen retry stopped after 15/48 planned measured-label rows when another GPU
+PID appeared after a DAMP label; the application is unknown. Both partial
+attempts and the contaminated row are retained. No complete latency ratio,
+interval or optimization speedup is available. The
+[interruption accounting](REPRO_R2_SCOPE.md#interrupted-timing-and-bounded-accounting)
+records confirmed calls, the bounded unknown count, lifecycle receipts, and
+wall-time charges.
 
 Memory uses a separate process per method and a 1,024+32 CAL workload. The
 allocator trace reports generation-aware newly allocated live bytes for one
@@ -71,7 +65,7 @@ inputs/static tensors and final returned storage. It is neither whole-model
 scratch nor a worst-case bound. Process IDs, actual payload/static bytes,
 PyTorch allocated/reserved peaks and GPU-wide observations remain separate.
 
-New TRAIN fitting directly accumulates K's diagonal and c, while preserving
+R2 TRAIN fitting directly accumulates K's diagonal and c, while preserving
 the temporal source history. A small full-K reference audit checks the values
 and selected rows. It avoids materializing full K on the main fitting path,
 but still uses a 128 MiB source-history workspace; no isolated full-K-to-diagonal
@@ -80,7 +74,7 @@ the phase-specific executed sources and excluded large captures.
 
 No new FA_CODE, pretrained GDN2, task-accuracy, batch>1 or cache-count sweep is
 part of this revision. Those earlier observations follow under their original
-run identity. [Current API and replay commands](QUICKSTART_R2.md).
+run identity. [R2 API and replay commands](QUICKSTART_R2.md).
 
 ## Earlier GDN/GDN2 run — v1.1.0rc1
 
@@ -89,7 +83,7 @@ separately. Its authoritative [benchmark tables](../results/upgrade/benchmark_ta
 are generated from the included observations, not copied from a paper or an
 earlier RTPA panel. They include adverse results and undefined comparisons.
 
-## Two GDN questions, not one combined method
+## GDN allocation and code-correction comparisons
 
 Run `RTPA_GDN_GDN2_20260911_V1` uses the fixed Qwen3.5-0.8B-Base checkpoint
 `dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68`, an RTX 5080 16 GB,
@@ -155,7 +149,7 @@ within that window or did not complete it. Successful documents are not
 substituted as the primary panel. Valid shorter windows remain separate,
 prespecified results.
 
-## GDN2: what was actually tested
+## GDN2 operator evaluation
 
 The official GDN2 repository and model provenance were checked, but a suitable
 author-linked pretrained checkpoint was not verified. Third-party training
@@ -232,7 +226,7 @@ are 262,144 and 77,312 bytes respectively. This FP32 operator comparison must
 not be presented as the BF16 Qwen reduction or a pretrained GDN2 model-memory
 measurement.
 
-Static indices, H32 and metric factors are additional. The current model runner
+Static indices, H32 and metric factors are additional. The v1.1.0rc1 model runner
 loads these per cache/request; it has not implemented cross-request global
 policy sharing. For the three-layer GDN FA policy's 48 heads, factorized FP64 U
 plus ridge occupies 98,688 bytes, compared with 6,291,456 bytes for dense M.
@@ -252,7 +246,7 @@ inference kernel.
 ## Reproduce and inspect
 
 [Quickstart](QUICKSTART.md) contains the tested CPU, encoder and opt-in GPU
-commands. `scripts/reproduce_upgrade.py` reconstructs the new scalar tables;
+commands. `scripts/reproduce_upgrade.py` reconstructs the GDN/GDN2 scalar tables;
 `scripts/check_upgrade_contract.py` checks fixed input identities, row-score
 selection, mask shapes, payload arithmetic and source hashes. Neither is a
 new model execution. Included small failure fixtures are independently checked
@@ -265,7 +259,7 @@ spectra or physical-injection M/K normalization. Full K and traces can be
 regenerated from the public TRAIN tokens and local fixed model using the GPU
 commands; their original hashes remain in the receipts.
 
-## Bounded work and remaining step
+## GDN/GDN2 execution accounting
 
 The cumulative GPU-phase ledger records 10,017.881 seconds (166.965 minutes)
 against the 14,400-second limit, including CAL failures and both timing regimes.
@@ -283,11 +277,8 @@ performed. Full K generation is the measured implementation, not an optimized
 DIAG-only calibration cost. CPU reaggregation and installation checks are
 separate from the GPU ledger and do not rerun model inference.
 
-The next bounded development priority is a **separate common-codec numerical
-revision** for the retained finite-input FP16 zero-point overflow. Success would
-require independent ordinary/edge-group agreement, finite reconstruction of
-the saved failures without a hidden FP32 persistent master, and explicit byte
-and rounding changes shared by every baseline. No codec repair was introduced
-in that earlier run. R2 above is the subsequent, separately validated revision.
+The legacy FP16 zero-point failure was not repaired in this run. The separate
+R2 revision above evaluates a bounded decoder change with its own calibration,
+quality results, and [numerical contract](CODEC_R2_CONTRACT.md).
 [Decision](../results/upgrade/decision.json) ·
 [local verification scope](../results/upgrade/verification.json).

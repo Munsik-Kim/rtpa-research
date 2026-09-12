@@ -1,14 +1,13 @@
 # Run RTPA and reproduce its evidence
 
-Start with the model-free example or the included observations. Neither needs a
-model download, a GPU, a private Drive folder, or the original research machine.
-The opt-in model benchmark is a separate, substantially longer workflow.
+This guide covers the legacy-codec GDN and FA_CODE paths plus GDN2 operators.
+Start with the CPU example or evidence reconstruction; model benchmarks require
+a separate GPU environment. For the experimental bounded codec, see the
+[R2 guide](QUICKSTART_R2.md).
 
 ## Install from this repository
 
-The commands below install into a new environment; they do not upgrade an
-existing research environment. There is no claim that this release is published
-to PyPI.
+Install from the repository in a separate Python 3.11 environment:
 
 ```bash
 git clone https://github.com/Munsik-Kim/rtpa-research.git
@@ -23,8 +22,6 @@ small public observations, frozen expectations, and configuration resources.
 CPU evidence commands also work outside the source checkout after installation.
 Keep environments, downloaded models and GPU run caches outside the checkout:
 the retained historical verifier audits the checkout tree as research evidence.
-Installing from the source repository, rather than a package of the same name
-from an unverified index, identifies the code used here.
 
 ## CPU first: a small example, then the actual observations
 
@@ -46,7 +43,7 @@ Neither initializes CUDA or downloads model weights. Scalar reaggregation is
 not an independent GPU replication. See [Results](RESULTS.md) for the exact
 evidence and [Reproducibility](REPRODUCIBILITY.md) for data availability limits.
 
-To rebuild the new benchmark tables and the two presentation figures from a
+To rebuild the GDN/GDN2 benchmark tables and two figures from a
 checkout (plotting is optional and is not required for CPU evidence checks):
 
 ```bash
@@ -152,7 +149,9 @@ python scripts/run_gdn_benchmark.py --phase timing \
 python -m rtpa_research benchmark-reproduce --out "$RUN"
 ```
 
-The wrapper checks the fixed revision and actual weight/config/tokenizer hashes before delegating to the unchanged measured runner. Its checkpoint receipt never silently replaces a mismatch. It does not support arbitrary revisions. This added CLI content check is not an encoder or codec revision.
+The wrapper checks the fixed revision and weight/config/tokenizer hashes before
+calling the measured runner. It rejects content mismatches and does not support
+arbitrary revisions.
 
 The phases are not interchangeable. Capture/fit use TRAIN only; conformance
 checks CAL before TEST. Freeze records policies, input hashes, layer scope,
@@ -203,19 +202,9 @@ write gates. It is larger than the NumPy-only `demo`, and creates raw results in
 the requested directory. `--device cuda` enables operator GPU measurement when
 the GPU is free; it does not select or download a pretrained GDN2 checkpoint.
 Do not interpret synthetic output SSE as language-model KL, NLL, task accuracy,
-or whole-model peak memory. Current pretrained-checkpoint availability and the
+or whole-model peak memory. Audited pretrained-checkpoint provenance and the
 actual tested level are recorded in [Architectures](ARCHITECTURES.md).
 
-## What not to infer from a successful command
-
-- DIAG allocation and FA_CODE correction are separate methods, with separate
-  baselines and panels; their relative gains cannot be added or multiplied.
-- Structural checks and CPU reaggregation are not a universal codec-safety,
-  GPU-performance, or task-advantage certificate.
-- Equal state payload does not imply equal static parameters, scratch, peak
-  process VRAM, or latency. Retain those separate ledger entries.
-- Paper-adapted DAMP is not verified author-kernel reproduction. The local
-  model, calibration, row budget and write schedule remain explicit differences.
-
-See [Limitations](LIMITATIONS.md) for adverse results and the interpretation
-boundary, and [References](REFERENCES.md) for model, algorithm and source credit.
+See [Results](RESULTS.md) for measured quality, latency, and memory;
+[Limitations](LIMITATIONS.md) for the scope of those conclusions; and
+[References](REFERENCES.md) for baseline provenance and source credit.

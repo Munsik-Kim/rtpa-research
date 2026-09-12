@@ -4,7 +4,7 @@ RTPA separates a **trained-model storage intervention** from an **equation-level
 
 | Family | What is verified | Scope and boundary |
 |---|---|---|
-| GDN | Model-backed Qwen3.5-0.8B-Base adapter; installed native recurrence inspected and checked | The model has 18 GDN layers. New comparison A evaluates allocation at all 18; comparisons B/C evaluate inherited FA_CODE at layers 0/12/22. Historical and new panels remain separate. |
+| GDN | Model-backed Qwen3.5-0.8B-Base adapter; installed native recurrence inspected and checked | The model has 18 GDN layers. The GDN/GDN2 benchmark evaluates all-layer allocation and separate FA_CODE at layers 0/12/22. R2 evaluates a separate all-layer codec/allocation revision. |
 | GDN2 | **OPERATOR_TESTED**: independently authored forward/adjoint equations and synthetic checks | No author-linked trained checkpoint with a verified local cached-inference path was established. Pretrained-model KL/NLL is **NOT_RUN**, not zero. No claim is made that GDN2 cannot fit 16 GB. |
 
 The [machine-readable source audit](../data/evidence/upgrade_sources/source_audit.json) records the 2026-09-11 searches, versions, byte counts, SHA-256 hashes, and CPU probe results. This is a bounded review, not proof that no other checkpoint or implementation exists.
@@ -21,7 +21,8 @@ Each has 16 recurrent heads with key-by-value state `128 × 128`. The other six 
 
 ### Frozen method scopes
 
-The new protocol preserves two different comparisons, fixed before TEST:
+The v1.1.0rc1 GDN/GDN2 protocol fixes two intervention scopes and a separate
+execution comparison before TEST:
 
 | Contrast | Methods | Target layers and offline policy |
 |---|---|---|
@@ -43,7 +44,7 @@ This distinguishes a calibration **FP32 pre-output-cast objective** from an actu
 
 ## GDN2: different gates, nonsymmetric transition
 
-The [GDN2 paper, v1](https://arxiv.org/html/2605.22791v1) directly links [NVlabs/GatedDeltaNet-2](https://github.com/NVlabs/GatedDeltaNet-2). We inspected commit `a5552fe3c67e0ebc7ef1220df68ae8896ec62d56`, including the layer, recurrent kernel, model wrapper, and configuration.
+The [GDN2 paper, v1](https://arxiv.org/html/2605.22791v1) directly links [NVlabs/GatedDeltaNet-2](https://github.com/NVlabs/GatedDeltaNet-2). The source audit inspected commit `a5552fe3c67e0ebc7ef1220df68ae8896ec62d56`, including the layer, recurrent kernel, model wrapper, and configuration.
 
 For state `S ∈ R^(key × value)`, let `e = b ⊙ k` and `D = diag(α)`. The reviewed equation is:
 
@@ -70,7 +71,7 @@ Official GDN2 code is under the [NVIDIA Source Code License-NC](https://github.c
 
 ## DAMP: paper-adapted means paper-adapted
 
-The current bounded review of [DAMP v1](https://arxiv.org/html/2608.27513v1), paper links, and exact-title/ID repository searches did not establish author-code provenance. The status remains **AUTHOR_CODE_NOT_VERIFIED**, not a claim that author code is unpublished. arXiv's GitHub feedback links are not algorithm repositories.
+The 2026-09-11 review of [DAMP v1](https://arxiv.org/html/2608.27513v1), paper links, and exact-title/ID repository searches did not establish author-code provenance. The status remains **AUTHOR_CODE_NOT_VERIFIED**, not a claim that author code is unpublished. arXiv's GitHub feedback links are not algorithm repositories.
 
 | Component | Paper contract | Local comparison |
 |---|---|---|
@@ -84,9 +85,9 @@ For scalar-decay GDN and a fixed per-head budget, persistence is a common positi
 
 ## Prior-art boundary: Qronos
 
-[Qronos v3](https://arxiv.org/html/2505.11695v3) directly links its [Brevitas implementation](https://github.com/i-colbert/brevitas/tree/fa88103f1f2b7d04aac3eedc66a274dcfda1c1fa/src/brevitas_examples/llm). We inspected `src/brevitas/graph/qronos.py` at commit `fa88103f1f2b7d04aac3eedc66a274dcfda1c1fa` (BSD-3-Clause SPDX). Its offline weight-column rounding uses float/quantized activation covariances and least-squares error correction.
+[Qronos v3](https://arxiv.org/html/2505.11695v3) directly links its [Brevitas implementation](https://github.com/i-colbert/brevitas/tree/fa88103f1f2b7d04aac3eedc66a274dcfda1c1fa/src/brevitas_examples/llm). The source audit inspected `src/brevitas/graph/qronos.py` at commit `fa88103f1f2b7d04aac3eedc66a274dcfda1c1fa` (BSD-3-Clause SPDX). Its offline weight-column rounding uses float/quantized activation covariances and least-squares error correction.
 
-Output-aware reconstruction, data-dependent rounding, fixed grids, error correction, and error diffusion are prior principles—not RTPA novelty claims. FA_CODE's examined scope is bounded **runtime recurrent-write code correction** using a frozen state metric; RTPA-DIAG selects a **fixed precision mask offline**. We present recurrent-state implementation choices and measured evidence, not first-ever priority, SOTA, a Qronos reproduction, or a DAMP refutation. No Qronos benchmark was executed here.
+Output-aware reconstruction, data-dependent rounding, fixed grids, error correction, and error diffusion are prior principles. FA_CODE's examined scope is bounded **runtime recurrent-write code correction** using a frozen state metric; RTPA-DIAG selects a **fixed precision mask offline**. The evidence covers these recurrent-state implementation choices; it does not establish first-ever priority, SOTA, a Qronos reproduction, or a DAMP refutation. No Qronos benchmark was executed here.
 
 ## Reproduce the operator check
 
