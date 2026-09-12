@@ -9,6 +9,7 @@ from pathlib import Path
 
 import numpy as np
 from rtpa_research.io import read
+from rtpa_research.publication_sources import check_frozen_publication_source
 
 
 def sha(path):
@@ -28,12 +29,14 @@ def verify(root):
     base = root/'data/benchmarks/gdn'
     protocol = read(base/'protocol.json')
     frozen = read(root/'configs/upgrade_source_freeze.json')
-    checked, unavailable = [], []
+    checked, unavailable, publication_mappings = [], [], []
     for row in frozen['files']:
         if row['availability'] != 'INCLUDED':
             unavailable.append(row); continue
         path = root/row['path']
-        assert path.is_file() and sha(path) == row['sha256'], row['path']
+        proof = check_frozen_publication_source(root, row['path'], row['sha256'])
+        if not proof['matches_frozen_bytes']:
+            publication_mappings.append(proof)
         checked.append(row['path'])
     by_split = {}; by_text = {}
     for split in ('TRAIN', 'CAL', 'TEST'):
@@ -118,6 +121,8 @@ def verify(root):
     assert payload == 19328 and payload*8/(128*128) == 9.4375
     return {'structural_contract':'PASS', 'checks_are_not_quality_success':True,
             'frozen_included_files_checked':len(checked),'frozen_local_only_dependencies':unavailable,
+            'frozen_included_files_byte_identical':len(checked)-len(publication_mappings),
+            'publication_only_source_mappings':publication_mappings,
             'unique_documents':{s:len(x) for s,x in by_split.items()},
             'all18_row_scores_reproduce_masks':True,'three_layer_policy_unchanged':True,
             'GDN2_source_policy_and_top8_checked':True,

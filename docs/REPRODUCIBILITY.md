@@ -63,6 +63,13 @@ proof that every conditional import ran. Original capture tensors and large
 profiler events remain local-only; small statistics and phase receipts have a
 strictly narrower public reconstruction scope.
 
+The package initializer's version label changes with the release. Its
+[explicit publication mapping](../configs/publication_sources/version_only_binding.json)
+retains the original initializer bytes and historical hash, verifies the exact
+declared version-literal replacement and checks `pyproject.toml`. This is
+reported as a version-only mapping, **not** frozen-byte equality. All other
+source changes still fail the historical checks; the old freezes are unchanged.
+
 ## Included evidence and actual reconstruction scope
 
 | Result | Availability | Reproduction level | Not established by this check |

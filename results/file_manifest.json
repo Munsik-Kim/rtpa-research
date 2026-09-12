@@ -116,6 +116,16 @@
       "sha256": "bdd938496e631a75595359823ced96b27ba40329e3b79fe7951eb043b53cfda3"
     },
     {
+      "path": "configs/publication_sources/__init__.py.txt",
+      "bytes": 109,
+      "sha256": "586553eed9a87aed61252d3e7e1228e37489bdb2e0b21ae1ddc10d41ced4f5fa"
+    },
+    {
+      "path": "configs/publication_sources/version_only_binding.json",
+      "bytes": 571,
+      "sha256": "a5997a9917b2089eb82a96fe3ffd4f816a5788012cf48886186c26f2454b65d4"
+    },
+    {
       "path": "configs/source_mapping.json",
       "bytes": 41086,
       "sha256": "b9ec9b0c9b9b1c9cf9163ffb0541023b0d75b3de585c66f24d032b0d2ef9e653"
@@ -5672,8 +5682,8 @@
     },
     {
       "path": "docs/REPRODUCIBILITY.md",
-      "bytes": 10716,
-      "sha256": "e33e5be1c4d27fe497380d8e5bf47e63668dbe11a8f2e9b86dc0eb8d44168aad"
+      "bytes": 11185,
+      "sha256": "c5c2f9c4be0bb47a4d11aff0c317977a4e34440a135b9e9227d474bef354aa13"
     },
     {
       "path": "docs/REPRO_R2_SCOPE.md",
@@ -6162,8 +6172,8 @@
     },
     {
       "path": "scripts/audit_diag_r2_dependencies.py",
-      "bytes": 5421,
-      "sha256": "49987a9114f6ec7e3d11ca297b36a9ad5afa34bd3a55155fb05e01eafb7aa2d2"
+      "bytes": 6091,
+      "sha256": "4feb6020a6799f3eb9ceb82b138df34a57c6938b79ec12b7ab15d0cb8976e037"
     },
     {
       "path": "scripts/audit_diag_r2_math.py",
@@ -6202,8 +6212,8 @@
     },
     {
       "path": "scripts/check_diag_r2_install.py",
-      "bytes": 2873,
-      "sha256": "bf990ace16bd948951e150ba8dc698f6fbd050a1bcc32a279e1e83e1d410b1d7"
+      "bytes": 3567,
+      "sha256": "2aa2f4462e4bcfd70809f9a576569d6765e233b5891cc4041bcb3b1da6cd67d7"
     },
     {
       "path": "scripts/check_diag_r4_install.py",
@@ -6222,8 +6232,8 @@
     },
     {
       "path": "scripts/check_upgrade_contract.py",
-      "bytes": 7935,
-      "sha256": "c09b0bfd1e003b4e9d7a034550480122a9bf7f532fbc997ce4086a7598dca165"
+      "bytes": 8300,
+      "sha256": "6cbd19a627e37ffbc1a9214c55729cafe585b150ded2cb8b14ef38555a8fb5ed"
     },
     {
       "path": "scripts/close_diag_r4_cost.py",
@@ -6971,6 +6981,11 @@
       "sha256": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78"
     },
     {
+      "path": "src/rtpa_research/publication_sources.py",
+      "bytes": 3855,
+      "sha256": "182cb5c03a5eba76575667a0d77e1481f01589d38cb2c3d516de46186804ede6"
+    },
+    {
       "path": "src/rtpa_research/reference_encoder.py",
       "bytes": 17209,
       "sha256": "d7272e7c4d600da3cbfcb9196be140afdb08b0f33c6751d51c744b4429ac7b53"
@@ -7109,6 +7124,11 @@
       "path": "tests/test_operators.py",
       "bytes": 9066,
       "sha256": "974d20f6db0ac94db27fc1081d7c786402a4a47c2ff282ea220449d95c168f76"
+    },
+    {
+      "path": "tests/test_publication_sources.py",
+      "bytes": 5374,
+      "sha256": "e8938e26235064d5330914b344c12d9006e67124e2e9c17a3102718ea5109430"
     },
     {
       "path": "tests/test_render_upgrade.py",
