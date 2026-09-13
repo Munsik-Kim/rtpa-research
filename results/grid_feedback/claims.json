@@ -1,0 +1,48 @@
+{
+  "run_id": "RTPA_GRID_FEEDBACK_20260913_V1",
+  "source_and_input_authority": "data/benchmarks/grid_feedback/diagnostic/freeze.json",
+  "claims": [
+    {
+      "id": "GRID_REPEAT_NOT_SUFFICIENT",
+      "status": "SUPPORTED_IN_TESTED_FROZEN_EQUATION_SCOPE",
+      "statement": "Holding the first snapshot grid removes measured repeat drift but does not ensure recurrent quality under an evolving range.",
+      "observations": "data/benchmarks/grid_feedback/diagnostic/cases",
+      "table": "results/grid_feedback/tables.md",
+      "aggregation": "src/rtpa_research/grid_analysis.py",
+      "independent_check": "src/rtpa_research/grid_verify.py",
+      "independent_units": "6 existing TRAIN documents sharing 3 generator families; layers0/12/22 are not independent documents",
+      "not_claimed": "Native/model KL cause, general fixed-grid impossibility or deployable first-grid policy"
+    },
+    {
+      "id": "GRID_CANDIDATES_NOT_PROMOTED",
+      "status": "NOT_SUPPORTED_IN_TESTED_PROTOCOL",
+      "statement": "Neither ZERO_INCLUSIVE nor the sole TRAIN-envelope candidate meets predeclared legacy-relative recurrent and late quality limits.",
+      "numerical_completion": "All72 initial arm-cases and18 candidate cases complete; no nonfinite failures",
+      "observations": "data/benchmarks/grid_feedback/candidate/cases",
+      "protocol": "data/benchmarks/grid_feedback/candidate/freeze.json",
+      "aggregation": "src/rtpa_research/grid_report.py",
+      "independent_check": "src/rtpa_research/grid_candidate_verify.py",
+      "not_claimed": "GPU/TEST efficacy or a universal impossibility result"
+    },
+    {
+      "id": "TEMPORAL_ENERGY_NOT_RISK",
+      "status": "SUPPORTED_IN_FROZEN_SCOPE",
+      "statement": "Equal injection energy can have unequal output risk; zero marginal mean does not remove temporal correlation.",
+      "observations": "results/grid_feedback/theory.json",
+      "source": "src/rtpa_research/grid_theory.py",
+      "source_authority": "data/benchmarks/grid_feedback/theory_sources.json",
+      "not_claimed": "Novel theorem, real model KL decomposition or numerical explanation of historical16.34x regression"
+    },
+    {
+      "id": "MODEL_RESULTS_REUSED_NOT_RERUN",
+      "status": "RECOMPUTED_FROM_INCLUDED_OBSERVATIONS",
+      "statement": "R4 codec-mask interaction and strong-baseline allocation contrasts remain historical model evidence, not a fresh panel.",
+      "observations": "data/benchmarks/diag_r4",
+      "aggregation": "src/rtpa_research/grid_inherited.py",
+      "result": "results/grid_feedback/inherited_reanalysis.json",
+      "not_claimed": "New model forwards, task or timing"
+    }
+  ],
+  "mechanical_verification_is_not_quality_success": true,
+  "final_decision": "results/grid_feedback/decision.json"
+}

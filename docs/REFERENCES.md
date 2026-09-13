@@ -81,3 +81,14 @@ availability alone does not establish redistribution rights for other documents.
 
 Use [CITATION.cff](../CITATION.cff) to cite the repository and identify the
 commit used.
+## Temporal-error and codec-feedback review
+
+The [bounded primary-source review](TEMPORAL_ERROR_THEORY.md) and
+[source receipt](../data/benchmarks/grid_feedback/theory_sources.json) distinguish
+read content from bibliographic verification. Mullis–Roberts (1976) and Hwang
+(1977) have verified publisher-deposited metadata, but their IEEE bodies were
+not accessible in this review. Kirac–Vaidyanathan's author-hosted dither paper
+was read; its no-overload and randomness assumptions are not automatically
+satisfied by adaptive FP16 grids. The arXiv 2609.04098v1 W4A4/FP8-KV study was
+read and distinguished from persistent-state UINT8 storage. None of this
+constitutes execution of those authors' kernels or novelty certification.

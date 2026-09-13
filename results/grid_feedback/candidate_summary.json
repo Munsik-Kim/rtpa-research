@@ -1,0 +1,357 @@
+{
+  "run_id": "RTPA_GRID_FEEDBACK_20260913_CANDIDATE_V1",
+  "candidate": "TRAIN_ENVELOPE_FIXED_OFFSET",
+  "status": "COMPLETE",
+  "recurrent_readout_sse": 0.043292732959118396,
+  "late_sse": 0.03437343240762853,
+  "clipped_values": 32567,
+  "low_values": 1061683200,
+  "readout_vs_legacy": {
+    "value": 3.1509249028492894,
+    "reason": null
+  },
+  "late_vs_legacy": {
+    "value": 3.08163150749254,
+    "reason": null
+  },
+  "clipped_fraction": {
+    "value": 3.067487551842207e-05,
+    "reason": null
+  },
+  "document_ratios": {
+    "train_associative_recall_0": {
+      "value": 3.665000667438229,
+      "reason": null
+    },
+    "train_associative_recall_1": {
+      "value": 3.9238913800593536,
+      "reason": null
+    },
+    "train_code_0": {
+      "value": 3.415396965178472,
+      "reason": null
+    },
+    "train_code_1": {
+      "value": 3.485988040315577,
+      "reason": null
+    },
+    "train_natural_language_0": {
+      "value": 2.2417303343139463,
+      "reason": null
+    },
+    "train_natural_language_1": {
+      "value": 2.549608794717881,
+      "reason": null
+    }
+  },
+  "cpu_gate": {
+    "checks": {
+      "complete_panel": true,
+      "pooled_recurrent": false,
+      "late": false,
+      "each_document": false,
+      "clipping": true,
+      "no_failures": true,
+      "source_input_unchanged": true
+    },
+    "passed": false,
+    "rule": {
+      "pooled_recurrent_ratio_max": 1.05,
+      "late_ratio_max": 1.1,
+      "each_document_ratio_max": 1.15,
+      "clipped_fraction_max": 0.0001,
+      "failures_max": 0,
+      "tie_rule": "no promotion on relative improvement <=1e-6"
+    }
+  },
+  "component_controls": {
+    "R2_HOLD_OFFSET": {
+      "snapshots": 54,
+      "first_sse": 0.0708085405826097,
+      "physical_drift_sse": 0.002853047112603057,
+      "affine_drift_sse": 2.7655162238460207e-05,
+      "clipped_values": 16
+    },
+    "R2_HOLD_SCALE": {
+      "snapshots": 54,
+      "first_sse": 0.0708085405826097,
+      "physical_drift_sse": 0.002814751306085474,
+      "affine_drift_sse": 9.035261427925434e-09,
+      "clipped_values": 6
+    }
+  },
+  "coverage": [
+    {
+      "case": "train_associative_recall_0_L0",
+      "document": "train_associative_recall_0",
+      "layer": 0,
+      "fields": [
+        "readout_sse",
+        "late_readout_sse",
+        "clipped_values",
+        "low_values"
+      ],
+      "status": "COMPLETE",
+      "completed_tokens": 256,
+      "failure": null,
+      "sha256": "ba8e5818d81500c1e1c27a36e2477a4aa9f414548d69b3f3236687d50a282b36"
+    },
+    {
+      "case": "train_associative_recall_0_L12",
+      "document": "train_associative_recall_0",
+      "layer": 12,
+      "fields": [
+        "readout_sse",
+        "late_readout_sse",
+        "clipped_values",
+        "low_values"
+      ],
+      "status": "COMPLETE",
+      "completed_tokens": 256,
+      "failure": null,
+      "sha256": "b5c6e8af8461d3545062be3b719664d2f52982883541c2fc245cc59815e05863"
+    },
+    {
+      "case": "train_associative_recall_0_L22",
+      "document": "train_associative_recall_0",
+      "layer": 22,
+      "fields": [
+        "readout_sse",
+        "late_readout_sse",
+        "clipped_values",
+        "low_values"
+      ],
+      "status": "COMPLETE",
+      "completed_tokens": 256,
+      "failure": null,
+      "sha256": "4ef79defb36118bbbd0aae64142cc0141e88c57aaeb72316a2402780aff0cc8f"
+    },
+    {
+      "case": "train_associative_recall_1_L0",
+      "document": "train_associative_recall_1",
+      "layer": 0,
+      "fields": [
+        "readout_sse",
+        "late_readout_sse",
+        "clipped_values",
+        "low_values"
+      ],
+      "status": "COMPLETE",
+      "completed_tokens": 256,
+      "failure": null,
+      "sha256": "fdbcfa1256f87faeee9232ad0cf75f0edcbb7ca6b75dfa4a8b35ae3de591223d"
+    },
+    {
+      "case": "train_associative_recall_1_L12",
+      "document": "train_associative_recall_1",
+      "layer": 12,
+      "fields": [
+        "readout_sse",
+        "late_readout_sse",
+        "clipped_values",
+        "low_values"
+      ],
+      "status": "COMPLETE",
+      "completed_tokens": 256,
+      "failure": null,
+      "sha256": "9f7d3afdec7de288f0c0ad9ab261f8686f7f1f970ae4c4399329d848f49d3064"
+    },
+    {
+      "case": "train_associative_recall_1_L22",
+      "document": "train_associative_recall_1",
+      "layer": 22,
+      "fields": [
+        "readout_sse",
+        "late_readout_sse",
+        "clipped_values",
+        "low_values"
+      ],
+      "status": "COMPLETE",
+      "completed_tokens": 256,
+      "failure": null,
+      "sha256": "8c2e86192f24f4e415680a258a3c9e41bf5d9fe4ff2b68e3f0bb95aba5f41d9b"
+    },
+    {
+      "case": "train_code_0_L0",
+      "document": "train_code_0",
+      "layer": 0,
+      "fields": [
+        "readout_sse",
+        "late_readout_sse",
+        "clipped_values",
+        "low_values"
+      ],
+      "status": "COMPLETE",
+      "completed_tokens": 256,
+      "failure": null,
+      "sha256": "d460b5aa6b3ab6f1854147171b8821c90cbcbcd4796dfd11c55fee2e40e31e6d"
+    },
+    {
+      "case": "train_code_0_L12",
+      "document": "train_code_0",
+      "layer": 12,
+      "fields": [
+        "readout_sse",
+        "late_readout_sse",
+        "clipped_values",
+        "low_values"
+      ],
+      "status": "COMPLETE",
+      "completed_tokens": 256,
+      "failure": null,
+      "sha256": "5e84f512515bfce84b116d5e9a583b4c9500cdbc028d877db25119d4354f1ee5"
+    },
+    {
+      "case": "train_code_0_L22",
+      "document": "train_code_0",
+      "layer": 22,
+      "fields": [
+        "readout_sse",
+        "late_readout_sse",
+        "clipped_values",
+        "low_values"
+      ],
+      "status": "COMPLETE",
+      "completed_tokens": 256,
+      "failure": null,
+      "sha256": "361de7bd1e859c2122df34041cfbe25dc1ecf0a218eac7cf00c55cd03dbf2fe4"
+    },
+    {
+      "case": "train_code_1_L0",
+      "document": "train_code_1",
+      "layer": 0,
+      "fields": [
+        "readout_sse",
+        "late_readout_sse",
+        "clipped_values",
+        "low_values"
+      ],
+      "status": "COMPLETE",
+      "completed_tokens": 256,
+      "failure": null,
+      "sha256": "a1ae828a76766f6e0469723dfd59b1ac3457976fae9be3631c5d4933de001369"
+    },
+    {
+      "case": "train_code_1_L12",
+      "document": "train_code_1",
+      "layer": 12,
+      "fields": [
+        "readout_sse",
+        "late_readout_sse",
+        "clipped_values",
+        "low_values"
+      ],
+      "status": "COMPLETE",
+      "completed_tokens": 256,
+      "failure": null,
+      "sha256": "57825f552d1dce08a1f2a0e51f1fd00dba835d4a0e0ce3b6a529f41745b188a5"
+    },
+    {
+      "case": "train_code_1_L22",
+      "document": "train_code_1",
+      "layer": 22,
+      "fields": [
+        "readout_sse",
+        "late_readout_sse",
+        "clipped_values",
+        "low_values"
+      ],
+      "status": "COMPLETE",
+      "completed_tokens": 256,
+      "failure": null,
+      "sha256": "72ab302ecdfe6505c2ecced552d84e507e5fec2ccd714f0aeeb7211716c074f2"
+    },
+    {
+      "case": "train_natural_language_0_L0",
+      "document": "train_natural_language_0",
+      "layer": 0,
+      "fields": [
+        "readout_sse",
+        "late_readout_sse",
+        "clipped_values",
+        "low_values"
+      ],
+      "status": "COMPLETE",
+      "completed_tokens": 256,
+      "failure": null,
+      "sha256": "439f925355fe2f74827d9b013abe1f5b69378e68880c3650cbd32f25f691d154"
+    },
+    {
+      "case": "train_natural_language_0_L12",
+      "document": "train_natural_language_0",
+      "layer": 12,
+      "fields": [
+        "readout_sse",
+        "late_readout_sse",
+        "clipped_values",
+        "low_values"
+      ],
+      "status": "COMPLETE",
+      "completed_tokens": 256,
+      "failure": null,
+      "sha256": "7067335477c5df4e6322801d8d87f3ca6b8d34864db72898df1c458ea2a3f7c8"
+    },
+    {
+      "case": "train_natural_language_0_L22",
+      "document": "train_natural_language_0",
+      "layer": 22,
+      "fields": [
+        "readout_sse",
+        "late_readout_sse",
+        "clipped_values",
+        "low_values"
+      ],
+      "status": "COMPLETE",
+      "completed_tokens": 256,
+      "failure": null,
+      "sha256": "da0531cb1113b4ea43af92c16a991e24c968de5d34c076c4cf56e635ba1a9557"
+    },
+    {
+      "case": "train_natural_language_1_L0",
+      "document": "train_natural_language_1",
+      "layer": 0,
+      "fields": [
+        "readout_sse",
+        "late_readout_sse",
+        "clipped_values",
+        "low_values"
+      ],
+      "status": "COMPLETE",
+      "completed_tokens": 256,
+      "failure": null,
+      "sha256": "8a2df2c07f8c499f95fcb8613135d6eceab44cdd743fc8a31de25438a80585d6"
+    },
+    {
+      "case": "train_natural_language_1_L12",
+      "document": "train_natural_language_1",
+      "layer": 12,
+      "fields": [
+        "readout_sse",
+        "late_readout_sse",
+        "clipped_values",
+        "low_values"
+      ],
+      "status": "COMPLETE",
+      "completed_tokens": 256,
+      "failure": null,
+      "sha256": "ad65fa7fc0869b01fd9f2c9ada68bc88a0f63d1bcd17af34243f265f280f50e0"
+    },
+    {
+      "case": "train_natural_language_1_L22",
+      "document": "train_natural_language_1",
+      "layer": 22,
+      "fields": [
+        "readout_sse",
+        "late_readout_sse",
+        "clipped_values",
+        "low_values"
+      ],
+      "status": "COMPLETE",
+      "completed_tokens": 256,
+      "failure": null,
+      "sha256": "584e12ff574fe1924c9c1455d22942016d5756980ef46eed9e54aa70e1c544ff"
+    }
+  ],
+  "scope": "TRAIN fit and optimistic same-TRAIN screening; no independent model quality measurement",
+  "grid_sha256": "32f1bd5e0c8a18a4a0bed2203e2f0deb0ad4d4d585b67a568cf35ef3d005fdf7"
+}

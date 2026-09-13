@@ -1,0 +1,15 @@
+{
+  "case": "train_code_1_L12",
+  "document": "train_code_1",
+  "layer": 12,
+  "fields": [
+    "readout_sse",
+    "late_readout_sse",
+    "clipped_values",
+    "low_values"
+  ],
+  "status": "COMPLETE",
+  "completed_tokens": 256,
+  "failure": null,
+  "sha256": "57825f552d1dce08a1f2a0e51f1fd00dba835d4a0e0ce3b6a529f41745b188a5"
+}

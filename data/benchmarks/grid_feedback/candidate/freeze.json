@@ -1,0 +1,51 @@
+{
+  "protocol": {
+    "run_id": "RTPA_GRID_FEEDBACK_20260913_CANDIDATE_V1",
+    "candidate": "TRAIN_ENVELOPE_FIXED_OFFSET",
+    "scope": "Optimistic TRAIN screening only; no held-out/model inference",
+    "fit": "Same six TRAIN documents, tokens0:256, own LEGACY_P_PRE path, same legacy high8 mask; per layer/head/low row/group min/max across documents and tokens; no weighting or percentile fitting",
+    "grid": "Offset=floor_half(min); scale=ceil_half(max((max-offset)/255,2^-24)); zero-only scale1; exact R2_OFFSET metadata on extrema. Retain same grid on every candidate write",
+    "runtime": "FP32 H32, original high FP16, UINT8 low code round((x-offset)/scale) clamp0:255; FP16 metadata stored; R2 input/payload guards; no fallback or FP32 master",
+    "grid_distribution_shift": "Outside-grid codes clamp with counts; inputs beyond R2 finite range reject; clipping is judged by preregistered threshold",
+    "payload_bytes_per_head": 19328,
+    "residual_bytes": 0,
+    "rng_bytes": 0,
+    "threads": 2,
+    "cpu_budget_seconds": 1200,
+    "selection": {
+      "pooled_recurrent_ratio_max": 1.05,
+      "late_ratio_max": 1.1,
+      "each_document_ratio_max": 1.15,
+      "clipped_fraction_max": 0.0001,
+      "failures_max": 0,
+      "tie_rule": "no promotion on relative improvement <=1e-6"
+    },
+    "rationale": "Fixed before candidate measurements. Same exploratory quality/clipping allowances as first candidate, not calibrated to fixed-grid outcomes.",
+    "components": "Triggered by initial-grid repeat drift <=50% R2; two diagnostics replace only offset or scale after fresh R2 calculation, without recalculating the other component; not deployable candidates",
+    "snapshot_tokens": [
+      31,
+      127,
+      223
+    ],
+    "repeat_writes": 16,
+    "scored_start": 16,
+    "late_start": 128,
+    "gpu_dev": "Only if CPU selection passes; extend same fit rule to all18 TRAIN layers then freeze before unchanged model DEV. Otherwise no new model/calibration/task/timing phases."
+  },
+  "binding": {
+    "sources": {
+      "src/rtpa_research/grid_candidate.py": "227070fe68e01cd650c87c703da106284386975b8521ea53b705be61f69a05ca",
+      "src/rtpa_research/grid_diagnostic.py": "beece34fcb67df3d60495ab8a876a6851c6ee348908611f46bf21210e76a8a96",
+      "src/rtpa_research/grid_codec.py": "e9eb100cba8d9330675f713c8614ba31b14745d6ff4f7327e7ed16558f786600",
+      "src/rtpa_research/codec.py": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069",
+      "src/rtpa_research/codec_r2.py": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2",
+      "src/rtpa_research/layout.py": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276",
+      "src/rtpa_research/operators.py": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78",
+      "configs/grid_feedback.json": "5524c570ea9fdd4ed0bdaf1fa9b493a46862af9e414bfc6e9af270b440d31e88",
+      "tests/test_grid_codec.py": "62189a9f9d357304dfcc8c32989c482f4aa9dc4743409da02bd6a9ad90621670"
+    },
+    "parent_freeze_sha256": "c172b5c8ea30069732a4f21795d68d923155bb340a54ce1b0688a01f171d4bb2",
+    "diagnostic_summary_sha256": "853dab834b47ff78b11d29ce753094aefb5df9077467868012c377c2d802853c"
+  },
+  "utc": "2026-09-13T02:24:29.742287+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "case": "train_natural_language_0_L22",
+  "document": "train_natural_language_0",
+  "layer": 22,
+  "fields": [
+    "readout_sse",
+    "late_readout_sse",
+    "clipped_values",
+    "low_values"
+  ],
+  "status": "COMPLETE",
+  "completed_tokens": 256,
+  "failure": null,
+  "sha256": "da0531cb1113b4ea43af92c16a991e24c968de5d34c076c4cf56e635ba1a9557"
+}

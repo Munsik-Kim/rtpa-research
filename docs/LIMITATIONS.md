@@ -114,3 +114,12 @@ The following limits apply to the earlier v0.4–v0.7 experiments:
 The sensitivity of the historical focal final-logit boundary to projection
 precision remains untested. Historical stopping decisions, including
 `CONTINUES_STOPPED`, are recorded in [Experiments](EXPERIMENTS.md#historical-decisions-versus-current-interpretation).
+## Repeated-write grid evidence
+
+Snapshot idempotency is insufficient for recurrent quality in the tested
+TRAIN equation paths. First-grid holding clips an evolving range; a separate
+TRAIN envelope also failed quality. Neither result is a universal impossibility
+proof for fixed-grid codecs. The unresolved Native fidelity check remains
+7/18 at its original tolerance. FP64 sensitivity did not restore Native parity.
+No new model benchmark, task, timing or peak measurement followed the failed
+CPU candidate gates. See [grid evidence and reproduction levels](GRID_FEEDBACK.md).

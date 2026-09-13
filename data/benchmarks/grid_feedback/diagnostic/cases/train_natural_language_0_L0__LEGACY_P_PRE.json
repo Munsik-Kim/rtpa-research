@@ -1,0 +1,115 @@
+{
+  "case": "train_natural_language_0_L0",
+  "document": "train_natural_language_0",
+  "layer": 0,
+  "arm": "LEGACY_P_PRE",
+  "status": "COMPLETE",
+  "fields": [
+    "readout_sse",
+    "late_readout_sse",
+    "injection_sse",
+    "post_error_sse",
+    "signed_injection_sum",
+    "transformed_signed_injection_sum",
+    "clipped_values",
+    "low_values",
+    "state_identity_relative_max",
+    "forcing_roundoff_sse",
+    "lag1_dot",
+    "lag1_previous_sse",
+    "lag1_current_sse",
+    "lag8_dot",
+    "lag8_previous_sse",
+    "lag8_current_sse"
+  ],
+  "completed_tokens": 256,
+  "observations_sha256": "533ac176c76f81c28d9d3df05501370cc6a0e1415240c0b82f080cd7fb4ca0ab",
+  "snapshots": [
+    {
+      "arm": "LEGACY_P_PRE",
+      "writes": 16,
+      "first_sse": 0.001381244915274128,
+      "physical_drift_sse": 0.0,
+      "physical_final_sse": 0.001381244915274128,
+      "affine_first_sse": 0.0013784512015644424,
+      "affine_drift_sse": 0.0,
+      "repeat_clipped_values": 0,
+      "payload_changed_elements": {
+        "low_codes": 0,
+        "low_scales": 0,
+        "low_zeros": 0,
+        "high_values": 0
+      },
+      "fp64_small_control": {
+        "scope": "fixed head0 low-row0; FP64 H32/arithmetic, FP16 grid",
+        "affine_drift_sse": 0.0,
+        "physical_drift_sse": 0.0,
+        "first_sse": 2.577283692075998e-10
+      },
+      "token": 31,
+      "isolated_future_sse": 4.93894442896111e-07,
+      "own_old_error_future_sse": 8.649224282908112e-06,
+      "own_injection_future_sse": 2.1931238313906151e-07,
+      "own_future_signed_cross": -2.343348631892316e-07,
+      "own_future_total_sse": 8.634201802857942e-06
+    },
+    {
+      "arm": "LEGACY_P_PRE",
+      "writes": 16,
+      "first_sse": 0.0021579996544575297,
+      "physical_drift_sse": 0.0,
+      "physical_final_sse": 0.0021579996544575297,
+      "affine_first_sse": 0.0021555836386558205,
+      "affine_drift_sse": 0.0,
+      "repeat_clipped_values": 0,
+      "payload_changed_elements": {
+        "low_codes": 0,
+        "low_scales": 0,
+        "low_zeros": 0,
+        "high_values": 0
+      },
+      "fp64_small_control": {
+        "scope": "fixed head0 low-row0; FP64 H32/arithmetic, FP16 grid",
+        "affine_drift_sse": 0.0,
+        "physical_drift_sse": 0.0,
+        "first_sse": 3.208084776417307e-10
+      },
+      "token": 127,
+      "isolated_future_sse": 9.031327745362646e-07,
+      "own_old_error_future_sse": 9.64015866756758e-05,
+      "own_injection_future_sse": 2.830273152468076e-07,
+      "own_future_signed_cross": 1.3578750063660376e-06,
+      "own_future_total_sse": 9.804248899728863e-05
+    },
+    {
+      "arm": "LEGACY_P_PRE",
+      "writes": 16,
+      "first_sse": 0.0025020584526038786,
+      "physical_drift_sse": 0.0,
+      "physical_final_sse": 0.0025020584526038786,
+      "affine_first_sse": 0.0024987809828111744,
+      "affine_drift_sse": 0.0,
+      "repeat_clipped_values": 0,
+      "payload_changed_elements": {
+        "low_codes": 0,
+        "low_scales": 0,
+        "low_zeros": 0,
+        "high_values": 0
+      },
+      "fp64_small_control": {
+        "scope": "fixed head0 low-row0; FP64 H32/arithmetic, FP16 grid",
+        "affine_drift_sse": 0.0,
+        "physical_drift_sse": 0.0,
+        "first_sse": 1.2261303248213787e-09
+      },
+      "token": 223,
+      "isolated_future_sse": 1.0040449935450184e-06,
+      "own_old_error_future_sse": 0.0002503132162790693,
+      "own_injection_future_sse": 1.6007015811728637e-07,
+      "own_future_signed_cross": 1.3470227278292012e-06,
+      "own_future_total_sse": 0.0002518203091650158
+    }
+  ],
+  "failure": null,
+  "parent_capture_sha256": "a9b53ecc92bab71db4bb2361b6deed89d7534372c073e3d676df0662b9c8606a"
+}

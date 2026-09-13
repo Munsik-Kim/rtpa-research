@@ -1,0 +1,50 @@
+{
+  "run_id": "RTPA_GRID_FEEDBACK_20260913_V1",
+  "completion": "COMPLETE_BOUNDED_CPU_CYCLE",
+  "recommendation": "NO_CODEC_PROMOTED_CPU_QUALITY_PREREQUISITE_FAILED",
+  "research_axes": {
+    "error_energy_and_temporal_response": "SUPPORTED_IN_FROZEN_SCOPE; classical identities, not a new theorem or exact model KL decomposition",
+    "offline_output_information": "MIXED; inherited DIAG beats promotion energy but loses to query-weighted promotion",
+    "matched_quality_task_cost": "NO_NEW_MODEL_OR_TASK_CLAIM; two codec CPU screens failed, cost remains unmeasured"
+  },
+  "mechanism": {
+    "metadata_recalculation_affects_repeat_drift": "SUPPORTED_AT_INCLUDED_SNAPSHOT_POINTS",
+    "idempotency_sufficient_for_recurrent_quality": "NOT_SUPPORTED_IN_TESTED_PROTOCOL",
+    "repeat_drift_monotonically_ranks_recurrent_quality": "CONTRADICTED_BY_OFFSET_ZERO_ORDERING",
+    "single_cause_of_whole_model_KL_regression": "UNRESOLVED",
+    "native_path_fidelity": "UNRESOLVED_7_OF_18_ORIGINAL_FAILURES_RETAINED"
+  },
+  "candidate_count": 2,
+  "promoted_codec": null,
+  "legacy": "Quality reference only; historical metadata overflow remains",
+  "downstream": {
+    "GPU_DEV": {
+      "status": "NOT_RUN_CPU_QUALITY_PREREQUISITE_FAILED",
+      "reason": "Neither predeclared practical candidate passed CPU quality; no additional search."
+    },
+    "fresh_model_confirmation": {
+      "status": "NOT_RUN_CPU_QUALITY_PREREQUISITE_FAILED",
+      "reason": "Neither predeclared practical candidate passed CPU quality; no additional search."
+    },
+    "task_DEV_and_TEST": {
+      "status": "NOT_RUN_CPU_QUALITY_PREREQUISITE_FAILED",
+      "reason": "Neither predeclared practical candidate passed CPU quality; no additional search."
+    },
+    "equal_work_timing": {
+      "status": "NOT_RUN_CPU_QUALITY_PREREQUISITE_FAILED",
+      "reason": "Neither predeclared practical candidate passed CPU quality; no additional search."
+    },
+    "new_peak_memory": {
+      "status": "NOT_RUN_CPU_QUALITY_PREREQUISITE_FAILED",
+      "reason": "Neither predeclared practical candidate passed CPU quality; no additional search."
+    },
+    "kernel_optimization": {
+      "status": "NOT_RUN_CPU_QUALITY_PREREQUISITE_FAILED",
+      "reason": "Neither predeclared practical candidate passed CPU quality; no additional search."
+    }
+  },
+  "GDN2": "OPERATOR_TESTED_HISTORICAL; NO_NEW_MODEL_TEST",
+  "historical_decisions_modified": false,
+  "product_path": "CONTINUES_STOPPED",
+  "next_smallest_step": "Resolve the first-token Native chunk/write/cast reference boundary with a narrowly frozen capture comparison before another codec efficacy claim; keep the original 1e-4 case criterion."
+}

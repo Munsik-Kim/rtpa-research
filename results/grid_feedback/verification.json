@@ -1,0 +1,22 @@
+{
+  "run_id": "RTPA_GRID_FEEDBACK_20260913_V1",
+  "structure": "PASS_INCLUDED_SCALARS_AND_FROZEN_BINDINGS",
+  "numerical_completion": {
+    "CPU_arm_cases": 72,
+    "CPU_candidate_cases": 18,
+    "nonfinite_failures": 0
+  },
+  "model_fidelity": "NOT_PASS_7_OF_18_FAILURES_RETAINED",
+  "quality": "TWO_CANDIDATES_NOT_PROMOTED",
+  "new_GPU_model": "NOT_RUN_PREREQUISITE_FAILED",
+  "input_availability": "Original capture tensors LOCAL_ONLY; public scalar/fixture verification is narrower",
+  "source_mutation": false,
+  "independent_checks": [
+    "independent_diagnostic.json",
+    "independent_candidate.json"
+  ],
+  "fitting_scope": "Stored TRAIN grids checked; independent public capture-to-fit reconstruction unavailable",
+  "exception_resume_path": "NOT_EXERCISED",
+  "remote_CI": "CONSULT_COMMIT_CHECKS",
+  "public_code_execution": "CPU-only aggregation; optional Torch needed for new capture replay"
+}

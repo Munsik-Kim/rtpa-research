@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-13",
+  "scope": "Bounded primary-source review; no literature-derived parameter tuning or model experiment",
+  "sources": [
+    {
+      "id": "mullis_roberts_1976",
+      "title": "Synthesis of minimum roundoff noise fixed point digital filters",
+      "authors_as_registered": ["C. Mullis", "R. Roberts"],
+      "doi": "10.1109/TCS.1976.1084254",
+      "primary_url": "https://doi.org/10.1109/TCS.1976.1084254",
+      "metadata_url": "https://api.crossref.org/works/10.1109/TCS.1976.1084254",
+      "metadata_sha256": "ed5b7e2dce714db8e207292490fb2a8d19a1f35b70d43047b780e3cf4eb510b7",
+      "metadata_bytes": 4990,
+      "body_sha256": null,
+      "bibliography_status": "VERIFIED_PUBLISHER_DEPOSITED_CROSSREF_METADATA",
+      "body_status": "NOT_READ_IEEE_ACCESS_CHECK_BLOCKED",
+      "verified_body_claims": [],
+      "reason": "DOI/IEEE public reads returned an access/JavaScript challenge; no authentication or access restriction bypass attempted. Related-paper search results were not promoted to original-body verification."
+    },
+    {
+      "id": "hwang_1977",
+      "title": "Minimum uncorrelated unit noise in state-space digital filtering",
+      "authors_as_registered": ["Sheng Hwang"],
+      "doi": "10.1109/TASSP.1977.1162971",
+      "primary_url": "https://ieeexplore.ieee.org/document/1162971/",
+      "metadata_url": "https://api.crossref.org/works/10.1109/TASSP.1977.1162971",
+      "metadata_sha256": "e948ad3a1e8271c95fd097cc13c0fc923915d4037e0f6568b86e833c24de8787",
+      "metadata_bytes": 3523,
+      "body_sha256": null,
+      "bibliography_status": "VERIFIED_PUBLISHER_DEPOSITED_CROSSREF_METADATA",
+      "body_status": "NOT_READ_IEEE_ACCESS_CHECK_BLOCKED",
+      "verified_body_claims": [],
+      "reason": "IEEE read returned a JavaScript/robot verification page. Publisher-deposited registration verifies bibliography, not theorem assumptions."
+    },
+    {
+      "id": "kirac_vaidyanathan_1996",
+      "title": "Results on lattice vector quantization with dithering",
+      "authors": ["Ahmet Kirac", "P. P. Vaidyanathan"],
+      "doi": "10.1109/82.553397",
+      "primary_url": "https://authors.library.caltech.edu/records/cnw88-69x52",
+      "pdf_url": "https://authors.library.caltech.edu/records/cnw88-69x52/files/KIRieeetcsII96.pdf",
+      "body_sha256": "de818b318a6e32bf358129c4967e130a2611c38e924a2b38a93d46f1e42bb36f",
+      "body_bytes": 2836665,
+      "body_status": "READ_AUTHOR_HOSTED_PDF_TEXT_ALL_16_PAGES",
+      "visual_checks": ["PDF page 6 / printed page 816: independent dither premise, Theorem 4, lattice characteristic-function condition", "PDF page 11 / printed page 821: iid temporal dither, Eq. 6.2, no-overload qualification"],
+      "verified_body_claims": ["Section II explicitly assumes overflow avoided", "Section IV uses input-independent Nyquist-V dither for subtractive error independence and uniformity", "Section VI invokes iid dither over time for the stated process result"],
+      "redistribution": "NOT_INCLUDED_IEEE_COPYRIGHT; public author-hosted acquisition URL retained"
+    },
+    {
+      "id": "kozyrev_maiboroda_2026",
+      "title": "Why Gated DeltaNet Survives 4-Bit Quantization: NVFP4 W4A4 for the Recurrent Half of a Hybrid 27B LLM",
+      "authors": ["Sergii Kozyrev", "Davyd Maiboroda"],
+      "arxiv_id": "2609.04098v1",
+      "primary_url": "https://arxiv.org/html/2609.04098v1",
+      "text_mirror_url": "https://huggingface.co/papers/2609.04098.md",
+      "mirror_sha256": "140fcfba2b2f37c6e53d4db3fc32ce28118e08b2bced4a32535c4df35da6d9cc",
+      "mirror_bytes": 45993,
+      "body_status": "READ_FULL_TEXT_AND_CAPTIONS_VIA_ARXIV_AND_HF_MIRROR",
+      "table_scope": "HTML main tables inspected; no full numerical table reanalysis or author-code execution",
+      "verified_scope": ["NVFP4 W4A4 linear projections including GDN", "Qwen3.8-27B and FP8 attention KV serving regime", "Section 5.3 captured-input FP32 lockstep noise plateau/impulse forgetting", "Appendix A distinguishes FP32 within-path mechanism evidence from BF16 kernel floor"],
+      "not_verified": ["Independent replication of numerical results", "Author implementation execution", "A recurrent-state UINT8 codec equivalent to RTPA"],
+      "redistribution": "FULL_TEXT_NOT_INCLUDED; source URL/hash only"
+    }
+  ],
+  "synthetic_preregistration": {
+    "frozen_at_utc": "2026-09-13T02:18:34Z",
+    "source": "src/rtpa_research/grid_theory.py",
+    "source_sha256": "d3d863ae5f20b1d7e85e0525b94be8a4fd4fc41e5946819f7ce36443cb5faeaf",
+    "test": "tests/test_grid_theory.py",
+    "test_sha256": "3959ef46cffbc2babb7b9a88a0595c74ed8e927941712bc9199607f1b2846bb0",
+    "protocol": {
+      "revision": "grid-theory-v1",
+      "seed": 613101,
+      "dtype": "float64",
+      "threads": 1,
+      "identity_bound": "4096 * eps64 * max_dimension * max(1, operand_frobenius_scale)",
+      "bound_factor": 4096,
+      "finite_horizon": 4,
+      "state_dimension": 2,
+      "equal_energy_horizon": 64,
+      "block_length": 8,
+      "alpha": 0.99,
+      "mean_bias": 0.25,
+      "independent_variance": 0.75,
+      "inference": "exact finite enumeration and algebra; no statistical estimation",
+      "timing": "CPU verification only, not inference latency"
+    },
+    "selection": "All declared examples retained; no dataset, model, observed codec result, or tolerance calibration is used."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "case": "train_natural_language_1_L12",
+  "document": "train_natural_language_1",
+  "layer": 12,
+  "fields": [
+    "readout_sse",
+    "late_readout_sse",
+    "clipped_values",
+    "low_values"
+  ],
+  "status": "COMPLETE",
+  "completed_tokens": 256,
+  "failure": null,
+  "sha256": "ad65fa7fc0869b01fd9f2c9ada68bc88a0f63d1bcd17af34243f265f280f50e0"
+}
