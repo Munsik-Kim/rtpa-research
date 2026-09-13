@@ -1,5 +1,15 @@
 # Integrated results
 
+## Latest mechanism diagnostic
+
+The [grid-feedback cycle](GRID_FEEDBACK.md) completed its bounded CPU work but
+promoted neither practical codec. Fixed snapshot-grid idempotency did not
+predict recurrent quality; both ZERO_INCLUSIVE and a TRAIN-envelope grid
+missed legacy-relative recurrent/late criteria. No new model KL, task accuracy,
+latency or VRAM result is inferred. [Regenerable tables](../results/grid_feedback/tables.md)
+and [research decisions](RESEARCH_DIRECTION.md) retain the distinction between
+numerical completion and quality. Earlier model results below remain unchanged.
+
 **Benchmark map:** [measured implementations and scope](BENCHMARKS.md).
 The current attribution study separates codec quality, mask-selection
 information, and offline calibration cost. Earlier all-layer allocation,

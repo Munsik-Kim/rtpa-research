@@ -1,0 +1,135 @@
+{
+  "run_id": "RTPA_GRID_FEEDBACK_20260913_CANDIDATE_V1",
+  "verification_status": "PASS_INCLUDED_OBSERVATIONS",
+  "scientific_selection": "REJECTED_CPU_QUALITY_GATE",
+  "candidate_gate": {
+    "complete_panel": true,
+    "pooled_recurrent": false,
+    "late": false,
+    "each_document": false,
+    "clipping": true,
+    "no_failures": true,
+    "source_input_unchanged": true
+  },
+  "recurrent_readout_ratio_vs_legacy": 3.1509249028492894,
+  "late_ratio_vs_legacy": 3.08163150749254,
+  "clipped_values": 32567,
+  "low_values": 1061683200,
+  "clipped_fraction": 3.067487551842207e-05,
+  "document_ratios": {
+    "train_associative_recall_0": 3.665000667438231,
+    "train_associative_recall_1": 3.9238913800593527,
+    "train_code_0": 3.4153969651784712,
+    "train_code_1": 3.485988040315578,
+    "train_natural_language_0": 2.2417303343139463,
+    "train_natural_language_1": 2.5496087947178814
+  },
+  "component_controls": {
+    "R2_HOLD_OFFSET": {
+      "first_sse": 0.07080854058260969,
+      "physical_drift_sse": 0.002853047112603057,
+      "affine_drift_sse": 2.7655162238460207e-05,
+      "repeat_clipped_values": 16.0
+    },
+    "R2_HOLD_SCALE": {
+      "first_sse": 0.07080854058260969,
+      "physical_drift_sse": 0.0028147513060854754,
+      "affine_drift_sse": 9.035261427925434e-09,
+      "repeat_clipped_values": 6.0
+    }
+  },
+  "completed_cases": 18,
+  "component_snapshot_rows": 108,
+  "comparison_count": 129,
+  "maximum_comparison_abs_error": 1.7763568394002505e-15,
+  "source_binding": "PASS_EXACT_FROZEN_SOURCE",
+  "input_immutability": "PASS",
+  "storage_ledger": {
+    "arrays": [
+      {
+        "name": "0/low_offsets",
+        "shape": [
+          16,
+          120,
+          4,
+          1
+        ],
+        "dtype": "float16",
+        "bytes": 15360
+      },
+      {
+        "name": "0/low_scales",
+        "shape": [
+          16,
+          120,
+          4,
+          1
+        ],
+        "dtype": "float16",
+        "bytes": 15360
+      },
+      {
+        "name": "12/low_offsets",
+        "shape": [
+          16,
+          120,
+          4,
+          1
+        ],
+        "dtype": "float16",
+        "bytes": 15360
+      },
+      {
+        "name": "12/low_scales",
+        "shape": [
+          16,
+          120,
+          4,
+          1
+        ],
+        "dtype": "float16",
+        "bytes": 15360
+      },
+      {
+        "name": "22/low_offsets",
+        "shape": [
+          16,
+          120,
+          4,
+          1
+        ],
+        "dtype": "float16",
+        "bytes": 15360
+      },
+      {
+        "name": "22/low_scales",
+        "shape": [
+          16,
+          120,
+          4,
+          1
+        ],
+        "dtype": "float16",
+        "bytes": 15360
+      }
+    ],
+    "fitted_grid_total_bytes_48heads": 92160,
+    "metadata_bytes_per_head": 1920,
+    "payload_bytes_per_head": 19328,
+    "FixedGrid_instance_grid_copy_bytes_16heads": 30720,
+    "copy_note": "FixedGrid clones one layer grid at construction; payload metadata aliases that copy and must not be counted again. Original fitted grid remains separate. Source-derived allocation, not measured VRAM.",
+    "H32_bytes_per_Arm_instance": 4096,
+    "residual_bytes": 0,
+    "RNG_bytes": 0,
+    "packed_runtime_and_peak_memory": "NOT_MEASURED_CPU_EQUATION_HARNESS_ONLY"
+  },
+  "fit_reproduction_level": "Stored FP16 grids and source contract checked; original captures LOCAL_ONLY, min/max fitting not independently regenerated here",
+  "failure_resume_limits": "All observed fit/replay cases completed. Exceptional interruption, failed-write tensor retention, and resume were not exercised; inferred completed-token counters are valid only for this failure-free run.",
+  "new_model_forwards": 0,
+  "GPU_seconds": 0,
+  "execution": {
+    "CPU_wall_seconds": 0.05412234899995383,
+    "CPU_process_seconds": 0.0538128,
+    "threads": 1
+  }
+}

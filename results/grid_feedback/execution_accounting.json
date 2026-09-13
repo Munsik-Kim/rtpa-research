@@ -1,0 +1,68 @@
+{
+  "run_id": "RTPA_GRID_FEEDBACK_20260913_V1",
+  "new_GPU_wall_seconds": 0,
+  "new_model_forwards": 0,
+  "CPU_recorded_phase_wall_seconds": {
+    "four_arm_cpu": 112.82541497300008,
+    "component_and_fixed_grid_cpu": 43.14340617700009,
+    "inherited_scalar_reanalysis": 0.6436161300000549,
+    "fidelity_sensitivity": 3.9064328710001064,
+    "theory": 0.008073568344116211,
+    "independent_diagnostic": 0.2984380510001756,
+    "independent_candidate": 0.05412234899995383
+  },
+  "CPU_recorded_phase_sum_seconds": 160.87950411934457,
+  "budgets": {
+    "GPU_experiment_seconds_max": 14400,
+    "CPU_diagnostic_seconds_max": 7200
+  },
+  "CPU_budget_status": "WITHIN_LIMIT",
+  "count_scope": "Recorded phase wall durations; tests, file audits and documentation are separate administrative work, not measured inference latency",
+  "unmeasured_development_overhead": "Small exploratory test/import commands not individually metered; not included in a claim of exact total project wall time",
+  "planned_completed": {
+    "initial_arm_cases": [
+      72,
+      72
+    ],
+    "fixed_grid_cases": [
+      18,
+      18
+    ],
+    "initial_snapshots": [
+      216,
+      216
+    ],
+    "conditional_component_snapshots": [
+      108,
+      108
+    ]
+  },
+  "initial_operation_counts": {
+    "recurrent_update_attempts": 36864,
+    "codec_write_attempts": 21888,
+    "affine_control_attempts": 3456,
+    "future_transition_attempts": 20736,
+    "fp64_small_group_batch_attempts": 6696
+  },
+  "candidate_operations": {
+    "fit_updates": 9216,
+    "fit_codec_writes": 4608,
+    "evaluation_updates": 9216,
+    "evaluation_codec_writes": 4608,
+    "component_operations": {
+      "recurrent_update_attempts": 0,
+      "codec_write_attempts": 1728,
+      "affine_control_attempts": 1728,
+      "future_transition_attempts": 0,
+      "fp64_small_group_batch_attempts": 3348
+    }
+  },
+  "reuse": {
+    "R4_model_forwards_not_rerun": 56320,
+    "parent_compute_excluded_from_new_budget": true,
+    "new_model_candidates_after_failed_CPU_gates": 0
+  },
+  "numerical_failure_count": 0,
+  "interruption_or_resume_test": "NOT_RUN",
+  "known_historical_overflow": "Retained, not a new model failure or repaired claim"
+}

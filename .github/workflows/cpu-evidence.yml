@@ -73,7 +73,20 @@ jobs:
           cmp results/diag_r4/execution_accounting.json /tmp/rtpa-r4-accounting.json
           python scripts/build_diag_r4_claims.py --root . --out /tmp/rtpa-r4-claims.json
           cmp results/diag_r4/claims.json /tmp/rtpa-r4-claims.json
-      - name: Build and install the public wheel
+      - name: Verify grid feedback without parent captures or model execution
+        # Existing evidence jobs remain separate; these are CPU observations,
+        # not a replay of local captures or a GPU/model benchmark.
+        run: |
+          python -m rtpa_research.grid_verify --out /tmp/rtpa-grid-check.json
+          python -m rtpa_research.grid_candidate_verify --out /tmp/rtpa-grid-candidate-check.json
+          python -m rtpa_research.grid_report --out /tmp/rtpa-grid-tables
+          cmp results/grid_feedback/tables.md /tmp/rtpa-grid-tables/tables.md
+          cmp results/grid_feedback/candidate_summary.json /tmp/rtpa-grid-tables/candidate_summary.json
+          python scripts/render_grid_cycle.py --root . --out /tmp/rtpa-grid-final
+          cmp results/grid_feedback/decision.json /tmp/rtpa-grid-final/decision.json
+          cmp results/grid_feedback/execution_accounting.json /tmp/rtpa-grid-final/execution_accounting.json
+          cmp results/grid_feedback/verification.json /tmp/rtpa-grid-final/verification.json
+      - name: Build and install the public wheel with all selected evidence
         run: |
           python -m build --wheel
           python -m venv /tmp/rtpa-wheel-test
@@ -113,6 +126,11 @@ jobs:
           cmp "$evidence_root/results/diag_r4/execution_accounting.json" /tmp/rtpa-installed-r4-accounting.json
           /tmp/rtpa-wheel-test/bin/python "$evidence_root/scripts/render_diag_r4_cost.py" --root "$evidence_root" --out /tmp/rtpa-installed-r4-cost.md
           cmp "$evidence_root/results/diag_r4/cost_tables.md" /tmp/rtpa-installed-r4-cost.md
+          /tmp/rtpa-wheel-test/bin/python -m rtpa_research.grid_verify --out /tmp/rtpa-installed-grid-check.json
+          /tmp/rtpa-wheel-test/bin/python -m rtpa_research.grid_candidate_verify --out /tmp/rtpa-installed-grid-candidate-check.json
+          /tmp/rtpa-wheel-test/bin/python -m rtpa_research.grid_report --out /tmp/rtpa-installed-grid-tables
+          cmp "$evidence_root/results/grid_feedback/tables.md" /tmp/rtpa-installed-grid-tables/tables.md
+          cmp "$evidence_root/results/grid_feedback/candidate_summary.json" /tmp/rtpa-installed-grid-tables/candidate_summary.json
   codec-cpu:
     runs-on: ubuntu-latest
     timeout-minutes: 20
@@ -147,3 +165,4 @@ jobs:
           python -m unittest discover -s tests -p 'test_diag_r4*.py' -v
           python -m pytest -q tests/test_diag_r4_cost.py tests/test_diag_r4_cost_analysis.py tests/test_diag_r4_cost_renderer.py
           python examples/diag_r4.py --method B4 --layer 0
+          python -m unittest discover -s tests -p 'test_grid_codec.py' -v

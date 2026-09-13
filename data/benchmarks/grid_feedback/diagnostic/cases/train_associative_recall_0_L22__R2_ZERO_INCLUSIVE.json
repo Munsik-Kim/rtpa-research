@@ -1,0 +1,115 @@
+{
+  "case": "train_associative_recall_0_L22",
+  "document": "train_associative_recall_0",
+  "layer": 22,
+  "arm": "R2_ZERO_INCLUSIVE",
+  "status": "COMPLETE",
+  "fields": [
+    "readout_sse",
+    "late_readout_sse",
+    "injection_sse",
+    "post_error_sse",
+    "signed_injection_sum",
+    "transformed_signed_injection_sum",
+    "clipped_values",
+    "low_values",
+    "state_identity_relative_max",
+    "forcing_roundoff_sse",
+    "lag1_dot",
+    "lag1_previous_sse",
+    "lag1_current_sse",
+    "lag8_dot",
+    "lag8_previous_sse",
+    "lag8_current_sse"
+  ],
+  "completed_tokens": 256,
+  "observations_sha256": "69087819aed061e3a9352f8883253a0bcae2682cbb579e0f8a69409faff5dcfb",
+  "snapshots": [
+    {
+      "arm": "R2_ZERO_INCLUSIVE",
+      "writes": 16,
+      "first_sse": 0.0006853959600490085,
+      "physical_drift_sse": 0.004050755907978652,
+      "physical_final_sse": 0.004806487061683862,
+      "affine_first_sse": 0.0006843414112349378,
+      "affine_drift_sse": 0.004042187916891038,
+      "repeat_clipped_values": 2,
+      "payload_changed_elements": {
+        "low_codes": 11121,
+        "low_scales": 1354,
+        "low_zeros": 371,
+        "high_values": 0
+      },
+      "fp64_small_control": {
+        "scope": "fixed head0 low-row0; FP64 H32/arithmetic, FP16 grid",
+        "affine_drift_sse": 8.604317258686933e-08,
+        "physical_drift_sse": 8.604317258686974e-08,
+        "first_sse": 1.3994018270942828e-08
+      },
+      "token": 31,
+      "isolated_future_sse": 2.6688076329831847e-07,
+      "own_old_error_future_sse": 5.230630475111501e-06,
+      "own_injection_future_sse": 3.26356693783875e-07,
+      "own_future_signed_cross": 7.881344062098286e-08,
+      "own_future_total_sse": 5.63580060951636e-06
+    },
+    {
+      "arm": "R2_ZERO_INCLUSIVE",
+      "writes": 16,
+      "first_sse": 0.0008303093843224658,
+      "physical_drift_sse": 0.00277117486101474,
+      "physical_final_sse": 0.0036640947237714288,
+      "affine_first_sse": 0.0008283020380910426,
+      "affine_drift_sse": 0.0027754834330870892,
+      "repeat_clipped_values": 3,
+      "payload_changed_elements": {
+        "low_codes": 10638,
+        "low_scales": 1380,
+        "low_zeros": 353,
+        "high_values": 0
+      },
+      "fp64_small_control": {
+        "scope": "fixed head0 low-row0; FP64 H32/arithmetic, FP16 grid",
+        "affine_drift_sse": 1.2562830775664224e-07,
+        "physical_drift_sse": 1.25628307756642e-07,
+        "first_sse": 1.4312217958771954e-08
+      },
+      "token": 127,
+      "isolated_future_sse": 3.223461047906551e-07,
+      "own_old_error_future_sse": 7.146301901994194e-05,
+      "own_injection_future_sse": 3.7947897734058083e-07,
+      "own_future_signed_cross": 3.3652086817193504e-06,
+      "own_future_total_sse": 7.520770667900187e-05
+    },
+    {
+      "arm": "R2_ZERO_INCLUSIVE",
+      "writes": 16,
+      "first_sse": 0.000869132460886847,
+      "physical_drift_sse": 0.0027716195041876156,
+      "physical_final_sse": 0.003702398136896573,
+      "affine_first_sse": 0.0008680058439569666,
+      "affine_drift_sse": 0.0027709811844687238,
+      "repeat_clipped_values": 4,
+      "payload_changed_elements": {
+        "low_codes": 10561,
+        "low_scales": 1284,
+        "low_zeros": 355,
+        "high_values": 0
+      },
+      "fp64_small_control": {
+        "scope": "fixed head0 low-row0; FP64 H32/arithmetic, FP16 grid",
+        "affine_drift_sse": 2.4893189731756138e-09,
+        "physical_drift_sse": 2.489318973175669e-09,
+        "first_sse": 2.051251826852602e-08
+      },
+      "token": 223,
+      "isolated_future_sse": 3.5604900848471944e-07,
+      "own_old_error_future_sse": 0.00022199531293709047,
+      "own_injection_future_sse": 1.1397204529345045e-07,
+      "own_future_signed_cross": 3.893954627913626e-06,
+      "own_future_total_sse": 0.00022600323961029754
+    }
+  ],
+  "failure": null,
+  "parent_capture_sha256": "0b48693f08ed5e1111a316379ce99b15ae82fd798f211b40d4488d4d0a640477"
+}

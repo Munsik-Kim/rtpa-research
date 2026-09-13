@@ -37,4 +37,14 @@
     "full_GPU_reproduction_by_CPU_check": false
   },
   "scientific_success": "NOT_A_MECHANICAL_VERIFICATION_RESULT"
+  ,"grid_feedback_cycle": {
+    "verification": "results/grid_feedback/verification.json",
+    "decision": "results/grid_feedback/decision.json",
+    "independent_scalar_receipts": [
+      "results/grid_feedback/independent_diagnostic.json",
+      "results/grid_feedback/independent_candidate.json"
+    ],
+    "scope": "New CPU equation diagnostics and included-observation checks, not new GPU/model replication",
+    "historical_expectations_modified": false
+  }
 }

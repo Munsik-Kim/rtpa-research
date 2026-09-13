@@ -1,5 +1,11 @@
 # Reproduction guide and verification levels
 
+The latest [grid-feedback guide](GRID_FEEDBACK.md) separates public scalar
+reconstruction, a small theory demonstration, LOCAL_ONLY capture replay and
+actual model execution. `python -m rtpa_research.grid_report --out grid-tables`
+works from an installed wheel without Torch or model weights. It is not a
+Native/GPU replication. Frozen old source/config expectations are unchanged.
+
 For the current attribution study, start with [R4](DIAG_ATTRIBUTION_R4.md).
 The experimental R2 state/model path retains its
 [quickstart](QUICKSTART_R2.md) and [phase-specific scope](REPRO_R2_SCOPE.md).

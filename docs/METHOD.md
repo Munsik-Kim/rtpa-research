@@ -238,3 +238,13 @@ The actual model follows candidate-conditioned nonlinear trajectories. Improveme
 ## Implementation provenance
 
 See the [historical codec](../src/rtpa_research/frozen/experiments/rtpa_v03d1/codec.py), [storage bridge](../src/rtpa_research/frozen/experiments/rtpa_v03d1/bridge.py), [response-statistic fit](../src/rtpa_research/frozen/experiments/rtpa_v03d1/fit.py), and [matched-energy recorder](../src/rtpa_research/frozen/experiments/rtpa_v05/fit.py). The [source mapping](../configs/source_mapping.json) distinguishes original/export hashes and path-only redactions. Later implementations have not silently replaced the code that generated earlier results.
+## Repeated-write numerical diagnostics
+
+The [grid-feedback study](GRID_FEEDBACK.md) measures a different axis from
+mask selection: adaptive versus held FP16 metadata under the same legacy
+high-row mask. Both OFFSET and ZERO_INCLUSIVE use their actual decoder
+conventions. A first-snapshot held grid is not the TRAIN-envelope fixed-grid
+candidate. Neither passed the full legacy-relative CPU quality criteria as
+a practical replacement. The study does not add temporal error feedback or
+subtractive dither. `full_error_feedback(z,q)=q+(z-q)` in frozen historical
+code remains an oracle helper, not a causal Sigma–Delta implementation.

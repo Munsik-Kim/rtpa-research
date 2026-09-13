@@ -1,0 +1,240 @@
+{
+  "run_id": "RTPA_GRID_FEEDBACK_20260913_V1",
+  "status": "PASS_INCLUDED_SCALAR_AND_RECEIPT_VERIFICATION",
+  "scope": "Independent NPZ/JSON scalar reductions, inherited comparisons and identities; no tensor/Native/model rerun",
+  "completed_arm_cases": 72,
+  "documents": 6,
+  "tokens_per_arm_case": 256,
+  "snapshot_records": 216,
+  "new_model_forwards": 0,
+  "GPU_seconds": 0,
+  "source_binding": "PASS_EXACT_FROZEN_SOURCES",
+  "input_immutability": "PASS",
+  "verified_input_file_count": 193,
+  "totals": {
+    "LEGACY_P_PRE": {
+      "readout_sse": 0.013739690501658746,
+      "late_readout_sse": 0.011154296782095627,
+      "injection_sse": 3.1460197350779437,
+      "post_error_sse": 393.65146983037573,
+      "signed_injection_sum": -4.745103403891732,
+      "transformed_signed_injection_sum": 3.1815410774333457,
+      "clipped_values": 39.0,
+      "low_values": 1061683200.0,
+      "state_identity_relative_max": 5.217833309741406e-16,
+      "forcing_roundoff_sse": 1.7736781174807992e-09,
+      "lag1_dot": 0.05273605913796671,
+      "lag1_previous_sse": 3.145617659085498,
+      "lag1_current_sse": 3.1460197350779437,
+      "lag8_dot": 0.010064851098432368,
+      "lag8_previous_sse": 3.143050185964338,
+      "lag8_current_sse": 3.1460197350779437,
+      "lag1_uncentered_cosine": {
+        "value": 0.016763858417707337,
+        "reason": null
+      },
+      "lag8_uncentered_cosine": {
+        "value": 0.003200744258459638,
+        "reason": null
+      },
+      "clipped_fraction": {
+        "value": 3.673412181712963e-08,
+        "reason": null
+      }
+    },
+    "R2_HOLD_INITIAL_GRID": {
+      "readout_sse": 83.6425515537759,
+      "late_readout_sse": 55.753914968349385,
+      "injection_sse": 5074.749170847303,
+      "post_error_sse": 609190.52364705,
+      "signed_injection_sum": -2772.0503785989054,
+      "transformed_signed_injection_sum": -286.4378872435293,
+      "clipped_values": 430691614.0,
+      "low_values": 1061683200.0,
+      "state_identity_relative_max": 8.401938620034891e-16,
+      "forcing_roundoff_sse": 2.128279125439224e-09,
+      "lag1_dot": 1581.827702184832,
+      "lag1_previous_sse": 5106.767150873247,
+      "lag1_current_sse": 5074.749170847303,
+      "lag8_dot": 1005.8773039296746,
+      "lag8_previous_sse": 5275.848741262725,
+      "lag8_current_sse": 5074.749170847303,
+      "lag1_uncentered_cosine": {
+        "value": 0.31072690428349786,
+        "reason": null
+      },
+      "lag8_uncentered_cosine": {
+        "value": 0.1943978916794014,
+        "reason": null
+      },
+      "clipped_fraction": {
+        "value": 0.4056686721613378,
+        "reason": null
+      }
+    },
+    "R2_OFFSET": {
+      "readout_sse": 0.04402164251977832,
+      "late_readout_sse": 0.039374198372963305,
+      "injection_sse": 3.3879631648430264,
+      "post_error_sse": 1090.6517016493456,
+      "signed_injection_sum": 203.080521408164,
+      "transformed_signed_injection_sum": 1170.8479963200646,
+      "clipped_values": 0.0,
+      "low_values": 1061683200.0,
+      "state_identity_relative_max": 5.65627462541052e-16,
+      "forcing_roundoff_sse": 1.824385892290757e-09,
+      "lag1_dot": 0.14852743996618512,
+      "lag1_previous_sse": 3.385266754149173,
+      "lag1_current_sse": 3.3879631648430264,
+      "lag8_dot": 0.09870368042410493,
+      "lag8_previous_sse": 3.366669918282258,
+      "lag8_current_sse": 3.3879631648430264,
+      "lag1_uncentered_cosine": {
+        "value": 0.04385720063014269,
+        "reason": null
+      },
+      "lag8_uncentered_cosine": {
+        "value": 0.02922562029661052,
+        "reason": null
+      },
+      "clipped_fraction": {
+        "value": 0.0,
+        "reason": null
+      }
+    },
+    "R2_ZERO_INCLUSIVE": {
+      "readout_sse": 0.02394744210151467,
+      "late_readout_sse": 0.02070601273671228,
+      "injection_sse": 3.231296167614988,
+      "post_error_sse": 556.3939428366808,
+      "signed_injection_sum": -27.56238695975024,
+      "transformed_signed_injection_sum": -4.031183493795835,
+      "clipped_values": 0.0,
+      "low_values": 1061683200.0,
+      "state_identity_relative_max": 5.052182132650895e-16,
+      "forcing_roundoff_sse": 1.8020076617281964e-09,
+      "lag1_dot": 0.08919024209114318,
+      "lag1_previous_sse": 3.2304663452653157,
+      "lag1_current_sse": 3.231296167614988,
+      "lag8_dot": 0.032974766226776066,
+      "lag8_previous_sse": 3.2254547336331156,
+      "lag8_current_sse": 3.231296167614988,
+      "lag1_uncentered_cosine": {
+        "value": 0.027605546520415584,
+        "reason": null
+      },
+      "lag8_uncentered_cosine": {
+        "value": 0.010214047351614852,
+        "reason": null
+      },
+      "clipped_fraction": {
+        "value": 0.0,
+        "reason": null
+      }
+    }
+  },
+  "snapshot_totals": {
+    "LEGACY_P_PRE": {
+      "first_sse": 0.0748632142426748,
+      "physical_drift_sse": 9.150832222704827e-08,
+      "affine_first_sse": 0.07471024263676979,
+      "affine_drift_sse": 9.15061733053335e-08,
+      "isolated_future_sse": 4.700287701625214e-05,
+      "own_old_error_future_sse": 0.004726823609892036,
+      "own_injection_future_sse": 3.4256495312122316e-05,
+      "own_future_signed_cross": 2.129723904265359e-05,
+      "own_future_total_sse": 0.0047823773442468125,
+      "repeat_clipped_values": 0.0,
+      "drift_over_first": {
+        "value": 1.2223402795719817e-06,
+        "reason": null
+      }
+    },
+    "R2_HOLD_INITIAL_GRID": {
+      "first_sse": 0.07080854058260969,
+      "physical_drift_sse": 0.0,
+      "affine_first_sse": 0.07065559971712122,
+      "affine_drift_sse": 0.0,
+      "isolated_future_sse": 4.436582394195824e-05,
+      "own_old_error_future_sse": 30.095505477282227,
+      "own_injection_future_sse": 0.009352385780803656,
+      "own_future_signed_cross": 0.15685293882262819,
+      "own_future_total_sse": 30.261710801885656,
+      "repeat_clipped_values": 0.0,
+      "drift_over_first": {
+        "value": 0.0,
+        "reason": null
+      }
+    },
+    "R2_OFFSET": {
+      "first_sse": 0.07080854058260969,
+      "physical_drift_sse": 0.0010466339778963194,
+      "affine_first_sse": 0.07065559971712122,
+      "affine_drift_sse": 2.7363374112354677e-05,
+      "isolated_future_sse": 4.436582394195824e-05,
+      "own_old_error_future_sse": 0.01690831531929873,
+      "own_injection_future_sse": 3.568344156692662e-05,
+      "own_future_signed_cross": 0.00017113181611395272,
+      "own_future_total_sse": 0.01711513057697961,
+      "repeat_clipped_values": 0.0,
+      "drift_over_first": {
+        "value": 0.014781182739887861,
+        "reason": null
+      }
+    },
+    "R2_ZERO_INCLUSIVE": {
+      "first_sse": 0.07464054557992013,
+      "physical_drift_sse": 0.5318575581731367,
+      "affine_first_sse": 0.07448757231188524,
+      "affine_drift_sse": 0.5314006239729636,
+      "isolated_future_sse": 4.703298287265678e-05,
+      "own_old_error_future_sse": 0.008898190330153233,
+      "own_injection_future_sse": 3.4428744572750247e-05,
+      "own_future_signed_cross": 7.557209109922594e-05,
+      "own_future_total_sse": 0.00900819116582521,
+      "repeat_clipped_values": 60.0,
+      "drift_over_first": {
+        "value": 7.125585083025138,
+        "reason": null
+      }
+    }
+  },
+  "recurrent_readout_ratio_vs_legacy": {
+    "LEGACY_P_PRE": 1.0,
+    "R2_OFFSET": 3.2039762842156985,
+    "R2_ZERO_INCLUSIVE": 1.742938976582011,
+    "R2_HOLD_INITIAL_GRID": 6087.659073810871
+  },
+  "operation_counts": {
+    "recurrent_update_attempts": 36864,
+    "codec_write_attempts": 21888,
+    "affine_control_attempts": 3456,
+    "future_transition_attempts": 20736,
+    "fp64_small_group_batch_attempts": 6696
+  },
+  "historical_regression": {
+    "scalar_comparisons": 37296,
+    "max_abs_error": 6.661338147750939e-16,
+    "rtol": 1e-10,
+    "atol": 1e-12,
+    "scope": "Legacy/R2 all256tokens and common-snapshot first/future/repeat SSE"
+  },
+  "reported_summary_comparison": {
+    "count": 147,
+    "max_abs_error": 1.1641532182693481e-10
+  },
+  "future_cross_identity": {
+    "checks": 216,
+    "maximum_normalized_residual": 4.326991787534942e-16
+  },
+  "lag_scope": "Uncentered injection scalar sufficient statistics, scored t>=16 can pair warmup t-lag; not Pearson or independent-error proof",
+  "missing_tensor_checks": "Original physical injection vectors are not included; no independent tensor-to-lag or state-energy regeneration claim",
+  "historical_fidelity": "Unchanged 7/18 failures; scalar verification is not Native parity",
+  "execution": {
+    "CPU_wall_seconds": 0.2984380510001756,
+    "CPU_process_seconds": 0.2875742,
+    "threads": 1,
+    "GPU_seconds": 0,
+    "model_forwards": 0
+  }
+}

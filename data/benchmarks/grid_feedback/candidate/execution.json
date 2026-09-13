@@ -1,0 +1,22 @@
+{
+  "run_id": "RTPA_GRID_FEEDBACK_20260913_CANDIDATE_V1",
+  "status": "COMPLETE",
+  "seconds": 43.14340617700009,
+  "fit_and_component_seconds": 24.580469011999867,
+  "source_input_unchanged": true,
+  "model_forwards": 0,
+  "gpu_forwards": 0,
+  "fit_updates": 9216,
+  "fit_codec_writes": 4608,
+  "evaluation_updates": 9216,
+  "evaluation_codec_writes": 4608,
+  "component_operations": {
+    "recurrent_update_attempts": 0,
+    "codec_write_attempts": 1728,
+    "affine_control_attempts": 1728,
+    "future_transition_attempts": 0,
+    "fp64_small_group_batch_attempts": 3348
+  },
+  "completed_cases": 18,
+  "failure_count": 0
+}

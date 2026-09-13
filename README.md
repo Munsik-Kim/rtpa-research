@@ -5,6 +5,10 @@ RTPA uses offline output-response measurements to guide **fixed precision alloca
 storage and runtime measured separately. Both aim to preserve a model's output
 under a fixed state-storage budget. Each method has its own baseline and evaluation.
 
+RTPA quantizes the **persistent recurrent state between token updates**. It does
+not quantize model weights or GEMM activations. The current research direction
+is [output-sensitive allocation on a numerically sound storage path](docs/RESEARCH_DIRECTION.md).
+
 ## What you can use and verify
 
 - **Measured allocation trade-offs:** on eight fixed source documents,
@@ -41,6 +45,13 @@ it is not a recommended quality replacement. Three-layer FA_CODE improved
 KL by 3.05% but cost 1.498× its stored-nearest baseline in a different run.
 Historical task panels did not establish added answer accuracy.
 [All results and adverse comparisons](docs/RESULTS.md). These gains are never added.
+
+The latest [grid-feedback diagnostic](docs/GRID_FEEDBACK.md) explains why a
+smaller one-write error or zero repeated-snapshot drift is not enough: holding
+a first grid fixed removes drift but clips an evolving state; a TRAIN-envelope
+grid still has 3.15× legacy readout SSE in frozen-operand replay. Neither tested
+practical codec passed the predeclared CPU quality screen, so no new model
+benchmark or stable default is claimed from this cycle.
 
 ![Fixed-codec allocation contrasts: KL and next-token NLL](results/diag_r4/figures/allocation_contrasts.png)
 
@@ -81,6 +92,8 @@ python -m pip install .
 python -m rtpa_research demo --out demo.json
 python -m rtpa_research verify --out recomputed
 python scripts/verify_diag_r4.py --root . --out recomputed-r4.json
+python -m rtpa_research.grid_report --out recomputed-grid
+python -m rtpa_research.grid_verify --out recomputed-grid-check.json
 ```
 
 The demo and evidence commands run on CPU without Torch or model weights.
@@ -114,6 +127,8 @@ near-ceiling ties do not prove equivalence. This repository provides research
 implementations with distinct numerical contracts and measured limitations.
 
 - [Benchmarks and scope](docs/BENCHMARKS.md)
+- [Grid feedback, numerical boundaries and exact reproduction levels](docs/GRID_FEEDBACK.md)
+- [Research direction](docs/RESEARCH_DIRECTION.md) · [Temporal error theory](docs/TEMPORAL_ERROR_THEORY.md)
 - [Integrated results, including failures](docs/RESULTS.md)
 - [Reproducibility and data availability](docs/REPRODUCIBILITY.md)
 - [References and baseline provenance](docs/REFERENCES.md)

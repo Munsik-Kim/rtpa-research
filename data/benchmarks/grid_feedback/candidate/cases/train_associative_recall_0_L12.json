@@ -1,0 +1,15 @@
+{
+  "case": "train_associative_recall_0_L12",
+  "document": "train_associative_recall_0",
+  "layer": 12,
+  "fields": [
+    "readout_sse",
+    "late_readout_sse",
+    "clipped_values",
+    "low_values"
+  ],
+  "status": "COMPLETE",
+  "completed_tokens": 256,
+  "failure": null,
+  "sha256": "b5c6e8af8461d3545062be3b719664d2f52982883541c2fc245cc59815e05863"
+}

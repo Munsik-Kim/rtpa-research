@@ -1,0 +1,230 @@
+{
+  "run_id": "RTPA_GRID_FEEDBACK_20260913_V1",
+  "utc": "2026-09-13T02:19:06.589821+00:00",
+  "protocol": {
+    "run_id": "RTPA_GRID_FEEDBACK_20260913_V1",
+    "parent_commit": "5b5f14ba6801af6008d7a24446eaf099db3494d5",
+    "scope": "TRAIN frozen-operand equation diagnostic, not Native parity or new model/task evidence",
+    "device": "cpu",
+    "threads": 2,
+    "wall_budget_seconds": 2400,
+    "cycle_gpu_seconds_max": 14400,
+    "cycle_cpu_seconds_max": 7200,
+    "profiles": [
+      "LEGACY_P_PRE",
+      "R2_OFFSET",
+      "R2_ZERO_INCLUSIVE",
+      "R2_HOLD_INITIAL_GRID"
+    ],
+    "layers": [
+      0,
+      12,
+      22
+    ],
+    "length": 256,
+    "scored_start": 16,
+    "late_start": 128,
+    "snapshot_tokens": [
+      31,
+      127,
+      223
+    ],
+    "repeat_writes": 16,
+    "horizon": 32,
+    "lag_tokens": [
+      1,
+      8
+    ],
+    "mask": "data/benchmarks/gdn/policy.npz",
+    "parent_freeze": "data/benchmarks/codec_feedback/freeze.json",
+    "identity_relative_tolerance": 1e-10,
+    "legacy_regression_rtol": 1e-10,
+    "legacy_regression_atol": 1e-12,
+    "component_repeat_trigger": "pooled physical step16 drift of HOLD <= 0.5 * R2_OFFSET drift and R2_OFFSET drift > 0; then hold-offset and hold-scale on the same snapshots only",
+    "candidate_rule": {
+      "first_candidate": "R2_ZERO_INCLUSIVE (existing explicit contract; never OFFSET metadata branch)",
+      "same_mask_pooled_recurrent_ratio_max": 1.05,
+      "same_mask_pooled_late_ratio_max": 1.1,
+      "each_document_recurrent_ratio_max": 1.15,
+      "clipped_value_fraction_max": 0.0001,
+      "nonfinite_or_range_failures_max": 0,
+      "tie_rule": "retain legacy if difference <= 1e-6 relative; no tie-based promotion",
+      "rationale": "Exploratory practical quality allowances fixed before measurement, not theorem or population guarantees",
+      "second_candidate": "At most one separate TRAIN-only fixed grid or minimal metadata revision after cause analysis; freeze contract before any candidate measurement. Do not recycle rejected R4 RNE as a new success.",
+      "hold_initial_is_deployment_candidate": false
+    },
+    "aggregation": "sum SSE within documents/layers; six original TRAIN documents in three shared generator families, no independent-head population CI",
+    "output_cross": "snapshot: 2 inner product of next32 responses of the preexisting accumulated error and new injection, excluding future writes; not decomposition of end-to-end KL",
+    "lag_definition": "uncentered same-physical-entry injection dot and energies at lag1/8; scored current token>=16 may pair to a warmup token; 240 pairs/case for each lag; zero denominator null; not centered Pearson or independence evidence",
+    "failures": "Retain partial per-arm observations and exact failure context; never fill missing tokens with zeros",
+    "reference": "FP32 zero-start equation from already normalized/scaled captured q/k/v/decay/beta; output before quantized storage",
+    "fidelity": "Reuse original 7/18 failed 1e-4 checks; investigate source separately; do not widen or relabel as Native parity"
+  },
+  "binding": {
+    "sources": {
+      "src/rtpa_research/grid_diagnostic.py": "beece34fcb67df3d60495ab8a876a6851c6ee348908611f46bf21210e76a8a96",
+      "src/rtpa_research/grid_codec.py": "e9eb100cba8d9330675f713c8614ba31b14745d6ff4f7327e7ed16558f786600",
+      "src/rtpa_research/codec.py": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069",
+      "src/rtpa_research/codec_r2.py": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2",
+      "src/rtpa_research/layout.py": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276",
+      "src/rtpa_research/operators.py": "f4210e7d51065ac6d8ff4eea53969cfe74fb3100124ed1be9c3a9e519ffa3a78",
+      "configs/grid_feedback.json": "5524c570ea9fdd4ed0bdaf1fa9b493a46862af9e414bfc6e9af270b440d31e88",
+      "tests/test_grid_codec.py": "62189a9f9d357304dfcc8c32989c482f4aa9dc4743409da02bd6a9ad90621670"
+    },
+    "inputs": [
+      {
+        "path": "capture/train_associative_recall_0_L0.pt",
+        "sha256": "5707981b93fe6640ea3d07c27d95b28ace20329d2c48218caebf03b33d4f30da",
+        "bytes": 8441921,
+        "document": "train_associative_recall_0",
+        "layer": 0,
+        "input_sha256": "040b993598aae66c26d2ecb65354c1815e8d455c1e7af462f1e8adc315841205"
+      },
+      {
+        "path": "capture/train_associative_recall_0_L12.pt",
+        "sha256": "85ef6860657974d572c0828e8c85de9385fe4947b51e78bc2c3aaa40be6d612d",
+        "bytes": 8441935,
+        "document": "train_associative_recall_0",
+        "layer": 12,
+        "input_sha256": "040b993598aae66c26d2ecb65354c1815e8d455c1e7af462f1e8adc315841205"
+      },
+      {
+        "path": "capture/train_associative_recall_0_L22.pt",
+        "sha256": "0b48693f08ed5e1111a316379ce99b15ae82fd798f211b40d4488d4d0a640477",
+        "bytes": 8441935,
+        "document": "train_associative_recall_0",
+        "layer": 22,
+        "input_sha256": "040b993598aae66c26d2ecb65354c1815e8d455c1e7af462f1e8adc315841205"
+      },
+      {
+        "path": "capture/train_associative_recall_1_L0.pt",
+        "sha256": "afc093a21025a2d6bf8182f0456b265d3375ddb6560202eec7d8a82821af2812",
+        "bytes": 8441921,
+        "document": "train_associative_recall_1",
+        "layer": 0,
+        "input_sha256": "819ec5869db49f96e17350a3c18636dce701119d111e5409afbd9439baab0b94"
+      },
+      {
+        "path": "capture/train_associative_recall_1_L12.pt",
+        "sha256": "f5c4fb56709248bbde79bb97034ec1d3286900fab49cf6235081f2a4d18a7a48",
+        "bytes": 8441935,
+        "document": "train_associative_recall_1",
+        "layer": 12,
+        "input_sha256": "819ec5869db49f96e17350a3c18636dce701119d111e5409afbd9439baab0b94"
+      },
+      {
+        "path": "capture/train_associative_recall_1_L22.pt",
+        "sha256": "a9fd6a418b327aae25458906ed289baca6ce83b8b951d1bee682c0f33667d81a",
+        "bytes": 8441935,
+        "document": "train_associative_recall_1",
+        "layer": 22,
+        "input_sha256": "819ec5869db49f96e17350a3c18636dce701119d111e5409afbd9439baab0b94"
+      },
+      {
+        "path": "capture/train_code_0_L0.pt",
+        "sha256": "e7cb763b9b9d1c85ce0d79795f80371c89110d3543c9b044403d531064206e59",
+        "bytes": 8441661,
+        "document": "train_code_0",
+        "layer": 0,
+        "input_sha256": "ced628880ad34eb9f6da8c9a6807b30a4e8e641e333fe374b044d2144af936c0"
+      },
+      {
+        "path": "capture/train_code_0_L12.pt",
+        "sha256": "d47513a9056d28375b5ee15dcc93290d48252dbeb6898c9c983f83214488ebd8",
+        "bytes": 8441675,
+        "document": "train_code_0",
+        "layer": 12,
+        "input_sha256": "ced628880ad34eb9f6da8c9a6807b30a4e8e641e333fe374b044d2144af936c0"
+      },
+      {
+        "path": "capture/train_code_0_L22.pt",
+        "sha256": "c9d0e4f4cad4e7e34f08aad376dc5844d856c9212bd9065c603ce17b32a90c1e",
+        "bytes": 8441675,
+        "document": "train_code_0",
+        "layer": 22,
+        "input_sha256": "ced628880ad34eb9f6da8c9a6807b30a4e8e641e333fe374b044d2144af936c0"
+      },
+      {
+        "path": "capture/train_code_1_L0.pt",
+        "sha256": "d07762498ed7c797e2073f96ee3c9a81e0d8fe10d81b93bca8e49ade334419bc",
+        "bytes": 8441661,
+        "document": "train_code_1",
+        "layer": 0,
+        "input_sha256": "49eaf6a6960862c029021f647ab1981f08e38e663dac965acc7a719f73576465"
+      },
+      {
+        "path": "capture/train_code_1_L12.pt",
+        "sha256": "60ae6fef25ceee601010e1770088b7b67838d7f6e23b8b6dbb09b73582bdb82b",
+        "bytes": 8441675,
+        "document": "train_code_1",
+        "layer": 12,
+        "input_sha256": "49eaf6a6960862c029021f647ab1981f08e38e663dac965acc7a719f73576465"
+      },
+      {
+        "path": "capture/train_code_1_L22.pt",
+        "sha256": "fbfd175c3e2bfe53b5fc50caefbfa85b8643e20991e9cf4b7c2b1c9114aca9f2",
+        "bytes": 8441675,
+        "document": "train_code_1",
+        "layer": 22,
+        "input_sha256": "49eaf6a6960862c029021f647ab1981f08e38e663dac965acc7a719f73576465"
+      },
+      {
+        "path": "capture/train_natural_language_0_L0.pt",
+        "sha256": "a9b53ecc92bab71db4bb2361b6deed89d7534372c073e3d676df0662b9c8606a",
+        "bytes": 8441893,
+        "document": "train_natural_language_0",
+        "layer": 0,
+        "input_sha256": "0d828b60697413343ce0856f65c3e0aca7414bdc5d2f397e45cbe42a9e10e5d3"
+      },
+      {
+        "path": "capture/train_natural_language_0_L12.pt",
+        "sha256": "112e3d16d28cefc8eb7cd60e0e60f23beca23e23aa0d68a862b78ef85d7700b3",
+        "bytes": 8441907,
+        "document": "train_natural_language_0",
+        "layer": 12,
+        "input_sha256": "0d828b60697413343ce0856f65c3e0aca7414bdc5d2f397e45cbe42a9e10e5d3"
+      },
+      {
+        "path": "capture/train_natural_language_0_L22.pt",
+        "sha256": "486922f92041a54ab2ec324b59a474158a3bf0a84efba66647ac1da2549f6a0d",
+        "bytes": 8441907,
+        "document": "train_natural_language_0",
+        "layer": 22,
+        "input_sha256": "0d828b60697413343ce0856f65c3e0aca7414bdc5d2f397e45cbe42a9e10e5d3"
+      },
+      {
+        "path": "capture/train_natural_language_1_L0.pt",
+        "sha256": "fe5acf64dcd28fd2c791aa7004c45de3f28c636e9d19b56220f9054300f66a1d",
+        "bytes": 8441893,
+        "document": "train_natural_language_1",
+        "layer": 0,
+        "input_sha256": "304a28c13676fffc6a2d8e53903a68585bf5a18a9cf5ac76b29fc2a4a690c80d"
+      },
+      {
+        "path": "capture/train_natural_language_1_L12.pt",
+        "sha256": "8aea687dab16e44156628a7db03bc66301674cb4fdfa32499e9997c8ad51ad64",
+        "bytes": 8441907,
+        "document": "train_natural_language_1",
+        "layer": 12,
+        "input_sha256": "304a28c13676fffc6a2d8e53903a68585bf5a18a9cf5ac76b29fc2a4a690c80d"
+      },
+      {
+        "path": "capture/train_natural_language_1_L22.pt",
+        "sha256": "b9b4d891fd216912942561e20a5946daf78586b3f2ae39751965d271d3bb18e0",
+        "bytes": 8441907,
+        "document": "train_natural_language_1",
+        "layer": 22,
+        "input_sha256": "304a28c13676fffc6a2d8e53903a68585bf5a18a9cf5ac76b29fc2a4a690c80d"
+      }
+    ],
+    "mask_sha256": "bd865a1a138ed25a98e8db5b5dabb26ff259307be3ba2f071a04ceb71faace68",
+    "parent_freeze_sha256": "196d2bfab8dfc0d014a08e0f4ee78f74c62a6ecb658f7e443d93836fa2c695a1"
+  },
+  "environment": {
+    "python": "3.11.15",
+    "torch": "2.11.0+cu128",
+    "numpy": "1.26.4",
+    "device": "cpu",
+    "threads": 2
+  }
+}
