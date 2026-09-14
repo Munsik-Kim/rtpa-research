@@ -1,8 +1,11 @@
 """Local POSIX read boundary: never follow a file or intermediate symlink.
 
-Used for publication and input validation, not a general filesystem sandbox.
-Building on platforms without descriptor-relative no-follow opens fails closed.
-Installed CPU evidence reading does not depend on this build-only restriction.
+Source builds, restricted PT loading and maintenance R4 verification require
+POSIX descriptor-relative no-follow file access. The tested environment is
+Linux; native Windows support for these paths is not provided by this revision.
+Missing capabilities fail closed. Other installed CPU commands have separate
+requirements; their Windows compatibility has not been established here.
+This is not a general filesystem sandbox.
 """
 from contextlib import contextmanager
 import os

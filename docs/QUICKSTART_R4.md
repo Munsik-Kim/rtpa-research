@@ -5,6 +5,15 @@ the supported commands; `--version` reports development software/source identity
 The [legacy](QUICKSTART.md) and [R2](QUICKSTART_R2.md) guides are historical paths.
 Read [input trust, packaging and versions](MAINTENANCE.md) before loading PT files.
 
+**Platform requirement, before installation:** source builds, restricted PT
+loading, and maintenance R4 verification require POSIX descriptor-relative
+no-follow file access (`O_NOFOLLOW` and `os.open` with `dir_fd`). The tested
+environment is Linux/WSL2. Native Windows support for these paths is not provided
+by this revision. Missing capabilities fail closed; no weaker fallback is used.
+Other installed CPU commands have separate requirements; Windows/macOS
+compatibility has not been established here. A simulated missing capability is
+not an actual Windows execution test.
+
 | Command / operation | Actual scope and extra inputs |
 |---|---|
 | `python -m rtpa_research demo` | NumPy toy; no Torch, model or empirical quality claim |
@@ -45,10 +54,17 @@ python scripts/check_diag_r4_install.py --root . --out resolved-r4.json
 ```
 
 These commands need no Torch, model, CUDA, credentials, or original research
-directory. Verification reconstructs included observations, not model logits.
-The resolution check compares the actually resolved package-module bytes and
-the bundled copies with the numerical freezes; it does not import a model.
-It compares new R4 expected summaries without updating historical expectations.
+directory, but the POSIX requirement above still applies. Keep three scopes
+separate:
+
+- Historical public R4 evidence: verified in the authenticated historical
+  initializer projection as `PASS_HISTORICAL_WITH_METADATA_MAPPING`.
+- Current maintenance input/CLI boundaries: checked with specified CPU fixtures
+  and installation checks. Source resolution compares actual installed/bundled
+  bytes with the numerical freezes; it does not import a model.
+- Current GPU fit/evaluate end-to-end equivalence: **NOT_RUN** by maintenance.
+
+No historical expectation is updated. These are not current model-logit results.
 Full-K spectra, raw capture propagation, and profiler execution have separately
 limited reproduction levels in the study's evidence manifest.
 
