@@ -1,8 +1,9 @@
-"""Validate the fixed checkpoint before delegating to the frozen GPU runner.
+"""Validate the fixed checkpoint before the current restricted-input GPU entry.
 
 Administrative CLI validation only: no encoder, recurrence or metric changes.
-The measured runner is retained byte-for-byte; its --revision field by itself
-is not an independent checkpoint-content verification.
+The historical measured runner remains byte-for-byte; the current maintenance
+fit copy replaces its input loader only. Its --revision field by itself is not
+an independent checkpoint-content verification. No GPU run is performed by help.
 """
 import argparse
 import hashlib
@@ -46,7 +47,7 @@ def main(argv=None):
     p.add_argument('--out',type=Path);p.add_argument('--check-only',action='store_true')
     known,_=p.parse_known_args(argv)
     if '--help' in argv or '-h' in argv:
-        from rtpa_research.benchmark import main as run
+        from rtpa_research.maintenance_benchmark import main as run
         return run(['--help'])
     if known.model_path is None or known.out is None:p.error('--model-path and --out are required')
     from rtpa_research.resources import evidence_root
@@ -58,7 +59,7 @@ def main(argv=None):
     if not receipt.exists():receipt.write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps({'checkpoint':result['status'],'revision':result['revision']}),flush=True)
     if known.check_only:return
-    from rtpa_research.benchmark import main as run
+    from rtpa_research.maintenance_benchmark import main as run
     return run(argv)
 
 

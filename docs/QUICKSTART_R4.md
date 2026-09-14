@@ -1,4 +1,32 @@
-# Reproduce the attribution study
+# Current guide: run the demo and reconstruct RTPA evidence
+
+This is the single current entrypoint. `python -m rtpa_research --help` lists
+the supported commands; `--version` reports development software/source identity.
+The [legacy](QUICKSTART.md) and [R2](QUICKSTART_R2.md) guides are historical paths.
+Read [input trust, packaging and versions](MAINTENANCE.md) before loading PT files.
+
+| Command / operation | Actual scope and extra inputs |
+|---|---|
+| `python -m rtpa_research demo` | NumPy toy; no Torch, model or empirical quality claim |
+| `python -m rtpa_research verify` | Included historical observations, masks and tensor points; no model |
+| `python -m rtpa_research.maintenance_verify --out r4.json` | Included R4 scalar observations, historical metadata projection; no model |
+| `python -m rtpa_research.grid_verify --out grid.json` | Included grid scalars; **not** replay of parent tensors |
+| Grid capture replay | Needs 18 hash-bound **LOCAL_ONLY** parent captures; not available from public installation |
+| R4 model replay below | Opt-in GPU, exact external checkpoint and compatible backend; not run by CPU CI |
+
+R4 uses `RTPA_DIAG_ATTRIBUTION_R4_20260912_V1`, legacy P_PRE/high8/all18 GDN
+layers. Its numerical evidence predates maintenance `1.3.1.dev0`; the old tag is
+`v1.3.0rc1`, not a unique identifier for every later main commit.
+
+| ID | Full score / provenance | Codec and result |
+|---|---|---|
+| B1 | Promotion energy (low-minus-high reduction) | Same legacy P_PRE/high8; not v0.5 low-only MATCHED_ENERGY |
+| B2 | Query-weighted promotion energy: B1 × TRAIN pooled mean(q_i²) | Same codec/payload; fixed simple control, not renamed novelty |
+| B3 | Independent-write output response + 2c | Same codec/payload |
+| B4 | Coherent DIAG: Kii + 2ci | Exact whole-path alias of legacy DIAG, not an extra physical run |
+
+The authoritative [quality/NLL table](../results/diag_r4/benchmark_tables.md)
+includes every baseline and the adverse B4/B2 comparison.
 
 This guide uses the measured **legacy P_PRE quality reference**. The new
 rounding candidate failed DEV acceptance and is not the default. The known
@@ -12,7 +40,7 @@ From the public checkout, Python 3.11:
 ```bash
 python -m pip install .
 python -m rtpa_research demo --out demo.json
-python scripts/verify_diag_r4.py --root . --out recomputed-r4.json
+python -m rtpa_research.maintenance_verify --out recomputed-r4.json
 python scripts/check_diag_r4_install.py --root . --out resolved-r4.json
 ```
 

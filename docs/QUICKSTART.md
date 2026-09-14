@@ -1,4 +1,10 @@
-# Run RTPA and reproduce its evidence
+# Historical guide: legacy GDN and FA_CODE paths
+
+For current supported commands, begin with the [current guide](QUICKSTART_R4.md).
+This page preserves the earlier numerical workflow, not a new default codec.
+Its validated wrapper now uses the restricted maintenance input boundary;
+direct execution of `rtpa_research.benchmark` is historical and unsupported.
+See [input trust and packaging](MAINTENANCE.md).
 
 This guide covers the legacy-codec GDN and FA_CODE paths plus GDN2 operators.
 Start with the CPU example or evidence reconstruction; model benchmarks require
