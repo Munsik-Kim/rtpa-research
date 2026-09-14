@@ -1,6 +1,9 @@
 # Additional CPU-only Torch/Transformers test constraints from the measured stack.
 # GPU extras are NOT installed or audited by the local maintenance validation.
--c cpu-ci.txt
+-c cpu-common.txt
+# Torch 2.11.0 CPU requires setuptools<82. This job never builds distributions.
+# Preserve the scientific tool version; CVE-2026-59890 remains scoped in docs.
+setuptools==79.0.1
 transformers==5.9.0
 torch==2.11.0+cpu
 jinja2==3.1.6

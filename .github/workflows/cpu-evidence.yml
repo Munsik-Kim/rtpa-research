@@ -100,7 +100,7 @@ jobs:
           wheel_file="$(realpath dist/*.whl)"
           cd /tmp
           # Do not let source-tree egg-info masquerade as an installed package.
-          PYTHONPATH="" /tmp/rtpa-wheel-test/bin/python -m pip install -c "$GITHUB_WORKSPACE/requirements/cpu-ci.txt" "$wheel_file"
+          PYTHONPATH="" /tmp/rtpa-wheel-test/bin/python -m pip install -c "$GITHUB_WORKSPACE/requirements/cpu-common.txt" "$wheel_file"
           PYTHONPATH="" /tmp/rtpa-wheel-test/bin/python -c 'import pathlib, sys, rtpa_research; assert pathlib.Path(rtpa_research.__file__).is_relative_to(sys.prefix)'
       - name: Verify installed evidence without the source checkout on PYTHONPATH
         working-directory: /tmp
@@ -158,7 +158,8 @@ jobs:
           python-version: '3.11'
       - name: Install CPU-only numerical dependencies, not model weights
         run: |
-          python -m pip install -c requirements/codec-ci.txt numpy==1.26.4 tokenizers==0.22.2 scipy==1.17.1 transformers==5.9.0 pytest==9.1.1 setuptools==83.0.0
+          # Separate from the packaging job: no wheel/sdist building here.
+          python -m pip install -c requirements/codec-ci.txt numpy==1.26.4 tokenizers==0.22.2 scipy==1.17.1 transformers==5.9.0 pytest==9.1.1 setuptools==79.0.1
           python -m pip install -c requirements/codec-ci.txt torch==2.11.0+cpu --index-url https://download.pytorch.org/whl/cpu
       - name: Check stable codecs and reference-equivalent optimizations on CPU
         run: |

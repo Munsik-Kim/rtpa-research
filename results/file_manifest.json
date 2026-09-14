@@ -7,8 +7,8 @@
     },
     {
       "path": ".github/workflows/cpu-evidence.yml",
-      "bytes": 13728,
-      "sha256": "e3cc6087d6ab50d5602042abcfd301167e7980fdad197c134eb63eb509cb39fc"
+      "bytes": 13807,
+      "sha256": "bca87227023092883e88c47b151416e78f38306ef17a591eacc3ade7feea3483"
     },
     {
       "path": ".gitignore",
@@ -6617,8 +6617,8 @@
     },
     {
       "path": "docs/MAINTENANCE.md",
-      "bytes": 5509,
-      "sha256": "d613e4c06923924ad046b0994bcfef49768eed8618d495fe7bbb38bf70e02560"
+      "bytes": 6072,
+      "sha256": "c029586f806497187e546c9f78df3e5d44f18095442e090f4538ef0ffb3031e8"
     },
     {
       "path": "docs/METHOD.md",
@@ -6702,8 +6702,8 @@
     },
     {
       "path": "publication_files.json",
-      "bytes": 116864,
-      "sha256": "74b64de9c0ad6ce26328d25d4972be7f78f9bff40f838579f8dcb7260fafe150"
+      "bytes": 116899,
+      "sha256": "d108cde77c962095b3cd22a808a7c2f6610c1a9b9f15bf296a8b09c81472d3ed"
     },
     {
       "path": "pyproject.toml",
@@ -6712,13 +6712,18 @@
     },
     {
       "path": "requirements/codec-ci.txt",
-      "bytes": 427,
-      "sha256": "eae2482833e866066779d69fab21413553120f3f5866988a14e873a51590c580"
+      "bytes": 609,
+      "sha256": "e336aeae4af2cba363a5ec4c8b5c52497e5a4bb63ad0813eaae5757aa5478036"
     },
     {
       "path": "requirements/cpu-ci.txt",
-      "bytes": 571,
-      "sha256": "3ddcaf5b51fef3d9e1b0a4c6af733878f5d953c0bf1243fa1ce7865202a17ccd"
+      "bytes": 240,
+      "sha256": "e25d8683a59bd061cea839ce6cbbb8764af669c0ed460b44d948ac1850018e1c"
+    },
+    {
+      "path": "requirements/cpu-common.txt",
+      "bytes": 431,
+      "sha256": "e6389afd3dbc45a419ec7656303e99e1d74604ac0edafed25fcb827e839625f7"
     },
     {
       "path": "results/claims.json",

@@ -43,6 +43,15 @@ See the [upstream advisory](https://github.com/pypa/setuptools/security/advisori
 The finite package-version query is not an account audit or a CVE-free claim
 about Torch/CUDA, all extras or future advisories.
 
+The hosted CPU Torch 2.11.0 wheel requires `setuptools<82`. Its separate
+`codec-cpu` test job therefore retains 79.0.1 and **does not build or publish
+wheel/sdist archives**. This is isolation of the affected packaging operation,
+not remediation of every installed copy of setuptools. `verify` builds all
+archives with 83.0.0. Shared scalar pins live in `cpu-common.txt`; neither the
+scientific Torch version nor historical expectations are upgraded to satisfy
+the newer build tool. The initial remote dependency-resolution failure is
+retained in PR CI history.
+
 | Identity | Meaning |
 |---|---|
 | `v1.3.0rc1` | Historical tag at `5b5f14ba6801af6008d7a24446eaf099db3494d5`; unchanged |

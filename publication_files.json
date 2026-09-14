@@ -1345,6 +1345,7 @@
     "pyproject.toml",
     "requirements/codec-ci.txt",
     "requirements/cpu-ci.txt",
+    "requirements/cpu-common.txt",
     "results/claims.json",
     "results/codec_feedback/TABLES.md",
     "results/codec_feedback/claims.json",
