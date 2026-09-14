@@ -9,6 +9,13 @@ security certification. Report packaging leaks, unsafe deserialization, or
 violations of the boundaries below as security issues, separately from
 scientific numerical failures.
 
+Source builds, restricted PT loading, and maintenance R4 verification require
+POSIX descriptor-relative no-follow file access. The tested environment is
+Linux. Native Windows support for these paths is not provided by this revision;
+missing capabilities fail with `NOFOLLOW_READ_PLATFORM_UNSUPPORTED`, without
+an ordinary-open fallback. Other installed CPU commands have separate
+requirements; their Windows/macOS compatibility has not been established here.
+
 GitHub private vulnerability reporting was **not enabled** when checked on
 2026-09-14. Do not put credentials, private captures, exploit payloads, or
 confidential vulnerability details in a public issue. Use the repository's

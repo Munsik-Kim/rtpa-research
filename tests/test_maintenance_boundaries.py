@@ -8,8 +8,9 @@ from pathlib import Path
 import subprocess
 import sys
 import tempfile
+from types import SimpleNamespace
 import unittest
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 from rtpa_research.publication_build import evidence_files, validate_publication
 from rtpa_research import publication_build
@@ -100,6 +101,27 @@ class PublicationBoundary(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'EXTERNAL_BUILD_OPTIONS'):
                 publication_build.build_wheel('/tmp/unused',{'--global-option':['build','--build-base=/tmp/unused']})
             select.assert_not_called()
+
+
+class PlatformRequirements(unittest.TestCase):
+    def test_missing_nofollow_capability_rejects_all_three_paths(self):
+        from rtpa_research import maintenance_verify, safe_paths
+        paths = {
+            'source_build': lambda: evidence_files(ROOT),
+            'restricted_PT': lambda: safe_inputs.restricted_load(ROOT, 'not_read.pt', '0'*64),
+            'historical_R4': lambda: maintenance_verify.verify(ROOT),
+        }
+        for missing in ('O_NOFOLLOW', 'dir_fd'):
+            unopened = Mock(side_effect=AssertionError('must not open'))
+            simulated = SimpleNamespace(open=unopened, supports_dir_fd=set())
+            if missing == 'dir_fd':
+                simulated.O_NOFOLLOW = os.O_NOFOLLOW
+            for name, call in paths.items():
+                with self.subTest(missing=missing, path=name):
+                    with patch.object(safe_paths, 'os', simulated):
+                        with self.assertRaisesRegex(ValueError, '^NOFOLLOW_READ_PLATFORM_UNSUPPORTED$'):
+                            call()
+            unopened.assert_not_called()
 
 
 class UnsupportedFixture:

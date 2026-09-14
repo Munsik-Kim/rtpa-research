@@ -4,6 +4,23 @@ This development revision addresses the 2026-09-14 audit against commit
 `6faf3994463bd1a11888b21d738a218a994ef3d0`. It is not a new codec, mask, model
 experiment, performance result, or released package on PyPI.
 
+## Platform and verification scope
+
+Source builds, restricted PT loading, and maintenance R4 verification require
+POSIX descriptor-relative no-follow file access (`O_NOFOLLOW` and `dir_fd`).
+The tested environment is Linux/WSL2. Native Windows support for these paths is
+not provided by this revision. Missing capabilities raise
+`NOFOLLOW_READ_PLATFORM_UNSUPPORTED`; there is no ordinary-open fallback.
+Other installed CPU commands have separate requirements; their Windows/macOS
+compatibility has not been established here. Missing-capability simulation is
+not a Windows execution test or a new Linux failure.
+
+| Verification target | What the maintenance evidence establishes |
+|---|---|
+| Historical public R4 evidence | `PASS_HISTORICAL_WITH_METADATA_MAPPING`: strict verification in the authenticated historical initializer projection |
+| Current input/CLI boundaries | Specified CPU fixture and installation checks; not equivalence of every supported runtime input |
+| Current GPU fit/evaluate end-to-end equivalence | **NOT_RUN**; preserved numerical files and fit-body comparison do not substitute for execution |
+
 ## Build and source identity
 
 `publication_files.json` lists individually reviewed files from the public Git
@@ -18,8 +35,8 @@ historical source and is not the configured backend.
 Builds reject external backend options, ignore caller-provided dist-info, and
 disable user distutils configuration. Approved files are read through POSIX
 no-follow descriptors and hashed from the same bytes copied into the stage;
-unsupported no-follow build platforms fail closed. Installed model-free CPU
-commands remain independent of the build toolchain.
+all three paths listed above share that no-follow requirement. Not importing
+the build toolchain does not make the installed R4 wrapper platform-independent.
 
 ```bash
 python -m rtpa_research.publication_build --root .
@@ -40,8 +57,9 @@ Only the separate build environment is moved to the documented fixed version
 83.0.0; scientific environments are not upgraded. The selected-source boundary
 does not rely on exclusion glob matching, and non-NFC manifest paths are rejected.
 See the [upstream advisory](https://github.com/pypa/setuptools/security/advisories/GHSA-h35f-9h28-mq5c).
-The finite package-version query is not an account audit or a CVE-free claim
-about Torch/CUDA, all extras or future advisories.
+The 26 package versions queried at 2026-09-14 01:16:40 UTC returned no advisories
+after the build-pin change. That statement covers only that query list and
+time, not every final environment, an account audit or a CVE-free claim.
 
 The hosted CPU Torch 2.11.0 wheel requires `setuptools<82`. Its separate
 `codec-cpu` test job therefore retains 79.0.1 and **does not build or publish
@@ -51,6 +69,12 @@ archives with 83.0.0. Shared scalar pins live in `cpu-common.txt`; neither the
 scientific Torch version nor historical expectations are upgraded to satisfy
 the newer build tool. The initial remote dependency-resolution failure is
 retained in PR CI history.
+
+| Environment / scope | Status | Limit |
+|---|---|---|
+| Archive build: setuptools 83.0.0 | BUILD_PATCHED | Patched version for the documented macOS sdist-exclusion advisory |
+| CPU codec tests: setuptools 79.0.1 | CODEC_ENV_RETAINED | No wheel/sdist creation or publication; isolation, not removal of every vulnerable installed version |
+| GPU extras, account security and other environments | NOT_VERIFIED by this query | No universal CVE or operating-system assurance; no observed exploit in the Linux codec-test job is claimed |
 
 | Identity | Meaning |
 |---|---|
@@ -100,3 +124,9 @@ B2 remains the simpler, stronger KL baseline in R4; B4 does not beat it. Grid
 quality candidates remain rejected. Task advantage, new timing, whole-model
 VRAM reduction and pretrained GDN2 quality are not established. No Native
 boundary investigation or GPU/model forward is part of maintenance.
+
+At the follow-up check, main was `protected=false`: waiting for CI before merge
+was procedural, not a server-enforced requirement. Requiring PRs and successful
+`verify`/`codec-cpu` checks is a separate policy recommendation, without imposing
+unattainable outside-review counts on a solo maintainer. This documentation
+update does not change branch protection or private reporting settings.
