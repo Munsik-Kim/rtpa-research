@@ -11,6 +11,28 @@ is [output-sensitive allocation on a numerically sound storage path](docs/RESEAR
 
 ## What you can use and verify
 
+Runnable today: a model-free CPU demonstration, public evidence reconstruction,
+and a limited opt-in GDN adapter. GDN2 remains operator-only. Start with the
+[current guide](docs/QUICKSTART_R4.md); [security and input trust](SECURITY.md)
+apply before loading captures.
+
+The fixed-codec R4 table below is copied from the
+[canonical result renderer](results/diag_r4/benchmark_tables.md), not a new run.
+All mixed rows use the same 19,328 B/head, legacy P_PRE/high8/all18 GDN scope;
+KL is `Native || method` in nat/token on eight source documents.
+
+| Method | Mean KL, nat/token | Mean NLL, nat/token | ΔNLL vs Native | exp(ΔNLL) |
+|---|---:|---:|---:|---:|
+| Native | 0 | 1.301713 | 0 | 1 |
+| Promotion energy / B1 | 0.0055315696 | 1.3075968 | 0.0058837611 | 1.0059011 |
+| Query weighted / B2 | 0.0037010873 | 1.3054351 | 0.0037221157 | 1.0037291 |
+| Independent writes + 2c / B3 | 0.0045103933 | 1.3059561 | 0.0042430643 | 1.0042521 |
+| Coherent DIAG / B4 | 0.0042546703 | 1.3062713 | 0.0045582713 | 1.0045687 |
+
+B2, the fixed query-weighted control, has lower KL than DIAG on all eight
+documents. The observed allocation differences do not establish DIAG task
+advantage, a latency bound or whole-model VRAM reduction.
+
 - **Measured allocation trade-offs:** on eight fixed source documents,
   Qwen3.5-0.8B-Base and all 18 GDN layers, coherent DIAG lowers mean
   Native-reference KL by **23.08%** versus promotion energy (95% CI
@@ -91,13 +113,15 @@ source ../rtpa-demo-env/bin/activate
 python -m pip install .
 python -m rtpa_research demo --out demo.json
 python -m rtpa_research verify --out recomputed
-python scripts/verify_diag_r4.py --root . --out recomputed-r4.json
+python -m rtpa_research.maintenance_verify --out recomputed-r4.json
 python -m rtpa_research.grid_report --out recomputed-grid
 python -m rtpa_research.grid_verify --out recomputed-grid-check.json
 ```
 
 The demo and evidence commands run on CPU without Torch or model weights.
 They reconstruct the included observations; they do not run model inference.
+R4 verification keeps its historical source expectations and reports the
+current version metadata separately through an explicit temporary projection.
 For a state encode/decode example, calibration dependencies and an opt-in
 model replay, use the [current guide](docs/QUICKSTART_R4.md).
 The [R2 guide](docs/QUICKSTART_R2.md) and [earlier guide](docs/QUICKSTART.md)
@@ -131,6 +155,7 @@ implementations with distinct numerical contracts and measured limitations.
 - [Research direction](docs/RESEARCH_DIRECTION.md) · [Temporal error theory](docs/TEMPORAL_ERROR_THEORY.md)
 - [Integrated results, including failures](docs/RESULTS.md)
 - [Reproducibility and data availability](docs/REPRODUCIBILITY.md)
+- [Current packaging, input boundaries and software identity](docs/MAINTENANCE.md)
 - [References and baseline provenance](docs/REFERENCES.md)
 - [Closest prior work and contribution boundaries](docs/RELATED_WORK_AND_NOVELTY.md)
 - [Historical experiment mapping](docs/EXPERIMENTS.md)

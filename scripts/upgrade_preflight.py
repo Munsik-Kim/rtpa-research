@@ -18,9 +18,10 @@ def main():
     from rtpa_research.layout import Layout,tensor_bytes
     root=Path(__file__).resolve().parents[1]
     art=a.original/'experiments/fa_code_v01_20260911_0814/artifacts'
-    source=art/'fixed_metrics.pt';fit=torch.load(source,map_location='cpu',weights_only=False)
-    parent=a.original/'artifacts/rtpa_v05_numerical_matched_energy/masks.pt'
-    masks=torch.load(parent,map_location='cpu',weights_only=False)['P_PRE']
+    from rtpa_research.safe_inputs import preflight_inputs
+    (fit, mask_file, tr), sources = preflight_inputs(a.original, root)
+    source, parent, trace_source = sources
+    masks=mask_file['P_PRE']
     arrays={};metrics={}
     for l in (0,12,22):
         ff=fit[l];u=ff['eigenvectors'][:,:,-2:]*ff['eigenvalues'][:,-2:].sqrt()[:,None,:]
@@ -37,9 +38,7 @@ def main():
     codec=FactorizedEncoder('P_PRE',a.device);records=[];tick=time.monotonic()
     # Predeclared 32 base matrices x16heads=512head cases. 3 frozen TRAIN
     # snapshots plus synthetic seeds and exact zero, not held-out outcomes.
-    trace_files=sorted((art/'selected_trace').glob('*train*.pt'))
-    if not trace_files:raise RuntimeError('TRAIN fixture missing')
-    tr=torch.load(trace_files[0],map_location='cpu',weights_only=False)
+    trace_files=[trace_source]
     assert tr['split']=='TRAIN'
     for i in range(32):
         l=(0,12,22)[i%3];layout=Layout.from_mask(masks[l]['MATCHED_ENERGY8'].to(a.device))

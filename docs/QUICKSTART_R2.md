@@ -1,4 +1,7 @@
-# Use the bounded R2 codec and fixed-mask path
+# Historical guide: bounded R2 codec and fixed-mask path
+
+Start with the [current guide](QUICKSTART_R4.md). This page preserves a distinct
+experimental profile and does not select a new quality default.
 
 **Experimental opt-in, not a quality replacement for legacy DIAG.** The R2
 codec repairs the saved overflow cases within its declared range, but the

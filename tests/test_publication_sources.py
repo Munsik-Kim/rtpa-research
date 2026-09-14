@@ -58,8 +58,8 @@ class PublicationSourceTests(unittest.TestCase):
                 fixture(root)
                 path = root / name
                 path.write_bytes(path.read_bytes().replace(b'1.1.0rc1', b'0.0.0rc1')
-                                 if name == ARCHIVE else path.read_bytes().replace(b'1.3.0rc1', b'1.4.0rc1'))
-                with self.assertRaisesRegex(ValueError, 'ARCHIVED_INITIALIZER|PROJECT_VERSION'):
+                                 if name == ARCHIVE else path.read_bytes().replace(b'1.3.1.dev0', b'1.4.0rc1'))
+                with self.assertRaisesRegex(ValueError, 'ARCHIVED_INITIALIZER|PROJECT_VERSION|NOT_EXACT_DECLARED_VERSION'):
                     check_frozen_publication_source(root, TARGET, OLD_SHA)
 
     def test_wrong_authority_or_other_source_has_no_alias(self):
