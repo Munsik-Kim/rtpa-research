@@ -102,6 +102,8 @@ The NumPy command rebuilds signed scores/masks from108 per-case statistics,
 DEV counts/gate from96 item observations, and paired cost summaries from raw
 blocks. Stage2 SSE/count checks use included scalar receipts; they are **not**
 raw-tensor or GPU replication. The one-point NPZ permits its own arithmetic check.
-Full TRAIN capture/model replay requires LOCAL_ONLY operands and the pinned
-model/environment; a hash alone does not supply missing tensors. See the
+Reproducing the original TRAIN capture/fitting requires LOCAL_ONLY operands
+and the pinned model/environment; a hash alone does not supply missing tensors.
+The separate [frozen-policy evaluation](FIDELITY_SCREEN.md#commands) uses the
+included policy/inputs plus pinned model weights, not those TRAIN captures. See the
 [publication mapping](../data/single_write_v1/source_mapping.json).

@@ -4,6 +4,9 @@ The authoritative tables and CPU reconstruction are linked below. The input,
 policy and numerical source were committed and visible in [draft PR #9](https://github.com/Munsik-Kim/rtpa-research/pull/9) before
 the first GPU forward. The completed task DEV decision is unchanged; this is
 a separate distribution-fidelity question, not task recovery.
+The external PR timestamp is compared with the locally recorded GPU phase
+start; this is a retained chronology check, not independent attestation of the
+machine clock or inference execution time.
 
 **NO_PROMOTION_FROM_SMALL_SCREEN**. [Canonical results](../results/fidelity_screen_20260915/tables.md).
 
@@ -18,6 +21,32 @@ The 67.38% KL reduction versus ENERGY is a secondary observation, not permission
 to replace the preregistered B2 baseline. The screen does not establish a useful
 increment from full future-response weighting beyond this simpler query-weighted
 control. Three documents neither prove universal inferiority nor task equivalence.
+
+### Document and tail differences
+
+Recalculation from the included token scalars gives these DIAG/B2 changes;
+the denominator is B2 in each row. Rich is retained, not removed as an outlier.
+
+| Document | Change in mean KL (%) | Direction |
+|---|---:|---|
+| uv | -22.65 | Lower with DIAG |
+| ripgrep | -9.60 | Lower with DIAG |
+| Rich | +36.08 | Higher with DIAG |
+
+Relative to B2, DIAG's late KL is 4.04% lower and maximum KL 8.67% lower,
+but p99 is 0.65% higher and the top-1% mean is 21.29% higher. Top-1% means
+each method's own Native-KL distribution; it is **not** the paired harmful
+tail over identical token positions. Paired harmful/beneficial mass is
+reported separately in the canonical tables.
+
+As a secondary contrast, B2 reduces ENERGY's pooled KL by 67.618338%,
+versus DIAG's 67.378163%. Neither replaces the primary DIAG/B2 endpoint.
+The same ΔNLL values imply `exp(ΔNLL)` perplexity increases over Native of
+10.61% (ENERGY), 3.20% (B2), and 3.15% (DIAG), on these scored tokens only.
+These are derived statistics, not new model runs or task-accuracy changes.
+The 5% promotion threshold is an explicitly chosen investment screen, not
+a theoretical or community-standard boundary. Even zero pooled improvement
+was not reached; the small sample still does not establish population inferiority.
 
 ## What this can and cannot explain
 
@@ -49,9 +78,13 @@ legacy overflow, R2 codec regression and historical FA_CODE cost remain.
 No new timing/whole-VRAM result, GDN2 pretrained evaluation or DAMP-author-code
 comparison was performed.
 
-## One next step
+## Current research status
 
-Stop score expansion; consolidate the fixed-mask and Native-boundary diagnostic tools for reuse. Do not tune a new score on these three documents.
+Allocation-candidate search is stopped. Maintain the reproducible fixed-mask,
+causal code-correction and Native-boundary diagnostic tools; do not tune a new
+score on these three documents. Conditional output-preservation results and
+working implementations remain contributions, without consistent incremental
+quality over the strong baseline or established practical end-to-end efficiency.
 
 ## Commands and evidence levels
 
@@ -61,4 +94,5 @@ weights. KL-from-logits and full GPU execution are not reproduced by those
 scalars. Model rerun is the opt-in command in [registration](FIDELITY_SCREEN.md)
 and requires the pinned locally acquired weights. The old TRAIN operands stay
 LOCAL_ONLY, but no fitting or old capture is required to run this frozen policy.
-No upstream issue/PR, adoption, release or main merge was performed.
+Repository publication is distinct from upstream submission, external adoption,
+release or production deployment; none of those follows from this evidence.

@@ -32,8 +32,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7188,
-      "sha256": "641e32cc9e1bfa8a8f34a6f090726dabedf8795f758564b0a2e7b4524fc4205c"
+      "bytes": 6504,
+      "sha256": "56d74c81c3a58b9fb5a0e976af25026df64d6b4c4780ac1a21f0866f665c2321"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -7337,8 +7337,8 @@
     },
     {
       "path": "docs/QUICKSTART_R4.md",
-      "bytes": 7907,
-      "sha256": "c8052af5e257cc871c43883ec468bbd430fedaed9a17af3d351e7b7edfae4acc"
+      "bytes": 9870,
+      "sha256": "deed53ef09ba9a93a40065b993809cabed3bef24307cb6683664063afa222db7"
     },
     {
       "path": "docs/REFERENCES.md",
@@ -7372,13 +7372,13 @@
     },
     {
       "path": "docs/SCREEN_INTERPRETATION.md",
-      "bytes": 3853,
-      "sha256": "18649fdd438c9ebe3076de696542473b58ae70dd29c8ca92d0fc161f20025ea8"
+      "bytes": 5700,
+      "sha256": "126fb194333b1f39f597deee492e347dccb630dd775ba94a673bad11da83210e"
     },
     {
       "path": "docs/SINGLE_WRITE.md",
-      "bytes": 6105,
-      "sha256": "7808bf856beacfb66a9b28e980ec167d6ea824bf0bd82dbba29dbd862ea3ce21"
+      "bytes": 6274,
+      "sha256": "ddc6a1e0f7f78d73b2a001f43acb5d6781b62528f8db4f7cb3308f525c4a83b0"
     },
     {
       "path": "docs/TEMPORAL_ERROR_THEORY.md",
@@ -8017,8 +8017,8 @@
     },
     {
       "path": "scripts/check_current_readme.py",
-      "bytes": 656,
-      "sha256": "18eda94cf73d3926bedf3231883a4e4ebabdaaba67dd1bdc7a943b88ee652965"
+      "bytes": 1619,
+      "sha256": "0f52f2734412142e2417057040413af84fd2820afeef4c2002c7ac37f59c76f0"
     },
     {
       "path": "scripts/check_diag_r2_cpu.py",
