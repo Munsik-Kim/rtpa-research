@@ -1,0 +1,75 @@
+{
+  "document": "BurntSushi__ripgrep",
+  "config_sha256": "2b2de92722951accd57ddcead064578a410491928067d78bc97170ce44aad870",
+  "token_sha256": "e1c33e2b223e87fd7d8587a55df532847452ed3794f02bbbb358091ab07e9d44",
+  "methods": {
+    "NATIVE": {
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "quantized_layers": 0,
+        "Native_state_dtype": "torch.bfloat16"
+      }
+    },
+    "ENERGY_PROMOTION": {
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "no_FP32_master_attribute": true,
+        "profile": "R2_OFFSET",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    "B2_QUERY_PROMOTION": {
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "no_FP32_master_attribute": true,
+        "profile": "R2_OFFSET",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    "DIAG_SINGLE_WRITE": {
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "no_FP32_master_attribute": true,
+        "profile": "R2_OFFSET",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    }
+  },
+  "method_order": [
+    "ENERGY_PROMOTION",
+    "B2_QUERY_PROMOTION",
+    "DIAG_SINGLE_WRITE",
+    "NATIVE"
+  ],
+  "scalars_sha256": "4d7f0fb8ec5dde1ecaa917f2f647a9f1cb4064f5edde1437485765d4020817d2",
+  "null_encoding": "NPZ NaN means missing/unscored; final NLL has NO_NEXT_TARGET; JSON uses explicit status, never NaN."
+}

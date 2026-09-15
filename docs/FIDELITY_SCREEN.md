@@ -1,5 +1,9 @@
 # Preregistered frozen single-write output-fidelity screen
 
+Outcome: [NO_PROMOTION_FROM_SMALL_SCREEN](SCREEN_INTERPRETATION.md).
+The original prospective text and exact inputs remain in commit
+`259cb945adbe7bf439528a398b3fe8689ada9ba5`; this link was added after execution.
+
 Run: `RTPA_FROZEN_SINGLE_WRITE_SCREEN_20260915_V1`. This is a new quality screen,
 not a restart or extension of the stopped task DEV run. Registration and results
 are separate commits. The exact [configuration](../data/fidelity_screen_20260915/run_config.json)

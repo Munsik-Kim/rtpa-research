@@ -1,0 +1,46 @@
+{
+  "files": [
+    {
+      "path": "data/fidelity_screen_20260915/observations/execution_ledger.json",
+      "bytes": 857,
+      "sha256": "1c4e02f7765ad7c5d08a6a6ac623ff7e5a8944aca5bc7adb781b091863590033"
+    },
+    {
+      "path": "data/fidelity_screen_20260915/observations/environment.json",
+      "bytes": 513,
+      "sha256": "9585894b62d9f8cfb1a4770ae4adf8191b6277b3d81b5395329cc12ae7e32a24"
+    },
+    {
+      "path": "data/fidelity_screen_20260915/observations/astral-sh__uv.json",
+      "bytes": 2266,
+      "sha256": "9ff0401ce3a36402619ea7c6e525928110c754a39621a7055251888811cab6a6"
+    },
+    {
+      "path": "data/fidelity_screen_20260915/observations/astral-sh__uv.npz",
+      "bytes": 57643,
+      "sha256": "6f1b1ceaaa6c028a56eb49f3f783d35215f2ff251d7eaa69c56ce20788de9b25"
+    },
+    {
+      "path": "data/fidelity_screen_20260915/observations/BurntSushi__ripgrep.json",
+      "bytes": 2272,
+      "sha256": "fd1687f2c166a503e0dde088c58d1117f9c00b22fa0b711072a9f278a8969a62"
+    },
+    {
+      "path": "data/fidelity_screen_20260915/observations/BurntSushi__ripgrep.npz",
+      "bytes": 57590,
+      "sha256": "4d7f0fb8ec5dde1ecaa917f2f647a9f1cb4064f5edde1437485765d4020817d2"
+    },
+    {
+      "path": "data/fidelity_screen_20260915/observations/Textualize__rich.json",
+      "bytes": 2269,
+      "sha256": "28cdb1d9253a7f127579a92d8bb3c349a0dd242dfdee31cf0d265d2ec2c7c6c4"
+    },
+    {
+      "path": "data/fidelity_screen_20260915/observations/Textualize__rich.npz",
+      "bytes": 57795,
+      "sha256": "c7cc03411664151400e0cd04835687ff27f2dedc75034fa69f8d2dd0b42921c2"
+    }
+  ],
+  "new_result_tensor_scalar_bytes": 181205,
+  "scope": "Original completed attempt observations, byte-identical; this does not include weights or full logits."
+}

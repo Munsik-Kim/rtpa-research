@@ -34,11 +34,25 @@ explains the score differences, whole-path aliases, paired intervals and tails.
 These observations support studying output-sensitive allocation, not assuming
 that the most elaborate score is best.
 
-The [newly integrated single-write study](docs/SINGLE_WRITE.md) is a different
-fixed-mask revision: its task DEV gate stopped at **NO_INFORMATIVE_OPERATING_POINT**.
-DIAG task/KL evaluation was not run there. The page includes the completed
-decision, actual masks, CPU-reconstructible observations and a model-free
-Native reduction/BF16 boundary example.
+### Frozen single-write screen
+
+**NO_PROMOTION_FROM_SMALL_SCREEN** — three held-out documentation sources × 1,024 tokens,
+R2_OFFSET/high8, all 18 GDN layers; this is separate from the legacy-codec R4 table.
+
+| Method | Mean Native-KL | Mean NLL |
+|---|---:|---:|
+| NATIVE | 0 | 1.296777 |
+| ENERGY_PROMOTION | 0.09989719 | 1.397585 |
+| B2_QUERY_PROMOTION | 0.03234837 | 1.328243 |
+| DIAG_SINGLE_WRITE | 0.0325883 | 1.327824 |
+
+All losses are nat/token. DIAG's pooled KL is **0.742% higher than B2** despite
+2/3 document wins; ΔNLL is -0.0004187944 nat/token. No population CI or
+task-accuracy claim is made from these three documents.
+
+[Results and limits](docs/SCREEN_INTERPRETATION.md) · [Registration](docs/FIDELITY_SCREEN.md).
+The earlier [task DEV gate](docs/SINGLE_WRITE.md) remains
+NO_INFORMATIVE_OPERATING_POINT; its unrun task metrics are not zeros or ties.
 
 ## Storage and limits
 
@@ -81,6 +95,7 @@ python -m rtpa_research verify --out recomputed
 python -m rtpa_research.maintenance_verify --out recomputed-r4.json
 python -m rtpa_research.grid_verify --out recomputed-grid-check.json
 python -m rtpa_research single-write-evidence --out recomputed-single-write
+python -m rtpa_research.screen_report --out recomputed-screen
 ```
 
 These CPU commands do not import Torch or run a model. R4's
@@ -89,6 +104,10 @@ authenticated initializer projection. Current input/CLI boundaries have CPU
 fixture and installation checks; **current GPU fit/evaluate end-to-end equivalence
 was not run by maintenance**. Public grid checks do not replay the 18 LOCAL_ONLY
 parent captures. Use `--version` to record software/source identity.
+
+The [one-head Native-boundary example](examples/native_boundary/README.md)
+is an optional Torch-only check, without model weights:
+`python -m rtpa_research native-boundary --device cpu`.
 
 ## Method, evidence and use
 

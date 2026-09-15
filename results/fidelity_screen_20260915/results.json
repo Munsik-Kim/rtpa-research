@@ -1,0 +1,455 @@
+{
+  "run_id": "RTPA_FROZEN_SINGLE_WRITE_SCREEN_20260915_V1",
+  "coverage": [
+    {
+      "document": "astral-sh__uv",
+      "method": "NATIVE",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "quantized_layers": 0,
+        "Native_state_dtype": "torch.bfloat16"
+      }
+    },
+    {
+      "document": "astral-sh__uv",
+      "method": "ENERGY_PROMOTION",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "no_FP32_master_attribute": true,
+        "profile": "R2_OFFSET",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "astral-sh__uv",
+      "method": "B2_QUERY_PROMOTION",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "no_FP32_master_attribute": true,
+        "profile": "R2_OFFSET",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "astral-sh__uv",
+      "method": "DIAG_SINGLE_WRITE",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "no_FP32_master_attribute": true,
+        "profile": "R2_OFFSET",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "BurntSushi__ripgrep",
+      "method": "NATIVE",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "quantized_layers": 0,
+        "Native_state_dtype": "torch.bfloat16"
+      }
+    },
+    {
+      "document": "BurntSushi__ripgrep",
+      "method": "ENERGY_PROMOTION",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "no_FP32_master_attribute": true,
+        "profile": "R2_OFFSET",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "BurntSushi__ripgrep",
+      "method": "B2_QUERY_PROMOTION",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "no_FP32_master_attribute": true,
+        "profile": "R2_OFFSET",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "BurntSushi__ripgrep",
+      "method": "DIAG_SINGLE_WRITE",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "no_FP32_master_attribute": true,
+        "profile": "R2_OFFSET",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "Textualize__rich",
+      "method": "NATIVE",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "quantized_layers": 0,
+        "Native_state_dtype": "torch.bfloat16"
+      }
+    },
+    {
+      "document": "Textualize__rich",
+      "method": "ENERGY_PROMOTION",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "no_FP32_master_attribute": true,
+        "profile": "R2_OFFSET",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "Textualize__rich",
+      "method": "B2_QUERY_PROMOTION",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "no_FP32_master_attribute": true,
+        "profile": "R2_OFFSET",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "Textualize__rich",
+      "method": "DIAG_SINGLE_WRITE",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "no_FP32_master_attribute": true,
+        "profile": "R2_OFFSET",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    }
+  ],
+  "decision": "NO_PROMOTION_FROM_SMALL_SCREEN",
+  "quality": {
+    "NATIVE": {
+      "mean_KL": 0.0,
+      "mean_NLL": 1.2967765243743117,
+      "late_KL": 0.0,
+      "p99_KL": 0.0,
+      "top1pct_KL": 0.0,
+      "max_KL": 0.0,
+      "KL_positions": 3024,
+      "NLL_positions": 3021,
+      "delta_NLL_vs_Native": 0.0
+    },
+    "ENERGY_PROMOTION": {
+      "mean_KL": 0.09989718523057838,
+      "mean_NLL": 1.3975852144984062,
+      "late_KL": 0.1689281041920625,
+      "p99_KL": 1.9836988247636236,
+      "top1pct_KL": 3.1549754376809926,
+      "max_KL": 4.907645630162609,
+      "KL_positions": 3024,
+      "NLL_positions": 3021,
+      "delta_NLL_vs_Native": 0.10080869012409455
+    },
+    "B2_QUERY_PROMOTION": {
+      "mean_KL": 0.03234836900785566,
+      "mean_NLL": 1.3282431550694485,
+      "late_KL": 0.05596865082098126,
+      "p99_KL": 0.4450982330636296,
+      "top1pct_KL": 1.2258134965090963,
+      "max_KL": 3.999240617875095,
+      "KL_positions": 3024,
+      "NLL_positions": 3021,
+      "delta_NLL_vs_Native": 0.03146663069513678
+    },
+    "DIAG_SINGLE_WRITE": {
+      "mean_KL": 0.03258829732240787,
+      "mean_NLL": 1.327824360631859,
+      "late_KL": 0.05370616230719511,
+      "p99_KL": 0.44799258806654974,
+      "top1pct_KL": 1.4868129379327946,
+      "max_KL": 3.6523931651517967,
+      "KL_positions": 3024,
+      "NLL_positions": 3021,
+      "delta_NLL_vs_Native": 0.031047836257547257
+    }
+  },
+  "contrasts": {
+    "ENERGY_PROMOTION": {
+      "relative_KL_reduction": 0.6737816261069922,
+      "delta_KL": -0.0673088879081705,
+      "delta_NLL": -0.06976085386654729,
+      "document_wins": 3,
+      "document_ties": 0,
+      "pairs": [
+        {
+          "document": "astral-sh__uv",
+          "delta_KL": -0.06705001409438462,
+          "delta_NLL": -0.08166918690007831
+        },
+        {
+          "document": "BurntSushi__ripgrep",
+          "delta_KL": -0.07366871135621916,
+          "delta_NLL": -0.06790117473978854
+        },
+        {
+          "document": "Textualize__rich",
+          "delta_KL": -0.06120793827390772,
+          "delta_NLL": -0.05971219995977445
+        }
+      ],
+      "harmful_KL_mass": 8.14652302139212,
+      "beneficial_KL_mass": 211.68860005569968
+    },
+    "B2_QUERY_PROMOTION": {
+      "relative_KL_reduction": -0.007417014270300504,
+      "delta_KL": 0.00023992831455220417,
+      "delta_NLL": -0.0004187944375895203,
+      "document_wins": 2,
+      "document_ties": 0,
+      "pairs": [
+        {
+          "document": "astral-sh__uv",
+          "delta_KL": -0.006053710208378091,
+          "delta_NLL": -0.006491888512169596
+        },
+        {
+          "document": "BurntSushi__ripgrep",
+          "delta_KL": -0.003907852469795168,
+          "delta_NLL": -0.0023670887840178353
+        },
+        {
+          "document": "Textualize__rich",
+          "delta_KL": 0.010681347621829871,
+          "delta_NLL": 0.007602593983419531
+        }
+      ],
+      "harmful_KL_mass": 19.70791937554825,
+      "beneficial_KL_mass": 18.982376152342386
+    }
+  },
+  "population_CI": null,
+  "CI_reason": "Three documents: descriptive paired effects only; no token bootstrap.",
+  "task_accuracy": "NOT_MEASURED",
+  "timing_peak_memory": "NOT_MEASURED_THIS_SCREEN",
+  "documents": [
+    {
+      "document": "astral-sh__uv",
+      "method": "NATIVE",
+      "KL": 0.0,
+      "NLL": 1.324070555166372,
+      "late_KL": 0.0,
+      "prefix256_KL": 0.0,
+      "prefix512_KL": 0.0,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "BurntSushi__ripgrep",
+      "method": "NATIVE",
+      "KL": 0.0,
+      "NLL": 1.452435161879943,
+      "late_KL": 0.0,
+      "prefix256_KL": 0.0,
+      "prefix512_KL": 0.0,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "Textualize__rich",
+      "method": "NATIVE",
+      "KL": 0.0,
+      "NLL": 1.1138238560766198,
+      "late_KL": 0.0,
+      "prefix256_KL": 0.0,
+      "prefix512_KL": 0.0,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "astral-sh__uv",
+      "method": "ENERGY_PROMOTION",
+      "KL": 0.08772002437409354,
+      "NLL": 1.425849281450647,
+      "late_KL": 0.1571210757679094,
+      "prefix256_KL": 0.0056317924164850245,
+      "prefix512_KL": 0.0160802293869288,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "BurntSushi__ripgrep",
+      "method": "ENERGY_PROMOTION",
+      "KL": 0.1104743532834813,
+      "NLL": 1.5579767621507818,
+      "late_KL": 0.2029142447200864,
+      "prefix256_KL": 0.0046294770032881735,
+      "prefix512_KL": 0.015052529865050249,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "Textualize__rich",
+      "method": "ENERGY_PROMOTION",
+      "KL": 0.10149717803416027,
+      "NLL": 1.20892959989379,
+      "late_KL": 0.1467489920881917,
+      "prefix256_KL": 0.003739676760216458,
+      "prefix512_KL": 0.054785628042902,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "astral-sh__uv",
+      "method": "B2_QUERY_PROMOTION",
+      "KL": 0.026723720488087015,
+      "NLL": 1.3506719830627383,
+      "late_KL": 0.04619453092236707,
+      "prefix256_KL": 0.0024027743234603326,
+      "prefix512_KL": 0.006624819394636642,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "BurntSushi__ripgrep",
+      "method": "B2_QUERY_PROMOTION",
+      "KL": 0.040713494397057313,
+      "NLL": 1.4924426761950111,
+      "late_KL": 0.07222611457643124,
+      "prefix256_KL": 0.003053077672919737,
+      "prefix512_KL": 0.008184338082864869,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "Textualize__rich",
+      "method": "B2_QUERY_PROMOTION",
+      "KL": 0.02960789213842268,
+      "NLL": 1.141614805950596,
+      "late_KL": 0.04948530696414546,
+      "prefix256_KL": 0.0018115495206122096,
+      "prefix512_KL": 0.00908927038283787,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "astral-sh__uv",
+      "method": "DIAG_SINGLE_WRITE",
+      "KL": 0.020670010279708922,
+      "NLL": 1.3441800945505684,
+      "late_KL": 0.03474387783388179,
+      "prefix256_KL": 0.0025293895439167016,
+      "prefix512_KL": 0.006142146997982097,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "BurntSushi__ripgrep",
+      "method": "DIAG_SINGLE_WRITE",
+      "KL": 0.03680564192726214,
+      "NLL": 1.4900755874109934,
+      "late_KL": 0.06572191438772594,
+      "prefix256_KL": 0.0030059834973673715,
+      "prefix512_KL": 0.0069565864842027455,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "Textualize__rich",
+      "method": "DIAG_SINGLE_WRITE",
+      "KL": 0.04028923976025255,
+      "NLL": 1.1492173999340154,
+      "late_KL": 0.06065269469997762,
+      "prefix256_KL": 0.0019164410399713505,
+      "prefix512_KL": 0.019268899177310544,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    }
+  ],
+  "criteria": {
+    "finite_complete_12_trajectories": true,
+    "same_payload": true,
+    "KL_reduction_at_least_5pct": false,
+    "at_least_two_document_wins": true,
+    "delta_NLL_at_most_0_001": true
+  }
+}
