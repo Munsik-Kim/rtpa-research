@@ -37,6 +37,8 @@ jobs:
         run: |
           python -m rtpa_research demo --out recomputed-upgrade-demo.json
           python -m rtpa_research.fa_evidence --out recomputed-fa
+          python -m rtpa_research single-write-evidence --out recomputed-single-write
+          python -m rtpa_research.screen_report --out recomputed-single-write-screen
       - name: Reconstruct the published upgrade evidence without GPU execution
         run: python scripts/reproduce_upgrade.py --root . --write-generated recomputed-upgrade --verify
       - name: Independently audit token scalars and frozen numerical contracts

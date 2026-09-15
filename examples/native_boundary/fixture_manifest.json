@@ -1,0 +1,56 @@
+{
+  "schema": "rtpa.native_boundary_minimal.v1",
+  "purpose": "One observed token/head reduction boundary; no prompt, token IDs, model weights, or full 16-head state.",
+  "fixture_file": "native_boundary_fixture.npz",
+  "fixture_sha256": "3e36779d4251c8584cc86cd352f76e91b59b4a9b35e5ea86a9df8c5cfb40681f",
+  "fixture_bytes": 68374,
+  "source": {
+    "model": "Qwen/Qwen3.5-0.8B-Base",
+    "model_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+    "model_license": "Apache-2.0",
+    "model_url": "https://huggingface.co/Qwen/Qwen3.5-0.8B-Base",
+    "source_stage": "RTPA_NATIVE_BOUNDARY_STAGE1_20260914",
+    "source_fixture_sha256": "81d5734e28899faf5f10629d97b3f031dc9389fd088f279b991d2c4d1bab8a23",
+    "source_fixture_availability": "LOCAL_ONLY; intentionally excluded from public candidate",
+    "source_native_implementation_sha256": "d67880b98f47d55a9d40679c901a740aa0618b97458824cab2abe9a1f7861be6"
+  },
+  "coordinates": {
+    "token": 1,
+    "layer": 12,
+    "head": 3,
+    "key_row": 51,
+    "value_column": 37,
+    "zero_based": true
+  },
+  "expected": {
+    "elementwise_product_sha256": "137ca6034ac6daaedfb81526900f7c14982e5e6cd4b0f6c4d0f4ee9a8f4cdbcf",
+    "CPU_projection": -0.0022271242924034595,
+    "CUDA_projection": -0.002227124059572816,
+    "CPU_updated_FP32": -1.448206603527069e-07,
+    "CUDA_or_observed_native_updated_FP32": -1.4479155652225018e-07,
+    "CPU_stored_BF16_as_FP32": -1.4528632164001465e-07,
+    "CUDA_or_observed_native_stored_BF16_as_FP32": -1.4435499906539917e-07,
+    "adjacent_BF16_midpoint": -1.448206603527069e-07,
+    "CPU_minus_midpoint": 0.0,
+    "observed_native_minus_midpoint": 2.9103830456733704e-11
+  },
+  "interpretation": {
+    "established": "Same stored FP32 products reduce differently on the recorded CPU/CUDA path and cross an adjacent BF16 rounding midpoint.",
+    "not_established": [
+      "A universal CPU/CUDA difference",
+      "An upstream implementation defect",
+      "Whole-model or codec quality",
+      "Bitwise behavior on untested hardware or software"
+    ]
+  },
+  "privacy_review": {
+    "prompt_text": false,
+    "token_ids": false,
+    "credentials": false,
+    "personal_paths": false,
+    "full_model_state": false,
+    "one_of_sixteen_state_heads": true,
+    "model_weights": false,
+    "numeric_values": 16644
+  }
+}

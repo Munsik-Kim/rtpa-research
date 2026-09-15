@@ -1,0 +1,81 @@
+{
+  "status": "PACKED_CAL_AND_COMPLETED_FIXED_DEV_VERIFIED",
+  "methods": {
+    "ENERGY_PROMOTION": {
+      "quantized_layers": 18,
+      "heads": 288,
+      "payload_bytes": 5566464,
+      "index_bytes": 294912,
+      "shared_H32_bytes": 4096,
+      "quantized_writes": 2538,
+      "persistent_state_quantization": true,
+      "no_FP32_master_attribute": true,
+      "code_dtype": "uint8",
+      "metadata_dtype": "float16",
+      "profile": "R2_OFFSET"
+    },
+    "DIAG_SINGLE_WRITE": {
+      "quantized_layers": 18,
+      "heads": 288,
+      "payload_bytes": 5566464,
+      "index_bytes": 294912,
+      "shared_H32_bytes": 4096,
+      "quantized_writes": 2538,
+      "persistent_state_quantization": true,
+      "no_FP32_master_attribute": true,
+      "code_dtype": "uint8",
+      "metadata_dtype": "float16",
+      "profile": "R2_OFFSET"
+    },
+    "B2_QUERY_PROMOTION": {
+      "quantized_layers": 18,
+      "heads": 288,
+      "payload_bytes": 5566464,
+      "index_bytes": 294912,
+      "shared_H32_bytes": 4096,
+      "quantized_writes": 2538,
+      "persistent_state_quantization": true,
+      "no_FP32_master_attribute": true,
+      "code_dtype": "uint8",
+      "metadata_dtype": "float16",
+      "profile": "R2_OFFSET"
+    }
+  },
+  "per_head": {
+    "low_codes": 15360,
+    "FP16_scales": 960,
+    "FP16_offsets": 960,
+    "FP16_high8": 2048,
+    "payload": 19328,
+    "int64_row_indices": 1024
+  },
+  "shared_H32_per_policy": 4096,
+  "all18_payload": 5566464,
+  "all18_indices": 294912,
+  "payload_plus_indices_plus_one_H32": 5865472,
+  "payload_bits_per_value": 9.4375,
+  "including_indices_and_one_H32_bits_per_value": 9.944444444444445,
+  "BF16_target_state_bytes": 9437184,
+  "target_payload_saving_fraction": 0.41015625,
+  "runtime_dynamic_correction_state_bytes": 0,
+  "padding_and_offsets_beyond_tensor_layout_bytes": 0,
+  "allocator_Python_object_overheads": "NOT_INCLUDED",
+  "FP32_decoded_scratch": "Transient; poison/re-read checked on CAL, no persistent master attribute",
+  "three_warmed_method_policies_H32_total_bytes": 12288,
+  "method_indices_shared_across_requests": true,
+  "whole_model_peak_saving": "NOT_MEASURED",
+  "timing_status": "COMPLETE",
+  "previous_checkpoint_sha256": "cb30037fd51f9026054ac10133287ea096b2cbfffce5903f5e3b3b754ccfaea3",
+  "method_rows_origin": "Inherited CAL observations: 141 tokens and 2538 layer-writes per quantized method; not totals for the whole DEV run",
+  "cumulative_quantized_layer_writes": 1066302,
+  "source_basis": "Stored policy arrays plus CPU bool tensor construction in run_model.policy(); not a process RSS measurement",
+  "host_CPU_bool_mask_bytes_per_method": {
+    "ENERGY_PROMOTION": 36864,
+    "DIAG_SINGLE_WRITE": 36864,
+    "B2_QUERY_PROMOTION": 36864
+  },
+  "host_CPU_bool_mask_bytes_all_three": 110592,
+  "GPU_payload_and_one_policy_indices_H32_bytes": 5865472,
+  "CPU_mask_plus_GPU_payload_and_one_policy_bytes": 5902336,
+  "scope_note": "Host mask data is additional to GPU payload/indices/H32. Python objects, process allocator, model/input and unrelated caches are separate, not zero."
+}

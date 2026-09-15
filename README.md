@@ -1,57 +1,67 @@
 # RTPA — Output-Aware Recurrent-State Quantization
 
-RTPA quantizes the **persistent recurrent state between token updates**, not
-model weights, activations or attention KV. Equal-magnitude state errors can
-affect future readouts differently: RTPA uses offline response measurements
-for fixed precision allocation (**RTPA-DIAG**) and bounded runtime integer-code
-correction (**FA_CODE**). Their quality and cost results remain separate.
+RTPA studies how quantization errors in **persistent recurrent state between
+token updates** affect future model outputs—not weight, activation or attention
+KV quantization. It implements offline response-based precision masks and causal
+integer-code correction, with reproducible evaluation code and small numerical
+boundary examples. Output-aware allocation improved fidelity over energy-only
+controls in evaluated settings. Additional gains over a strong query-weighted
+baseline, and practical end-to-end efficiency, remain unestablished.
 
-You can run a model-free CPU demonstration, reconstruct public evidence, or
-use the limited opt-in GDN adapter. GDN2 is **operator-tested only**, not a
-verified pretrained-model integration. See the [current guide](docs/QUICKSTART_R4.md).
+- **RTPA-DIAG:** offline output response compressed into a fixed precision mask.
+- **FA_CODE:** a frozen offline metric and current state drive bounded causal
+  integer-code correction, with additional runtime computation.
 
-## Fixed-codec allocation results
+“Future-aware” does **not** mean access to actual future tokens at inference.
+The two paths have separate quality and cost results. Current allocation-candidate
+search is stopped; the reproducible research code and diagnostics are maintained.
 
-The table is copied from the [canonical R4 result](results/diag_r4/benchmark_tables.md),
-not a new run: Qwen3.5-0.8B-Base, all 18 GDN layers, eight source documents,
-legacy P_PRE/high8, **19,328 B/head** for every mixed method. KL is
-`Native || method` in nat/token. Native uses BF16 model/cache and FP32 recurrent
-updates, not an all-FP32 oracle.
+## Latest fixed-mask quality screen
 
-| Method | Mean KL, nat/token | Mean NLL, nat/token | ΔNLL vs Native | exp(ΔNLL) |
-|---|---:|---:|---:|---:|
-| Native | 0 | 1.301713 | 0 | 1 |
-| Promotion energy / B1 | 0.0055315696 | 1.3075968 | 0.0058837611 | 1.0059011 |
-| Query weighted / B2 | 0.0037010873 | 1.3054351 | 0.0037221157 | 1.0037291 |
-| Independent writes + 2c / B3 | 0.0045103933 | 1.3059561 | 0.0042430643 | 1.0042521 |
-| Coherent DIAG / B4 | 0.0042546703 | 1.3062713 | 0.0045582713 | 1.0045687 |
+Qwen3.5-0.8B-Base · three software documents × 1,024 tokens · all 18 GDN layers ·
+R2_OFFSET/high8. Native uses BF16 weights/cache and FP32 recurrence.
+KL is `Native || method`; KL and ΔNLL are nat/token. No task accuracy was measured.
 
-DIAG's mean KL is **23.08% lower than B1**, but **14.96% higher than B2**;
-B2 wins all eight document comparisons. B2 is a simple fixed query-weighted
-control, not a novelty claim. The [attribution study](docs/DIAG_ATTRIBUTION_R4.md)
-explains the score differences, whole-path aliases, paired intervals and tails.
-These observations support studying output-sensitive allocation, not assuming
-that the most elaborate score is best.
+| Method | Mean Native-KL | ΔNLL vs Native | Target state bytes |
+|---|---:|---:|---:|
+| NATIVE | 0 | 0 | 9,437,184 |
+| ENERGY_PROMOTION | 0.0998971852 | 0.10080869 | 5,566,464 |
+| B2_QUERY_PROMOTION | 0.032348369 | 0.0314666307 | 5,566,464 |
+| DIAG_SINGLE_WRITE | 0.0325882973 | 0.0310478363 | 5,566,464 |
+
+**NO_PROMOTION_FROM_SMALL_SCREEN:** DIAG's pooled KL is **0.742% higher than B2**,
+despite 2/3 document wins and NLL 0.0004187944 nat/token lower than B2.
+All 12 trajectories completed finitely. The preregistered 5% KL-improvement
+screen was not met; three documents do not establish population inferiority or
+equivalence. [Canonical tables](results/fidelity_screen_20260915/tables.md) ·
+[Interpretation and tails](docs/SCREEN_INTERPRETATION.md) · [Registration](docs/FIDELITY_SCREEN.md).
+
+Separate historical evidence remains visible: [R4 coherent DIAG](results/diag_r4/benchmark_tables.md)
+had **14.96% higher KL than B2**, losing all eight document comparisons under a
+different codec/panel. [FA_CODE's three-layer GDN comparison](results/upgrade/benchmark_tables.md)
+reduced KL by **3.048% versus stored-nearest**, with **49.8% higher paired latency**.
+These are not combined gains or a controlled comparison with this single-write screen.
 
 ## Storage and limits
 
-The mixed payload includes UINT8 values, FP16 metadata and eight FP16 high rows:
-**9.4375 bits/value, 41.02% fewer state-payload bytes than a BF16 head**.
-Across 18 GDN layers, target state is 9,437,184 → 5,566,464 B. Shared parameters,
-indices and scratch are separate; this is **not a 41% whole-model VRAM saving**.
-The implementation uses eager tensor encode/decode, not a fused packed kernel.
+Mixed storage is **19,328 B/head, 9.4375 bits/value** including FP16 metadata/high8:
+41.02% fewer target-payload bytes than BF16. With GPU indices/H32, target+policy
+is **5,865,472 B**, about 37.85% below BF16 target bytes; CPU masks and scratch
+are separate. [Earlier fresh-process R2 measurements](results/diag_r2/memory_tables.md)
+found steady allocated memory about **3.41 MiB lower**, but peak allocated about
+**7.28 MiB higher**, than Native. Those are not measurements of this screen and
+do not imply 41% whole-model VRAM savings or faster inference.
 
-R4 timing and new peak-VRAM measurements are incomplete; a +5% latency bound
-and added task accuracy are not established. Legacy FP16 zero-point overflow
-and 7/18 Native-fidelity check failures remain. No stable default is promoted.
-Earlier R2/FA_CODE outcomes, cost regressions and task ties remain in
-[Results](docs/RESULTS.md); rejected codec candidates remain in
-[Grid feedback](docs/GRID_FEEDBACK.md). See [measurement scope](docs/BENCHMARKS.md)
-and [limitations](docs/LIMITATIONS.md) before model use.
+The adapter is eager, not a fused serving kernel. Legacy metadata overflow and
+R2's legacy-relative quality regression remain; R4 timing is incomplete.
+GDN2 is **operator-tested only**, not pretrained-model support. See
+[Results](docs/RESULTS.md), [Native boundary and grid limits](docs/GRID_FEEDBACK.md),
+and [Limitations](docs/LIMITATIONS.md), including unverified DAMP author-code provenance.
 
 ## Platform and quickstart
 
-**Before installation:** source builds, restricted PT loading and maintenance
+**Before installation:** the evidence-inclusive wheel is about **175 MB**; it is
+not a lightweight runtime distribution. Source builds, restricted PT loading and maintenance
 R4 verification require POSIX descriptor-relative no-follow access (`O_NOFOLLOW`
 and `dir_fd`). The tested environment is **Linux/WSL2, Python 3.11**. Native
 Windows support for these paths is not provided by this revision. Missing
@@ -65,18 +75,20 @@ python3.11 -m venv ../rtpa-demo-env
 source ../rtpa-demo-env/bin/activate
 python -m pip install .
 python -m rtpa_research --help
-python -m rtpa_research demo --out demo.json
-python -m rtpa_research verify --out recomputed
-python -m rtpa_research.maintenance_verify --out recomputed-r4.json
-python -m rtpa_research.grid_verify --out recomputed-grid-check.json
+python -m rtpa_research.screen_report --out recomputed-screen
+python -m rtpa_research single-write-evidence --out recomputed-single-write
 ```
 
-These CPU commands do not import Torch or run a model. R4's
-`PASS_HISTORICAL_WITH_METADATA_MAPPING` verifies historical evidence in an
-authenticated initializer projection. Current input/CLI boundaries have CPU
-fixture and installation checks; **current GPU fit/evaluate end-to-end equivalence
-was not run by maintenance**. Public grid checks do not replay the 18 LOCAL_ONLY
-parent captures. Use `--version` to record software/source identity.
+These commands reconstruct public scalar observations, not raw logits or GPU
+execution, and do not import Torch. Use a new output directory and record
+`python -m rtpa_research --version`. The [current guide](docs/QUICKSTART_R4.md)
+separates public reconstruction, the optional Torch example and pinned-model reruns.
+
+The [one-head Native-boundary example](examples/native_boundary/README.md)
+is an optional Torch CPU check, without model weights:
+`python -m rtpa_research native-boundary --device cpu`. With an existing compatible
+Torch environment, it can also run directly from the checkout:
+`python examples/native_boundary/native_boundary_demo.py --device cpu`.
 
 ## Method, evidence and use
 

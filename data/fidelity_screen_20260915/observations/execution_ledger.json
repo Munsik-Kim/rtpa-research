@@ -1,0 +1,30 @@
+{
+  "run_id": "RTPA_FROZEN_SINGLE_WRITE_SCREEN_20260915_V1",
+  "model_forward_API_calls": 12288,
+  "model_input_positions": 12288,
+  "quantized_layer_writes": 165888,
+  "GPU_numerical_seconds": 1284.1256545709984,
+  "phases": [
+    {
+      "document": "astral-sh__uv",
+      "start_UTC": "2026-09-15T06:43:55.075352+00:00",
+      "status": "COMPLETE",
+      "seconds_including_metrics_IO": 415.4956842350002
+    },
+    {
+      "document": "BurntSushi__ripgrep",
+      "start_UTC": "2026-09-15T06:50:50.607286+00:00",
+      "status": "COMPLETE",
+      "seconds_including_metrics_IO": 440.6285050789993
+    },
+    {
+      "document": "Textualize__rich",
+      "start_UTC": "2026-09-15T06:58:11.270220+00:00",
+      "status": "COMPLETE",
+      "seconds_including_metrics_IO": 428.0014652569989
+    }
+  ],
+  "model_load_seconds": [
+    1.2586238730000332
+  ]
+}

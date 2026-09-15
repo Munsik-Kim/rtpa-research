@@ -2,6 +2,7 @@
 
 This is the single current entrypoint. `python -m rtpa_research --help` lists
 the supported commands; `--version` reports development software/source identity.
+The module entrypoints below supplement that top-level command index.
 The [legacy](QUICKSTART.md) and [R2](QUICKSTART_R2.md) guides are historical paths.
 Read [input trust, packaging and versions](MAINTENANCE.md) before loading PT files.
 
@@ -13,6 +14,46 @@ by this revision. Missing capabilities fail closed; no weaker fallback is used.
 Other installed CPU commands have separate requirements; Windows/macOS
 compatibility has not been established here. A simulated missing capability is
 not an actual Windows execution test.
+
+## Start with the included evidence
+
+The evidence-inclusive wheel is approximately **175 MB** (about 225 MB
+uncompressed in the reviewed local candidate), not a slim runtime package.
+From a Python 3.11 checkout, install into your own virtual environment:
+
+```bash
+python -m pip install .
+python -m rtpa_research.screen_report --out recomputed-screen
+python -m rtpa_research single-write-evidence --out recomputed-single-write
+```
+
+Use new output directories. These NumPy-based commands need no Torch, GPU,
+weights, credentials or original machine paths. The first reconstructs the
+latest frozen single-write screen; the second reconstructs the earlier stopped
+task-design run, TRAIN statistics and retained Native-boundary scalar receipts.
+Neither reconstructs full logits or independently reruns a GPU experiment.
+
+For the model-free numerical-boundary example, use an **existing compatible
+Torch** environment. No model weights are needed:
+
+```bash
+python -m rtpa_research native-boundary --device cpu
+# Direct checkout alternative; no RTPA package installation required:
+python examples/native_boundary/native_boundary_demo.py --device cpu
+```
+
+It prints observed values and environment before checking recorded expectations.
+Its CPU/CUDA distinction is environment-specific. CPU execution does not validate
+the recorded CUDA result, and a mismatch is not automatically an upstream bug.
+
+To rerun the **frozen single-write policy**, follow the exact
+[opt-in command and pinned environment](FIDELITY_SCREEN.md#commands).
+It uses included policy/token files and locally acquired checkpoint weights;
+**past TRAIN PT captures are not required for that evaluation**. Reproducing the
+original fitting/anchor capture does require LOCAL_ONLY inputs. The older R4
+commands below use another codec/policy and must not substitute for this screen.
+
+## Other commands and historical R4 scope
 
 | Command / operation | Actual scope and extra inputs |
 |---|---|
@@ -37,7 +78,7 @@ layers. Its numerical evidence predates maintenance `1.3.1.dev0`; the old tag is
 The authoritative [quality/NLL table](../results/diag_r4/benchmark_tables.md)
 includes every baseline and the adverse B4/B2 comparison.
 
-This guide uses the measured **legacy P_PRE quality reference**. The new
+The R4 examples below use the measured **legacy P_PRE quality reference**. The new
 rounding candidate failed DEV acceptance and is not the default. The known
 FP16 zero-point overflow remains a limitation. Read the
 [study](DIAG_ATTRIBUTION_R4.md) and [method](METHOD.md) before model execution.

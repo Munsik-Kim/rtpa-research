@@ -1,0 +1,22 @@
+{
+  "status": "PASS_CLEAN_COPY_CPU_OBSERVATION_RECONSTRUCTION",
+  "checks": [
+    {
+      "label": "one",
+      "result_sha256": "5df545238137a754a7e225f4acebe89bfd12d647fbef5b2e2d7a592b5287d4fc",
+      "table_sha256": "ffdc1a9b1aa73ce38d9a25fe36ff11b488628c9f241de1573220806704824be4"
+    },
+    {
+      "label": "two",
+      "result_sha256": "5df545238137a754a7e225f4acebe89bfd12d647fbef5b2e2d7a592b5287d4fc",
+      "table_sha256": "ffdc1a9b1aa73ce38d9a25fe36ff11b488628c9f241de1573220806704824be4"
+    }
+  ],
+  "files": 35,
+  "bytes": 2377978,
+  "wall_seconds": 0.15551138299997547,
+  "new_model_forwards": 0,
+  "weights_or_original_capture_required": false,
+  "original_working_directory_required": false,
+  "independent_GPU_replication": false
+}

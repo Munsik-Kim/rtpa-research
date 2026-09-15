@@ -10,13 +10,17 @@ peak memory or a latency improvement.
 This is the common decision framework for the repository, not a replacement for
 an experiment's frozen protocol or historical decision. The detailed evidence
 lives in the linked study records rather than duplicated development logs.
+After the [completed single-write screen](SCREEN_INTERPRETATION.md), current
+allocation-candidate search is stopped. Maintain the implemented fixed masks,
+causal code correction and diagnostic examples; no new score search is implied
+by the historical continuation rules below.
 
 ## Three research axes
 
 | Axis | Question and permitted claim | Current evidence and limit |
 |---|---|---|
 | Error theory | When do direction and temporal correlation make equal state-error energy produce different output risk? | Standard frozen-response identities and CPU counterexamples establish the possibility. Actual codec measurements must establish which conditions occur; they do not turn a frozen identity into an exact model-KL decomposition. |
-| Offline compression of output information | Can response statistics be compressed into a useful fixed precision mask without future runtime inputs? | DIAG implements fixed selection from `Kii+2ci`; it does not diagonalize the actual recurrence. Output-aware selection has beaten simpler energy scores in some panels, but coherent DIAG has not consistently beaten strong query-weighted alternatives. |
+| Offline compression of output information | Can response statistics be compressed into a useful fixed precision mask without future runtime inputs? | Coherent `Kii+2ci` and the distinct single-write response-weighted promotion implement fixed selection, not a diagonalized recurrence. Output-aware selection has beaten energy-only controls in some panels; consistent extra value over strong query-weighted controls remains unestablished. |
 | Matched empirical value | Does the method improve quality, task behavior, stability and cost against a strong baseline at the same codec and payload? | Output-preservation gains exist within stated scopes. Additional task accuracy and a small measured latency upper bound remain unestablished. Codec regressions and numerical failures remain part of the evidence. |
 
 The current algebra, assumptions and primary-source verification are in
@@ -85,11 +89,29 @@ remain distinct issues. Lag statistics are explicitly uncentered physical
 error similarities, not centered Pearson correlations or independence tests.
 
 The [reference-arithmetic sensitivity probe](../results/grid_feedback/fidelity_probe.json)
-retains `UNRESOLVED_NATIVE_PATH_FIDELITY`. The historical 7/18 failures at
-normalized L2 `1e-4` are not removed, relabeled as Native equality, or cured
-by a larger tolerance. Equation-level checks remain useful within that limit.
+retains its historical `UNRESOLVED_NATIVE_PATH_FIDELITY` decision and 7/18 CPU
+threshold exceedances at normalized L2 `1e-4`. These are not seven Native
+NaN/Inf failures. The [boundary follow-up](GRID_FEEDBACK.md#native-readout-conformance)
+now reproduces the parent **FP32-state-recomputed readout** byte-for-byte on
+the same GPU for all 18 retained combinations: two Stage 1 cases reused and
+16 Stage 2 cases newly replayed, without a new model forward in Stage 2.
 
-## Conditional next steps, not an expanding search
+CPU/CUDA update-sum and BF16-feedback interventions explain the tested boundary
+in four combinations, not all 18. Actual Native cache comparison still covers
+only the two Stage 1 observations; readout equality cannot supply missing
+state observations. CPU equation checks, same-device captured-readout checks,
+actual Native cache checks and whole-model task evaluation remain separate.
+FP64 matching a particular Native execution less well is not evidence of lower
+mathematical accuracy.
+
+The codec screens above compare against an FP32-persistent CPU equation on
+`[16,256)`, whereas the fidelity probe compares BF16-feedback replay against
+the parent readout on `[0,256)`. The failed CPU gates keep their stated scope
+and values. Common CPU execution does not prove cancellation of codec-specific
+roundoff or transfer of candidate rankings to GPU. P_STORE overflow, DIAG's
+adverse B2 comparison, task outcomes and cost limits are not changed or rerun.
+
+## Completed cycle decisions and historical continuation rules
 
 At most two practical codec candidates are allowed in this cycle. The explicit
 ZERO_INCLUSIVE contract occupies the first slot and failed its registered CPU
@@ -104,7 +126,7 @@ renamed as a new success. Candidate completion, adverse values and promotion
 are recorded in the [final cycle decision](../results/grid_feedback/decision.json).
 New GPU DEV, confirmation, task, timing and kernel work were therefore not run.
 
-The continuation rules are:
+The frozen cycle's continuation rules were:
 
 1. Keep the legacy mask fixed while testing any candidate codec. Judge repeated
    and late readout SSE, document limits, clipping, range failures and actual
@@ -135,6 +157,19 @@ result with reproducible observations rather than adding seeds, codecs,
 guards, dither, residual memory or models until something wins. GDN2 remains
 at its actually tested operator scope; no pretrained-model support follows
 from a scalar or frozen replay demonstration.
+
+## Included boundary example and current maintenance state
+
+The [one-head model-weight-free fixture and script](../examples/native_boundary/README.md)
+now preserve a scoped reduction/BF16 rounding boundary with source attribution.
+They are available code, not an upstream bug report, accepted contribution or
+whole-model conformance proof. Its 128×128 shape matters; another environment
+may not reproduce the recorded CPU/CUDA distinction.
+
+The separate fixed single-write screen did not meet its primary B2-relative
+promotion criterion. Maintain these reproducible research assets rather than
+expand scores or tune the three consumed documents. No kernel project,
+serving integration or new experiment is an automatic next step.
 
 ## Reproducibility levels and implementation boundaries
 

@@ -1,0 +1,5497 @@
+{
+  "decision": "NO_INFORMATIVE_OPERATING_POINT",
+  "calibration": {
+    "status": "COMPLETE",
+    "new_revision": "SINGLE_WRITE_PROMOTION_V1",
+    "TRAIN_documents": 6,
+    "heads": 288,
+    "same_residual_shared_call": true,
+    "same_signed_promotion_low_high_errors": true,
+    "same_runtime_codec_payload": true,
+    "scores_recomputed_from_case_stats_exact": true,
+    "masks_recomputed_from_scores_exact": true,
+    "W_actual_entry_q95_q05_case_head": {
+      "n": 1722,
+      "mean": 54191295315947.5,
+      "median": 1349.3063406901642,
+      "q05": 60.87140310208832,
+      "q95": 6927870.863007049
+    },
+    "W_actual_entry_CV_case_head": {
+      "n": 1728,
+      "mean": 5.755676883921934,
+      "median": 4.6021697024408645,
+      "q05": 1.990624323441554,
+      "q95": 12.071065045249817
+    },
+    "W_actual_entry_IQR_median_case_head": {
+      "n": 1728,
+      "mean": 4.88135867633575,
+      "median": 3.845664342766531,
+      "q05": 1.2951328606392603,
+      "q95": 9.638302978059409
+    },
+    "undefined_q95_q05": 6,
+    "weights_include_terminal_zero_horizon": true,
+    "anisotropy_scope": "Within each case/head, weights pooled over write times and rows; temporal horizon variation is not separated from directional variation. Not a fixed-t spectral epsilon estimate.",
+    "E_D_overlap_mean": 2.4583333333333335,
+    "E_D_replaced_rows": 1596,
+    "E_D_Spearman": {
+      "n": 288,
+      "mean": 0.4039988323810626,
+      "median": 0.38445339681377033,
+      "q05": 0.04280437419886469,
+      "q95": 0.7705270898187145
+    },
+    "head_details": [
+      {
+        "layer": 0,
+        "head": 0,
+        "E_D_spearman": 0.6254005676616005,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.00013198056481498335,
+          "DIAG": 0.0004864857428406423,
+          "B2": 0.1570759659445675
+        },
+        "diagonal_single_write_surrogate_gain": 7.555722175128395e-12,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 0,
+        "head": 1,
+        "E_D_spearman": 0.4744552279802234,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.015343186114079884,
+          "DIAG": 0.024115234311626352,
+          "B2": 0.004253929161714122
+        },
+        "diagonal_single_write_surrogate_gain": 2.3462172303150954e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 0,
+        "head": 2,
+        "E_D_spearman": 0.5010471983153268,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.012123758881077144,
+          "DIAG": 0.0005767901813815458,
+          "B2": 0.001870548446963465
+        },
+        "diagonal_single_write_surrogate_gain": 0.00015316522212355902,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 0,
+        "head": 3,
+        "E_D_spearman": 0.7835500560884595,
+        "E_D_overlap": 7,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.010339995568942807,
+          "DIAG": 0.0008538880065768038,
+          "B2": 0.0008106886985228378
+        },
+        "diagonal_single_write_surrogate_gain": 7.833043244104712e-13,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 0,
+        "head": 4,
+        "E_D_spearman": 0.19064731734114632,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.009823404824526094,
+          "DIAG": 0.007593116270988686,
+          "B2": 0.0034073633606680987
+        },
+        "diagonal_single_write_surrogate_gain": 1.7063137208547752e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 0,
+        "head": 5,
+        "E_D_spearman": 0.6278096960263688,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.006795318141719622,
+          "DIAG": 0.0002988219946405517,
+          "B2": 0.001534485461318714
+        },
+        "diagonal_single_write_surrogate_gain": 3.127989348666638e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 0,
+        "head": 6,
+        "E_D_spearman": 0.9288420161142648,
+        "E_D_overlap": 7,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.022947983436115437,
+          "DIAG": 0.009720596996010737,
+          "B2": 0.01763576244267828
+        },
+        "diagonal_single_write_surrogate_gain": 2.7068437199916485e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 0,
+        "head": 7,
+        "E_D_spearman": 0.7510185863394983,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.017327031185317626,
+          "DIAG": 0.03982324033537928,
+          "B2": 0.007466414160444464
+        },
+        "diagonal_single_write_surrogate_gain": 2.9845093888800844e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 0,
+        "head": 8,
+        "E_D_spearman": 0.7000492125984252,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.024629210097957332,
+          "DIAG": 0.008934744874919992,
+          "B2": 0.011768042469908029
+        },
+        "diagonal_single_write_surrogate_gain": 0.000394518007581141,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 0,
+        "head": 9,
+        "E_D_spearman": 0.45101057498626623,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.00858490497153823,
+          "DIAG": 0.0009744045628397663,
+          "B2": 0.00048023495719236883
+        },
+        "diagonal_single_write_surrogate_gain": 2.683058986280072e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 0,
+        "head": 10,
+        "E_D_spearman": 0.23984847097601172,
+        "E_D_overlap": 5,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.008114829492774322,
+          "DIAG": 0.007862491996466204,
+          "B2": 0.0013126770368105335
+        },
+        "diagonal_single_write_surrogate_gain": 8.695333113824855e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 0,
+        "head": 11,
+        "E_D_spearman": 0.6036268540560337,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.06006265711942172,
+          "DIAG": 0.006122888448820252,
+          "B2": 0.003876136756486232
+        },
+        "diagonal_single_write_surrogate_gain": 1.333883971455931e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 0,
+        "head": 12,
+        "E_D_spearman": 0.615048754806812,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.008297563799203374,
+          "DIAG": 0.0016919981209067268,
+          "B2": 5.126372166716397e-05
+        },
+        "diagonal_single_write_surrogate_gain": 9.890706963701633e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 0,
+        "head": 13,
+        "E_D_spearman": 0.6199070683025087,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.016260814448722332,
+          "DIAG": 0.0023300772858236727,
+          "B2": 0.0014935838847607535
+        },
+        "diagonal_single_write_surrogate_gain": 1.2027685057902606e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 0,
+        "head": 14,
+        "E_D_spearman": 0.12760368980040285,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.005618604221075706,
+          "DIAG": 0.02883848851140335,
+          "B2": 0.0023849879140082227
+        },
+        "diagonal_single_write_surrogate_gain": 2.7398682703891508e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 0,
+        "head": 15,
+        "E_D_spearman": 0.6325077824574253,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.004689079475112306,
+          "DIAG": 0.011557650141589732,
+          "B2": 0.0012196552564505848
+        },
+        "diagonal_single_write_surrogate_gain": 6.0537197448744414e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 1,
+        "head": 0,
+        "E_D_spearman": 0.19622665262772385,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.003429215412460539,
+          "DIAG": 0.0004860473025452464,
+          "B2": 0.007321018972755865
+        },
+        "diagonal_single_write_surrogate_gain": 1.5596167101312606e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 1,
+        "head": 1,
+        "E_D_spearman": 0.5018311664530306,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.01372751297099169,
+          "DIAG": 0.0076036326383590695,
+          "B2": 0.03219785626848089
+        },
+        "diagonal_single_write_surrogate_gain": 5.246527862838298e-09,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 1,
+        "head": 2,
+        "E_D_spearman": 0.3789541750595129,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 4,
+        "boundary_margins": {
+          "ENERGY": 0.0336472248369673,
+          "DIAG": 0.0012600668682151285,
+          "B2": 0.005043623167810002
+        },
+        "diagonal_single_write_surrogate_gain": 1.9364084669535297e-10,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 1,
+        "head": 3,
+        "E_D_spearman": 0.5008183025086981,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.006064558495281359,
+          "DIAG": 0.0005566168046117628,
+          "B2": 0.0006416453462701208
+        },
+        "diagonal_single_write_surrogate_gain": 1.2557282410538653e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 1,
+        "head": 4,
+        "E_D_spearman": 0.3670859274858085,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.01679386527922984,
+          "DIAG": 0.06155878762475703,
+          "B2": 0.007501275903675526
+        },
+        "diagonal_single_write_surrogate_gain": 5.647156261055668e-09,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 1,
+        "head": 5,
+        "E_D_spearman": 0.3880985625343344,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.006704585002545678,
+          "DIAG": 0.00015673280133258167,
+          "B2": 0.0007196962388616749
+        },
+        "diagonal_single_write_surrogate_gain": 1.4000236298922453e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 1,
+        "head": 6,
+        "E_D_spearman": 0.31518952572788866,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.008394749423953858,
+          "DIAG": 0.013418178893283143,
+          "B2": 0.007093576492557605
+        },
+        "diagonal_single_write_surrogate_gain": 3.3942532587932684e-09,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 1,
+        "head": 7,
+        "E_D_spearman": 0.8082711499725325,
+        "E_D_overlap": 5,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.003791830158447613,
+          "DIAG": 0.0010758203785283134,
+          "B2": 0.0009730854621232914
+        },
+        "diagonal_single_write_surrogate_gain": 1.1704921244686429e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 1,
+        "head": 8,
+        "E_D_spearman": 0.2969522523347372,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.08714066466416928,
+          "DIAG": 0.0026956127500875854,
+          "B2": 0.000284491303825701
+        },
+        "diagonal_single_write_surrogate_gain": 3.241951454275205e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 1,
+        "head": 9,
+        "E_D_spearman": 0.6002964200695843,
+        "E_D_overlap": 5,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.08159850173606849,
+          "DIAG": 0.001635160857010718,
+          "B2": 0.001807854418291967
+        },
+        "diagonal_single_write_surrogate_gain": 1.9809616086327057e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 1,
+        "head": 10,
+        "E_D_spearman": 0.09795596044680462,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0060595192157135115,
+          "DIAG": 0.0023870407025905595,
+          "B2": 0.0016568186353396561
+        },
+        "diagonal_single_write_surrogate_gain": 2.3567764097181188e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 1,
+        "head": 11,
+        "E_D_spearman": 0.3447228071781725,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.017699122596534875,
+          "DIAG": 0.000933563906152396,
+          "B2": 0.0004512608272665036
+        },
+        "diagonal_single_write_surrogate_gain": 1.4065528129217236e-10,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 1,
+        "head": 12,
+        "E_D_spearman": 0.09164415857901483,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.008984220170246464,
+          "DIAG": 0.0354987996741042,
+          "B2": 0.007024994177068036
+        },
+        "diagonal_single_write_surrogate_gain": 3.0801496659526946e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 1,
+        "head": 13,
+        "E_D_spearman": 0.5530351583958982,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.019721559125095715,
+          "DIAG": 0.002246578796810257,
+          "B2": 0.004912168751862973
+        },
+        "diagonal_single_write_surrogate_gain": 3.85192806882787e-09,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 1,
+        "head": 14,
+        "E_D_spearman": 0.34784723493865594,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0029822469800028493,
+          "DIAG": 9.546540025822311e-05,
+          "B2": 0.004052171336041647
+        },
+        "diagonal_single_write_surrogate_gain": 1.5358112543238927e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 1,
+        "head": 15,
+        "E_D_spearman": 0.6890851034609046,
+        "E_D_overlap": 6,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.012403027502340363,
+          "DIAG": 0.012744596234879148,
+          "B2": 0.0017436547731424982
+        },
+        "diagonal_single_write_surrogate_gain": 2.5355947924313856e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 2,
+        "head": 0,
+        "E_D_spearman": 0.2582059146676433,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.11272088096422021,
+          "DIAG": 0.01256287371881093,
+          "B2": 0.040209632123459314
+        },
+        "diagonal_single_write_surrogate_gain": 6.171657996019646e-10,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 2,
+        "head": 1,
+        "E_D_spearman": 0.35924052371360554,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.01783698977902914,
+          "DIAG": 0.008212990568511908,
+          "B2": 0.005443788582681102
+        },
+        "diagonal_single_write_surrogate_gain": 1.4183883704855318e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 2,
+        "head": 2,
+        "E_D_spearman": 0.25619735396447535,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0007891911125964428,
+          "DIAG": 0.00023400490771558,
+          "B2": 2.856414703091552e-05
+        },
+        "diagonal_single_write_surrogate_gain": 4.1345938896073844e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 2,
+        "head": 3,
+        "E_D_spearman": 0.2874988555209669,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.023269814062016673,
+          "DIAG": 0.018538829346747006,
+          "B2": 0.0019813397442010115
+        },
+        "diagonal_single_write_surrogate_gain": 3.1653522575594077e-10,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 2,
+        "head": 4,
+        "E_D_spearman": 0.5226377952755905,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.005302948963964518,
+          "DIAG": 0.0007057916515401116,
+          "B2": 0.0002592205460332842
+        },
+        "diagonal_single_write_surrogate_gain": 7.0188340460008865e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 2,
+        "head": 5,
+        "E_D_spearman": 0.16133148690715987,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.04881239054780945,
+          "DIAG": 0.0007592258452184359,
+          "B2": 0.02313804497846866
+        },
+        "diagonal_single_write_surrogate_gain": 3.401589127911324e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 2,
+        "head": 6,
+        "E_D_spearman": 0.4010082860282,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.016030571228034987,
+          "DIAG": 0.0001389973612457585,
+          "B2": 0.001155977250559417
+        },
+        "diagonal_single_write_surrogate_gain": 4.417782002622717e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 2,
+        "head": 7,
+        "E_D_spearman": 0.19875595129097234,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.005526341028126641,
+          "DIAG": 0.039601161123632676,
+          "B2": 0.023054194593667966
+        },
+        "diagonal_single_write_surrogate_gain": 5.171469676459208e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 2,
+        "head": 8,
+        "E_D_spearman": 0.5339166361472257,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.07415072940228638,
+          "DIAG": 0.024777193608993935,
+          "B2": 0.01779147862972187
+        },
+        "diagonal_single_write_surrogate_gain": 6.124322409524871e-09,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 2,
+        "head": 9,
+        "E_D_spearman": 0.3329861746932796,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.019374759282210965,
+          "DIAG": 0.014503317996551166,
+          "B2": 0.020078756249082397
+        },
+        "diagonal_single_write_surrogate_gain": 1.5458745531195106e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 2,
+        "head": 10,
+        "E_D_spearman": 0.4235831349569676,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.007209942325998853,
+          "DIAG": 0.007139993838422807,
+          "B2": 0.00028983042554951244
+        },
+        "diagonal_single_write_surrogate_gain": 1.7320625074938575e-09,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 2,
+        "head": 11,
+        "E_D_spearman": 0.9356745559421351,
+        "E_D_overlap": 7,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.0027339701131960862,
+          "DIAG": 0.0003076490184578817,
+          "B2": 0.0005838909101081899
+        },
+        "diagonal_single_write_surrogate_gain": 3.125086916010922e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 2,
+        "head": 12,
+        "E_D_spearman": 0.026431743270463284,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.018359333449039776,
+          "DIAG": 0.018141290542255155,
+          "B2": 0.031611616326168906
+        },
+        "diagonal_single_write_surrogate_gain": 1.3596648794222684e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 2,
+        "head": 13,
+        "E_D_spearman": 0.44068737410730635,
+        "E_D_overlap": 5,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.021409725531215798,
+          "DIAG": 0.008658926301472554,
+          "B2": 0.0017580457372912935
+        },
+        "diagonal_single_write_surrogate_gain": 7.361686563425351e-10,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 2,
+        "head": 14,
+        "E_D_spearman": 0.04648301593114814,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.01074311886022768,
+          "DIAG": 0.0023435551943194123,
+          "B2": 0.04047722440387895
+        },
+        "diagonal_single_write_surrogate_gain": 0.00013227498640570325,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 2,
+        "head": 15,
+        "E_D_spearman": 0.21220930232558138,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.01833717056819775,
+          "DIAG": 0.012217092822856334,
+          "B2": 0.0052150897400728025
+        },
+        "diagonal_single_write_surrogate_gain": 6.691787498701169e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 4,
+        "head": 0,
+        "E_D_spearman": 0.4008823933345541,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.004270897393167258,
+          "DIAG": 0.039668155840169306,
+          "B2": 0.021496089760632487
+        },
+        "diagonal_single_write_surrogate_gain": 5.818194985560973e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 4,
+        "head": 1,
+        "E_D_spearman": 0.4158807910639077,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.011904965422242165,
+          "DIAG": 0.0020898734440760723,
+          "B2": 0.002050879476056052
+        },
+        "diagonal_single_write_surrogate_gain": 6.5650146554067e-09,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 4,
+        "head": 2,
+        "E_D_spearman": 0.09012772386009889,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.00035320867435061174,
+          "DIAG": 5.8373211387246965e-05,
+          "B2": 0.003767110401812553
+        },
+        "diagonal_single_write_surrogate_gain": 7.167898719942384e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 4,
+        "head": 3,
+        "E_D_spearman": 0.42824688701702984,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.024494809509717077,
+          "DIAG": 0.0508002715914547,
+          "B2": 0.04979713900355742
+        },
+        "diagonal_single_write_surrogate_gain": 8.20043845480944e-09,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 4,
+        "head": 4,
+        "E_D_spearman": 0.5730692638710859,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.020895115625526445,
+          "DIAG": 0.023039082287143398,
+          "B2": 0.0871910165627481
+        },
+        "diagonal_single_write_surrogate_gain": 0.001000642450158127,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 4,
+        "head": 5,
+        "E_D_spearman": 0.8196644387474822,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.00023203729670971953,
+          "DIAG": 0.0009945665211526825,
+          "B2": 0.00013376003841697343
+        },
+        "diagonal_single_write_surrogate_gain": 0.023143380766136704,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 4,
+        "head": 6,
+        "E_D_spearman": 0.8981413660501739,
+        "E_D_overlap": 5,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.016988538873389213,
+          "DIAG": 0.0012766293815014886,
+          "B2": 0.0001819807593754861
+        },
+        "diagonal_single_write_surrogate_gain": 0.0004810894654555723,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 4,
+        "head": 7,
+        "E_D_spearman": 0.389231596777147,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.014242134437207225,
+          "DIAG": 0.015976669522341815,
+          "B2": 0.0019258075675261338
+        },
+        "diagonal_single_write_surrogate_gain": 2.361395903695436e-09,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 4,
+        "head": 8,
+        "E_D_spearman": 0.29018838124885554,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.03720330888920955,
+          "DIAG": 0.0007227407828360285,
+          "B2": 0.0024880467011902303
+        },
+        "diagonal_single_write_surrogate_gain": 1.6546075980136732e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 4,
+        "head": 9,
+        "E_D_spearman": 0.1529996795458707,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.005695928538746914,
+          "DIAG": 0.00020512140687518868,
+          "B2": 0.0005421593678641367
+        },
+        "diagonal_single_write_surrogate_gain": 2.5032903695827507e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 4,
+        "head": 10,
+        "E_D_spearman": 0.29504097234938653,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.002422522682790801,
+          "DIAG": 0.013170270043493372,
+          "B2": 0.0001774555725205205
+        },
+        "diagonal_single_write_surrogate_gain": 9.513801600332902e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 4,
+        "head": 11,
+        "E_D_spearman": 0.33180163889397546,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.0032870990452015963,
+          "DIAG": 0.0023009201401637805,
+          "B2": 0.003917345525749861
+        },
+        "diagonal_single_write_surrogate_gain": 2.3085676222005346e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 4,
+        "head": 12,
+        "E_D_spearman": 0.04010826771653543,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 2,
+        "boundary_margins": {
+          "ENERGY": 0.09695610621982008,
+          "DIAG": 0.01206646024390243,
+          "B2": 0.0065300518216701575
+        },
+        "diagonal_single_write_surrogate_gain": 1.0132744744608157e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 4,
+        "head": 13,
+        "E_D_spearman": 0.5233073155099799,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0026709444313333342,
+          "DIAG": 0.003132527594359788,
+          "B2": 0.008550280604825522
+        },
+        "diagonal_single_write_surrogate_gain": 2.6879043454800173e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 4,
+        "head": 14,
+        "E_D_spearman": 0.22755676616004394,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.039121342064495565,
+          "DIAG": 0.005909381132229749,
+          "B2": 0.01020291547032616
+        },
+        "diagonal_single_write_surrogate_gain": 1.7727640704018075e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 4,
+        "head": 15,
+        "E_D_spearman": 0.3412378685222487,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.0014957685948908648,
+          "DIAG": 0.0396226484336387,
+          "B2": 0.03763895753495026
+        },
+        "diagonal_single_write_surrogate_gain": 6.626603674776934e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 5,
+        "head": 0,
+        "E_D_spearman": 0.1865844167734847,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.004909359329384475,
+          "DIAG": 0.0030187623463015364,
+          "B2": 0.0011530123785911711
+        },
+        "diagonal_single_write_surrogate_gain": 6.639452879819699e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 5,
+        "head": 1,
+        "E_D_spearman": 0.17251304706097784,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.017432757498027886,
+          "DIAG": 0.0003717702963510472,
+          "B2": 0.0011435451008996564
+        },
+        "diagonal_single_write_surrogate_gain": 2.313891381170604e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 5,
+        "head": 2,
+        "E_D_spearman": 0.2682773301593115,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.00784327821568997,
+          "DIAG": 0.0209322110700642,
+          "B2": 0.005866670737069793
+        },
+        "diagonal_single_write_surrogate_gain": 3.402585476118503e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 5,
+        "head": 3,
+        "E_D_spearman": 0.4713651345907343,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.08452862485371963,
+          "DIAG": 0.0005960624667387968,
+          "B2": 0.01252873217985916
+        },
+        "diagonal_single_write_surrogate_gain": 8.650240802737927e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 5,
+        "head": 4,
+        "E_D_spearman": -0.003107260574986266,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0006619662004521507,
+          "DIAG": 0.03899497980393499,
+          "B2": 0.014550856464993088
+        },
+        "diagonal_single_write_surrogate_gain": 0.0008268582877442466,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 5,
+        "head": 5,
+        "E_D_spearman": 0.3322250961362388,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.010052448411427176,
+          "DIAG": 0.003685750318060801,
+          "B2": 0.0030582335435752317
+        },
+        "diagonal_single_write_surrogate_gain": 8.386913552203458e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 5,
+        "head": 6,
+        "E_D_spearman": 0.3756580754440579,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.03681875188674016,
+          "DIAG": 0.014809179748265833,
+          "B2": 0.004316832099549431
+        },
+        "diagonal_single_write_surrogate_gain": 1.8831203663571325e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 5,
+        "head": 7,
+        "E_D_spearman": 0.37024468961728624,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.05301742682139962,
+          "DIAG": 0.0015238980618761584,
+          "B2": 0.0090670584658902
+        },
+        "diagonal_single_write_surrogate_gain": 1.564153613519479e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 5,
+        "head": 8,
+        "E_D_spearman": -0.0723539644753708,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.006848203953044056,
+          "DIAG": 0.004156295494019565,
+          "B2": 0.008161490655702902
+        },
+        "diagonal_single_write_surrogate_gain": 1.4759220197975446e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 5,
+        "head": 9,
+        "E_D_spearman": 0.18244712506866875,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.00670063435669846,
+          "DIAG": 0.01866193976797832,
+          "B2": 0.01526711207985017
+        },
+        "diagonal_single_write_surrogate_gain": 2.7957356731517796e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 5,
+        "head": 10,
+        "E_D_spearman": 0.2990065921992309,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.022927604962101753,
+          "DIAG": 0.002562683452803357,
+          "B2": 0.002827144386142358
+        },
+        "diagonal_single_write_surrogate_gain": 7.551202681071732e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 5,
+        "head": 11,
+        "E_D_spearman": 0.06281473173411463,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.008306419886220431,
+          "DIAG": 0.012719935993524237,
+          "B2": 0.016560109341827507
+        },
+        "diagonal_single_write_surrogate_gain": 9.058370424333175e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 5,
+        "head": 12,
+        "E_D_spearman": 0.5568004944149423,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 4,
+        "boundary_margins": {
+          "ENERGY": 0.004929162494804825,
+          "DIAG": 0.0016952454248213564,
+          "B2": 0.003022797209031301
+        },
+        "diagonal_single_write_surrogate_gain": 0.00016700145447073113,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 5,
+        "head": 13,
+        "E_D_spearman": 0.2650842336568394,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.026019498460636767,
+          "DIAG": 0.0660625392696268,
+          "B2": 0.10410499638065022
+        },
+        "diagonal_single_write_surrogate_gain": 2.1436123182018685e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 5,
+        "head": 14,
+        "E_D_spearman": 0.364842748580846,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 4,
+        "boundary_margins": {
+          "ENERGY": 0.029476840144745293,
+          "DIAG": 0.00011739586454753356,
+          "B2": 0.00024120612695580692
+        },
+        "diagonal_single_write_surrogate_gain": 2.796483741190889e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 5,
+        "head": 15,
+        "E_D_spearman": 0.040823567112250506,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.01025489704997269,
+          "DIAG": 0.0065995849622854375,
+          "B2": 0.0001734333944523293
+        },
+        "diagonal_single_write_surrogate_gain": 1.18197117676824e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 6,
+        "head": 0,
+        "E_D_spearman": 0.09934650247207472,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.007561940005795589,
+          "DIAG": 0.06271319225852129,
+          "B2": 0.027496934190330693
+        },
+        "diagonal_single_write_surrogate_gain": 8.030615583357295e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 6,
+        "head": 1,
+        "E_D_spearman": 0.5228380791063908,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.004096551124024557,
+          "DIAG": 0.005959461269622346,
+          "B2": 0.006157213610104042
+        },
+        "diagonal_single_write_surrogate_gain": 4.980612638241962e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 6,
+        "head": 2,
+        "E_D_spearman": 0.4763436183849112,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.02097450267495257,
+          "DIAG": 0.01725180704302103,
+          "B2": 0.04085347430649565
+        },
+        "diagonal_single_write_surrogate_gain": 1.1218735805540575e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 6,
+        "head": 3,
+        "E_D_spearman": 0.31751281816517124,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.00936061755188433,
+          "DIAG": 0.03549206713159179,
+          "B2": 0.04128826615075647
+        },
+        "diagonal_single_write_surrogate_gain": 7.623481931795004e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 6,
+        "head": 4,
+        "E_D_spearman": 0.28529001098699874,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.036762429742414636,
+          "DIAG": 0.0014386582634101275,
+          "B2": 0.012109651551478482
+        },
+        "diagonal_single_write_surrogate_gain": 2.544123080004751e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 6,
+        "head": 5,
+        "E_D_spearman": -0.008039965207837393,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.0064200770118316925,
+          "DIAG": 0.0005580582818780506,
+          "B2": 0.017998831143626163
+        },
+        "diagonal_single_write_surrogate_gain": 7.036907722203694e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 6,
+        "head": 6,
+        "E_D_spearman": 0.6388996978575352,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.03189616172479584,
+          "DIAG": 0.01848407162255464,
+          "B2": 0.008058411904954538
+        },
+        "diagonal_single_write_surrogate_gain": 8.8422836966857e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 6,
+        "head": 7,
+        "E_D_spearman": 0.09991874198864677,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.007735369310073015,
+          "DIAG": 0.051684339709389994,
+          "B2": 0.005030544364738576
+        },
+        "diagonal_single_write_surrogate_gain": 9.917759058188946e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 6,
+        "head": 8,
+        "E_D_spearman": 0.25133331807361287,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.053807347926232346,
+          "DIAG": 0.0040971149772741,
+          "B2": 0.002836304145674883
+        },
+        "diagonal_single_write_surrogate_gain": 8.564657614421767e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 6,
+        "head": 9,
+        "E_D_spearman": 0.3630115821278154,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.05071338425981539,
+          "DIAG": 0.0017967510693757901,
+          "B2": 0.0005204117587424807
+        },
+        "diagonal_single_write_surrogate_gain": 4.7234731809808314e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 6,
+        "head": 10,
+        "E_D_spearman": 0.4751247482146127,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.011022855104529116,
+          "DIAG": 0.0012186785500860962,
+          "B2": 0.012285000527283393
+        },
+        "diagonal_single_write_surrogate_gain": 8.045336981070625e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 6,
+        "head": 11,
+        "E_D_spearman": 0.6666304248306171,
+        "E_D_overlap": 5,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.021003432787371257,
+          "DIAG": 0.005075412094736502,
+          "B2": 0.0058146257308248905
+        },
+        "diagonal_single_write_surrogate_gain": 3.431857537587226e-09,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 6,
+        "head": 12,
+        "E_D_spearman": 0.43541132576451197,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0021569309904917126,
+          "DIAG": 0.012674844884586233,
+          "B2": 0.01988038499977873
+        },
+        "diagonal_single_write_surrogate_gain": 3.605865199608832e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 6,
+        "head": 13,
+        "E_D_spearman": 0.3743075901849478,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.09350158966194917,
+          "DIAG": 0.01833693912206602,
+          "B2": 0.021969775351495576
+        },
+        "diagonal_single_write_surrogate_gain": 2.1477241090710164e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 6,
+        "head": 14,
+        "E_D_spearman": 0.5234904321552829,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.012188503567925267,
+          "DIAG": 0.0002744098398501943,
+          "B2": 0.0005411378308114041
+        },
+        "diagonal_single_write_surrogate_gain": 1.5635975110437108e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 6,
+        "head": 15,
+        "E_D_spearman": -0.09611907159860832,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.01752797335008841,
+          "DIAG": 0.0028186237054630844,
+          "B2": 0.0007260963476956847
+        },
+        "diagonal_single_write_surrogate_gain": 5.2242377566663616e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 8,
+        "head": 0,
+        "E_D_spearman": 0.2099546786302875,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.017905633934227276,
+          "DIAG": 0.01471649724189331,
+          "B2": 0.015398102342597463
+        },
+        "diagonal_single_write_surrogate_gain": 2.1828762980210616e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 8,
+        "head": 1,
+        "E_D_spearman": 0.38383537813587254,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.016782667082066424,
+          "DIAG": 0.04051738154491265,
+          "B2": 0.012142922993408094
+        },
+        "diagonal_single_write_surrogate_gain": 4.196973721695715e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 8,
+        "head": 2,
+        "E_D_spearman": 0.3216272202893243,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0028151010097726623,
+          "DIAG": 0.016649200464044927,
+          "B2": 0.013761273696987729
+        },
+        "diagonal_single_write_surrogate_gain": 3.500719027074306e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 8,
+        "head": 3,
+        "E_D_spearman": 0.26409425929316976,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.007633009566717995,
+          "DIAG": 0.00197849965401255,
+          "B2": 0.0012429122677196857
+        },
+        "diagonal_single_write_surrogate_gain": 1.100572369101005e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 8,
+        "head": 4,
+        "E_D_spearman": 0.21501327595678446,
+        "E_D_overlap": 5,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.018204792689087954,
+          "DIAG": 0.01116100360525274,
+          "B2": 0.004427249516838171
+        },
+        "diagonal_single_write_surrogate_gain": 8.651337726649419e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 8,
+        "head": 5,
+        "E_D_spearman": 0.3182853415125435,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.002322522410588207,
+          "DIAG": 4.153929336303183e-06,
+          "B2": 0.000544079893659114
+        },
+        "diagonal_single_write_surrogate_gain": 1.389559496297316e-09,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 8,
+        "head": 6,
+        "E_D_spearman": 0.43934833363852777,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 4,
+        "boundary_margins": {
+          "ENERGY": 0.020157682394779948,
+          "DIAG": 0.006913530217619815,
+          "B2": 0.011672806291444822
+        },
+        "diagonal_single_write_surrogate_gain": 2.2987276471391698e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 8,
+        "head": 7,
+        "E_D_spearman": 0.1842954587071965,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.12229396068751497,
+          "DIAG": 0.009354458343874364,
+          "B2": 0.035487533438468326
+        },
+        "diagonal_single_write_surrogate_gain": 1.4289179195463774e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 8,
+        "head": 8,
+        "E_D_spearman": 0.4667357169016664,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.08968986680469243,
+          "DIAG": 0.0023177731206731715,
+          "B2": 0.0032219592939127404
+        },
+        "diagonal_single_write_surrogate_gain": 1.8634291015743714e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 8,
+        "head": 9,
+        "E_D_spearman": 0.7305095220655557,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0023908779627633612,
+          "DIAG": 0.0006363694158258835,
+          "B2": 0.0004230997847252205
+        },
+        "diagonal_single_write_surrogate_gain": 0.006569944642603008,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 8,
+        "head": 10,
+        "E_D_spearman": 0.3391549166819264,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 1.634165524214303e-05,
+          "DIAG": 0.04683023702596601,
+          "B2": 0.14331408493329126
+        },
+        "diagonal_single_write_surrogate_gain": 8.527322939016776e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 8,
+        "head": 11,
+        "E_D_spearman": 0.7712701428309834,
+        "E_D_overlap": 5,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0003693370334033451,
+          "DIAG": 0.005711438172918141,
+          "B2": 0.00015183119495910504
+        },
+        "diagonal_single_write_surrogate_gain": 1.0671375264032171e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 8,
+        "head": 12,
+        "E_D_spearman": 0.24848356528108406,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0060550712389427575,
+          "DIAG": 0.0005835570191433546,
+          "B2": 0.007982644912175447
+        },
+        "diagonal_single_write_surrogate_gain": 3.460091110306604e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 8,
+        "head": 13,
+        "E_D_spearman": -0.09151254349020325,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 4,
+        "boundary_margins": {
+          "ENERGY": 0.005086803868899082,
+          "DIAG": 0.0017787577658104454,
+          "B2": 0.001093310161586379
+        },
+        "diagonal_single_write_surrogate_gain": 1.8658364236451747e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 8,
+        "head": 14,
+        "E_D_spearman": 0.23725622596594031,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.023316145206363055,
+          "DIAG": 0.00766059609817184,
+          "B2": 0.0031797339123287474
+        },
+        "diagonal_single_write_surrogate_gain": 2.1436188100251472e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 8,
+        "head": 15,
+        "E_D_spearman": -0.11956372459256547,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.011523880577019722,
+          "DIAG": 0.023395189585851982,
+          "B2": 0.00889021204460854
+        },
+        "diagonal_single_write_surrogate_gain": 6.950538340847199e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 9,
+        "head": 0,
+        "E_D_spearman": 0.36500297564548617,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.010785439421771386,
+          "DIAG": 0.02110530136892286,
+          "B2": 0.10085490834315265
+        },
+        "diagonal_single_write_surrogate_gain": 7.470041521383573e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 9,
+        "head": 1,
+        "E_D_spearman": -0.1412859366416407,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.01286436871885189,
+          "DIAG": 0.0344178916099057,
+          "B2": 4.936997534599059e-06
+        },
+        "diagonal_single_write_surrogate_gain": 5.899314821263616e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 9,
+        "head": 2,
+        "E_D_spearman": 0.6133205914667643,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.02192253994510535,
+          "DIAG": 0.019609364995980247,
+          "B2": 0.009022096803402439
+        },
+        "diagonal_single_write_surrogate_gain": 1.0549974391796182e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 9,
+        "head": 3,
+        "E_D_spearman": 0.6143048434352683,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0024695859199846933,
+          "DIAG": 0.03160139810009392,
+          "B2": 0.048292065583577494
+        },
+        "diagonal_single_write_surrogate_gain": 7.535152642309515e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 9,
+        "head": 4,
+        "E_D_spearman": 0.26138756637978394,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.013230604088717759,
+          "DIAG": 0.0061083562544813905,
+          "B2": 0.01058597096372897
+        },
+        "diagonal_single_write_surrogate_gain": 1.961438168105225e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 9,
+        "head": 5,
+        "E_D_spearman": 0.6367709668558872,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.007385025268405291,
+          "DIAG": 0.01347329108767666,
+          "B2": 0.03124804094613595
+        },
+        "diagonal_single_write_surrogate_gain": 8.600349193832283e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 9,
+        "head": 6,
+        "E_D_spearman": 0.31355292071049257,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.013735495688844834,
+          "DIAG": 0.005339458089188969,
+          "B2": 0.0021500684249881503
+        },
+        "diagonal_single_write_surrogate_gain": 3.0727829374247037e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 9,
+        "head": 7,
+        "E_D_spearman": 0.3736209027650613,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.016137957070421687,
+          "DIAG": 0.1054429342689046,
+          "B2": 0.02714017732435957
+        },
+        "diagonal_single_write_surrogate_gain": 5.621674029722875e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 9,
+        "head": 8,
+        "E_D_spearman": 0.16272202893242996,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.010437949883572268,
+          "DIAG": 0.0006426293489034438,
+          "B2": 0.008887881107804243
+        },
+        "diagonal_single_write_surrogate_gain": 9.290578262143247e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 9,
+        "head": 9,
+        "E_D_spearman": 0.2706464017579198,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.006099366481308147,
+          "DIAG": 0.0024838352115168698,
+          "B2": 6.716248338456272e-05
+        },
+        "diagonal_single_write_surrogate_gain": 1.0933606151709911e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 9,
+        "head": 10,
+        "E_D_spearman": 0.6108427943600073,
+        "E_D_overlap": 5,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.03683360108678974,
+          "DIAG": 0.03792251619303657,
+          "B2": 0.05975322122950695
+        },
+        "diagonal_single_write_surrogate_gain": 5.65666361446419e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 9,
+        "head": 11,
+        "E_D_spearman": 0.6729536714887383,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.012228528033264898,
+          "DIAG": 0.0006957851423135974,
+          "B2": 0.0022885179398892137
+        },
+        "diagonal_single_write_surrogate_gain": 9.724490025773003e-09,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 9,
+        "head": 12,
+        "E_D_spearman": 0.6172976561069401,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.003516500596606796,
+          "DIAG": 0.0031717068597283725,
+          "B2": 0.019469916639818854
+        },
+        "diagonal_single_write_surrogate_gain": 3.063678117981135e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 9,
+        "head": 13,
+        "E_D_spearman": 0.2986689708844534,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0558518041196866,
+          "DIAG": 0.009315461607736976,
+          "B2": 0.022207697392604264
+        },
+        "diagonal_single_write_surrogate_gain": 6.3635183153184604e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 9,
+        "head": 14,
+        "E_D_spearman": 0.31590482512360374,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.023295906502375348,
+          "DIAG": 0.027576557892998316,
+          "B2": 0.007574817723280453
+        },
+        "diagonal_single_write_surrogate_gain": 8.441042836737995e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 9,
+        "head": 15,
+        "E_D_spearman": 0.6556205365317708,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.002686098059206952,
+          "DIAG": 0.002136436272677371,
+          "B2": 0.0025906725498881463
+        },
+        "diagonal_single_write_surrogate_gain": 2.81690894242661e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 10,
+        "head": 0,
+        "E_D_spearman": 0.47571415491668195,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.009000752188028,
+          "DIAG": 0.024121939735393148,
+          "B2": 0.003483621853398957
+        },
+        "diagonal_single_write_surrogate_gain": 1.571775804596462e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 10,
+        "head": 1,
+        "E_D_spearman": 0.5773896722212049,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.017446478865432623,
+          "DIAG": 0.0014901621275166936,
+          "B2": 0.03308825848517406
+        },
+        "diagonal_single_write_surrogate_gain": 2.2859375093013218e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 10,
+        "head": 2,
+        "E_D_spearman": 0.4370021516205823,
+        "E_D_overlap": 8,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.02890005739443534,
+          "DIAG": 6.313121271018278e-05,
+          "B2": 7.552787970894318e-05
+        },
+        "diagonal_single_write_surrogate_gain": 0.0,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 10,
+        "head": 3,
+        "E_D_spearman": 0.05166750595129097,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.020018191058284094,
+          "DIAG": 0.005502130760255236,
+          "B2": 0.0021875783796459426
+        },
+        "diagonal_single_write_surrogate_gain": 8.279805403709837e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 10,
+        "head": 4,
+        "E_D_spearman": 0.21322788866507966,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.005895656120183067,
+          "DIAG": 0.0598153456935134,
+          "B2": 0.03081639571282555
+        },
+        "diagonal_single_write_surrogate_gain": 3.5391077734158164e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 10,
+        "head": 5,
+        "E_D_spearman": 0.15418421534517487,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.06340357837015954,
+          "DIAG": 0.00975764626188788,
+          "B2": 0.008026304014726798
+        },
+        "diagonal_single_write_surrogate_gain": 5.048355693066865e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 10,
+        "head": 6,
+        "E_D_spearman": 0.39118293352865774,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.003996817389069749,
+          "DIAG": 0.0042418421040475935,
+          "B2": 0.014907258545012422
+        },
+        "diagonal_single_write_surrogate_gain": 4.3725162863050936e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 10,
+        "head": 7,
+        "E_D_spearman": -0.10645943966306537,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.0007492011701259343,
+          "DIAG": 0.003973466684560842,
+          "B2": 0.008145678586015732
+        },
+        "diagonal_single_write_surrogate_gain": 2.5107931644279157e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 10,
+        "head": 8,
+        "E_D_spearman": 0.40180369895623513,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.0233126878131562,
+          "DIAG": 0.051582231412302164,
+          "B2": 0.013978147983037115
+        },
+        "diagonal_single_write_surrogate_gain": 3.965579773048564e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 10,
+        "head": 9,
+        "E_D_spearman": 0.37887406152719283,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.045875239981033364,
+          "DIAG": 0.0041631206925757175,
+          "B2": 0.019413235409954214
+        },
+        "diagonal_single_write_surrogate_gain": 2.3996561246996693e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 10,
+        "head": 10,
+        "E_D_spearman": 0.4289335744369163,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.03834482168707405,
+          "DIAG": 0.003040038121451223,
+          "B2": 0.0014032090209410194
+        },
+        "diagonal_single_write_surrogate_gain": 5.024918212589197e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 10,
+        "head": 11,
+        "E_D_spearman": 0.44544268449002017,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.06218813296301089,
+          "DIAG": 0.0003870298990896899,
+          "B2": 0.012752369896371815
+        },
+        "diagonal_single_write_surrogate_gain": 8.20372706669807e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 10,
+        "head": 12,
+        "E_D_spearman": 0.2264008423365684,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.0012183347360455816,
+          "DIAG": 0.005659367543852579,
+          "B2": 0.011796311197436573
+        },
+        "diagonal_single_write_surrogate_gain": 1.2931695890611732e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 10,
+        "head": 13,
+        "E_D_spearman": 0.3011982695477019,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.005427578077865334,
+          "DIAG": 0.0041382386056346586,
+          "B2": 0.005209721269649293
+        },
+        "diagonal_single_write_surrogate_gain": 1.7513141974039418e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 10,
+        "head": 14,
+        "E_D_spearman": 0.2762657938106574,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.015664205343322822,
+          "DIAG": 0.014432175027757267,
+          "B2": 0.06422373585321052
+        },
+        "diagonal_single_write_surrogate_gain": 8.334344242970814e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 10,
+        "head": 15,
+        "E_D_spearman": 0.09521493316242446,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.001424427601152309,
+          "DIAG": 0.010761159128544657,
+          "B2": 0.08007094373203404
+        },
+        "diagonal_single_write_surrogate_gain": 2.8668814355433794e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 12,
+        "head": 0,
+        "E_D_spearman": 0.2164381523530489,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0007681852467340187,
+          "DIAG": 0.00023821171297363925,
+          "B2": 0.0004205362221102332
+        },
+        "diagonal_single_write_surrogate_gain": 7.5467230495991235e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 12,
+        "head": 1,
+        "E_D_spearman": 0.3850714154916682,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0021015828926331977,
+          "DIAG": 0.0023567326060436665,
+          "B2": 0.0070882035524533525
+        },
+        "diagonal_single_write_surrogate_gain": 4.903697202918639e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 12,
+        "head": 2,
+        "E_D_spearman": 0.5079999084416773,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.015542958184352907,
+          "DIAG": 0.01923288682881381,
+          "B2": 0.0424574619300411
+        },
+        "diagonal_single_write_surrogate_gain": 1.8291470079980822e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 12,
+        "head": 3,
+        "E_D_spearman": -0.09502609412195569,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.02593231887600731,
+          "DIAG": 0.03107387871698962,
+          "B2": 0.00046520938834985174
+        },
+        "diagonal_single_write_surrogate_gain": 1.5907266541377113e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 12,
+        "head": 4,
+        "E_D_spearman": 0.15437305438564367,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.0076543235300577175,
+          "DIAG": 0.05968093119794065,
+          "B2": 0.0004817455741534686
+        },
+        "diagonal_single_write_surrogate_gain": 7.50548590553417e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 12,
+        "head": 5,
+        "E_D_spearman": 0.1822411188427028,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.00409177155299775,
+          "DIAG": 0.17254741106442076,
+          "B2": 0.03511848986966447
+        },
+        "diagonal_single_write_surrogate_gain": 3.964728025687581e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 12,
+        "head": 6,
+        "E_D_spearman": 0.31864013001281816,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.011135857708316975,
+          "DIAG": 0.03599082324848293,
+          "B2": 0.017049378332094182
+        },
+        "diagonal_single_write_surrogate_gain": 9.750731156550438e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 12,
+        "head": 7,
+        "E_D_spearman": 0.865048754806812,
+        "E_D_overlap": 6,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.006799004573100286,
+          "DIAG": 0.0008910978392341587,
+          "B2": 0.02458397353106722
+        },
+        "diagonal_single_write_surrogate_gain": 0.0021956795170191856,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 12,
+        "head": 8,
+        "E_D_spearman": 0.3655408807910639,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.01155495660117866,
+          "DIAG": 0.011579686799733216,
+          "B2": 0.015503181273862871
+        },
+        "diagonal_single_write_surrogate_gain": 6.190440221174201e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 12,
+        "head": 9,
+        "E_D_spearman": 0.3446369712506867,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.02317552548634351,
+          "DIAG": 0.1544241510081724,
+          "B2": 0.0061446227239044604
+        },
+        "diagonal_single_write_surrogate_gain": 1.3079821085796989e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 12,
+        "head": 10,
+        "E_D_spearman": 0.2958936092290789,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.022790499035324246,
+          "DIAG": 0.020343586739446726,
+          "B2": 0.023029784551160507
+        },
+        "diagonal_single_write_surrogate_gain": 7.930918145235209e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 12,
+        "head": 11,
+        "E_D_spearman": 0.5402742171763413,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.00929251818174904,
+          "DIAG": 0.007292651666277728,
+          "B2": 0.00039173177201037054
+        },
+        "diagonal_single_write_surrogate_gain": 6.8604080687135635e-09,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 12,
+        "head": 12,
+        "E_D_spearman": 0.3233553836293719,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.00032261420329402716,
+          "DIAG": 0.006167234736075717,
+          "B2": 0.005398012186062916
+        },
+        "diagonal_single_write_surrogate_gain": 3.0476101025088225e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 12,
+        "head": 13,
+        "E_D_spearman": 0.4762005585057682,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.02755525849860334,
+          "DIAG": 0.008265451889506805,
+          "B2": 0.0003909850605957476
+        },
+        "diagonal_single_write_surrogate_gain": 2.4472232158369804e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 12,
+        "head": 14,
+        "E_D_spearman": 0.20150270097051823,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0064190086848926,
+          "DIAG": 0.005645178557575279,
+          "B2": 0.012394122683251213
+        },
+        "diagonal_single_write_surrogate_gain": 7.665222632868156e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 12,
+        "head": 15,
+        "E_D_spearman": 0.46948246658121223,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.07520805246294895,
+          "DIAG": 0.0010990728412008848,
+          "B2": 0.006411251134907169
+        },
+        "diagonal_single_write_surrogate_gain": 1.6209887751715395e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 13,
+        "head": 0,
+        "E_D_spearman": 0.39715711408167004,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.005161615548779736,
+          "DIAG": 0.02092576479694068,
+          "B2": 0.004437051294968428
+        },
+        "diagonal_single_write_surrogate_gain": 1.505668625921249e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 13,
+        "head": 1,
+        "E_D_spearman": 0.5034620490752609,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0295325678020731,
+          "DIAG": 0.0002710297795674967,
+          "B2": 0.0015451742078677864
+        },
+        "diagonal_single_write_surrogate_gain": 2.035527759541172e-09,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 13,
+        "head": 2,
+        "E_D_spearman": 0.6786073979124703,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.004216839445014796,
+          "DIAG": 0.049642170230108036,
+          "B2": 0.01532722532023156
+        },
+        "diagonal_single_write_surrogate_gain": 9.713300145143724e-10,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 13,
+        "head": 3,
+        "E_D_spearman": 0.2835618476469511,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0015588545111758524,
+          "DIAG": 0.0028291972727498317,
+          "B2": 0.0012233316915334158
+        },
+        "diagonal_single_write_surrogate_gain": 3.985914338767734e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 13,
+        "head": 4,
+        "E_D_spearman": 0.49203442592931695,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.05223524308169658,
+          "DIAG": 0.004287402154098602,
+          "B2": 0.03549853739221641
+        },
+        "diagonal_single_write_surrogate_gain": 1.996526685707946e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 13,
+        "head": 5,
+        "E_D_spearman": 0.3764821003479216,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.1500187987044518,
+          "DIAG": 0.005948302785940508,
+          "B2": 0.009812205266819168
+        },
+        "diagonal_single_write_surrogate_gain": 5.441318166995659e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 13,
+        "head": 6,
+        "E_D_spearman": 0.19218664164072513,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.0220542991480941,
+          "DIAG": 0.016986221256788583,
+          "B2": 0.028791450678270138
+        },
+        "diagonal_single_write_surrogate_gain": 3.277106427833001e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 13,
+        "head": 7,
+        "E_D_spearman": 0.12941768906793627,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.005671039585148696,
+          "DIAG": 0.00132510269397301,
+          "B2": 0.0011085336280128022
+        },
+        "diagonal_single_write_surrogate_gain": 6.372302541479659e-09,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 13,
+        "head": 8,
+        "E_D_spearman": 0.35996154550448634,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.0034762842885521948,
+          "DIAG": 0.017731334240650546,
+          "B2": 0.012376977101390404
+        },
+        "diagonal_single_write_surrogate_gain": 2.9714665697022932e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 13,
+        "head": 9,
+        "E_D_spearman": 0.18747711041933712,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.07750604302681884,
+          "DIAG": 0.0012491458483205038,
+          "B2": 0.006280397015202823
+        },
+        "diagonal_single_write_surrogate_gain": 3.062405190191969e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 13,
+        "head": 10,
+        "E_D_spearman": 0.37517739425013735,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.004956750279343385,
+          "DIAG": 0.008101595381087706,
+          "B2": 0.0001725649313221718
+        },
+        "diagonal_single_write_surrogate_gain": 1.9430827004982853e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 13,
+        "head": 11,
+        "E_D_spearman": 0.27501258926936456,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.01441555789276051,
+          "DIAG": 0.05202454798607388,
+          "B2": 0.0004649400235023964
+        },
+        "diagonal_single_write_surrogate_gain": 2.1688947259170188e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 13,
+        "head": 12,
+        "E_D_spearman": 0.026019730818531404,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.0034775692395952063,
+          "DIAG": 0.008017961768226332,
+          "B2": 0.0016267288198260487
+        },
+        "diagonal_single_write_surrogate_gain": 1.5708641697461375e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 13,
+        "head": 13,
+        "E_D_spearman": 0.5282514649331624,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.020083623569479674,
+          "DIAG": 0.008688156950352903,
+          "B2": 0.005226368937802776
+        },
+        "diagonal_single_write_surrogate_gain": 1.7824231431002058e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 13,
+        "head": 14,
+        "E_D_spearman": 0.1238040194103644,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.07292484389456128,
+          "DIAG": 0.017224214309694466,
+          "B2": 0.06295343072626666
+        },
+        "diagonal_single_write_surrogate_gain": 8.440519565898114e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 13,
+        "head": 15,
+        "E_D_spearman": 0.20382599340780078,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.01978262397114659,
+          "DIAG": 0.025578167148771435,
+          "B2": 0.00808223894567693
+        },
+        "diagonal_single_write_surrogate_gain": 2.6060348534758574e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 14,
+        "head": 0,
+        "E_D_spearman": 0.17774331624244644,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.00043688205066679957,
+          "DIAG": 0.008062677580337201,
+          "B2": 0.005692284799544013
+        },
+        "diagonal_single_write_surrogate_gain": 3.982125088870481e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 14,
+        "head": 1,
+        "E_D_spearman": 0.749896996887017,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.01972341098572377,
+          "DIAG": 0.004484972452860199,
+          "B2": 0.028794003065028367
+        },
+        "diagonal_single_write_surrogate_gain": 6.45954739367614e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 14,
+        "head": 2,
+        "E_D_spearman": 0.45894181468595496,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 4,
+        "boundary_margins": {
+          "ENERGY": 0.0024041191629567155,
+          "DIAG": 0.014293985955646687,
+          "B2": 0.06341740499527258
+        },
+        "diagonal_single_write_surrogate_gain": 1.5235161869427548e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 14,
+        "head": 3,
+        "E_D_spearman": 0.5427005127266068,
+        "E_D_overlap": 5,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.016382128396709463,
+          "DIAG": 0.0004806557317374787,
+          "B2": 0.03361215119180934
+        },
+        "diagonal_single_write_surrogate_gain": 7.410126981823506e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 14,
+        "head": 4,
+        "E_D_spearman": 0.0905797930781908,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.0007006037368736455,
+          "DIAG": 0.03650623498644861,
+          "B2": 0.022862320680466185
+        },
+        "diagonal_single_write_surrogate_gain": 3.5341612018867465e-09,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 14,
+        "head": 5,
+        "E_D_spearman": 0.34106619666727706,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.01973649595839936,
+          "DIAG": 0.016572634652570896,
+          "B2": 0.013910304167771278
+        },
+        "diagonal_single_write_surrogate_gain": 8.121802209251553e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 14,
+        "head": 6,
+        "E_D_spearman": -0.22159975279252883,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.021289879975549788,
+          "DIAG": 0.024617416989227165,
+          "B2": 0.0004930511581044709
+        },
+        "diagonal_single_write_surrogate_gain": 2.0952297486961143e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 14,
+        "head": 7,
+        "E_D_spearman": 0.6877117286211316,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.0016378668839715426,
+          "DIAG": 0.0006572719005065176,
+          "B2": 0.007246717096557801
+        },
+        "diagonal_single_write_surrogate_gain": 5.6384423080714615e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 14,
+        "head": 8,
+        "E_D_spearman": 0.1080788774949643,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0006614259248254843,
+          "DIAG": 0.012316744746286934,
+          "B2": 0.09125929191183166
+        },
+        "diagonal_single_write_surrogate_gain": 2.0906093568018747e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 14,
+        "head": 9,
+        "E_D_spearman": 0.6567306811939205,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.01259928100635572,
+          "DIAG": 0.01644530612567566,
+          "B2": 0.003692491118328946
+        },
+        "diagonal_single_write_surrogate_gain": 1.7892073778743071e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 14,
+        "head": 10,
+        "E_D_spearman": 0.28571919062442774,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.0037848576242334535,
+          "DIAG": 0.06701402978791068,
+          "B2": 0.0397869975685961
+        },
+        "diagonal_single_write_surrogate_gain": 5.075424953609976e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 14,
+        "head": 11,
+        "E_D_spearman": 0.1994025819446988,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.060815593848116196,
+          "DIAG": 0.008509724184475669,
+          "B2": 0.17034194578915846
+        },
+        "diagonal_single_write_surrogate_gain": 1.1251502336083318e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 14,
+        "head": 12,
+        "E_D_spearman": 0.5553985075993407,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.023593934131258935,
+          "DIAG": 0.00150776892296505,
+          "B2": 0.05417876608121492
+        },
+        "diagonal_single_write_surrogate_gain": 1.3348168046196321e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 14,
+        "head": 13,
+        "E_D_spearman": 0.44475027467496797,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.003485788965844595,
+          "DIAG": 0.011055869747908616,
+          "B2": 0.002658695237583873
+        },
+        "diagonal_single_write_surrogate_gain": 1.488176237499182e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 14,
+        "head": 14,
+        "E_D_spearman": 0.2756649423182567,
+        "E_D_overlap": 5,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.01846152314690105,
+          "DIAG": 0.0002735126123759341,
+          "B2": 0.00033765946425208044
+        },
+        "diagonal_single_write_surrogate_gain": 6.909504737704429e-09,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 14,
+        "head": 15,
+        "E_D_spearman": 0.17340001831166452,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.016946104313245818,
+          "DIAG": 0.008506072604190928,
+          "B2": 0.0002779655475478881
+        },
+        "diagonal_single_write_surrogate_gain": 5.362583266536455e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 16,
+        "head": 0,
+        "E_D_spearman": 0.7180175334187877,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.02086444026519759,
+          "DIAG": 0.01669206060430075,
+          "B2": 0.014316726473803089
+        },
+        "diagonal_single_write_surrogate_gain": 5.249338862775744e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 16,
+        "head": 1,
+        "E_D_spearman": 0.4151311572971983,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.002018279458285848,
+          "DIAG": 0.0041511640670431355,
+          "B2": 0.0019813498793635614
+        },
+        "diagonal_single_write_surrogate_gain": 9.947209838685715e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 16,
+        "head": 2,
+        "E_D_spearman": 0.7238372093023255,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.029231643755981116,
+          "DIAG": 0.0249964572033128,
+          "B2": 0.017055982917838837
+        },
+        "diagonal_single_write_surrogate_gain": 0.002290195071039609,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 16,
+        "head": 3,
+        "E_D_spearman": 0.15309696026368796,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 1.7944726728419382e-05,
+          "DIAG": 0.011648983242133513,
+          "B2": 0.006612526372110442
+        },
+        "diagonal_single_write_surrogate_gain": 2.2412383084971547e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 16,
+        "head": 4,
+        "E_D_spearman": 0.6687076542757737,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.01334537300542935,
+          "DIAG": 0.0039588845713628695,
+          "B2": 0.014017552488078932
+        },
+        "diagonal_single_write_surrogate_gain": 0.00038692109044735504,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 16,
+        "head": 5,
+        "E_D_spearman": 0.46266709393883904,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.010818143592565799,
+          "DIAG": 0.010336651106315159,
+          "B2": 0.009812262111443043
+        },
+        "diagonal_single_write_surrogate_gain": 1.4339511302133386e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 16,
+        "head": 6,
+        "E_D_spearman": 0.6134750961362387,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.009247518138134021,
+          "DIAG": 0.0004086287112053575,
+          "B2": 0.0027393985394902503
+        },
+        "diagonal_single_write_surrogate_gain": 7.3020484985689945e-09,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 16,
+        "head": 7,
+        "E_D_spearman": 0.09332082036257096,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.04465637606411275,
+          "DIAG": 0.00987607762256556,
+          "B2": 0.001830590767129339
+        },
+        "diagonal_single_write_surrogate_gain": 1.7672659384207347e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 16,
+        "head": 8,
+        "E_D_spearman": -0.0729891503387658,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.03556046347901314,
+          "DIAG": 0.007442997160838408,
+          "B2": 0.00828294296889204
+        },
+        "diagonal_single_write_surrogate_gain": 5.023887431853981e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 16,
+        "head": 9,
+        "E_D_spearman": 0.3075787401574803,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.048463574732244864,
+          "DIAG": 0.007059102353347636,
+          "B2": 0.03736445613392509
+        },
+        "diagonal_single_write_surrogate_gain": 0.00013260408764772068,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 16,
+        "head": 10,
+        "E_D_spearman": 0.30836270829518403,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.003484120395908483,
+          "DIAG": 0.05253114643652901,
+          "B2": 0.014199193135125467
+        },
+        "diagonal_single_write_surrogate_gain": 5.808074473903976e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 16,
+        "head": 11,
+        "E_D_spearman": 0.3443622962827321,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.004959399867402303,
+          "DIAG": 0.003911466869189093,
+          "B2": 0.011233078018741854
+        },
+        "diagonal_single_write_surrogate_gain": 8.166494891381874e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 16,
+        "head": 12,
+        "E_D_spearman": 0.46569996337667097,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0052328692941633,
+          "DIAG": 0.0043259700845353615,
+          "B2": 0.03185243342002899
+        },
+        "diagonal_single_write_surrogate_gain": 5.901286830936183e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 16,
+        "head": 13,
+        "E_D_spearman": 0.3598642647866691,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.0015382425165886605,
+          "DIAG": 0.0003559320074174635,
+          "B2": 9.563939069559305e-06
+        },
+        "diagonal_single_write_surrogate_gain": 1.9493387890161978e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 16,
+        "head": 14,
+        "E_D_spearman": 0.7267727980223402,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 4,
+        "boundary_margins": {
+          "ENERGY": 0.01472340391878433,
+          "DIAG": 0.022072722388961328,
+          "B2": 0.009944564891094645
+        },
+        "diagonal_single_write_surrogate_gain": 1.330979325412429e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 16,
+        "head": 15,
+        "E_D_spearman": 0.5266778062625893,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.0029614223062629447,
+          "DIAG": 0.005826416517107591,
+          "B2": 0.008378323738133787
+        },
+        "diagonal_single_write_surrogate_gain": 4.7490541822812934e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 17,
+        "head": 0,
+        "E_D_spearman": 0.3063484251968504,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.018677649264453925,
+          "DIAG": 0.004370579718418798,
+          "B2": 0.012173399849626745
+        },
+        "diagonal_single_write_surrogate_gain": 1.7173184525515898e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 17,
+        "head": 1,
+        "E_D_spearman": 0.159506042849295,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.015223600949716158,
+          "DIAG": 0.017018979140379642,
+          "B2": 0.006360031451292623
+        },
+        "diagonal_single_write_surrogate_gain": 2.3351104551030872e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 17,
+        "head": 2,
+        "E_D_spearman": 0.5926799121040103,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 4,
+        "boundary_margins": {
+          "ENERGY": 0.1037589914964052,
+          "DIAG": 0.007221251348747606,
+          "B2": 0.03745058099053462
+        },
+        "diagonal_single_write_surrogate_gain": 2.2350320294434642e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 17,
+        "head": 3,
+        "E_D_spearman": 0.41344877311847644,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.021263336146892627,
+          "DIAG": 0.0027506701945265778,
+          "B2": 0.0003120163023796569
+        },
+        "diagonal_single_write_surrogate_gain": 5.099710190004464e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 17,
+        "head": 4,
+        "E_D_spearman": 0.6884384728071782,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0027320739046201494,
+          "DIAG": 0.005266930618994103,
+          "B2": 0.03334337012496867
+        },
+        "diagonal_single_write_surrogate_gain": 2.2092907715033812e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 17,
+        "head": 5,
+        "E_D_spearman": 0.22489585240798388,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0013668201735598262,
+          "DIAG": 0.007197363392179591,
+          "B2": 0.001139491243736884
+        },
+        "diagonal_single_write_surrogate_gain": 2.428499426404082e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 17,
+        "head": 6,
+        "E_D_spearman": 0.730114676799121,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.013646652438514087,
+          "DIAG": 0.026384225192616486,
+          "B2": 0.005972253596238931
+        },
+        "diagonal_single_write_surrogate_gain": 3.11847751769434e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 17,
+        "head": 7,
+        "E_D_spearman": 0.7083924647500458,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.028746110793493488,
+          "DIAG": 0.0028837686119262025,
+          "B2": 0.015535738887766572
+        },
+        "diagonal_single_write_surrogate_gain": 0.0002128521965389961,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 17,
+        "head": 8,
+        "E_D_spearman": 0.4724180553012269,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.012973740112007633,
+          "DIAG": 0.03340498928374172,
+          "B2": 0.008168919896072992
+        },
+        "diagonal_single_write_surrogate_gain": 2.168678393475167e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 17,
+        "head": 9,
+        "E_D_spearman": 0.428796236952939,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.0017886914691641238,
+          "DIAG": 0.010195686391820712,
+          "B2": 0.020265175601644835
+        },
+        "diagonal_single_write_surrogate_gain": 1.1061514820097033e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 17,
+        "head": 10,
+        "E_D_spearman": 0.35447949093572606,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.00627527992122687,
+          "DIAG": 0.0015178190664644022,
+          "B2": 0.012604440866203454
+        },
+        "diagonal_single_write_surrogate_gain": 1.7828894172947775e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 17,
+        "head": 11,
+        "E_D_spearman": 0.6226480955868888,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.003164641593332085,
+          "DIAG": 0.02125939382162534,
+          "B2": 0.004134876261908128
+        },
+        "diagonal_single_write_surrogate_gain": 0.0012766207095790344,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 17,
+        "head": 12,
+        "E_D_spearman": 0.27861769822376853,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.005452300362250156,
+          "DIAG": 0.007454042940647503,
+          "B2": 0.008703199433333744
+        },
+        "diagonal_single_write_surrogate_gain": 9.496769754294595e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 17,
+        "head": 13,
+        "E_D_spearman": 0.5884682292620399,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.009908271412266488,
+          "DIAG": 0.0034499550557309105,
+          "B2": 0.0020361838660581362
+        },
+        "diagonal_single_write_surrogate_gain": 8.784207289671951e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 17,
+        "head": 14,
+        "E_D_spearman": 0.36392716535433073,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.027339202884587094,
+          "DIAG": 0.0019978493486386417,
+          "B2": 0.01783848291659472
+        },
+        "diagonal_single_write_surrogate_gain": 7.764032863455213e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 17,
+        "head": 15,
+        "E_D_spearman": 0.7528554751876946,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.004595780108468872,
+          "DIAG": 0.0178459776184187,
+          "B2": 0.006429197214199488
+        },
+        "diagonal_single_write_surrogate_gain": 8.244299533972235e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 18,
+        "head": 0,
+        "E_D_spearman": 0.6871165995238967,
+        "E_D_overlap": 5,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.0075609511390896025,
+          "DIAG": 0.008206040052475808,
+          "B2": 0.176952082429789
+        },
+        "diagonal_single_write_surrogate_gain": 0.0023263165568319973,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 18,
+        "head": 1,
+        "E_D_spearman": 0.29893792345724224,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.01318363530217746,
+          "DIAG": 0.02114512639432401,
+          "B2": 0.0013037484970593132
+        },
+        "diagonal_single_write_surrogate_gain": 1.330414282895815e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 18,
+        "head": 2,
+        "E_D_spearman": 0.202469785753525,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.014742836083580938,
+          "DIAG": 0.0021969189683054956,
+          "B2": 0.00776878830282019
+        },
+        "diagonal_single_write_surrogate_gain": 0.00027282281220374023,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 18,
+        "head": 3,
+        "E_D_spearman": 0.48240363486540927,
+        "E_D_overlap": 6,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.001968284570940735,
+          "DIAG": 0.014013282976436399,
+          "B2": 0.001608387622055529
+        },
+        "diagonal_single_write_surrogate_gain": 4.767618205224704e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 18,
+        "head": 4,
+        "E_D_spearman": 0.4228621131660868,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.012955489681147975,
+          "DIAG": 0.009497232668353298,
+          "B2": 0.0017013033210975333
+        },
+        "diagonal_single_write_surrogate_gain": 2.362336916768903e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 18,
+        "head": 5,
+        "E_D_spearman": 0.7124324757370445,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.01991214010020678,
+          "DIAG": 0.025587567628322254,
+          "B2": 0.005366230876624205
+        },
+        "diagonal_single_write_surrogate_gain": 3.079821469357171e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 18,
+        "head": 6,
+        "E_D_spearman": 0.29576771653543305,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.005663947052272941,
+          "DIAG": 0.0020516420245166493,
+          "B2": 0.026675849196484018
+        },
+        "diagonal_single_write_surrogate_gain": 4.342615727876416e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 18,
+        "head": 7,
+        "E_D_spearman": 0.3919211225050357,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.01131186776718709,
+          "DIAG": 0.00654282317212099,
+          "B2": 0.0034363997935728066
+        },
+        "diagonal_single_write_surrogate_gain": 1.4310603090105119e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 18,
+        "head": 8,
+        "E_D_spearman": 0.3439045046694745,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.007651277430797357,
+          "DIAG": 0.007013253672609733,
+          "B2": 0.006141951738063004
+        },
+        "diagonal_single_write_surrogate_gain": 1.3156003698358091e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 18,
+        "head": 9,
+        "E_D_spearman": 0.26367652444607215,
+        "E_D_overlap": 6,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.0001937345073880414,
+          "DIAG": 2.5771065513845892e-05,
+          "B2": 0.0016791427019591004
+        },
+        "diagonal_single_write_surrogate_gain": 3.4494423047868464e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 18,
+        "head": 10,
+        "E_D_spearman": 0.27858908624793993,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.02852695414727359,
+          "DIAG": 0.03851768263766335,
+          "B2": 0.013867612348717324
+        },
+        "diagonal_single_write_surrogate_gain": 1.971169637108456e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 18,
+        "head": 11,
+        "E_D_spearman": 0.6236209027650613,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.002677352032356445,
+          "DIAG": 0.06127097918411475,
+          "B2": 0.01826037935425235
+        },
+        "diagonal_single_write_surrogate_gain": 0.00345607652056155,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 18,
+        "head": 12,
+        "E_D_spearman": 0.39744323383995606,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.0010675458837866559,
+          "DIAG": 0.0008549700070381137,
+          "B2": 0.002067231200896246
+        },
+        "diagonal_single_write_surrogate_gain": 0.0033454602435938306,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 18,
+        "head": 13,
+        "E_D_spearman": 0.2861998718183483,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.014826796950300918,
+          "DIAG": 0.0027485676093643315,
+          "B2": 0.06045717756405538
+        },
+        "diagonal_single_write_surrogate_gain": 0.0010169436140709017,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 18,
+        "head": 14,
+        "E_D_spearman": 0.7286783556125251,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 2,
+        "boundary_margins": {
+          "ENERGY": 0.009199574049494069,
+          "DIAG": 0.006988446324697352,
+          "B2": 0.006515640338714882
+        },
+        "diagonal_single_write_surrogate_gain": 0.0003424722036855882,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 18,
+        "head": 15,
+        "E_D_spearman": 0.43035845083318075,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.008832676740478579,
+          "DIAG": 0.0037309317532139247,
+          "B2": 0.009416911605399906
+        },
+        "diagonal_single_write_surrogate_gain": 5.207534182950306e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 20,
+        "head": 0,
+        "E_D_spearman": 0.7784116919978026,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.0389477566604357,
+          "DIAG": 9.735588784065907e-05,
+          "B2": 0.00036437328355268033
+        },
+        "diagonal_single_write_surrogate_gain": 0.0002763023874683875,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 20,
+        "head": 1,
+        "E_D_spearman": 0.4694080754440579,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.0008772800603310981,
+          "DIAG": 0.0046405573437113615,
+          "B2": 3.2841070599294944e-05
+        },
+        "diagonal_single_write_surrogate_gain": 1.624566253152419e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 20,
+        "head": 2,
+        "E_D_spearman": 0.8013527742171763,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.006254442575076403,
+          "DIAG": 0.0009196161184765711,
+          "B2": 0.0034656249300186685
+        },
+        "diagonal_single_write_surrogate_gain": 0.000264629788879765,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 20,
+        "head": 3,
+        "E_D_spearman": 0.5801192547152536,
+        "E_D_overlap": 5,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.00019417126110684367,
+          "DIAG": 0.019516557691214166,
+          "B2": 0.013784539322461336
+        },
+        "diagonal_single_write_surrogate_gain": 1.5541683368127664e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 20,
+        "head": 4,
+        "E_D_spearman": 0.38628456326680094,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.00868311058130971,
+          "DIAG": 0.06027209003539375,
+          "B2": 0.021802327772602235
+        },
+        "diagonal_single_write_surrogate_gain": 0.00022651517123626827,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 20,
+        "head": 5,
+        "E_D_spearman": 0.2708524079838857,
+        "E_D_overlap": 6,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.02248482600408674,
+          "DIAG": 0.009979083449144454,
+          "B2": 0.03502622926592465
+        },
+        "diagonal_single_write_surrogate_gain": 1.8897728906375362e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 20,
+        "head": 6,
+        "E_D_spearman": 0.3140278795092474,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0024335049548916267,
+          "DIAG": 0.010346778208750905,
+          "B2": 0.0023134927642609955
+        },
+        "diagonal_single_write_surrogate_gain": 2.936777088493779e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 20,
+        "head": 7,
+        "E_D_spearman": 0.1652627723860099,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0020823574315856053,
+          "DIAG": 0.0064489060867137776,
+          "B2": 0.06731922951212051
+        },
+        "diagonal_single_write_surrogate_gain": 0.00011124861355860798,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 20,
+        "head": 8,
+        "E_D_spearman": 0.6432372733931514,
+        "E_D_overlap": 6,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.009919268924943396,
+          "DIAG": 0.0006997830008353375,
+          "B2": 0.003734548325676697
+        },
+        "diagonal_single_write_surrogate_gain": 4.909180552414668e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 20,
+        "head": 9,
+        "E_D_spearman": 0.39367789782091195,
+        "E_D_overlap": 5,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.0020402160439089764,
+          "DIAG": 0.0037280373900534817,
+          "B2": 0.0013930382141987753
+        },
+        "diagonal_single_write_surrogate_gain": 3.0776083301311695e-10,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 20,
+        "head": 10,
+        "E_D_spearman": 0.6635689434169566,
+        "E_D_overlap": 6,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.012324415119710433,
+          "DIAG": 0.00988482354402797,
+          "B2": 0.005885787131470713
+        },
+        "diagonal_single_write_surrogate_gain": 0.0003784183628975814,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 20,
+        "head": 11,
+        "E_D_spearman": 0.4920172587438198,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0012277099098814586,
+          "DIAG": 0.0062629768777269345,
+          "B2": 0.0015880324573215694
+        },
+        "diagonal_single_write_surrogate_gain": 9.62639822728e-09,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 20,
+        "head": 12,
+        "E_D_spearman": 0.28179362754074344,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 2.6138920889649756e-05,
+          "DIAG": 0.00441480948286729,
+          "B2": 0.001580968281277844
+        },
+        "diagonal_single_write_surrogate_gain": 2.6635602034385047e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 20,
+        "head": 13,
+        "E_D_spearman": 0.8213353781358725,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.006243906040296587,
+          "DIAG": 0.010883784342974491,
+          "B2": 0.001545217578014829
+        },
+        "diagonal_single_write_surrogate_gain": 2.2341010211929847e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 20,
+        "head": 14,
+        "E_D_spearman": 0.195854696941952,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.00048547564544841105,
+          "DIAG": 0.0006561296240636303,
+          "B2": 0.0010874319499327035
+        },
+        "diagonal_single_write_surrogate_gain": 0.0002168309676581182,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 20,
+        "head": 15,
+        "E_D_spearman": 0.5593011811023622,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.004452055481724251,
+          "DIAG": 0.02345138721406004,
+          "B2": 0.0012902374029658957
+        },
+        "diagonal_single_write_surrogate_gain": 2.9285854297275457e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 21,
+        "head": 0,
+        "E_D_spearman": 0.7150132759567844,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.03589811382452737,
+          "DIAG": 0.005391694786701387,
+          "B2": 0.011003231480831807
+        },
+        "diagonal_single_write_surrogate_gain": 2.20353948824078e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 21,
+        "head": 1,
+        "E_D_spearman": 0.39452481230543857,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0007773447116610816,
+          "DIAG": 0.03071213827254857,
+          "B2": 0.03594785186459889
+        },
+        "diagonal_single_write_surrogate_gain": 5.566458506447968e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 21,
+        "head": 2,
+        "E_D_spearman": 0.679574482695477,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.031954422704183506,
+          "DIAG": 0.005998989462219722,
+          "B2": 0.0031711328443407064
+        },
+        "diagonal_single_write_surrogate_gain": 4.053632726895828e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 21,
+        "head": 3,
+        "E_D_spearman": 0.769147134224501,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.007948479388780499,
+          "DIAG": 0.014618020882730504,
+          "B2": 0.004927060043870414
+        },
+        "diagonal_single_write_surrogate_gain": 1.376657466014984e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 21,
+        "head": 4,
+        "E_D_spearman": 0.3647283006775316,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.09450109516341268,
+          "DIAG": 0.0019290665179081666,
+          "B2": 0.03344878044967919
+        },
+        "diagonal_single_write_surrogate_gain": 6.255568758469446e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 21,
+        "head": 5,
+        "E_D_spearman": 0.6668421534517488,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.009297045680519747,
+          "DIAG": 0.014408505505711863,
+          "B2": 0.008310337632828443
+        },
+        "diagonal_single_write_surrogate_gain": 4.578707315643452e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 21,
+        "head": 6,
+        "E_D_spearman": 0.5825398278703534,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.00693390344245997,
+          "DIAG": 0.03140653337270807,
+          "B2": 0.0021075829716567535
+        },
+        "diagonal_single_write_surrogate_gain": 0.0005734935897740061,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 21,
+        "head": 7,
+        "E_D_spearman": 0.6115981505218825,
+        "E_D_overlap": 5,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.0016728564215429283,
+          "DIAG": 0.0035890953922934864,
+          "B2": 0.0013839530823326106
+        },
+        "diagonal_single_write_surrogate_gain": 2.636257738767179e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 21,
+        "head": 8,
+        "E_D_spearman": 0.27171648965390954,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0042388502876750745,
+          "DIAG": 0.003992274397098006,
+          "B2": 0.05178492736092816
+        },
+        "diagonal_single_write_surrogate_gain": 4.2680293848089185e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 21,
+        "head": 9,
+        "E_D_spearman": 0.4526757919794909,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0003125771917974946,
+          "DIAG": 0.021586616847524914,
+          "B2": 0.010591825881754998
+        },
+        "diagonal_single_write_surrogate_gain": 1.594768299190459e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 21,
+        "head": 10,
+        "E_D_spearman": 0.6780580479765611,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.006021218967981544,
+          "DIAG": 0.006040656373413849,
+          "B2": 0.004149745898759457
+        },
+        "diagonal_single_write_surrogate_gain": 8.649387482000717e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 21,
+        "head": 11,
+        "E_D_spearman": 0.596903039736312,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.0029328069701102582,
+          "DIAG": 0.009642712684438613,
+          "B2": 0.00047124779950110984
+        },
+        "diagonal_single_write_surrogate_gain": 0.0016694096695193791,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 21,
+        "head": 12,
+        "E_D_spearman": 0.21759979857169018,
+        "E_D_overlap": 5,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 6.803147352609399e-05,
+          "DIAG": 0.0013602883994637777,
+          "B2": 0.00016595613436485787
+        },
+        "diagonal_single_write_surrogate_gain": 2.8787470271167936e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 21,
+        "head": 13,
+        "E_D_spearman": 0.44901345907342977,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 7.321562151163212e-07,
+          "DIAG": 0.01448557172618559,
+          "B2": 0.0021099606927396475
+        },
+        "diagonal_single_write_surrogate_gain": 1.2046031055639434e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 21,
+        "head": 14,
+        "E_D_spearman": 0.6732798480131844,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.02961015819343058,
+          "DIAG": 0.0383964658597626,
+          "B2": 0.029795908566868458
+        },
+        "diagonal_single_write_surrogate_gain": 1.1004819671227083e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 21,
+        "head": 15,
+        "E_D_spearman": 0.6797747665262772,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.03529484063613676,
+          "DIAG": 0.031270630695895245,
+          "B2": 0.0017911700871530822
+        },
+        "diagonal_single_write_surrogate_gain": 5.266706710943946e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 22,
+        "head": 0,
+        "E_D_spearman": 0.7238314869071598,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.015825325933882004,
+          "DIAG": 0.007318468464165982,
+          "B2": 0.01280969146507406
+        },
+        "diagonal_single_write_surrogate_gain": 3.6438341674726077e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 22,
+        "head": 1,
+        "E_D_spearman": 0.8238360648232924,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 8.551719710702101e-05,
+          "DIAG": 0.02892815014564664,
+          "B2": 0.0007168887539267622
+        },
+        "diagonal_single_write_surrogate_gain": 7.527102384769459e-09,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 22,
+        "head": 2,
+        "E_D_spearman": 0.4863063083684307,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 4,
+        "boundary_margins": {
+          "ENERGY": 0.012555600584487644,
+          "DIAG": 0.041451689132794484,
+          "B2": 0.007231943221634437
+        },
+        "diagonal_single_write_surrogate_gain": 2.3155950645149044e-10,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 22,
+        "head": 3,
+        "E_D_spearman": 0.8649114173228346,
+        "E_D_overlap": 1,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.04468826857091198,
+          "DIAG": 0.002247598302884356,
+          "B2": 2.6005337738340803e-05
+        },
+        "diagonal_single_write_surrogate_gain": 1.638120110112879e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 22,
+        "head": 4,
+        "E_D_spearman": 0.7467668467313678,
+        "E_D_overlap": 4,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.00023721355118396312,
+          "DIAG": 0.0067192943280262015,
+          "B2": 0.003534338123780103
+        },
+        "diagonal_single_write_surrogate_gain": 4.048043577540094e-09,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 22,
+        "head": 5,
+        "E_D_spearman": 0.8762188701702984,
+        "E_D_overlap": 7,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.001787178912733972,
+          "DIAG": 0.005250695927617008,
+          "B2": 0.008922735995832466
+        },
+        "diagonal_single_write_surrogate_gain": 1.7808394131357102e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 22,
+        "head": 6,
+        "E_D_spearman": 0.8609744094488189,
+        "E_D_overlap": 7,
+        "B2_D_overlap": 8,
+        "boundary_margins": {
+          "ENERGY": 0.02979008271028488,
+          "DIAG": 0.017051803633034403,
+          "B2": 0.0010208098024104817
+        },
+        "diagonal_single_write_surrogate_gain": 1.8352901089756372e-07,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 22,
+        "head": 7,
+        "E_D_spearman": 0.25752494964292255,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.05440877917656159,
+          "DIAG": 0.0008209326104117162,
+          "B2": 0.00329630022594958
+        },
+        "diagonal_single_write_surrogate_gain": 1.7172915163729653e-08,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 22,
+        "head": 8,
+        "E_D_spearman": 0.7040491668192639,
+        "E_D_overlap": 6,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 3.9840322532922304e-05,
+          "DIAG": 0.0009160410481317698,
+          "B2": 9.56000956608895e-09
+        },
+        "diagonal_single_write_surrogate_gain": 8.758331278514694e-09,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 22,
+        "head": 9,
+        "E_D_spearman": 0.28507255997070136,
+        "E_D_overlap": 2,
+        "B2_D_overlap": 3,
+        "boundary_margins": {
+          "ENERGY": 0.009695881201624826,
+          "DIAG": 0.0078099025033971795,
+          "B2": 0.05136992792262412
+        },
+        "diagonal_single_write_surrogate_gain": 3.7599817117648e-10,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 22,
+        "head": 10,
+        "E_D_spearman": 0.728026002563633,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 5,
+        "boundary_margins": {
+          "ENERGY": 0.024997914784902996,
+          "DIAG": 0.005800658830256888,
+          "B2": 0.04414318444589488
+        },
+        "diagonal_single_write_surrogate_gain": 4.926789098004544e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 22,
+        "head": 11,
+        "E_D_spearman": 0.6173777696392602,
+        "E_D_overlap": 6,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 3.200673416739958e-05,
+          "DIAG": 0.02691865452760984,
+          "B2": 0.0016426336110852615
+        },
+        "diagonal_single_write_surrogate_gain": 6.689320171385074e-11,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 22,
+        "head": 12,
+        "E_D_spearman": 0.05906656290056766,
+        "E_D_overlap": 0,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 0.027604470666528776,
+          "DIAG": 7.855637769263594e-05,
+          "B2": 0.04979958721212503
+        },
+        "diagonal_single_write_surrogate_gain": 1.3383809869275199e-05,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 22,
+        "head": 13,
+        "E_D_spearman": 0.5587861655374473,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.01783941076241539,
+          "DIAG": 0.005963048813008152,
+          "B2": 0.011036400748686446
+        },
+        "diagonal_single_write_surrogate_gain": 0.000877874071805864,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 22,
+        "head": 14,
+        "E_D_spearman": 0.401580525544772,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 7,
+        "boundary_margins": {
+          "ENERGY": 5.803156687393594e-05,
+          "DIAG": 2.262266756035057e-05,
+          "B2": 1.174530668581746e-05
+        },
+        "diagonal_single_write_surrogate_gain": 1.2389415137334617e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      },
+      {
+        "layer": 22,
+        "head": 15,
+        "E_D_spearman": 0.6091317982054569,
+        "E_D_overlap": 3,
+        "B2_D_overlap": 6,
+        "boundary_margins": {
+          "ENERGY": 0.04400147260230897,
+          "DIAG": 0.001824632906687061,
+          "B2": 0.009818906107053929
+        },
+        "diagonal_single_write_surrogate_gain": 7.1553083387664965e-06,
+        "surrogate_gain_is_optimization_identity_not_task_evidence": true
+      }
+    ],
+    "document_stability": [
+      {
+        "document": "train_associative_recall_0",
+        "layer": 0,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.5625
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 0,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.875
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 0,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 0,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.8125
+      },
+      {
+        "document": "train_code_0",
+        "layer": 0,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.0
+      },
+      {
+        "document": "train_code_0",
+        "layer": 0,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_code_1",
+        "layer": 0,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 5.9375
+      },
+      {
+        "document": "train_code_1",
+        "layer": 0,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 0,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 0,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 7.0625
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 0,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 0,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 1,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 1,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.3125
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 1,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 1,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.5625
+      },
+      {
+        "document": "train_code_0",
+        "layer": 1,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_code_0",
+        "layer": 1,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.4375
+      },
+      {
+        "document": "train_code_1",
+        "layer": 1,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.5625
+      },
+      {
+        "document": "train_code_1",
+        "layer": 1,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.25
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 1,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 1,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.0625
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 1,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.6875
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 1,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 5.9375
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 2,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 2,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 2,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.6875
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 2,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_code_0",
+        "layer": 2,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.375
+      },
+      {
+        "document": "train_code_0",
+        "layer": 2,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.125
+      },
+      {
+        "document": "train_code_1",
+        "layer": 2,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.4375
+      },
+      {
+        "document": "train_code_1",
+        "layer": 2,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.0
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 2,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.25
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 2,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.375
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 2,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.0625
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 2,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.375
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 4,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.5625
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 4,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.375
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 4,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.4375
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 4,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.25
+      },
+      {
+        "document": "train_code_0",
+        "layer": 4,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.3125
+      },
+      {
+        "document": "train_code_0",
+        "layer": 4,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_code_1",
+        "layer": 4,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.375
+      },
+      {
+        "document": "train_code_1",
+        "layer": 4,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.6875
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 4,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.5
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 4,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.0
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 4,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.5
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 4,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.125
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 5,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.5625
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 5,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.5
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 5,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.4375
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 5,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_code_0",
+        "layer": 5,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.25
+      },
+      {
+        "document": "train_code_0",
+        "layer": 5,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_code_1",
+        "layer": 5,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.375
+      },
+      {
+        "document": "train_code_1",
+        "layer": 5,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 7.125
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 5,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 5,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 5,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.8125
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 5,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 6,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.6875
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 6,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 7.0625
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 6,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.8125
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 6,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_code_0",
+        "layer": 6,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.4375
+      },
+      {
+        "document": "train_code_0",
+        "layer": 6,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_code_1",
+        "layer": 6,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.5
+      },
+      {
+        "document": "train_code_1",
+        "layer": 6,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 6,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.5625
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 6,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 6,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.5625
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 6,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 8,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 7.0
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 8,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.8125
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 8,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 7.0625
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 8,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_code_0",
+        "layer": 8,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.875
+      },
+      {
+        "document": "train_code_0",
+        "layer": 8,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.8125
+      },
+      {
+        "document": "train_code_1",
+        "layer": 8,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.8125
+      },
+      {
+        "document": "train_code_1",
+        "layer": 8,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.875
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 8,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 8,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 8,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.5625
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 8,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 9,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 9,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.6875
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 9,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.8125
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 9,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.8125
+      },
+      {
+        "document": "train_code_0",
+        "layer": 9,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_code_0",
+        "layer": 9,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.8125
+      },
+      {
+        "document": "train_code_1",
+        "layer": 9,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_code_1",
+        "layer": 9,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 9,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 7.125
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 9,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 9,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 7.1875
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 9,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 10,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.5
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 10,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.375
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 10,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.5625
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 10,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.4375
+      },
+      {
+        "document": "train_code_0",
+        "layer": 10,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.8125
+      },
+      {
+        "document": "train_code_0",
+        "layer": 10,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_code_1",
+        "layer": 10,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_code_1",
+        "layer": 10,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 10,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.5625
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 10,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.8125
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 10,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.6875
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 10,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.8125
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 12,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 12,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.6875
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 12,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.8125
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 12,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.6875
+      },
+      {
+        "document": "train_code_0",
+        "layer": 12,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 7.0
+      },
+      {
+        "document": "train_code_0",
+        "layer": 12,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_code_1",
+        "layer": 12,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.875
+      },
+      {
+        "document": "train_code_1",
+        "layer": 12,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 12,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 12,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 7.25
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 12,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 12,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 7.1875
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 13,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 7.0625
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 13,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.8125
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 13,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 7.0
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 13,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.8125
+      },
+      {
+        "document": "train_code_0",
+        "layer": 13,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.8125
+      },
+      {
+        "document": "train_code_0",
+        "layer": 13,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_code_1",
+        "layer": 13,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.875
+      },
+      {
+        "document": "train_code_1",
+        "layer": 13,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 13,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 13,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.875
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 13,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 7.0
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 13,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 14,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 7.125
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 14,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.5
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 14,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 7.125
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 14,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.5
+      },
+      {
+        "document": "train_code_0",
+        "layer": 14,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_code_0",
+        "layer": 14,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.5
+      },
+      {
+        "document": "train_code_1",
+        "layer": 14,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.4375
+      },
+      {
+        "document": "train_code_1",
+        "layer": 14,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.5
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 14,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 14,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.6875
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 14,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 14,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.6875
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 16,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.875
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 16,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.5625
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 16,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 16,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.4375
+      },
+      {
+        "document": "train_code_0",
+        "layer": 16,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.6875
+      },
+      {
+        "document": "train_code_0",
+        "layer": 16,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.5
+      },
+      {
+        "document": "train_code_1",
+        "layer": 16,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.8125
+      },
+      {
+        "document": "train_code_1",
+        "layer": 16,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.5
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 16,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.6875
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 16,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.4375
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 16,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.6875
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 16,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.5
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 17,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.5
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 17,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.4375
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 17,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.5625
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 17,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.5625
+      },
+      {
+        "document": "train_code_0",
+        "layer": 17,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.4375
+      },
+      {
+        "document": "train_code_0",
+        "layer": 17,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.25
+      },
+      {
+        "document": "train_code_1",
+        "layer": 17,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.375
+      },
+      {
+        "document": "train_code_1",
+        "layer": 17,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.3125
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 17,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 17,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 5.9375
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 17,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 17,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 5.8125
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 18,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.875
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 18,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.875
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 18,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 18,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.875
+      },
+      {
+        "document": "train_code_0",
+        "layer": 18,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.8125
+      },
+      {
+        "document": "train_code_0",
+        "layer": 18,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.875
+      },
+      {
+        "document": "train_code_1",
+        "layer": 18,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_code_1",
+        "layer": 18,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.875
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 18,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.5625
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 18,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.0
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 18,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.5625
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 18,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.0625
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 20,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 20,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 7.0
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 20,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 20,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 7.0625
+      },
+      {
+        "document": "train_code_0",
+        "layer": 20,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_code_0",
+        "layer": 20,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_code_1",
+        "layer": 20,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_code_1",
+        "layer": 20,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 20,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.5
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 20,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 20,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.5
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 20,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 21,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.6875
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 21,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.875
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 21,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 21,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_code_0",
+        "layer": 21,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_code_0",
+        "layer": 21,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.5
+      },
+      {
+        "document": "train_code_1",
+        "layer": 21,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.375
+      },
+      {
+        "document": "train_code_1",
+        "layer": 21,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.5
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 21,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 21,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.5
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 21,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 21,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.5625
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 22,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_associative_recall_0",
+        "layer": 22,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 22,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.875
+      },
+      {
+        "document": "train_associative_recall_1",
+        "layer": 22,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.75
+      },
+      {
+        "document": "train_code_0",
+        "layer": 22,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.9375
+      },
+      {
+        "document": "train_code_0",
+        "layer": 22,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.5625
+      },
+      {
+        "document": "train_code_1",
+        "layer": 22,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 7.0625
+      },
+      {
+        "document": "train_code_1",
+        "layer": 22,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.6875
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 22,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.6875
+      },
+      {
+        "document": "train_natural_language_0",
+        "layer": 22,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.375
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 22,
+        "method": "ENERGY_PROMOTION",
+        "top8_overlap_with_pooled": 6.625
+      },
+      {
+        "document": "train_natural_language_1",
+        "layer": 22,
+        "method": "DIAG_SINGLE_WRITE",
+        "top8_overlap_with_pooled": 6.5
+      }
+    ],
+    "shared_anchor_residual_seconds": 97.53650393899261,
+    "ENERGY_reduction_seconds": 0.005704093997337623,
+    "DIAG_additional_seconds": 5.577529032005259,
+    "calibration_artifact_bytes": 10520743,
+    "peak_allocated_bytes": 64674816,
+    "spectral_epsilon": "NOT_COMPUTED_DIAGONAL_STATS_ONLY",
+    "full_model_task_prediction": "NOT_IDENTIFIED_BY_THIS_DIAGNOSTIC"
+  },
+  "DEV": {
+    "status": "NO_INFORMATIVE_OPERATING_POINT",
+    "strongest": "ENERGY_PROMOTION",
+    "cells": [
+      {
+        "cell": "c0",
+        "N": 32,
+        "accuracy": {
+          "NATIVE": 1.0,
+          "ENERGY_PROMOTION": 1.0,
+          "B2_QUERY_PROMOTION": 1.0
+        },
+        "correct": {
+          "NATIVE": 32,
+          "ENERGY_PROMOTION": 32,
+          "B2_QUERY_PROMOTION": 32
+        },
+        "all_finite": true,
+        "eligible": false,
+        "prompt_tokens": 141.0
+      },
+      {
+        "cell": "c1",
+        "N": 32,
+        "accuracy": {
+          "NATIVE": 0.96875,
+          "ENERGY_PROMOTION": 0.96875,
+          "B2_QUERY_PROMOTION": 0.96875
+        },
+        "correct": {
+          "NATIVE": 31,
+          "ENERGY_PROMOTION": 31,
+          "B2_QUERY_PROMOTION": 31
+        },
+        "all_finite": true,
+        "eligible": false,
+        "prompt_tokens": 269.0
+      },
+      {
+        "cell": "c2",
+        "N": 32,
+        "accuracy": {
+          "NATIVE": 0.96875,
+          "ENERGY_PROMOTION": 1.0,
+          "B2_QUERY_PROMOTION": 0.9375
+        },
+        "correct": {
+          "NATIVE": 31,
+          "ENERGY_PROMOTION": 32,
+          "B2_QUERY_PROMOTION": 30
+        },
+        "all_finite": true,
+        "eligible": false,
+        "prompt_tokens": 461.0
+      }
+    ],
+    "selected_cell": null,
+    "DIAG_DEV_task_or_KL_observed": false,
+    "DEV_manifest_sha256": "43cbe5be021b2aa8731e70db700531f7b67b12957577f368bb5020eae5f4823b"
+  },
+  "TEST": {
+    "status": "NOT_RUN_DEV_GATE",
+    "methods": null,
+    "decision": "NO_INFORMATIVE_OPERATING_POINT"
+  },
+  "cost": {
+    "status": "COMPLETE",
+    "comparisons": {
+      "ENERGY_PROMOTION": {
+        "median_paired_ratio": 0.9883687600155002,
+        "CI95": [
+          0.9756012819619443,
+          1.0728244308028911
+        ],
+        "raw_ratios": [
+          0.9810542507952809,
+          0.9756012819619443,
+          0.9883687600155002,
+          1.0728244308028911,
+          1.034701727047869
+        ],
+        "cost_status": "COST_UNRESOLVED"
+      },
+      "B2_QUERY_PROMOTION": {
+        "median_paired_ratio": 1.0318411465911506,
+        "CI95": [
+          0.9615107077377525,
+          1.1028973182283737
+        ],
+        "raw_ratios": [
+          1.0318411465911506,
+          1.0744497860646252,
+          1.0015215727636593,
+          0.9615107077377525,
+          1.1028973182283737
+        ],
+        "cost_status": "COST_UNRESOLVED"
+      }
+    },
+    "median_ms_per_token": {
+      "B2_QUERY_PROMOTION": 115.62997058592828,
+      "DIAG_SINGLE_WRITE": 122.9313157265608,
+      "ENERGY_PROMOTION": 121.61586510936218,
+      "ENERGY_REPEAT": 113.78980412499118
+    },
+    "independent_energy_repeat_median_abs_variation": 0.05071002405091751,
+    "scope": "eager per-token128-prefix, not production TPOT",
+    "five_measured_blocks_only": true,
+    "no_serving_or_whole_VRAM_advantage_claim": true,
+    "lazy_request_tensor_allocation_included": true
+  }
+}

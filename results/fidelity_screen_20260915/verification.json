@@ -1,0 +1,40 @@
+{
+  "run_id": "RTPA_FROZEN_SINGLE_WRITE_SCREEN_20260915_V1",
+  "structural": {
+    "fixed_policy_and_runtime_source_bindings": "VERIFIED_BEFORE_EXECUTION",
+    "same_actual_payload_bytes": 5566464,
+    "same_high_rows": 8,
+    "local_original_evidence": "PRESERVED",
+    "NLL_last_target": "UNDEFINED_NOT_ZERO_FILLED"
+  },
+  "numerical_completion": {
+    "planned_document_method_trajectories": 12,
+    "complete_trajectories": 12,
+    "numerical_failures": 0,
+    "model_forward_API_calls": 12288,
+    "model_input_positions": 12288,
+    "quantized_layer_writes": 165888,
+    "retries": 0,
+    "resume_actual_test": "NOT_RUN_NO_INTERRUPTION"
+  },
+  "scientific_screen": {
+    "decision": "NO_PROMOTION_FROM_SMALL_SCREEN",
+    "unmet_criterion": "DIAG pooled Native-KL at least 5% lower than B2",
+    "quality_success_inferred_from_structural_checks": false,
+    "task_accuracy": "NOT_MEASURED",
+    "population_confidence_interval": "NOT_COMPUTED_N3",
+    "new_latency_or_peak_memory": "NOT_MEASURED"
+  },
+  "CPU_reconstruction": {
+    "status": "PASS_FROM_INCLUDED_OBSERVATIONS",
+    "clean_copy_repeats": 2,
+    "result_and_table_bytes_equal": true,
+    "new_GPU_or_logits_reproduction": false
+  },
+  "historical_Native_scope": {
+    "retained_parent_FP32_readouts_same_device": 18,
+    "reduction_interventions": 4,
+    "actual_Native_cache_compared_cases": 2,
+    "historical_CPU_threshold_exceedances_preserved": 7
+  }
+}

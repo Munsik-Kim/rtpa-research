@@ -20,3 +20,9 @@ changes in the archived numerical modules.
 
 No endorsement by the cited model, dataset, framework, or paper authors is
 implied. No verified DAMP author implementation is included.
+
+The one-head numerical fixture in examples/native_boundary is derived from
+Qwen/Qwen3.5-0.8B-Base revision dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68.
+Copyright 2026 Alibaba Cloud; Apache-2.0. It contains activation-derived
+numbers, not weights, prompt text or token histories. The fixture's source
+and limits are recorded in its manifest and NOTICE_FRAGMENT.md.

@@ -1,0 +1,288 @@
+{
+  "run_id": "RTPA_FROZEN_SINGLE_WRITE_SCREEN_20260915_V1",
+  "created_UTC": "2026-09-15T06:38:48.118099+00:00",
+  "prior_results_commit": "803e79a7c507ef09eae9ae7148d8b78436cc1ed3",
+  "config_path": "data/fidelity_screen_20260915/run_config.json",
+  "tokens_path": "data/fidelity_screen_20260915/tokens.npz",
+  "policy_path": "data/single_write_v1/policy.npz",
+  "model_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "model_content": [
+    {
+      "file": "config.json",
+      "sha256": "b90b86f35c8e6925ef74ee04d0e758f0a845c83a42089ad82bbaa948de9b4204",
+      "bytes": 2907
+    },
+    {
+      "file": "tokenizer.json",
+      "sha256": "fe000e3ed39ed12b8d2481d527d44f93c65d37e87645d2dcc80d1bf9d50d2927",
+      "bytes": 12807196
+    },
+    {
+      "file": "tokenizer_config.json",
+      "sha256": "e611fbccc7c29ef3b1cafb1cb7ea548d189968632901d678fd62be68c47885de",
+      "bytes": 16712
+    },
+    {
+      "file": "model.safetensors-00001-of-00001.safetensors",
+      "sha256": "c2b1e5a17d9c1e27685d92ed9b382911ebb99955ecd89052d1721241adfbab6c",
+      "bytes": 1746942600
+    }
+  ],
+  "native_source_sha256": "d67880b98f47d55a9d40679c901a740aa0618b97458824cab2abe9a1f7861be6",
+  "environment": {
+    "python": "3.11.15",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.9.0",
+    "numpy": "1.26.4",
+    "tokenizers": "0.22.2",
+    "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39"
+  },
+  "codec": "R2_OFFSET",
+  "backend": "optimized",
+  "layers": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    16,
+    17,
+    18,
+    20,
+    21,
+    22
+  ],
+  "high_rows": 8,
+  "documents": [
+    {
+      "id": "astral-sh__uv",
+      "repository": "astral-sh/uv",
+      "revision": "b8aff80900e7a32e3a188138af483eb3e895a149",
+      "source_path": "README.md",
+      "license_path": "LICENSE-MIT",
+      "files": {
+        "README.md": {
+          "bytes": 9859,
+          "sha256": "57a84a5a635f30e3a26541ebc16ca690944a7750f05713b1af92d3170b58f704",
+          "url": "https://github.com/astral-sh/uv/blob/b8aff80900e7a32e3a188138af483eb3e895a149/README.md"
+        },
+        "LICENSE-MIT": {
+          "bytes": 1077,
+          "sha256": "860e3d7a86b84e6a7012c7a635fc64df475cebc6cce34dfeb73a5982ec58176c",
+          "url": "https://github.com/astral-sh/uv/blob/b8aff80900e7a32e3a188138af483eb3e895a149/LICENSE-MIT"
+        }
+      },
+      "untruncated_tokens": 2959,
+      "input_positions": 1024,
+      "token_sha256": "63ad72e2f98e323c9665c2230b9172e9e740d93fa896cc4381edf4ba84109799",
+      "tokens_comma_sha256": "9f5b0da2e2edb379a73f7697c63bd03822f94b0039392175162074205449f227"
+    },
+    {
+      "id": "BurntSushi__ripgrep",
+      "repository": "BurntSushi/ripgrep",
+      "revision": "3fce3b5bb0236da2df6d99672afb8a719642eca7",
+      "source_path": "README.md",
+      "license_path": "LICENSE-MIT",
+      "files": {
+        "README.md": {
+          "bytes": 21599,
+          "sha256": "945622d974f65e4e141ef9726c948c2640eebd222c5b101afb6445728283921e",
+          "url": "https://github.com/BurntSushi/ripgrep/blob/3fce3b5bb0236da2df6d99672afb8a719642eca7/README.md"
+        },
+        "LICENSE-MIT": {
+          "bytes": 1081,
+          "sha256": "0f96a83840e146e43c0ec96a22ec1f392e0680e6c1226e6f3ba87e0740af850f",
+          "url": "https://github.com/BurntSushi/ripgrep/blob/3fce3b5bb0236da2df6d99672afb8a719642eca7/LICENSE-MIT"
+        }
+      },
+      "untruncated_tokens": 6431,
+      "input_positions": 1024,
+      "token_sha256": "e1c33e2b223e87fd7d8587a55df532847452ed3794f02bbbb358091ab07e9d44",
+      "tokens_comma_sha256": "fac1445571c7353f7f06d4d7de3ebd709ac448b139f1060bafdb7668e6098175"
+    },
+    {
+      "id": "Textualize__rich",
+      "repository": "Textualize/rich",
+      "revision": "9d8f9a372cc5916fd4781fec207ced7ddac2f08f",
+      "source_path": "README.md",
+      "license_path": "LICENSE",
+      "files": {
+        "README.md": {
+          "bytes": 17017,
+          "sha256": "2f68e0e5b36f088e4059f08717454bfca47691b0188a278c7966eef6205c0d63",
+          "url": "https://github.com/Textualize/rich/blob/9d8f9a372cc5916fd4781fec207ced7ddac2f08f/README.md"
+        },
+        "LICENSE": {
+          "bytes": 1056,
+          "sha256": "deed7c17a4318158190a3ea239cc879a5a50271cebb98ae7025f48fbe58dca15",
+          "url": "https://github.com/Textualize/rich/blob/9d8f9a372cc5916fd4781fec207ced7ddac2f08f/LICENSE"
+        }
+      },
+      "untruncated_tokens": 4451,
+      "input_positions": 1024,
+      "token_sha256": "c731f39536e155433919d80129050ee8e38b5a18c0de71a1ed2e3f9268c79eeb",
+      "tokens_comma_sha256": "9b7e501b49ef7b484d374e9f9bc47cdb6d266e7d503942efcb7e025a6aa25d01"
+    }
+  ],
+  "selection": "Exactly this preselected catalog, sorted by repository casefold; first 1024 tokenizer IDs of unmodified README, no outcome filtering. No code in these documents is executed.",
+  "special_tokens_added": false,
+  "truncation": "first1024 IDs including raw Markdown; no prompt templating, instruction, padding or source cleaning",
+  "methods": [
+    "NATIVE",
+    "ENERGY_PROMOTION",
+    "B2_QUERY_PROMOTION",
+    "DIAG_SINGLE_WRITE"
+  ],
+  "method_orders": [
+    [
+      "NATIVE",
+      "ENERGY_PROMOTION",
+      "B2_QUERY_PROMOTION",
+      "DIAG_SINGLE_WRITE"
+    ],
+    [
+      "ENERGY_PROMOTION",
+      "B2_QUERY_PROMOTION",
+      "DIAG_SINGLE_WRITE",
+      "NATIVE"
+    ],
+    [
+      "B2_QUERY_PROMOTION",
+      "DIAG_SINGLE_WRITE",
+      "NATIVE",
+      "ENERGY_PROMOTION"
+    ]
+  ],
+  "metrics": {
+    "KL": "FP64 full-vocabulary Native||method; [16,1024)",
+    "NLL": "next input token in [16,1023); last target undefined",
+    "late_KL": "[512,1024)",
+    "p99": "numpy linear quantile pooled3024positions",
+    "top1pct": "largest ceil(.01*3024)=31values",
+    "paired_mass": "sum positive/negative token KL(DIAG-baseline)",
+    "CI": "NOT_COMPUTED_n3_descriptive_screen",
+    "prefix_summaries": "[16,256),[16,512), same documents"
+  },
+  "criteria": {
+    "all_finite": true,
+    "primary": "DIAG_SINGLE_WRITE vs B2_QUERY_PROMOTION",
+    "relative_KL_reduction_min": 0.05,
+    "document_wins_min": 2,
+    "delta_NLL_max_nat_per_token": 0.001,
+    "NLL_margin_note": "Explicit small-screen investment choice, not universal tolerance or task noninferiority."
+  },
+  "budget": {
+    "planned_positions": 12288,
+    "planned_layer_writes": 165888,
+    "position_hard_cap": 16384,
+    "GPU_numerical_seconds_cap": 3600,
+    "CPU_numerical_seconds_cap": 600,
+    "new_result_bytes_cap": 16777216,
+    "smoke_positions": 0,
+    "smoke_reason": "Reuse exact-bound policy CAL and unchanged runtime source; CPU fixture checked separately",
+    "old_pilot_estimate_seconds": 1203.3898539574063,
+    "fifty_percent_margin_seconds": 1805.0847809361094,
+    "old_pilot_sha256": "ae7eba62d40fe7a3098f15ff4f215b2fd5a1ec4f61b9ccafd90597bc62e6d6fa"
+  },
+  "resume": "Verify config/scalars hashes and reuse completed documents only. Preserve interrupted files; restart full prefix without cache reconstruction; all attempts charged to same cumulative ledger. Do not reset caps.",
+  "scope": "No task accuracy, new timing/profiler/peak benchmark, fitting or policy change. Four independent own caches interleaved; not single-request memory.",
+  "public_bindings": [
+    {
+      "path": "data/fidelity_screen_20260915/input_audit.json",
+      "bytes": 59913,
+      "sha256": "b66e6194218ce248c16992b68ced058efff6659c266bad7a3a0d32c9afef0da7"
+    },
+    {
+      "path": "data/fidelity_screen_20260915/sources/BurntSushi__ripgrep/LICENSE-MIT",
+      "bytes": 1081,
+      "sha256": "0f96a83840e146e43c0ec96a22ec1f392e0680e6c1226e6f3ba87e0740af850f"
+    },
+    {
+      "path": "data/fidelity_screen_20260915/sources/BurntSushi__ripgrep/README.md",
+      "bytes": 21599,
+      "sha256": "945622d974f65e4e141ef9726c948c2640eebd222c5b101afb6445728283921e"
+    },
+    {
+      "path": "data/fidelity_screen_20260915/sources/Textualize__rich/LICENSE",
+      "bytes": 1056,
+      "sha256": "deed7c17a4318158190a3ea239cc879a5a50271cebb98ae7025f48fbe58dca15"
+    },
+    {
+      "path": "data/fidelity_screen_20260915/sources/Textualize__rich/README.md",
+      "bytes": 17017,
+      "sha256": "2f68e0e5b36f088e4059f08717454bfca47691b0188a278c7966eef6205c0d63"
+    },
+    {
+      "path": "data/fidelity_screen_20260915/sources/astral-sh__uv/LICENSE-MIT",
+      "bytes": 1077,
+      "sha256": "860e3d7a86b84e6a7012c7a635fc64df475cebc6cce34dfeb73a5982ec58176c"
+    },
+    {
+      "path": "data/fidelity_screen_20260915/sources/astral-sh__uv/README.md",
+      "bytes": 9859,
+      "sha256": "57a84a5a635f30e3a26541ebc16ca690944a7750f05713b1af92d3170b58f704"
+    },
+    {
+      "path": "data/fidelity_screen_20260915/tokens.npz",
+      "bytes": 5382,
+      "sha256": "aeac470d1713e89edf62e6993e9f4bf1ba003e612f71cac6f3ff635d8309a332"
+    },
+    {
+      "path": "data/single_write_v1/policy.npz",
+      "bytes": 882950,
+      "sha256": "2bd54fc44dacf529369a1aec1c2ecb69c95e4692851d53646ba078160d4e2a63"
+    },
+    {
+      "path": "src/rtpa_research/codec.py",
+      "bytes": 4146,
+      "sha256": "4fd262f2d8736e6bed270735388222bd09410f8034858f26a934fca9e3237069"
+    },
+    {
+      "path": "src/rtpa_research/codec_r2.py",
+      "bytes": 12289,
+      "sha256": "d2d3a982e445a9bcd0db39490acf70758a0abc50d5821f624795169afb389fa2"
+    },
+    {
+      "path": "src/rtpa_research/codec_r2_optimized.py",
+      "bytes": 4068,
+      "sha256": "519975711d79ee0672a20d3585c6cd6c07002e237629ed48cabb006dffe9ad9e"
+    },
+    {
+      "path": "src/rtpa_research/diag_r2_runtime.py",
+      "bytes": 5008,
+      "sha256": "36012aee79be9394c531e8db371d8f7b8d8ed3c8161f5e53b501360646b5404f"
+    },
+    {
+      "path": "src/rtpa_research/factorized.py",
+      "bytes": 6133,
+      "sha256": "d6947df1f614b9dcb7372878e7fbc9e05626ff40c7e86c2cb80e819ae560e08e"
+    },
+    {
+      "path": "src/rtpa_research/fidelity_screen.py",
+      "bytes": 15344,
+      "sha256": "dcc0d1bde8fd18faa702047cbe30739895b4903a6511a60856796c98cddb4679"
+    },
+    {
+      "path": "src/rtpa_research/layout.py",
+      "bytes": 910,
+      "sha256": "d9a005cd5c734ac972a0fe86ec08a8f6fd54ff1afef39bdd8c546fba01afd276"
+    },
+    {
+      "path": "src/rtpa_research/reference_encoder.py",
+      "bytes": 17209,
+      "sha256": "d7272e7c4d600da3cbfcb9196be140afdb08b0f33c6751d51c744b4429ac7b53"
+    },
+    {
+      "path": "src/rtpa_research/runtime.py",
+      "bytes": 6843,
+      "sha256": "afbfcbad6f18879151a827a1473869ea60c5d80f1f32689ee408d7d08cb6f8d2"
+    }
+  ]
+}

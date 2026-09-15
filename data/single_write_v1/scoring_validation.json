@@ -1,0 +1,11 @@
+{
+  "status": "PASS_SMALL_DIRECT_PROPAGATION",
+  "max_normalized_error": 1.6653345369377348e-15,
+  "tolerance": 1e-10,
+  "compared_source_directions": 90,
+  "source_writes_affect_only_future_readouts": true,
+  "tie_rule": "row ascending",
+  "model_forwards": 0,
+  "GPU_seconds": 0,
+  "wall_seconds": 0.009255517001292901
+}

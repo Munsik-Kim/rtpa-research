@@ -1,0 +1,11 @@
+{
+  "run_id": "RTPA_FROZEN_SINGLE_WRITE_SCREEN_20260915_V1",
+  "prior_results_commit": "803e79a7c507ef09eae9ae7148d8b78436cc1ed3",
+  "preregistration_commit": "259cb945adbe7bf439528a398b3fe8689ada9ba5",
+  "draft_PR": "https://github.com/Munsik-Kim/rtpa-research/pull/9",
+  "PR_created_at": "2026-09-15T06:42:33Z",
+  "remote_branch_sha_verified_before_GPU": "259cb945adbe7bf439528a398b3fe8689ada9ba5",
+  "config_sha256": "2b2de92722951accd57ddcead064578a410491928067d78bc97170ce44aad870",
+  "external_timestamp_before_experiment": true,
+  "main_changed": false
+}
