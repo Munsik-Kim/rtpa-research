@@ -1,12 +1,13 @@
 {
-  "scope": "Publication mapping, not a replacement of frozen receipts",
+  "scope": "Initial integration publication mapping at the commit below, not current-file hashes or a replacement of frozen receipts. Later documentation edits are tracked by Git and the current publication manifest.",
+  "published_commit": "803e79a7c507ef09eae9ae7148d8b78436cc1ed3",
   "files": [
     {
       "path": "README.md",
       "origin_id": "rtpa-maintenance-20260914/README.md",
       "original_sha256": "01b030681a4b6496130f3f0f7f808a57aca05aebccbc780f435a08d1b6c6322c",
       "published_sha256": "94682acdb99eda58b65236d0e15b606839cee0dfce7c1f824329f312eff99965",
-      "transformation": "byte-identical copy; integrated navigation/environment-observation diagnostics only, arithmetic unchanged"
+      "transformation": "Derived document: integrated evidence navigation and clarified measurement scope; not byte-identical to the original README"
     },
     {
       "path": "docs/GRID_FEEDBACK.md",
@@ -48,7 +49,7 @@
       "origin_id": "rtpa-native-boundary-minimal-20260915/public_candidate/native_boundary_demo.py",
       "original_sha256": "7307c5e4e69855ad22e2a539e05aaace01e55b8911c658c9e70ad618a453a59c",
       "published_sha256": "20119af6ebd6c2f7047b616681188986e453de9eb9a5de413354090a5bd6b58c",
-      "transformation": "byte-identical copy; integrated navigation/environment-observation diagnostics only, arithmetic unchanged"
+      "transformation": "Derived script: environment and observations printed before expected-value checks; arithmetic unchanged, but not byte-identical to the original script"
     },
     {
       "path": "examples/native_boundary/native_boundary_fixture.npz",

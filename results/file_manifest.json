@@ -6692,8 +6692,8 @@
     },
     {
       "path": "data/single_write_v1/source_mapping.json",
-      "bytes": 56460,
-      "sha256": "6f6d1570c3f3425cb60c1bd2a8e0b1c8b5669f66ea41d0eeb4f1ba9286300e78"
+      "bytes": 56736,
+      "sha256": "5fec080b1b48f8b6818a88d71564652d582b308f5a089b8dd5b4020635d647c3"
     },
     {
       "path": "data/single_write_v1/timing.json",
