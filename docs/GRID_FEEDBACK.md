@@ -100,8 +100,10 @@ files shipped in this checkout. In that diagnostic directory, `python run.py
 cpu`, `python run.py gpu`, and `python hybrid.py` are the bounded execution
 entrypoints; `python analyze.py --out new-check.json` reaggregates saved
 observations on CPU. Exact receipt-bound parent captures and the recorded
-environment are still required. A smaller model-free public fixture is the
-next proposed step, **not yet packaged or published**.
+environment are still required. A derived [scalar receipt](../data/native_boundary/stage2_observations.json)
+and the smaller [model-free boundary example](../examples/native_boundary/README.md)
+are now included in this repository. They do not expose the original full
+readout traces or reproduce all 18 captures without the LOCAL_ONLY inputs.
 
 ## Contracts and selection
 

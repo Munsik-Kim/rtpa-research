@@ -7297,8 +7297,8 @@
     },
     {
       "path": "docs/GRID_FEEDBACK.md",
-      "bytes": 10976,
-      "sha256": "26e278b2dae90c20f9112cd024ea25b5969dce2c2d6fd04a5b23664fe5151b2b"
+      "bytes": 11189,
+      "sha256": "6e1ee27fbd80af401462f0ebf034ad81db35385352e623b4c3be2f8b8202ed05"
     },
     {
       "path": "docs/HYPOTHESES.md",
@@ -7362,8 +7362,8 @@
     },
     {
       "path": "docs/RESEARCH_DIRECTION.md",
-      "bytes": 12106,
-      "sha256": "a9df56486c802a194c84b843707bcccfdd49a5546bee270209a92f587b1187ca"
+      "bytes": 12519,
+      "sha256": "c8bc8b47f9bbc282e4147cc6ef7e3e6ca69b945c80deb7bd1fc344b00f612f67"
     },
     {
       "path": "docs/RESULTS.md",

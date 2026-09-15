@@ -10,13 +10,17 @@ peak memory or a latency improvement.
 This is the common decision framework for the repository, not a replacement for
 an experiment's frozen protocol or historical decision. The detailed evidence
 lives in the linked study records rather than duplicated development logs.
+After the [completed single-write screen](SCREEN_INTERPRETATION.md), current
+allocation-candidate search is stopped. Maintain the implemented fixed masks,
+causal code correction and diagnostic examples; no new score search is implied
+by the historical continuation rules below.
 
 ## Three research axes
 
 | Axis | Question and permitted claim | Current evidence and limit |
 |---|---|---|
 | Error theory | When do direction and temporal correlation make equal state-error energy produce different output risk? | Standard frozen-response identities and CPU counterexamples establish the possibility. Actual codec measurements must establish which conditions occur; they do not turn a frozen identity into an exact model-KL decomposition. |
-| Offline compression of output information | Can response statistics be compressed into a useful fixed precision mask without future runtime inputs? | DIAG implements fixed selection from `Kii+2ci`; it does not diagonalize the actual recurrence. Output-aware selection has beaten simpler energy scores in some panels, but coherent DIAG has not consistently beaten strong query-weighted alternatives. |
+| Offline compression of output information | Can response statistics be compressed into a useful fixed precision mask without future runtime inputs? | Coherent `Kii+2ci` and the distinct single-write response-weighted promotion implement fixed selection, not a diagonalized recurrence. Output-aware selection has beaten energy-only controls in some panels; consistent extra value over strong query-weighted controls remains unestablished. |
 | Matched empirical value | Does the method improve quality, task behavior, stability and cost against a strong baseline at the same codec and payload? | Output-preservation gains exist within stated scopes. Additional task accuracy and a small measured latency upper bound remain unestablished. Codec regressions and numerical failures remain part of the evidence. |
 
 The current algebra, assumptions and primary-source verification are in
@@ -154,16 +158,18 @@ guards, dither, residual memory or models until something wins. GDN2 remains
 at its actually tested operator scope; no pretrained-model support follows
 from a scalar or frozen replay demonstration.
 
-## One next step after the boundary follow-up
+## Included boundary example and current maintenance state
 
-Prepare a small, model-weight-free fixture and script that separates the CPU
-equation, same-device readout and BF16 storage checks, using the observed
-rounding boundary and explicit provenance. This is a proposed public
-reproduction contribution, not an upstream bug claim or an already published
-package. Source/capture permission and size review precede publication. No
-new codec search, model run or serving-stack installation is implied. If the
-reduced fixture cannot preserve the measured boundary, retain the scoped
-local result rather than claim an equivalent public reproduction.
+The [one-head model-weight-free fixture and script](../examples/native_boundary/README.md)
+now preserve a scoped reduction/BF16 rounding boundary with source attribution.
+They are available code, not an upstream bug report, accepted contribution or
+whole-model conformance proof. Its 128×128 shape matters; another environment
+may not reproduce the recorded CPU/CUDA distinction.
+
+The separate fixed single-write screen did not meet its primary B2-relative
+promotion criterion. Maintain these reproducible research assets rather than
+expand scores or tune the three consumed documents. No kernel project,
+serving integration or new experiment is an automatic next step.
 
 ## Reproducibility levels and implementation boundaries
 
