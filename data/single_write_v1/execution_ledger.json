@@ -1,0 +1,57 @@
+{
+  "model_forward_API_calls": 87260,
+  "model_input_positions": 87260,
+  "quantized_state_writes": 1066302,
+  "GPU_numerical_seconds": 8474.492267574,
+  "CPU_analysis_seconds": 2.4985404059993774,
+  "operator_updates": 27648,
+  "phases": [
+    {
+      "phase": "CPU_safe_capture_validation",
+      "start_UTC": "2026-09-15T01:26:15Z",
+      "GPU": false,
+      "status": "COMPLETE",
+      "wall_seconds": 1.3319551549993776,
+      "CPU_process_seconds": 1.2485948999999998,
+      "error": null
+    },
+    {
+      "phase": "CUDA_single_write_calibration",
+      "start_UTC": "2026-09-15T01:36:38Z",
+      "GPU": true,
+      "status": "COMPLETE",
+      "wall_seconds": 113.28926646999935,
+      "CPU_process_seconds": 110.44328610000001,
+      "error": null
+    },
+    {
+      "phase": "MODEL_all",
+      "start_UTC": "2026-09-15T01:41:08Z",
+      "GPU": true,
+      "status": "FAILED_OR_BLOCKED",
+      "wall_seconds": 202.27278847599882,
+      "CPU_process_seconds": 196.99601479999998,
+      "error": "GPU_BUSY_EXTERNAL_PROCESS:71003"
+    },
+    {
+      "phase": "MODEL_all",
+      "start_UTC": "2026-09-15T01:47:35Z",
+      "GPU": true,
+      "status": "FAILED_OR_BLOCKED",
+      "wall_seconds": 143.4518295650014,
+      "CPU_process_seconds": 138.8432764,
+      "error": "GPU_BUSY_EXTERNAL_PROCESS:72904"
+    },
+    {
+      "phase": "MODEL_all",
+      "start_UTC": "2026-09-15T02:24:21Z",
+      "GPU": true,
+      "status": "COMPLETE",
+      "wall_seconds": 8015.478383063,
+      "CPU_process_seconds": 7664.4360917,
+      "error": null
+    }
+  ],
+  "prior_audit_CPU_seconds_included": true,
+  "first_GPU_work_UTC": "2026-09-15T01:36:38Z"
+}

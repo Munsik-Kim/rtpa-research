@@ -5,6 +5,8 @@ from pathlib import Path
 import sys
 
 COMMANDS = {
+    'native-boundary': 'Opt-in Torch CPU/CUDA one-head boundary example; no model',
+    'single-write-evidence': 'NumPy-only reconstruction of retained Native/DEV evidence',
     'demo': 'NumPy-only synthetic operator illustration (no model)',
     'reproduce': 'Reconstruct included historical observations on CPU',
     'verify': 'Check public observations, tables and frozen provenance on CPU',
@@ -54,6 +56,14 @@ def main(argv=None):
     if argv[0] in ('benchmark','benchmark-reproduce'):
         from .maintenance_benchmark import main as delegated
         return delegated(argv)
+    if argv[0]=='single-write-evidence':
+        from .single_write_evidence import main as delegated
+        return delegated(argv[1:])
+    if argv[0]=='native-boundary':
+        import runpy
+        from .resources import evidence_root
+        script=evidence_root()/'examples/native_boundary/native_boundary_demo.py'
+        return runpy.run_path(str(script))['main'](argv[1:])
     q = argparse.ArgumentParser(description='CPU evidence reconstruction; legacy option ordering is retained.')
     q.add_argument('command', choices=('reproduce','verify','gpu-requirements'))
     q.add_argument('--root', type=Path, default=None)

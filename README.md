@@ -5,6 +5,7 @@ model weights, activations or attention KV. Equal-magnitude state errors can
 affect future readouts differently: RTPA uses offline response measurements
 for fixed precision allocation (**RTPA-DIAG**) and bounded runtime integer-code
 correction (**FA_CODE**). Their quality and cost results remain separate.
+FA_CODE uses a frozen offline metric and current state, **not runtime future tokens**.
 
 You can run a model-free CPU demonstration, reconstruct public evidence, or
 use the limited opt-in GDN adapter. GDN2 is **operator-tested only**, not a
@@ -33,6 +34,12 @@ explains the score differences, whole-path aliases, paired intervals and tails.
 These observations support studying output-sensitive allocation, not assuming
 that the most elaborate score is best.
 
+The [newly integrated single-write study](docs/SINGLE_WRITE.md) is a different
+fixed-mask revision: its task DEV gate stopped at **NO_INFORMATIVE_OPERATING_POINT**.
+DIAG task/KL evaluation was not run there. The page includes the completed
+decision, actual masks, CPU-reconstructible observations and a model-free
+Native reduction/BF16 boundary example.
+
 ## Storage and limits
 
 The mixed payload includes UINT8 values, FP16 metadata and eight FP16 high rows:
@@ -43,7 +50,11 @@ The implementation uses eager tensor encode/decode, not a fused packed kernel.
 
 R4 timing and new peak-VRAM measurements are incomplete; a +5% latency bound
 and added task accuracy are not established. Legacy FP16 zero-point overflow
-and 7/18 Native-fidelity check failures remain. No stable default is promoted.
+remains. The historical 7/18 **CPU replay error-threshold exceedances** are
+preserved, not Native NaN/Inf failures. A [bounded follow-up](docs/GRID_FEEDBACK.md#native-readout-conformance)
+matches all 18 captured FP32 readouts on GPU (two reused, 16 new operator
+replays); actual Native cache checks cover only the two observed cases.
+This does not repair a codec or promote a stable default.
 Earlier R2/FA_CODE outcomes, cost regressions and task ties remain in
 [Results](docs/RESULTS.md); rejected codec candidates remain in
 [Grid feedback](docs/GRID_FEEDBACK.md). See [measurement scope](docs/BENCHMARKS.md)
@@ -69,6 +80,7 @@ python -m rtpa_research demo --out demo.json
 python -m rtpa_research verify --out recomputed
 python -m rtpa_research.maintenance_verify --out recomputed-r4.json
 python -m rtpa_research.grid_verify --out recomputed-grid-check.json
+python -m rtpa_research single-write-evidence --out recomputed-single-write
 ```
 
 These CPU commands do not import Torch or run a model. R4's

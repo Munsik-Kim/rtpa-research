@@ -1,0 +1,446 @@
+{
+  "status": "PASS_BOUNDED_CPU_FIXTURE",
+  "rows": [
+    {
+      "mask": "masks/B2_QUERY_PROMOTION/0",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/B2_QUERY_PROMOTION/1",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/B2_QUERY_PROMOTION/10",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/B2_QUERY_PROMOTION/12",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/B2_QUERY_PROMOTION/13",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/B2_QUERY_PROMOTION/14",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/B2_QUERY_PROMOTION/16",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/B2_QUERY_PROMOTION/17",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/B2_QUERY_PROMOTION/18",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/B2_QUERY_PROMOTION/2",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/B2_QUERY_PROMOTION/20",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/B2_QUERY_PROMOTION/21",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/B2_QUERY_PROMOTION/22",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/B2_QUERY_PROMOTION/4",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/B2_QUERY_PROMOTION/5",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/B2_QUERY_PROMOTION/6",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/B2_QUERY_PROMOTION/8",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/B2_QUERY_PROMOTION/9",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/DIAG_SINGLE_WRITE/0",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/DIAG_SINGLE_WRITE/1",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/DIAG_SINGLE_WRITE/10",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/DIAG_SINGLE_WRITE/12",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/DIAG_SINGLE_WRITE/13",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/DIAG_SINGLE_WRITE/14",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/DIAG_SINGLE_WRITE/16",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/DIAG_SINGLE_WRITE/17",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/DIAG_SINGLE_WRITE/18",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/DIAG_SINGLE_WRITE/2",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/DIAG_SINGLE_WRITE/20",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/DIAG_SINGLE_WRITE/21",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/DIAG_SINGLE_WRITE/22",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/DIAG_SINGLE_WRITE/4",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/DIAG_SINGLE_WRITE/5",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/DIAG_SINGLE_WRITE/6",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/DIAG_SINGLE_WRITE/8",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/DIAG_SINGLE_WRITE/9",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/ENERGY_PROMOTION/0",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/ENERGY_PROMOTION/1",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/ENERGY_PROMOTION/10",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/ENERGY_PROMOTION/12",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/ENERGY_PROMOTION/13",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/ENERGY_PROMOTION/14",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/ENERGY_PROMOTION/16",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/ENERGY_PROMOTION/17",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/ENERGY_PROMOTION/18",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/ENERGY_PROMOTION/2",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/ENERGY_PROMOTION/20",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/ENERGY_PROMOTION/21",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/ENERGY_PROMOTION/22",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/ENERGY_PROMOTION/4",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/ENERGY_PROMOTION/5",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/ENERGY_PROMOTION/6",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/ENERGY_PROMOTION/8",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    },
+    {
+      "mask": "masks/ENERGY_PROMOTION/9",
+      "payload_bytes": 309248,
+      "index_bytes": 16384,
+      "reference_optimized_payload_exact": true,
+      "reference_optimized_decode_exact": true,
+      "row_separable_promotion_sample": true
+    }
+  ],
+  "new_mask_layouts": 54,
+  "fixture_seed": 615021,
+  "policy_sha256": "2bd54fc44dacf529369a1aec1c2ecb69c95e4692851d53646ba078160d4e2a63",
+  "code_sha256": "ef292ee4c755ce031b32e77cb78a3a20ea179fb2df1d609943d91305beb0590d",
+  "wall_seconds": 0.5331364270004997,
+  "CPU_process_seconds": 0.5265156,
+  "model_forwards": 0,
+  "CUDA_initialized": false,
+  "limitation": "One mixed-sign CPU fixture across all54 new masks; not all-state or GPU end-to-end equivalence"
+}

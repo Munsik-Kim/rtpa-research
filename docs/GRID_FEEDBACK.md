@@ -33,15 +33,75 @@ independence tests. The reported future cross term joins the propagated
 preexisting error and one new injection over 32 future readouts, with no
 later injections; it is not the total cross-time term of model KL.
 
-**Limit:** this reference is the zero-start FP32 equation driven by captured,
-already normalized/scaled Native operands. It is not Native cache fidelity.
-A separate sensitivity probe exactly reproduced the original 7/18 failures
-at normalized L2 `1e-4`. Replacing readout reduction by BMM still passed only
-11/18; FP64 update/readout followed by BF16 storage passed 6/18. Higher precision
-does not guarantee matching a different finite-arithmetic Native path. First
-nonzero differences at token zero are descriptive, not material failures.
-Original native state/kernel intermediates are missing, so chunk/padded-GEMM
-versus sequential update and CPU/CUDA rounding remain alternative explanations.
+**Limit:** the codec screen uses a zero-start, FP32-persistent **CPU equation**
+reference driven by captured, already normalized/scaled operands. It scores
+readout SSE on `[16,256)`, not final model logits. The separate fidelity probe
+uses BF16 state feedback and the parent FP32 readout on `[0,256)`; these are
+different references. Its original 7/18 threshold exceedances remain recorded.
+They are not seven Native model NaN/Inf failures. Device differences cannot be
+assumed to cancel between codecs, and this follow-up does not establish GPU
+candidate rankings or overturn the CPU quality gates.
+
+## Native readout conformance
+
+The local follow-ups `RTPA_NATIVE_BOUNDARY_STAGE1_20260914` and
+`RTPA_NATIVE_BOUNDARY_STAGE2_20260914` distinguish four observables:
+
+| Observable | What is available and checked |
+|---|---|
+| A: parent FP32 readout | Recomputed from Native's FP32 updated state and the processed query; the captured target for all 18 combinations |
+| B: returned BF16 core output | Actually observed only in the two Stage 1 cases; not manufactured by casting A |
+| C: actual Native BF16 cache | Direct observation/hash comparison only in those two Stage 1 cases; **NOT_OBSERVED** for the other 16 |
+| D: final vocabulary logits | Not a Stage 2 endpoint; no new model forward |
+
+The 18 combinations are **six reused TRAIN documents × layers 0/12/22**, not
+18 independent documents or a new TEST panel. Whole-case normalized L2 keeps
+all 256 tokens, 16 heads and 128 readout values, FP64 SSE per token followed by
+sequential accumulation, and the original `1e-4` tolerance. Byte equality is
+checked separately; equality of `q^T S` does not establish equality of `S`.
+
+| Check | Stage 1, reused | Stage 2, newly executed |
+|---|---:|---:|
+| Historical CPU metric reproduced exactly | 2/2 (one original FAIL, one PASS) | 16/16 (six original FAILs) |
+| Same-device GPU equation readout byte-equal to A | 2/2 | 16/16 |
+| Direct GPU-replay cache comparison with observed C | 2/2, all 256 writes | NOT_OBSERVED |
+| CPU update-sum-only CUDA intervention | 2 cases | 2 preregistered cases |
+
+Stage 1 located a CPU/CUDA FP32 sum difference at token 1 that crosses a BF16
+rounding midpoint and changes subsequent state. Stage 2's selection rule chose
+the largest historical CPU errors among the remaining GPU-byte-equal FAILs:
+
+| Document / layer | Original and reproduced CPU nL2 | GPU nL2 | CPU with only update sum on CUDA |
+|---|---:|---:|---:|
+| `train_code_1` / 12 | 0.0001827345670433912 | 0 | 1.0971273072062478e-7 |
+| `train_associative_recall_1` / 12 | 0.000159075971219976 | 0 | 1.21854811472171e-7 |
+
+Both new interventions match the **GPU equation replay's** BF16 state hashes
+at all 256 steps, not an unobserved Native cache. Their small residual readout
+differences remain CPU reductions. Reduction interventions cover four cases
+in total (three original FAILs and one PASS), not all 18. The other 14 have
+readout conformance evidence but no corresponding cause intervention. The
+seven historical FAIL labels and `UNRESOLVED_NATIVE_PATH_FIDELITY` receipt are
+unchanged; the current interpretation is narrower and better specified.
+
+The historical BMM readout variant passed 11/18 and the FP64/BF16-storage
+variant 6/18. FP64's weaker match to a particular FP32/BF16 execution does not
+make FP64 mathematically less accurate. PyTorch documents that mathematically
+identical operations need not be byte-identical across devices, even with
+controlled randomness ([numerical accuracy](https://docs.pytorch.org/docs/2.11/notes/numerical_accuracy.html),
+[reproducibility](https://docs.pytorch.org/docs/2.11/notes/randomness.html)).
+No upstream defect, codec improvement or new scientific promotion follows.
+
+Stage 2 used 8,960 operator updates including a 256-update storage-only retry,
+**zero model forwards**, and about 61.46 MiB of lossless readout evidence.
+Diagnostic wall time includes transfers and checks, not inference timing.
+Its scripts, readouts and `results.json` remain local review artifacts, not
+files shipped in this checkout. In that diagnostic directory, `python run.py
+cpu`, `python run.py gpu`, and `python hybrid.py` are the bounded execution
+entrypoints; `python analyze.py --out new-check.json` reaggregates saved
+observations on CPU. Exact receipt-bound parent captures and the recorded
+environment are still required. A smaller model-free public fixture is the
+next proposed step, **not yet packaged or published**.
 
 ## Contracts and selection
 

@@ -1,0 +1,26 @@
+{
+  "scope": "One observed token/head reduction boundary; no prompt, token IDs, model weights, or full 16-head state.",
+  "torch": "2.11.0+cu128",
+  "fixture_sha256": "3e36779d4251c8584cc86cd352f76e91b59b4a9b35e5ea86a9df8c5cfb40681f",
+  "CPU": {
+    "projection": -0.0022271242924034595,
+    "updated_FP32": -1.448206603527069e-07,
+    "stored_BF16_as_FP32": -1.4528632164001465e-07,
+    "product_shape": [
+      128,
+      128
+    ],
+    "product_sha256": "137ca6034ac6daaedfb81526900f7c14982e5e6cd4b0f6c4d0f4ee9a8f4cdbcf"
+  },
+  "CUDA": {
+    "projection": -0.002227124059572816,
+    "updated_FP32": -1.4479155652225018e-07,
+    "stored_BF16_as_FP32": -1.4435499906539917e-07,
+    "product_shape": [
+      128,
+      128
+    ],
+    "product_sha256": "137ca6034ac6daaedfb81526900f7c14982e5e6cd4b0f6c4d0f4ee9a8f4cdbcf"
+  },
+  "status": "EXPECTED_CPU_AND_CUDA_BOUNDARY_REPRODUCED"
+}

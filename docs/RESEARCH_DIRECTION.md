@@ -85,11 +85,29 @@ remain distinct issues. Lag statistics are explicitly uncentered physical
 error similarities, not centered Pearson correlations or independence tests.
 
 The [reference-arithmetic sensitivity probe](../results/grid_feedback/fidelity_probe.json)
-retains `UNRESOLVED_NATIVE_PATH_FIDELITY`. The historical 7/18 failures at
-normalized L2 `1e-4` are not removed, relabeled as Native equality, or cured
-by a larger tolerance. Equation-level checks remain useful within that limit.
+retains its historical `UNRESOLVED_NATIVE_PATH_FIDELITY` decision and 7/18 CPU
+threshold exceedances at normalized L2 `1e-4`. These are not seven Native
+NaN/Inf failures. The [boundary follow-up](GRID_FEEDBACK.md#native-readout-conformance)
+now reproduces the parent **FP32-state-recomputed readout** byte-for-byte on
+the same GPU for all 18 retained combinations: two Stage 1 cases reused and
+16 Stage 2 cases newly replayed, without a new model forward in Stage 2.
 
-## Conditional next steps, not an expanding search
+CPU/CUDA update-sum and BF16-feedback interventions explain the tested boundary
+in four combinations, not all 18. Actual Native cache comparison still covers
+only the two Stage 1 observations; readout equality cannot supply missing
+state observations. CPU equation checks, same-device captured-readout checks,
+actual Native cache checks and whole-model task evaluation remain separate.
+FP64 matching a particular Native execution less well is not evidence of lower
+mathematical accuracy.
+
+The codec screens above compare against an FP32-persistent CPU equation on
+`[16,256)`, whereas the fidelity probe compares BF16-feedback replay against
+the parent readout on `[0,256)`. The failed CPU gates keep their stated scope
+and values. Common CPU execution does not prove cancellation of codec-specific
+roundoff or transfer of candidate rankings to GPU. P_STORE overflow, DIAG's
+adverse B2 comparison, task outcomes and cost limits are not changed or rerun.
+
+## Completed cycle decisions and historical continuation rules
 
 At most two practical codec candidates are allowed in this cycle. The explicit
 ZERO_INCLUSIVE contract occupies the first slot and failed its registered CPU
@@ -104,7 +122,7 @@ renamed as a new success. Candidate completion, adverse values and promotion
 are recorded in the [final cycle decision](../results/grid_feedback/decision.json).
 New GPU DEV, confirmation, task, timing and kernel work were therefore not run.
 
-The continuation rules are:
+The frozen cycle's continuation rules were:
 
 1. Keep the legacy mask fixed while testing any candidate codec. Judge repeated
    and late readout SSE, document limits, clipping, range failures and actual
@@ -135,6 +153,17 @@ result with reproducible observations rather than adding seeds, codecs,
 guards, dither, residual memory or models until something wins. GDN2 remains
 at its actually tested operator scope; no pretrained-model support follows
 from a scalar or frozen replay demonstration.
+
+## One next step after the boundary follow-up
+
+Prepare a small, model-weight-free fixture and script that separates the CPU
+equation, same-device readout and BF16 storage checks, using the observed
+rounding boundary and explicit provenance. This is a proposed public
+reproduction contribution, not an upstream bug claim or an already published
+package. Source/capture permission and size review precede publication. No
+new codec search, model run or serving-stack installation is implied. If the
+reduced fixture cannot preserve the measured boundary, retain the scoped
+local result rather than claim an equivalent public reproduction.
 
 ## Reproducibility levels and implementation boundaries
 
