@@ -61,3 +61,12 @@ results. Later tagged releases add separately identified experiments. R2 adds
 an explicit numerical codec revision and its own measurements; it does not
 rewrite the sources or decisions of prior experiments. All changes are visible
 in version control.
+# Single-write screen input documents
+
+The source README files under `data/fidelity_screen_20260915/sources/` are
+redistributed under their included MIT licenses, not relicensed as RTPA code:
+astral-sh/uv (Astral Software Inc.), BurntSushi/ripgrep (Andrew Gallant), and
+Textualize/rich (Will McGugan). Exact source URLs, revisions and file hashes are
+in `data/fidelity_screen_20260915/run_config.json`. Their first1024 token IDs
+are derived evaluation inputs. No endorsement is implied; embedded commands
+and external links are input text, not installation instructions for RTPA.

@@ -37,8 +37,8 @@
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 6543,
-      "sha256": "55fb8a664159c47c9f0a273f1100e77f4a20ef1546282e19fc6512d4ac4b9a71"
+      "bytes": 7123,
+      "sha256": "29c4d32824925bc9cdfac8776ee2bf285012b3d3710c55d3aaeb3f22adea29c2"
     },
     {
       "path": "configs/benchmark_development_contract.json",
@@ -6481,6 +6481,51 @@
       "sha256": "d4f3026105d05ffe61a8a0f431eaaaf8eb9ab9b3fb0747623fe32d4200a9d71e"
     },
     {
+      "path": "data/fidelity_screen_20260915/input_audit.json",
+      "bytes": 59913,
+      "sha256": "b66e6194218ce248c16992b68ced058efff6659c266bad7a3a0d32c9afef0da7"
+    },
+    {
+      "path": "data/fidelity_screen_20260915/run_config.json",
+      "bytes": 10499,
+      "sha256": "2b2de92722951accd57ddcead064578a410491928067d78bc97170ce44aad870"
+    },
+    {
+      "path": "data/fidelity_screen_20260915/sources/BurntSushi__ripgrep/LICENSE-MIT",
+      "bytes": 1081,
+      "sha256": "0f96a83840e146e43c0ec96a22ec1f392e0680e6c1226e6f3ba87e0740af850f"
+    },
+    {
+      "path": "data/fidelity_screen_20260915/sources/BurntSushi__ripgrep/README.md",
+      "bytes": 21599,
+      "sha256": "945622d974f65e4e141ef9726c948c2640eebd222c5b101afb6445728283921e"
+    },
+    {
+      "path": "data/fidelity_screen_20260915/sources/Textualize__rich/LICENSE",
+      "bytes": 1056,
+      "sha256": "deed7c17a4318158190a3ea239cc879a5a50271cebb98ae7025f48fbe58dca15"
+    },
+    {
+      "path": "data/fidelity_screen_20260915/sources/Textualize__rich/README.md",
+      "bytes": 17017,
+      "sha256": "2f68e0e5b36f088e4059f08717454bfca47691b0188a278c7966eef6205c0d63"
+    },
+    {
+      "path": "data/fidelity_screen_20260915/sources/astral-sh__uv/LICENSE-MIT",
+      "bytes": 1077,
+      "sha256": "860e3d7a86b84e6a7012c7a635fc64df475cebc6cce34dfeb73a5982ec58176c"
+    },
+    {
+      "path": "data/fidelity_screen_20260915/sources/astral-sh__uv/README.md",
+      "bytes": 9859,
+      "sha256": "57a84a5a635f30e3a26541ebc16ca690944a7750f05713b1af92d3170b58f704"
+    },
+    {
+      "path": "data/fidelity_screen_20260915/tokens.npz",
+      "bytes": 5382,
+      "sha256": "aeac470d1713e89edf62e6993e9f4bf1ba003e612f71cac6f3ff635d8309a332"
+    },
+    {
       "path": "data/masks/v04.json",
       "bytes": 630745,
       "sha256": "fb98deadba62a0fb1842ebd9e2013bd6bb00d2b1d7e949d367ae240b690b2415"
@@ -7199,6 +7244,11 @@
       "path": "docs/EXPERIMENTS.md",
       "bytes": 6261,
       "sha256": "f34a452258f4dcadc248516b3c8df27d7412927958cd7d12c0ec3f748d6a2567"
+    },
+    {
+      "path": "docs/FIDELITY_SCREEN.md",
+      "bytes": 5010,
+      "sha256": "13bfd5ebed0565dd978a6c01ab17814fa01ea6620b1c0cd2f4b9d6be08071bf1"
     },
     {
       "path": "docs/GRID_FEEDBACK.md",
@@ -8276,6 +8326,11 @@
       "sha256": "d6947df1f614b9dcb7372878e7fbc9e05626ff40c7e86c2cb80e819ae560e08e"
     },
     {
+      "path": "src/rtpa_research/fidelity_screen.py",
+      "bytes": 15344,
+      "sha256": "dcc0d1bde8fd18faa702047cbe30739895b4903a6511a60856796c98cddb4679"
+    },
+    {
       "path": "src/rtpa_research/frozen/experiments/fsbq_v01/__init__.py",
       "bytes": 77,
       "sha256": "526512735f4b25a559832d2b812cd95c5c8e24b00b6c298beaf5d5a920afca0e"
@@ -8904,6 +8959,11 @@
       "path": "tests/test_fa_evidence.py",
       "bytes": 2371,
       "sha256": "0d7f60e72d703cfe945b35cae1adf127c5b8b83c5b91bb5bffb5f3a889784710"
+    },
+    {
+      "path": "tests/test_fidelity_screen.py",
+      "bytes": 2028,
+      "sha256": "8dc9a097b92ed84216cb72fcfca7eb84732783fb37ca194eb4e443f30fbbc0ea"
     },
     {
       "path": "tests/test_grid_codec.py",
