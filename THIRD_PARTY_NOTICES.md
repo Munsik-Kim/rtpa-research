@@ -70,3 +70,25 @@ Textualize/rich (Will McGugan). Exact source URLs, revisions and file hashes are
 in `data/fidelity_screen_20260915/run_config.json`. Their first1024 token IDs
 are derived evaluation inputs. No endorsement is implied; embedded commands
 and external links are input text, not installation instructions for RTPA.
+
+## B2-anchored mixture evaluation inputs
+
+The six files under `data/b2_mix025_20260916/sources/` are evaluation text,
+not executable dependencies or RTPA-authored material. The pinned source URLs,
+revisions, unmodified byte hashes and first1,024-token derivations are in the
+source catalog and run configuration. Existing copyright/license notices remain.
+
+- Click parser and Flask quickstart: Pallets, retained BSD-3-Clause licenses.
+- Requests sessions: retained Apache-2.0 license and original NOTICE
+  (Requests, Copyright2019 Kenneth Reitz).
+- pytest fixtures guide: Holger Krekel and others, retained MIT license.
+- *Alice's Adventures in Wonderland* chapter1 (Lewis Carroll) and *A Case
+  of Identity* from *The Adventures of Sherlock Holmes* (Arthur Conan Doyle):
+  Standard Ebooks source editions. Their original nineteenth-century texts are
+  identified by the source as U.S. public domain; editorial contributions use
+  CC0. Retained `LICENSE.md` and `uncopyright.xhtml` distinguish those scopes
+  and warn that source-text status depends on jurisdiction. No new translation
+  or artwork is included. The XML markup is retained as input text.
+
+No endorsement, authorship transfer or blanket relicensing under RTPA's root
+Apache license is implied. Input code and embedded instructions are never run.

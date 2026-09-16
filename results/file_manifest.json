@@ -7,8 +7,8 @@
     },
     {
       "path": ".github/workflows/cpu-evidence.yml",
-      "bytes": 13978,
-      "sha256": "3418d9d0f57de85a4b64e72cb30a1ae716d1027225034cdbd81e36aa59079b28"
+      "bytes": 14428,
+      "sha256": "67da9cc6545cfea9099b59aed35061843094a1e8cf347361999ad9cc40d453e5"
     },
     {
       "path": ".gitignore",
@@ -32,13 +32,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 6504,
-      "sha256": "56d74c81c3a58b9fb5a0e976af25026df64d6b4c4780ac1a21f0866f665c2321"
+      "bytes": 9560,
+      "sha256": "07b76c91604fc38a58b81755641fd3f776f252104a3418ac8aa827eaf0dedb81"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 7123,
-      "sha256": "29c4d32824925bc9cdfac8776ee2bf285012b3d3710c55d3aaeb3f22adea29c2"
+      "bytes": 8435,
+      "sha256": "af2679307f2d600b981b6fccd208b49a326c5d314cd5b2ffe838cb6f52a99346"
     },
     {
       "path": "configs/benchmark_development_contract.json",
@@ -214,6 +214,191 @@
       "path": "configs/verification_contract.json",
       "bytes": 336,
       "sha256": "1e4bc28e2e0a73faabb07ce945730ff12a90e9072f0d1c57e3b848322b5cc59a"
+    },
+    {
+      "path": "data/b2_mix025_20260916/input_audit.json",
+      "bytes": 60567,
+      "sha256": "9dca60b18fa277eb5f5a792ab01a45d7cc07648a62b8628ed5ed01b98406aff7"
+    },
+    {
+      "path": "data/b2_mix025_20260916/normalization.npz",
+      "bytes": 1450462,
+      "sha256": "bbc34e00f90b9e17a80e18b5535eea68727e119ce542b18f45982f42c8a1bc9c"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/environment.json",
+      "bytes": 595,
+      "sha256": "e18b2f6b6c1d41d1e3f71047b5594dde60c761ef7f91486daf4ea1acf57594b5"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/execution_ledger.json",
+      "bytes": 3845,
+      "sha256": "308c658b181e4141a9f16358f192d43648298a5709d00ee6eb1c47c6eea3aad4"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/external_preregistration.json",
+      "bytes": 620,
+      "sha256": "30454e54665d0d848f385744da2a0828f0d82ad8d7274edd404363a78fa1fe13"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/pallets__click.json",
+      "bytes": 2813,
+      "sha256": "61374df1ed5c14a0809d6aaab20704a545a26195361b9df8d72072ff35fa610c"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/pallets__click.npz",
+      "bytes": 57550,
+      "sha256": "98d307903cd070d986b3fa29a1a16f6b91d9f979f974384b96b5420f1898639a"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/pallets__flask.json",
+      "bytes": 2813,
+      "sha256": "f02f9461b276a606332a3e8a9e1a174c5ad212dac6cfb775ee9b53743851440a"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/pallets__flask.npz",
+      "bytes": 57562,
+      "sha256": "02ec548457ccfacfe6537642f5468807982e85d5210a5628bd06c41103fed65b"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/psf__requests.json",
+      "bytes": 2812,
+      "sha256": "bccc110cedc58d3dea22a85ca9a4c85207d511fe733a41f57b68ddd263fd00e2"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/psf__requests.npz",
+      "bytes": 57561,
+      "sha256": "5e5c1717c5d8d1192c7efb04a848066a501c2c431812ffeeb0295088383f6b7b"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/pytest-dev__pytest.json",
+      "bytes": 2817,
+      "sha256": "26136f4def341715727de79cc2581d14b02eea2178d527a63c40558c778ad21c"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/pytest-dev__pytest.npz",
+      "bytes": 57528,
+      "sha256": "1dcd24ca6c78f7000e9af1f3454edefcade8a15fdcadb4bcc2bdb5341dce6770"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/standardebooks__arthur-conan-doyle_the-adventures-of-sherlock-holmes.json",
+      "bytes": 2867,
+      "sha256": "ecbcfe72062b758e9a69a0b48cdea7ee2d7ee7458cf5faee41140996266b479b"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/standardebooks__arthur-conan-doyle_the-adventures-of-sherlock-holmes.npz",
+      "bytes": 57561,
+      "sha256": "bb5cc3eb79cbd5db32786cac4310156b79cd381ed2db32928791a5049e3f9a55"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/standardebooks__lewis-carroll_alices-adventures-in-wonderland.json",
+      "bytes": 2860,
+      "sha256": "593323bc32dc639ea934e936fb5d9c2cb032c1abbe3296ee08b2691012dfde14"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/standardebooks__lewis-carroll_alices-adventures-in-wonderland.npz",
+      "bytes": 57562,
+      "sha256": "991eaf000c9782c265fc0e3872a7ff4dbf456a8e01e1ceb6656163078affc9b0"
+    },
+    {
+      "path": "data/b2_mix025_20260916/policy.npz",
+      "bytes": 22697,
+      "sha256": "49e1b8159932a6aaf156b2608a7b107db5dd10049d21b1286227d94dbac27abd"
+    },
+    {
+      "path": "data/b2_mix025_20260916/policy_receipt.json",
+      "bytes": 146111,
+      "sha256": "3d2764216a727bec5c007ce6870e7e86925674532a4574887ceccb076915bb5a"
+    },
+    {
+      "path": "data/b2_mix025_20260916/run_config.json",
+      "bytes": 43361,
+      "sha256": "c6cc045f000e6a4e52adbc03b4538417dabeaf2159dd703f63fe4fe2f12dd548"
+    },
+    {
+      "path": "data/b2_mix025_20260916/source_catalog.json",
+      "bytes": 6941,
+      "sha256": "0820e28ebe36922d95226f8833741c2c535f0bda39a104b601a6033b54c5fdaf"
+    },
+    {
+      "path": "data/b2_mix025_20260916/sources/pallets__click/LICENSE.txt",
+      "bytes": 1475,
+      "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+    },
+    {
+      "path": "data/b2_mix025_20260916/sources/pallets__click/src/click/parser.py",
+      "bytes": 19052,
+      "sha256": "a09f9f53fde6bf1ba022e36d1da0804d9e7a9601261d18208c9892a84818ae30"
+    },
+    {
+      "path": "data/b2_mix025_20260916/sources/pallets__flask/LICENSE.txt",
+      "bytes": 1475,
+      "sha256": "489a8e1108509ed98a37bb983e11e0f7e1d31f0bd8f99a79c8448e7ff37d07ea"
+    },
+    {
+      "path": "data/b2_mix025_20260916/sources/pallets__flask/docs/quickstart.rst",
+      "bytes": 30055,
+      "sha256": "c17e0dac53c25f5cca0c18fd00e4f9549038f16d6ac5569ec2c97c7178744629"
+    },
+    {
+      "path": "data/b2_mix025_20260916/sources/psf__requests/LICENSE",
+      "bytes": 10142,
+      "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+    },
+    {
+      "path": "data/b2_mix025_20260916/sources/psf__requests/NOTICE",
+      "bytes": 38,
+      "sha256": "f5110972dedad2b4e9d314518daf3b7d72d6e02e499acd802181de6f74571dcc"
+    },
+    {
+      "path": "data/b2_mix025_20260916/sources/psf__requests/src/requests/sessions.py",
+      "bytes": 34072,
+      "sha256": "3d2089736ced93b2b405624a943f866d22652b17df06a85eb010f86272fc3e7d"
+    },
+    {
+      "path": "data/b2_mix025_20260916/sources/pytest-dev__pytest/LICENSE",
+      "bytes": 1091,
+      "sha256": "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b"
+    },
+    {
+      "path": "data/b2_mix025_20260916/sources/pytest-dev__pytest/doc/en/how-to/fixtures.rst",
+      "bytes": 62068,
+      "sha256": "0c2fca477f8032b8f898756cb184b06490ea3ac44c047b0cb5f84b562269de92"
+    },
+    {
+      "path": "data/b2_mix025_20260916/sources/standardebooks__arthur-conan-doyle_the-adventures-of-sherlock-holmes/LICENSE.md",
+      "bytes": 560,
+      "sha256": "d43a48ec63e94be9703699b5725bf301d8890c72f3b2038142a55b834837fb19"
+    },
+    {
+      "path": "data/b2_mix025_20260916/sources/standardebooks__arthur-conan-doyle_the-adventures-of-sherlock-holmes/src/epub/text/a-case-of-identity.xhtml",
+      "bytes": 43188,
+      "sha256": "3da1ec6203aca159c3a8594a73af4c595b5c799bfc675b5d112b8d79aace5cce"
+    },
+    {
+      "path": "data/b2_mix025_20260916/sources/standardebooks__arthur-conan-doyle_the-adventures-of-sherlock-holmes/src/epub/text/uncopyright.xhtml",
+      "bytes": 2913,
+      "sha256": "ac42c6c238a057e35db7f2fd4c14423440a1c5ea438f856b44d88ec662b09b9a"
+    },
+    {
+      "path": "data/b2_mix025_20260916/sources/standardebooks__lewis-carroll_alices-adventures-in-wonderland/LICENSE.md",
+      "bytes": 560,
+      "sha256": "d43a48ec63e94be9703699b5725bf301d8890c72f3b2038142a55b834837fb19"
+    },
+    {
+      "path": "data/b2_mix025_20260916/sources/standardebooks__lewis-carroll_alices-adventures-in-wonderland/src/epub/text/chapter-1.xhtml",
+      "bytes": 13347,
+      "sha256": "a006f6595337f1a3b35e46676352200514f1a50511125edda6bf898f83027486"
+    },
+    {
+      "path": "data/b2_mix025_20260916/sources/standardebooks__lewis-carroll_alices-adventures-in-wonderland/src/epub/text/uncopyright.xhtml",
+      "bytes": 2913,
+      "sha256": "ac42c6c238a057e35db7f2fd4c14423440a1c5ea438f856b44d88ec662b09b9a"
+    },
+    {
+      "path": "data/b2_mix025_20260916/tokens.npz",
+      "bytes": 12607,
+      "sha256": "bb3995670fe9d2f7a1a7c8f88f6769975b2e7dd4e9774c7a553674d09fd1861d"
     },
     {
       "path": "data/benchmarks/codec_feedback/availability.json",
@@ -7266,6 +7451,11 @@
       "sha256": "6fc39294b241cbdd1c894e14614b32cc27c8934a6b4141c84468e574bc15a100"
     },
     {
+      "path": "docs/B2_MIX025.md",
+      "bytes": 12054,
+      "sha256": "bd43b0b34c051bb6c360c67461144d55e849c825cdb9a5d3abd738c398d0fc91"
+    },
+    {
       "path": "docs/BENCHMARKS.md",
       "bytes": 20570,
       "sha256": "cf851c435b271bdfddccae2edc4b7a5f8a7c4130bd5ab7174929933d10030938"
@@ -7439,6 +7629,31 @@
       "path": "pyproject.toml",
       "bytes": 912,
       "sha256": "ae996aec9cda3636a3228c18593328b64de7feddd92b8fb40f2601ae0ac35bc6"
+    },
+    {
+      "path": "results/b2_mix025_20260916/cpu_receipt.json",
+      "bytes": 148,
+      "sha256": "92803fd983510e1a89a423e6e5e650edd32537a3d56141d3d075b2ee70d11935"
+    },
+    {
+      "path": "results/b2_mix025_20260916/independent_audit.json",
+      "bytes": 2979,
+      "sha256": "a59854ecbb4a4a3b25e35807ca2b99bbda6d6de9377521bad16fc0f1b9c143e6"
+    },
+    {
+      "path": "results/b2_mix025_20260916/results.json",
+      "bytes": 30803,
+      "sha256": "7d43320915b762670d55f3bb3fc4ebff746d9db67f2369d4ca259b6a1cfaa2e8"
+    },
+    {
+      "path": "results/b2_mix025_20260916/tables.md",
+      "bytes": 5279,
+      "sha256": "fc21ff2c0b38dd1e934fddd7f6249460b1d20c4244e8571732dc9f6baf5257ba"
+    },
+    {
+      "path": "results/b2_mix025_20260916/verification.json",
+      "bytes": 1094,
+      "sha256": "b9b1889d9bcf3c6ec1e931802eba1812c6ec2bc6bfee4ddbd96dfcebdb8b6a94"
     },
     {
       "path": "results/claims.json",
@@ -7971,6 +8186,11 @@
       "sha256": "7b6f4a5cfddf76438a3f77d45bdfaed1e2eb2ad67989843961a2748e7afafee8"
     },
     {
+      "path": "scripts/audit_b2_mix.py",
+      "bytes": 9188,
+      "sha256": "d45252506cba0c19266f6f1110753c7b33af3d5293c908d90387b9be7f1fc57d"
+    },
+    {
       "path": "scripts/audit_codec_r2.py",
       "bytes": 7034,
       "sha256": "714b2c6713352c8935446611f4890959678ea6bb7cde8a361aa50a48ca03cf44"
@@ -8017,8 +8237,8 @@
     },
     {
       "path": "scripts/check_current_readme.py",
-      "bytes": 1619,
-      "sha256": "0f52f2734412142e2417057040413af84fd2820afeef4c2002c7ac37f59c76f0"
+      "bytes": 6553,
+      "sha256": "67b31107a487e643b5668f68cc325f1dcd8d41999d4e872ce6290d70147aee10"
     },
     {
       "path": "scripts/check_diag_r2_cpu.py",
@@ -8289,6 +8509,21 @@
       "path": "src/rtpa_research/allocation_trace.py",
       "bytes": 1521,
       "sha256": "6175db2b7e4bdc1017c8d9959c6008848537348741ab057005002ccc3dac7e57"
+    },
+    {
+      "path": "src/rtpa_research/b2_mix_policy.py",
+      "bytes": 9487,
+      "sha256": "b39d38bbf8732105c2401427385e54b9c39e925c98565dd9607dd13ef1a559f2"
+    },
+    {
+      "path": "src/rtpa_research/b2_mix_report.py",
+      "bytes": 13830,
+      "sha256": "4602dc70d24a80a356790b5ec5f313915774fc67ba97694330d7f046099b6dce"
+    },
+    {
+      "path": "src/rtpa_research/b2_mix_run.py",
+      "bytes": 15417,
+      "sha256": "24df364e8081e6542c1b611cd41a5e4e5dfd271ae323ae518311f651d48df96d"
     },
     {
       "path": "src/rtpa_research/benchmark.py",
@@ -8944,6 +9179,11 @@
       "path": "src/rtpa_research/verify.py",
       "bytes": 7284,
       "sha256": "37824a71d334df40d412fbab00b2da0d0fac795dc224785c7b2e2717ab8eeeec"
+    },
+    {
+      "path": "tests/test_b2_mix.py",
+      "bytes": 4265,
+      "sha256": "96e368809f2816904a8510685cfc0ec5ffe33bf8d47b9cbac272f9de9e1e051d"
     },
     {
       "path": "tests/test_benchmark_analysis.py",

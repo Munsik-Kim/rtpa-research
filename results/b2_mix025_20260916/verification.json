@@ -1,0 +1,38 @@
+{
+  "status": "PASS_PUBLIC_RECONSTRUCTION_AND_CLEAN_COPY",
+  "checks": [
+    {
+      "label": "new_primary_aggregation",
+      "return_code": 0,
+      "wall_seconds": 0.18872327799908817
+    },
+    {
+      "label": "new_independent_audit",
+      "return_code": 0,
+      "wall_seconds": 0.374859675001062
+    },
+    {
+      "label": "clean_copy_primary",
+      "return_code": 0,
+      "wall_seconds": 0.1704044949983654
+    },
+    {
+      "label": "clean_copy_independent",
+      "return_code": 0,
+      "wall_seconds": 0.3645756009973411
+    },
+    {
+      "label": "postrun_mix_tests",
+      "return_code": 0,
+      "wall_seconds": 0.2434790939987579
+    }
+  ],
+  "clean_copy_files": 169,
+  "source_tables_exact": true,
+  "independent_scalar_audit": "PASS_INDEPENDENT_PUBLIC_SCALAR_AND_MASK_AUDIT",
+  "historical_hashes_preserved": true,
+  "preregistration_bindings_preserved": true,
+  "new_model_forwards_in_verification": 0,
+  "CPU_numeric_wall_seconds_bundle": 1.4887303659961617,
+  "scope": "No weights/GPU/LOCAL_ONLY inputs; scalar\u2192metrics and score\u2192mask, not logits\u2192KL"
+}

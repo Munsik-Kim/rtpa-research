@@ -1,0 +1,157 @@
+{
+  "selection": "Six predefined source documents, sorted by group then repository.casefold/path; first1024 tokenizer IDs of unmodified UTF-8 source, add_special_tokens=False. No outcome filtering. XHTML/code headers retained. Exclude if fewer than1024 IDs or prior source identity found; no automatic replacement.",
+  "created_UTC": "2026-09-16T05:29:00.630168+00:00",
+  "download_bytes": 222949,
+  "documents": [
+    {
+      "id": "pallets__click",
+      "group": "code",
+      "repository": "pallets/click",
+      "revision": "6aabf099bfdd4c1e75fe8d0e0d4241372b988ab1",
+      "source_path": "src/click/parser.py",
+      "license_paths": [
+        "LICENSE.txt"
+      ],
+      "files": {
+        "src/click/parser.py": {
+          "bytes": 19052,
+          "sha256": "a09f9f53fde6bf1ba022e36d1da0804d9e7a9601261d18208c9892a84818ae30",
+          "url": "https://github.com/pallets/click/blob/6aabf099bfdd4c1e75fe8d0e0d4241372b988ab1/src/click/parser.py"
+        },
+        "LICENSE.txt": {
+          "bytes": 1475,
+          "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d",
+          "url": "https://github.com/pallets/click/blob/6aabf099bfdd4c1e75fe8d0e0d4241372b988ab1/LICENSE.txt"
+        }
+      }
+    },
+    {
+      "id": "psf__requests",
+      "group": "code",
+      "repository": "psf/requests",
+      "revision": "dae7ef63b4df6eded86637f251fc4e3a06c3b479",
+      "source_path": "src/requests/sessions.py",
+      "license_paths": [
+        "LICENSE",
+        "NOTICE"
+      ],
+      "files": {
+        "src/requests/sessions.py": {
+          "bytes": 34072,
+          "sha256": "3d2089736ced93b2b405624a943f866d22652b17df06a85eb010f86272fc3e7d",
+          "url": "https://github.com/psf/requests/blob/dae7ef63b4df6eded86637f251fc4e3a06c3b479/src/requests/sessions.py"
+        },
+        "LICENSE": {
+          "bytes": 10142,
+          "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+          "url": "https://github.com/psf/requests/blob/dae7ef63b4df6eded86637f251fc4e3a06c3b479/LICENSE"
+        },
+        "NOTICE": {
+          "bytes": 38,
+          "sha256": "f5110972dedad2b4e9d314518daf3b7d72d6e02e499acd802181de6f74571dcc",
+          "url": "https://github.com/psf/requests/blob/dae7ef63b4df6eded86637f251fc4e3a06c3b479/NOTICE"
+        }
+      }
+    },
+    {
+      "id": "standardebooks__arthur-conan-doyle_the-adventures-of-sherlock-holmes",
+      "group": "narrative",
+      "repository": "standardebooks/arthur-conan-doyle_the-adventures-of-sherlock-holmes",
+      "revision": "48ec456ea50987a81f564821457b9fb32cc2bfc6",
+      "source_path": "src/epub/text/a-case-of-identity.xhtml",
+      "license_paths": [
+        "LICENSE.md",
+        "src/epub/text/uncopyright.xhtml"
+      ],
+      "files": {
+        "src/epub/text/a-case-of-identity.xhtml": {
+          "bytes": 43188,
+          "sha256": "3da1ec6203aca159c3a8594a73af4c595b5c799bfc675b5d112b8d79aace5cce",
+          "url": "https://github.com/standardebooks/arthur-conan-doyle_the-adventures-of-sherlock-holmes/blob/48ec456ea50987a81f564821457b9fb32cc2bfc6/src/epub/text/a-case-of-identity.xhtml"
+        },
+        "LICENSE.md": {
+          "bytes": 560,
+          "sha256": "d43a48ec63e94be9703699b5725bf301d8890c72f3b2038142a55b834837fb19",
+          "url": "https://github.com/standardebooks/arthur-conan-doyle_the-adventures-of-sherlock-holmes/blob/48ec456ea50987a81f564821457b9fb32cc2bfc6/LICENSE.md"
+        },
+        "src/epub/text/uncopyright.xhtml": {
+          "bytes": 2913,
+          "sha256": "ac42c6c238a057e35db7f2fd4c14423440a1c5ea438f856b44d88ec662b09b9a",
+          "url": "https://github.com/standardebooks/arthur-conan-doyle_the-adventures-of-sherlock-holmes/blob/48ec456ea50987a81f564821457b9fb32cc2bfc6/src/epub/text/uncopyright.xhtml"
+        }
+      }
+    },
+    {
+      "id": "standardebooks__lewis-carroll_alices-adventures-in-wonderland",
+      "group": "narrative",
+      "repository": "standardebooks/lewis-carroll_alices-adventures-in-wonderland",
+      "revision": "a4a06a86f3ecb5a9b397fd3922a1c757747c49c5",
+      "source_path": "src/epub/text/chapter-1.xhtml",
+      "license_paths": [
+        "LICENSE.md",
+        "src/epub/text/uncopyright.xhtml"
+      ],
+      "files": {
+        "src/epub/text/chapter-1.xhtml": {
+          "bytes": 13347,
+          "sha256": "a006f6595337f1a3b35e46676352200514f1a50511125edda6bf898f83027486",
+          "url": "https://github.com/standardebooks/lewis-carroll_alices-adventures-in-wonderland/blob/a4a06a86f3ecb5a9b397fd3922a1c757747c49c5/src/epub/text/chapter-1.xhtml"
+        },
+        "LICENSE.md": {
+          "bytes": 560,
+          "sha256": "d43a48ec63e94be9703699b5725bf301d8890c72f3b2038142a55b834837fb19",
+          "url": "https://github.com/standardebooks/lewis-carroll_alices-adventures-in-wonderland/blob/a4a06a86f3ecb5a9b397fd3922a1c757747c49c5/LICENSE.md"
+        },
+        "src/epub/text/uncopyright.xhtml": {
+          "bytes": 2913,
+          "sha256": "ac42c6c238a057e35db7f2fd4c14423440a1c5ea438f856b44d88ec662b09b9a",
+          "url": "https://github.com/standardebooks/lewis-carroll_alices-adventures-in-wonderland/blob/a4a06a86f3ecb5a9b397fd3922a1c757747c49c5/src/epub/text/uncopyright.xhtml"
+        }
+      }
+    },
+    {
+      "id": "pallets__flask",
+      "group": "technical",
+      "repository": "pallets/flask",
+      "revision": "d73fa1cdcbd8b1465c151db8924ba58b1dd14e35",
+      "source_path": "docs/quickstart.rst",
+      "license_paths": [
+        "LICENSE.txt"
+      ],
+      "files": {
+        "docs/quickstart.rst": {
+          "bytes": 30055,
+          "sha256": "c17e0dac53c25f5cca0c18fd00e4f9549038f16d6ac5569ec2c97c7178744629",
+          "url": "https://github.com/pallets/flask/blob/d73fa1cdcbd8b1465c151db8924ba58b1dd14e35/docs/quickstart.rst"
+        },
+        "LICENSE.txt": {
+          "bytes": 1475,
+          "sha256": "489a8e1108509ed98a37bb983e11e0f7e1d31f0bd8f99a79c8448e7ff37d07ea",
+          "url": "https://github.com/pallets/flask/blob/d73fa1cdcbd8b1465c151db8924ba58b1dd14e35/LICENSE.txt"
+        }
+      }
+    },
+    {
+      "id": "pytest-dev__pytest",
+      "group": "technical",
+      "repository": "pytest-dev/pytest",
+      "revision": "a453d653f92bfbdbfe47d2af9bfd8801860ff9e3",
+      "source_path": "doc/en/how-to/fixtures.rst",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "files": {
+        "doc/en/how-to/fixtures.rst": {
+          "bytes": 62068,
+          "sha256": "0c2fca477f8032b8f898756cb184b06490ea3ac44c047b0cb5f84b562269de92",
+          "url": "https://github.com/pytest-dev/pytest/blob/a453d653f92bfbdbfe47d2af9bfd8801860ff9e3/doc/en/how-to/fixtures.rst"
+        },
+        "LICENSE": {
+          "bytes": 1091,
+          "sha256": "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b",
+          "url": "https://github.com/pytest-dev/pytest/blob/a453d653f92bfbdbfe47d2af9bfd8801860ff9e3/LICENSE"
+        }
+      }
+    }
+  ]
+}

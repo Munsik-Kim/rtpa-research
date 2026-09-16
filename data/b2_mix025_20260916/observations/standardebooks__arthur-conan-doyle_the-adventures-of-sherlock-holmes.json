@@ -1,0 +1,82 @@
+{
+  "document": "standardebooks__arthur-conan-doyle_the-adventures-of-sherlock-holmes",
+  "config_sha256": "c6cc045f000e6a4e52adbc03b4538417dabeaf2159dd703f63fe4fe2f12dd548",
+  "token_sha256": "49451a798e345e7a97989b483847d2cc332b4b6fdc8ce341943a19d1d7ec6e24",
+  "methods": {
+    "NATIVE": {
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "quantized_layers": 0,
+        "Native_state_dtype": "torch.bfloat16",
+        "target_state_bytes": 9437184
+      }
+    },
+    "B2_QUERY_PROMOTION": {
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "mask_sha256": "dc227083cb69f5bc8cc1d868c03cf1b56ce9c5403768f0032fcb8433a37953b3",
+        "profile": "R2_OFFSET",
+        "no_FP32_master_attribute": true,
+        "runtime_policy": "fixed mask only; shared layout/codec, independent payload",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    "DIAG_SINGLE_WRITE": {
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "mask_sha256": "e417b637498e1e0636cfc52690e63aea1bc84599fa3554d9a7da66f9906b7b1f",
+        "profile": "R2_OFFSET",
+        "no_FP32_master_attribute": true,
+        "runtime_policy": "fixed mask only; shared layout/codec, independent payload",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    "B2_DIAG_MIX025": {
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "mask_sha256": "3bbdc0f7408844e7ebafbf453f5352ded6cf59d182dfb8c3fec06c9282c9547d",
+        "profile": "R2_OFFSET",
+        "no_FP32_master_attribute": true,
+        "runtime_policy": "fixed mask only; shared layout/codec, independent payload",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    }
+  },
+  "method_order": [
+    "DIAG_SINGLE_WRITE",
+    "B2_DIAG_MIX025",
+    "NATIVE",
+    "B2_QUERY_PROMOTION"
+  ],
+  "scalars_sha256": "bb5cc3eb79cbd5db32786cac4310156b79cd381ed2db32928791a5049e3f9a55",
+  "null_encoding": "NPZ NaN=missing/unscored; last NLL=NO_NEXT_TARGET; JSON explicit status only"
+}
