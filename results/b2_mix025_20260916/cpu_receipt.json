@@ -1,0 +1,5 @@
+{
+  "wall_seconds": 0.1180054830001609,
+  "new_model_forwards": 0,
+  "scope": "score\u2192mask and saved scalar\u2192metrics, not logits\u2192KL"
+}

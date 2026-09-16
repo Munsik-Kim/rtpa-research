@@ -7,8 +7,8 @@
     },
     {
       "path": ".github/workflows/cpu-evidence.yml",
-      "bytes": 13978,
-      "sha256": "3418d9d0f57de85a4b64e72cb30a1ae716d1027225034cdbd81e36aa59079b28"
+      "bytes": 14428,
+      "sha256": "67da9cc6545cfea9099b59aed35061843094a1e8cf347361999ad9cc40d453e5"
     },
     {
       "path": ".gitignore",
@@ -32,8 +32,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6504,
-      "sha256": "56d74c81c3a58b9fb5a0e976af25026df64d6b4c4780ac1a21f0866f665c2321"
+      "bytes": 7263,
+      "sha256": "d52c94b9e4bb4b59b37a0c0b3bd2c1371365557d62e76f18241a7c459974d313"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -224,6 +224,81 @@
       "path": "data/b2_mix025_20260916/normalization.npz",
       "bytes": 1450462,
       "sha256": "bbc34e00f90b9e17a80e18b5535eea68727e119ce542b18f45982f42c8a1bc9c"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/environment.json",
+      "bytes": 595,
+      "sha256": "e18b2f6b6c1d41d1e3f71047b5594dde60c761ef7f91486daf4ea1acf57594b5"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/execution_ledger.json",
+      "bytes": 3845,
+      "sha256": "308c658b181e4141a9f16358f192d43648298a5709d00ee6eb1c47c6eea3aad4"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/external_preregistration.json",
+      "bytes": 620,
+      "sha256": "30454e54665d0d848f385744da2a0828f0d82ad8d7274edd404363a78fa1fe13"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/pallets__click.json",
+      "bytes": 2813,
+      "sha256": "61374df1ed5c14a0809d6aaab20704a545a26195361b9df8d72072ff35fa610c"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/pallets__click.npz",
+      "bytes": 57550,
+      "sha256": "98d307903cd070d986b3fa29a1a16f6b91d9f979f974384b96b5420f1898639a"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/pallets__flask.json",
+      "bytes": 2813,
+      "sha256": "f02f9461b276a606332a3e8a9e1a174c5ad212dac6cfb775ee9b53743851440a"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/pallets__flask.npz",
+      "bytes": 57562,
+      "sha256": "02ec548457ccfacfe6537642f5468807982e85d5210a5628bd06c41103fed65b"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/psf__requests.json",
+      "bytes": 2812,
+      "sha256": "bccc110cedc58d3dea22a85ca9a4c85207d511fe733a41f57b68ddd263fd00e2"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/psf__requests.npz",
+      "bytes": 57561,
+      "sha256": "5e5c1717c5d8d1192c7efb04a848066a501c2c431812ffeeb0295088383f6b7b"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/pytest-dev__pytest.json",
+      "bytes": 2817,
+      "sha256": "26136f4def341715727de79cc2581d14b02eea2178d527a63c40558c778ad21c"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/pytest-dev__pytest.npz",
+      "bytes": 57528,
+      "sha256": "1dcd24ca6c78f7000e9af1f3454edefcade8a15fdcadb4bcc2bdb5341dce6770"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/standardebooks__arthur-conan-doyle_the-adventures-of-sherlock-holmes.json",
+      "bytes": 2867,
+      "sha256": "ecbcfe72062b758e9a69a0b48cdea7ee2d7ee7458cf5faee41140996266b479b"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/standardebooks__arthur-conan-doyle_the-adventures-of-sherlock-holmes.npz",
+      "bytes": 57561,
+      "sha256": "bb5cc3eb79cbd5db32786cac4310156b79cd381ed2db32928791a5049e3f9a55"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/standardebooks__lewis-carroll_alices-adventures-in-wonderland.json",
+      "bytes": 2860,
+      "sha256": "593323bc32dc639ea934e936fb5d9c2cb032c1abbe3296ee08b2691012dfde14"
+    },
+    {
+      "path": "data/b2_mix025_20260916/observations/standardebooks__lewis-carroll_alices-adventures-in-wonderland.npz",
+      "bytes": 57562,
+      "sha256": "991eaf000c9782c265fc0e3872a7ff4dbf456a8e01e1ceb6656163078affc9b0"
     },
     {
       "path": "data/b2_mix025_20260916/policy.npz",
@@ -7377,8 +7452,8 @@
     },
     {
       "path": "docs/B2_MIX025.md",
-      "bytes": 7254,
-      "sha256": "52da98da973a12651136057d6b3685c8942bdca2a0a23697967a3c56596b7419"
+      "bytes": 10211,
+      "sha256": "3f5a82bd79a05f1a0dee272f2d4447f44c1d2ce2365f567c2d2b4ef631be3102"
     },
     {
       "path": "docs/BENCHMARKS.md",
@@ -7554,6 +7629,31 @@
       "path": "pyproject.toml",
       "bytes": 912,
       "sha256": "ae996aec9cda3636a3228c18593328b64de7feddd92b8fb40f2601ae0ac35bc6"
+    },
+    {
+      "path": "results/b2_mix025_20260916/cpu_receipt.json",
+      "bytes": 148,
+      "sha256": "92803fd983510e1a89a423e6e5e650edd32537a3d56141d3d075b2ee70d11935"
+    },
+    {
+      "path": "results/b2_mix025_20260916/independent_audit.json",
+      "bytes": 2979,
+      "sha256": "a59854ecbb4a4a3b25e35807ca2b99bbda6d6de9377521bad16fc0f1b9c143e6"
+    },
+    {
+      "path": "results/b2_mix025_20260916/results.json",
+      "bytes": 30803,
+      "sha256": "7d43320915b762670d55f3bb3fc4ebff746d9db67f2369d4ca259b6a1cfaa2e8"
+    },
+    {
+      "path": "results/b2_mix025_20260916/tables.md",
+      "bytes": 5279,
+      "sha256": "fc21ff2c0b38dd1e934fddd7f6249460b1d20c4244e8571732dc9f6baf5257ba"
+    },
+    {
+      "path": "results/b2_mix025_20260916/verification.json",
+      "bytes": 1094,
+      "sha256": "b9b1889d9bcf3c6ec1e931802eba1812c6ec2bc6bfee4ddbd96dfcebdb8b6a94"
     },
     {
       "path": "results/claims.json",
@@ -8084,6 +8184,11 @@
       "path": "scripts/analyze_diag_r4_fit.py",
       "bytes": 5155,
       "sha256": "7b6f4a5cfddf76438a3f77d45bdfaed1e2eb2ad67989843961a2748e7afafee8"
+    },
+    {
+      "path": "scripts/audit_b2_mix.py",
+      "bytes": 9188,
+      "sha256": "d45252506cba0c19266f6f1110753c7b33af3d5293c908d90387b9be7f1fc57d"
     },
     {
       "path": "scripts/audit_codec_r2.py",

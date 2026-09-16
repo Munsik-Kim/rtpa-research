@@ -39,6 +39,8 @@ jobs:
           python -m rtpa_research.fa_evidence --out recomputed-fa
           python -m rtpa_research single-write-evidence --out recomputed-single-write
           python -m rtpa_research.screen_report --out recomputed-single-write-screen
+          python -m rtpa_research.b2_mix_report --check-expected --out recomputed-b2-mix
+          python scripts/audit_b2_mix.py --out /tmp/rtpa-b2-mix-independent.json
       - name: Reconstruct the published upgrade evidence without GPU execution
         run: python scripts/reproduce_upgrade.py --root . --write-generated recomputed-upgrade --verify
       - name: Independently audit token scalars and frozen numerical contracts
@@ -117,6 +119,8 @@ jobs:
           upgrade_script="$(/tmp/rtpa-wheel-test/bin/python -c 'from rtpa_research.resources import evidence_root; print(evidence_root() / "scripts/reproduce_upgrade.py")')"
           /tmp/rtpa-wheel-test/bin/python "$upgrade_script" --write-generated /tmp/rtpa-installed-upgrade --verify
           evidence_root="$(/tmp/rtpa-wheel-test/bin/python -c 'from rtpa_research.resources import evidence_root; print(evidence_root())')"
+          /tmp/rtpa-wheel-test/bin/python -m rtpa_research.b2_mix_report --check-expected --out /tmp/rtpa-installed-b2-mix
+          /tmp/rtpa-wheel-test/bin/python "$evidence_root/scripts/audit_b2_mix.py" --root "$evidence_root" --out /tmp/rtpa-installed-b2-mix-independent.json
           /tmp/rtpa-wheel-test/bin/python -m rtpa_research.diag_r2_analysis --public --out /tmp/rtpa-installed-r2 --expected "$evidence_root/results/diag_r2/recomputed_expected.json"
           /tmp/rtpa-wheel-test/bin/python "$evidence_root/scripts/audit_diag_r2_observations.py" --run "$evidence_root/data/benchmarks/diag_r2" --analysis /tmp/rtpa-installed-r2 --out /tmp/rtpa-installed-r2-observations.json
           /tmp/rtpa-wheel-test/bin/python "$evidence_root/scripts/audit_diag_r2_accounting.py" --self-test

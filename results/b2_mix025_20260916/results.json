@@ -1,0 +1,946 @@
+{
+  "run_id": "RTPA_B2_ANCHORED_DIAG_MIX025_20260916_V1",
+  "coverage": [
+    {
+      "document": "pallets__click",
+      "method": "NATIVE",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "quantized_layers": 0,
+        "Native_state_dtype": "torch.bfloat16",
+        "target_state_bytes": 9437184
+      }
+    },
+    {
+      "document": "pallets__click",
+      "method": "B2_QUERY_PROMOTION",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "mask_sha256": "dc227083cb69f5bc8cc1d868c03cf1b56ce9c5403768f0032fcb8433a37953b3",
+        "profile": "R2_OFFSET",
+        "no_FP32_master_attribute": true,
+        "runtime_policy": "fixed mask only; shared layout/codec, independent payload",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "pallets__click",
+      "method": "DIAG_SINGLE_WRITE",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "mask_sha256": "e417b637498e1e0636cfc52690e63aea1bc84599fa3554d9a7da66f9906b7b1f",
+        "profile": "R2_OFFSET",
+        "no_FP32_master_attribute": true,
+        "runtime_policy": "fixed mask only; shared layout/codec, independent payload",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "pallets__click",
+      "method": "B2_DIAG_MIX025",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "mask_sha256": "3bbdc0f7408844e7ebafbf453f5352ded6cf59d182dfb8c3fec06c9282c9547d",
+        "profile": "R2_OFFSET",
+        "no_FP32_master_attribute": true,
+        "runtime_policy": "fixed mask only; shared layout/codec, independent payload",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "psf__requests",
+      "method": "NATIVE",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "quantized_layers": 0,
+        "Native_state_dtype": "torch.bfloat16",
+        "target_state_bytes": 9437184
+      }
+    },
+    {
+      "document": "psf__requests",
+      "method": "B2_QUERY_PROMOTION",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "mask_sha256": "dc227083cb69f5bc8cc1d868c03cf1b56ce9c5403768f0032fcb8433a37953b3",
+        "profile": "R2_OFFSET",
+        "no_FP32_master_attribute": true,
+        "runtime_policy": "fixed mask only; shared layout/codec, independent payload",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "psf__requests",
+      "method": "DIAG_SINGLE_WRITE",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "mask_sha256": "e417b637498e1e0636cfc52690e63aea1bc84599fa3554d9a7da66f9906b7b1f",
+        "profile": "R2_OFFSET",
+        "no_FP32_master_attribute": true,
+        "runtime_policy": "fixed mask only; shared layout/codec, independent payload",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "psf__requests",
+      "method": "B2_DIAG_MIX025",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "mask_sha256": "3bbdc0f7408844e7ebafbf453f5352ded6cf59d182dfb8c3fec06c9282c9547d",
+        "profile": "R2_OFFSET",
+        "no_FP32_master_attribute": true,
+        "runtime_policy": "fixed mask only; shared layout/codec, independent payload",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "standardebooks__arthur-conan-doyle_the-adventures-of-sherlock-holmes",
+      "method": "NATIVE",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "quantized_layers": 0,
+        "Native_state_dtype": "torch.bfloat16",
+        "target_state_bytes": 9437184
+      }
+    },
+    {
+      "document": "standardebooks__arthur-conan-doyle_the-adventures-of-sherlock-holmes",
+      "method": "B2_QUERY_PROMOTION",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "mask_sha256": "dc227083cb69f5bc8cc1d868c03cf1b56ce9c5403768f0032fcb8433a37953b3",
+        "profile": "R2_OFFSET",
+        "no_FP32_master_attribute": true,
+        "runtime_policy": "fixed mask only; shared layout/codec, independent payload",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "standardebooks__arthur-conan-doyle_the-adventures-of-sherlock-holmes",
+      "method": "DIAG_SINGLE_WRITE",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "mask_sha256": "e417b637498e1e0636cfc52690e63aea1bc84599fa3554d9a7da66f9906b7b1f",
+        "profile": "R2_OFFSET",
+        "no_FP32_master_attribute": true,
+        "runtime_policy": "fixed mask only; shared layout/codec, independent payload",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "standardebooks__arthur-conan-doyle_the-adventures-of-sherlock-holmes",
+      "method": "B2_DIAG_MIX025",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "mask_sha256": "3bbdc0f7408844e7ebafbf453f5352ded6cf59d182dfb8c3fec06c9282c9547d",
+        "profile": "R2_OFFSET",
+        "no_FP32_master_attribute": true,
+        "runtime_policy": "fixed mask only; shared layout/codec, independent payload",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "standardebooks__lewis-carroll_alices-adventures-in-wonderland",
+      "method": "NATIVE",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "quantized_layers": 0,
+        "Native_state_dtype": "torch.bfloat16",
+        "target_state_bytes": 9437184
+      }
+    },
+    {
+      "document": "standardebooks__lewis-carroll_alices-adventures-in-wonderland",
+      "method": "B2_QUERY_PROMOTION",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "mask_sha256": "dc227083cb69f5bc8cc1d868c03cf1b56ce9c5403768f0032fcb8433a37953b3",
+        "profile": "R2_OFFSET",
+        "no_FP32_master_attribute": true,
+        "runtime_policy": "fixed mask only; shared layout/codec, independent payload",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "standardebooks__lewis-carroll_alices-adventures-in-wonderland",
+      "method": "DIAG_SINGLE_WRITE",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "mask_sha256": "e417b637498e1e0636cfc52690e63aea1bc84599fa3554d9a7da66f9906b7b1f",
+        "profile": "R2_OFFSET",
+        "no_FP32_master_attribute": true,
+        "runtime_policy": "fixed mask only; shared layout/codec, independent payload",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "standardebooks__lewis-carroll_alices-adventures-in-wonderland",
+      "method": "B2_DIAG_MIX025",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "mask_sha256": "3bbdc0f7408844e7ebafbf453f5352ded6cf59d182dfb8c3fec06c9282c9547d",
+        "profile": "R2_OFFSET",
+        "no_FP32_master_attribute": true,
+        "runtime_policy": "fixed mask only; shared layout/codec, independent payload",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "pallets__flask",
+      "method": "NATIVE",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "quantized_layers": 0,
+        "Native_state_dtype": "torch.bfloat16",
+        "target_state_bytes": 9437184
+      }
+    },
+    {
+      "document": "pallets__flask",
+      "method": "B2_QUERY_PROMOTION",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "mask_sha256": "dc227083cb69f5bc8cc1d868c03cf1b56ce9c5403768f0032fcb8433a37953b3",
+        "profile": "R2_OFFSET",
+        "no_FP32_master_attribute": true,
+        "runtime_policy": "fixed mask only; shared layout/codec, independent payload",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "pallets__flask",
+      "method": "DIAG_SINGLE_WRITE",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "mask_sha256": "e417b637498e1e0636cfc52690e63aea1bc84599fa3554d9a7da66f9906b7b1f",
+        "profile": "R2_OFFSET",
+        "no_FP32_master_attribute": true,
+        "runtime_policy": "fixed mask only; shared layout/codec, independent payload",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "pallets__flask",
+      "method": "B2_DIAG_MIX025",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "mask_sha256": "3bbdc0f7408844e7ebafbf453f5352ded6cf59d182dfb8c3fec06c9282c9547d",
+        "profile": "R2_OFFSET",
+        "no_FP32_master_attribute": true,
+        "runtime_policy": "fixed mask only; shared layout/codec, independent payload",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "pytest-dev__pytest",
+      "method": "NATIVE",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "quantized_layers": 0,
+        "Native_state_dtype": "torch.bfloat16",
+        "target_state_bytes": 9437184
+      }
+    },
+    {
+      "document": "pytest-dev__pytest",
+      "method": "B2_QUERY_PROMOTION",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "mask_sha256": "dc227083cb69f5bc8cc1d868c03cf1b56ce9c5403768f0032fcb8433a37953b3",
+        "profile": "R2_OFFSET",
+        "no_FP32_master_attribute": true,
+        "runtime_policy": "fixed mask only; shared layout/codec, independent payload",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "pytest-dev__pytest",
+      "method": "DIAG_SINGLE_WRITE",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "mask_sha256": "e417b637498e1e0636cfc52690e63aea1bc84599fa3554d9a7da66f9906b7b1f",
+        "profile": "R2_OFFSET",
+        "no_FP32_master_attribute": true,
+        "runtime_policy": "fixed mask only; shared layout/codec, independent payload",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    },
+    {
+      "document": "pytest-dev__pytest",
+      "method": "B2_DIAG_MIX025",
+      "status": "COMPLETE",
+      "completed_tokens": 1024,
+      "failure": null,
+      "storage": {
+        "payload_bytes": 5566464,
+        "index_bytes": 294912,
+        "shared_H32_bytes": 4096,
+        "CPU_mask_bytes": 36864,
+        "quantized_layers": 18,
+        "heads": 288,
+        "quantized_layer_writes": 18432,
+        "mask_sha256": "3bbdc0f7408844e7ebafbf453f5352ded6cf59d182dfb8c3fec06c9282c9547d",
+        "profile": "R2_OFFSET",
+        "no_FP32_master_attribute": true,
+        "runtime_policy": "fixed mask only; shared layout/codec, independent payload",
+        "Python_allocator_scratch_bytes": "NOT_MEASURED"
+      }
+    }
+  ],
+  "decision": "INCONCLUSIVE",
+  "quality": {
+    "NATIVE": {
+      "mean_KL": 0.0,
+      "mean_NLL": 1.833557755833395,
+      "late_KL": 0.0,
+      "p99_KL": 0.0,
+      "top1pct_KL": 0.0,
+      "max_KL": 0.0,
+      "KL_positions": 6048,
+      "NLL_positions": 6042,
+      "late_KL_positions": 3072,
+      "top1pct_count": 61,
+      "delta_NLL_vs_Native": 0.0
+    },
+    "B2_QUERY_PROMOTION": {
+      "mean_KL": 0.051233722715678345,
+      "mean_NLL": 1.8902295494838168,
+      "late_KL": 0.09151921004092255,
+      "p99_KL": 0.7065386685358902,
+      "top1pct_KL": 1.4451346619446492,
+      "max_KL": 7.2855992632865005,
+      "KL_positions": 6048,
+      "NLL_positions": 6042,
+      "late_KL_positions": 3072,
+      "top1pct_count": 61,
+      "delta_NLL_vs_Native": 0.05667179365042174
+    },
+    "DIAG_SINGLE_WRITE": {
+      "mean_KL": 0.04362536604966828,
+      "mean_NLL": 1.8782158975220935,
+      "late_KL": 0.0777637621837747,
+      "p99_KL": 0.6034236722094048,
+      "top1pct_KL": 1.3414456212493715,
+      "max_KL": 6.610030103800521,
+      "KL_positions": 6048,
+      "NLL_positions": 6042,
+      "late_KL_positions": 3072,
+      "top1pct_count": 61,
+      "delta_NLL_vs_Native": 0.044658141688698416
+    },
+    "B2_DIAG_MIX025": {
+      "mean_KL": 0.05094724207992607,
+      "mean_NLL": 1.89116267419088,
+      "late_KL": 0.0912902550177559,
+      "p99_KL": 0.7448226048047014,
+      "top1pct_KL": 1.4344100775589004,
+      "max_KL": 6.480963803199931,
+      "KL_positions": 6048,
+      "NLL_positions": 6042,
+      "late_KL_positions": 3072,
+      "top1pct_count": 61,
+      "delta_NLL_vs_Native": 0.057604918357484935
+    }
+  },
+  "contrasts": {
+    "B2_QUERY_PROMOTION": {
+      "delta_KL": -0.0002864806357522759,
+      "relative_KL_reduction": 0.005591641999979191,
+      "delta_NLL": 0.0009331247070631932,
+      "delta_KL_CI95": [
+        -0.004254854166945609,
+        0.003155144567202212
+      ],
+      "delta_NLL_CI95": [
+        -0.006701539462980503,
+        0.007427604172418701
+      ],
+      "relative_KL_reduction_CI95": [
+        -0.0652018775812241,
+        0.07109468906019045
+      ],
+      "undefined_bootstrap_ratio_draws": 0,
+      "relative_metric_reason": null,
+      "document_KL_wins": 3,
+      "document_KL_ties": 0,
+      "document_NLL_wins": 3,
+      "harmful_KL_mass": 38.48810433439536,
+      "beneficial_KL_mass": 40.22073921942513,
+      "pairs": [
+        {
+          "document": "pallets__click",
+          "delta_KL": 0.0053210140122253585,
+          "delta_NLL": 0.00990506423148263,
+          "relative_KL_reduction": -0.062171450118705174
+        },
+        {
+          "document": "psf__requests",
+          "delta_KL": -0.008529662637529856,
+          "delta_NLL": -0.014770304801071665,
+          "relative_KL_reduction": 0.09710471066993098
+        },
+        {
+          "document": "standardebooks__arthur-conan-doyle_the-adventures-of-sherlock-holmes",
+          "delta_KL": -0.0008545304181687662,
+          "delta_NLL": -0.0028685964796846264,
+          "relative_KL_reduction": 0.029024321208956705
+        },
+        {
+          "document": "standardebooks__lewis-carroll_alices-adventures-in-wonderland",
+          "delta_KL": 0.0014299018998749705,
+          "delta_NLL": 0.006362311186634884,
+          "relative_KL_reduction": -0.03722767796340909
+        },
+        {
+          "document": "pallets__flask",
+          "delta_KL": -0.0029381028463513273,
+          "delta_NLL": -0.002583618096732021,
+          "relative_KL_reduction": 0.07346350320837503
+        },
+        {
+          "document": "pytest-dev__pytest",
+          "delta_KL": 0.0038524961754360064,
+          "delta_NLL": 0.009553892201748626,
+          "relative_KL_reduction": -0.14743128270578265
+        }
+      ]
+    },
+    "DIAG_SINGLE_WRITE": {
+      "delta_KL": 0.007321876030257787,
+      "relative_KL_reduction": -0.1678352915577075,
+      "delta_NLL": 0.01294677666878652,
+      "delta_KL_CI95": [
+        0.003154319359151508,
+        0.011865184789089203
+      ],
+      "delta_NLL_CI95": [
+        0.007170975331660223,
+        0.019714790187428943
+      ],
+      "relative_KL_reduction_CI95": [
+        -0.20509814450354868,
+        -0.10340325969281694
+      ],
+      "undefined_bootstrap_ratio_draws": 0,
+      "relative_metric_reason": null,
+      "document_KL_wins": 0,
+      "document_KL_ties": 0,
+      "document_NLL_wins": 0,
+      "harmful_KL_mass": 72.22171175883385,
+      "beneficial_KL_mass": 27.939005527834695,
+      "pairs": [
+        {
+          "document": "pallets__click",
+          "delta_KL": 0.01577778605301433,
+          "delta_NLL": 0.02574853822361378,
+          "relative_KL_reduction": -0.21000825517158428
+        },
+        {
+          "document": "psf__requests",
+          "delta_KL": 0.01296374128817196,
+          "delta_NLL": 0.01830083619277234,
+          "relative_KL_reduction": -0.19539467788190246
+        },
+        {
+          "document": "standardebooks__arthur-conan-doyle_the-adventures-of-sherlock-holmes",
+          "delta_KL": 0.0022846306031487594,
+          "delta_NLL": 0.004366989998812798,
+          "relative_KL_reduction": -0.08685912264936757
+        },
+        {
+          "document": "standardebooks__lewis-carroll_alices-adventures-in-wonderland",
+          "delta_KL": 0.00762859308350515,
+          "delta_NLL": 0.01738712363798056,
+          "relative_KL_reduction": -0.23683226191884477
+        },
+        {
+          "document": "pallets__flask",
+          "delta_KL": 0.004532192389715944,
+          "delta_NLL": 0.006268879177771192,
+          "relative_KL_reduction": -0.13935023040639005
+        },
+        {
+          "document": "pytest-dev__pytest",
+          "delta_KL": 0.0007443127639906698,
+          "delta_NLL": 0.005608292781767776,
+          "relative_KL_reduction": -0.025456184930124248
+        }
+      ]
+    }
+  },
+  "task_accuracy": "NOT_MEASURED",
+  "formal_latency_peak_VRAM": "NOT_MEASURED",
+  "documents": [
+    {
+      "document": "pallets__click",
+      "group": "code",
+      "method": "NATIVE",
+      "mean_KL": 0.0,
+      "mean_NLL": 1.4989605119942677,
+      "late_KL": 0.0,
+      "prefix256_KL": 0.0,
+      "prefix512_KL": 0.0,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "psf__requests",
+      "group": "code",
+      "method": "NATIVE",
+      "mean_KL": 0.0,
+      "mean_NLL": 1.4372406398553916,
+      "late_KL": 0.0,
+      "prefix256_KL": 0.0,
+      "prefix512_KL": 0.0,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "standardebooks__arthur-conan-doyle_the-adventures-of-sherlock-holmes",
+      "group": "narrative",
+      "method": "NATIVE",
+      "mean_KL": 0.0,
+      "mean_NLL": 2.7990538478830618,
+      "late_KL": 0.0,
+      "prefix256_KL": 0.0,
+      "prefix512_KL": 0.0,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "standardebooks__lewis-carroll_alices-adventures-in-wonderland",
+      "group": "narrative",
+      "method": "NATIVE",
+      "mean_KL": 0.0,
+      "mean_NLL": 2.1748637912491673,
+      "late_KL": 0.0,
+      "prefix256_KL": 0.0,
+      "prefix512_KL": 0.0,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "pallets__flask",
+      "group": "technical",
+      "method": "NATIVE",
+      "mean_KL": 0.0,
+      "mean_NLL": 1.6592184364603877,
+      "late_KL": 0.0,
+      "prefix256_KL": 0.0,
+      "prefix512_KL": 0.0,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "pytest-dev__pytest",
+      "group": "technical",
+      "method": "NATIVE",
+      "mean_KL": 0.0,
+      "mean_NLL": 1.4320093075580946,
+      "late_KL": 0.0,
+      "prefix256_KL": 0.0,
+      "prefix512_KL": 0.0,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "pallets__click",
+      "group": "code",
+      "method": "B2_QUERY_PROMOTION",
+      "mean_KL": 0.08558613321815466,
+      "mean_NLL": 1.588793170273246,
+      "late_KL": 0.16076560866595144,
+      "prefix256_KL": 0.002369755520951244,
+      "prefix512_KL": 0.007981513401074116,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "psf__requests",
+      "group": "code",
+      "method": "B2_QUERY_PROMOTION",
+      "mean_KL": 0.08783984400636412,
+      "mean_NLL": 1.5328865486958694,
+      "late_KL": 0.15604284339948277,
+      "prefix256_KL": 0.004815738328341712,
+      "prefix512_KL": 0.017436747858628733,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "standardebooks__arthur-conan-doyle_the-adventures-of-sherlock-holmes",
+      "group": "narrative",
+      "method": "B2_QUERY_PROMOTION",
+      "mean_KL": 0.029441874351399645,
+      "mean_NLL": 2.832198608314474,
+      "late_KL": 0.049669947225895725,
+      "prefix256_KL": 0.0028096843525996424,
+      "prefix512_KL": 0.008561282997081114,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "standardebooks__lewis-carroll_alices-adventures-in-wonderland",
+      "group": "narrative",
+      "method": "B2_QUERY_PROMOTION",
+      "mean_KL": 0.038409645137695944,
+      "mean_NLL": 2.235073559665722,
+      "late_KL": 0.06750777447080711,
+      "prefix256_KL": 0.002444126780443897,
+      "prefix512_KL": 0.00837286647125861,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "pallets__flask",
+      "group": "technical",
+      "method": "B2_QUERY_PROMOTION",
+      "mean_KL": 0.039994047629576895,
+      "mean_NLL": 1.69634559590689,
+      "late_KL": 0.06933573058542207,
+      "prefix256_KL": 0.003106597213593812,
+      "prefix512_KL": 0.009705858771930267,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "pytest-dev__pytest",
+      "group": "technical",
+      "method": "B2_QUERY_PROMOTION",
+      "mean_KL": 0.02613079195087883,
+      "mean_NLL": 1.4560798140467002,
+      "late_KL": 0.04579335589797613,
+      "prefix256_KL": 0.0035679206584711834,
+      "prefix512_KL": 0.005833951747423543,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "pallets__click",
+      "group": "code",
+      "method": "DIAG_SINGLE_WRITE",
+      "mean_KL": 0.07512936117736568,
+      "mean_NLL": 1.572949696281115,
+      "late_KL": 0.1411873489215011,
+      "prefix256_KL": 0.002132378201936812,
+      "prefix512_KL": 0.0069404706027742695,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "psf__requests",
+      "group": "code",
+      "method": "DIAG_SINGLE_WRITE",
+      "mean_KL": 0.0663464400806623,
+      "mean_NLL": 1.4998154077020254,
+      "late_KL": 0.11719512203774027,
+      "prefix256_KL": 0.004083853526236477,
+      "prefix512_KL": 0.013857478060452809,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "standardebooks__arthur-conan-doyle_the-adventures-of-sherlock-holmes",
+      "group": "narrative",
+      "method": "DIAG_SINGLE_WRITE",
+      "mean_KL": 0.02630271333008212,
+      "mean_NLL": 2.8249630218359765,
+      "late_KL": 0.04349266510343092,
+      "prefix256_KL": 0.0027459682752942684,
+      "prefix512_KL": 0.008558246983399482,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "standardebooks__lewis-carroll_alices-adventures-in-wonderland",
+      "group": "narrative",
+      "method": "DIAG_SINGLE_WRITE",
+      "mean_KL": 0.032210953954065764,
+      "mean_NLL": 2.2240487472143764,
+      "late_KL": 0.056511298973393145,
+      "prefix256_KL": 0.0022741511742179156,
+      "prefix512_KL": 0.007126726837340736,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "pallets__flask",
+      "group": "technical",
+      "method": "DIAG_SINGLE_WRITE",
+      "mean_KL": 0.032523752393509624,
+      "mean_NLL": 1.6874930986323868,
+      "late_KL": 0.055933828432486114,
+      "prefix256_KL": 0.003160601975421544,
+      "prefix512_KL": 0.00835851261134034,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "pytest-dev__pytest",
+      "group": "technical",
+      "method": "DIAG_SINGLE_WRITE",
+      "mean_KL": 0.029238975362324168,
+      "mean_NLL": 1.460025413466681,
+      "late_KL": 0.052262309634096664,
+      "prefix256_KL": 0.00314920890608708,
+      "prefix512_KL": 0.005472952888236429,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "pallets__click",
+      "group": "code",
+      "method": "B2_DIAG_MIX025",
+      "mean_KL": 0.09090714723038001,
+      "mean_NLL": 1.5986982345047287,
+      "late_KL": 0.1715992459280199,
+      "prefix256_KL": 0.002354846688448866,
+      "prefix512_KL": 0.007612077607009779,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "psf__requests",
+      "group": "code",
+      "method": "B2_DIAG_MIX025",
+      "mean_KL": 0.07931018136883426,
+      "mean_NLL": 1.5181162438947977,
+      "late_KL": 0.1408748525402606,
+      "prefix256_KL": 0.004362383845701891,
+      "prefix512_KL": 0.015759553062845804,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "standardebooks__arthur-conan-doyle_the-adventures-of-sherlock-holmes",
+      "group": "narrative",
+      "method": "B2_DIAG_MIX025",
+      "mean_KL": 0.02858734393323088,
+      "mean_NLL": 2.8293300118347893,
+      "late_KL": 0.0480181588407165,
+      "prefix256_KL": 0.0027440558138607674,
+      "prefix512_KL": 0.008529728544858622,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "standardebooks__lewis-carroll_alices-adventures-in-wonderland",
+      "group": "narrative",
+      "method": "B2_DIAG_MIX025",
+      "mean_KL": 0.039839547037570915,
+      "mean_NLL": 2.241435870852357,
+      "late_KL": 0.06982014464532652,
+      "prefix256_KL": 0.00235374718533392,
+      "prefix512_KL": 0.008891833377952232,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "pallets__flask",
+      "group": "technical",
+      "method": "B2_DIAG_MIX025",
+      "mean_KL": 0.03705594478322557,
+      "mean_NLL": 1.693761977810158,
+      "late_KL": 0.06413479319185372,
+      "prefix256_KL": 0.003076477157333613,
+      "prefix512_KL": 0.009103585135609398,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    },
+    {
+      "document": "pytest-dev__pytest",
+      "group": "technical",
+      "method": "B2_DIAG_MIX025",
+      "mean_KL": 0.029983288126314837,
+      "mean_NLL": 1.4656337062484488,
+      "late_KL": 0.05329433496035821,
+      "prefix256_KL": 0.0032161727864687953,
+      "prefix512_KL": 0.005920272039560377,
+      "KL_positions": 1008,
+      "NLL_positions": 1007
+    }
+  ],
+  "bootstrap": {
+    "unit": "paired document",
+    "independent_units": 6,
+    "draws": 10000,
+    "seed": 20260916,
+    "generator": "numpy.PCG64",
+    "indices_int64_le_sha256": "70110879cdb44fce00e9d0be33dc74b90de34a18c37a7f8c56db7400a059d303",
+    "percentiles": [
+      2.5,
+      97.5
+    ],
+    "quantile_method": "linear",
+    "scope": "small heterogeneous panel uncertainty; no task noninferiority/population guarantee"
+  },
+  "reference_effect": {
+    "five_percent_is_not_a_gate": true,
+    "relative_KL_reduction_at_least_5pct": false
+  }
+}

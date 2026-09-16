@@ -1,0 +1,14 @@
+{
+  "preregistration_commit": "14b3c205bb0043e307b6120b91756f3b14575aef",
+  "external_PR": {
+    "createdAt": "2026-09-16T05:43:02Z",
+    "headRefOid": "14b3c205bb0043e307b6120b91756f3b14575aef",
+    "isDraft": true,
+    "number": 10,
+    "state": "OPEN",
+    "url": "https://github.com/Munsik-Kim/rtpa-research/pull/10"
+  },
+  "local_readback_UTC": "2026-09-16T05:44:12.308572+00:00",
+  "config_sha256": "c6cc045f000e6a4e52adbc03b4538417dabeaf2159dd703f63fe4fe2f12dd548",
+  "scope": "External PR creation/readback recorded before launching worker; local GPU timestamps are not independent trusted-clock attestation."
+}

@@ -1,0 +1,118 @@
+{
+  "run_id": "RTPA_B2_ANCHORED_DIAG_MIX025_20260916_V1",
+  "config_sha256": "c6cc045f000e6a4e52adbc03b4538417dabeaf2159dd703f63fe4fe2f12dd548",
+  "model_forward_API_calls": 24576,
+  "model_input_positions": 24576,
+  "quantized_layer_writes": 331776,
+  "GPU_numerical_seconds": 2520.9830349760014,
+  "model_load_seconds": [
+    1.2391102719993796
+  ],
+  "phases": [
+    {
+      "document": "pallets__click",
+      "start_UTC": "2026-09-16T05:44:19.990505+00:00",
+      "status": "COMPLETE",
+      "start_counts": {
+        "model_forward_API_calls": 0,
+        "model_input_positions": 0,
+        "quantized_layer_writes": 0
+      },
+      "seconds_including_metrics_IO": 397.956371995002,
+      "end_UTC": "2026-09-16T05:50:51.895317+00:00",
+      "counts": {
+        "model_forward_API_calls": 4096,
+        "model_input_positions": 4096,
+        "quantized_layer_writes": 55296
+      }
+    },
+    {
+      "document": "psf__requests",
+      "start_UTC": "2026-09-16T05:50:51.922353+00:00",
+      "status": "COMPLETE",
+      "start_counts": {
+        "model_forward_API_calls": 4096,
+        "model_input_positions": 4096,
+        "quantized_layer_writes": 55296
+      },
+      "seconds_including_metrics_IO": 408.6784206349985,
+      "end_UTC": "2026-09-16T05:57:34.584086+00:00",
+      "counts": {
+        "model_forward_API_calls": 4096,
+        "model_input_positions": 4096,
+        "quantized_layer_writes": 55296
+      }
+    },
+    {
+      "document": "standardebooks__arthur-conan-doyle_the-adventures-of-sherlock-holmes",
+      "start_UTC": "2026-09-16T05:57:34.610851+00:00",
+      "status": "COMPLETE",
+      "start_counts": {
+        "model_forward_API_calls": 8192,
+        "model_input_positions": 8192,
+        "quantized_layer_writes": 110592
+      },
+      "seconds_including_metrics_IO": 439.90379188899897,
+      "end_UTC": "2026-09-16T06:04:48.404952+00:00",
+      "counts": {
+        "model_forward_API_calls": 4096,
+        "model_input_positions": 4096,
+        "quantized_layer_writes": 55296
+      }
+    },
+    {
+      "document": "standardebooks__lewis-carroll_alices-adventures-in-wonderland",
+      "start_UTC": "2026-09-16T06:04:48.432938+00:00",
+      "status": "COMPLETE",
+      "start_counts": {
+        "model_forward_API_calls": 12288,
+        "model_input_positions": 12288,
+        "quantized_layer_writes": 165888
+      },
+      "seconds_including_metrics_IO": 445.1144892700031,
+      "end_UTC": "2026-09-16T06:12:07.128096+00:00",
+      "counts": {
+        "model_forward_API_calls": 4096,
+        "model_input_positions": 4096,
+        "quantized_layer_writes": 55296
+      }
+    },
+    {
+      "document": "pallets__flask",
+      "start_UTC": "2026-09-16T06:12:07.155856+00:00",
+      "status": "COMPLETE",
+      "start_counts": {
+        "model_forward_API_calls": 16384,
+        "model_input_positions": 16384,
+        "quantized_layer_writes": 221184
+      },
+      "seconds_including_metrics_IO": 416.24876274800044,
+      "end_UTC": "2026-09-16T06:18:57.534065+00:00",
+      "counts": {
+        "model_forward_API_calls": 4096,
+        "model_input_positions": 4096,
+        "quantized_layer_writes": 55296
+      }
+    },
+    {
+      "document": "pytest-dev__pytest",
+      "start_UTC": "2026-09-16T06:18:57.561522+00:00",
+      "status": "COMPLETE",
+      "start_counts": {
+        "model_forward_API_calls": 20480,
+        "model_input_positions": 20480,
+        "quantized_layer_writes": 276480
+      },
+      "seconds_including_metrics_IO": 413.0811984389984,
+      "end_UTC": "2026-09-16T06:25:45.292203+00:00",
+      "counts": {
+        "model_forward_API_calls": 4096,
+        "model_input_positions": 4096,
+        "quantized_layer_writes": 55296
+      }
+    }
+  ],
+  "new_TRAIN_forwards": 0,
+  "new_fitting": 0,
+  "count_unit": "batch1 input positions and layer-writes, not head-writes"
+}
