@@ -32,8 +32,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7263,
-      "sha256": "d52c94b9e4bb4b59b37a0c0b3bd2c1371365557d62e76f18241a7c459974d313"
+      "bytes": 9560,
+      "sha256": "07b76c91604fc38a58b81755641fd3f776f252104a3418ac8aa827eaf0dedb81"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -7452,8 +7452,8 @@
     },
     {
       "path": "docs/B2_MIX025.md",
-      "bytes": 10211,
-      "sha256": "3f5a82bd79a05f1a0dee272f2d4447f44c1d2ce2365f567c2d2b4ef631be3102"
+      "bytes": 12054,
+      "sha256": "bd43b0b34c051bb6c360c67461144d55e849c825cdb9a5d3abd738c398d0fc91"
     },
     {
       "path": "docs/BENCHMARKS.md",
@@ -8237,8 +8237,8 @@
     },
     {
       "path": "scripts/check_current_readme.py",
-      "bytes": 1619,
-      "sha256": "0f52f2734412142e2417057040413af84fd2820afeef4c2002c7ac37f59c76f0"
+      "bytes": 6553,
+      "sha256": "67b31107a487e643b5668f68cc325f1dcd8d41999d4e872ce6290d70147aee10"
     },
     {
       "path": "scripts/check_diag_r2_cpu.py",

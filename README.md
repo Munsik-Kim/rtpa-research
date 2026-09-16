@@ -1,21 +1,57 @@
 # RTPA — Output-Aware Recurrent-State Quantization
 
-RTPA studies how quantization errors in **persistent recurrent state between
-token updates** affect future model outputs—not weight, activation or attention
-KV quantization. It implements offline response-based precision masks and causal
-integer-code correction, with reproducible evaluation code and small numerical
-boundary examples. Output-aware allocation improved fidelity over energy-only
-controls in evaluated settings. Consistent additional gains over a strong query-weighted
-baseline, and practical end-to-end efficiency, remain unestablished.
+Allocate precision by how quantization errors affect future outputs—not just by their size.
+
+RTPA studies quantization of **persistent recurrent state between token updates**,
+not weight, activation or attention KV-cache quantization. We develop
+future-response-guided precision allocation and causal integer-code correction,
+with public implementations and reproducible evaluation evidence.
+
+RTPA-DIAG combines finite-horizon future-output responses with measured low-to-high
+precision error reduction during offline calibration, then compresses that
+information into a fixed row mask. The current **single-write** implementation
+uses frozen key/gate-dependent GDN transitions and query-dependent readouts. Inference requires
+neither access to future tokens nor an online importance-tracking state.
+DIAG uses diagonal response weights for selection; it does not diagonalize the
+GDN update or add historical coherent DIAG's cross-write terms.
 
 - **RTPA-DIAG:** offline output response compressed into a fixed precision mask.
 - **FA_CODE:** a frozen offline metric and current state drive bounded causal
   integer-code correction, with additional runtime computation.
 
-“Future-aware” does **not** mean access to actual future tokens at inference.
-The two paths have separate quality and cost results. The previous search cycle
-is closed. One separately authorized fixed-mixture follow-up is now complete;
-no additional candidate search is underway.
+The contribution is the specific offline future-response-guided allocation
+design and its reproducible evaluation, not the invention of sensitivity-weighted
+quantization. [Single-write design and score](docs/SINGLE_WRITE.md#single-write-definition-not-coherent-diag) ·
+[Historical related work and claim boundaries](docs/RELATED_WORK_AND_NOVELTY.md).
+The two paths have separate quality and cost results; no additional candidate
+search is underway.
+
+## DIAG quality signal at the same storage budget (2026-09-16)
+
+On six preselected documents × 1,024 tokens, DIAG_SINGLE_WRITE achieved
+**14.85% lower mean Native-KL than B2**, a strong query-weighted allocation baseline,
+with **0.01201 nat/token lower NLL**. KL was lower on 5 of 6 documents;
+NLL was lower on 5 of 6 documents. Both use R2_OFFSET/high8, all 18 GDN layers
+of Qwen3.5-0.8B-Base, and identical-size persistent storage and policy tensors.
+No new DIAG fitting or mask changes were made for these inputs. B2 is itself
+output-aware, not an energy-only control or an official DAMP implementation.
+
+| Method | Mean Native-KL | ΔNLL vs Native | Target state bytes |
+|---|---:|---:|---:|
+| B2_QUERY_PROMOTION | 0.0512337227 | 0.0566717937 | 5,566,464 |
+| DIAG_SINGLE_WRITE | 0.043625366 | 0.0446581417 | 5,566,464 |
+
+These are output-preservation measurements, not task-accuracy or speed gains.
+This is an endpoint-control observation from an experiment whose primary question
+concerned a separate B2-DIAG mixture; it does not change that experiment's
+INCONCLUSIVE verdict. The earlier three-document screen using the same fixed
+single-write policies found 0.742% higher KL than B2 despite two document wins.
+This is a promising small-panel signal, not established general superiority or a new confirmatory pass.
+
+KL is `Native || method`, and ΔNLL is versus Native, both in nat/token.
+Native uses BF16 weights/cache and FP32 recurrence. [Latest result tables](results/b2_mix025_20260916/tables.md) ·
+[Endpoint interpretation](docs/B2_MIX025.md#diag-endpoint-signal-and-input-dependence) ·
+[Earlier screen](docs/SCREEN_INTERPRETATION.md).
 
 ## Fixed B2–DIAG mixture follow-up (2026-09-16)
 
@@ -56,9 +92,10 @@ These are not combined gains or a controlled comparison with this single-write s
 ## Storage and limits
 
 Mixed storage is **19,328 B/head, 9.4375 bits/value** including FP16 metadata/high8:
-41.02% fewer target-payload bytes than BF16. With GPU indices/H32, target+policy
-is **5,865,472 B**, about 37.85% below BF16 target bytes; CPU masks and scratch
-are separate. [Earlier fresh-process R2 measurements](results/diag_r2/memory_tables.md)
+41.02% fewer target-payload bytes than BF16. With 294,912 B of GPU indices and
+4,096 B of shared H32, target+policy is **5,865,472 B**, about 37.85% below BF16
+target bytes. CPU masks add 36,864 B; Python/allocator overhead, scratch and other
+caches are separate. [Earlier fresh-process R2 measurements](results/diag_r2/memory_tables.md)
 found steady allocated memory about **3.41 MiB lower**, but peak allocated about
 **7.28 MiB higher**, than Native. Those are not measurements of this screen and
 do not imply 41% whole-model VRAM savings or faster inference.
