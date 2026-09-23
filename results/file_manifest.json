@@ -32,8 +32,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6504,
-      "sha256": "56d74c81c3a58b9fb5a0e976af25026df64d6b4c4780ac1a21f0866f665c2321"
+      "bytes": 7411,
+      "sha256": "d49c3d732a4042e9e3108eadf164a5d10d861f26c9da833ec17e46f38fe8efa4"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -7286,6 +7286,11 @@
       "sha256": "b6387dc708042c50804a5a58b0879acc2186fa1e6c894dd81e2c46f060d5d686"
     },
     {
+      "path": "docs/DIAG_W_OS_NEGATIVE_RESULT.md",
+      "bytes": 11070,
+      "sha256": "8713e7881b2d5a3218928d368ec582084f39b079456a9cc5a0ba0e77ba445abc"
+    },
+    {
       "path": "docs/EXPERIMENTS.md",
       "bytes": 6261,
       "sha256": "f34a452258f4dcadc248516b3c8df27d7412927958cd7d12c0ec3f748d6a2567"
@@ -7659,6 +7664,61 @@
       "path": "results/diag_r4/verification_provenance/revision.json",
       "bytes": 1788,
       "sha256": "03f24db64750533861df0f987132cb5dd224bc3e84789e332e871dac056a7dce"
+    },
+    {
+      "path": "results/diag_w_os_public_summary/PROTOCOL.md",
+      "bytes": 8881,
+      "sha256": "4e09f7a4da7b2bfed729163f28d55dfc7e30e36530021da1310f14c4d427af14"
+    },
+    {
+      "path": "results/diag_w_os_public_summary/README.md",
+      "bytes": 2978,
+      "sha256": "d631db79d4cdf008565079f0981488f67b023465f1f50f5a7fd74966834890c9"
+    },
+    {
+      "path": "results/diag_w_os_public_summary/bytes_ledger.json",
+      "bytes": 30169,
+      "sha256": "eaa3ff1cde22332c519c1746151cc7ab3e4b0fe0a34a9731c8ae9b661ef5bab5"
+    },
+    {
+      "path": "results/diag_w_os_public_summary/cost_summary.json",
+      "bytes": 1093,
+      "sha256": "fa2ace1ff765138fb90c4759c081173d099167896cbd54b2165dac67d684376d"
+    },
+    {
+      "path": "results/diag_w_os_public_summary/decision.json",
+      "bytes": 929,
+      "sha256": "75fba8ed4462cb8f645fb8e5e733c403f9712bb8d57e4c1dacdb6752a222734a"
+    },
+    {
+      "path": "results/diag_w_os_public_summary/policy_document_metrics.csv",
+      "bytes": 106906,
+      "sha256": "96ce9ba01e0e492ec82554efb4d5228a2a8c89d50c8baac94d6521e010cd6884"
+    },
+    {
+      "path": "results/diag_w_os_public_summary/precision_maps.json",
+      "bytes": 13884,
+      "sha256": "ea2d6a3c1e26cfe6a3d9fbeba77590f3547cf8c2ecd6f27cc1bdcb40f3a3147f"
+    },
+    {
+      "path": "results/diag_w_os_public_summary/primary_comparison.json",
+      "bytes": 11365,
+      "sha256": "3fabf8090340cdc2f6c70a68a50bb7ef12a32b64f71d7662d7e50b3319d91b80"
+    },
+    {
+      "path": "results/diag_w_os_public_summary/provenance.json",
+      "bytes": 6237,
+      "sha256": "f97a2ee8ef00dfa6f98a701489ab7449d98cb8a026633736eb10fc2109ea7369"
+    },
+    {
+      "path": "results/diag_w_os_public_summary/public_recheck.json",
+      "bytes": 669,
+      "sha256": "06049dcbb60fa7ef6629c2d40185c490570b56fb180729111b76925f801b0992"
+    },
+    {
+      "path": "results/diag_w_os_public_summary/verification.json",
+      "bytes": 2166,
+      "sha256": "e62e0e365b7bceb4f4064fe7d6e2e1628b0aba5da053456f79bb3a76e0a8553e"
     },
     {
       "path": "results/evidence_manifest.json",
@@ -8189,6 +8249,11 @@
       "path": "scripts/probe_diag_r4_cuda.py",
       "bytes": 3588,
       "sha256": "e48605ad8f194d28822e954af794751a57c5bbaeaa53c701700c30c8c0bbf90c"
+    },
+    {
+      "path": "scripts/recheck_diag_w_os_public.py",
+      "bytes": 8540,
+      "sha256": "8177cab1d0d13e98f3d1dd2426b4c329688942475633765d8b727372686361f7"
     },
     {
       "path": "scripts/refresh_publication_manifest.py",
