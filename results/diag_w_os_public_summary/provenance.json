@@ -1,0 +1,119 @@
+{
+  "schema": "W1_OS_PUBLIC_SUMMARY_V1",
+  "publication_date": "2026-09-23",
+  "repository": "Munsik-Kim/rtpa-research",
+  "publication_base": "34117f6aac60506ac3bef5ccf4e2dae27a5c436c",
+  "local_evidence_commits": {
+    "w1": "2d3f3b7164473afe0023b35725deea84f54b66b9",
+    "w1_lr_r2_results": "716b62f97ab65686fb106ddd04e5bbf0ad1e2085",
+    "w1_os_registration": "a3179188e7ad494bb6896fd110010ce2ca00fea1",
+    "w1_os_test_lock": "ace9ecec2dfb1b21f3ac504de93d198c82099032",
+    "w1_os_results": "ad03e0339a6357d3c3b1d853a4adfa21705f2a7d"
+  },
+  "commit_availability": "These are local evidence identities, not promised remotely available GitHub commits. The publication branch contains only this reviewed summary subset, not the research ancestry.",
+  "original_result_directory": "results/diag_w_output_stratified_20260923_r1",
+  "published_inputs": [
+    {
+      "published_name": "decision.json",
+      "original_relative_path": "results/diag_w_output_stratified_20260923_r1/decision.json",
+      "original_sha256": "75fba8ed4462cb8f645fb8e5e733c403f9712bb8d57e4c1dacdb6752a222734a",
+      "original_bytes": 929,
+      "transformation": "BYTE_IDENTICAL",
+      "published_bytes": 929,
+      "published_sha256": "75fba8ed4462cb8f645fb8e5e733c403f9712bb8d57e4c1dacdb6752a222734a"
+    },
+    {
+      "published_name": "verification.json",
+      "original_relative_path": "results/diag_w_output_stratified_20260923_r1/verification.json",
+      "original_sha256": "e62e0e365b7bceb4f4064fe7d6e2e1628b0aba5da053456f79bb3a76e0a8553e",
+      "original_bytes": 2166,
+      "transformation": "BYTE_IDENTICAL",
+      "published_bytes": 2166,
+      "published_sha256": "e62e0e365b7bceb4f4064fe7d6e2e1628b0aba5da053456f79bb3a76e0a8553e"
+    },
+    {
+      "published_name": "primary_comparison.json",
+      "original_relative_path": "results/diag_w_output_stratified_20260923_r1/primary_comparison.json",
+      "original_sha256": "3fabf8090340cdc2f6c70a68a50bb7ef12a32b64f71d7662d7e50b3319d91b80",
+      "original_bytes": 11365,
+      "transformation": "BYTE_IDENTICAL",
+      "published_bytes": 11365,
+      "published_sha256": "3fabf8090340cdc2f6c70a68a50bb7ef12a32b64f71d7662d7e50b3319d91b80"
+    },
+    {
+      "published_name": "precision_maps.json",
+      "original_relative_path": "results/diag_w_output_stratified_20260923_r1/precision_maps.json",
+      "original_sha256": "ea2d6a3c1e26cfe6a3d9fbeba77590f3547cf8c2ecd6f27cc1bdcb40f3a3147f",
+      "original_bytes": 13884,
+      "transformation": "BYTE_IDENTICAL",
+      "published_bytes": 13884,
+      "published_sha256": "ea2d6a3c1e26cfe6a3d9fbeba77590f3547cf8c2ecd6f27cc1bdcb40f3a3147f"
+    },
+    {
+      "published_name": "bytes_ledger.json",
+      "original_relative_path": "results/diag_w_output_stratified_20260923_r1/bytes_ledger.json",
+      "original_sha256": "eaa3ff1cde22332c519c1746151cc7ab3e4b0fe0a34a9731c8ae9b661ef5bab5",
+      "original_bytes": 30169,
+      "transformation": "BYTE_IDENTICAL",
+      "published_bytes": 30169,
+      "published_sha256": "eaa3ff1cde22332c519c1746151cc7ab3e4b0fe0a34a9731c8ae9b661ef5bab5"
+    },
+    {
+      "published_name": "policy_document_metrics.csv",
+      "original_relative_path": "results/diag_w_output_stratified_20260923_r1/policy_document_metrics.csv",
+      "original_sha256": "f38d593dfde2b1ce3cb08ab95d4050a09549e73a1a54785cf0952fb1fd4684f0",
+      "original_bytes": 107355,
+      "transformation": "CRLF_TO_LF",
+      "published_bytes": 106906,
+      "published_sha256": "96ce9ba01e0e492ec82554efb4d5228a2a8c89d50c8baac94d6521e010cd6884"
+    },
+    {
+      "published_name": "cost_summary.json",
+      "original_relative_path": "results/diag_w_output_stratified_20260923_r1/cost_summary.json",
+      "original_sha256": "fa2ace1ff765138fb90c4759c081173d099167896cbd54b2165dac67d684376d",
+      "original_bytes": 1093,
+      "transformation": "BYTE_IDENTICAL",
+      "published_bytes": 1093,
+      "published_sha256": "fa2ace1ff765138fb90c4759c081173d099167896cbd54b2165dac67d684376d"
+    },
+    {
+      "published_name": "PROTOCOL.md",
+      "original_relative_path": "research/diag_w/output_stratified/PROTOCOL.md",
+      "original_sha256": "4e09f7a4da7b2bfed729163f28d55dfc7e30e36530021da1310f14c4d427af14",
+      "original_bytes": 8881,
+      "transformation": "BYTE_IDENTICAL",
+      "published_bytes": 8881,
+      "published_sha256": "4e09f7a4da7b2bfed729163f28d55dfc7e30e36530021da1310f14c4d427af14"
+    }
+  ],
+  "not_uploaded_review_archive": {
+    "name": "diag_w_output_stratified_20260923_r1_review.zip",
+    "bytes": 141624025,
+    "sha256": "8b09f03eeb3f358deb9447ddb149938db29af9eb873334e9ac4edc67c68d2fb6",
+    "availability": "LOCAL_ONLY_NOT_UPLOADED",
+    "crc": "PASS_RECORDED_IN_ORIGINAL_RECEIPT"
+  },
+  "original_report": {
+    "relative_path": "results/diag_w_output_stratified_20260923_r1/report_ko.md",
+    "bytes": 8827,
+    "sha256": "82cdf4366b12edb9afd3108b8bdfd6e2be4eb20e3f37753963a16fd74ff5506d"
+  },
+  "public_reproduction_scope": "Document-scalar subset only; no GPU/model/scorer reproduction, token-level validation, source-text/token independence audit or packed-candidate reconstruction from this subset.",
+  "omitted": [
+    "Model weights",
+    "Packed candidates",
+    "CAL signed/time arrays",
+    "TEST token-level arrays and bootstrap NPZ",
+    "Frozen token IDs and third-party raw source texts",
+    "Environment and absolute host paths",
+    "Original execution/verification source and full local research history"
+  ],
+  "original_verification_receipt_scope": "verification.json is byte-identical historical evidence of the larger local verifier, not a claim that this publication reran its 46402 assertions.",
+  "publication_permissions": "Subsequent user request authorizes scoped GitHub documentation publication only. Historical PROTOCOL.md no-remote-write/no-next-phase provisions describe the experiment; it is preserved unchanged. No new experiment, merge, release or Drive write is part of publication.",
+  "historical_exceptions_preserved": [
+    "W1 NumPy bool serializer adapter",
+    "W1-D schema/doc-first gain order correction",
+    "W1-CAL pre-registration axes fix and sandbox GPU-access exception",
+    "W1-LR R1 numerical stop and R2 probability-mass guard"
+  ]
+}

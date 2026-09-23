@@ -1,0 +1,29 @@
+{
+  "OS_to_POOL_integrated_collection_ratio": 0.9987983280173425,
+  "VJP_per_estimator_per_document": 8,
+  "diagonal_extra_VJP": 0,
+  "scope": "both RESP and diagonal collected together; hash/I/O overhead included; not serving benchmark",
+  "standalone_scorer_wall": "NOT_MEASURED",
+  "totals": {
+    "OS": {
+      "OUTDIAG_seconds": 1.980498276083381,
+      "RESP_seconds": 4.747033475257922,
+      "VJP_seconds": 29.34888956404393,
+      "delta_seconds": 6.1422790980032005,
+      "direction_hash_seconds": 4.846545083961246,
+      "forward_seconds": 23.11873379402823,
+      "integrated_probe_seconds": 196.1163625270383,
+      "probe_hash_validation_seconds": 119.45405413599656
+    },
+    "POOL": {
+      "OUTDIAG_seconds": 1.9657604658386845,
+      "RESP_seconds": 4.751156088019343,
+      "VJP_seconds": 29.835442900028283,
+      "delta_seconds": 6.149772082186246,
+      "direction_hash_seconds": 4.815410567000072,
+      "forward_seconds": 22.768235849962366,
+      "integrated_probe_seconds": 196.35231360102262,
+      "probe_hash_validation_seconds": 119.94237902098757
+    }
+  }
+}

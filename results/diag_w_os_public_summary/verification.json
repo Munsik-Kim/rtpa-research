@@ -1,0 +1,79 @@
+{
+  "assertions": 46402,
+  "atol": 1e-12,
+  "error": null,
+  "external_protected_sources_and_Git_rechecked": true,
+  "fsum_boundary_effects": [
+    {
+      "label": "s0:DW_OS4x2",
+      "max_objective_difference": 1.3877787807814457e-17,
+      "same_map": true
+    },
+    {
+      "label": "s0:DW_POOL_R8",
+      "max_objective_difference": 6.938893903907228e-18,
+      "same_map": true
+    },
+    {
+      "label": "s0:B_OUTDIAG_POOL_R8",
+      "max_objective_difference": 6.938893903907228e-18,
+      "same_map": true
+    },
+    {
+      "label": "s0:B_OUTDIAG_OS4x2",
+      "max_objective_difference": 1.0408340855860843e-17,
+      "same_map": true
+    },
+    {
+      "label": "s1:DW_OS4x2",
+      "max_objective_difference": 6.938893903907228e-18,
+      "same_map": true
+    },
+    {
+      "label": "s1:DW_POOL_R8",
+      "max_objective_difference": 6.938893903907228e-18,
+      "same_map": true
+    },
+    {
+      "label": "s1:B_OUTDIAG_POOL_R8",
+      "max_objective_difference": 6.938893903907228e-18,
+      "same_map": true
+    },
+    {
+      "label": "s1:B_OUTDIAG_OS4x2",
+      "max_objective_difference": 6.938893903907228e-18,
+      "same_map": true
+    },
+    {
+      "label": "s2:DW_OS4x2",
+      "max_objective_difference": 6.938893903907228e-18,
+      "same_map": true
+    },
+    {
+      "label": "s2:DW_POOL_R8",
+      "max_objective_difference": 6.938893903907228e-18,
+      "same_map": true
+    },
+    {
+      "label": "s2:B_OUTDIAG_POOL_R8",
+      "max_objective_difference": 6.938893903907228e-18,
+      "same_map": true
+    },
+    {
+      "label": "s2:B_OUTDIAG_OS4x2",
+      "max_objective_difference": 1.0408340855860843e-17,
+      "same_map": true
+    }
+  ],
+  "full_GPU_derivative_independently_reproduced": false,
+  "independent_allocation_status": "NO_ADVANTAGE_IN_W1_OS",
+  "max_absolute_FP64_difference": 4.440892098500626e-16,
+  "max_relative_FP64_difference": 9.619249276995142e-13,
+  "production_scorer_or_aggregator_imported": false,
+  "review": "SELF_REVIEW_WITH_INDEPENDENT_CODE_PATH",
+  "rtol": 1e-10,
+  "scalar_values_checked": 27609,
+  "scope": "CAL_AND_TEST_SAVED_ARTIFACTS",
+  "seconds": 5.048170414000197,
+  "status": "PASS"
+}

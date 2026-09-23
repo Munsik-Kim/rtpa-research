@@ -1,0 +1,34 @@
+{
+  "TEST_documents": 32,
+  "allocation_status": "NO_ADVANTAGE_IN_W1_OS",
+  "calibration_cost_status": "EQUAL_VJP_OBSERVED_COLLECTION_COST_REPORTED",
+  "deployment_validation": "NOT_MEASURED",
+  "distinct_allocation": {
+    "B_OUTDIAG_OS4x2": "DISTINCT",
+    "B_OUTDIAG_POOL_R8": "DISTINCT"
+  },
+  "execution_status": "COMPLETE",
+  "historical_W1_decision": "NO_ADVANTAGE_IN_W1",
+  "integrity_status": "PASS",
+  "new_double_backward": 0,
+  "new_model_JVP": 0,
+  "next_phase_execution_authorized": false,
+  "novelty_status": "NOT_ESTABLISHED",
+  "primary_conditions": {
+    "B_OUTDIAG_OS4x2": {
+      "NLL_upper": true,
+      "R_lower": false,
+      "R_point": false
+    },
+    "B_OUTDIAG_POOL_R8": {
+      "NLL_upper": true,
+      "R_lower": false,
+      "R_point": false
+    }
+  },
+  "seed_favorable_counts": {
+    "B_OUTDIAG_OS4x2": 0,
+    "B_OUTDIAG_POOL_R8": 0
+  },
+  "seed_stability_status": "DIRECTION_CONDITION_NOT_MET"
+}

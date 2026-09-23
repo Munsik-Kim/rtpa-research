@@ -1,0 +1,18 @@
+{
+  "status": "PASS_PUBLIC_DOCUMENT_SCALAR_RECHECK",
+  "scope": "Published hashes, recorded-byte feasibility, map identity, document scalars, bootstrap intervals and negative decision predicates only",
+  "documents": 32,
+  "source_families": 16,
+  "comparisons": 9,
+  "scalar_checks": 207,
+  "maximum_absolute_difference": 2.220446049250313e-16,
+  "allocation_status": "NO_ADVANTAGE_IN_W1_OS",
+  "not_reproduced": [
+    "GPU forward or differentiation",
+    "CAL scoring and score-based map optimality",
+    "packed payload bytes from weights",
+    "token-level metrics and harmful/beneficial paired mass"
+  ],
+  "new_model_forward_count": 0,
+  "new_policy_count": 0
+}
