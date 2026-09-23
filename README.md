@@ -16,17 +16,7 @@ baseline, and practical end-to-end efficiency, remain unestablished.
 The two paths have separate quality and cost results. Current allocation-candidate
 search is stopped; the reproducible research code and diagnostics are maintained.
 
-## Separate weight-allocation study: negative result
-
-[DIAG-W W1-OS (2026-09-23)](docs/DIAG_W_OS_NEGATIVE_RESULT.md) tested one
-output-stratified estimator at the same eight VJPs/document and packed-candidate
-bytes. On its new 32-document panel, the primary seed had **5.21% higher KL**
-than both registered diagonal controls; no seed improved over them. This
-specific weight-allocation direction is closed. The report preserves all seeds,
-contrary tail/source observations and a small CPU-recheckable evidence subset.
-It does not alter the recurrent-state results below or establish deployment speed/VRAM gains.
-
-## Latest published state fixed-mask quality screen
+## Latest fixed-mask quality screen
 
 Qwen3.5-0.8B-Base · three software documents × 1,024 tokens · all 18 GDN layers ·
 R2_OFFSET/high8. Native uses BF16 weights/cache and FP32 recurrence.
@@ -113,6 +103,21 @@ Torch environment, it can also run directly from the checkout:
   handling, platform requirements, build/codec-test dependency separation.
 - [References](docs/REFERENCES.md) · [Related work](docs/RELATED_WORK_AND_NOVELTY.md) ·
   [Architecture provenance](docs/ARCHITECTURES.md).
+
+## Additional research record: an unsuccessful weight-allocation direction
+
+Separately from the recurrent-state methods above, we also investigated
+[DIAG-W W1-OS (2026-09-23)](docs/DIAG_W_OS_NEGATIVE_RESULT.md): one
+output-stratified weight-allocation estimator at the same eight VJPs/document
+and packed-candidate bytes. It did not outperform the registered diagonal
+controls on a new 32-document panel; the primary seed had **5.21% higher KL**.
+The report records all seeds, contrary tail/source observations and a small
+CPU-recheckable evidence subset so this unsuccessful direction remains visible.
+
+This is an **additional research record, not a replacement method or a revision
+of the existing state-DIAG results**. Only this tested weight-allocation direction
+is discontinued. Existing methods, results and runtime defaults remain unchanged;
+no deployment speed or whole-model VRAM gain is claimed.
 
 ## License and citation
 
