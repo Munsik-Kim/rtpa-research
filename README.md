@@ -104,6 +104,21 @@ Torch environment, it can also run directly from the checkout:
 - [References](docs/REFERENCES.md) · [Related work](docs/RELATED_WORK_AND_NOVELTY.md) ·
   [Architecture provenance](docs/ARCHITECTURES.md).
 
+## Additional research record: an unsuccessful weight-allocation direction
+
+Separately from the recurrent-state methods above, we also investigated
+[DIAG-W W1-OS (2026-09-23)](docs/DIAG_W_OS_NEGATIVE_RESULT.md): one
+output-stratified weight-allocation estimator at the same eight VJPs/document
+and packed-candidate bytes. It did not outperform the registered diagonal
+controls on a new 32-document panel; the primary seed had **5.21% higher KL**.
+The report records all seeds, contrary tail/source observations and a small
+CPU-recheckable evidence subset so this unsuccessful direction remains visible.
+
+This is an **additional research record, not a replacement method or a revision
+of the existing state-DIAG results**. Only this tested weight-allocation direction
+is discontinued. Existing methods, results and runtime defaults remain unchanged;
+no deployment speed or whole-model VRAM gain is claimed.
+
 ## License and citation
 
 Original contributions use **[Apache-2.0](LICENSE)**. Preserve applicable

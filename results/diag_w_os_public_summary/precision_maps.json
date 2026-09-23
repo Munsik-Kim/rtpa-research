@@ -1,0 +1,741 @@
+{
+  "C_star": 5898240,
+  "TEST_accessed": false,
+  "costs": [
+    983040,
+    983040,
+    2949120,
+    2949120,
+    983040,
+    983040,
+    2949120,
+    2949120,
+    983040,
+    983040,
+    2949120,
+    2949120
+  ],
+  "deduplicated_variants": [
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "labels": [
+        "s0:DW_OS4x2",
+        "s1:DW_POOL_R8",
+        "s2:DW_OS4x2"
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "labels": [
+        "s0:DW_POOL_R8"
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "labels": [
+        "s0:B_OUTDIAG_POOL_R8",
+        "s0:B_OUTDIAG_OS4x2",
+        "s1:DW_OS4x2",
+        "s1:B_OUTDIAG_POOL_R8",
+        "s1:B_OUTDIAG_OS4x2",
+        "s2:B_OUTDIAG_POOL_R8",
+        "s2:B_OUTDIAG_OS4x2"
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "labels": [
+        "s2:DW_POOL_R8"
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "labels": [
+        "ALL_LOW"
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "labels": [
+        "ALL_HIGH"
+      ]
+    }
+  ],
+  "feasible_count": 136,
+  "maps": {
+    "ALL_HIGH": {
+      "anchor_different_budget": true,
+      "bits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "qtypes": [
+        "Q4_K",
+        "Q4_K",
+        "Q4_K",
+        "Q4_K",
+        "Q4_K",
+        "Q4_K",
+        "Q4_K",
+        "Q4_K",
+        "Q4_K",
+        "Q4_K",
+        "Q4_K",
+        "Q4_K"
+      ]
+    },
+    "ALL_LOW": {
+      "anchor_different_budget": true,
+      "bits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "qtypes": [
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K"
+      ]
+    },
+    "s0:B_OUTDIAG_OS4x2": {
+      "C_star": 5898240,
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "exact_min_ties": 1,
+      "high_tensors": [
+        "model.layers.3.mlp.up_proj.weight",
+        "model.layers.24.mlp.down_proj.weight"
+      ],
+      "map_sha256": "1247e4727acef760d9b6d20648ce75a42bcc972b1fb45bda650e276a03781b78",
+      "method": "B_OUTDIAG_OS4x2",
+      "objective": 0.023757039282310478,
+      "qtypes": [
+        "Q2_K",
+        "Q2_K",
+        "Q4_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q4_K"
+      ],
+      "replica": 0,
+      "runner_up_gap": 0.0003983374124247249,
+      "score_source": "CAL16_ONLY"
+    },
+    "s0:B_OUTDIAG_POOL_R8": {
+      "C_star": 5898240,
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "exact_min_ties": 1,
+      "high_tensors": [
+        "model.layers.3.mlp.up_proj.weight",
+        "model.layers.24.mlp.down_proj.weight"
+      ],
+      "map_sha256": "1247e4727acef760d9b6d20648ce75a42bcc972b1fb45bda650e276a03781b78",
+      "method": "B_OUTDIAG_POOL_R8",
+      "objective": 0.023635482032479112,
+      "qtypes": [
+        "Q2_K",
+        "Q2_K",
+        "Q4_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q4_K"
+      ],
+      "replica": 0,
+      "runner_up_gap": 0.0005347495120133806,
+      "score_source": "CAL16_ONLY"
+    },
+    "s0:DW_OS4x2": {
+      "C_star": 5898240,
+      "bits": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exact_min_ties": 1,
+      "high_tensors": [
+        "model.layers.3.mlp.up_proj.weight",
+        "model.layers.3.mlp.down_proj.weight"
+      ],
+      "map_sha256": "7b50c7f9e2c01db49304755769c7bee3b319e1e22370a66a92e93818a925d31c",
+      "method": "DW_OS4x2",
+      "objective": 0.02858150963395089,
+      "qtypes": [
+        "Q2_K",
+        "Q2_K",
+        "Q4_K",
+        "Q4_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K"
+      ],
+      "replica": 0,
+      "runner_up_gap": 0.0002524494914297841,
+      "score_source": "CAL16_ONLY"
+    },
+    "s0:DW_POOL_R8": {
+      "C_star": 5898240,
+      "bits": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exact_min_ties": 1,
+      "high_tensors": [
+        "model.layers.3.self_attn.o_proj.weight",
+        "model.layers.3.mlp.up_proj.weight",
+        "model.layers.14.self_attn.q_proj.weight",
+        "model.layers.14.self_attn.o_proj.weight"
+      ],
+      "map_sha256": "c2e36a8b5ee9045ed625754a1503fe53c866ba8095dd512e30671c9eb6afb2cb",
+      "method": "DW_POOL_R8",
+      "objective": 0.029588881042215832,
+      "qtypes": [
+        "Q2_K",
+        "Q4_K",
+        "Q4_K",
+        "Q2_K",
+        "Q4_K",
+        "Q4_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K"
+      ],
+      "replica": 0,
+      "runner_up_gap": 0.00011728872642231131,
+      "score_source": "CAL16_ONLY"
+    },
+    "s1:B_OUTDIAG_OS4x2": {
+      "C_star": 5898240,
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "exact_min_ties": 1,
+      "high_tensors": [
+        "model.layers.3.mlp.up_proj.weight",
+        "model.layers.24.mlp.down_proj.weight"
+      ],
+      "map_sha256": "1247e4727acef760d9b6d20648ce75a42bcc972b1fb45bda650e276a03781b78",
+      "method": "B_OUTDIAG_OS4x2",
+      "objective": 0.023838693858147842,
+      "qtypes": [
+        "Q2_K",
+        "Q2_K",
+        "Q4_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q4_K"
+      ],
+      "replica": 1,
+      "runner_up_gap": 0.0005257095079131344,
+      "score_source": "CAL16_ONLY"
+    },
+    "s1:B_OUTDIAG_POOL_R8": {
+      "C_star": 5898240,
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "exact_min_ties": 1,
+      "high_tensors": [
+        "model.layers.3.mlp.up_proj.weight",
+        "model.layers.24.mlp.down_proj.weight"
+      ],
+      "map_sha256": "1247e4727acef760d9b6d20648ce75a42bcc972b1fb45bda650e276a03781b78",
+      "method": "B_OUTDIAG_POOL_R8",
+      "objective": 0.023293659346204195,
+      "qtypes": [
+        "Q2_K",
+        "Q2_K",
+        "Q4_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q4_K"
+      ],
+      "replica": 1,
+      "runner_up_gap": 0.000593668440895697,
+      "score_source": "CAL16_ONLY"
+    },
+    "s1:DW_OS4x2": {
+      "C_star": 5898240,
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "exact_min_ties": 1,
+      "high_tensors": [
+        "model.layers.3.mlp.up_proj.weight",
+        "model.layers.24.mlp.down_proj.weight"
+      ],
+      "map_sha256": "1247e4727acef760d9b6d20648ce75a42bcc972b1fb45bda650e276a03781b78",
+      "method": "DW_OS4x2",
+      "objective": 0.03115910372354672,
+      "qtypes": [
+        "Q2_K",
+        "Q2_K",
+        "Q4_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q4_K"
+      ],
+      "replica": 1,
+      "runner_up_gap": 0.0006071911924695438,
+      "score_source": "CAL16_ONLY"
+    },
+    "s1:DW_POOL_R8": {
+      "C_star": 5898240,
+      "bits": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exact_min_ties": 1,
+      "high_tensors": [
+        "model.layers.3.mlp.up_proj.weight",
+        "model.layers.3.mlp.down_proj.weight"
+      ],
+      "map_sha256": "7b50c7f9e2c01db49304755769c7bee3b319e1e22370a66a92e93818a925d31c",
+      "method": "DW_POOL_R8",
+      "objective": 0.027866124364367365,
+      "qtypes": [
+        "Q2_K",
+        "Q2_K",
+        "Q4_K",
+        "Q4_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K"
+      ],
+      "replica": 1,
+      "runner_up_gap": 0.0023468440613124107,
+      "score_source": "CAL16_ONLY"
+    },
+    "s2:B_OUTDIAG_OS4x2": {
+      "C_star": 5898240,
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "exact_min_ties": 1,
+      "high_tensors": [
+        "model.layers.3.mlp.up_proj.weight",
+        "model.layers.24.mlp.down_proj.weight"
+      ],
+      "map_sha256": "1247e4727acef760d9b6d20648ce75a42bcc972b1fb45bda650e276a03781b78",
+      "method": "B_OUTDIAG_OS4x2",
+      "objective": 0.023643707726646992,
+      "qtypes": [
+        "Q2_K",
+        "Q2_K",
+        "Q4_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q4_K"
+      ],
+      "replica": 2,
+      "runner_up_gap": 0.0006038252309114103,
+      "score_source": "CAL16_ONLY"
+    },
+    "s2:B_OUTDIAG_POOL_R8": {
+      "C_star": 5898240,
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "exact_min_ties": 1,
+      "high_tensors": [
+        "model.layers.3.mlp.up_proj.weight",
+        "model.layers.24.mlp.down_proj.weight"
+      ],
+      "map_sha256": "1247e4727acef760d9b6d20648ce75a42bcc972b1fb45bda650e276a03781b78",
+      "method": "B_OUTDIAG_POOL_R8",
+      "objective": 0.023551143138400687,
+      "qtypes": [
+        "Q2_K",
+        "Q2_K",
+        "Q4_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q4_K"
+      ],
+      "replica": 2,
+      "runner_up_gap": 0.000592052909111955,
+      "score_source": "CAL16_ONLY"
+    },
+    "s2:DW_OS4x2": {
+      "C_star": 5898240,
+      "bits": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exact_min_ties": 1,
+      "high_tensors": [
+        "model.layers.3.mlp.up_proj.weight",
+        "model.layers.3.mlp.down_proj.weight"
+      ],
+      "map_sha256": "7b50c7f9e2c01db49304755769c7bee3b319e1e22370a66a92e93818a925d31c",
+      "method": "DW_OS4x2",
+      "objective": 0.028819705128740377,
+      "qtypes": [
+        "Q2_K",
+        "Q2_K",
+        "Q4_K",
+        "Q4_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K"
+      ],
+      "replica": 2,
+      "runner_up_gap": 0.002247886742229102,
+      "score_source": "CAL16_ONLY"
+    },
+    "s2:DW_POOL_R8": {
+      "C_star": 5898240,
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "exact_min_ties": 1,
+      "high_tensors": [
+        "model.layers.3.mlp.up_proj.weight",
+        "model.layers.14.self_attn.q_proj.weight",
+        "model.layers.14.self_attn.o_proj.weight",
+        "model.layers.24.self_attn.q_proj.weight"
+      ],
+      "map_sha256": "d281062bf3051def90ef5c745876c98376249e7689bd129e7b334b3c9a233541",
+      "method": "DW_POOL_R8",
+      "objective": 0.028720197574259993,
+      "qtypes": [
+        "Q2_K",
+        "Q2_K",
+        "Q4_K",
+        "Q2_K",
+        "Q4_K",
+        "Q4_K",
+        "Q2_K",
+        "Q2_K",
+        "Q4_K",
+        "Q2_K",
+        "Q2_K",
+        "Q2_K"
+      ],
+      "replica": 2,
+      "runner_up_gap": 0.0003346524959444569,
+      "score_source": "CAL16_ONLY"
+    }
+  },
+  "methods": [
+    "DW_OS4x2",
+    "DW_POOL_R8",
+    "B_OUTDIAG_POOL_R8",
+    "B_OUTDIAG_OS4x2"
+  ],
+  "replica_roots": [
+    202609230101,
+    202609230102,
+    202609230103
+  ],
+  "source_score_sha256": "8c888268dd8d1006c23aa5b9f22dbb937be17a425de19154ddc972106d27d7e5",
+  "tensor_order": [
+    "model.layers.3.self_attn.q_proj.weight",
+    "model.layers.3.self_attn.o_proj.weight",
+    "model.layers.3.mlp.up_proj.weight",
+    "model.layers.3.mlp.down_proj.weight",
+    "model.layers.14.self_attn.q_proj.weight",
+    "model.layers.14.self_attn.o_proj.weight",
+    "model.layers.14.mlp.up_proj.weight",
+    "model.layers.14.mlp.down_proj.weight",
+    "model.layers.24.self_attn.q_proj.weight",
+    "model.layers.24.self_attn.o_proj.weight",
+    "model.layers.24.mlp.up_proj.weight",
+    "model.layers.24.mlp.down_proj.weight"
+  ]
+}
