@@ -4,7 +4,8 @@ title: "RTPA — Output-Aware Recurrent-State Quantization"
 version: 1.3.1.dev0
 type: software
 authors:
-  - name: "Munsik-Kim"
+  - family-names: Kim
+    given-names: Munsik
     website: "https://github.com/Munsik-Kim"
 repository-code: "https://github.com/Munsik-Kim/rtpa-research"
 url: "https://github.com/Munsik-Kim/rtpa-research"
