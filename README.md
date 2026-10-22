@@ -1,12 +1,10 @@
 # RTPA — Output-Aware Recurrent-State Quantization
 
-RTPA studies how quantization errors in **persistent recurrent state between
-token updates** affect future model outputs—not weight, activation or attention
-KV quantization. It implements offline response-based precision masks and causal
-integer-code correction, with reproducible evaluation code and small numerical
-boundary examples. Output-aware allocation improved fidelity over energy-only
-controls in evaluated settings. Additional gains over a strong query-weighted
-baseline, and practical end-to-end efficiency, remain unestablished.
+Implemented two ways to compress the memory a recurrent language model carries between tokens, with tools to measure changes in later outputs, stored bytes and execution cost. The repository provides comparison code, saved evidence and small CPU examples.
+
+**Munsik Kim** · [Start with the public CPU reports](docs/QUICKSTART_R4.md)
+
+The target is persistent recurrent state; weight, activation and attention-cache compression are different tasks. In the evaluated settings, output-based precision allocation improved fidelity over energy-only controls. Additional gains over a strong query-weighted baseline and practical end-to-end efficiency remain unestablished.
 
 - **RTPA-DIAG:** offline output response compressed into a fixed precision mask.
 - **FA_CODE:** a frozen offline metric and current state drive bounded causal
